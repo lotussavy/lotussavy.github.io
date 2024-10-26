@@ -14,18 +14,6 @@ I am passionate about leveraging AI to solve real-world problems in Advanced Air
 - **Deep Learning**: Building and refining neural models to push the boundaries of predictive accuracy in mobility and transportation.
 - **Demand Modeling for Advanced Air Mobility**: Applying AI to predict demand in AAM, focusing on both regional and urban air mobility.
 
-## Academic Background
-
-- **Ph.D., Information Systems**  
-  University of Maryland, Baltimore County (Aug 2023 - Present)  
-  - Current focus: Demand modeling and forecasting for Advanced Air Mobility
-
-- **MSc in Information System Engineering**  
-  Himalayan Institute of Science and Technology, 2019  
-  - Thesis: "An Analysis of Classification Algorithms for Nepali News"
-
-My academic journey has also included stops at **Embry-Riddle Aeronautical University** and **Wright State University**, where I contributed to projects on **air mobility** and **neurosymbolic AI**.
-
 ## Professional Background
 
 Before pursuing a research-focused career, I worked extensively in the tech industry, including roles as an **IT Team Leader** and **Senior Web Developer**. My professional experience involved leading teams, overseeing IT projects, and building robust, scalable web applications. I bring this technical depth to my research, bridging the gap between industry practices and academic inquiry.

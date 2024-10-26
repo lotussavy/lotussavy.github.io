@@ -2,5 +2,5 @@
 
 Feel free to reach out to discuss research, collaboration, or just to connect!
 
-- **Email**: [lotussavy@gmail.com]
+- **Email**: [kamala2@umbc.edu]
 - **GitHub**: [[GitHub Profile Link](https://github.com/lotussavy)]

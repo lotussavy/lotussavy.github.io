@@ -36,10 +36,4 @@
 
 ---
 
-## An Analysis of Classification Algorithms for Nepali News
-**Journal**: International Journal of Innovative Science, Engineering & Technology, 2020  
-**Description**: This paper analyzes various classification algorithms for Nepali news, focusing on performance metrics and accuracy improvements. It provides valuable insights for local language processing and information retrieval in Nepali media.
-
----
-
 Each publication represents a step forward in my research journey, contributing to fields such as advanced air mobility, reinforcement learning, and artificial intelligence. I am committed to pushing the boundaries of knowledge through continued research and collaboration.

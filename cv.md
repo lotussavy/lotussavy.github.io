@@ -4,8 +4,7 @@
 
 **Ph.D. Student, Graduate Research Assistant**  
 University of Maryland, Baltimore County (UMBC)  
-**Email**: kamala2@umbc.edu  
-**Phone**: +1 326-467-4681  
+**Email**: kamala2@umbc.edu   
 **ORCID**: [0000-0002-9712-0265](https://orcid.org/0000-0002-9712-0265)  
 
 ---
@@ -26,17 +25,6 @@ Self-motivated and goal-oriented researcher with over two years of experience in
   Embry-Riddle Aeronautical University (Aug 2022 - Aug 2023)  
   - Conducted research in AAM and neurosymbolic reinforcement learning.
 
-- **Computer Science and Engineering**  
-  Wright State University (Jan 2022 - July 2022)  
-  - Completed prerequisite courses for Ph.D., including OS Internals and Design, and Data Structures & Algorithms.
-
-- **MSc in Information System Engineering**  
-  Himalayan Institute of Science and Technology (2019)  
-  - Thesis: "An Analysis of Classification Algorithms for Nepali News"
-
-- **BE in Electronics and Communication Engineering**  
-  Himalaya College of Engineering (2011)  
-  - Final project: "Distance and Speed Measurement Using Ultrasound"
 
 ---
 
@@ -91,8 +79,6 @@ Self-motivated and goal-oriented researcher with over two years of experience in
    *IEEE Transactions on Artificial Intelligence, 2023*
 6. **Long Short-Term Memory Neural Network Assisted Peak to Average Power Ratio Reduction for Underwater Acoustic OFDM Communication**  
    *KSII Transactions on Internet and Information Systems, 2022*
-7. **An Analysis of Classification Algorithms for Nepali News**  
-   *International Journal of Innovative Science, Engineering & Technology, 2020*
 
 ---
 
@@ -106,7 +92,6 @@ Self-motivated and goal-oriented researcher with over two years of experience in
 ### Languages
 
 - **English** (Fluent)
-- **Nepali** (Native)
 - **Hindi** (Proficient)
 
 ---
@@ -116,7 +101,6 @@ Self-motivated and goal-oriented researcher with over two years of experience in
 - **IEEE Graduate Student Member**
 - **ACM Student Member**
 - **Region 2 Lead for IEEEXtreme 18.0**
-- **Registered Engineer, Nepal Engineering Council**
 
 ---
 
