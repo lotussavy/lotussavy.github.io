@@ -1,0 +1,12 @@
+# Sample _config.yml for navigation setup
+title: "My GitHub Website"
+theme: jekyll-theme-cayman  # or any theme of your choice
+description: "Research Portfolio"
+
+# Customizing navigation
+header_pages:
+  - index.md
+  - about.md
+  - cv.md
+  - projects.md
+  - contact.md
