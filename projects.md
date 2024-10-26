@@ -1,5 +1,3 @@
-# Projects
-
 # Selected Publications
 
 ## Regional Air Mobility Flight Demand Modeling in Tennessee State
