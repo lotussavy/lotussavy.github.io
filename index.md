@@ -1,6 +1,6 @@
 # Welcome to My Website
 
-Hello! I'm [Your Name], a Research Assistant in Demand Modeling and Forecasting for Advanced Air Mobility (AAM) at the University of Maryland, Baltimore County. I work with the latest technologies like Large Language Models (LLMs) and Neurosymbolic AI to help automate and optimize AAM applications.
+Hello! I'm **Kamal Acharya**, a Ph.D. student and Graduate Research Assistant at the University of Maryland, Baltimore County (UMBC). With over two years of experience in data-driven computational intelligence and decision models, and more than eight years in web application development, I bring a unique blend of research expertise and technical skills to the field of Advanced Air Mobility (AAM).
 
 Feel free to explore my website to learn more about my research, projects, and professional journey.
 
