@@ -19,10 +19,23 @@ title: Gallery
   <div class="gallery-grid">
     {% for file in certificate_images %}
     {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.png' or file.extname == '.webp' %}
+    {% assign cert_id = 'gallery-cert-' | append: forloop.index %}
     <figure class="gallery-card">
-      <img src="{{ file.path | relative_url }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy" />
+      <a
+        class="gallery-open"
+        href="#{{ cert_id }}"
+        data-src="{{ file.path | relative_url }}"
+        data-alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}"
+        aria-label="Open image: {{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}"
+      >
+        <img src="{{ file.path | relative_url }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy" />
+      </a>
       <figcaption>{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}</figcaption>
     </figure>
+    <div id="{{ cert_id }}" class="gallery-lightbox" aria-hidden="true">
+      <a href="#" class="gallery-lightbox-close" aria-label="Close image viewer">×</a>
+      <img src="{{ file.path | relative_url }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" />
+    </div>
     {% endif %}
     {% endfor %}
   </div>
@@ -39,10 +52,23 @@ title: Gallery
   <div class="gallery-grid">
     {% for file in event_images %}
     {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.png' or file.extname == '.webp' %}
+    {% assign event_id = 'gallery-event-' | append: forloop.index %}
     <figure class="gallery-card">
-      <img src="{{ file.path | relative_url }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy" />
+      <a
+        class="gallery-open"
+        href="#{{ event_id }}"
+        data-src="{{ file.path | relative_url }}"
+        data-alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}"
+        aria-label="Open image: {{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}"
+      >
+        <img src="{{ file.path | relative_url }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" loading="lazy" />
+      </a>
       <figcaption>{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}</figcaption>
     </figure>
+    <div id="{{ event_id }}" class="gallery-lightbox" aria-hidden="true">
+      <a href="#" class="gallery-lightbox-close" aria-label="Close image viewer">×</a>
+      <img src="{{ file.path | relative_url }}" alt="{{ file.basename | replace: '-', ' ' | replace: '_', ' ' }}" />
+    </div>
     {% endif %}
     {% endfor %}
   </div>
@@ -71,11 +97,3 @@ title: Gallery
   </div>
 </section>
 
-<section class="gallery-section">
-  <h2>Upload Guide</h2>
-  <ul class="gallery-list">
-    <li>Certificates: upload image files to <code>assets/gallery/certificates/</code>.</li>
-    <li>Event photos: upload image files to <code>assets/gallery/events/</code>.</li>
-    <li>Use descriptive filenames (for example: <code>ieee-award-2025.jpg</code>).</li>
-  </ul>
-</section>
