@@ -1,12 +1,43 @@
-# Sample _config.yml for navigation setup
-title: "My GitHub Website"
-theme: jekyll-theme-cayman  # or any theme of your choice
-description: "Research Portfolio"
+# Academic Research Portfolio
+title: "Kamal Acharya | Ph.D. Researcher"
+theme: jekyll-theme-slate
+description: "Ph.D. Candidate | Advanced Air Mobility | AI/ML | Neurosymbolic Systems"
+url: https://lotussavy.github.io
+baseurl: ""
 
-# Customizing navigation
-header_pages:
-  - index.md
-  - about.md
-  - cv.md
-  - projects.md
-  - contact.md
+# Author information
+author:
+  name: Kamal Acharya
+  email: kamala2@umbc.edu
+  location: "Baltimore, MD, USA"
+  orcid: "0000-0002-9712-0265"
+  github: lotussavy
+  linkedin: kamalacharya
+  twitter: lotussavy
+  researchgate: Kamal-Acharya-13
+  googlescholar: "scholar.google.com"
+  url: https://lotussavy.github.io
+
+# Institution
+institution:
+  name: "University of Maryland, Baltimore County (UMBC)"
+  department: "Information Systems"
+  degree: "Ph.D. in Information Systems"
+  advisor: "Dr. Nilanjan Banerjee"
+  start_date: "August 2023"
+  role: "Graduate Research Assistant"
+
+# Navigation is managed in `_data/navigation.yml`
+
+# Site settings
+show_downloads: false
+github:
+  is_project_page: false
+
+# Footer settings
+footer_text: "© 2026 Kamal Acharya. All rights reserved. Last updated: April 2026"
+show_social_links: true
+
+# SEO settings
+keywords: "Advanced Air Mobility, Machine Learning, AI, Neurosymbolic AI, Research, UMBC"
+lang: en-US

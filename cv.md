@@ -1,107 +1,126 @@
-# Curriculum Vitae
-
-## Kamal Acharya
-
-**Ph.D. Student, Graduate Research Assistant**  
-University of Maryland, Baltimore County (UMBC)  
-**Email**: kamala2@umbc.edu   
-**ORCID**: [0000-0002-9712-0265](https://orcid.org/0000-0002-9712-0265)  
-
+---
+layout: default
+title: Curriculum Vitae
 ---
 
-### Profile
+<section class="cv-hero">
+  <h1>Kamal Acharya</h1>
+  <p class="cv-subtitle">
+    Ph.D. Candidate in Information Systems · Advanced Air Mobility · Neurosymbolic AI
+  </p>
+  <p>
+    Researcher and educator focused on interpretable AI systems for transportation planning,
+    demand modeling, and optimization in safety-critical environments.
+  </p>
+  <p class="cv-hero-links">
+    <a href="{{ '/CV.pdf' | relative_url }}">Download Full CV (PDF)</a>
+    <a href="{{ '/publications' | relative_url }}">Publications</a>
+    <a href="{{ '/research' | relative_url }}">Research</a>
+    <a href="{{ '/contact' | relative_url }}">Contact</a>
+  </p>
+</section>
 
-Self-motivated and goal-oriented researcher with over two years of experience in data-driven computational intelligence and decision models, and more than eight years of experience in web application development and management. Skilled in leading projects independently and collaboratively, with a strong focus on integrating emerging AI technologies, including **Large Language Models (LLMs)** and **Neurosymbolic AI**, in the field of **Advanced Air Mobility (AAM)**.
+<section class="cv-section">
+  <h2>Profile Snapshot</h2>
+  <div class="cv-grid">
+    <article class="cv-card">
+      <h3>Current Role</h3>
+      <p>Graduate Research Assistant, University of Maryland, Baltimore County (UMBC).</p>
+    </article>
+    <article class="cv-card">
+      <h3>Research Domains</h3>
+      <p>Neurosymbolic AI, Advanced Air Mobility demand modeling, optimization, trustworthy AI.</p>
+    </article>
+    <article class="cv-card">
+      <h3>Academic Output</h3>
+      <p>15+ publications across IEEE journals, IJCAI, AIAA, and related venues.</p>
+    </article>
+    <article class="cv-card">
+      <h3>Teaching Experience</h3>
+      <p>10+ years of university-level teaching and mentorship in computing and AI.</p>
+    </article>
+  </div>
+</section>
 
----
+<section class="cv-section">
+  <h2>Education</h2>
+  <div class="cv-timeline">
+    <article class="cv-item">
+      <h3>Ph.D., Information Systems</h3>
+      <p><strong>University of Maryland, Baltimore County (UMBC)</strong> · 2026</p>
+      <p>
+        Dissertation: <em>Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI</em>
+      </p>
+    </article>
+    <article class="cv-item">
+      <h3>M.Sc., Information System Engineering</h3>
+      <p><strong>Purbanchal University</strong> · 2019</p>
+    </article>
+    <article class="cv-item">
+      <h3>B.E., Electronics and Communication Engineering</h3>
+      <p><strong>Tribhuvan University</strong> · 2011</p>
+    </article>
+  </div>
+</section>
 
-### Education
+<section class="cv-section">
+  <h2>Experience</h2>
+  <div class="cv-timeline">
+    <article class="cv-item">
+      <h3>Graduate Research Assistant · UMBC</h3>
+      <p>2023–Present</p>
+      <ul>
+        <li>Developed data-driven and neurosymbolic models for AAM demand estimation.</li>
+        <li>Built rolling-horizon simulation workflows for mobility planning scenarios.</li>
+        <li>Contributed to NASA ULI-aligned infrastructure and policy analysis.</li>
+      </ul>
+    </article>
+    <article class="cv-item">
+      <h3>Teaching Assistant (AI/ML Cybersecurity Program) · UMBC</h3>
+      <p>2024</p>
+      <ul>
+        <li>Supported NSF-funded graduate training in AI/ML and cybersecurity.</li>
+        <li>Mentored interdisciplinary student teams on research implementation and reporting.</li>
+      </ul>
+    </article>
+    <article class="cv-item">
+      <h3>Research Assistant · Embry-Riddle Aeronautical University</h3>
+      <p>2022–2023</p>
+      <ul>
+        <li>Worked on air mobility prediction and optimization under emergency scenarios.</li>
+        <li>Built deep learning workflows for micro-level and macro-level mobility prediction.</li>
+      </ul>
+    </article>
+  </div>
+</section>
 
-- **Ph.D., Information Systems**  
-  University of Maryland, Baltimore County (Aug 2023 - Present)  
-  - Research focus: Demand modeling and forecasting for Advanced Air Mobility.
+<section class="cv-section">
+  <h2>Selected Achievements</h2>
+  <ul class="cv-list">
+    <li>IEEE CIS Publication Spotlight recognition (2024).</li>
+    <li>Outstanding Reviewer, IEEE Transactions on Neural Networks and Learning Systems (2024–2025).</li>
+    <li>Doctoral Research Poster Award, UMBC (2025).</li>
+    <li>Leadership roles in IEEE Baltimore Section and technical conferences.</li>
+  </ul>
+</section>
 
-- **Electrical Engineering and Computer Science**  
-  Embry-Riddle Aeronautical University (Aug 2022 - Aug 2023)  
-  - Conducted research in AAM and neurosymbolic reinforcement learning.
+<section class="cv-section">
+  <h2>Skills</h2>
+  <div class="cv-skills">
+    <p><strong>Programming:</strong> Python, C/C++, SQL, PHP</p>
+    <p><strong>AI/ML:</strong> Deep Learning, Reinforcement Learning, Neurosymbolic AI, Time Series Forecasting</p>
+    <p><strong>Tools:</strong> PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, MATLAB, Git</p>
+    <p><strong>Languages:</strong> English, Nepali, Hindi</p>
+  </div>
+</section>
 
-
----
-
-### Research Interests
-
-- **Natural Language Processing**
-- **Neurosymbolic Reinforcement Learning**
-- **Deep Learning**
-- **Advanced Air Mobility**
-
----
-
-### Professional Experience
-
-- **Graduate Research Assistant**  
-  University of Maryland, Baltimore County  
-  *Aug 2023 - Present*  
-  - Working on demand modeling of Advanced Air Mobility.
-
-- **Research Assistant**  
-  Embry-Riddle Aeronautical University  
-  *Aug 2022 - Aug 2023*  
-  - Key projects: Improving air mobility in emergency situations, neurosymbolic reinforcement learning and planning survey.
-
-- **IT Team Leader**  
-  Uniweb Technologies  
-  *Dec 2018 - Jun 2021*  
-  - Led a team of developers and IT support staff, managing project milestones, maintaining infrastructure, and fostering collaboration.
-
-- **Senior Web Developer**  
-  Uniweb Technologies  
-  *Oct 2015 – Dec 2018*  
-  - Developed and optimized full-stack applications, ensuring performance and compatibility across devices.
-
-- **Web Developer**  
-  Uniweb Technologies  
-  *Feb 2012 – Oct 2015*  
-  - Built user-friendly websites, integrated third-party APIs, and performed rigorous testing.
-
----
-
-### Selected Publications
-
-1. **Regional Air Mobility Flight Demand Modeling in Tennessee State** (Under Review, AIAA SciTech 2025)
-2. **Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm**  
-   *IEEE International Conference on Intelligent Transportation Systems (ITSC), 2024*
-3. **A Survey on Symbolic Knowledge Distillation of Large Language Models**  
-   *IEEE Transactions on Artificial Intelligence, 2024*
-4. **SKGHOI: Spatial-Semantic Knowledge Graph for Human-Object Interaction Detection**  
-   *International Conference on Data Mining (ICDM), 2023*
-5. **Neurosymbolic Reinforcement Learning and Planning: A Survey**  
-   *IEEE Transactions on Artificial Intelligence, 2023*
-6. **Long Short-Term Memory Neural Network Assisted Peak to Average Power Ratio Reduction for Underwater Acoustic OFDM Communication**  
-   *KSII Transactions on Internet and Information Systems, 2022*
-
----
-
-### Technical Skills
-
-- **Programming Languages**: C, C++, PHP, JavaScript, Python
-- **Software & Tools**: VS Code, MySQL, Git, Slack
-
----
-
-### Languages
-
-- **English** (Fluent)
-- **Hindi** (Proficient)
-
----
-
-### Professional Memberships & Volunteer Roles
-
-- **IEEE Graduate Student Member**
-- **ACM Student Member**
-- **Region 2 Lead for IEEEXtreme 18.0**
-
----
-
-This CV highlights my academic and professional journey, reflecting my dedication to advancing research in AI and AAM. For further details, please feel free to reach out or explore my other projects and publications.
+<section class="cv-section">
+  <h2>Professional Links</h2>
+  <p>
+    <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en">Google Scholar</a> |
+    <a href="https://orcid.org/0000-0002-9712-0265">ORCID</a> |
+    <a href="https://linkedin.com/in/lotussavy318">LinkedIn</a> |
+    <a href="https://github.com/lotussavy">GitHub</a>
+  </p>
+  <p class="cv-last-updated">Last updated: April 2026</p>
+</section>

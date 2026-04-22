@@ -1,0 +1,18 @@
+- label: "🏠 Home"
+  url: /
+- label: "📚 Publications"
+  url: /publications
+- label: "🔬 Research"
+  url: /research
+- label: "📸 Gallery"
+  url: /gallery
+- label: "✍️ Blog"
+  url: /blog
+- label: "📄 CV"
+  url: /cv
+- label: "🎤 Talks"
+  url: /talks
+- label: "🧑‍🏫 Teaching"
+  url: /teaching
+- label: "📧 Contact"
+  url: /contact

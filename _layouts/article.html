@@ -1,0 +1,182 @@
+---
+layout: default
+---
+
+<article class="article-post">
+  <header class="article-header">
+    <h1 class="article-title">{{ page.title }}</h1>
+    <div class="article-meta">
+      <span class="article-date">📅 {{ page.date | date: "%B %d, %Y" }}</span>
+      <span class="article-reading-time">⏱️ {{ page.reading_time }} min read</span>
+      {% if page.categories %}
+        <div class="article-categories">
+          {% for category in page.categories %}
+            <span class="category-tag">{{ category }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="article-content">
+    {{ content }}
+  </div>
+
+  <footer class="article-footer">
+    <div class="article-navigation">
+      <a href="{{ site.baseurl }}/blog" class="btn-back">← Back to Blog</a>
+    </div>
+  </footer>
+</article>
+
+<style>
+  .article-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .article-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .article-title {
+    margin: 0 0 15px 0;
+    font-size: 2.5em;
+    color: #333;
+  }
+
+  .article-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.95em;
+    color: #666;
+  }
+
+  .article-date,
+  .article-reading-time {
+    display: block;
+  }
+
+  .article-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .category-tag {
+    display: inline-block;
+    background-color: #f0f0f0;
+    color: #666;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+  }
+
+  .article-content {
+    line-height: 1.8;
+    font-size: 1.05em;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  .article-content h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #222;
+    border-left: 4px solid #0066cc;
+    padding-left: 15px;
+  }
+
+  .article-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #333;
+  }
+
+  .article-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  .article-content ul,
+  .article-content ol {
+    margin: 15px 0;
+    padding-left: 30px;
+  }
+
+  .article-content li {
+    margin-bottom: 8px;
+  }
+
+  .article-content code {
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+  }
+
+  .article-content pre {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 15px 0;
+  }
+
+  .article-content blockquote {
+    border-left: 4px solid #ddd;
+    padding-left: 15px;
+    margin: 20px 0;
+    color: #666;
+    font-style: italic;
+  }
+
+  .article-footer {
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+  }
+
+  .article-navigation {
+    margin-top: 20px;
+  }
+
+  .btn-back {
+    display: inline-block;
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .btn-back:hover {
+    background-color: #0052a3;
+  }
+
+  @media (max-width: 600px) {
+    .article-title {
+      font-size: 1.8em;
+    }
+
+    .article-content {
+      font-size: 1em;
+    }
+
+    .article-content h2 {
+      font-size: 1.4em;
+    }
+
+    .article-meta {
+      font-size: 0.9em;
+    }
+  }
+</style>
