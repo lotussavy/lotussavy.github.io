@@ -41,7 +41,7 @@
 
 /* Footer Navigation Styles */
 #footer-nav {
-  margin-top: 20px;
+  margin: 14px 0 10px;
 }
 
 #footer-nav ul {
@@ -51,7 +51,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 12px;
 }
 
 #footer-nav li {
@@ -62,13 +62,44 @@
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  padding: 5px 10px;
-  border-radius: 3px;
+  font-size: 0.92rem;
+  padding: 4px 8px;
+  border-radius: 4px;
   transition: background-color 0.3s;
 }
 
 #footer-nav a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-identity {
+  margin: 0;
+  text-align: center;
+  color: #f2f7ff;
+  font-weight: 600;
+}
+
+.footer-contact {
+  margin: 6px 0 0;
+  text-align: center;
+  color: #dbe8f7;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-meta {
+  margin: 0;
+  text-align: center;
+  color: #d2e1f2;
+  font-size: 0.86rem;
+}
+
+.footer-sep {
+  opacity: 0.7;
+  margin: 0 6px;
 }
 
 /* Home Page Visual Layout */
@@ -101,6 +132,15 @@
   box-shadow: 0 8px 18px rgba(30, 79, 137, 0.25);
 }
 
+.home-photo {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 8px 18px rgba(30, 79, 137, 0.25);
+}
+
 .home-title {
   margin: 0;
   font-size: 2rem;
@@ -117,6 +157,19 @@
   margin: 10px 0 0;
   color: #1d3555;
   line-height: 1.7;
+}
+
+.home-collab-line {
+  margin: 10px 0 0;
+  color: #2a496e;
+  font-weight: 500;
+}
+
+.home-cta-group {
+  margin: 14px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .home-section {
@@ -155,7 +208,7 @@
 .home-card p {
   margin: 0;
   color: #2e4b70;
-  line-height: 1.55;
+  line-height: 1.65;
 }
 
 .home-focus-list {
@@ -222,8 +275,9 @@
 }
 
 .home-action-link {
-  display: inline-block;
-  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding: 9px 14px;
   border-radius: 8px;
   background: #1b5d9e;
@@ -234,6 +288,39 @@
 
 .home-action-link:hover {
   background: #174f86;
+}
+
+.home-action-link-secondary {
+  background: #ffffff;
+  color: #1b5d9e !important;
+  border: 1px solid #bfd5ee;
+}
+
+.home-action-link-secondary:hover {
+  background: #edf5ff;
+}
+
+.home-trust-section {
+  margin-top: 0;
+}
+
+.home-trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-trust-strip span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #dbe7f5;
+  color: #2a4f76;
+  font-weight: 600;
+  font-size: 0.88rem;
 }
 
 .home-link-grid {
@@ -266,12 +353,45 @@
 }
 
 @media (max-width: 900px) {
+  .home-hero {
+    padding: 20px;
+  }
+
+  .home-identity {
+    align-items: flex-start;
+  }
+
+  .home-title {
+    font-size: 1.8rem;
+  }
+
+  .home-intro {
+    line-height: 1.78;
+  }
+
+  .home-section {
+    margin: 24px 0;
+  }
+
   .home-card-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .home-focus-list {
+    gap: 12px;
+  }
+
+  .home-work-list {
+    gap: 12px;
   }
 
   .home-link-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #footer-nav ul {
+    gap: 8px;
   }
 }
 
@@ -579,6 +699,38 @@
   text-decoration: none;
 }
 
+.talk-affiliation-logo {
+  width: 100%;
+  max-width: 320px;
+  height: 110px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(17, 49, 84, 0.08);
+}
+
+.training-logos {
+  margin: 10px 0 8px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.training-logos img {
+  width: 100%;
+  height: 110px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(17, 49, 84, 0.08);
+}
+
 .talks-table-wrap {
   overflow-x: auto;
 }
@@ -720,6 +872,10 @@
   .blog-grid {
     grid-template-columns: 1fr;
   }
+
+  .training-logos {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Gallery Page Layout */
@@ -740,6 +896,12 @@
   margin-bottom: 0;
   color: #2f4f74;
   line-height: 1.7;
+}
+
+.gallery-count {
+  margin-top: 8px !important;
+  font-weight: 600;
+  color: #1f466f !important;
 }
 
 .gallery-section {
@@ -782,6 +944,17 @@
   padding: 10px 12px;
   color: #355479;
   font-size: 0.94rem;
+  display: grid;
+  gap: 3px;
+}
+
+.gallery-card figcaption strong {
+  color: #1a4169;
+}
+
+.gallery-meta {
+  color: #5a7391;
+  font-size: 0.86rem;
 }
 
 .gallery-note {

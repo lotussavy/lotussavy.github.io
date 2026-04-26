@@ -1,0 +1,99 @@
+- title: "ACDSA Reviewer Certificate"
+  issuer: "ACDSA"
+  year: "2025"
+  image: "ACDSA Reviewer Certificate.jpeg"
+
+- title: "AI Alignment"
+  issuer: "Professional Training"
+  year: "2025"
+  image: "AI Alignment.png"
+
+- title: "AIAA Scitech 2025"
+  issuer: "AIAA"
+  year: "2025"
+  image: "AIAA Scitech 2025.png"
+
+- title: "CITI Program Part 1"
+  issuer: "CITI Program"
+  year: "2024"
+  image: "CITI-1.png"
+
+- title: "CITI Program Part 2"
+  issuer: "CITI Program"
+  year: "2024"
+  image: "CITI-2.png"
+
+- title: "Coursera Deep Learning"
+  issuer: "Coursera"
+  year: "2024"
+  image: "Coursera (Deep Learning).png"
+
+- title: "Coursera Google Program"
+  issuer: "Coursera"
+  year: "2024"
+  image: "Coursera (Google).png"
+
+- title: "Coursera UC San Diego"
+  issuer: "Coursera"
+  year: "2024"
+  image: "Coursera (UC San Diego).png"
+
+- title: "Coursera University of Michigan"
+  issuer: "Coursera"
+  year: "2024"
+  image: "Coursera (University of Michigan).png"
+
+- title: "ICDCC Reviewer Certificate"
+  issuer: "ICDCC"
+  year: "2025"
+  image: "ICDCC Reveiwer Certificate.jpeg"
+
+- title: "ICECET Reviewer Certificate"
+  issuer: "ICECET"
+  year: "2025"
+  image: "ICECET Reviewer Certificate.png"
+
+- title: "IEEEXtreme Certificate"
+  issuer: "IEEE"
+  year: "2024"
+  image: "IEEEXtreme Certificate.jpeg"
+
+- title: "Outstanding Reviewer"
+  issuer: "Conference/Journal"
+  year: "2025"
+  image: "Outstanding Reviewer.jpeg"
+
+- title: "Survey of Earned Doctorates"
+  issuer: "Survey Program"
+  year: "2024"
+  image: "Survey of Earned Doctorates.png"
+
+- title: "Transformative AI"
+  issuer: "Professional Training"
+  year: "2025"
+  image: "Transformative AI.png"
+
+- title: "Udemy Deep Learning"
+  issuer: "Udemy"
+  year: "2024"
+  image: "Udemy (Deep Learning).png"
+
+- title: "Udemy ML and NLP"
+  issuer: "Udemy"
+  year: "2024"
+  image: "Udemy (ML and NLP).jpg"
+
+- title: "Udemy NLTK"
+  issuer: "Udemy"
+  year: "2024"
+  image: "Udemy (NLTK).jpg"
+
+- title: "Udemy Web Scrapping"
+  issuer: "Udemy"
+  year: "2024"
+  image: "Udemy (Web Scrapping).jpg"
+
+- title: "Z Inspection Certificate"
+  issuer: "Z-Inspection"
+  year: "2025"
+  image: "Z Inspection Certificate.jpeg"

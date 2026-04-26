@@ -15,7 +15,7 @@ layout: default
     {% include head-custom.html %}
   </head>
 
-  <body>
+  <body id="top">
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -44,19 +44,28 @@ layout: default
     <!-- FOOTER -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        {% if site.github.is_project_page %}
-          <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>{{ site.footer_text | default: 'Published with <a href="https://pages.github.com">GitHub Pages</a>' }}</p>
-        
-        <!-- NAVIGATION -->
-        <nav id="footer-nav">
+        <p class="footer-identity">
+          {{ site.author.name }} · Ph.D. Researcher · {{ site.author.location }}
+        </p>
+        <p class="footer-contact">
+          Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+        </p>
+
+        <nav id="footer-nav" aria-label="Footer quick links">
           <ul>
-            {% for item in site.data.navigation %}
-              <li><a href="{{ item.url | relative_url }}">{{ item.label }}</a></li>
-            {% endfor %}
+            <li><a href="{{ '/research' | relative_url }}">Research</a></li>
+            <li><a href="{{ '/publications' | relative_url }}">Publication</a></li>
+            <li><a href="{{ '/cv' | relative_url }}">CV</a></li>
+            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+            <li><a href="#top">Back to top</a></li>
           </ul>
         </nav>
+
+        <p class="footer-meta">
+          {{ site.footer_text | default: '© 2026 Kamal Acharya. All rights reserved.' }}
+          <span class="footer-sep">|</span>
+          Last updated: {{ site.time | date: "%B %Y" }}
+        </p>
       </footer>
     </div>
 

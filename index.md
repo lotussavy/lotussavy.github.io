@@ -3,21 +3,45 @@ layout: default
 ---
 
 <section class="home-hero">
+  {% assign profile_image = site.static_files | where_exp: "file", "file.path == '/assets/images/Profile.png'" | first %}
   <div class="home-identity">
-    <div class="home-mark" aria-hidden="true">KA</div>
+    {% if profile_image %}
+      <img
+        class="home-photo"
+        src="{{ '/assets/images/Profile.png' | relative_url }}"
+        alt="Portrait of Kamal Acharya"
+        loading="eager"
+      />
+    {% else %}
+      <div class="home-mark" aria-hidden="true">KA</div>
+    {% endif %}
     <div>
       <h1 class="home-title">Kamal Acharya</h1>
       <p class="home-subtitle">Ph.D. Candidate, Information Systems, UMBC</p>
     </div>
   </div>
   <p class="home-intro">
-    I work at the intersection of <strong>Neurosymbolic AI</strong>, <strong>Advanced Air Mobility</strong>,
-    and <strong>trustworthy decision systems</strong>. My research combines interpretable learning,
-    demand forecasting, and optimization for safety-critical transportation planning.
+    I build <strong>interpretable AI systems</strong> for <strong>Advanced Air Mobility planning</strong>,
+    connecting neurosymbolic modeling, forecasting, and optimization to support safer transportation decisions.
+  </p>
+  <p class="home-collab-line">
+    Open to collaboration in AAM forecasting, trustworthy AI, and neurosymbolic systems.
+  </p>
+  <p class="home-cta-group">
+    <a class="home-action-link" href="{{ '/publications' | relative_url }}">View Publications</a>
+    <a class="home-action-link home-action-link-secondary" href="{{ '/contact' | relative_url }}">Contact Me</a>
   </p>
 </section>
 
-
+<section class="home-section home-trust-section">
+  <h2>Research Networks</h2>
+  <div class="home-trust-strip">
+    <span>UMBC</span>
+    <span>NASA ULI</span>
+    <span>IEEE</span>
+    <span>IJCAI</span>
+  </div>
+</section>
 
 <section class="home-section">
   <h2>Professional Snapshot</h2>
@@ -41,19 +65,19 @@ layout: default
 </section>
 
 <section class="home-section">
-  <h2>Current Focus</h2>
+  <h2>What I Am Working On Now</h2>
   <ul class="home-focus-list">
     <li>
       <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" />
-      <span>Temporal flight demand modeling for regional and urban air mobility.</span>
+      <span>Extending temporal demand forecasting for regional and urban AAM use cases.</span>
     </li>
     <li>
       <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" />
-      <span>Symbolic and neural integration for interpretable, controllable prediction systems.</span>
+      <span>Designing interpretable neurosymbolic pipelines that preserve controllability and domain logic.</span>
     </li>
     <li>
       <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" />
-      <span>Neural-accelerated optimization for infrastructure and disaster-planning scenarios.</span>
+      <span>Applying neural-accelerated optimization to resilience and disaster-planning scenarios.</span>
     </li>
   </ul>
 </section>
@@ -63,17 +87,19 @@ layout: default
   <div class="home-work-list">
     <article class="home-work-item">
       <h3>Integrating Neurosymbolic AI in Advanced Air Mobility</h3>
-      <p><span class="home-badge">IJCAI 2025</span> Comprehensive survey of neurosymbolic approaches in AAM systems.</p>
+      <p><span class="home-badge">IJCAI 2025</span> Survey paper mapping practical integration paths for neurosymbolic AAM systems.</p>
     </article>
     <article class="home-work-item">
       <h3>Demand Modeling for Advanced Air Mobility</h3>
-      <p><span class="home-badge">IEEE TITS</span> Challenges, opportunities, and future directions for AAM demand forecasting.</p>
+      <p><span class="home-badge">IEEE TITS</span> Journal publication analyzing open challenges and modeling opportunities for AAM demand forecasting.</p>
     </article>
     <article class="home-work-item">
       <h3>Symbolic Knowledge Distillation of Large Language Models</h3>
-      <p><span class="home-badge">IEEE TAI</span> Methods to extract symbolic representations while preserving model utility.</p>
+      <p><span class="home-badge">IEEE TAI</span> Framework for extracting symbolic structures from LLMs while retaining prediction utility.</p>
     </article>
   </div>
-  <p><a class="home-action-link" href="{{ '/publications' | relative_url }}">View Full Publication List</a></p>
+  <p class="home-cta-group">
+    <a class="home-action-link" href="{{ '/publications' | relative_url }}">View Full Publication List</a>
+    <a class="home-action-link home-action-link-secondary" href="{{ '/research' | relative_url }}">Explore Research Themes</a>
+  </p>
 </section>
-
