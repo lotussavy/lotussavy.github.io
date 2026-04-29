@@ -1,0 +1,44 @@
+{% if page.robots %}
+<meta name="robots" content="{{ page.robots }}">
+{% endif %}
+{% assign social_image = page.image | default: site.image %}
+{% if social_image %}
+<meta property="og:image" content="{{ social_image | absolute_url }}">
+<meta name="twitter:image" content="{{ social_image | absolute_url }}">
+{% endif %}
+<meta name="keywords" content="{{ site.keywords }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name }}",
+  "url": "{{ site.author.url }}",
+  "image": "{{ site.image | absolute_url }}",
+  "email": "mailto:{{ site.author.email }}",
+  "jobTitle": "{{ site.institution.role }}",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "{{ site.institution.name }}",
+    "department": "{{ site.institution.department }}"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "{{ site.institution.name }}"
+  },
+  "knowsAbout": [
+    "Advanced Air Mobility",
+    "Neurosymbolic AI",
+    "Machine Learning",
+    "Time Series Forecasting",
+    "Transportation Planning",
+    "Optimization"
+  ],
+  "sameAs": [
+    "https://orcid.org/{{ site.author.orcid }}",
+    "https://github.com/{{ site.author.github }}",
+    "https://linkedin.com/in/lotussavy318",
+    "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en",
+    "https://www.researchgate.net/profile/{{ site.author.researchgate }}"
+  ]
+}
+</script>

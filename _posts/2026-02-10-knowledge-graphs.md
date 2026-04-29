@@ -4,6 +4,8 @@ title: "Getting Started with Knowledge Graphs for AI"
 date: 2026-02-10
 categories: [AI, Knowledge Representation]
 reading_time: 10
+sitemap: false
+robots: noindex,follow
 ---
 
 ## Introduction

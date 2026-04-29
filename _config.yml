@@ -4,6 +4,7 @@ theme: jekyll-theme-slate
 description: "Ph.D. Candidate | Advanced Air Mobility | AI/ML | Neurosymbolic Systems"
 url: https://lotussavy.github.io
 baseurl: ""
+image: /assets/images/Profile.png
 
 # Author information
 author:
@@ -41,3 +42,7 @@ show_social_links: true
 # SEO settings
 keywords: "Advanced Air Mobility, Machine Learning, AI, Neurosymbolic AI, Research, UMBC"
 lang: en-US
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

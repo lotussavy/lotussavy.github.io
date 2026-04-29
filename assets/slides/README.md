@@ -1,3 +1,7 @@
+---
+sitemap: false
+---
+
 # Slide Upload Folder
 
 Upload your talk slides (PDF files) to this folder.

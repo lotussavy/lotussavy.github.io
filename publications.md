@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Publications
+title: "Kamal Acharya Publications"
+description: "Peer-reviewed publications by Kamal Acharya in Advanced Air Mobility, neurosymbolic AI, machine learning, optimization, intelligent transportation, and cybersecurity."
+permalink: /publications/
 ---
 
 <section class="pub-hero">

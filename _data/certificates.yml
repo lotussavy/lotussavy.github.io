@@ -58,10 +58,40 @@
   year: "2024"
   image: "IEEEXtreme Certificate.jpeg"
 
+- title: "IEEE Baltimore"
+  issuer: "IEEE"
+  year: "2025"
+  image: "IEEE Baltimore.jpg"
+
+- title: "IEEE CAI"
+  issuer: "IEEE"
+  year: "2025"
+  image: "IEEE CAI.jpg"
+
+- title: "IEEE Senior Membership Elevation"
+  issuer: "IEEE"
+  year: "2025"
+  image: "IEEE Senior Membership Elevation.png"
+
+- title: "Indoor Skydiving"
+  issuer: "Professional Training"
+  year: "2025"
+  image: "Indoor Skydiving.jpg"
+
 - title: "Outstanding Reviewer"
   issuer: "Conference/Journal"
   year: "2025"
   image: "Outstanding Reviewer.jpeg"
+
+- title: "Ph.D. Candidacy"
+  issuer: "UMBC"
+  year: "2025"
+  image: "Phd Candidacy.jpg"
+
+- title: "Phi Kappa Phi"
+  issuer: "The Honor Society of Phi Kappa Phi"
+  year: "2025"
+  image: "Phi Kappa Phi.jpg"
 
 - title: "Survey of Earned Doctorates"
   issuer: "Survey Program"
@@ -87,6 +117,11 @@
   issuer: "Udemy"
   year: "2024"
   image: "Udemy (NLTK).jpg"
+
+- title: "UMBC COEIT"
+  issuer: "UMBC College of Engineering and Information Technology"
+  year: "2025"
+  image: "UMBC COEIT.jpg"
 
 - title: "Udemy Web Scrapping"
   issuer: "Udemy"

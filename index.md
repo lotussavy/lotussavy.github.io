@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "Kamal Acharya"
+description: "Kamal Acharya is a Ph.D. candidate at UMBC researching interpretable AI, Advanced Air Mobility demand modeling, neurosymbolic systems, forecasting, and optimization."
+permalink: /
 ---
 
 <section class="home-hero">

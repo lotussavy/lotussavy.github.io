@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Curriculum Vitae
+title: "Kamal Acharya Curriculum Vitae"
+description: "Curriculum vitae for Kamal Acharya, Ph.D. candidate in Information Systems at UMBC, including education, research experience, publications, teaching, and skills."
+permalink: /cv/
 ---
 
 <section class="cv-hero">

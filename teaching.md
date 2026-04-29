@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Teaching
+title: "Teaching in AI, Machine Learning, Programming, and Systems"
+description: "Teaching profile for Kamal Acharya, covering programming, artificial intelligence, machine learning, data science, computer systems, and research mentoring."
+permalink: /teaching/
 ---
 
 <section class="teaching-hero">

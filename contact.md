@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Contact
+title: "Contact Kamal Acharya"
+description: "Contact Kamal Acharya for research collaboration, invited talks, teaching opportunities, and AI applications in transportation and safety-critical systems."
+permalink: /contact/
 ---
 
 <section class="contact-hero">

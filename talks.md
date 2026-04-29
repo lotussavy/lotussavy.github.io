@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Talks & Presentations
+title: "Talks and Presentations on AI and Advanced Air Mobility"
+description: "Selected talks, posters, and invited presentations by Kamal Acharya on neurosymbolic AI, Advanced Air Mobility, optimization, and trustworthy AI systems."
+permalink: /talks/
 ---
 
 <section class="talks-hero">
@@ -41,7 +43,7 @@ title: Talks & Presentations
       and machine learning can be combined for interpretable and reliable decision support.
     </p>
     <p class="talk-links">
-        <a href="{{ '/assets/slides/IJCAI_2025_Presentation.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+        <a href="{{ '/assets/slides/IJCAI_2025_Slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.24963/ijcai.2025/1151" target="_blank" rel="noopener noreferrer">Publication</a>
     </p>
   </article>

@@ -1,3 +1,7 @@
+---
+sitemap: false
+---
+
 # Gallery Assets
 
 Use these folders to add images shown on `gallery.md`:

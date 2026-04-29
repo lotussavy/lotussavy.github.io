@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Blog & Articles
+robots: noindex,follow
+sitemap: false
 ---
 
 <section class="blog-hero">

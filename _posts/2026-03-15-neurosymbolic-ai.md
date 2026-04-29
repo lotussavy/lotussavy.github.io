@@ -4,6 +4,8 @@ title: "Understanding Neurosymbolic AI: Bridging Neural Networks and Logic"
 date: 2026-03-15
 categories: [Machine Learning, AI Fundamentals]
 reading_time: 12
+sitemap: false
+robots: noindex,follow
 ---
 
 ## Introduction
