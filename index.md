@@ -7,13 +7,15 @@ last_modified_at: 2026-04-30
 ---
 
 <section class="home-hero">
-  {% assign profile_image = site.static_files | where_exp: "file", "file.path == '/assets/images/Profile.png'" | first %}
+  {% assign profile_image = site.static_files | where_exp: "file", "file.path == '/assets/images/profile-300.webp'" | first %}
   <div class="home-identity">
     {% if profile_image %}
       <img
         class="home-photo"
-        src="{{ '/assets/images/Profile.png' | relative_url }}"
+        src="{{ '/assets/images/profile-300.webp' | relative_url }}"
         alt="Portrait of Kamal Acharya"
+        width="76"
+        height="76"
         loading="eager"
       />
     {% else %}

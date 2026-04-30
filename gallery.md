@@ -19,17 +19,20 @@ permalink: /gallery/
   {% if site.data.certificates and site.data.certificates.size > 0 %}
   <div class="gallery-grid">
     {% for cert in site.data.certificates %}
-    {% assign cert_id = 'certificate-' | append: forloop.index %}
     {% assign cert_image = '/assets/gallery/certificates/' | append: cert.image %}
+    {% assign cert_thumb_name = cert.image | split: '.' | first | append: '.webp' %}
+    {% assign cert_thumb = '/assets/gallery/certificates/thumbs/' | append: cert_thumb_name %}
     <figure class="gallery-card">
       <a
         class="gallery-open"
-        href="#{{ cert_id }}"
+        href="{{ cert_image | relative_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
         data-src="{{ cert_image | relative_url }}"
         data-alt="{{ cert.title }}"
-        aria-label="Open certificate: {{ cert.title }}"
+        aria-label="Open full-size certificate: {{ cert.title }}"
       >
-        <img src="{{ cert_image | relative_url }}" alt="{{ cert.title }}" loading="lazy" />
+        <img src="{{ cert_thumb | relative_url }}" alt="{{ cert.title }}" loading="lazy" />
       </a>
       <figcaption>
         <strong>{{ cert.title }}</strong>
@@ -40,10 +43,6 @@ permalink: /gallery/
         {% endif %}
       </figcaption>
     </figure>
-    <div id="{{ cert_id }}" class="gallery-lightbox" aria-hidden="true">
-      <a href="#" class="gallery-lightbox-close" aria-label="Close certificate viewer">×</a>
-      <img src="{{ cert_image | relative_url }}" alt="{{ cert.title }}" />
-    </div>
     {% endfor %}
   </div>
   {% else %}
