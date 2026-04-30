@@ -1,18 +1,18 @@
 - label: "🏠 Home"
   url: /
 - label: "🔬 Research"
-  url: /research
+  url: /research/
 - label: "🧑‍🏫 Teaching"
-  url: /teaching
+  url: /teaching/
 - label: "🎤 Talks"
-  url: /talks
+  url: /talks/
 - label: "📚 Publication"
-  url: /publications
+  url: /publications/
 - label: "📄 CV"
-  url: /cv
+  url: /cv/
 - label: "🏅 Certificates"
-  url: /gallery
+  url: /gallery/
 - label: "✍️ Blog"
-  url: /blog
+  url: /blog/
 - label: "📧 Contact"
-  url: /contact
+  url: /contact/

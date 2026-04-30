@@ -647,6 +647,61 @@
   background: #eef6ff;
 }
 
+.pub-summary,
+.pub-themes {
+  margin: 26px 0;
+}
+
+.pub-summary {
+  background: #ffffff;
+  border: 1px solid #dbe7f5;
+  border-left: 4px solid #2c6cb0;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.pub-summary h2,
+.pub-themes h2 {
+  margin-top: 0;
+  color: #16385d;
+}
+
+.pub-summary p {
+  color: #355479;
+  line-height: 1.7;
+}
+
+.pub-theme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pub-theme-card {
+  background: #ffffff;
+  border: 1px solid #dbe7f5;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.pub-theme-card h3 {
+  margin: 0 0 8px;
+  color: #1c4169;
+  font-size: 1.02rem;
+}
+
+.pub-theme-card p {
+  margin: 0;
+  color: #355479;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .pub-theme-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Talks Page Layout */
 .talks-hero {
   background: linear-gradient(135deg, #f3f9ff 0%, #f8fcff 62%, #f4faf5 100%);

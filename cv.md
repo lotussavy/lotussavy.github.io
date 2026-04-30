@@ -17,9 +17,9 @@ last_modified_at: 2026-04-30
   </p>
   <p class="cv-hero-links">
     <a href="{{ '/CV.pdf' | relative_url }}">Download Full CV (PDF)</a>
-    <a href="{{ '/publications' | relative_url }}">Publications</a>
-    <a href="{{ '/research' | relative_url }}">Research</a>
-    <a href="{{ '/contact' | relative_url }}">Contact</a>
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+    <a href="{{ '/research/' | relative_url }}">Research</a>
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>
   </p>
 </section>
 

@@ -27,15 +27,21 @@ last_modified_at: 2026-04-30
     </div>
   </div>
   <p class="home-intro">
-    I build <strong>interpretable AI systems</strong> for <strong>Advanced Air Mobility planning</strong>,
-    connecting neurosymbolic modeling, forecasting, and optimization to support safer transportation decisions.
+    Kamal Acharya is a <strong>Ph.D. candidate in Information Systems at the University of Maryland,
+    Baltimore County (UMBC)</strong>. His research focuses on <strong>Advanced Air Mobility demand modeling</strong>,
+    <strong>Neurosymbolic AI</strong>, trustworthy machine learning, forecasting, and optimization for
+    transportation systems.
+  </p>
+  <p class="home-intro">
+    I build <strong>interpretable AI systems</strong> for safer transportation planning, connecting
+    neurosymbolic modeling and data-driven forecasting with operational decision support.
   </p>
   <p class="home-collab-line">
     Open to collaboration in AAM forecasting, trustworthy AI, and neurosymbolic systems.
   </p>
   <p class="home-cta-group">
-    <a class="home-action-link" href="{{ '/publications' | relative_url }}">View Publications</a>
-    <a class="home-action-link home-action-link-secondary" href="{{ '/contact' | relative_url }}">Contact Me</a>
+    <a class="home-action-link" href="{{ '/publications/' | relative_url }}">View Publications</a>
+    <a class="home-action-link home-action-link-secondary" href="{{ '/contact/' | relative_url }}">Contact Me</a>
   </p>
   <p class="home-profile-links" aria-label="Academic and professional profiles">
     <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
@@ -111,7 +117,7 @@ last_modified_at: 2026-04-30
     </article>
   </div>
   <p class="home-cta-group">
-    <a class="home-action-link" href="{{ '/publications' | relative_url }}">View Full Publication List</a>
-    <a class="home-action-link home-action-link-secondary" href="{{ '/research' | relative_url }}">Explore Research Themes</a>
+    <a class="home-action-link" href="{{ '/publications/' | relative_url }}">View Full Publication List</a>
+    <a class="home-action-link home-action-link-secondary" href="{{ '/research/' | relative_url }}">Explore Research Themes</a>
   </p>
 </section>

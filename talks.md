@@ -267,6 +267,6 @@ last_modified_at: 2026-04-30
   <h2>Invite Me To Speak</h2>
   <p>
     I am open to invited talks, research seminars, workshops, and interdisciplinary panels.
-    For speaking requests, please use the <a href="{{ '/contact' | relative_url }}">Contact page</a>.
+    For speaking requests, please use the <a href="{{ '/contact/' | relative_url }}">Contact page</a>.
   </p>
 </section>

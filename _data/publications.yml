@@ -1,0 +1,317 @@
+- type: journal
+  year: 2026
+  authors:
+    - "Vasiloff K."
+    - "Acharya K."
+    - "Wang Z."
+    - "Song H."
+    - "Sun L."
+  title: "Demand Forecast and Energy-Aware Portal Siting for Regional Air Mobility"
+  venue: "Journal of Air Transport Management"
+  status: "under major revision"
+  schema_part_of: "Periodical"
+  tags:
+    - "Advanced Air Mobility"
+    - "Demand Forecasting"
+    - "Infrastructure Planning"
+
+- type: journal
+  year: 2026
+  authors:
+    - "Acharya K."
+    - "Raza W."
+    - "Vasiloff K."
+    - "Wang Z."
+    - "Sun L."
+    - "Song H. H."
+  title: "Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions"
+  venue: "IEEE Transactions on Intelligent Transportation Systems"
+  doi: "10.1109/TITS.2026.3671002"
+  url: "https://doi.org/10.1109/TITS.2026.3671002"
+  schema_part_of: "Periodical"
+  tags:
+    - "Advanced Air Mobility"
+    - "Demand Modeling"
+    - "Intelligent Transportation Systems"
+
+- type: journal
+  year: 2025
+  authors:
+    - "Acharya K."
+    - "Song H."
+  title: "A Comprehensive Review of Neuro-symbolic AI for Robustness, Uncertainty Quantification, and Intervenability"
+  venue: "Arabian Journal for Science and Engineering"
+  doi: "10.1007/s13369-025-10887-3"
+  url: "https://doi.org/10.1007/s13369-025-10887-3"
+  schema_part_of: "Periodical"
+  tags:
+    - "Neurosymbolic AI"
+    - "Trustworthy AI"
+    - "Robustness"
+
+- type: journal
+  year: 2025
+  authors:
+    - "De Macedo A. R."
+    - "Jagatheesaperumal S. K."
+    - "Da Costa K. A."
+    - "Acharya K."
+    - "Song H."
+    - "Guizani M."
+    - "De Albuquerque V. H. C."
+  title: "Quantum AI-Enhanced IoT-Fog Communication: A Survey From Cybersecurity and Data Privacy Perspective"
+  venue: "IEEE Communications Surveys & Tutorials"
+  doi: "10.1109/COMST.2025.3622378"
+  url: "https://doi.org/10.1109/COMST.2025.3622378"
+  schema_part_of: "Periodical"
+  tags:
+    - "Quantum AI"
+    - "IoT"
+    - "Cybersecurity"
+
+- type: journal
+  year: 2024
+  authors:
+    - "Acharya K."
+    - "Velasquez A."
+    - "Song H. H."
+  title: "A Survey on Symbolic Knowledge Distillation of Large Language Models"
+  venue: "IEEE Transactions on Artificial Intelligence"
+  doi: "10.1109/TAI.2024.3428519"
+  url: "https://doi.org/10.1109/TAI.2024.3428519"
+  schema_part_of: "Periodical"
+  tags:
+    - "Symbolic Knowledge Distillation"
+    - "Large Language Models"
+    - "Neurosymbolic AI"
+
+- type: journal
+  year: 2024
+  authors:
+    - "Acharya K."
+    - "Raza W."
+    - "Dourado C."
+    - "Velasquez A."
+    - "Song H. H."
+  title: "Neurosymbolic Reinforcement Learning and Planning: A Survey"
+  venue: "IEEE Transactions on Artificial Intelligence"
+  doi: "10.1109/TAI.2023.3311428"
+  url: "https://doi.org/10.1109/TAI.2023.3311428"
+  schema_part_of: "Periodical"
+  tags:
+    - "Neurosymbolic AI"
+    - "Reinforcement Learning"
+    - "Planning"
+
+- type: journal
+  year: 2023
+  authors:
+    - "Raza W."
+    - "Ma X."
+    - "Song H."
+    - "Ali A."
+    - "Zubairi H."
+    - "Acharya K."
+  title: "Long Short-Term Memory Neural Network Assisted Peak to Average Power Ratio Reduction for Underwater Acoustic Orthogonal Frequency Division Multiplexing Communication"
+  venue: "KSII Transactions on Internet & Information Systems"
+  doi: "10.3837/tiis.2023.01.013"
+  url: "https://doi.org/10.3837/tiis.2023.01.013"
+  schema_part_of: "Periodical"
+  tags:
+    - "Machine Learning"
+    - "LSTM"
+    - "Underwater Acoustic Communication"
+
+- type: conference
+  year: 2026
+  authors:
+    - "Acharya K."
+    - "Vasiloff K."
+    - "Wang Z."
+    - "Song H."
+    - "Sun L."
+  title: "Urban Air Mobility Flight Demand Modeling for Airports in New York City"
+  venue: "AIAA SCITECH 2026 Forum"
+  doi: "10.2514/6.2026-1475"
+  url: "https://doi.org/10.2514/6.2026-1475"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Urban Air Mobility"
+    - "Airport Demand Modeling"
+    - "Advanced Air Mobility"
+
+- type: conference
+  year: 2025
+  authors:
+    - "Acharya K."
+    - "Sharif I."
+    - "Lad M."
+    - "Sun L."
+    - "Song H."
+  title: "Integrating neurosymbolic AI in advanced air mobility: a comprehensive survey"
+  venue: "IJCAI 2025"
+  doi: "10.24963/ijcai.2025/1151"
+  url: "https://doi.org/10.24963/ijcai.2025/1151"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Neurosymbolic AI"
+    - "Advanced Air Mobility"
+    - "Survey"
+
+- type: conference
+  year: 2025
+  authors:
+    - "Acharya K."
+    - "Lad M."
+    - "Sun L."
+    - "Song H."
+  title: "Neurosymbolic Approach for Travel Demand Prediction: Integrating Decision Tree Rules into Neural Networks"
+  venue: "IWCMC 2025"
+  doi: "10.1109/IWCMC65282.2025.11059465"
+  url: "https://doi.org/10.1109/IWCMC65282.2025.11059465"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Travel Demand Prediction"
+    - "Neurosymbolic AI"
+    - "Decision Trees"
+
+- type: conference
+  year: 2025
+  authors:
+    - "Acharya K."
+    - "Lad M."
+    - "Sun L."
+    - "Song H."
+  title: "A Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction"
+  venue: "IEEE CAI 2025"
+  doi: "10.1109/CAI64502.2025.00145"
+  url: "https://doi.org/10.1109/CAI64502.2025.00145"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Gravity Models"
+    - "Trip Demand Prediction"
+    - "Data-Driven Modeling"
+
+- type: conference
+  year: 2025
+  authors:
+    - "Acharya K."
+    - "Lad M."
+    - "Song H."
+    - "Sun L."
+  title: "Regional Air Mobility Flight Demand Modeling in Tennessee State"
+  venue: "AIAA SCITECH 2025 Forum"
+  doi: "10.2514/6.2025-2783"
+  url: "https://doi.org/10.2514/6.2025-2783"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Regional Air Mobility"
+    - "Demand Modeling"
+    - "Advanced Air Mobility"
+
+- type: conference
+  year: 2025
+  authors:
+    - "Hakim S. B."
+    - "Adil M."
+    - "Acharya K."
+    - "Song H. H."
+  title: "Decoding Android Malware with a Fraction of Features: An Attention-Enhanced MLP-SVM Approach"
+  venue: "NSS 2024 (LNCS 15564, 2025)"
+  doi: "10.1007/978-981-96-3531-3_10"
+  url: "https://doi.org/10.1007/978-981-96-3531-3_10"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Android Malware"
+    - "Cybersecurity"
+    - "Machine Learning"
+
+- type: conference
+  year: 2024
+  authors:
+    - "Lad M."
+    - "Acharya K."
+    - "Sun L."
+    - "Song H."
+  title: "Enhancing Forecasting for Advanced Air Mobility"
+  venue: "IEEE BigData 2024"
+  doi: "10.1109/BigData62323.2024.10825414"
+  url: "https://doi.org/10.1109/BigData62323.2024.10825414"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Advanced Air Mobility"
+    - "Forecasting"
+    - "Big Data"
+
+- type: conference
+  year: 2024
+  authors:
+    - "Acharya K."
+    - "Lad M."
+    - "Sun L."
+    - "Song H."
+  title: "Demand Modeling for Advanced Air Mobility"
+  venue: "IEEE BigData 2024"
+  doi: "10.1109/BigData62323.2024.10825121"
+  url: "https://doi.org/10.1109/BigData62323.2024.10825121"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Advanced Air Mobility"
+    - "Demand Modeling"
+    - "Big Data"
+
+- type: conference
+  year: 2024
+  authors:
+    - "Acharya K."
+    - "Velasquez A."
+    - "Liu Y."
+    - "Liu D."
+    - "Sun L."
+    - "Song H. H."
+  title: "Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm"
+  venue: "IEEE ITSC 2024"
+  doi: "10.1109/ITSC58415.2024.10920105"
+  url: "https://doi.org/10.1109/ITSC58415.2024.10920105"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Pre-Disaster Planning"
+    - "Genetic Algorithm"
+    - "Air Mobility"
+
+- type: conference
+  year: 2023
+  authors:
+    - "Zhu L."
+    - "Lan Q."
+    - "Velasquez A."
+    - "Song H."
+    - "Kamal A."
+    - "Tian Q."
+    - "Niu S."
+  title: "SKGHOI: Spatial-Semantic Knowledge Graph for Human-Object Interaction Detection"
+  venue: "IEEE ICDMW 2023"
+  doi: "10.1109/ICDMW60847.2023.00155"
+  url: "https://doi.org/10.1109/ICDMW60847.2023.00155"
+  schema_part_of: "PublicationIssue"
+  tags:
+    - "Knowledge Graph"
+    - "Human-Object Interaction"
+    - "Computer Vision"
+
+- type: book_chapter
+  year: 2025
+  authors:
+    - "Hakim S. B."
+    - "Adil M."
+    - "Acharya K."
+    - "Song H. H."
+  title: "AI for Android Malware Detection and Classification"
+  venue: "AI for Cybersecurity"
+  doi: "10.1002/9781394293773.ch15"
+  url: "https://doi.org/10.1002/9781394293773.ch15"
+  schema_part_of: "Book"
+  tags:
+    - "Cybersecurity"
+    - "Android Malware"
+    - "Artificial Intelligence"

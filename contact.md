@@ -52,12 +52,12 @@ permalink: /contact/
 <section class="contact-section">
   <h2>Quick Navigation</h2>
   <p>
-    <a href="{{ '/research' | relative_url }}">Research</a> |
-    <a href="{{ '/publications' | relative_url }}">Publications</a> |
+    <a href="{{ '/research/' | relative_url }}">Research</a> |
+    <a href="{{ '/publications/' | relative_url }}">Publications</a> |
     <a href="{{ '/blog' | relative_url }}">Blog</a> |
-    <a href="{{ '/teaching' | relative_url }}">Teaching</a> |
-    <a href="{{ '/talks' | relative_url }}">Talks</a> |
-    <a href="{{ '/cv' | relative_url }}">CV</a>
+    <a href="{{ '/teaching/' | relative_url }}">Teaching</a> |
+    <a href="{{ '/talks/' | relative_url }}">Talks</a> |
+    <a href="{{ '/cv/' | relative_url }}">CV</a>
   </p>
   <p class="contact-note">Last updated: April 2026</p>
 </section>

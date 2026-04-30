@@ -71,6 +71,6 @@ permalink: /teaching/
   <h2>Teaching Contact</h2>
   <p>
     For teaching invitations, guest lectures, workshops, or student mentoring collaboration:
-    <a href="{{ '/contact' | relative_url }}">Contact</a>.
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>.
   </p>
 </section>
