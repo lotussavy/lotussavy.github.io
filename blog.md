@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Blog & Articles
+permalink: /blog/
 robots: noindex,follow
 sitemap: false
 ---
@@ -55,7 +56,7 @@ sitemap: false
   <h2>Stay Connected</h2>
   <p>
     For article updates, collaboration, or feedback:
-    <a href="{{ '/contact' | relative_url }}">Contact</a>
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>
     |
     <a href="mailto:lotussavy@gmail.com">Email</a>
     |

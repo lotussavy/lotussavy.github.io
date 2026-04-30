@@ -69,13 +69,24 @@ last_modified_at: 2026-04-30
 {% assign section_title = section_parts[1] %}
 {% assign section_publications = site.data.publications | where: "type", publication_type %}
 {% assign publications_by_year = section_publications | group_by: "year" | sort: "name" | reverse %}
-
-## {{ section_title }}
-
+<section class="pub-list-section">
+  <h2>{{ section_title }}</h2>
 {% for year_group in publications_by_year %}
-### {{ year_group.name }}
+  <section class="pub-year-group">
+    <h3>{{ year_group.name }}</h3>
+    <ol class="pub-list">
 {% for publication in year_group.items %}
-- {{ publication.authors | join: ", " }} *{{ publication.title }}*. {% if publication.type == "book_chapter" %}In {% endif %}**{{ publication.venue }}**{% if publication.status %} ({{ publication.status }}){% endif %}.{% if publication.doi and publication.url %} [doi:{{ publication.doi }}]({{ publication.url }}){% endif %}
+      <li class="pub-entry">
+        <span class="pub-authors">{{ publication.authors | join: ", " }}</span>
+        <span class="pub-title">{{ publication.title }}</span>.
+        <span class="pub-venue">{% if publication.type == "book_chapter" %}In {% endif %}{{ publication.venue }}</span>{% if publication.status %} <span class="pub-status">({{ publication.status }})</span>{% endif %}.
+        {% if publication.doi and publication.url %}
+          <a class="pub-doi" href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">doi:{{ publication.doi }}</a>
+        {% endif %}
+      </li>
 {% endfor %}
+    </ol>
+  </section>
 {% endfor %}
+</section>
 {% endfor %}

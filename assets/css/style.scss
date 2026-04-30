@@ -702,6 +702,57 @@
   }
 }
 
+.pub-list-section {
+  margin: 30px 0;
+}
+
+.pub-list-section h2 {
+  color: #16385d;
+  border-bottom: 1px solid #dbe7f5;
+  padding-bottom: 8px;
+}
+
+.pub-year-group {
+  margin: 18px 0 24px;
+}
+
+.pub-year-group h3 {
+  color: #1c4169;
+  margin: 0 0 10px;
+}
+
+.pub-list {
+  margin: 0;
+  padding-left: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.pub-entry {
+  color: #2f4f74;
+  line-height: 1.65;
+}
+
+.pub-title {
+  color: #17395d;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.pub-venue {
+  color: #243f61;
+  font-weight: 700;
+}
+
+.pub-status {
+  color: #5a7391;
+}
+
+.pub-doi {
+  white-space: nowrap;
+  font-weight: 600;
+}
+
 /* Talks Page Layout */
 .talks-hero {
   background: linear-gradient(135deg, #f3f9ff 0%, #f8fcff 62%, #f4faf5 100%);
