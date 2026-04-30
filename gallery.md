@@ -32,7 +32,7 @@ permalink: /gallery/
         data-alt="{{ cert.title }}"
         aria-label="Open full-size certificate: {{ cert.title }}"
       >
-        <img src="{{ cert_thumb | relative_url }}" alt="{{ cert.title }}" loading="lazy" />
+        <img src="{{ cert_thumb | relative_url }}" alt="{{ cert.title }}" width="700" height="525" loading="lazy" />
       </a>
       <figcaption>
         <strong>{{ cert.title }}</strong>

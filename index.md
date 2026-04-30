@@ -65,17 +65,17 @@ last_modified_at: 2026-04-30
   <h2>Professional Snapshot</h2>
   <div class="home-card-grid">
     <article class="home-card">
-      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" />
+      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" />
       <h3>Current Role</h3>
       <p>Graduate Research Assistant at UMBC, contributing to NASA ULI research initiatives.</p>
     </article>
     <article class="home-card">
-      <img src="{{ '/assets/icons/book.svg' | relative_url }}" alt="" />
+      <img src="{{ '/assets/icons/book.svg' | relative_url }}" alt="" width="24" height="24" />
       <h3>Research Output</h3>
       <p>15+ publications across IEEE journals and major AI and transportation conferences.</p>
     </article>
     <article class="home-card">
-      <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" />
+      <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" width="24" height="24" />
       <h3>Core Areas</h3>
       <p>Neurosymbolic AI, AAM demand modeling, optimization, and trustworthy AI systems.</p>
     </article>
@@ -86,15 +86,15 @@ last_modified_at: 2026-04-30
   <h2>What I Am Working On Now</h2>
   <ul class="home-focus-list">
     <li>
-      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" />
+      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="20" height="20" />
       <span>Extending temporal demand forecasting for regional and urban AAM use cases.</span>
     </li>
     <li>
-      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" />
+      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="20" height="20" />
       <span>Designing interpretable neurosymbolic pipelines that preserve controllability and domain logic.</span>
     </li>
     <li>
-      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" />
+      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="20" height="20" />
       <span>Applying neural-accelerated optimization to resilience and disaster-planning scenarios.</span>
     </li>
   </ul>

@@ -21,7 +21,7 @@ last_modified_at: 2026-04-30
     <h3>Urban Air Mobility Flight Demand Modeling for Airports in New York City</h3>
     <p><strong>AIAA SCITECH 2026 Forum</strong> | Orlando, FL, USA | Conference Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented flight demand modeling research for airport-connected Urban Air Mobility in New York City,
@@ -40,7 +40,7 @@ last_modified_at: 2026-04-30
     <h3>Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</h3>
     <p><strong>IJCAI 2025</strong> | Montreal, Canada | Conference Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented a comprehensive survey of neurosymbolic AI methods for Advanced Air Mobility,
@@ -59,7 +59,7 @@ last_modified_at: 2026-04-30
     <h3>Neurosymbolic Approach for Travel Demand Prediction: Integrating Decision Tree Rules into Neural Networks</h3>
     <p><strong>IWCMC 2025</strong> | Abu Dhabi, United Arab Emirates | Conference Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IWCMC.png' | relative_url }}" alt="IWCMC logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IWCMC.png' | relative_url }}" alt="IWCMC logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented a neurosymbolic travel demand prediction method that integrates decision tree rules into
@@ -78,7 +78,7 @@ last_modified_at: 2026-04-30
     <h3>A Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction</h3>
     <p><strong>IEEE CAI 2025</strong> | Santa Clara, CA, USA | Conference Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-CAI.png' | relative_url }}" alt="IEEE CAI logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-CAI.png' | relative_url }}" alt="IEEE CAI logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented a data-driven enhancement of gravity models for trip demand prediction,
@@ -97,7 +97,7 @@ last_modified_at: 2026-04-30
     <h3>Regional Air Mobility Flight Demand Modeling in Tennessee State</h3>
     <p><strong>AIAA SCITECH 2025 Forum</strong> | Orlando, FL, USA | Conference Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented regional air mobility demand modeling research for Tennessee, highlighting how demand
@@ -116,7 +116,7 @@ last_modified_at: 2026-04-30
     <h3>Demand Modeling for Advanced Air Mobility</h3>
     <p><strong>IEEE BigData 2024</strong> | Washington, DC, USA | Conference Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-BigData.jpeg' | relative_url }}" alt="IEEE BigData logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-BigData.jpeg' | relative_url }}" alt="IEEE BigData logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented demand modeling research for Advanced Air Mobility, addressing opportunities and
@@ -139,7 +139,7 @@ last_modified_at: 2026-04-30
     <h3>Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm</h3>
     <p><strong>27th IEEE International Conference on Intelligent Transportation Systems (ITSC 2024)</strong> | Edmonton, Canada | Poster Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/ITSC-logo.png' | relative_url }}" alt="27th IEEE ITSC logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/ITSC-logo.png' | relative_url }}" alt="27th IEEE ITSC logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented a poster on improving pre-disaster air mobility planning
@@ -158,7 +158,7 @@ last_modified_at: 2026-04-30
     <h3>Demand Modeling for Advanced Air Mobility</h3>
     <p><strong>COEIT Research Day 2025</strong> | April 11, 2025 | Poster Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Presented in the afternoon poster session at the second COEIT Research Day.
@@ -183,7 +183,7 @@ last_modified_at: 2026-04-30
     <h3>Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</h3>
     <p><strong>IJCAI 2025</strong> | Montreal, Canada | Poster Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=-ycaNLMAAAAJ" target="_blank" rel="noopener noreferrer">Iman Sharifi</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
@@ -207,7 +207,7 @@ last_modified_at: 2026-04-30
     <h3>Neurosymbolic AI for Advanced Air Mobility</h3>
     <p><strong>IS 792 Guest Lecture</strong> | UMBC Department of Information Systems</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" loading="lazy" />
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" />
     </p>
     <p>
       Delivered a guest lecture on neurosymbolic methods for Advanced Air Mobility,
@@ -239,9 +239,9 @@ last_modified_at: 2026-04-30
       <strong>Role Highlight:</strong> TA, Department of Information Systems, UMBC.
     </p>
     <div class="training-logos" aria-label="Program institutions and funder">
-      <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF" loading="lazy" />
-      <img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC" loading="lazy" />
-      <img src="{{ '/assets/logos/umd-logo.jpeg' | relative_url }}" alt="UMass Dartmouth" loading="lazy" />
+      <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF" width="320" height="110" loading="lazy" />
+      <img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC" width="320" height="110" loading="lazy" />
+      <img src="{{ '/assets/logos/umd-logo.jpeg' | relative_url }}" alt="UMass Dartmouth" width="320" height="110" loading="lazy" />
     </div>
     <p>
       Full program details (instructors, structure, eligibility, stipend, and updates) are available on the official page.
