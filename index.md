@@ -3,6 +3,7 @@ layout: default
 title: "Kamal Acharya"
 description: "Kamal Acharya is a Ph.D. candidate at UMBC researching interpretable AI, Advanced Air Mobility demand modeling, neurosymbolic systems, forecasting, and optimization."
 permalink: /
+last_modified_at: 2026-04-30
 ---
 
 <section class="home-hero">
@@ -33,6 +34,12 @@ permalink: /
   <p class="home-cta-group">
     <a class="home-action-link" href="{{ '/publications' | relative_url }}">View Publications</a>
     <a class="home-action-link home-action-link-secondary" href="{{ '/contact' | relative_url }}">Contact Me</a>
+  </p>
+  <p class="home-profile-links" aria-label="Academic and professional profiles">
+    <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+    <a href="https://orcid.org/0000-0002-9712-0265" target="_blank" rel="noopener noreferrer">ORCID</a>
+    <a href="https://linkedin.com/in/lotussavy318" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://github.com/lotussavy" target="_blank" rel="noopener noreferrer">GitHub</a>
   </p>
 </section>
 

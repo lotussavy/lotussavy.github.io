@@ -3,6 +3,7 @@ layout: default
 title: "Kamal Acharya Publications"
 description: "Peer-reviewed publications by Kamal Acharya in Advanced Air Mobility, neurosymbolic AI, machine learning, optimization, intelligent transportation, and cybersecurity."
 permalink: /publications/
+last_modified_at: 2026-04-30
 ---
 
 <section class="pub-hero">

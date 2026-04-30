@@ -1,7 +1,7 @@
 # Academic Research Portfolio
-title: "Kamal Acharya | Ph.D. Researcher"
+title: "Kamal Acharya"
 theme: jekyll-theme-slate
-description: "Ph.D. Candidate | Advanced Air Mobility | AI/ML | Neurosymbolic Systems"
+description: "Ph.D. Candidate at UMBC, AI Researcher"
 url: https://lotussavy.github.io
 baseurl: ""
 image: /assets/images/Profile.png
@@ -13,10 +13,10 @@ author:
   location: "Baltimore, MD, USA"
   orcid: "0000-0002-9712-0265"
   github: lotussavy
-  linkedin: kamalacharya
+  linkedin: lotussavy318
   twitter: lotussavy
   researchgate: Kamal-Acharya-13
-  googlescholar: "scholar.google.com"
+  googlescholar: "0uLqckgAAAAJ"
   url: https://lotussavy.github.io
 
 # Institution
@@ -46,3 +46,8 @@ lang: en-US
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+exclude:
+  - vendor/
+  - assets/slides/README.md
+  - assets/gallery/README.md

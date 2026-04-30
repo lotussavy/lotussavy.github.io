@@ -172,6 +172,19 @@
   gap: 10px;
 }
 
+.home-profile-links {
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  font-size: 0.95rem;
+}
+
+.home-profile-links a {
+  color: #174f86;
+  font-weight: 600;
+}
+
 .home-section {
   margin: 28px 0;
 }

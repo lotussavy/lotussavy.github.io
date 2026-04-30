@@ -3,6 +3,7 @@ layout: default
 title: "Research in Advanced Air Mobility and Neurosymbolic AI"
 description: "Research by Kamal Acharya on Advanced Air Mobility demand forecasting, neurosymbolic AI, trustworthy decision systems, and optimization for transportation planning."
 permalink: /research/
+last_modified_at: 2026-04-30
 ---
 
 <section class="research-hero">

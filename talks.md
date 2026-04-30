@@ -3,6 +3,7 @@ layout: default
 title: "Talks and Presentations on AI and Advanced Air Mobility"
 description: "Selected talks, posters, and invited presentations by Kamal Acharya on neurosymbolic AI, Advanced Air Mobility, optimization, and trustworthy AI systems."
 permalink: /talks/
+last_modified_at: 2026-04-30
 ---
 
 <section class="talks-hero">

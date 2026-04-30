@@ -42,3 +42,75 @@
   ]
 }
 </script>
+{% if page.url == '/publications/' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Selected peer-reviewed publications by {{ site.author.name }}",
+  "url": "{{ page.url | absolute_url }}",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "name": "Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions",
+        "author": { "@type": "Person", "name": "{{ site.author.name }}" },
+        "datePublished": "2026",
+        "isPartOf": { "@type": "Periodical", "name": "IEEE Transactions on Intelligent Transportation Systems" },
+        "sameAs": "https://doi.org/10.1109/TITS.2026.3671002"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "name": "A Comprehensive Review of Neuro-symbolic AI for Robustness, Uncertainty Quantification, and Intervenability",
+        "author": { "@type": "Person", "name": "{{ site.author.name }}" },
+        "datePublished": "2025",
+        "isPartOf": { "@type": "Periodical", "name": "Arabian Journal for Science and Engineering" },
+        "sameAs": "https://doi.org/10.1007/s13369-025-10887-3"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "name": "A Survey on Symbolic Knowledge Distillation of Large Language Models",
+        "author": { "@type": "Person", "name": "{{ site.author.name }}" },
+        "datePublished": "2024",
+        "isPartOf": { "@type": "Periodical", "name": "IEEE Transactions on Artificial Intelligence" },
+        "sameAs": "https://doi.org/10.1109/TAI.2024.3428519"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "name": "Neurosymbolic Reinforcement Learning and Planning: A Survey",
+        "author": { "@type": "Person", "name": "{{ site.author.name }}" },
+        "datePublished": "2024",
+        "isPartOf": { "@type": "Periodical", "name": "IEEE Transactions on Artificial Intelligence" },
+        "sameAs": "https://doi.org/10.1109/TAI.2023.3311428"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "name": "Urban Air Mobility Flight Demand Modeling for Airports in New York City",
+        "author": { "@type": "Person", "name": "{{ site.author.name }}" },
+        "datePublished": "2026",
+        "isPartOf": { "@type": "PublicationIssue", "name": "AIAA SCITECH 2026 Forum" },
+        "sameAs": "https://doi.org/10.2514/6.2026-1475"
+      }
+    }
+  ]
+}
+</script>
+{% endif %}
