@@ -17,34 +17,168 @@ permalink: /talks/
   <h2>Conference Presentation</h2>
 
   <article class="talk-item">
-    <h3>Neural Network-Accelerated Genetic Algorithms for Advanced Air Mobility</h3>
-    <p><strong>IEEE ITSC 2024</strong> | Edmonton, Canada | Oral Presentation</p>
+    <h3>Urban Air Mobility Flight Demand Modeling for Airports in New York City</h3>
+    <p><strong>AIAA SCITECH 2026 Forum</strong> | Orlando, FL, USA | Conference Presentation</p>
     <p>
-      Presented a hybrid optimization approach for pre-disaster mobility planning,
-      combining neural acceleration with genetic algorithms.
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" loading="lazy" />
+    </p>
+    <p>
+      Presented flight demand modeling research for airport-connected Urban Air Mobility in New York City,
+      focusing on demand estimation methods for future advanced air mobility operations.
+    </p>
+    <p>
+      <strong>Authors:</strong> Kamal Acharya, Katherine Vasiloff, Zhenbo Wang, Liang Sun, and Houbing Song.
     </p>
     <p class="talk-links">
-      <a href="{{ '/assets/slides/ITSC_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
-      <a href="https://doi.org/10.1109/ITSC58415.2024.10920105" target="_blank" rel="noopener noreferrer">Publication</a>
+      <a href="{{ '/assets/slides/2026_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a href="https://doi.org/10.2514/6.2026-1475" target="_blank" rel="noopener noreferrer">Publication</a>
     </p>
   </article>
 
   <article class="talk-item">
     <h3>Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</h3>
-    <p><strong>IJCAI 2025</strong> | Montreal, Canada | Poster Presentation</p>
+    <p><strong>IJCAI 2025</strong> | Montreal, Canada | Conference Presentation</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" loading="lazy" />
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Iman Sharifi, Mehul Lad, Liang Sun, and Houbing Song.
+      Presented a comprehensive survey of neurosymbolic AI methods for Advanced Air Mobility,
+      emphasizing interpretable, reliable, and safety-aware decision support.
     </p>
     <p>
-      Poster summarized the neurosymbolic AI landscape for AAM, emphasizing how symbolic reasoning
-      and machine learning can be combined for interpretable and reliable decision support.
+      <strong>Authors:</strong> Kamal Acharya, Iman Sharifi, Mehul Lad, Liang Sun, and Houbing Song.
     </p>
     <p class="talk-links">
-        <a href="{{ '/assets/slides/IJCAI_2025_Slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a href="{{ '/assets/slides/IJCAI_2025_Slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.24963/ijcai.2025/1151" target="_blank" rel="noopener noreferrer">Publication</a>
+    </p>
+  </article>
+
+  <article class="talk-item">
+    <h3>Neurosymbolic Approach for Travel Demand Prediction: Integrating Decision Tree Rules into Neural Networks</h3>
+    <p><strong>IWCMC 2025</strong> | Abu Dhabi, United Arab Emirates | Conference Presentation</p>
+    <p>
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IWCMC.png' | relative_url }}" alt="IWCMC logo" loading="lazy" />
+    </p>
+    <p>
+      Presented a neurosymbolic travel demand prediction method that integrates decision tree rules into
+      neural network learning for more interpretable demand modeling.
+    </p>
+    <p>
+      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Liang Sun, and Houbing Song.
+    </p>
+    <p class="talk-links">
+      <a href="{{ '/assets/slides/IWCMC_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a href="https://doi.org/10.1109/IWCMC65282.2025.11059465" target="_blank" rel="noopener noreferrer">Publication</a>
+    </p>
+  </article>
+
+  <article class="talk-item">
+    <h3>A Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction</h3>
+    <p><strong>IEEE CAI 2025</strong> | Santa Clara, CA, USA | Conference Presentation</p>
+    <p>
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-CAI.png' | relative_url }}" alt="IEEE CAI logo" loading="lazy" />
+    </p>
+    <p>
+      Presented a data-driven enhancement of gravity models for trip demand prediction,
+      connecting classical transportation modeling with modern AI methods.
+    </p>
+    <p>
+      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Liang Sun, and Houbing Song.
+    </p>
+    <p class="talk-links">
+      <a href="{{ '/assets/slides/IEEE_CAI_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a href="https://doi.org/10.1109/CAI64502.2025.00145" target="_blank" rel="noopener noreferrer">Publication</a>
+    </p>
+  </article>
+
+  <article class="talk-item">
+    <h3>Regional Air Mobility Flight Demand Modeling in Tennessee State</h3>
+    <p><strong>AIAA SCITECH 2025 Forum</strong> | Orlando, FL, USA | Conference Presentation</p>
+    <p>
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" loading="lazy" />
+    </p>
+    <p>
+      Presented regional air mobility demand modeling research for Tennessee, highlighting how demand
+      estimation can support future AAM planning and infrastructure decisions.
+    </p>
+    <p>
+      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Houbing Song, and Liang Sun.
+    </p>
+    <p class="talk-links">
+      <a href="{{ '/assets/slides/2025_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a href="https://doi.org/10.2514/6.2025-2783" target="_blank" rel="noopener noreferrer">Publication</a>
+    </p>
+  </article>
+
+  <article class="talk-item">
+    <h3>Decoding Android Malware with a Fraction of Features: An Attention-Enhanced MLP-SVM Approach</h3>
+    <p><strong>NSS 2024</strong> | Network and System Security | Conference Presentation</p>
+    <p>
+      Presented an attention-enhanced MLP-SVM approach for Android malware detection using a reduced feature set.
+    </p>
+    <p>
+      <strong>Authors:</strong> Shamsul B. Hakim, Muhammad Adil, Kamal Acharya, and Houbing Song.
+    </p>
+    <p class="talk-links">
+      <a href="https://doi.org/10.1007/978-981-96-3531-3_10" target="_blank" rel="noopener noreferrer">Publication</a>
+    </p>
+  </article>
+
+  <article class="talk-item">
+    <h3>Enhancing Forecasting for Advanced Air Mobility</h3>
+    <p><strong>IEEE BigData 2024</strong> | Washington, DC, USA | Conference Presentation</p>
+    <p>
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-BigData.jpeg' | relative_url }}" alt="IEEE BigData logo" loading="lazy" />
+    </p>
+    <p>
+      Presented forecasting methods for Advanced Air Mobility, focusing on data-driven approaches
+      for improving demand and operational prediction.
+    </p>
+    <p>
+      <strong>Authors:</strong> Mehul Lad, Kamal Acharya, Liang Sun, and Houbing Song.
+    </p>
+    <p class="talk-links">
+      <a href="{{ '/assets/slides/IEEE_Big_Data_2024.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a href="https://doi.org/10.1109/BigData62323.2024.10825414" target="_blank" rel="noopener noreferrer">Publication</a>
+    </p>
+  </article>
+
+  <article class="talk-item">
+    <h3>Demand Modeling for Advanced Air Mobility</h3>
+    <p><strong>IEEE BigData 2024</strong> | Washington, DC, USA | Conference Presentation</p>
+    <p>
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-BigData.jpeg' | relative_url }}" alt="IEEE BigData logo" loading="lazy" />
+    </p>
+    <p>
+      Presented demand modeling research for Advanced Air Mobility, addressing opportunities and
+      challenges in data-driven AAM planning.
+    </p>
+    <p>
+      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Liang Sun, and Houbing Song.
+    </p>
+    <p class="talk-links">
+        <a href="{{ '/assets/slides/IEEE_Big_Data_2024.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a href="https://doi.org/10.1109/BigData62323.2024.10825121" target="_blank" rel="noopener noreferrer">Publication</a>
+    </p>
+  </article>
+
+  <article class="talk-item">
+    <h3>Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm</h3>
+    <p><strong>IEEE ITSC 2024</strong> | Edmonton, AB, Canada | Conference Presentation</p>
+    <p>
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/ITSC-logo.png' | relative_url }}" alt="27th IEEE ITSC logo" loading="lazy" />
+    </p>
+    <p>
+      Presented a hybrid optimization approach for pre-disaster mobility planning,
+      combining neural acceleration with genetic algorithms.
+    </p>
+    <p>
+      <strong>Authors:</strong> Kamal Acharya, Alvaro Velasquez, Yongxin Liu, Dahai Liu, Liang Sun, and Houbing Herbert Song.
+    </p>
+    <p class="talk-links">
+      <a href="{{ '/assets/slides/ITSC_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
+      <a href="https://doi.org/10.1109/ITSC58415.2024.10920105" target="_blank" rel="noopener noreferrer">Publication</a>
     </p>
   </article>
 </section>
