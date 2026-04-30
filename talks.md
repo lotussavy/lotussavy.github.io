@@ -27,7 +27,7 @@ permalink: /talks/
       focusing on demand estimation methods for future advanced air mobility operations.
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Katherine Vasiloff, Zhenbo Wang, Liang Sun, and Houbing Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=0y4KHOsAAAAJ" target="_blank" rel="noopener noreferrer">Katherine Vasiloff</a>, <a href="https://scholar.google.com/citations?hl=en&user=dlbsvskAAAAJ" target="_blank" rel="noopener noreferrer">Zhenbo Wang</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/2026_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -46,7 +46,7 @@ permalink: /talks/
       emphasizing interpretable, reliable, and safety-aware decision support.
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Iman Sharifi, Mehul Lad, Liang Sun, and Houbing Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=-ycaNLMAAAAJ" target="_blank" rel="noopener noreferrer">Iman Sharifi</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IJCAI_2025_Slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -65,7 +65,7 @@ permalink: /talks/
       neural network learning for more interpretable demand modeling.
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Liang Sun, and Houbing Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IWCMC_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -84,7 +84,7 @@ permalink: /talks/
       connecting classical transportation modeling with modern AI methods.
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Liang Sun, and Houbing Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IEEE_CAI_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -103,44 +103,11 @@ permalink: /talks/
       estimation can support future AAM planning and infrastructure decisions.
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Houbing Song, and Liang Sun.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>, and <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/2025_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.2514/6.2025-2783" target="_blank" rel="noopener noreferrer">Publication</a>
-    </p>
-  </article>
-
-  <article class="talk-item">
-    <h3>Decoding Android Malware with a Fraction of Features: An Attention-Enhanced MLP-SVM Approach</h3>
-    <p><strong>NSS 2024</strong> | Network and System Security | Conference Presentation</p>
-    <p>
-      Presented an attention-enhanced MLP-SVM approach for Android malware detection using a reduced feature set.
-    </p>
-    <p>
-      <strong>Authors:</strong> Shamsul B. Hakim, Muhammad Adil, Kamal Acharya, and Houbing Song.
-    </p>
-    <p class="talk-links">
-      <a href="https://doi.org/10.1007/978-981-96-3531-3_10" target="_blank" rel="noopener noreferrer">Publication</a>
-    </p>
-  </article>
-
-  <article class="talk-item">
-    <h3>Enhancing Forecasting for Advanced Air Mobility</h3>
-    <p><strong>IEEE BigData 2024</strong> | Washington, DC, USA | Conference Presentation</p>
-    <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-BigData.jpeg' | relative_url }}" alt="IEEE BigData logo" loading="lazy" />
-    </p>
-    <p>
-      Presented forecasting methods for Advanced Air Mobility, focusing on data-driven approaches
-      for improving demand and operational prediction.
-    </p>
-    <p>
-      <strong>Authors:</strong> Mehul Lad, Kamal Acharya, Liang Sun, and Houbing Song.
-    </p>
-    <p class="talk-links">
-      <a href="{{ '/assets/slides/IEEE_Big_Data_2024.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
-      <a href="https://doi.org/10.1109/BigData62323.2024.10825414" target="_blank" rel="noopener noreferrer">Publication</a>
     </p>
   </article>
 
@@ -155,7 +122,7 @@ permalink: /talks/
       challenges in data-driven AAM planning.
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Liang Sun, and Houbing Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
         <a href="{{ '/assets/slides/IEEE_Big_Data_2024.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -163,24 +130,6 @@ permalink: /talks/
     </p>
   </article>
 
-  <article class="talk-item">
-    <h3>Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm</h3>
-    <p><strong>IEEE ITSC 2024</strong> | Edmonton, AB, Canada | Conference Presentation</p>
-    <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/ITSC-logo.png' | relative_url }}" alt="27th IEEE ITSC logo" loading="lazy" />
-    </p>
-    <p>
-      Presented a hybrid optimization approach for pre-disaster mobility planning,
-      combining neural acceleration with genetic algorithms.
-    </p>
-    <p>
-      <strong>Authors:</strong> Kamal Acharya, Alvaro Velasquez, Yongxin Liu, Dahai Liu, Liang Sun, and Houbing Herbert Song.
-    </p>
-    <p class="talk-links">
-      <a href="{{ '/assets/slides/ITSC_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
-      <a href="https://doi.org/10.1109/ITSC58415.2024.10920105" target="_blank" rel="noopener noreferrer">Publication</a>
-    </p>
-  </article>
 </section>
 
 <section class="talks-section">
@@ -196,7 +145,7 @@ permalink: /talks/
       with a neural network-accelerated genetic algorithm framework.
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Alvaro Velasquez, Yongxin Liu, Dahai Liu, Liang Sun and Houbing Herbert Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=1g3pA4cAAAAJ" target="_blank" rel="noopener noreferrer">Alvaro Velasquez</a>, <a href="https://scholar.google.com/citations?hl=en&user=YJuZfyUAAAAJ" target="_blank" rel="noopener noreferrer">Yongxin Liu</a>, <a href="https://scholar.google.com/citations?hl=en&user=qBUOUsoAAAAJ" target="_blank" rel="noopener noreferrer">Dahai Liu</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a> and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Herbert Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/ITSC_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
@@ -221,7 +170,7 @@ permalink: /talks/
       <strong>Doctorate Student Award</strong> (Poster Session Winner)
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Mehul Lad, Liang Sun, and Houbing Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/COEIT_2025_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
@@ -236,7 +185,7 @@ permalink: /talks/
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" loading="lazy" />
     </p>
     <p>
-      <strong>Authors:</strong> Kamal Acharya, Iman Sharifi, Mehul Lad, Liang Sun, and Houbing Song.
+      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=-ycaNLMAAAAJ" target="_blank" rel="noopener noreferrer">Iman Sharifi</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p>
       Poster summarized the neurosymbolic AI landscape for AAM, emphasizing how symbolic reasoning
