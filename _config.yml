@@ -35,6 +35,11 @@ show_downloads: false
 github:
   is_project_page: false
 
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+
 # Footer settings
 footer_text: "© 2026 Kamal Acharya. All rights reserved."
 show_social_links: true

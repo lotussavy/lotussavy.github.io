@@ -1,0 +1,323 @@
+---
+layout: default
+---
+
+{% assign publication = site.data.publications | where: "slug", page.publication_slug | first %}
+
+{% if publication %}
+<article class="publication-detail">
+  {% assign publication_type_label = "Book Chapter" %}
+  {% if publication.type == "journal" %}
+    {% assign publication_type_label = "Journal Article" %}
+  {% elsif publication.type == "conference" %}
+    {% assign publication_type_label = "Conference Paper" %}
+  {% endif %}
+  {% assign first_author = publication.authors | first | split: " " | first | remove: "." | remove: "," | downcase %}
+  {% assign cite_key = first_author | append: publication.year | append: "-" | append: publication.title | slugify %}
+
+  <header class="publication-hero">
+    <a class="publication-back-link" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
+    <p class="publication-type">{{ publication_type_label }}</p>
+    <h1>{{ publication.title }}</h1>
+    {% if publication.hero_subtitle %}
+    <p class="publication-hero-subtitle">{{ publication.hero_subtitle }}</p>
+    {% endif %}
+    <p class="publication-meta">
+      <span>{{ publication.year }}</span>
+      <span>{{ publication.venue }}</span>
+      {% if publication.doi %}
+      <span>DOI: {{ publication.doi }}</span>
+      {% endif %}
+    </p>
+    {% if publication.tags %}
+    <p class="publication-hero-tags" aria-label="Featured keywords">
+      {% for tag in publication.tags limit: 3 %}
+        <span>{{ tag }}</span>
+      {% endfor %}
+    </p>
+    {% endif %}
+    <p class="publication-hero-actions">
+      {% if publication.url %}
+      <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">DOI</a>
+      {% endif %}
+      {% if publication.source_url %}
+      <a href="{{ publication.source_url }}" target="_blank" rel="noopener noreferrer">Publisher Page</a>
+      {% endif %}
+      {% if publication.pdf %}
+      <a href="{{ publication.pdf }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      {% endif %}
+      <a href="#citation">Cite</a>
+    </p>
+  </header>
+
+  {% if publication.hero_subtitle or publication.framework_steps or publication.modeling_approaches or publication.research_gaps %}
+  <nav class="publication-mini-nav" aria-label="Publication page sections">
+    <a href="#abstract">Overview</a>
+    <a href="#contributions">Contributions</a>
+    {% if publication.framework_steps %}
+    <a href="#framework">Framework</a>
+    {% endif %}
+    {% if publication.research_gaps %}
+    <a href="#research-gaps">Research Gaps</a>
+    {% endif %}
+    <a href="#citation">Citation</a>
+    <a href="#related">Related</a>
+  </nav>
+  {% endif %}
+
+  {% if publication.abstract_summary %}
+  <section class="publication-highlight" id="abstract">
+    <div>
+      <h2>Abstract</h2>
+      <p>{{ publication.abstract_summary }}</p>
+    </div>
+  </section>
+  {% endif %}
+
+  {% if publication.plain_language_summary %}
+  <section class="publication-detail-section" id="plain-language-summary">
+    <h2>Plain-Language Summary</h2>
+    <p>{{ publication.plain_language_summary }}</p>
+  </section>
+  {% endif %}
+
+  {% if publication.impact %}
+  <section class="publication-impact" id="why-this-paper-matters">
+    <h2>Why This Paper Matters</h2>
+    <p>{{ publication.impact }}</p>
+  </section>
+  {% endif %}
+
+  {% if publication.research_summary %}
+  <section class="publication-detail-section publication-research-summary" id="research-summary">
+    <h2>Research Summary</h2>
+    {% for paragraph in publication.research_summary %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if publication.framework_steps %}
+  <section class="publication-detail-section" id="framework">
+    <h2>{{ publication.framework_steps.title | default: "Research Framework" }}</h2>
+    <div class="publication-card-grid publication-card-grid-four">
+      {% for step in publication.framework_steps.items %}
+      <article class="publication-info-card">
+        <span>{{ forloop.index }}</span>
+        <h3>{{ step.name }}</h3>
+        <p>{{ step.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if publication.contributions %}
+  <section class="publication-detail-section" id="contributions">
+    <h2>Key Contributions</h2>
+    <ul class="publication-contribution-list">
+      {% for contribution in publication.contributions %}
+      <li>{{ contribution }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if publication.modeling_approaches %}
+  <section class="publication-detail-section" id="modeling-approaches">
+    <h2>Modeling Approaches Reviewed</h2>
+    <div class="publication-card-grid">
+      {% for approach in publication.modeling_approaches %}
+      <article class="publication-info-card">
+        <h3>{{ approach.name }}</h3>
+        <p>{{ approach.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if publication.research_gaps %}
+  <section class="publication-detail-section" id="research-gaps">
+    <h2>Research Gaps</h2>
+    <div class="publication-gap-grid">
+      {% for gap in publication.research_gaps %}
+      <span>{{ gap }}</span>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="publication-detail-section" id="publication-details">
+    <h2>Publication Details</h2>
+    <dl class="publication-detail-list">
+      <div>
+        <dt>Type</dt>
+        <dd>{{ publication_type_label }}</dd>
+      </div>
+      <div>
+        <dt>Venue</dt>
+        <dd>{% if publication.type == "book_chapter" %}In {% endif %}{{ publication.venue }}</dd>
+      </div>
+      <div>
+        <dt>Year</dt>
+        <dd>{{ publication.year }}</dd>
+      </div>
+      {% if publication.publication_date %}
+      <div>
+        <dt>Published</dt>
+        <dd>{{ publication.publication_date | date: "%B %-d, %Y" }}</dd>
+      </div>
+      {% endif %}
+      {% if publication.volume %}
+      <div>
+        <dt>Volume</dt>
+        <dd>{{ publication.volume }}</dd>
+      </div>
+      {% endif %}
+      {% if publication.issue %}
+      <div>
+        <dt>Issue</dt>
+        <dd>{{ publication.issue }}</dd>
+      </div>
+      {% endif %}
+      {% if publication.pages %}
+      <div>
+        <dt>Pages</dt>
+        <dd>{{ publication.pages }}</dd>
+      </div>
+      {% endif %}
+      {% if publication.status %}
+      <div>
+        <dt>Status</dt>
+        <dd>{{ publication.status }}</dd>
+      </div>
+      {% endif %}
+      {% if publication.doi %}
+      <div>
+        <dt>DOI</dt>
+        <dd><a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.doi }}</a></dd>
+      </div>
+      {% endif %}
+    </dl>
+  </section>
+
+  <section class="publication-detail-section" id="authors">
+    <h2>Authors</h2>
+    {% if publication.author_details %}
+    <ul class="publication-author-list">
+      {% for author in publication.author_details %}
+      <li>
+        {% if author.scholar_url %}
+        <a href="{{ author.scholar_url }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>
+        {% else %}
+        <span>{{ author.name }}</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>{{ publication.authors | join: ", " }}</p>
+    {% endif %}
+  </section>
+
+  {% if publication.tags %}
+  <section class="publication-detail-section" id="research-topics">
+    <h2>Research Topics</h2>
+    <p class="pub-tags" aria-label="Publication topics">
+      {% for tag in publication.tags %}
+        <span class="pub-tag">{{ tag }}</span>
+      {% endfor %}
+    </p>
+  </section>
+  {% endif %}
+
+  {% if publication.url or publication.source_url or publication.repository_url or publication.preprint_url or publication.pdf or publication.availability_note %}
+  <section class="publication-detail-section" id="links-and-access">
+    <h2>Links and Access</h2>
+    {% if publication.availability_note %}
+    <p>{{ publication.availability_note }}</p>
+    {% endif %}
+    <p class="publication-link-list">
+      {% if publication.url %}
+      <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">DOI</a>
+      {% endif %}
+      {% if publication.source_url %}
+      <a href="{{ publication.source_url }}" target="_blank" rel="noopener noreferrer">Official Publisher Page</a>
+      {% endif %}
+      {% if publication.repository_url %}
+      <a href="{{ publication.repository_url }}" target="_blank" rel="noopener noreferrer">Open Repository Copy</a>
+      {% endif %}
+      {% if publication.preprint_url %}
+      <a href="{{ publication.preprint_url }}" target="_blank" rel="noopener noreferrer">Preprint</a>
+      {% endif %}
+      {% if publication.pdf %}
+      <a href="{{ publication.pdf }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      {% endif %}
+    </p>
+  </section>
+  {% endif %}
+
+  <section class="publication-detail-section" id="citation">
+    <h2>Citation</h2>
+    {% if publication.bibtex %}
+    <pre class="publication-citation"><code>{{ publication.bibtex | escape }}</code></pre>
+    {% elsif publication.type == "journal" %}
+    <pre class="publication-citation"><code>@article{ {{- cite_key -}},
+  title = { {{- publication.title -}} },
+  author = { {{- publication.authors | join: " and " -}} },
+  journal = { {{- publication.venue -}} },
+  year = { {{- publication.year -}} }{% if publication.doi %},
+  doi = { {{- publication.doi -}} }{% endif %}
+}</code></pre>
+    {% elsif publication.type == "conference" %}
+    <pre class="publication-citation"><code>@inproceedings{ {{- cite_key -}},
+  title = { {{- publication.title -}} },
+  author = { {{- publication.authors | join: " and " -}} },
+  booktitle = { {{- publication.venue -}} },
+  year = { {{- publication.year -}} }{% if publication.doi %},
+  doi = { {{- publication.doi -}} }{% endif %}
+}</code></pre>
+    {% else %}
+    <pre class="publication-citation"><code>@incollection{ {{- cite_key -}},
+  title = { {{- publication.title -}} },
+  author = { {{- publication.authors | join: " and " -}} },
+  booktitle = { {{- publication.venue -}} },
+  year = { {{- publication.year -}} }{% if publication.doi %},
+  doi = { {{- publication.doi -}} }{% endif %}
+}</code></pre>
+    {% endif %}
+  </section>
+
+  {% if publication.tags %}
+  {% assign related_count = 0 %}
+  <section class="publication-detail-section publication-related-section" id="related">
+    <h2>Related Publications</h2>
+    <ul class="publication-related-list">
+      {% for related in site.data.publications %}
+        {% if related.slug != publication.slug %}
+          {% assign shared_tags = related.tags | where_exp: "tag", "publication.tags contains tag" %}
+          {% if shared_tags.size > 0 and related_count < 4 %}
+            {% assign related_count = related_count | plus: 1 %}
+            <li>
+              <a href="{{ '/publications/' | append: related.slug | append: '/' | relative_url }}">{{ related.title }}</a>
+              <span>{{ related.year }} · {{ shared_tags | join: ", " }}</span>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+    {% if related_count == 0 %}
+    <p>No closely related publication links are available yet.</p>
+    {% endif %}
+  </section>
+  {% endif %}
+
+</article>
+{% else %}
+<article class="publication-detail">
+  <h1>Publication Not Found</h1>
+  <p>This publication page is missing its matching data record.</p>
+  <p><a href="{{ '/publications/' | relative_url }}">Back to publications</a></p>
+</article>
+{% endif %}

@@ -1,13 +1,27 @@
 ---
 layout: default
-title: "Kamal Acharya Publications"
+title: "Publications | Kamal Acharya | Advanced Air Mobility and Neurosymbolic AI"
 description: "Peer-reviewed publications by Kamal Acharya in Advanced Air Mobility, neurosymbolic AI, machine learning, optimization, intelligent transportation, and cybersecurity."
 permalink: /publications/
 last_modified_at: 2026-04-30
 ---
 
 <section class="pub-hero">
+  {% assign journal_count = site.data.publications | where: "type", "journal" | size %}
+  {% assign conference_count = site.data.publications | where: "type", "conference" | size %}
+  {% assign book_chapter_count = site.data.publications | where: "type", "book_chapter" | size %}
   <h1>Publications</h1>
+  <p>
+    Peer-reviewed journal articles, conference papers, and book chapters by Kamal Acharya on
+    Advanced Air Mobility, neurosymbolic AI, demand modeling, intelligent transportation systems,
+    trustworthy machine learning, optimization, and applied cybersecurity.
+  </p>
+  <nav class="pub-jump-nav" aria-label="Browse publications by type">
+    <span>Browse by type</span>
+    <a href="#journal-articles">Journal Articles <span>{{ journal_count }}</span></a>
+    <a href="#conference-proceedings">Conference Proceedings <span>{{ conference_count }}</span></a>
+    <a href="#book-chapters">Book Chapters <span>{{ book_chapter_count }}</span></a>
+  </nav>
   <p class="pub-links">
     <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
     <a href="https://orcid.org/0000-0002-9712-0265" target="_blank" rel="noopener noreferrer">ORCID</a>
@@ -62,14 +76,15 @@ last_modified_at: 2026-04-30
   </div>
 </section>
 
-{% assign publication_sections = "journal:Journal Articles|conference:Conference Proceedings|book_chapter:Book Chapters" | split: "|" %}
+{% assign publication_sections = "journal:Journal Articles:journal-articles|conference:Conference Proceedings:conference-proceedings|book_chapter:Book Chapters:book-chapters" | split: "|" %}
 {% for section_config in publication_sections %}
 {% assign section_parts = section_config | split: ":" %}
 {% assign publication_type = section_parts[0] %}
 {% assign section_title = section_parts[1] %}
+{% assign section_id = section_parts[2] %}
 {% assign section_publications = site.data.publications | where: "type", publication_type %}
 {% assign publications_by_year = section_publications | group_by: "year" | sort: "name" | reverse %}
-<section class="pub-list-section">
+<section class="pub-list-section" id="{{ section_id }}">
   <h2>{{ section_title }}</h2>
 {% for year_group in publications_by_year %}
   <section class="pub-year-group">
@@ -78,10 +93,22 @@ last_modified_at: 2026-04-30
 {% for publication in year_group.items %}
       <li class="pub-entry">
         <span class="pub-authors">{{ publication.authors | join: ", " }}</span>
-        <span class="pub-title">{{ publication.title }}</span>.
-        <span class="pub-venue">{% if publication.type == "book_chapter" %}In {% endif %}{{ publication.venue }}</span>{% if publication.status %} <span class="pub-status">({{ publication.status }})</span>{% endif %}.
-        {% if publication.doi and publication.url %}
-          <a class="pub-doi" href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">doi:{{ publication.doi }}</a>
+        <a class="pub-title" href="{{ '/publications/' | append: publication.slug | append: '/' | relative_url }}">{{ publication.title }}</a>.
+        <span class="pub-venue">{% if publication.type == "book_chapter" %}In {% endif %}{{ publication.venue }}</span>.
+        <span class="pub-actions">
+          {% if publication.status %}
+            <span class="pub-status">{{ publication.status }}</span>
+          {% endif %}
+          {% if publication.doi and publication.url %}
+            <a class="pub-doi" href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">DOI</a>
+          {% endif %}
+        </span>
+        {% if publication.tags %}
+          <span class="pub-tags" aria-label="Publication topics">
+            {% for tag in publication.tags %}
+              <span class="pub-tag">{{ tag }}</span>
+            {% endfor %}
+          </span>
         {% endif %}
       </li>
 {% endfor %}

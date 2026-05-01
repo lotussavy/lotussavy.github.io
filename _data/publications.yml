@@ -7,6 +7,7 @@
     - "Song H."
     - "Sun L."
   title: "Demand Forecast and Energy-Aware Portal Siting for Regional Air Mobility"
+  slug: "demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility"
   venue: "Journal of Air Transport Management"
   status: "under major revision"
   schema_part_of: "Periodical"
@@ -14,6 +15,19 @@
     - "Advanced Air Mobility"
     - "Demand Forecasting"
     - "Infrastructure Planning"
+  research_area: "Advanced Air Mobility and Infrastructure Planning"
+  abstract_summary: "This manuscript focuses on regional air mobility demand forecasting and energy-aware portal siting. It connects travel demand estimation with infrastructure placement so that future regional air mobility networks can be evaluated not only by passenger demand, but also by operational energy needs and practical deployment constraints."
+  research_summary:
+    - "This work studies regional air mobility as an infrastructure planning problem rather than only a demand prediction problem. The central question is how to forecast where passenger demand may emerge while also identifying portal locations that can support energy-aware operations."
+    - "The paper is positioned around the practical deployment needs of regional air mobility networks. By connecting demand estimates with portal siting, the study supports planning decisions that must balance passenger access, operational feasibility, and future electrified aviation constraints."
+    - "Because this manuscript does not yet have a public version of record, the page currently summarizes the research direction conservatively. Additional details should be added after the article metadata and abstract become publicly available."
+  plain_language_summary: "The work asks where regional air mobility services are likely to be useful and how planners can place portals while accounting for both passenger demand and energy-aware operations."
+  contributions:
+    - "Connects demand forecasting with portal siting for regional air mobility planning."
+    - "Frames infrastructure planning around both mobility demand and energy-aware operation."
+    - "Supports practical planning decisions for emerging AAM service networks."
+  impact: "This work is intended to help planners evaluate regional air mobility as a deployable transportation system rather than as an isolated aircraft technology."
+  availability_note: "I could not verify a public abstract for this manuscript online. Detailed publication metadata will be updated after the article has a public version of record."
 
 - type: journal
   year: 2026
@@ -24,7 +38,21 @@
     - "Wang Z."
     - "Sun L."
     - "Song H. H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Waleed Raza"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=qOyRccEAAAAJ"
+    - name: "Katherine Vasiloff"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=0y4KHOsAAAAJ"
+    - name: "Zhenbo Wang"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=dlbsvskAAAAJ"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions"
+  slug: "demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions"
   venue: "IEEE Transactions on Intelligent Transportation Systems"
   doi: "10.1109/TITS.2026.3671002"
   url: "https://doi.org/10.1109/TITS.2026.3671002"
@@ -33,13 +61,80 @@
     - "Advanced Air Mobility"
     - "Demand Modeling"
     - "Intelligent Transportation Systems"
+  research_area: "Advanced Air Mobility Demand Modeling"
+  publication_date: "2026-03-16"
+  pages: "1-21"
+  repository_url: "https://mdsoar.org/items/3c77e11d-d68b-4e50-988d-e325c63ef9b9"
+  source_url: "https://ieeexplore.ieee.org/abstract/document/11435518"
+  pdf: "https://mdsoar.org/bitstreams/c0ad7dfd-f5d5-4744-9531-3112288b24ff/download"
+  hero_subtitle: "A comprehensive IEEE T-ITS survey on Advanced Air Mobility demand modeling, covering econometric, discrete choice, simulation, machine learning, and hybrid approaches for future air transportation systems."
+  abstract_summary: "Advanced Air Mobility (AAM) has attracted increasing research and industry attention as a potential extension of passenger and cargo transportation systems, supported by developments in electric vertical take-off and landing (eVTOL) aircraft, autonomy, and integrated traffic management. Unlike conventional transportation systems, AAM presents unique challenges to demand modeling due to untested routes, new vehicle classes, and evolving user behavior. This paper conducts a comprehensive survey of demand modeling approaches relevant to AAM, encompassing econometric models, discrete choice frameworks, simulation-based approaches, machine learning techniques, and hybrid methods. Our evaluation focuses on four core modeling stages: trip generation, trip distribution, mode choice, and assignment. We further analyze the key factors influencing demand and assess their implications for model design and forecasting accuracy. Research gaps are identified in areas such as airspace routing, vertiport placement, capacity constraints, weather resilience, and community acceptance. To address these, we highlight the need for infrastructure-aware, behaviorally grounded, and real-time adaptive demand models. We outline future research opportunities including fine-grained temporal and spatial resolution, multimodal integration, induced demand representation, and equity considerations. By categorizing current methods and synthesizing emerging directions, this survey establishes a critical research agenda to guide policymakers, practitioners, and researchers in advancing robust and socially responsible AAM demand forecasting."
+  research_summary:
+    - "This paper addresses a central planning challenge for Advanced Air Mobility: demand is difficult to model because routes, vehicles, infrastructure, traveler preferences, and service patterns are still evolving. Traditional transportation demand methods are useful, but AAM introduces new constraints around vertiports, airspace, weather, reliability, pricing, and community acceptance."
+    - "The study reviews major modeling families used for AAM demand forecasting, including econometric models, discrete choice models, simulation-based approaches, machine learning, and hybrid frameworks. It organizes these methods around the classic transportation modeling pipeline: trip generation, trip distribution, mode choice, and assignment."
+    - "A major contribution of the paper is its research agenda. It argues that future AAM demand models should be infrastructure-aware, behaviorally grounded, adaptive to real-time conditions, and attentive to equity and multimodal integration. This makes the paper useful for both academic researchers and transportation planners."
+  plain_language_summary: "This paper explains how researchers and planners can estimate future demand for air taxi, regional air mobility, and related AAM services when the market, routes, infrastructure, and user behavior are still emerging."
+  contributions:
+    - "Surveys major methodological families used for AAM demand modeling."
+    - "Maps AAM demand research to trip generation, distribution, mode choice, and assignment."
+    - "Identifies infrastructure, behavioral, operational, and equity gaps in current forecasting practice."
+    - "Develops a research agenda for robust and socially responsible AAM demand forecasting."
+  impact: "Advanced Air Mobility cannot be planned only around aircraft technology. Its success depends on whether travelers will use the service, where demand will emerge, how it will interact with existing transportation modes, and whether infrastructure such as vertiports, charging systems, and airspace corridors can support that demand. This paper provides a structured foundation for researchers, planners, and policymakers to build more realistic AAM demand forecasting models."
+  framework_steps:
+    title: "Four-Step AAM Demand Modeling Framework"
+    items:
+    - name: "Trip Generation"
+      description: "Identifies potential AAM trips from existing travel patterns, commuting flows, airport-access trips, regional travel demand, cargo movement, and emergency service needs."
+    - name: "Trip Distribution"
+      description: "Estimates spatial origin-destination flows and candidate AAM corridors using gravity models, OD matrices, spatial interaction models, and scenario-based assumptions."
+    - name: "Mode Choice"
+      description: "Estimates how travelers may choose AAM over cars, public transit, ride-hailing, or conventional air travel based on time, cost, access, reliability, safety perception, and willingness to pay."
+    - name: "Assignment"
+      description: "Allocates AAM trips to routes, vertiports, time periods, and operational networks while considering fleet availability, capacity, weather, charging, and airspace constraints."
+  modeling_approaches:
+    - name: "Econometric Models"
+      description: "Useful for strategic demand estimation using socioeconomic, geographic, and travel variables."
+    - name: "Discrete Choice Models"
+      description: "Useful for modeling traveler decisions and modal split between AAM and competing modes."
+    - name: "Simulation-Based Models"
+      description: "Useful for testing operational feasibility, vertiport congestion, fleet scheduling, and network performance."
+    - name: "Machine Learning Models"
+      description: "Useful for data-driven forecasting, demand hotspot detection, clustering, and adaptive prediction."
+    - name: "Hybrid Models"
+      description: "Promising for integrating behavior, infrastructure, vehicle performance, and operational constraints into one modeling framework."
+  research_gaps:
+    - "Airspace routing"
+    - "Vertiport placement"
+    - "Capacity constraints"
+    - "Weather resilience"
+    - "Community acceptance"
+    - "Multimodal integration"
+    - "Induced demand"
+    - "Equity"
+  bibtex: |
+    @ARTICLE{11435518,
+      author={Acharya, Kamal and Raza, Waleed and Vasiloff, Katherine and Wang, Zhenbo and Sun, Liang and Song, Houbing Herbert},
+      journal={IEEE Transactions on Intelligent Transportation Systems},
+      title={Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions},
+      year={2026},
+      volume={},
+      number={},
+      pages={1-21},
+      keywords={Active appearance model;Atmospheric modeling;Urban air mobility;Random access memory;Aircraft;Surveys;Biological system modeling;Aircraft propulsion;Adaptation models;Analytical models;Advanced air mobility;air transportation;data analytics and data science;transportation demand modeling and estimation},
+      doi={10.1109/TITS.2026.3671002}}
 
 - type: journal
-  year: 2025
+  year: 2026
   authors:
     - "Acharya K."
     - "Song H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "A Comprehensive Review of Neuro-symbolic AI for Robustness, Uncertainty Quantification, and Intervenability"
+  slug: "comprehensive-review-of-neuro-symbolic-ai-for-robustness-uncertainty-quantification-and-intervenability"
   venue: "Arabian Journal for Science and Engineering"
   doi: "10.1007/s13369-025-10887-3"
   url: "https://doi.org/10.1007/s13369-025-10887-3"
@@ -48,9 +143,67 @@
     - "Neurosymbolic AI"
     - "Trustworthy AI"
     - "Robustness"
+  research_area: "Trustworthy Neurosymbolic AI"
+  publication_date: "2025-12-09"
+  volume: "51"
+  pages: "35-67"
+  source_url: "https://link.springer.com/article/10.1007/s13369-025-10887-3"
+  pdf: "https://link.springer.com/article/10.1007/s13369-025-10887-3"
+  hero_subtitle: "An open-access Arabian Journal for Science and Engineering survey on neuro-symbolic AI as a trustworthy AI paradigm, organized around robustness, uncertainty quantification, and intervenability."
+  abstract_summary: "As Artificial Intelligence (AI) systems are increasingly deployed in high-stakes domains such as healthcare, autonomous systems, finance, and critical infrastructure, ensuring their trustworthiness has become imperative. This paper presents a comprehensive survey of neuro-symbolic AI, a hybrid paradigm that combines the learning capabilities of neural networks with the reasoning strengths of symbolic AI, through the lens of three foundational dimensions: robustness, uncertainty quantification (UQ), and intervenability. We first establish the limitations of purely data-driven “black-box” models in handling distribution shifts, ambiguous inputs, and human oversight. In contrast, neuro-symbolic systems offer enhanced interpretability, verifiability, and control, making them promising candidates for real-world deployment. We systematically review state-of-the-art techniques for modeling robustness, quantifying uncertainty, and enabling intervenability. We further examine how logic, probability, and learning can be integrated into unified or modular architectures to support transparent, adaptive reasoning. Finally, we outline current challenges and identify key research opportunities for advancing neuro-symbolic AI as a trustworthy paradigm. This survey aims to equip researchers and practitioners with a structured understanding of how to build reliable, interpretable, and interactive AI systems by bridging statistical learning and symbolic reasoning."
+  research_summary:
+    - "This paper studies neuro-symbolic AI through the lens of trustworthiness. The core motivation is that purely data-driven models can perform well in controlled settings but may fail under distribution shifts, ambiguous inputs, or high-stakes decision contexts where transparency and human oversight are necessary."
+    - "The survey organizes the field around three dimensions: robustness, uncertainty quantification, and intervenability. Robustness concerns whether AI systems remain reliable under perturbations and new conditions. Uncertainty quantification concerns whether systems can express confidence and ambiguity. Intervenability concerns whether humans can inspect, correct, or guide the reasoning process."
+    - "By connecting neural learning with symbolic reasoning, the paper explains how AI systems can become more interpretable, verifiable, and controllable. This makes the survey relevant to safety-critical applications such as autonomous systems, cybersecurity, healthcare, finance, and critical infrastructure."
+  plain_language_summary: "This paper studies how AI systems can become more reliable and controllable by combining neural networks, which learn from data, with symbolic reasoning, which supports logic, rules, and explanation."
+  contributions:
+    - "Organizes neuro-symbolic AI around robustness, uncertainty quantification, and intervenability."
+    - "Reviews methods for making AI systems more reliable under distribution shifts and ambiguous inputs."
+    - "Connects symbolic reasoning with transparent, adaptive, and human-interpretable AI decision-making."
+    - "Identifies open research challenges for deploying trustworthy neuro-symbolic systems."
+  impact: "AI systems used in healthcare, autonomous systems, finance, cybersecurity, and critical infrastructure must do more than produce accurate predictions. They must remain reliable under unexpected conditions, communicate uncertainty, and allow meaningful human oversight. This paper frames neuro-symbolic AI as a practical route toward systems that combine statistical learning with explicit reasoning, making them more suitable for high-stakes deployment."
+  framework_steps:
+    title: "Trustworthy Neuro-Symbolic AI Framework"
+    items:
+    - name: "Robustness"
+      description: "Studies whether AI systems maintain stable and reliable behavior under noisy inputs, distribution shifts, adversarial perturbations, and unexpected operating conditions."
+    - name: "Uncertainty Quantification"
+      description: "Examines how AI systems estimate confidence, represent aleatoric and epistemic uncertainty, and communicate ambiguity in predictions."
+    - name: "Intervenability"
+      description: "Focuses on whether humans can inspect, correct, steer, or constrain model behavior through concepts, rules, explanations, or symbolic interfaces."
+  modeling_approaches:
+    - name: "Learning for Reasoning"
+      description: "Uses neural models to support symbolic reasoning by extracting representations, reducing search spaces, or translating raw data into symbolic structures."
+    - name: "Reasoning for Learning"
+      description: "Uses symbolic rules, constraints, priors, and domain knowledge to guide neural learning and improve generalization."
+    - name: "Learning-Reasoning"
+      description: "Integrates neural and symbolic modules bidirectionally so learning and reasoning refine each other in a unified architecture."
+    - name: "Probabilistic Neuro-Symbolic AI"
+      description: "Combines logic, probability, and learning to represent uncertainty while preserving structured reasoning."
+    - name: "Human-in-the-Loop Neuro-Symbolic AI"
+      description: "Enables concept correction, rule injection, interactive debugging, and governance through interpretable symbolic components."
+  research_gaps:
+    - "Scalable benchmarks"
+    - "Foundation model integration"
+    - "Real-time control"
+    - "Uncertainty tracking"
+    - "Human-in-the-loop tools"
+    - "Certifiable systems"
+    - "Ethical alignment"
+    - "Domain-constrained deployment"
+  bibtex: |
+    @article{acharya2026comprehensive,
+      author={Acharya, Kamal and Song, Houbing},
+      title={A Comprehensive Review of Neuro-symbolic AI for Robustness, Uncertainty Quantification, and Intervenability},
+      journal={Arabian Journal for Science and Engineering},
+      year={2026},
+      volume={51},
+      pages={35--67},
+      doi={10.1007/s13369-025-10887-3}
+    }
 
 - type: journal
-  year: 2025
+  year: 2026
   authors:
     - "De Macedo A. R."
     - "Jagatheesaperumal S. K."
@@ -59,7 +212,23 @@
     - "Song H."
     - "Guizani M."
     - "De Albuquerque V. H. C."
+  author_details:
+    - name: "Antônio Roberto L. de Macêdo"
+      scholar_url: "https://scholar.google.com/citations?user=Wumz-bwAAAAJ&hl=en"
+    - name: "Senthil Kumar Jagatheesaperumal"
+      scholar_url: "https://scholar.google.com/citations?user=jUyBt7UAAAAJ&hl=en"
+    - name: "Kelton Augusto Pontara da Costa"
+      scholar_url: "https://scholar.google.com/citations?user=PpZNWkYAAAAJ&hl=en"
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
+    - name: "Mohsen Guizani"
+      scholar_url: "https://scholar.google.com/citations?user=RigrYkcAAAAJ&hl=en"
+    - name: "Victor Hugo C. de Albuquerque"
+      scholar_url: "https://scholar.google.com/citations?user=meI2k88AAAAJ&hl=en"
   title: "Quantum AI-Enhanced IoT-Fog Communication: A Survey From Cybersecurity and Data Privacy Perspective"
+  slug: "quantum-ai-enhanced-iot-fog-communication-survey-from-cybersecurity-and-data-privacy-perspective"
   venue: "IEEE Communications Surveys & Tutorials"
   doi: "10.1109/COMST.2025.3622378"
   url: "https://doi.org/10.1109/COMST.2025.3622378"
@@ -68,6 +237,64 @@
     - "Quantum AI"
     - "IoT"
     - "Cybersecurity"
+  research_area: "Quantum AI, IoT-Fog Security, and Data Privacy"
+  volume: "28"
+  pages: "3637-3665"
+  source_url: "https://nchr.elsevierpure.com/en/publications/quantum-ai-enhanced-iotfog-communication-a-survey-from-cybersecur/"
+  hero_subtitle: "An IEEE Communications Surveys & Tutorials article on Quantum AI for cybersecurity and data privacy in next-generation IoT-Fog communication, 6G services, industrial systems, and cyber-physical infrastructure."
+  abstract_summary: "The need for data privacy in the next-generation communication networks encompassing the Internet of Things (IoT) and Fog infrastructure has become very significant. This enforces the need for Quantum Artificial Intelligence (AI) approaches to safeguard them. The evolving new means of threats, which are complex and challenging to predict, make conventional security solutions difficult to address and mitigate. To counteract them proactively and efficiently, most organizations have started using AI solutions, which analyze and predict patterns of threats. However, most recent threats demand more robust solutions integrated into the network infrastructure. To sort out most of the demands of IoT-Fog communication services, we present a comprehensive review of Quantum AI to provide a secure and robust framework. Specifically, we provide a taxonomy to summarize the studies on Quantum AI over the IoT-Fog infrastructure, intended to provide predictive maintenance, mitigating threats, and robust defense strategies. Furthermore, we propose the integration of Neurosymbolic AI, which combines the pattern recognition power of neural networks with the reasoning capabilities of symbolic systems, thereby enabling context-aware threat detection and explainable decision-making in critical infrastructure security. In addition, we also emphasize network protocol security and communication privacy issues, particularly in industrial and cyber-physical system networks. Finally, we discuss prominent research challenges and open-ended future research directions for Quantum AI in next-generation wireless networks."
+  research_summary:
+    - "This paper examines the security and privacy needs of next-generation IoT-Fog communication systems. These systems connect large numbers of devices, edge resources, and cyber-physical infrastructure, making them difficult to protect with conventional static security mechanisms."
+    - "The survey focuses on Quantum AI as a possible way to strengthen threat detection, predictive maintenance, robust defense, and privacy-preserving communication. It also discusses the role of neurosymbolic AI in making threat detection more context-aware and explainable."
+    - "The broader value of the paper is its synthesis of security challenges across IoT, fog computing, industrial networks, and cyber-physical systems. It frames Quantum AI not as an isolated technique, but as part of a future security stack for adaptive and explainable next-generation communication networks."
+  plain_language_summary: "This paper looks at how Quantum AI can strengthen privacy and security for connected devices and fog computing systems, especially where cyber-physical infrastructure needs fast and explainable threat detection."
+  contributions:
+    - "Surveys Quantum AI techniques for IoT-Fog cybersecurity and data privacy."
+    - "Builds a taxonomy of studies across threat mitigation, predictive maintenance, and robust defense."
+    - "Highlights neurosymbolic AI as a route toward context-aware and explainable security decisions."
+    - "Identifies open challenges for Quantum AI in next-generation wireless and cyber-physical networks."
+  impact: "IoT-Fog communication systems increasingly support healthcare, smart cities, industrial automation, transportation, energy systems, and 6G services. These environments process sensitive data close to the edge while facing evolving cyber threats. This survey explains how Quantum AI, post-quantum security, and neurosymbolic reasoning can contribute to more adaptive, explainable, and privacy-aware cybersecurity for distributed infrastructure."
+  framework_steps:
+    title: "Quantum AI Security Framework for IoT-Fog Communication"
+    items:
+    - name: "Threat Detection"
+      description: "Uses Quantum AI and machine learning to identify anomalies, intrusions, and complex attack patterns across decentralized IoT-Fog networks."
+    - name: "Privacy Protection"
+      description: "Addresses secure data transmission, communication privacy, quantum key distribution, and post-quantum cryptographic protection for sensitive edge data."
+    - name: "Explainable Cyber Defense"
+      description: "Integrates neurosymbolic AI to make threat detection more context-aware, interpretable, and useful for cybersecurity operators."
+    - name: "Resilient Infrastructure"
+      description: "Focuses on industrial systems, cyber-physical networks, 6G communication, real-time monitoring, and robust defense strategies."
+  modeling_approaches:
+    - name: "Quantum Machine Learning"
+      description: "Applies quantum-enhanced learning models such as quantum neural networks and quantum support vector machines for cybersecurity analytics."
+    - name: "Post-Quantum Cryptography"
+      description: "Prepares IoT-Fog systems for quantum-era threats by replacing vulnerable classical cryptography with quantum-resistant protocols."
+    - name: "Quantum Key Distribution"
+      description: "Supports secure communication channels that are resistant to traditional eavesdropping attacks."
+    - name: "Neurosymbolic AI"
+      description: "Combines neural pattern recognition with symbolic reasoning to improve explainability and context-aware threat detection."
+    - name: "Federated and Edge Intelligence"
+      description: "Supports distributed learning and local decision-making across resource-constrained fog nodes and IoT devices."
+  research_gaps:
+    - "6G security"
+    - "Fog-node scalability"
+    - "Quantum hardware limits"
+    - "Efficient data encoding"
+    - "PQC migration"
+    - "Real-time processing"
+    - "Model interpretability"
+    - "Adversarial robustness"
+  bibtex: |
+    @article{deMacedo2026quantum,
+      author={de Macêdo, Antônio Roberto L. and Jagatheesaperumal, Senthil Kumar and da Costa, Kelton Augusto Pontara and Acharya, Kamal and Song, Houbing and Guizani, Mohsen and de Albuquerque, Victor Hugo C.},
+      title={Quantum AI-Enhanced IoT-Fog Communication: A Survey From Cybersecurity and Data Privacy Perspective},
+      journal={IEEE Communications Surveys & Tutorials},
+      year={2026},
+      volume={28},
+      pages={3637--3665},
+      doi={10.1109/COMST.2025.3622378}
+    }
 
 - type: journal
   year: 2024
@@ -75,7 +302,15 @@
     - "Acharya K."
     - "Velasquez A."
     - "Song H. H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Alvaro Velasquez"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=1g3pA4cAAAAJ"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "A Survey on Symbolic Knowledge Distillation of Large Language Models"
+  slug: "survey-on-symbolic-knowledge-distillation-of-large-language-models"
   venue: "IEEE Transactions on Artificial Intelligence"
   doi: "10.1109/TAI.2024.3428519"
   url: "https://doi.org/10.1109/TAI.2024.3428519"
@@ -84,6 +319,68 @@
     - "Symbolic Knowledge Distillation"
     - "Large Language Models"
     - "Neurosymbolic AI"
+  research_area: "Symbolic Knowledge Distillation and Large Language Models"
+  publication_date: "2024-12-01"
+  volume: "5"
+  issue: "12"
+  pages: "5928-5948"
+  source_url: "https://ieeexplore.ieee.org/document/10597596/"
+  preprint_url: "https://arxiv.org/abs/2408.10210"
+  hero_subtitle: "An IEEE Transactions on Artificial Intelligence survey on converting implicit knowledge in large language models into symbolic, explicit, interpretable, and efficient representations."
+  abstract_summary: "This survey article delves into the emerging and critical area of symbolic knowledge distillation in large language models (LLMs). As LLMs such as generative pretrained transformer-3 (GPT-3) and bidirectional encoder representations from transformers (BERT) continue to expand in scale and complexity, the challenge of effectively harnessing their extensive knowledge becomes paramount. This survey concentrates on the process of distilling the intricate, often implicit knowledge contained within these models into a more symbolic, explicit form. This transformation is crucial for enhancing the interpretability, efficiency, and applicability of LLMs. We categorize the existing research based on methodologies and applications, focusing on how symbolic knowledge distillation can be used to improve the transparency and functionality of smaller, more efficient artificial intelligence (AI) models. The survey discusses the core challenges, including maintaining the depth of knowledge in a comprehensible format, and explores the various approaches and techniques that have been developed in this field. We identify gaps in current research and potential opportunities for future advancements. This survey aims to provide a comprehensive overview of symbolic knowledge distillation in LLMs, spotlighting its significance in the progression toward more accessible and efficient AI systems."
+  research_summary:
+    - "This paper addresses a growing challenge in large language models: powerful models often contain useful knowledge, but that knowledge is implicit, difficult to inspect, and expensive to use directly. Symbolic knowledge distillation aims to convert parts of this hidden model knowledge into more explicit and structured forms."
+    - "The survey reviews approaches that make LLM knowledge more interpretable, compact, and reusable. It connects knowledge distillation with symbolic representations, smaller models, transparency, efficiency, and the broader goal of making AI systems easier to understand and deploy."
+    - "The paper is especially relevant for researchers working at the intersection of LLMs and neurosymbolic AI. It frames symbolic distillation as a path toward models that retain useful reasoning capabilities while becoming more accessible, efficient, and explainable."
+  plain_language_summary: "This paper explains how knowledge inside large language models can be distilled into clearer symbolic forms so smaller AI systems can become more transparent, efficient, and easier to reason about."
+  contributions:
+    - "Surveys symbolic knowledge distillation methods for large language models."
+    - "Connects distillation with interpretability, efficiency, transparency, and model usability."
+    - "Categorizes existing research by methodology and application area."
+    - "Identifies research gaps for future symbolic distillation and accessible AI systems."
+  impact: "Large language models contain extensive knowledge, but their size, opacity, and computational cost limit their practical use in many settings. Symbolic knowledge distillation offers a pathway to extract that knowledge into explicit forms such as rules, knowledge graphs, semantic frames, and structured datasets. This can support smaller, more transparent, and more deployable AI systems while advancing neurosymbolic AI."
+  framework_steps:
+    title: "Symbolic Knowledge Distillation Pipeline"
+    items:
+    - name: "Prompt and Generate"
+      description: "Use carefully designed prompts to elicit factual, commonsense, reasoning, or task-specific knowledge from a large language model."
+    - name: "Extract and Structure"
+      description: "Apply NLP methods and symbolic processing to transform generated text into rules, relations, knowledge graphs, semantic frames, or structured datasets."
+    - name: "Filter and Validate"
+      description: "Use human experts, critic models, benchmarks, and quality filters to preserve accuracy, consistency, relevance, and knowledge depth."
+    - name: "Train Efficient Models"
+      description: "Use the refined symbolic knowledge to train smaller models, open models, or downstream systems with improved interpretability and efficiency."
+  modeling_approaches:
+    - name: "Direct Distillation"
+      description: "Extracts symbolic knowledge directly from LLM outputs and converts it into structured forms such as rules, statements, or knowledge graphs."
+    - name: "Multilevel Distillation"
+      description: "Iteratively trains smaller student models and filters generated knowledge to improve fidelity, conciseness, and transfer quality."
+    - name: "Reinforcement Learning-Based Distillation"
+      description: "Uses reward models, filtering, and iterative training to align generated symbolic knowledge with human preferences or task goals."
+    - name: "Instruction Tuning"
+      description: "Uses symbolic or generated instruction data to make models follow task-specific commands more effectively."
+    - name: "Open Knowledge and Model Creation"
+      description: "Uses symbolic distillation to generate open datasets and train accessible models from knowledge extracted from larger systems."
+  research_gaps:
+    - "Dataset quality"
+    - "Bias mitigation"
+    - "Human oversight"
+    - "Compact model performance"
+    - "Instruction diversity"
+    - "Continuous learning"
+    - "Evaluation benchmarks"
+    - "Cross-domain generalization"
+  bibtex: |
+    @article{acharya2024survey,
+      author={Acharya, Kamal and Velasquez, Alvaro and Song, Houbing Herbert},
+      title={A Survey on Symbolic Knowledge Distillation of Large Language Models},
+      journal={IEEE Transactions on Artificial Intelligence},
+      year={2024},
+      volume={5},
+      number={12},
+      pages={5928--5948},
+      doi={10.1109/TAI.2024.3428519}
+    }
 
 - type: journal
   year: 2024
@@ -93,7 +390,19 @@
     - "Dourado C."
     - "Velasquez A."
     - "Song H. H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Waleed Raza"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=qOyRccEAAAAJ"
+    - name: "Carlos Dourado"
+      scholar_url: "https://scholar.google.com/citations?user=_HJ0aGoAAAAJ&hl=en"
+    - name: "Alvaro Velasquez"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=1g3pA4cAAAAJ"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "Neurosymbolic Reinforcement Learning and Planning: A Survey"
+  slug: "neurosymbolic-reinforcement-learning-and-planning-survey"
   venue: "IEEE Transactions on Artificial Intelligence"
   doi: "10.1109/TAI.2023.3311428"
   url: "https://doi.org/10.1109/TAI.2023.3311428"
@@ -102,6 +411,68 @@
     - "Neurosymbolic AI"
     - "Reinforcement Learning"
     - "Planning"
+  research_area: "Neurosymbolic Reinforcement Learning and Planning"
+  publication_date: "2024-05-01"
+  volume: "5"
+  issue: "5"
+  pages: "1939-1953"
+  source_url: "https://ieeexplore.ieee.org/document/10238788/"
+  repository_url: "https://mdsoar.org/items/7f34db17-98fa-49ec-b96f-1362d86ae138"
+  hero_subtitle: "An IEEE Transactions on Artificial Intelligence survey on neurosymbolic reinforcement learning and planning, covering neural-symbolic integration, RL components, interpretable policies, reward shaping, and safe decision-making."
+  abstract_summary: "The area of neurosymbolic artificial intelligence (Neurosymbolic AI) is rapidly developing and has become a popular research topic, encompassing subfields, such as neurosymbolic deep learning and neurosymbolic reinforcement learning (Neurosymbolic RL). Compared with traditional learning methods, Neurosymbolic AI offers significant advantages by simplifying complexity and providing transparency and explainability. Reinforcement learning (RL), a long-standing artificial intelligence (AI) concept that mimics human behavior using rewards and punishment, is a fundamental component of Neurosymbolic RL, a recent integration of the two fields that has yielded promising results. The aim of this article is to contribute to the emerging field of Neurosymbolic RL by conducting a literature survey. Our evaluation focuses on the three components that constitute Neurosymbolic RL: neural, symbolic, and RL. We categorize works based on the role played by the neural and symbolic parts in RL, into three taxonomies: learning for reasoning, reasoning for learning, and learning–reasoning. These categories are further divided into subcategories based on their applications. Furthermore, we analyze the RL components of each research work, including the state space, action space, policy module, and RL algorithm. In addition, we identify research opportunities and challenges in various applications within this dynamic field."
+  research_summary:
+    - "This paper surveys neuro-symbolic reinforcement learning and planning, an area that combines neural learning, symbolic reasoning, and sequential decision-making. The motivation is that reinforcement learning can learn policies from interaction, but often lacks interpretability, structure, and reliable reasoning."
+    - "The survey categorizes existing methods based on how neural and symbolic components interact. Some systems use learning to support reasoning, others use reasoning to improve learning, and some integrate both directions into combined learning-reasoning architectures."
+    - "The paper also examines reinforcement learning components such as state spaces, action spaces, policy modules, and algorithms. This makes the survey useful for researchers trying to understand where symbolic knowledge can improve planning, transparency, and generalization in RL systems."
+  plain_language_summary: "This paper studies how reinforcement learning systems can become more explainable and structured by combining data-driven learning with symbolic reasoning and planning."
+  contributions:
+    - "Surveys neuro-symbolic reinforcement learning and planning research."
+    - "Introduces taxonomies based on how neural and symbolic components interact in RL."
+    - "Analyzes reinforcement learning components across state spaces, actions, policies, and algorithms."
+    - "Identifies research opportunities and challenges across application areas."
+  impact: "Reinforcement learning has achieved strong results in games, robotics, and decision-making, but it often struggles with sample efficiency, safety, interpretability, reward design, and verification. This survey explains how neurosymbolic RL can combine neural learning with symbolic reasoning to create agents that learn, reason, plan, and expose more understandable policies for real-world decision-making."
+  framework_steps:
+    title: "Neurosymbolic RL Integration Framework"
+    items:
+    - name: "Neural Component"
+      description: "Learns patterns from data, handles perception, reduces symbolic search spaces, and supports policy learning in complex environments."
+    - name: "Symbolic Component"
+      description: "Provides rules, logic, knowledge graphs, constraints, programmatic policies, and interpretable reasoning for RL agents."
+    - name: "Reinforcement Learning Component"
+      description: "Defines state spaces, action spaces, policies, rewards, and algorithms that allow agents to learn through interaction."
+    - name: "Planning and Explanation"
+      description: "Combines learned policies with symbolic planning to improve transparency, verifiability, reward shaping, and safe exploration."
+  modeling_approaches:
+    - name: "Learning for Reasoning RL"
+      description: "Uses neural models to transform unstructured data, reduce symbolic search spaces, or distill learned policies into symbolic systems."
+    - name: "Reasoning for Learning RL"
+      description: "Uses symbolic knowledge to guide neural policy learning, improve reward shaping, and generate more interpretable programmatic policies."
+    - name: "Learning-Reasoning RL"
+      description: "Creates bidirectional interaction between neural and symbolic modules so each component can refine the other during RL."
+    - name: "Safe and Verified RL"
+      description: "Applies symbolic specifications and verification-oriented reasoning to improve safety in exploration and deployment."
+    - name: "Programmatic Policy Learning"
+      description: "Learns policies that can be represented as programs or symbolic structures, supporting interpretability and generalization."
+  research_gaps:
+    - "Automatic symbolic knowledge"
+    - "Verification and validation"
+    - "New NS-RL algorithms"
+    - "Symbol grounding"
+    - "Safe exploration"
+    - "Reward design"
+    - "Scalable reasoning"
+    - "Real-world deployment"
+  bibtex: |
+    @article{acharya2024neurosymbolic,
+      author={Acharya, Kamal and Raza, Waleed and Dourado, Carlos and Velasquez, Alvaro and Song, Houbing Herbert},
+      title={Neurosymbolic Reinforcement Learning and Planning: A Survey},
+      journal={IEEE Transactions on Artificial Intelligence},
+      year={2024},
+      volume={5},
+      number={5},
+      pages={1939--1953},
+      doi={10.1109/TAI.2023.3311428}
+    }
 
 - type: journal
   year: 2023
@@ -112,7 +483,19 @@
     - "Ali A."
     - "Zubairi H."
     - "Acharya K."
+  author_details:
+    - name: "Waleed Raza"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=qOyRccEAAAAJ"
+    - name: "Xuefei Ma"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
+    - name: "Amir Ali"
+      scholar_url: "https://scholar.google.com/citations?user=tluJH-sAAAAJ&hl=en&oi=sra"
+    - name: "Habib Zubairi"
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
   title: "Long Short-Term Memory Neural Network Assisted Peak to Average Power Ratio Reduction for Underwater Acoustic Orthogonal Frequency Division Multiplexing Communication"
+  slug: "lstm-neural-network-assisted-papr-reduction-for-underwater-acoustic-ofdm-communication"
   venue: "KSII Transactions on Internet & Information Systems"
   doi: "10.3837/tiis.2023.01.013"
   url: "https://doi.org/10.3837/tiis.2023.01.013"
@@ -121,6 +504,65 @@
     - "Machine Learning"
     - "LSTM"
     - "Underwater Acoustic Communication"
+  research_area: "Machine Learning for Underwater Acoustic Communication"
+  volume: "17"
+  issue: "1"
+  pages: "239-260"
+  source_url: "https://itiis.org/digital-library/38324"
+  hero_subtitle: "A KSII Transactions on Internet and Information Systems article on LSTM neural networks for reducing peak-to-average power ratio in underwater acoustic OFDM communication."
+  abstract_summary: "The underwater acoustic wireless communication networks are generally formed by the different autonomous underwater acoustic vehicles, and transceivers interconnected to the bottom of the ocean with battery deployed modems. Orthogonal frequency division multiplexing (OFDM) has become the most popular modulation technique in underwater acoustic communication due to its high data transmission and robustness over other symmetrical modulation techniques. To maintain the operability of underwater acoustic communication networks, the power consumption of battery-operated transceivers becomes a vital necessity to be minimized. The OFDM technology has a major lack of peak to average power ratio (PAPR) which results in the consumption of more power, creating non-linear distortion and increasing the bit error rate (BER). To overcome this situation, we have contributed our symmetry research into three dimensions. Firstly, we propose a machine learning-based underwater acoustic communication system through long short-term memory neural network (LSTM-NN). Secondly, the proposed LSTM-NN reduces the PAPR and makes the system reliable and efficient, which turns into a better performance of BER. Finally, the simulation and water tank experimental data results are executed which proves that the LSTM-NN is the best solution for mitigating the PAPR with non-linear distortion and complexity in the overall communication system."
+  research_summary:
+    - "This paper focuses on underwater acoustic communication, where reliable data transfer is difficult because the channel is noisy, bandwidth-limited, and affected by environmental conditions. OFDM is attractive for underwater communication, but high peak-to-average power ratio can reduce efficiency and create practical transmission challenges."
+    - "The study applies long short-term memory neural networks to help reduce PAPR in underwater acoustic OFDM systems. The use of LSTM models is motivated by their ability to learn temporal patterns, which can be useful in communication signals affected by sequence-dependent behavior."
+    - "The broader contribution is the application of machine learning to a signal-processing problem in underwater networks. This supports more efficient communication for systems such as autonomous underwater vehicles and battery-powered acoustic modems."
+  plain_language_summary: "This work uses machine learning to improve underwater acoustic communication, helping OFDM systems transmit data more efficiently in difficult underwater environments."
+  contributions:
+    - "Applies LSTM neural networks to PAPR reduction in underwater acoustic OFDM communication."
+    - "Targets communication systems used by autonomous underwater vehicles and battery-powered modems."
+    - "Connects machine learning with practical signal-processing challenges in underwater networks."
+  impact: "Underwater acoustic communication systems often rely on battery-powered modems and operate under severe bandwidth, multipath, Doppler, and energy constraints. High PAPR in OFDM systems increases power consumption, nonlinear distortion, and BER. This paper shows how LSTM-based machine learning can reduce PAPR and support more energy-efficient underwater acoustic modems and transceivers."
+  framework_steps:
+    title: "LSTM-Assisted Underwater Acoustic OFDM Framework"
+    items:
+    - name: "OFDM Signal Generation"
+      description: "Generates underwater acoustic OFDM symbols for transmission through a multipath and Doppler-affected UAC channel."
+    - name: "PAPR Estimation"
+      description: "Measures high-energy peaks in OFDM symbols using PAPR and CCDF analysis before transmission."
+    - name: "LSTM-NN Reduction"
+      description: "Uses an LSTM neural network with memory to select lower-PAPR signal patterns and reduce nonlinear distortion."
+    - name: "BER and Energy Evaluation"
+      description: "Evaluates received constellations, BER, and energy efficiency using simulation and water-tank experimental data."
+  modeling_approaches:
+    - name: "LSTM Neural Networks"
+      description: "Uses recurrent memory to identify and reduce high PAPR patterns in OFDM signal sequences."
+    - name: "Connectionist Temporal Classification"
+      description: "Supports sequence classification for high-peak and low-peak patterns without requiring explicit alignment."
+    - name: "BELLHOP Channel Modeling"
+      description: "Simulates underwater acoustic propagation effects for evaluating signal transmission and receiver performance."
+    - name: "16-QAM OFDM Evaluation"
+      description: "Uses 16-QAM modulation to study transmitted and received OFDM symbols under underwater acoustic channel conditions."
+    - name: "Energy Efficiency Analysis"
+      description: "Compares power and energy efficiency behavior across LSTM-NN, DNN autoencoder, NN-ACE, and traditional OFDM schemes."
+  research_gaps:
+    - "Doppler compensation"
+    - "Time-varying channels"
+    - "Optimal encoding order"
+    - "Optimal decoding order"
+    - "Channel equalization"
+    - "Carrier synchronization"
+    - "Hardware deployment"
+    - "Multi-transceiver systems"
+  bibtex: |
+    @article{raza2023long,
+      author={Raza, Waleed and Ma, Xuefei and Song, Houbing and Ali, Amir and Zubairi, Habib and Acharya, Kamal},
+      title={Long Short-Term Memory Neural Network Assisted Peak to Average Power Ratio Reduction for Underwater Acoustic Orthogonal Frequency Division Multiplexing Communication},
+      journal={KSII Transactions on Internet and Information Systems},
+      year={2023},
+      volume={17},
+      number={1},
+      pages={239--260},
+      doi={10.3837/tiis.2023.01.013}
+    }
 
 - type: conference
   year: 2026
@@ -131,6 +573,7 @@
     - "Song H."
     - "Sun L."
   title: "Urban Air Mobility Flight Demand Modeling for Airports in New York City"
+  slug: "urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city"
   venue: "AIAA SCITECH 2026 Forum"
   doi: "10.2514/6.2026-1475"
   url: "https://doi.org/10.2514/6.2026-1475"
@@ -139,6 +582,19 @@
     - "Urban Air Mobility"
     - "Airport Demand Modeling"
     - "Advanced Air Mobility"
+  research_area: "Urban Air Mobility and Airport Access Demand"
+  abstract_summary: "This paper develops a data-driven framework for forecasting Urban Air Mobility demand for airport trips in New York City. It combines taxi trip records with socioeconomic and geospatial taxi-zone features, evaluates generalized trip cost across airport-bound origin-destination pairs, and estimates how UAM adoption may change across deployment phases as cost, speed, congestion, and reliability conditions evolve."
+  research_summary:
+    - "This paper studies UAM as an airport-access service in one of the most congestion-sensitive metropolitan regions in the United States. The focus is on trips to JFK, LaGuardia, and Newark, where ground travel time and reliability can strongly affect traveler choices."
+    - "The study combines New York City taxi trip records with socioeconomic and geospatial features to estimate where UAM service could become competitive. Generalized trip cost is used to compare UAM with ground transportation under different deployment stages."
+    - "The results are useful for planning questions such as where vertiports should be placed, how services might phase in over time, and which origin zones may produce the highest airport-bound demand."
+  plain_language_summary: "The paper studies when air taxi services could become attractive for trips to JFK, LaGuardia, and Newark, especially from congested parts of New York City where travel time reliability matters."
+  contributions:
+    - "Models UAM airport-access demand for the New York City region."
+    - "Uses taxi trip, socioeconomic, and geospatial features to estimate airport-bound demand."
+    - "Compares generalized trip cost across early, mid, and mature UAM deployment phases."
+    - "Supports fleet sizing, vertiport siting, pricing, and phased deployment planning."
+  impact: "The paper gives planners a quantitative way to evaluate airport-focused UAM services in a dense, congestion-sensitive metropolitan market."
 
 - type: conference
   year: 2025
@@ -149,6 +605,7 @@
     - "Sun L."
     - "Song H."
   title: "Integrating neurosymbolic AI in advanced air mobility: a comprehensive survey"
+  slug: "integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey"
   venue: "IJCAI 2025"
   doi: "10.24963/ijcai.2025/1151"
   url: "https://doi.org/10.24963/ijcai.2025/1151"
@@ -157,6 +614,21 @@
     - "Neurosymbolic AI"
     - "Advanced Air Mobility"
     - "Survey"
+  research_area: "Neurosymbolic AI for Advanced Air Mobility"
+  pages: "10362-10370"
+  source_url: "https://www.ijcai.org/proceedings/2025/1151"
+  abstract_summary: "This survey examines how neurosymbolic AI can support Advanced Air Mobility systems by combining neural adaptability with symbolic reasoning. It reviews applications across demand forecasting, aircraft design, and real-time air traffic management, while discussing scalability, robustness, regulatory compliance, safety, and transparency challenges."
+  research_summary:
+    - "This paper connects neurosymbolic AI with the operational needs of Advanced Air Mobility. AAM systems require adaptive decision-making, but they also operate in safety-critical and regulated environments where opaque AI decisions are difficult to trust."
+    - "The survey reviews how neural learning and symbolic reasoning can be combined across AAM domains such as demand forecasting, aircraft design, and air traffic management. It also identifies barriers around scalability, robustness, certification, and compliance."
+    - "The paper is useful because it frames neurosymbolic AI as a practical tool for making future air mobility systems more transparent and reliable, rather than only as a theoretical AI paradigm."
+  plain_language_summary: "The paper explains how AI systems that both learn from data and reason with rules could help make future air mobility systems safer, more transparent, and easier to regulate."
+  contributions:
+    - "Surveys neurosymbolic AI applications across major AAM domains."
+    - "Connects demand forecasting, aircraft design, and air traffic management with transparent AI methods."
+    - "Identifies scalability, robustness, and aviation-compliance barriers."
+    - "Provides a roadmap for reliable and explainable AI in next-generation air mobility."
+  impact: "This survey links advanced AI methods with the operational and safety requirements of AAM, helping researchers identify where neurosymbolic approaches can be practically useful."
 
 - type: conference
   year: 2025
@@ -166,6 +638,7 @@
     - "Sun L."
     - "Song H."
   title: "Neurosymbolic Approach for Travel Demand Prediction: Integrating Decision Tree Rules into Neural Networks"
+  slug: "neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks"
   venue: "IWCMC 2025"
   doi: "10.1109/IWCMC65282.2025.11059465"
   url: "https://doi.org/10.1109/IWCMC65282.2025.11059465"
@@ -174,6 +647,20 @@
     - "Travel Demand Prediction"
     - "Neurosymbolic AI"
     - "Decision Trees"
+  research_area: "Neurosymbolic Travel Demand Prediction"
+  preprint_url: "https://arxiv.org/abs/2502.01680"
+  abstract_summary: "This paper introduces a neurosymbolic framework for travel demand prediction that integrates decision-tree-derived symbolic rules with neural networks. It uses geospatial, economic, and mobility data to build predictive features, extracts interpretable if-then rules, and incorporates those rules into neural learning to improve accuracy while preserving interpretability."
+  research_summary:
+    - "This paper addresses travel demand prediction with a neurosymbolic approach. Standard neural networks can model complex relationships, but they are often difficult to interpret. Decision trees are more interpretable, but they may not capture all nonlinear structure in the data."
+    - "The proposed framework extracts symbolic if-then rules from decision trees and uses those rules as additional information for neural prediction. This creates a hybrid model that benefits from both interpretability and predictive flexibility."
+    - "The study is relevant for transportation planning because demand models influence infrastructure investment, resource allocation, and mobility policy. A more interpretable model can help planners understand why certain demand patterns are predicted."
+  plain_language_summary: "The paper improves trip-demand forecasting by letting a neural network learn not only from raw data, but also from decision-tree rules that make important travel patterns easier to interpret."
+  contributions:
+    - "Combines decision tree rules with neural networks for travel demand prediction."
+    - "Uses symbolic rules as interpretable features in neural learning."
+    - "Evaluates prediction quality with MAE, R-squared, and Common Part of Commuters."
+    - "Shows how neurosymbolic modeling can improve both accuracy and interpretability."
+  impact: "The work demonstrates a practical way to bring rule-based interpretability into data-driven transportation demand models."
 
 - type: conference
   year: 2025
@@ -183,6 +670,7 @@
     - "Sun L."
     - "Song H."
   title: "A Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction"
+  slug: "data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction"
   venue: "IEEE CAI 2025"
   doi: "10.1109/CAI64502.2025.00145"
   url: "https://doi.org/10.1109/CAI64502.2025.00145"
@@ -191,6 +679,20 @@
     - "Gravity Models"
     - "Trip Demand Prediction"
     - "Data-Driven Modeling"
+  research_area: "Data-Driven Transportation Demand Modeling"
+  preprint_url: "https://arxiv.org/abs/2506.01964"
+  abstract_summary: "This paper enhances traditional gravity models for trip demand prediction by integrating geographical, economic, social, and travel datasets with machine learning techniques. The study evaluates county-level data from Tennessee and New York and reports large improvements over traditional gravity modeling across explanatory power, absolute error, and commuter-pattern reliability metrics."
+  research_summary:
+    - "This paper revisits the gravity model, a classic tool for estimating trips between regions. Gravity models are simple and interpretable, but they can miss complex interactions between geography, socioeconomic conditions, and real travel behavior."
+    - "The study enhances gravity modeling with machine learning and richer datasets from Tennessee and New York. By combining traditional modeling structure with data-driven learning, the paper aims to improve prediction accuracy without abandoning a familiar transportation-planning framework."
+    - "The result is a more flexible demand prediction approach that can support planning decisions for infrastructure development, mobility services, and regional transportation analysis."
+  plain_language_summary: "The paper upgrades the classic gravity model used in transportation planning by adding machine learning and richer datasets, making origin-destination trip predictions more accurate."
+  contributions:
+    - "Integrates geographic, economic, social, and travel data into gravity-model enhancement."
+    - "Uses machine learning to capture nonlinear trip-demand relationships."
+    - "Validates the approach on Tennessee and New York county-level travel data."
+    - "Reports improved performance across R-squared, MAE, and CPC metrics."
+  impact: "The work provides transportation planners with a more reliable forecasting approach while preserving the practical structure of gravity-based demand modeling."
 
 - type: conference
   year: 2025
@@ -200,6 +702,7 @@
     - "Song H."
     - "Sun L."
   title: "Regional Air Mobility Flight Demand Modeling in Tennessee State"
+  slug: "regional-air-mobility-flight-demand-modeling-in-tennessee-state"
   venue: "AIAA SCITECH 2025 Forum"
   doi: "10.2514/6.2025-2783"
   url: "https://doi.org/10.2514/6.2025-2783"
@@ -208,6 +711,21 @@
     - "Regional Air Mobility"
     - "Demand Modeling"
     - "Advanced Air Mobility"
+  research_area: "Regional Air Mobility Demand Modeling"
+  repository_url: "https://mdsoar.org/items/237874af-0445-472f-8241-151a011fa5d3"
+  preprint_url: "https://arxiv.org/abs/2412.10445"
+  abstract_summary: "This paper models Regional Air Mobility demand in Tennessee by comparing cost, time, and risk across ground transportation, traditional air travel, and RAM options. It evaluates metropolitan statistical areas, computes generalized travel cost, and shows that RAM becomes more competitive for longer medium-distance trips and when regional airport networks are expanded beyond a small set of major hubs."
+  research_summary:
+    - "This paper studies Regional Air Mobility demand for medium-distance travel in Tennessee. These trips are often too long for convenient driving but may not be well served by traditional commercial air service, creating a potential role for RAM."
+    - "The study compares ground transportation, conventional air travel, and RAM using generalized travel cost. It considers cost, time, and risk factors across metropolitan statistical areas and evaluates how airport network design affects demand."
+    - "A key planning insight is that RAM becomes more competitive for longer trips and when the network includes more regional airports. This makes the paper useful for infrastructure planning and regional connectivity analysis."
+  plain_language_summary: "The paper studies when RAM flights could become a practical alternative to driving or commercial air travel for medium-distance trips in Tennessee."
+  contributions:
+    - "Builds a RAM demand modeling framework for Tennessee."
+    - "Uses cost, time, and risk regression to compare RAM with ground and conventional air travel."
+    - "Evaluates how hub selection and regional airport expansion affect competitiveness."
+    - "Identifies conditions where RAM is more likely to be selected."
+  impact: "This work helps explain where regional air mobility could improve connectivity for underserved medium-distance trips."
 
 - type: conference
   year: 2025
@@ -217,6 +735,7 @@
     - "Acharya K."
     - "Song H. H."
   title: "Decoding Android Malware with a Fraction of Features: An Attention-Enhanced MLP-SVM Approach"
+  slug: "decoding-android-malware-with-fraction-of-features-attention-enhanced-mlp-svm-approach"
   venue: "NSS 2024 (LNCS 15564, 2025)"
   doi: "10.1007/978-981-96-3531-3_10"
   url: "https://doi.org/10.1007/978-981-96-3531-3_10"
@@ -225,6 +744,21 @@
     - "Android Malware"
     - "Cybersecurity"
     - "Machine Learning"
+  research_area: "AI for Android Malware Detection"
+  repository_url: "https://mdsoar.org/items/a6453d7a-1288-4dd7-94c1-581dd0c7b6c1"
+  preprint_url: "https://arxiv.org/abs/2409.19234"
+  abstract_summary: "This paper proposes an attention-enhanced MLP-SVM framework for Android malware detection and classification using a compact feature set. It reduces thousands of available features to a small discriminative subset, applies attention and dimensionality reduction, and uses an RBF-kernel SVM to classify malware families with high reported accuracy and reduced computational complexity."
+  research_summary:
+    - "This paper addresses Android malware detection under a practical constraint: high-dimensional malware feature sets can be expensive and difficult to deploy. The goal is to classify malware accurately while using only a fraction of the available features."
+    - "The method combines an attention-enhanced multilayer perceptron with a support vector machine. Attention helps identify discriminative features, dimensionality reduction compresses the representation, and the SVM performs the final classification."
+    - "The paper contributes to efficient cybersecurity modeling by showing that compact feature representations can still support strong malware detection and classification performance."
+  plain_language_summary: "The paper shows that Android malware can be detected accurately without using thousands of features, making the model more efficient and easier to deploy."
+  contributions:
+    - "Combines an attention-enhanced multilayer perceptron with an SVM classifier."
+    - "Reduces the feature set from thousands of Android malware features to a compact subset."
+    - "Uses dimensionality reduction before malware family classification."
+    - "Evaluates the approach with accuracy, precision, recall, and F1-score."
+  impact: "The work supports efficient malware detection pipelines that can remain accurate while reducing feature and computation requirements."
 
 - type: conference
   year: 2024
@@ -234,6 +768,7 @@
     - "Sun L."
     - "Song H."
   title: "Enhancing Forecasting for Advanced Air Mobility"
+  slug: "enhancing-forecasting-for-advanced-air-mobility"
   venue: "IEEE BigData 2024"
   doi: "10.1109/BigData62323.2024.10825414"
   url: "https://doi.org/10.1109/BigData62323.2024.10825414"
@@ -242,6 +777,8 @@
     - "Advanced Air Mobility"
     - "Forecasting"
     - "Big Data"
+  research_area: "Advanced Air Mobility Forecasting"
+  availability_note: "I could not verify a public abstract for this paper online. This page currently uses citation metadata and topic tags only."
 
 - type: conference
   year: 2024
@@ -251,6 +788,7 @@
     - "Sun L."
     - "Song H."
   title: "Demand Modeling for Advanced Air Mobility"
+  slug: "demand-modeling-for-advanced-air-mobility"
   venue: "IEEE BigData 2024"
   doi: "10.1109/BigData62323.2024.10825121"
   url: "https://doi.org/10.1109/BigData62323.2024.10825121"
@@ -259,6 +797,9 @@
     - "Advanced Air Mobility"
     - "Demand Modeling"
     - "Big Data"
+  research_area: "Advanced Air Mobility Demand Modeling"
+  pages: "2855-2863"
+  availability_note: "I could not verify a public abstract for this paper online. This page currently uses citation metadata and topic tags only."
 
 - type: conference
   year: 2024
@@ -270,6 +811,7 @@
     - "Sun L."
     - "Song H. H."
   title: "Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm"
+  slug: "improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm"
   venue: "IEEE ITSC 2024"
   doi: "10.1109/ITSC58415.2024.10920105"
   url: "https://doi.org/10.1109/ITSC58415.2024.10920105"
@@ -278,6 +820,21 @@
     - "Pre-Disaster Planning"
     - "Genetic Algorithm"
     - "Air Mobility"
+  research_area: "Air Mobility Optimization for Disaster Planning"
+  pages: "1290-1295"
+  preprint_url: "https://arxiv.org/abs/2408.00790"
+  abstract_summary: "This paper proposes an optimization framework for pre-disaster air mobility planning. It aggregates airport operational data, estimates evacuation-flight capacity without disrupting regular traffic, and introduces a neural-network-accelerated genetic algorithm to reduce computational overhead while preserving planning quality for airport schedule adjustment."
+  research_summary:
+    - "This paper focuses on air mobility planning before weather-related disasters. As severe weather approaches, airports may need to support evacuation or disruption-management operations while still preserving regular traffic as much as possible."
+    - "The study formulates the planning problem as an optimization task and uses a genetic algorithm to search for effective evacuation-flight schedules. A neural network is used to accelerate the genetic algorithm and reduce computational overhead."
+    - "This approach is useful because emergency planning often requires timely decisions. Faster optimization can help planners evaluate more scenarios while maintaining operational feasibility."
+  plain_language_summary: "The paper uses neural networks to speed up a genetic algorithm for planning evacuation flights before weather disasters, helping airports respond faster under constrained operating conditions."
+  contributions:
+    - "Models airport schedule adjustment for pre-disaster evacuation planning."
+    - "Uses multi-airport operational data to estimate outgoing evacuation capacity."
+    - "Introduces a neural-network-accelerated genetic algorithm."
+    - "Shows reduced computational overhead while maintaining comparable optimization quality."
+  impact: "The work supports faster decision-making for air mobility operations when severe weather events are approaching."
 
 - type: conference
   year: 2023
@@ -290,6 +847,7 @@
     - "Tian Q."
     - "Niu S."
   title: "SKGHOI: Spatial-Semantic Knowledge Graph for Human-Object Interaction Detection"
+  slug: "skghoi-spatial-semantic-knowledge-graph-for-human-object-interaction-detection"
   venue: "IEEE ICDMW 2023"
   doi: "10.1109/ICDMW60847.2023.00155"
   url: "https://doi.org/10.1109/ICDMW60847.2023.00155"
@@ -298,6 +856,21 @@
     - "Knowledge Graph"
     - "Human-Object Interaction"
     - "Computer Vision"
+  research_area: "Knowledge Graphs for Human-Object Interaction Detection"
+  repository_url: "https://mdsoar.org/items/d48086ae-30c7-44ee-836f-d633242b2a91"
+  preprint_url: "https://arxiv.org/abs/2303.04253"
+  abstract_summary: "This paper presents SKGHOI, a graph-based method for human-object interaction detection that integrates spatial and semantic knowledge. It represents interaction components as graph nodes, captures spatial relationships as edges, combines spatial and semantic encoders, and improves computational efficiency while incorporating prior knowledge for HOI detection."
+  research_summary:
+    - "This paper addresses human-object interaction detection in computer vision. Detecting interactions requires more than recognizing objects; the model must understand relationships between people, objects, spatial context, and semantic meaning."
+    - "SKGHOI uses a spatial-semantic knowledge graph to represent interaction components and their relationships. Spatial and semantic encoders are combined to create a richer representation of human-object interactions."
+    - "The approach is designed to improve both accuracy and efficiency by incorporating prior knowledge and avoiding overreliance on appearance-only features. This makes it relevant for real-world vision systems that need to understand actions and interactions."
+  plain_language_summary: "The paper improves computer vision models that detect how people interact with objects by using a knowledge graph that captures both spatial relationships and semantic meaning."
+  contributions:
+    - "Introduces a spatial-semantic knowledge graph for HOI detection."
+    - "Combines spatial and semantic encoders to represent interactions."
+    - "Uses graph structure to incorporate prior knowledge."
+    - "Demonstrates improved efficiency and performance on HICO-DET."
+  impact: "The work offers a more interpretable and efficient graph-based direction for human-object interaction detection."
 
 - type: book_chapter
   year: 2025
@@ -307,6 +880,7 @@
     - "Acharya K."
     - "Song H. H."
   title: "AI for Android Malware Detection and Classification"
+  slug: "ai-for-android-malware-detection-and-classification"
   venue: "AI for Cybersecurity"
   doi: "10.1002/9781394293773.ch15"
   url: "https://doi.org/10.1002/9781394293773.ch15"
@@ -315,3 +889,5 @@
     - "Cybersecurity"
     - "Android Malware"
     - "Artificial Intelligence"
+  research_area: "Artificial Intelligence for Cybersecurity"
+  availability_note: "I could not verify a public abstract for this book chapter online. This page currently uses citation metadata and topic tags only."
