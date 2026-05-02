@@ -568,10 +568,21 @@
   year: 2026
   authors:
     - "Acharya K."
+    - "Song H."
     - "Vasiloff K."
     - "Wang Z."
-    - "Song H."
     - "Sun L."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
+    - name: "Katherine Vasiloff"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=0y4KHOsAAAAJ"
+    - name: "Zhenbo Wang"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=dlbsvskAAAAJ"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
   title: "Urban Air Mobility Flight Demand Modeling for Airports in New York City"
   slug: "urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city"
   venue: "AIAA SCITECH 2026 Forum"
@@ -582,29 +593,86 @@
     - "Urban Air Mobility"
     - "Airport Demand Modeling"
     - "Advanced Air Mobility"
+    - "Generalized Cost of Trip"
+    - "Value of Reliability"
   research_area: "Urban Air Mobility and Airport Access Demand"
-  abstract_summary: "This paper develops a data-driven framework for forecasting Urban Air Mobility demand for airport trips in New York City. It combines taxi trip records with socioeconomic and geospatial taxi-zone features, evaluates generalized trip cost across airport-bound origin-destination pairs, and estimates how UAM adoption may change across deployment phases as cost, speed, congestion, and reliability conditions evolve."
+  pages: "1-12"
+  source_url: "https://arc.aiaa.org/doi/10.2514/6.2026-1475"
+  hero_subtitle: "An AIAA SCITECH 2026 paper on forecasting airport-access Urban Air Mobility demand in New York City by combining 2023 TLC trip records, taxi-zone features, generalized trip cost, and travel-time reliability."
+  abstract_summary: "Rapid urbanization has intensified congestion and travel delays in New York City, motivating interest in Urban Air Mobility (UAM) as a faster and more reliable option for accessing the region’s three major airports: John F. Kennedy (JFK), LaGuardia (LGA), and Newark Liberty (EWR). This paper develops a data-driven framework for forecasting UAM demand by integrating 2023 New York City Taxi & Limousine Commission trip records with socioeconomic and geospatial taxi-zone features. A Generalized Cost of Trip (GCT), combining monetary cost, value of time (VOT), and value of reliability (VOR), is computed for airport-bound origin–destination pairs and used to estimate mode-switching probabilities across early, mid, and mature UAM phases. Results show that several high-congestion Manhattan zones exhibit lower UAM GCT than taxis even in the early phase for all three airports, while Queens and Brooklyn become competitive as UAM costs decline and cruise speeds increase. Hourly switching patterns reveal that reliability-sensitive peak periods drive the highest adoption, with mature-phase conditions capturing over 80–95% of airport trips from major pickup zones. These findings demonstrate that UAM offers increasing advantages for airport access as congestion and technology evolve, providing quantitative guidance for fleet sizing, vertiport siting, pricing strategies, and phased deployment planning in dense metropolitan regions."
   research_summary:
-    - "This paper studies UAM as an airport-access service in one of the most congestion-sensitive metropolitan regions in the United States. The focus is on trips to JFK, LaGuardia, and Newark, where ground travel time and reliability can strongly affect traveler choices."
-    - "The study combines New York City taxi trip records with socioeconomic and geospatial features to estimate where UAM service could become competitive. Generalized trip cost is used to compare UAM with ground transportation under different deployment stages."
-    - "The results are useful for planning questions such as where vertiports should be placed, how services might phase in over time, and which origin zones may produce the highest airport-bound demand."
-  plain_language_summary: "The paper studies when air taxi services could become attractive for trips to JFK, LaGuardia, and Newark, especially from congested parts of New York City where travel time reliability matters."
+    - "This paper studies UAM as an airport-access service for New York City's three major airports: JFK, LaGuardia, and Newark Liberty. NYC is an appropriate test case because high population density, severe congestion, extensive for-hire vehicle use, and detailed public trip records make airport-access demand measurable at taxi-zone resolution."
+    - "The method begins with 2023 TLC Yellow Taxi, Green Taxi, and high-volume for-hire vehicle records. After cleaning missing values, outliers, unknown taxi zones, and non-airport trips, the data are aggregated into hourly origin-destination flows between taxi zones and airport zones. Ground transportation uses observed taxi distance, fare, and duration, while UAM uses orthodromic distance and eVTOL cost and speed assumptions."
+    - "A central contribution is the use of Value of Reliability inside the generalized cost framework. Instead of comparing modes only by average fare and average travel time, the paper accounts for variability in travel time and distance, which is especially important for airport travelers facing congestion and schedule risk."
+    - "The results show strong spatial and temporal differentiation. Central Manhattan zones can have lower UAM generalized cost than taxis even in the early phase, while Queens and Brooklyn become more competitive as UAM matures. Hourly switching analysis shows that peak periods, when reliability matters most, drive the highest adoption probabilities."
+  plain_language_summary: "The paper estimates when airport air taxi trips could beat ground taxi trips in New York City. It shows that UAM is most attractive for congested, reliability-sensitive airport trips, especially from Manhattan and during peak travel periods."
   contributions:
-    - "Models UAM airport-access demand for the New York City region."
-    - "Uses taxi trip, socioeconomic, and geospatial features to estimate airport-bound demand."
-    - "Compares generalized trip cost across early, mid, and mature UAM deployment phases."
-    - "Supports fleet sizing, vertiport siting, pricing, and phased deployment planning."
-  impact: "The paper gives planners a quantitative way to evaluate airport-focused UAM services in a dense, congestion-sensitive metropolitan market."
+    - "Develops a data-driven airport-access UAM demand framework for JFK, LaGuardia, and Newark Liberty using 2023 NYC TLC trip records."
+    - "Integrates socioeconomic and geospatial taxi-zone features with hourly airport-bound origin-destination travel data."
+    - "Computes generalized cost of trip for taxis and UAM using monetary cost, value of time, and value of reliability."
+    - "Models mode-switching probability across early, mid, and mature UAM phases using phase-specific cost and cruise-speed assumptions."
+    - "Identifies spatial and hourly adoption patterns that can inform fleet sizing, vertiport siting, pricing, and phased deployment planning."
+  impact: "Airport access is one of the most plausible early UAM markets because travelers place high value on time and reliability. This paper gives planners a quantitative way to identify which NYC origin zones, boroughs, hours, and deployment phases are most likely to support viable UAM service."
+  framework_steps:
+    title: "NYC Airport UAM Demand Modeling Framework"
+    items:
+    - name: "Data Processing"
+      description: "Collects 2023 Yellow Taxi, Green Taxi, and HV-FHV trip records, removes missing values, outliers, unknown zones, and non-airport trips, then aggregates records into hourly airport-bound OD flows."
+    - name: "Region and Airports"
+      description: "Models demand at NYC taxi-zone resolution for JFK, LaGuardia, and Newark Liberty, represented by TLC taxi zones 132, 138, and 1."
+    - name: "Generalized Cost"
+      description: "Calculates taxi GCT from fare, value of time, travel-time variability, and distance variability, while calculating UAM GCT from cost per mile, orthodromic distance, cruise speed, and value of time."
+    - name: "Mode Choice"
+      description: "Uses a probabilistic mode-choice formulation to estimate UAM switching probabilities from the difference between taxi and UAM generalized costs."
+  modeling_approaches_title: "Methods and Assumptions"
+  modeling_approaches:
+    - name: "Airport Access Market"
+      description: "Centers the analysis on airport-bound trips to JFK, LGA, and EWR, where congestion and schedule reliability strongly affect traveler preferences."
+    - name: "Reliability-Aware GCT"
+      description: "Extends the generalized cost of trip beyond fare and average time by adding value of reliability for travel-time and distance variability."
+    - name: "UAM Phase Scenarios"
+      description: "Defines early, mid, and mature UAM phases with cost assumptions of $15, $10, and $5 per mile and cruise speeds of 125, 150, and 175 mph."
+    - name: "Hourly Switching"
+      description: "Evaluates mode-switching probabilities by hour to show how peak-period congestion and reliability sensitivity affect adoption."
+    - name: "Borough and Zone Analysis"
+      description: "Compares trip-weighted average generalized cost and switching behavior across top taxi zones and major NYC boroughs."
+  research_gaps:
+    - "Travel time reliability"
+    - "Temporal uncertainty"
+    - "Vertiport siting"
+    - "Pricing strategy"
+    - "Multimodal integration"
+    - "Local calibration"
+  bibtex: |
+    @inproceedings{acharya2026urban,
+      author={Acharya, Kamal and Song, Houbing and Vasiloff, Katherine and Wang, Zhenbo and Sun, Liang},
+      title={Urban Air Mobility Flight Demand Modeling for Airports in New York City},
+      booktitle={AIAA SCITECH 2026 Forum},
+      year={2026},
+      pages={1--12},
+      doi={10.2514/6.2026-1475}
+    }
 
 - type: conference
   year: 2025
   authors:
     - "Acharya K."
-    - "Sharif I."
+    - "Sharifi I."
     - "Lad M."
     - "Sun L."
     - "Song H."
-  title: "Integrating neurosymbolic AI in advanced air mobility: a comprehensive survey"
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Iman Sharifi"
+      scholar_url: "https://scholar.google.com/scholar?q=Iman+Sharifi"
+    - name: "Mehul Lad"
+      scholar_url: "https://www.linkedin.com/search/results/people/?keywords=Mehul%20Lad%20UMBC"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
+  title: "Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey"
   slug: "integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey"
   venue: "IJCAI 2025"
   doi: "10.24963/ijcai.2025/1151"
@@ -614,21 +682,70 @@
     - "Neurosymbolic AI"
     - "Advanced Air Mobility"
     - "Survey"
+    - "AI Safety"
+    - "Aviation Governance"
   research_area: "Neurosymbolic AI for Advanced Air Mobility"
   pages: "10362-10370"
   source_url: "https://www.ijcai.org/proceedings/2025/1151"
-  abstract_summary: "This survey examines how neurosymbolic AI can support Advanced Air Mobility systems by combining neural adaptability with symbolic reasoning. It reviews applications across demand forecasting, aircraft design, and real-time air traffic management, while discussing scalability, robustness, regulatory compliance, safety, and transparency challenges."
+  hero_subtitle: "An IJCAI 2025 Survey Track paper on how neurosymbolic AI can support reliable, transparent, and regulation-aware Advanced Air Mobility systems."
+  abstract_summary: "Neurosymbolic AI combines neural network adaptability with symbolic reasoning, promising an approach to address the complex regulatory, operational, and safety challenges in Advanced Air Mobility (AAM). This survey reviews its applications across key AAM domains such as demand forecasting, aircraft design, and real-time air traffic management. Our analysis reveals a fragmented research landscape where methodologies, including Neurosymbolic Reinforcement Learning, have shown potential for dynamic optimization but still face hurdles in scalability, robustness, and compliance with aviation standards. We classify current advancements, present relevant case studies, and outline future research directions aimed at integrating these approaches into reliable, transparent AAM systems. By linking advanced AI techniques with AAM’s operational demands, this work provides a concise roadmap for researchers and practitioners developing next-generation air mobility solutions."
   research_summary:
-    - "This paper connects neurosymbolic AI with the operational needs of Advanced Air Mobility. AAM systems require adaptive decision-making, but they also operate in safety-critical and regulated environments where opaque AI decisions are difficult to trust."
-    - "The survey reviews how neural learning and symbolic reasoning can be combined across AAM domains such as demand forecasting, aircraft design, and air traffic management. It also identifies barriers around scalability, robustness, certification, and compliance."
-    - "The paper is useful because it frames neurosymbolic AI as a practical tool for making future air mobility systems more transparent and reliable, rather than only as a theoretical AI paradigm."
-  plain_language_summary: "The paper explains how AI systems that both learn from data and reason with rules could help make future air mobility systems safer, more transparent, and easier to regulate."
+    - "This survey connects the third wave of AI, neurosymbolic AI, with the operational demands of Advanced Air Mobility. It argues that AAM systems need models that can learn from heterogeneous data such as sensor streams, flight trajectories, infrastructure constraints, weather, demand, and traffic conditions while also respecting explicit aviation rules and safety constraints."
+    - "The paper reviews the background of neurosymbolic AI and AAM, then maps neurosymbolic methods to AAM domains including electrification, aircraft design, training and simulation, predictive maintenance, safety, autonomy, cybersecurity, and demand modeling."
+    - "A key theme is that neural models alone can be difficult to certify or explain in aviation contexts. Symbolic reasoning can encode rules, domain knowledge, regulatory constraints, safety protocols, and operational guidelines, making AI decisions more interpretable and better aligned with aviation standards."
+    - "The survey presents FAA and EASA AI roadmaps as case studies for aviation AI safety assurance. These examples show why certification, human oversight, explainability, risk-based deployment, and regulatory alignment are central issues for neurosymbolic AAM systems."
+    - "The paper organizes major risks into technological, ethical, and governance challenges. These include data integration, interoperability, cybersecurity, scalability, accountability, fairness, public trust, certification, legal compliance, privacy, and lifecycle management."
+  plain_language_summary: "The paper explains how AI systems that combine data learning with rule-based reasoning could help make future air mobility safer, more transparent, easier to certify, and better aligned with aviation regulations."
   contributions:
-    - "Surveys neurosymbolic AI applications across major AAM domains."
-    - "Connects demand forecasting, aircraft design, and air traffic management with transparent AI methods."
-    - "Identifies scalability, robustness, and aviation-compliance barriers."
-    - "Provides a roadmap for reliable and explainable AI in next-generation air mobility."
-  impact: "This survey links advanced AI methods with the operational and safety requirements of AAM, helping researchers identify where neurosymbolic approaches can be practically useful."
+    - "Provides a comprehensive survey of neurosymbolic AI integration across Advanced Air Mobility domains."
+    - "Classifies application areas including electrification, aircraft design, training and simulation, predictive maintenance, safety, autonomy, cybersecurity, and demand modeling."
+    - "Discusses FAA and EASA AI roadmaps as aviation safety assurance case studies."
+    - "Identifies technological, ethical, regulatory, governance, and lifecycle challenges for deploying neurosymbolic AI in AAM."
+    - "Outlines future research directions for reliable, transparent, and certifiable AAM AI systems."
+  impact: "AAM depends on autonomous and AI-assisted decisions in safety-critical, regulated environments. This survey frames neurosymbolic AI as a practical path toward systems that can learn from complex data while still exposing rule-grounded, auditable, and certifiable reasoning."
+  framework_steps:
+    title: "Neurosymbolic AI and AAM Survey Framework"
+    items:
+    - name: "Background"
+      description: "Introduces neurosymbolic AI as a hybrid of neural learning and symbolic reasoning, and positions AAM as a safety-critical transportation transformation."
+    - name: "Application Mapping"
+      description: "Maps neurosymbolic AI to AAM domains such as electrification, aircraft design, training, maintenance, safety, autonomy, cybersecurity, and demand modeling."
+    - name: "Case Studies"
+      description: "Uses FAA and EASA AI roadmaps to examine aviation AI safety assurance, certification, human oversight, and regulatory alignment."
+    - name: "Risks and Directions"
+      description: "Organizes future work around technological, ethical, regulatory, governance, scalability, and lifecycle challenges."
+  modeling_approaches_title: "AAM Application Areas"
+  modeling_approaches:
+    - name: "Electrification"
+      description: "Uses neurosymbolic methods for energy management, battery lifecycle optimization, smart-grid integration, and fault detection in electric AAM systems."
+    - name: "Aircraft Design"
+      description: "Connects learned design exploration with symbolic constraints around certification, vehicle performance, payload, flight range, noise, and urban integration."
+    - name: "Training and Simulation"
+      description: "Supports adaptive simulation, digital twins, natural-language interaction, failure reasoning, route planning, and multi-agent scenario analysis."
+    - name: "Safety and Autonomy"
+      description: "Uses symbolic shields, logic constraints, and rule-guided learning to keep autonomous AAM decisions aligned with safety protocols and air traffic rules."
+    - name: "Cybersecurity"
+      description: "Combines anomaly detection with security policies, knowledge graphs, and cross-validation of navigation inputs to address cyber-physical threats."
+    - name: "Demand Modeling"
+      description: "Combines neural pattern recognition with structured regulatory and operational reasoning for interpretable AAM demand forecasting."
+  research_gaps:
+    - "Scalability"
+    - "Robustness"
+    - "Certification"
+    - "Data interoperability"
+    - "Cybersecurity"
+    - "Accountability"
+    - "Public trust"
+    - "Data governance"
+  bibtex: |
+    @inproceedings{acharya2025integrating,
+      author={Acharya, Kamal and Sharifi, Iman and Lad, Mehul and Sun, Liang and Song, Houbing},
+      title={Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey},
+      booktitle={Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence},
+      year={2025},
+      pages={10362--10370},
+      doi={10.24963/ijcai.2025/1151}
+    }
 
 - type: conference
   year: 2025
@@ -637,6 +754,15 @@
     - "Lad M."
     - "Sun L."
     - "Song H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Mehul Lad"
+      scholar_url: "https://www.linkedin.com/search/results/people/?keywords=Mehul%20Lad%20UMBC"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "Neurosymbolic Approach for Travel Demand Prediction: Integrating Decision Tree Rules into Neural Networks"
   slug: "neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks"
   venue: "IWCMC 2025"
@@ -647,20 +773,62 @@
     - "Travel Demand Prediction"
     - "Neurosymbolic AI"
     - "Decision Trees"
+    - "Neural Networks"
+    - "Explainable AI"
   research_area: "Neurosymbolic Travel Demand Prediction"
   preprint_url: "https://arxiv.org/abs/2502.01680"
-  abstract_summary: "This paper introduces a neurosymbolic framework for travel demand prediction that integrates decision-tree-derived symbolic rules with neural networks. It uses geospatial, economic, and mobility data to build predictive features, extracts interpretable if-then rules, and incorporates those rules into neural learning to improve accuracy while preserving interpretability."
+  pages: "600-605"
+  abstract_summary: "Accurate travel demand prediction is essential for effective transportation planning, infrastructure development, and resource optimization. Traditional models often lack both interpretability and the ability to capture complex, nonlinear relationships across geospatial and socioeconomic variables. To address this, we propose a Neurosymbolic AI framework that integrates decision tree (DT) based symbolic reasoning with neural network (NN) learning for travel demand forecasting. The model leverages multisource data including geospatial, economic, and mobility datasets and embeds interpretable if-then rules extracted from DTs as additional features in the NN. Our experiments demonstrate that this hybrid approach improves predictive accuracy across key metrics, achieving up to 24.19% reduction in Mean Absolute Error (MAE), 1.79% improvement in R2, and 6.49% in Common Part of Commuters (CPC) compared to NN models. Rules extracted at finer variance thresholds (e.g., 0.0001) capture nuanced patterns and enhance model alignment with observed commuter behavior. By combining symbolic interpretability with neural generalization, the proposed method advances both the transparency and performance of travel demand modeling."
   research_summary:
-    - "This paper addresses travel demand prediction with a neurosymbolic approach. Standard neural networks can model complex relationships, but they are often difficult to interpret. Decision trees are more interpretable, but they may not capture all nonlinear structure in the data."
-    - "The proposed framework extracts symbolic if-then rules from decision trees and uses those rules as additional information for neural prediction. This creates a hybrid model that benefits from both interpretability and predictive flexibility."
-    - "The study is relevant for transportation planning because demand models influence infrastructure investment, resource allocation, and mobility policy. A more interpretable model can help planners understand why certain demand patterns are predicted."
+    - "This paper targets travel demand prediction between regions using geospatial, economic, and mobility datasets. It is motivated by the gap between interpretable but limited traditional models and accurate but opaque neural models."
+    - "The proposed neurosymbolic framework trains decision trees to extract symbolic if-then rules, selects useful rules using variance thresholds, encodes those rules as additional neural network inputs, and then trains a neural model that combines raw features with symbolic structure."
+    - "The evaluation compares the hybrid DT-rule-plus-NN model against neural baselines using MAE, R-squared, and Common Part of Commuters. The paper reports improvements up to 24.19% in MAE, 1.79% in R-squared, and 6.49% in CPC."
+    - "The findings show that finer variance thresholds, especially 0.0001, can capture nuanced commuter behavior and improve the alignment between model predictions and observed travel patterns."
   plain_language_summary: "The paper improves trip-demand forecasting by letting a neural network learn not only from raw data, but also from decision-tree rules that make important travel patterns easier to interpret."
   contributions:
-    - "Combines decision tree rules with neural networks for travel demand prediction."
-    - "Uses symbolic rules as interpretable features in neural learning."
-    - "Evaluates prediction quality with MAE, R-squared, and Common Part of Commuters."
-    - "Shows how neurosymbolic modeling can improve both accuracy and interpretability."
+    - "Introduces a neurosymbolic travel demand prediction framework combining DT-based symbolic rules with NN learning."
+    - "Encodes interpretable if-then rules as additional neural network features."
+    - "Uses variance-based rule selection to balance model complexity, interpretability, and predictive value."
+    - "Reports improvements over NN baselines across MAE, R-squared, and CPC."
+    - "Demonstrates that symbolic interpretability and neural generalization can improve transportation forecasting together."
   impact: "The work demonstrates a practical way to bring rule-based interpretability into data-driven transportation demand models."
+  hero_subtitle: "An IWCMC conference paper on improving travel demand prediction by injecting decision-tree-derived symbolic rules into neural network learning."
+  framework_steps:
+    title: "Neurosymbolic Demand Prediction Pipeline"
+    items:
+    - name: "Build Features"
+      description: "Uses multisource geospatial, economic, and mobility datasets to represent origin-destination travel demand."
+    - name: "Extract DT Rules"
+      description: "Learns interpretable decision-tree if-then rules that capture symbolic travel-demand relationships."
+    - name: "Select and Encode Rules"
+      description: "Uses variance thresholds to select useful rules and encode them as additional neural network inputs."
+    - name: "Evaluate Demand"
+      description: "Measures prediction quality with MAE, R-squared, and Common Part of Commuters."
+  modeling_approaches_title: "Method Components"
+  modeling_approaches:
+    - name: "Decision Trees"
+      description: "Provide human-readable if-then rules that summarize important demand relationships."
+    - name: "Neural Networks"
+      description: "Capture nonlinear patterns in transportation data and support flexible demand prediction."
+    - name: "Rule-Augmented Learning"
+      description: "Combines symbolic rule information with data-driven training to balance accuracy and interpretability."
+    - name: "Variance-Based Rule Selection"
+      description: "Controls rule granularity so the model can capture nuanced commuter patterns without overwhelming the neural learner."
+  research_gaps:
+    - "Rule fidelity"
+    - "Model interpretability"
+    - "Spatial transferability"
+    - "Multimodal data"
+    - "Planner-facing explanations"
+  bibtex: |
+    @inproceedings{acharya2025neurosymbolic,
+      author={Acharya, Kamal and Lad, Meet and Sun, Liang and Song, Houbing},
+      title={Neurosymbolic Approach for Travel Demand Prediction: Integrating Decision Tree Rules into Neural Networks},
+      booktitle={IWCMC 2025},
+      year={2025},
+      pages={600--605},
+      doi={10.1109/IWCMC65282.2025.11059465}
+    }
 
 - type: conference
   year: 2025
@@ -669,6 +837,15 @@
     - "Lad M."
     - "Sun L."
     - "Song H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Mehul Lad"
+      scholar_url: "https://www.linkedin.com/search/results/people/?keywords=Mehul%20Lad%20UMBC"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "A Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction"
   slug: "data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction"
   venue: "IEEE CAI 2025"
@@ -679,20 +856,60 @@
     - "Gravity Models"
     - "Trip Demand Prediction"
     - "Data-Driven Modeling"
+    - "Machine Learning"
   research_area: "Data-Driven Transportation Demand Modeling"
   preprint_url: "https://arxiv.org/abs/2506.01964"
-  abstract_summary: "This paper enhances traditional gravity models for trip demand prediction by integrating geographical, economic, social, and travel datasets with machine learning techniques. The study evaluates county-level data from Tennessee and New York and reports large improvements over traditional gravity modeling across explanatory power, absolute error, and commuter-pattern reliability metrics."
+  pages: "815-820"
+  abstract_summary: "Accurate prediction of trips between zones is critical for transportation planning, as it supports resource allocation and infrastructure development across various modes of transport. Although the gravity model has been widely used due to its simplicity, it often inadequately represents the complex factors influencing modern travel behavior. This study introduces a data-driven approach to enhance the gravity model by integrating geographical, economic, social, and travel data from the counties in Tennessee and New York state. Using machine learning techniques, we extend the capabilities of the traditional model to handle more complex interactions between variables. Our experiments demonstrate that machine learning-enhanced models significantly outperform the traditional model. Our results show a 51.48% improvement in R2, indicating a substantial enhancement in the model’s explanatory power. Also, a 63.59% reduction in Mean Absolute Error (MAE) reflects a significant increase in prediction accuracy. Furthermore, a 44.32% increase in Common Part of Commuters (CPC) demonstrates improved prediction reliability. These findings highlight the substantial benefits of integrating diverse datasets and advanced algorithms into transportation models. They provide urban planners and policymakers with more reliable forecasting and decision-making tools."
   research_summary:
-    - "This paper revisits the gravity model, a classic tool for estimating trips between regions. Gravity models are simple and interpretable, but they can miss complex interactions between geography, socioeconomic conditions, and real travel behavior."
-    - "The study enhances gravity modeling with machine learning and richer datasets from Tennessee and New York. By combining traditional modeling structure with data-driven learning, the paper aims to improve prediction accuracy without abandoning a familiar transportation-planning framework."
-    - "The result is a more flexible demand prediction approach that can support planning decisions for infrastructure development, mobility services, and regional transportation analysis."
+    - "This paper enhances the traditional gravity model for county-level trip demand prediction by integrating geographic, economic, social, and travel-pattern features from Tennessee and New York."
+    - "The work is motivated by the gravity model's interpretability and wide use, but also by its limitations in capturing nonlinear relationships and multidimensional factors that shape modern travel behavior."
+    - "Machine learning models, including neural networks, random forests, and gradient boosting, are used to extend gravity-style trip prediction beyond simple population-distance relationships."
+    - "The evaluation shows that data-driven models outperform the traditional gravity model, with reported improvements of 51.48% in R-squared, 63.59% reduction in MAE, and 44.32% increase in CPC."
   plain_language_summary: "The paper upgrades the classic gravity model used in transportation planning by adding machine learning and richer datasets, making origin-destination trip predictions more accurate."
   contributions:
     - "Integrates geographic, economic, social, and travel data into gravity-model enhancement."
     - "Uses machine learning to capture nonlinear trip-demand relationships."
     - "Validates the approach on Tennessee and New York county-level travel data."
-    - "Reports improved performance across R-squared, MAE, and CPC metrics."
+    - "Reports large improvements across R-squared, MAE, and CPC compared with the traditional gravity model."
   impact: "The work provides transportation planners with a more reliable forecasting approach while preserving the practical structure of gravity-based demand modeling."
+  hero_subtitle: "An IEEE CAI conference paper that enhances classic gravity models for trip-demand prediction with richer regional datasets and machine learning."
+  framework_steps:
+    title: "Enhanced Gravity Modeling Pipeline"
+    items:
+    - name: "Collect Regional Data"
+      description: "Combines geographic, economic, social, and travel datasets for county-level demand modeling."
+    - name: "Represent OD Pairs"
+      description: "Builds origin-destination features that preserve the practical structure of gravity-based planning."
+    - name: "Learn Nonlinear Effects"
+      description: "Uses machine learning to capture relationships that traditional gravity models can miss."
+    - name: "Validate Forecasts"
+      description: "Evaluates demand estimates with R-squared, MAE, and CPC across Tennessee and New York."
+  modeling_approaches_title: "Method Components"
+  modeling_approaches:
+    - name: "Gravity Model Baseline"
+      description: "Provides an interpretable transportation-planning foundation for origin-destination trip prediction."
+    - name: "Machine Learning Enhancement"
+      description: "Improves prediction by learning nonlinear relationships among geography, economy, society, and travel behavior."
+    - name: "Multi-Region Validation"
+      description: "Tests the approach on Tennessee and New York data to examine regional applicability."
+    - name: "Feature Importance"
+      description: "Analyzes top-ranked predictors such as distance, travel time, population, and economic factors."
+  research_gaps:
+    - "Cross-region generalization"
+    - "Dynamic travel behavior"
+    - "Feature availability"
+    - "Interpretability"
+    - "Policy sensitivity"
+  bibtex: |
+    @inproceedings{acharya2025data,
+      author={Acharya, Kamal and Lad, Meet and Sun, Liang and Song, Houbing},
+      title={A Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction},
+      booktitle={IEEE CAI 2025},
+      year={2025},
+      pages={815--820},
+      doi={10.1109/CAI64502.2025.00145}
+    }
 
 - type: conference
   year: 2025
@@ -701,6 +918,15 @@
     - "Lad M."
     - "Song H."
     - "Sun L."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Mehul Lad"
+      scholar_url: "https://www.linkedin.com/search/results/people/?keywords=Mehul%20Lad%20UMBC"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
   title: "Regional Air Mobility Flight Demand Modeling in Tennessee State"
   slug: "regional-air-mobility-flight-demand-modeling-in-tennessee-state"
   venue: "AIAA SCITECH 2025 Forum"
@@ -711,21 +937,68 @@
     - "Regional Air Mobility"
     - "Demand Modeling"
     - "Advanced Air Mobility"
+    - "Generalized Travel Cost"
+    - "Risk Modeling"
   research_area: "Regional Air Mobility Demand Modeling"
   repository_url: "https://mdsoar.org/items/237874af-0445-472f-8241-151a011fa5d3"
   preprint_url: "https://arxiv.org/abs/2412.10445"
-  abstract_summary: "This paper models Regional Air Mobility demand in Tennessee by comparing cost, time, and risk across ground transportation, traditional air travel, and RAM options. It evaluates metropolitan statistical areas, computes generalized travel cost, and shows that RAM becomes more competitive for longer medium-distance trips and when regional airport networks are expanded beyond a small set of major hubs."
+  source_url: "https://arc.aiaa.org/doi/10.2514/6.2025-2783"
+  pages: "1-21"
+  abstract_summary: "Advanced Air Mobility (AAM), encompassing Urban Air Mobility (UAM) and Regional Air Mobility (RAM), offers innovative solutions to mitigate the issues related to ground transportation like traffic congestion, environmental pollution etc. RAM addresses transportation inefficiencies over medium-distance trips (50-500 miles), which are often underserved by both traditional air and ground transportation systems. This study focuses on RAM in Tennessee, addressing the complexities of demand modeling as a critical aspect of effective RAM implementation. Leveraging datasets from the Bureau of Transportation Statistics (BTS), Internal Revenue Service (IRS), Federal Aviation Administration (FAA), and other sources, we assess trip data across Tennessee’s Metropolitan Statistical Areas (MSAs) to develop a predictive framework for RAM demand. Through cost, time, and risk regression, we calculate a Generalized Travel Cost (GTC) that allows for comparative analysis between ground transportation and RAM, identifying factors that influence mode choice. When focusing on only five major airports (BNA, CHA, MEM, TRI, and TYS) as RAM hubs, the results reveal a mixed demand pattern due to varying travel distances to these central locations, which increases back-and-forth travel for some routes. However, by expanding the RAM network to include more regional airports, the GTC for RAM aligns more closely with traditional air travel, providing a smoother and more competitive option against ground transportation, particularly for trips exceeding 300 miles. The analysis shows that RAM demand is likely to be selected when air transportation accounts for more than 80% of the total GTC, air travel time is more than 1 hour and when the ground GTC exceeds 300 for specific origin-destination pairs."
   research_summary:
-    - "This paper studies Regional Air Mobility demand for medium-distance travel in Tennessee. These trips are often too long for convenient driving but may not be well served by traditional commercial air service, creating a potential role for RAM."
-    - "The study compares ground transportation, conventional air travel, and RAM using generalized travel cost. It considers cost, time, and risk factors across metropolitan statistical areas and evaluates how airport network design affects demand."
-    - "A key planning insight is that RAM becomes more competitive for longer trips and when the network includes more regional airports. This makes the paper useful for infrastructure planning and regional connectivity analysis."
-  plain_language_summary: "The paper studies when RAM flights could become a practical alternative to driving or commercial air travel for medium-distance trips in Tennessee."
+    - "This paper studies Regional Air Mobility demand for medium-distance trips in Tennessee, focusing on the 50-500 mile range where driving can be inefficient and conventional air service may be inaccessible or inconvenient. Demand is modeled at the Metropolitan Statistical Area level, including Tennessee MSAs and non-MSA regions."
+    - "The framework combines trip demand from NextGen NHTS origin-destination data with multiple public datasets: BTS fatality and airline market data, USDoT value of statistical life guidance, IRS mileage rates, FAA block-time data, inter-airport distances, Google Maps ground distance and time, Gazetteer centroid files, and Bureau of Labor Statistics wage data."
+    - "The method develops cost, time, and risk models for ground transportation and air transportation, then combines them into a Generalized Travel Cost framework. RAM trips are represented as multimodal journeys: ground access from the origin MSA centroid to a hub airport, RAM flight between airports, and ground egress from the destination airport to the destination MSA centroid."
+    - "The results compare two network assumptions. With only five major Tennessee airports as RAM hubs, some origin-destination pairs experience inefficient back-and-forth travel. When the network expands to include additional regional airports nearest to each MSA, RAM generalized travel cost follows the airline pattern more closely and becomes more competitive for longer trips."
+    - "The selection analysis shows that RAM is most attractive for trips over roughly 300 miles, when the air portion accounts for more than 80% of total RAM GTC, when air travel time exceeds one hour, and when ground GTC is above 300 for specific OD pairs."
+  plain_language_summary: "The paper estimates when regional air mobility flights could be a better option than driving for trips between Tennessee metropolitan areas, especially for longer trips where driving cost, time, and risk become high."
   contributions:
-    - "Builds a RAM demand modeling framework for Tennessee."
-    - "Uses cost, time, and risk regression to compare RAM with ground and conventional air travel."
-    - "Evaluates how hub selection and regional airport expansion affect competitiveness."
-    - "Identifies conditions where RAM is more likely to be selected."
-  impact: "This work helps explain where regional air mobility could improve connectivity for underserved medium-distance trips."
+    - "Develops an MSA-level Regional Air Mobility demand modeling framework for Tennessee."
+    - "Uses cost, time, and risk regression to compare ground transportation, airlines, and RAM."
+    - "Integrates generalized travel cost with a probabilistic mode-choice model for RAM selection."
+    - "Compares a five-major-airport RAM hub network against an expanded regional-airport network."
+    - "Identifies RAM-favorable conditions based on trip distance, air-share of GTC, air travel time, and ground GTC."
+  impact: "This work gives planners a quantitative basis for deciding where RAM service could improve regional connectivity in Tennessee, and shows why airport network design matters as much as aircraft performance for medium-distance markets."
+  hero_subtitle: "An AIAA SCITECH 2025 paper on Tennessee Regional Air Mobility demand modeling using MSA-level trip demand, cost-time-risk regression, generalized travel cost, and airport network scenarios."
+  framework_steps:
+    title: "Tennessee RAM Demand Modeling Framework"
+    items:
+    - name: "Generate Trip Demand"
+      description: "Uses NextGen NHTS passenger OD data at the MSA level and filters trips to the RAM-relevant 50-500 mile range."
+    - name: "Model Cost, Time, and Risk"
+      description: "Builds regression models for monetary cost, travel time, and fatality-risk cost using BTS, FAA, IRS, Google Maps, BLS, and USDoT datasets."
+    - name: "Compute GTC"
+      description: "Combines cost, wage-weighted travel time, and risk into Generalized Travel Cost for ground, airline, and RAM alternatives."
+    - name: "Predict RAM Selection"
+      description: "Uses a probabilistic mode-choice formulation to estimate when travelers are likely to switch from ground transportation to RAM."
+  modeling_approaches_title: "Methods and Network Scenarios"
+  modeling_approaches:
+    - name: "MSA-Level Demand"
+      description: "Represents travel between Tennessee MSAs using population centroids for origin and destination locations."
+    - name: "Five-Hub Case"
+      description: "Tests RAM service using BNA, CHA, MEM, TRI, and TYS as major airport hubs, revealing inefficiencies for some OD pairs due to added access travel."
+    - name: "Expanded-Airport Case"
+      description: "Adds regional airports nearest to each MSA, reducing backtracking and making RAM GTC align more closely with traditional air travel."
+    - name: "Risk-Aware GTC"
+      description: "Includes fatality-risk cost using value of statistical life assumptions, alongside direct cost and wage-weighted travel time."
+    - name: "Selection Thresholds"
+      description: "Finds RAM is more likely for trips exceeding about 300 miles, air travel times above one hour, and OD pairs where ground GTC exceeds 300."
+  research_gaps:
+    - "MSA-level RAM demand"
+    - "Risk-aware mode choice"
+    - "Regional airport access"
+    - "Seasonal demand variation"
+    - "Underutilized MSAs"
+    - "Balanced infrastructure investment"
+  bibtex: |
+    @inproceedings{acharya2025regional,
+      author={Acharya, Kamal and Lad, Meet and Song, Houbing and Sun, Liang},
+      title={Regional Air Mobility Flight Demand Modeling in Tennessee State},
+      booktitle={AIAA SCITECH 2025 Forum},
+      year={2025},
+      pages={1--21},
+      doi={10.2514/6.2025-2783}
+    }
 
 - type: conference
   year: 2025
@@ -734,6 +1007,15 @@
     - "Adil M."
     - "Acharya K."
     - "Song H. H."
+  author_details:
+    - name: "Safayat Bin Hakim"
+      scholar_url: "https://scholar.google.com/citations?user=KsokPmwAAAAJ&hl=en&oi=ao"
+    - name: "Muhammad Adil"
+      scholar_url: "https://scholar.google.com/citations?user=vGsjsaIAAAAJ&hl=en&oi=ao"
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "Decoding Android Malware with a Fraction of Features: An Attention-Enhanced MLP-SVM Approach"
   slug: "decoding-android-malware-with-fraction-of-features-attention-enhanced-mlp-svm-approach"
   venue: "NSS 2024 (LNCS 15564, 2025)"
@@ -744,21 +1026,68 @@
     - "Android Malware"
     - "Cybersecurity"
     - "Machine Learning"
+    - "Attention Mechanism"
+    - "Explainable AI"
   research_area: "AI for Android Malware Detection"
   repository_url: "https://mdsoar.org/items/a6453d7a-1288-4dd7-94c1-581dd0c7b6c1"
   preprint_url: "https://arxiv.org/abs/2409.19234"
-  abstract_summary: "This paper proposes an attention-enhanced MLP-SVM framework for Android malware detection and classification using a compact feature set. It reduces thousands of available features to a small discriminative subset, applies attention and dimensionality reduction, and uses an RBF-kernel SVM to classify malware families with high reported accuracy and reduced computational complexity."
+  source_url: "https://link.springer.com/chapter/10.1007/978-981-96-3531-3_10"
+  pages: "1-17"
+  hero_subtitle: "An LNCS/NSS 2024 paper on Android malware detection that combines attention-enhanced MLP feature learning, LDA dimensionality reduction, RBF-kernel SVM classification, and SHAP interpretability."
+  abstract_summary: "The escalating sophistication of Android malware poses significant challenges to traditional detection methods, necessitating innovative approaches that can efficiently identify and classify threats with high precision. This paper introduces a novel framework that synergistically integrates an attention-enhanced Multi-Layer Perceptron (MLP) with a Support Vector Machine (SVM) to make Android malware detection and classification more effective. By carefully analyzing a mere 47 features out of over 9,760 available in the comprehensive CCCS-CIC-AndMal-2020 dataset, our MLP-SVM model achieves an impressive accuracy over 99% in identifying malicious applications. The MLP, enhanced with an attention mechanism, focuses on the most discriminative features and further reduces the 47 features to only 14 components using Linear Discriminant Analysis (LDA). Despite this significant reduction in dimensionality, the SVM component, equipped with an RBF kernel, excels in mapping these components to a high-dimensional space, facilitating precise classification of malware into their respective families. Rigorous evaluations, encompassing accuracy, precision, recall, and F1-score metrics, confirm the superiority of our approach compared to existing state-of-the-art techniques. The proposed framework not only significantly reduces the computational complexity by leveraging a compact feature set but also exhibits resilience against the evolving Android malware landscape."
   research_summary:
-    - "This paper addresses Android malware detection under a practical constraint: high-dimensional malware feature sets can be expensive and difficult to deploy. The goal is to classify malware accurately while using only a fraction of the available features."
-    - "The method combines an attention-enhanced multilayer perceptron with a support vector machine. Attention helps identify discriminative features, dimensionality reduction compresses the representation, and the SVM performs the final classification."
-    - "The paper contributes to efficient cybersecurity modeling by showing that compact feature representations can still support strong malware detection and classification performance."
-  plain_language_summary: "The paper shows that Android malware can be detected accurately without using thousands of features, making the model more efficient and easier to deploy."
+    - "This paper addresses Android malware detection and family classification using the CCCS-CIC-AndMal-2020 dataset, which includes static and dynamic characteristics of Android applications across benign and malicious samples."
+    - "The framework begins with a small selected subset of 47 features from more than 9,760 available features. An attention-enhanced MLP learns discriminative representations and weights the most informative malware indicators."
+    - "After MLP feature learning, Linear Discriminant Analysis reduces the learned representation to 14 components. An SVM with an RBF kernel then classifies malware families from this compact representation."
+    - "The paper uses SHAP values to interpret the trained SVM model, showing which features contribute most strongly to malware-family predictions through beeswarm and waterfall analyses."
+    - "The reported evaluation shows over 99% accuracy while using a compact feature set, demonstrating that careful feature selection, attention, dimensionality reduction, and SVM classification can reduce computation without sacrificing performance."
+  plain_language_summary: "The paper shows that Android malware can be detected and classified accurately using only a small fraction of available features, making the model more efficient and easier to interpret."
   contributions:
-    - "Combines an attention-enhanced multilayer perceptron with an SVM classifier."
-    - "Reduces the feature set from thousands of Android malware features to a compact subset."
-    - "Uses dimensionality reduction before malware family classification."
-    - "Evaluates the approach with accuracy, precision, recall, and F1-score."
-  impact: "The work supports efficient malware detection pipelines that can remain accurate while reducing feature and computation requirements."
+    - "Combines an attention-enhanced MLP with an RBF-kernel SVM for Android malware detection and family classification."
+    - "Reduces the feature set from more than 9,760 Android malware features to 47 selected features, then to 14 LDA components."
+    - "Uses attention to focus representation learning on the most discriminative malware features."
+    - "Applies SHAP analysis to improve model transparency and explain classification behavior."
+    - "Reports over 99% malware detection accuracy with a compact and computationally efficient feature pipeline."
+  impact: "The work supports efficient Android malware detection pipelines that remain accurate while reducing feature dimensionality, computational cost, and interpretability barriers."
+  framework_steps:
+    title: "Attention-Enhanced Malware Classification Pipeline"
+    items:
+    - name: "Select Features"
+      description: "Selects 47 discriminative static and dynamic features from more than 9,760 available CCCS-CIC-AndMal-2020 features."
+    - name: "Learn Attention"
+      description: "Uses an attention-enhanced MLP to learn weighted representations that emphasize the most informative malware signals."
+    - name: "Compress Representation"
+      description: "Applies Linear Discriminant Analysis to reduce the learned representation to 14 components."
+    - name: "Classify Malware"
+      description: "Uses an RBF-kernel SVM for malware family classification and evaluates accuracy, precision, recall, and F1-score."
+  modeling_approaches_title: "Method Components"
+  modeling_approaches:
+    - name: "Attention-Enhanced MLP"
+      description: "Learns nonlinear representations and dynamically weights important Android malware features."
+    - name: "Linear Discriminant Analysis"
+      description: "Reduces the MLP representation to 14 class-separating components before SVM training."
+    - name: "Support Vector Machine"
+      description: "Uses an RBF kernel to separate malware families in a transformed high-dimensional feature space."
+    - name: "SHAP Interpretability"
+      description: "Explains feature contributions to SVM decisions with beeswarm and waterfall visualizations."
+    - name: "Compact Feature Pipeline"
+      description: "Improves deployability by reducing thousands of original features to a small, high-value representation."
+  research_gaps:
+    - "Compact feature sets"
+    - "Deployment efficiency"
+    - "Family-level classification"
+    - "Adversarial robustness"
+    - "Dataset drift"
+    - "Real-time detection"
+  bibtex: |
+    @inproceedings{hakim2025decoding,
+      author={Hakim, Safayat Bin and Adil, Muhammad and Acharya, Kamal and Song, Houbing Herbert},
+      title={Decoding Android Malware with a Fraction of Features: An Attention-Enhanced MLP-SVM Approach},
+      booktitle={Network and System Security},
+      year={2025},
+      pages={1--17},
+      doi={10.1007/978-981-96-3531-3_10}
+    }
 
 - type: conference
   year: 2024
@@ -767,6 +1096,15 @@
     - "Acharya K."
     - "Sun L."
     - "Song H."
+  author_details:
+    - name: "Mehul Lad"
+      scholar_url: "https://www.linkedin.com/search/results/people/?keywords=Mehul%20Lad%20UMBC"
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "Enhancing Forecasting for Advanced Air Mobility"
   slug: "enhancing-forecasting-for-advanced-air-mobility"
   venue: "IEEE BigData 2024"
@@ -777,8 +1115,61 @@
     - "Advanced Air Mobility"
     - "Forecasting"
     - "Big Data"
+    - "Flight Demand"
+    - "Time-Series Forecasting"
   research_area: "Advanced Air Mobility Forecasting"
-  availability_note: "I could not verify a public abstract for this paper online. This page currently uses citation metadata and topic tags only."
+  pages: "2908-2913"
+  hero_subtitle: "An IEEE BigData 2024 paper on hourly flight-demand forecasting for Advanced Air Mobility using temporal features and machine learning models."
+  abstract_summary: "Accurately predicting flight demand is essential for optimizing air travel operations and resource allocation. In our research, we explore the relationship between temporal patterns and flight demand, leveraging hourly data rather than traditional meteorological factors. Through analysis, we discovered significant correlations between hour of the day and flight demand, prompting the creation of features such as peak hours and time segments (morning, afternoon, evening). By utilizing these temporal features, we develop predictive models employing various machine learning algorithms, including LSTM, linear regression, and gradient boosting models. We aim to identify the most effective approach for accurately forecasting flight demand, with implications extending to the optimization of Advanced Air Mobility (AAM) solutions, where understanding temporal patterns is crucial for efficient resource allocation and urban air transportation network design."
+  research_summary:
+    - "This paper studies flight-demand forecasting as a foundation for Advanced Air Mobility operations, where accurate hourly demand estimates can improve scheduling, resource allocation, and urban air transportation network design."
+    - "The method integrates historical weather data from NOAA with FAA hourly records of flight departures and arrivals. The dataset is preprocessed by handling missing values, normalizing numerical features, and engineering temporal features such as peak-hour indicators and morning, afternoon, and evening time segments."
+    - "The paper evaluates several predictive models, including LSTM, linear regression, gradient boosting, and transformer models, using MSE, MAE, MAPE, and R-squared across Tennessee airports."
+    - "Results show that LSTM and Transformer models effectively capture temporal flight-demand patterns, with the Transformer model demonstrating stronger MAPE performance in the reported comparison."
+  plain_language_summary: "The paper predicts airport flight demand from hourly patterns so future AAM systems can schedule vehicles and allocate resources more effectively."
+  contributions:
+    - "Models flight demand using hourly temporal patterns rather than relying only on meteorological or seasonal factors."
+    - "Creates features such as peak hours and time-of-day segments to capture operational demand variation."
+    - "Compares LSTM, linear regression, gradient boosting, and transformer-based approaches."
+    - "Evaluates forecasting performance across multiple Tennessee airports."
+    - "Connects temporal flight-demand prediction to AAM resource allocation and network planning."
+  impact: "Reliable forecasting is necessary before AAM services can be planned, evaluated, and deployed at scale."
+  framework_steps:
+    title: "Hourly Flight-Demand Forecasting Workflow"
+    items:
+    - name: "Collect Data"
+      description: "Combines NOAA hourly weather observations with FAA records of flight departures and arrivals."
+    - name: "Engineer Temporal Features"
+      description: "Creates hour-of-day, peak-hour, and time-segment features to represent demand patterns."
+    - name: "Train Forecasting Models"
+      description: "Fits LSTM, linear regression, gradient boosting, and transformer models to historical flight-demand data."
+    - name: "Evaluate Forecasts"
+      description: "Compares models using MSE, MAE, MAPE, and R-squared across selected Tennessee airports."
+  modeling_approaches_title: "Forecasting Methods"
+  modeling_approaches:
+    - name: "LSTM"
+      description: "Captures long-term dependencies in hourly flight-demand sequences."
+    - name: "Transformer"
+      description: "Models complex temporal sequence patterns and shows strong reported MAPE performance."
+    - name: "Gradient Boosting"
+      description: "Builds predictive power through ensembles of weak learners over engineered demand features."
+    - name: "Linear Regression"
+      description: "Provides an interpretable baseline for comparing more expressive time-series models."
+  research_gaps:
+    - "Hourly demand variation"
+    - "Temporal feature design"
+    - "Airport-level transferability"
+    - "AAM resource allocation"
+    - "Network scheduling"
+  bibtex: |
+    @inproceedings{lad2024enhancing,
+      author={Lad, Meet and Acharya, Kamal and Sun, Liang and Song, Houbing},
+      title={Enhancing Forecasting for Advanced Air Mobility},
+      booktitle={IEEE BigData 2024},
+      year={2024},
+      pages={2908--2913},
+      doi={10.1109/BigData62323.2024.10825414}
+    }
 
 - type: conference
   year: 2024
@@ -787,6 +1178,15 @@
     - "Lad M."
     - "Sun L."
     - "Song H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Mehul Lad"
+      scholar_url: "https://www.linkedin.com/search/results/people/?keywords=Mehul%20Lad%20UMBC"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "Demand Modeling for Advanced Air Mobility"
   slug: "demand-modeling-for-advanced-air-mobility"
   venue: "IEEE BigData 2024"
@@ -797,9 +1197,61 @@
     - "Advanced Air Mobility"
     - "Demand Modeling"
     - "Big Data"
+    - "Generalized Cost of Trip"
+    - "Risk Modeling"
   research_area: "Advanced Air Mobility Demand Modeling"
   pages: "2855-2863"
-  availability_note: "I could not verify a public abstract for this paper online. This page currently uses citation metadata and topic tags only."
+  hero_subtitle: "An IEEE BigData 2024 paper on Tennessee census-tract AAM demand modeling using employment trips, cost-time-risk modeling, and generalized cost of trip."
+  abstract_summary: "In recent years, the rapid pace of urbanization has posed profound challenges globally, exacerbating environmental concerns and escalating traffic congestion in metropolitan areas. To mitigate these issues, Advanced Air Mobility (AAM) has emerged as a promising transportation alternative. However, the effective implementation of AAM requires robust demand modeling. This study delves into the demand dynamics of AAM by analyzing employment based trip data across Tennessee’s census tracts, employing statistical techniques and machine learning models to enhance accuracy in demand forecasting. Drawing on datasets from the Bureau of Transportation Statistics (BTS), the Internal Revenue Service (IRS), the Federal Aviation Administration (FAA), and additional sources, we perform cost, time, and risk assessments to compute the Generalized Cost of Trip (GCT). Our findings indicate that trips are more likely to be viable for AAM if air transportation accounts for over 70% of the GCT and the journey spans more than 250 miles. The study not only refines the understanding of AAM demand but also guides strategic planning and policy formulation for sustainable urban mobility solutions."
+  research_summary:
+    - "This paper estimates Advanced Air Mobility demand for Tennessee at the census-tract level using employment-based trip data. It focuses on identifying trips that could plausibly shift from ground transportation to AAM."
+    - "The study combines data from BTS, IRS, FAA, LODES, and other sources to model trip cost, travel time, and risk. These components are integrated into a Generalized Cost of Trip framework."
+    - "All 70 airports in Tennessee are considered as potential AAM hubs, allowing the model to represent ground access, air travel, and destination access as part of an AAM journey."
+    - "The paper reports that Tennessee trips are more likely to become AAM demand when air transportation contributes more than 70% of total GCT and trip distance exceeds 250 miles."
+  plain_language_summary: "The paper estimates which Tennessee work-related trips could shift to AAM by comparing ground and air options through cost, time, and risk."
+  contributions:
+    - "Models AAM demand at the Tennessee census-tract level using employment-based trip data."
+    - "Develops cost, time, and risk models for ground transportation and AAM."
+    - "Computes Generalized Cost of Trip to compare mode viability."
+    - "Considers all 70 Tennessee airports as AAM hubs."
+    - "Identifies thresholds for AAM-favorable trips based on air share of GCT and trip distance."
+  impact: "AAM planning depends on realistic demand estimates that account for employment flows, trip distance, airport access, cost, time, and risk. This paper provides a tract-level framework for evaluating where AAM may be viable in Tennessee."
+  framework_steps:
+    title: "Census-Tract AAM Demand Modeling Workflow"
+    items:
+    - name: "Collect Employment Trips"
+      description: "Uses Tennessee census-tract employment-based trip data to identify candidate AAM demand."
+    - name: "Model Cost, Time, and Risk"
+      description: "Combines BTS, IRS, FAA, LODES, and related datasets to estimate modal cost, travel time, and risk."
+    - name: "Compute GCT"
+      description: "Calculates Generalized Cost of Trip for ground transportation and AAM alternatives."
+    - name: "Estimate AAM Selection"
+      description: "Identifies trips likely to shift to AAM based on air share of GCT and trip-distance thresholds."
+  modeling_approaches_title: "Demand Modeling Components"
+  modeling_approaches:
+    - name: "Employment-Based OD Demand"
+      description: "Uses census-tract commuting and employment flows as proxy demand for passenger AAM trips."
+    - name: "Airport Hub Network"
+      description: "Considers all 70 Tennessee airports as possible AAM hubs for access and egress modeling."
+    - name: "Cost-Time-Risk GCT"
+      description: "Combines monetary cost, travel duration, and risk into a comparable mode-choice measure."
+    - name: "Threshold Analysis"
+      description: "Finds AAM trips are more likely when air transportation exceeds 70% of GCT and distance exceeds 250 miles."
+  research_gaps:
+    - "Employment-flow proxies"
+    - "Electric aircraft costs"
+    - "Airport access modeling"
+    - "Risk-aware demand"
+    - "Census-tract scalability"
+  bibtex: |
+    @inproceedings{acharya2024demand,
+      author={Acharya, Kamal and Lad, Meet and Sun, Liang and Song, Houbing},
+      title={Demand Modeling for Advanced Air Mobility},
+      booktitle={IEEE BigData 2024},
+      year={2024},
+      pages={2855--2863},
+      doi={10.1109/BigData62323.2024.10825121}
+    }
 
 - type: conference
   year: 2024
@@ -810,6 +1262,19 @@
     - "Liu D."
     - "Sun L."
     - "Song H. H."
+  author_details:
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Alvaro Velasquez"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=1g3pA4cAAAAJ"
+    - name: "Yongxin Liu"
+      scholar_url: "https://scholar.google.com/citations?user=YJuZfyUAAAAJ&hl=en&oi=ao"
+    - name: "Dahai Liu"
+      scholar_url: "https://scholar.google.com/citations?user=qBUOUsoAAAAJ&hl=en&oi=ao"
+    - name: "Liang Sun"
+      scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
   title: "Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm"
   slug: "improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm"
   venue: "IEEE ITSC 2024"
@@ -820,21 +1285,63 @@
     - "Pre-Disaster Planning"
     - "Genetic Algorithm"
     - "Air Mobility"
+    - "Neural Networks"
+    - "Evacuation Planning"
   research_area: "Air Mobility Optimization for Disaster Planning"
   pages: "1290-1295"
   preprint_url: "https://arxiv.org/abs/2408.00790"
-  abstract_summary: "This paper proposes an optimization framework for pre-disaster air mobility planning. It aggregates airport operational data, estimates evacuation-flight capacity without disrupting regular traffic, and introduces a neural-network-accelerated genetic algorithm to reduce computational overhead while preserving planning quality for airport schedule adjustment."
+  abstract_summary: "Weather disaster related emergency operations pose a great challenge to air mobility in both aircraft and airport operations, especially when the impact is gradually approaching. We propose an optimized framework for adjusting airport operational schedules for such pre-disaster scenarios. We first, aggregate operational data from multiple airports and then determine the optimal count of evacuation flights to maximize the impacted airport’s outgoing capacity without impeding regular air traffic. We then propose a novel Neural Network (NN) accelerated Genetic Algorithm (GA) for evacuation planning. Our experiments show that integration yielded comparable results but with smaller computational overhead. We find that the utilization of a NN enhances the efficiency of a GA, facilitating more rapid convergence even when operating with a reduced population size. This effectiveness persists even when the model is trained on data from airports different from those under test."
   research_summary:
-    - "This paper focuses on air mobility planning before weather-related disasters. As severe weather approaches, airports may need to support evacuation or disruption-management operations while still preserving regular traffic as much as possible."
-    - "The study formulates the planning problem as an optimization task and uses a genetic algorithm to search for effective evacuation-flight schedules. A neural network is used to accelerate the genetic algorithm and reduce computational overhead."
-    - "This approach is useful because emergency planning often requires timely decisions. Faster optimization can help planners evaluate more scenarios while maintaining operational feasibility."
+    - "This paper focuses on pre-disaster air mobility planning for approaching weather disasters, where airports may need to increase outbound evacuation capacity while preserving routine airspace operations."
+    - "The framework uses non-commercial airport capacity, such as military and general aviation operational capacity, to schedule additional evacuation flights without fully disrupting regular traffic."
+    - "The optimization problem is addressed with a genetic algorithm, then accelerated by a neural network trained for only a small number of epochs. The neural network helps reduce population size and convergence time while preserving comparable solution quality."
+    - "Experiments using real flight operation data show comparable fitness, flight counts, and destination airport selection between standalone GA and NN-accelerated GA, including when the NN was trained on different airports from those under test."
   plain_language_summary: "The paper uses neural networks to speed up a genetic algorithm for planning evacuation flights before weather disasters, helping airports respond faster under constrained operating conditions."
   contributions:
-    - "Models airport schedule adjustment for pre-disaster evacuation planning."
-    - "Uses multi-airport operational data to estimate outgoing evacuation capacity."
-    - "Introduces a neural-network-accelerated genetic algorithm."
-    - "Shows reduced computational overhead while maintaining comparable optimization quality."
+    - "Proposes a pre-disaster scheduling framework that increases outbound airport capacity while maintaining normal airspace operations."
+    - "Uses non-critical airport capacity to support evacuation flights before disaster impact."
+    - "Introduces a neural-network-accelerated genetic algorithm for evacuation planning."
+    - "Shows that NN assistance can reduce computational overhead and speed GA convergence."
+    - "Evaluates generalization when the NN is trained on airports different from the test airports."
   impact: "The work supports faster decision-making for air mobility operations when severe weather events are approaching."
+  hero_subtitle: "An IEEE ITSC conference paper on using neural-network acceleration to make genetic-algorithm-based pre-disaster air mobility planning faster."
+  framework_steps:
+    title: "Pre-Disaster Air Mobility Optimization Framework"
+    items:
+    - name: "Aggregate Operations"
+      description: "Uses multi-airport operational data to estimate available non-commercial capacity for evacuation-support flights."
+    - name: "Formulate Planning"
+      description: "Models schedule adjustment as an optimization problem under regular traffic and emergency constraints."
+    - name: "Search Schedules"
+      description: "Uses a genetic algorithm to explore feasible evacuation-flight schedule changes."
+    - name: "Accelerate Search"
+      description: "Uses neural network approximation to reduce computational overhead during optimization."
+  modeling_approaches_title: "Method Components"
+  modeling_approaches:
+    - name: "Genetic Algorithm"
+      description: "Searches over possible schedule adjustments for pre-disaster air mobility planning."
+    - name: "Neural Network Acceleration"
+      description: "Speeds GA convergence even with reduced population size and limited NN training."
+    - name: "Airport Capacity Modeling"
+      description: "Estimates outgoing evacuation capacity while preserving regular operations as much as possible."
+    - name: "Cross-Airport Generalization"
+      description: "Tests whether an NN trained on one airport can still support GA search for other airports."
+  research_gaps:
+    - "Real-time optimization"
+    - "Emergency operations"
+    - "Capacity uncertainty"
+    - "Multi-airport coordination"
+    - "Weather disruption"
+    - "Cross-airport transfer"
+  bibtex: |
+    @inproceedings{acharya2024improving,
+      author={Acharya, Kamal and Velasquez, Alvaro and Liu, Y. and Liu, D. and Sun, Liang and Song, Houbing},
+      title={Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm},
+      booktitle={IEEE ITSC 2024},
+      year={2024},
+      pages={1290--1295},
+      doi={10.1109/ITSC58415.2024.10920105}
+    }
 
 - type: conference
   year: 2023
@@ -846,6 +1353,21 @@
     - "Kamal A."
     - "Tian Q."
     - "Niu S."
+  author_details:
+    - name: "Lijing Zhu"
+      scholar_url: "https://scholar.google.com/scholar?q=Lijing+Zhu"
+    - name: "Qizhen Lan"
+      scholar_url: "https://scholar.google.com/scholar?q=Qizhen+Lan"
+    - name: "Alvaro Velasquez"
+      scholar_url: "https://scholar.google.com/citations?hl=en&user=1g3pA4cAAAAJ"
+    - name: "Houbing Herbert Song"
+      scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
+    - name: "Kamal Acharya"
+      scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Qing Tian"
+      scholar_url: "https://scholar.google.com/scholar?q=Qing+Tian"
+    - name: "Shuteng Niu"
+      scholar_url: "https://scholar.google.com/citations?user=sSWFYOsAAAAJ&hl=en&oi=ao"
   title: "SKGHOI: Spatial-Semantic Knowledge Graph for Human-Object Interaction Detection"
   slug: "skghoi-spatial-semantic-knowledge-graph-for-human-object-interaction-detection"
   venue: "IEEE ICDMW 2023"
@@ -856,21 +1378,65 @@
     - "Knowledge Graph"
     - "Human-Object Interaction"
     - "Computer Vision"
+    - "Graph Neural Network"
+    - "Spatial-Semantic Representation"
   research_area: "Knowledge Graphs for Human-Object Interaction Detection"
   repository_url: "https://mdsoar.org/items/d48086ae-30c7-44ee-836f-d633242b2a91"
   preprint_url: "https://arxiv.org/abs/2303.04253"
-  abstract_summary: "This paper presents SKGHOI, a graph-based method for human-object interaction detection that integrates spatial and semantic knowledge. It represents interaction components as graph nodes, captures spatial relationships as edges, combines spatial and semantic encoders, and improves computational efficiency while incorporating prior knowledge for HOI detection."
+  pages: "1186-1193"
+  abstract_summary: "Human-Object Interaction (HOI) detection is a challenging computer vision task that aims to recognize and understand the interactions between humans and objects in images or videos. Existing techniques heavily rely on appearance-based features and computationally expensive transformer models for semantic representation. In this paper, we propose SKGHOI (Spatial-Semantic Knowledge Graph for HOI), a novel graph-based approach that efficiently captures semantic representation by integrating spatial and semantic knowledge. SKGHOI constructs a graph with interaction components as nodes and spatial relationships as edges. Our approach leverages spatial and semantic encoders to extract spatial and semantic information, which are then fused to create a knowledge graph that captures the semantic representation of HOIs. Compared to existing methods, SKGHOI offers computational efficiency and the incorporation of prior knowledge, making it practical for real-world applications. Experimental evaluations on the widely-used HICO-DET datasets demonstrate that SKGHOI outperforms state-of-the-art graph-based methods by a significant margin, showcasing its effectiveness and potential for improving the accuracy and efficiency of HOI detection."
   research_summary:
-    - "This paper addresses human-object interaction detection in computer vision. Detecting interactions requires more than recognizing objects; the model must understand relationships between people, objects, spatial context, and semantic meaning."
-    - "SKGHOI uses a spatial-semantic knowledge graph to represent interaction components and their relationships. Spatial and semantic encoders are combined to create a richer representation of human-object interactions."
-    - "The approach is designed to improve both accuracy and efficiency by incorporating prior knowledge and avoiding overreliance on appearance-only features. This makes it relevant for real-world vision systems that need to understand actions and interactions."
+    - "This paper addresses human-object interaction detection, where models must recognize not only people and objects but also interaction triplets such as person, verb, and object."
+    - "SKGHOI builds a graph with interaction components as nodes and spatial relationships as edges. It combines appearance features, spatial information, and translated semantic features from a knowledge graph embedding model."
+    - "The method uses object detection to generate human-object candidate pairs, a translational model to produce semantic embeddings, and a graph model to make the final HOI prediction."
+    - "Experiments on HICO-DET show that SKGHOI improves over graph-based baselines while using compact semantic features, offering a practical way to incorporate prior knowledge without heavy transformer-style semantic computation."
   plain_language_summary: "The paper improves computer vision models that detect how people interact with objects by using a knowledge graph that captures both spatial relationships and semantic meaning."
   contributions:
-    - "Introduces a spatial-semantic knowledge graph for HOI detection."
-    - "Combines spatial and semantic encoders to represent interactions."
-    - "Uses graph structure to incorporate prior knowledge."
-    - "Demonstrates improved efficiency and performance on HICO-DET."
-  impact: "The work offers a more interpretable and efficient graph-based direction for human-object interaction detection."
+    - "Introduces SKGHOI, a spatial-semantic knowledge graph approach for HOI detection."
+    - "Represents interaction components as graph nodes and spatial relationships as graph edges."
+    - "Combines appearance features, spatial features, and KGE-translated semantic features."
+    - "Improves graph-based HOI detection performance on HICO-DET."
+    - "Uses compact semantic embeddings to reduce computational burden compared with heavier semantic representations."
+  impact: "The work offers a more efficient graph-based direction for human-object interaction detection by incorporating prior knowledge, spatial context, and semantic representation in one HOI graph."
+  hero_subtitle: "An IEEE ICDMW conference paper on human-object interaction detection using a spatial-semantic knowledge graph."
+  framework_steps:
+    title: "Spatial-Semantic HOI Detection Framework"
+    items:
+    - name: "Detect Instances"
+      description: "Uses object detection to identify human and object instances and generate human-object candidate pairs."
+    - name: "Build HOI Graph"
+      description: "Represents interaction components as nodes and spatial relationships as edges."
+    - name: "Translate Semantics"
+      description: "Uses knowledge graph embedding to produce compact semantic features for HOI representation."
+    - name: "Predict Interactions"
+      description: "Combines appearance, spatial, and translated semantic features in a graph model for HOI prediction."
+  modeling_approaches_title: "Method Components"
+  modeling_approaches:
+    - name: "Knowledge Graph"
+      description: "Provides structured prior knowledge for human-object interaction reasoning."
+    - name: "Spatial Encoder"
+      description: "Represents geometric relationships among humans, objects, and visual context."
+    - name: "Semantic Encoder"
+      description: "Adds meaning-level information that complements visual appearance features."
+    - name: "Graph-Based HOI Detection"
+      description: "Combines spatial and semantic signals for efficient interaction detection."
+    - name: "Knowledge Graph Embedding"
+      description: "Translates semantic information into compact features that improve HOI graph representations."
+  research_gaps:
+    - "Spatial reasoning"
+    - "Semantic priors"
+    - "Efficient inference"
+    - "Visual relationship modeling"
+    - "Benchmark generalization"
+  bibtex: |
+    @inproceedings{zhu2023skghoi,
+      author={Zhu, L. and Lan, Q. and Velasquez, Alvaro and Song, Houbing and Acharya, Kamal and Tian, Q. and Niu, S.},
+      title={SKGHOI: Spatial-Semantic Knowledge Graph for Human-Object Interaction Detection},
+      booktitle={IEEE ICDMW 2023},
+      year={2023},
+      pages={1186--1193},
+      doi={10.1109/ICDMW60847.2023.00155}
+    }
 
 - type: book_chapter
   year: 2025

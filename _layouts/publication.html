@@ -57,6 +57,9 @@ layout: default
     {% if publication.framework_steps %}
     <a href="#framework">Framework</a>
     {% endif %}
+    {% if publication.modeling_approaches %}
+    <a href="#modeling-approaches">Methods</a>
+    {% endif %}
     {% if publication.research_gaps %}
     <a href="#research-gaps">Research Gaps</a>
     {% endif %}
@@ -125,7 +128,7 @@ layout: default
 
   {% if publication.modeling_approaches %}
   <section class="publication-detail-section" id="modeling-approaches">
-    <h2>Modeling Approaches Reviewed</h2>
+    <h2>{{ publication.modeling_approaches_title | default: "Modeling Approaches Reviewed" }}</h2>
     <div class="publication-card-grid">
       {% for approach in publication.modeling_approaches %}
       <article class="publication-info-card">
