@@ -47,6 +47,7 @@ show_social_links: true
 # SEO settings
 keywords: "Advanced Air Mobility, Machine Learning, AI, Neurosymbolic AI, Research, UMBC"
 lang: en-US
+google_site_verification: "pmZct0Bz5BhvakECTlzkCs7k0HmieB2hCt5nyRYI0sk"
 
 plugins:
   - jekyll-seo-tag
