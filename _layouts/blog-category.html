@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<section class="blog-hero blog-hero-compact">
+  <p class="blog-eyebrow">Blog Topic</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}
+  <p>{{ page.description }}</p>
+  {% endif %}
+</section>
+
+<nav class="blog-subnav" aria-label="Blog sections">
+  <a href="{{ '/blog/' | relative_url }}">Blog Home</a>
+  <a href="{{ '/blog/archive/' | relative_url }}">Full Archive</a>
+  {% for topic in site.data.blog_topics %}
+  <a href="{{ '/blog/' | append: topic.slug | append: '/' | relative_url }}">{{ topic.title }}</a>
+  {% endfor %}
+</nav>
+
+<section class="blog-section">
+  {% assign topic_posts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+  {% if topic_posts and topic_posts.size > 0 %}
+  <div class="blog-list">
+    {% for post in topic_posts %}
+    <article class="blog-list-item">
+      <div>
+        <p class="blog-meta">
+          {{ post.date | date: "%B %d, %Y" }}
+          {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
+        </p>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 210 }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p>No posts found for this topic yet.</p>
+  {% endif %}
+</section>

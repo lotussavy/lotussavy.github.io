@@ -5,3 +5,5 @@ vendor/
 .jekyll-cache/
 .jekyll-metadata
 .codex
+imports/
+scripts/

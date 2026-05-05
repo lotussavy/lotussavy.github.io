@@ -22,19 +22,17 @@ last_modified_at: 2026-04-30
       <div class="home-mark" aria-hidden="true">KA</div>
     {% endif %}
     <div>
-      <h1 class="home-title">Kamal Acharya</h1>
-      <p class="home-subtitle">Ph.D. Candidate, Information Systems, UMBC</p>
+      <h1 class="home-title">Interpretable AI for Future Mobility</h1>
+      <p class="home-subtitle">Advanced Air Mobility · Neurosymbolic AI · Forecasting & Optimization</p>
     </div>
   </div>
   <p class="home-intro">
-    Kamal Acharya is a <strong>Ph.D. candidate in Information Systems at the University of Maryland,
-    Baltimore County (UMBC)</strong>. His research focuses on <strong>Advanced Air Mobility demand modeling</strong>,
-    <strong>Neurosymbolic AI</strong>, trustworthy machine learning, forecasting, and optimization for
-    transportation systems.
+    I build models that help planners understand future transportation demand, reason with domain
+    knowledge, and make safer operational decisions.
   </p>
   <p class="home-intro">
-    I build <strong>interpretable AI systems</strong> for safer transportation planning, connecting
-    neurosymbolic modeling and data-driven forecasting with operational decision support.
+    My current work connects data-driven forecasting, symbolic reasoning, and optimization for air mobility
+    systems and resilient transportation planning.
   </p>
   <p class="home-collab-line">
     Open to collaboration in AAM forecasting, trustworthy AI, and neurosymbolic systems.
@@ -51,13 +49,24 @@ last_modified_at: 2026-04-30
   </p>
 </section>
 
-<section class="home-section home-trust-section">
-  <h2>Research Networks</h2>
-  <div class="home-trust-strip">
-    <span>UMBC</span>
-    <span>NASA ULI</span>
-    <span>IEEE</span>
-    <span>IJCAI</span>
+<section class="home-section">
+  <h2>Research Focus</h2>
+  <div class="home-card-grid">
+    <article class="home-card">
+      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="24" height="24" />
+      <h3>Advanced Air Mobility Demand Modeling</h3>
+      <p>Forecasting future travel demand, infrastructure needs, and operational constraints for emerging air mobility systems.</p>
+    </article>
+    <article class="home-card">
+      <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" width="24" height="24" />
+      <h3>Neurosymbolic AI</h3>
+      <p>Combining neural learning with symbolic reasoning to make AI systems more interpretable, controllable, and useful for decision support.</p>
+    </article>
+    <article class="home-card">
+      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" />
+      <h3>Optimization for Transportation Planning</h3>
+      <p>Building AI-assisted methods for scenario analysis, resilient mobility planning, and operational decision-making.</p>
+    </article>
   </div>
 </section>
 
@@ -83,36 +92,36 @@ last_modified_at: 2026-04-30
 </section>
 
 <section class="home-section">
-  <h2>What I Am Working On Now</h2>
-  <ul class="home-focus-list">
-    <li>
-      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="20" height="20" />
-      <span>Extending temporal demand forecasting for regional and urban AAM use cases.</span>
-    </li>
-    <li>
-      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="20" height="20" />
-      <span>Designing interpretable neurosymbolic pipelines that preserve controllability and domain logic.</span>
-    </li>
-    <li>
-      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="20" height="20" />
-      <span>Applying neural-accelerated optimization to resilience and disaster-planning scenarios.</span>
-    </li>
-  </ul>
+  <h2>Current Projects</h2>
+  <div class="home-work-list">
+    <article class="home-work-item">
+      <h3>NASA ULI AAM Demand Modeling</h3>
+      <p>Developing demand forecasting workflows for mobility-energy coordinated Advanced Air Mobility systems.</p>
+    </article>
+    <article class="home-work-item">
+      <h3>Neurosymbolic Travel Demand Prediction</h3>
+      <p>Integrating symbolic rules with neural models to improve interpretability in transportation prediction.</p>
+    </article>
+    <article class="home-work-item">
+      <h3>Neural-Accelerated Disaster Mobility Planning</h3>
+      <p>Using neural networks to speed up optimization for pre-disaster transportation and air mobility planning.</p>
+    </article>
+  </div>
 </section>
 
 <section class="home-section">
   <h2>Selected Work</h2>
   <div class="home-work-list">
     <article class="home-work-item">
-      <h3>Integrating Neurosymbolic AI in Advanced Air Mobility</h3>
+      <h3><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Integrating Neurosymbolic AI in Advanced Air Mobility</a></h3>
       <p><span class="home-badge">IJCAI 2025</span> Survey paper mapping practical integration paths for neurosymbolic AAM systems.</p>
     </article>
     <article class="home-work-item">
-      <h3>Demand Modeling for Advanced Air Mobility</h3>
+      <h3><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility</a></h3>
       <p><span class="home-badge">IEEE TITS</span> Journal publication analyzing open challenges and modeling opportunities for AAM demand forecasting.</p>
     </article>
     <article class="home-work-item">
-      <h3>Symbolic Knowledge Distillation of Large Language Models</h3>
+      <h3><a href="{{ '/publications/survey-on-symbolic-knowledge-distillation-of-large-language-models/' | relative_url }}">Symbolic Knowledge Distillation of Large Language Models</a></h3>
       <p><span class="home-badge">IEEE TAI</span> Framework for extracting symbolic structures from LLMs while retaining prediction utility.</p>
     </article>
   </div>

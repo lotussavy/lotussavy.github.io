@@ -173,6 +173,41 @@ last_modified_at: 2026-04-30
   </ul>
 </section>
 
+<section class="research-section research-support-section">
+  <h2>Funding and Research Support</h2>
+  <p>
+    My current research is shaped by collaborative research support at UMBC, including work connected
+    to the NASA Aeronautics Research Mission Directorate (ARMD) University Leadership Initiative (ULI)
+    under cooperative agreement number <strong>80NSSC23M0059</strong>, with additional support from the
+    U.S. National Science Foundation under Grant Nos. <strong>2317117</strong> and <strong>2309760</strong>.
+    This support helps frame my work on demand forecasting, mobility-energy coordination,
+    transportation planning, and AI-assisted decision support for future aviation systems.
+  </p>
+  <div class="research-support-grid" aria-label="Research support organizations">
+    <article class="research-support-card">
+      <img src="{{ '/assets/logos/NASA-logo.png' | relative_url }}" alt="NASA logo" />
+      <div>
+        <h3>NASA ARMD University Leadership Initiative</h3>
+        <p>Cooperative Agreement No. 80NSSC23M0059 supporting Advanced Air Mobility research context.</p>
+      </div>
+    </article>
+    <article class="research-support-card">
+      <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF logo" />
+      <div>
+        <h3>National Science Foundation</h3>
+        <p>Grant Nos. 2317117 and 2309760 supporting AI-assisted modeling, planning, and decision systems.</p>
+      </div>
+    </article>
+    <article class="research-support-card">
+      <img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" />
+      <div>
+        <h3>University of Maryland, Baltimore County</h3>
+        <p>Academic and institutional research environment supporting AI, transportation, and decision systems work.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
 <section class="research-section">
   <h2>Impact and Collaboration</h2>
   <p>

@@ -11,6 +11,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "{{ site.author.url }}#person",
   "name": "{{ site.author.name }}",
   "url": "{{ site.author.url }}",
   "image": "{{ site.image | absolute_url }}",
@@ -21,16 +22,29 @@
     "name": "{{ site.institution.name }}",
     "department": "{{ site.institution.department }}"
   },
-  "alumniOf": {
+  "worksFor": {
     "@type": "CollegeOrUniversity",
     "name": "{{ site.institution.name }}"
   },
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "ORCID",
+    "value": "{{ site.author.orcid }}"
+  },
   "knowsAbout": [
     "Advanced Air Mobility",
+    "Advanced Air Mobility demand forecasting",
+    "Urban Air Mobility",
+    "Regional Air Mobility",
     "Neurosymbolic AI",
+    "Explainable AI",
+    "Trustworthy AI",
+    "Symbolic Knowledge Distillation",
     "Machine Learning",
     "Time Series Forecasting",
+    "Origin-Destination Matrix Estimation",
     "Transportation Planning",
+    "Disaster mobility planning",
     "Optimization"
   ],
   "sameAs": [
@@ -93,7 +107,7 @@
         "name": {{ publication.title | jsonify }},
         "headline": {{ publication.title | jsonify }},
         "description": {{ publication.abstract_summary | default: page.description | default: publication.title | jsonify }},
-        "mainEntityOfPage": "{{ page.url | absolute_url }}",
+        "mainEntityOfPage": "{{ '/publications/' | append: publication.slug | append: '/' | absolute_url }}",
         "author": [
           {% for author in publication.authors %}
           { "@type": "Person", "name": {{ author | jsonify }} }{% unless forloop.last %},{% endunless %}

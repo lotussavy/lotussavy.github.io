@@ -1,7 +1,3 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 
@@ -20,11 +16,11 @@ layout: default
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <p id="project_title">{{ site.title }}</p>
-          <p id="project_tagline">{{ site.description }}</p>
+          <p id="project_title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
+          <p id="project_tagline">{{ site.header_tagline | default: site.description }}</p>
 
           <!-- NAVIGATION -->
-          <nav id="main-nav">
+          <nav id="main-nav" aria-label="Primary navigation">
             <ul>
               {% for item in site.data.navigation %}
                 <li><a href="{{ item.url | relative_url }}">{{ item.label }}</a></li>
@@ -45,7 +41,7 @@ layout: default
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="footer-identity">
-          {{ site.author.name }} · Ph.D. Researcher · {{ site.author.location }}
+          {{ site.author.name }} · Ph.D. Candidate in Information Systems, UMBC · {{ site.author.location }}
         </p>
         <p class="footer-contact">
           Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
@@ -53,8 +49,9 @@ layout: default
 
         <nav id="footer-nav" aria-label="Footer quick links">
           <ul>
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
             <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
-            <li><a href="{{ '/publications/' | relative_url }}">Publication</a></li>
+            <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
             <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
             <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
             <li><a href="#top">Back to top</a></li>

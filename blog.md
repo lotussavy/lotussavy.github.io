@@ -1,25 +1,40 @@
 ---
 layout: default
 title: Blog & Articles
+description: "Technical articles by Kamal Acharya on Advanced Air Mobility, Neurosymbolic AI, Explainable AI, demand forecasting, and machine learning."
 permalink: /blog/
-robots: noindex,follow
-sitemap: false
+robots: index,follow
+sitemap: true
 ---
 
 <section class="blog-hero">
+  <p class="blog-eyebrow">Research Notes & Technical Articles</p>
   <h1>Blog & Technical Articles</h1>
   <p>
-    Notes, tutorials, and research reflections on Neurosymbolic AI, machine learning,
-    and advanced air mobility.
+    Notes, paper summaries, and research reflections on Advanced Air Mobility,
+    Neurosymbolic AI, Explainable AI, demand forecasting, and machine learning.
   </p>
 </section>
 
+<nav class="blog-subnav" aria-label="Blog sections">
+  <a href="{{ '/blog/archive/' | relative_url }}">Full Archive</a>
+  {% for topic in site.data.blog_topics %}
+  <a href="{{ '/blog/' | append: topic.slug | append: '/' | relative_url }}">{{ topic.title }}</a>
+  {% endfor %}
+</nav>
+
 <section class="blog-section">
-  <h2>Latest Articles</h2>
+  <div class="blog-section-heading">
+    <div>
+      <p class="blog-eyebrow">Latest</p>
+      <h2>Recent Articles</h2>
+    </div>
+    <a class="blog-read" href="{{ '/blog/archive/' | relative_url }}">View Archive</a>
+  </div>
 
   {% if site.posts and site.posts.size > 0 %}
   <div class="blog-grid">
-    {% for post in site.posts limit: 6 %}
+    {% for post in site.posts limit: 9 %}
     <article class="blog-card">
       <p class="blog-meta">
         {{ post.date | date: "%B %d, %Y" }}
@@ -33,7 +48,7 @@ sitemap: false
         {% endfor %}
       </p>
       {% endif %}
-      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      <p>{{ post.description | default: post.excerpt | strip_html | truncate: 145 }}</p>
       <p><a class="blog-read" href="{{ post.url | relative_url }}">Read Full Article</a></p>
     </article>
     {% endfor %}
@@ -44,12 +59,23 @@ sitemap: false
 </section>
 
 <section class="blog-section">
-  <h2>Coming Soon</h2>
-  <ul class="blog-upcoming">
-    <li>LSTM Networks: A Deep Dive into Sequence Modeling</li>
-    <li>Disaster Response Planning with AI: Opportunities and Challenges</li>
-    <li>Genetic Algorithms 101: Basics and Beyond</li>
-  </ul>
+  <div class="blog-section-heading">
+    <div>
+      <p class="blog-eyebrow">Browse</p>
+      <h2>Topics</h2>
+    </div>
+  </div>
+
+  <div class="blog-topic-grid">
+    {% for topic in site.data.blog_topics %}
+    {% assign topic_posts = site.posts | where_exp: "post", "post.categories contains topic.title" %}
+    <a class="blog-topic-card" href="{{ '/blog/' | append: topic.slug | append: '/' | relative_url }}">
+      <span>{{ topic_posts.size }} articles</span>
+      <strong>{{ topic.title }}</strong>
+      <p>{{ topic.description }}</p>
+    </a>
+    {% endfor %}
+  </div>
 </section>
 
 <section class="blog-section">

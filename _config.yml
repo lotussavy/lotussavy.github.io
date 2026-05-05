@@ -1,7 +1,9 @@
 # Academic Research Portfolio
 title: "Kamal Acharya"
 theme: jekyll-theme-slate
-description: "Ph.D. Candidate at UMBC, AI Researcher"
+tagline: "AAM Demand Forecasting and Neurosymbolic AI Research"
+header_tagline: "Ph.D. Candidate in Information Systems, UMBC"
+description: "Ph.D. Candidate at UMBC researching Advanced Air Mobility demand forecasting, neurosymbolic AI, trustworthy machine learning, and transportation optimization."
 url: https://lotussavy.github.io
 baseurl: ""
 image: /assets/images/kamal-acharya-social.jpg
@@ -40,12 +42,14 @@ collections:
     output: true
     permalink: /publications/:name/
 
+permalink: /blog/:year/:month/:day/:title/
+
 # Footer settings
 footer_text: "© 2026 Kamal Acharya. All rights reserved."
 show_social_links: true
 
 # SEO settings
-keywords: "Advanced Air Mobility, Machine Learning, AI, Neurosymbolic AI, Research, UMBC"
+keywords: "Kamal Acharya, Advanced Air Mobility, AAM demand forecasting, Urban Air Mobility, Regional Air Mobility, Neurosymbolic AI, Explainable AI, Trustworthy AI, Symbolic Knowledge Distillation, Transportation Planning, Origin-Destination Matrix Estimation, Time Series Forecasting, Optimization, UMBC"
 lang: en-US
 google_site_verification: "pmZct0Bz5BhvakECTlzkCs7k0HmieB2hCt5nyRYI0sk"
 
@@ -54,6 +58,8 @@ plugins:
   - jekyll-sitemap
 
 exclude:
+  - imports/
+  - scripts/
   - vendor/
   - assets/slides/README.md
   - assets/gallery/README.md
