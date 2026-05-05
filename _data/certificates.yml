@@ -53,6 +53,11 @@
   year: "2025"
   image: "ICECET Reviewer Certificate.png"
 
+- title: "ICECI Reviewer Certificate"
+  issuer: "ICECI"
+  year: "2025"
+  image: "ICECI Reviewer Certificate.png"
+
 - title: "IEEEXtreme Certificate"
   issuer: "IEEE"
   year: "2024"
@@ -67,6 +72,11 @@
   issuer: "IEEE"
   year: "2025"
   image: "IEEE CAI.jpg"
+
+- title: "IEEE Robot Challenge"
+  issuer: "IEEE"
+  year: "2025"
+  image: "IEEE Robot Challenge.png"
 
 - title: "IEEE Senior Membership Elevation"
   issuer: "IEEE"
