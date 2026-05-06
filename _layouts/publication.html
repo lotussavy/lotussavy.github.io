@@ -2,6 +2,18 @@
 layout: default
 ---
 
+{% comment %}
+Publication pages support SEO front matter:
+title: "Publication Title"
+description: "One or two sentence search description."
+keywords:
+  - Advanced Air Mobility
+  - Neurosymbolic AI
+canonical_url: "https://lotussavy.github.io/publications/publication-slug/"
+publication_slug: "publication-slug"
+If keywords are omitted, head-custom.html falls back to tags from _data/publications.yml.
+{% endcomment %}
+
 {% assign publication = site.data.publications | where: "slug", page.publication_slug | first %}
 
 {% if publication %}

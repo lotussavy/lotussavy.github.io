@@ -45,7 +45,8 @@ last_modified_at: 2026-04-30
   </p>
   <p>
     For broader context, see my <a href="{{ '/research/' | relative_url }}">research areas</a> and
-    <a href="{{ '/talks/' | relative_url }}">conference talks and presentations</a>.
+    <a href="{{ '/talks/' | relative_url }}">conference talks and presentations</a>, or read
+    <a href="{{ '/blog/' | relative_url }}">technical articles</a> related to these themes.
   </p>
 </section>
 

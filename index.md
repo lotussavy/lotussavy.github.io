@@ -128,5 +128,6 @@ last_modified_at: 2026-04-30
   <p class="home-cta-group">
     <a class="home-action-link" href="{{ '/publications/' | relative_url }}">View Full Publication List</a>
     <a class="home-action-link home-action-link-secondary" href="{{ '/research/' | relative_url }}">Explore Research Themes</a>
+    <a class="home-action-link home-action-link-secondary" href="{{ '/blog/' | relative_url }}">Read Articles</a>
   </p>
 </section>

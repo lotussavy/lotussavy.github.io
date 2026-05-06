@@ -221,8 +221,10 @@ last_modified_at: 2026-04-30
   </ul>
   <p>
     For publication details and outputs, see
-    <a href="{{ '/publications/' | relative_url }}">Publications</a>. For profile and contact:
+    <a href="{{ '/publications/' | relative_url }}">Publications</a> and
+    <a href="{{ '/blog/' | relative_url }}">Blog & Technical Articles</a>. For profile and contact:
     <a href="{{ '/' | relative_url }}">Home</a> and
-    <a href="{{ '/contact/' | relative_url }}">Contact</a>.
+    <a href="{{ '/contact/' | relative_url }}">Contact</a>. My broader academic record is on
+    <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>.
   </p>
 </section>

@@ -82,6 +82,12 @@ sitemap: true
   <h2>Stay Connected</h2>
   <p>
     For article updates, collaboration, or feedback:
+    <a href="{{ '/research/' | relative_url }}">Research</a>
+    |
+    <a href="{{ '/publications/' | relative_url }}">Publications</a>
+    |
+    <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+    |
     <a href="{{ '/contact/' | relative_url }}">Contact</a>
     |
     <a href="mailto:lotussavy@gmail.com">Email</a>
