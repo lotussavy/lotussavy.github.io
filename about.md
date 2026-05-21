@@ -2,7 +2,7 @@
 layout: default
 title: "About Kamal Acharya"
 permalink: /about/
-description: "Short biography of Kamal Acharya, a Ph.D. candidate at UMBC researching Advanced Air Mobility, neurosymbolic AI, forecasting, optimization, and trustworthy machine learning."
+description: "Short biography of Kamal Acharya, who holds a Ph.D. in Information Systems from UMBC and researches Advanced Air Mobility, neurosymbolic AI, forecasting, optimization, and trustworthy machine learning."
 robots: index,follow
 sitemap: true
 ---
@@ -10,8 +10,8 @@ sitemap: true
 <section class="about-hero">
   <h1>About Kamal Acharya</h1>
   <p>
-    I am a Ph.D. candidate in Information Systems at the University of Maryland, Baltimore County
-    (UMBC), where my research focuses on interpretable AI for future mobility and transportation
+    I earned my Ph.D. in Information Systems from the University of Maryland, Baltimore County
+    (UMBC). My research focuses on interpretable AI for future mobility and transportation
     decision support.
   </p>
 </section>

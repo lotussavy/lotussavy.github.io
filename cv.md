@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Kamal Acharya Curriculum Vitae"
-description: "Curriculum vitae for Kamal Acharya, Ph.D. candidate in Information Systems at UMBC, including education, research experience, publications, teaching, and skills."
+description: "Curriculum vitae for Kamal Acharya, Ph.D. in Information Systems from UMBC, including education, research experience, publications, teaching, and skills."
 permalink: /cv/
 last_modified_at: 2026-04-30
 ---
@@ -9,7 +9,7 @@ last_modified_at: 2026-04-30
 <section class="cv-hero">
   <h1>Kamal Acharya</h1>
   <p class="cv-subtitle">
-    Ph.D. Candidate in Information Systems · Advanced Air Mobility · Neurosymbolic AI
+    Ph.D. in Information Systems · Advanced Air Mobility · Neurosymbolic AI
   </p>
   <p>
     Researcher and educator focused on interpretable AI systems for transportation planning,
