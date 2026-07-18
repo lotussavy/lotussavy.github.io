@@ -3,7 +3,7 @@ layout: default
 title: "Talks and Presentations on AI and Advanced Air Mobility"
 description: "Selected talks, posters, and invited presentations by Kamal Acharya on neurosymbolic AI, Advanced Air Mobility, optimization, and trustworthy AI systems."
 permalink: /talks/
-last_modified_at: 2026-04-30
+last_modified_at: 2026-07-18
 ---
 
 <section class="talks-hero">
@@ -202,6 +202,25 @@ last_modified_at: 2026-04-30
 
 <section class="talks-section">
   <h2>Invited Talks</h2>
+
+  <article class="talk-item">
+    <h3>Trustworthy Neurosymbolic AI for Predictive Decision Support</h3>
+    <p><strong>Population Health Sciences Special Seminar</strong> | Weill Cornell Medicine | Postdoctoral Associate Position Presentation</p>
+    <p>
+      <img class="talk-affiliation-logo" src="{{ '/assets/logos/weill-cornell-population-health-sciences.png' | relative_url }}" alt="Weill Cornell Medicine Population Health Sciences logo" width="320" height="110" loading="lazy" />
+    </p>
+    <p>
+      Delivered a special seminar on trustworthy neurosymbolic AI for predictive decision support,
+      focusing on interpretable, reliable, and knowledge-guided AI methods for high-stakes
+      decision-making contexts.
+    </p>
+    <p>
+      Presented as part of a postdoctoral associate position seminar with Dr. Yiye Zhang.
+    </p>
+    <p class="talk-links">
+      <a href="{{ '/assets/slides/Postdoc_Presentation.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+    </p>
+  </article>
 
   <article class="talk-item">
     <h3>Neurosymbolic AI for Advanced Air Mobility</h3>
