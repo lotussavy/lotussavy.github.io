@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Explainable AI vs. Neurosymbolic AI"
 title: Demystifying the Difference Between Explainable AI and Neurosymbolic AI
 date: '2024-11-26'
 categories:
@@ -59,7 +60,7 @@ But neurosymbolic AI is not automatically explainable. A hybrid system can still
 Likewise, XAI is not automatically neurosymbolic. A saliency map or SHAP explanation may explain a neural model without adding any symbolic reasoning to the system.
 
 <figure>
-  <img src="/assets/blog/demystifying-the-difference-between-explainable-ai-and-neurosymbolic-ai/cover.png" alt="Differences between Explainable AI and Neurosymbolic AI">
+  <img src="/assets/blog/demystifying-the-difference-between-explainable-ai-and-neurosymbolic-ai/cover.png" alt="Differences between Explainable AI and Neurosymbolic AI" width="609" height="802" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Differences between Explainable AI and Neurosymbolic AI</figcaption>
 </figure>
 

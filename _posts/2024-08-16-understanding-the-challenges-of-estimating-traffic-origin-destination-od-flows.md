@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Challenges in Estimating Origin-Destination Flows"
 title: Understanding the Challenges of Estimating Traffic Origin-Destination (OD) Flows
 date: '2024-08-16'
 categories:
@@ -18,7 +19,7 @@ The reason is straightforward. We rarely observe every traveler from origin to d
 
 Krishnakumari, van Lint, Djukic, and Cats describe this challenge clearly in their work on data-driven OD matrix estimation. The problem is not only that data is incomplete. It is that the OD estimation problem is severely underdetermined, especially in large congested networks.
 
-![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/cover.png)
+![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/cover.png){: width="800" height="800" loading="eager" decoding="async" fetchpriority="high" }
 
 ## What an OD Matrix Represents
 
@@ -54,7 +55,7 @@ Most practical OD estimation work blends both ideas. A prior OD matrix may come 
 
 Many OD estimation methods can be written as an optimization problem.
 
-![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-02.png)
+![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-02.png){: width="327" height="58" loading="lazy" decoding="async" }
 
 The model tries to estimate an unknown OD matrix `x`. It balances two goals:
 
@@ -69,9 +70,9 @@ This balance is necessary because observations alone are usually insufficient. W
 
 The distance between the estimated OD matrix and the prior is often measured with simple metrics such as squared error or RMSE. These are easy to optimize, but they may not preserve the structure of the OD pattern.
 
-![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-03.png)
+![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-03.png){: width="327" height="58" loading="lazy" decoding="async" }
 
-![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-04.png)
+![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-04.png){: width="756" height="269" loading="lazy" decoding="async" }
 
 For OD matrices, structure matters. Two matrices may have similar RMSE but very different spatial or temporal patterns. A model can get many small values roughly right while missing the actual commute corridors, peak spreading, or directional flows that planners care about.
 
@@ -93,9 +94,9 @@ This is where OD estimation becomes difficult. We are not simply filling in miss
 
 Many traditional methods use a traffic simulation or network loading model to connect OD demand to observed traffic states.
 
-![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-05.png)
+![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-05.png){: width="260" height="37" loading="lazy" decoding="async" }
 
-![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-06.png)
+![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-06.png){: width="688" height="351" loading="lazy" decoding="async" }
 
 The simulation model takes OD flows as input and produces traffic conditions as output. In principle, we can search for the OD matrix that makes the simulated traffic match observed traffic.
 
@@ -109,7 +110,7 @@ So the model may work mathematically while relying on assumptions that are diffi
 
 Sequential estimation methods, such as Kalman filter variants, are often used for dynamic OD estimation.
 
-![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-07.png)
+![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/figure-07.png){: width="225" height="89" loading="lazy" decoding="async" }
 
 These methods describe OD flows as a state that evolves over time. The state equation predicts the next OD matrix from the previous one. The observation equation links the OD state to traffic measurements.
 

@@ -7,7 +7,7 @@ categories:
 reading_time: 7
 sitemap: true
 robots: index,follow
-description: A practical explanation of a San Francisco Bay Area UAM demand method that compares multimodal air trips with road commutes under different congestion and vertiport scenarios.
+description: "Explore a Bay Area UAM demand method comparing multimodal air trips and road commutes across congestion and vertiport scenarios."
 image: /assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/cover.png
 source_url: https://doi.org/10.1109/TITS.2021.3052229
 ---
@@ -33,12 +33,12 @@ The authors use commute trip data from the San Francisco County Transportation A
 The study focuses on east-to-west and west-to-east commute flows, which are important because the Bay Area has strong directional commute patterns and major geographic barriers such as the bay itself.
 
 <figure>
-  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/cover.png" alt="East-to-west travel data for the San Francisco Bay Area">
+  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/cover.png" alt="East-to-west travel data for the San Francisco Bay Area" width="643" height="399" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>East-to-west travel data for the San Francisco Bay Area</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/figure-02.png" alt="West-to-east travel data for the San Francisco Bay Area">
+  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/figure-02.png" alt="West-to-east travel data for the San Francisco Bay Area" width="643" height="399" loading="lazy" decoding="async">
   <figcaption>West-to-east travel data for the San Francisco Bay Area</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ In other words, UAM must provide a meaningful time advantage. It is not enough t
 Under high road congestion, UAM becomes much more attractive.
 
 <figure>
-  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/figure-03.png" alt="Maximum number of commuters benefited by UAM in the San Francisco Bay Area under high road congestion">
+  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/figure-03.png" alt="Maximum number of commuters benefited by UAM in the San Francisco Bay Area under high road congestion" width="624" height="213" loading="lazy" decoding="async">
   <figcaption>Maximum number of commuters benefited by UAM in the San Francisco Bay Area under high road congestion</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ That range is wide, and that is the point. UAM demand is highly sensitive to ass
 The picture changes under low road congestion.
 
 <figure>
-  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/figure-04.png" alt="Maximum number of commuters benefited by UAM in the San Francisco Bay Area under low road congestion">
+  <img src="/assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/figure-04.png" alt="Maximum number of commuters benefited by UAM in the San Francisco Bay Area under low road congestion" width="624" height="213" loading="lazy" decoding="async">
   <figcaption>Maximum number of commuters benefited by UAM in the San Francisco Bay Area under low road congestion</figcaption>
 </figure>
 

@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Strategic Air Taxi Infrastructure via Clustering"
 title: Insights on strategic air taxi network infrastructure locations using an iterative constrained clustering approach
 date: '2024-04-22'
 categories:
@@ -19,7 +20,7 @@ A vertistop in the wrong place is expensive concrete with very little demand. A 
 The paper proposes a two-phase approach. First, estimate which existing ground taxi trips could plausibly shift to an air taxi. Then, use an iterative constrained clustering method to identify the infrastructure locations that best serve that demand.
 
 <figure>
-  <img src="/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/cover.png" alt="Schematic representation of an air taxi network">
+  <img src="/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/cover.png" alt="Schematic representation of an air taxi network" width="800" height="325" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Schematic representation of an air taxi network</figcaption>
 </figure>
 
@@ -38,7 +39,7 @@ Before estimating demand, they clean the data aggressively. Trips with impossibl
 The next step is not to assume every taxi rider becomes an air taxi passenger. That would be unrealistic. Air taxis only make sense for certain trips: long enough to benefit from flight, congested enough to produce time savings, and close enough to infrastructure at both ends.
 
 <figure>
-  <img src="/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-02.png" alt="Air taxi ride booking process">
+  <img src="/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-02.png" alt="Air taxi ride booking process" width="800" height="285" loading="lazy" decoding="async">
   <figcaption>Air taxi ride booking process</figcaption>
 </figure>
 
@@ -46,19 +47,19 @@ The paper uses assumptions inspired by the Uber Elevate white paper. A passenger
 
 The authors add a practical access constraint: the first-mile and last-mile ground legs should each be no more than one mile. They assume one mile of on-road travel takes about 10 minutes in congested New York conditions, so a complete air taxi trip includes up to 20 minutes of access and egress time plus the flight itself.
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-03.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-03.png){: width="713" height="552" loading="lazy" decoding="async" }
 
 The flight time is estimated from the Haversine distance between pickup and drop-off points, using the assumed air taxi speed of 170 mph, or about 2.83 miles per minute.
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-04.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-04.png){: width="569" height="112" loading="lazy" decoding="async" }
 
 Time savings are then calculated by comparing the original ground taxi duration with the estimated air taxi trip duration.
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-05.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-05.png){: width="478" height="70" loading="lazy" decoding="async" }
 
 A rider qualifies as potential air taxi demand only if the estimated air taxi trip is at least 40% faster than the original ground trip.
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-06.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-06.png){: width="478" height="70" loading="lazy" decoding="async" }
 
 This filtering step is important because it keeps the model from treating air taxis as a universal replacement for city taxis. The service is valuable when flight meaningfully beats the street network. For short trips, awkward access legs, or routes with limited time savings, the regular taxi still wins.
 
@@ -70,7 +71,7 @@ The paper addresses this with a multimodal transportation-based warm start. Inst
 
 For each possible vertistop, the model measures how much demand it can serve within the one-mile ground-access limit. If a candidate location captures a large share of pickup and drop-off points nearby, it receives a higher fitness score.
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-07.jpg)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-07.jpg){: width="55" height="33" loading="lazy" decoding="async" }
 
 The top candidate locations are then used as smarter initial seeds for the constrained clustering process. This is the key idea: the algorithm is still data-driven, but it begins with locations that reflect how people already move through the city.
 
@@ -83,21 +84,21 @@ In practical terms, the evaluation asks whether the proposed infrastructure loca
 ## What the Results Suggest
 
 <figure>
-  <img src="/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-08.png" alt="Passenger distribution over time">
+  <img src="/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-08.png" alt="Passenger distribution over time" width="800" height="363" loading="lazy" decoding="async">
   <figcaption>Passenger distribution over time</figcaption>
 </figure>
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-09.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-09.png){: width="800" height="141" loading="lazy" decoding="async" }
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-10.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-10.png){: width="800" height="141" loading="lazy" decoding="async" }
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-11.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-11.png){: width="800" height="141" loading="lazy" decoding="async" }
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-12.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-12.png){: width="800" height="141" loading="lazy" decoding="async" }
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-13.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-13.png){: width="800" height="392" loading="lazy" decoding="async" }
 
-![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-14.png)
+![](/assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/figure-14.png){: width="1303" height="654" loading="lazy" decoding="async" }
 
 The strongest takeaway is that air taxi demand is not evenly spread across the city. It concentrates around places where long, time-sensitive, and congestion-heavy trips are common. According to the paper's base-case results, major facilities would be needed around JFK International Airport and South Central Park, with smaller stops suggested around locations such as the World Trade Center, Washington Square, and Allerton Ballfields.
 

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Publications | Kamal Acharya | Advanced Air Mobility and Neurosymbolic AI"
-description: "Doctoral dissertation and peer-reviewed publications by Kamal Acharya in Advanced Air Mobility, neurosymbolic AI, machine learning, optimization, intelligent transportation, and cybersecurity."
+seo_title: "Publications | Kamal Acharya"
+description: "Explore Kamal Acharya's dissertation and publications in Advanced Air Mobility, neurosymbolic AI, transportation, optimization, and cybersecurity."
 permalink: /publications/
 last_modified_at: 2026-04-30
 ---

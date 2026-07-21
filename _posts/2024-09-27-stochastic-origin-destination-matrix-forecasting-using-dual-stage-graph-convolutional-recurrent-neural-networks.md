@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "OD Matrix Forecasting with Graph Recurrent Networks"
 title: Stochastic Origin-Destination Matrix Forecasting Using Dual-Stage Graph Convolutional, Recurrent Neural Networks
 date: '2024-09-27'
 categories:
@@ -36,7 +37,7 @@ The difficulty is that matrix row and column order does not necessarily preserve
 ## The Proposed Framework
 
 <figure>
-  <img src="/assets/blog/stochastic-origin-destination-matrix-forecasting-using-dual-stage-graph-convolutional-recurrent-neural-networks/cover.png" alt="Framework overview">
+  <img src="/assets/blog/stochastic-origin-destination-matrix-forecasting-using-dual-stage-graph-convolutional-recurrent-neural-networks/cover.png" alt="Framework overview" width="966" height="386" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Framework overview</figcaption>
 </figure>
 

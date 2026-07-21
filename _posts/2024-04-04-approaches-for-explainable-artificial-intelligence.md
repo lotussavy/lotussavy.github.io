@@ -7,7 +7,7 @@ categories:
 reading_time: 9
 sitemap: true
 robots: index,follow
-description: "A practical explanation of the RVS framework for explainable AI, covering feature-based, design, representational, training-data, and stakeholder-aware explanations."
+description: "Learn about the RVS framework for explainable AI, including feature, design, representation, training-data, and stakeholder explanations."
 image: /assets/blog/approaches-for-explainable-artificial-intelligence/cover.png
 source_url: https://medium.com/@lotussavy/approaches-for-explainable-artificial-intelligence-93c2d0b6b31b
 ---
@@ -19,7 +19,7 @@ The paper **"Reasons, Values, Stakeholders: A Philosophical Framework for Explai
 That is the core idea behind the paper's **RVS framework**: explanations should connect **Reasons**, **Values**, and **Stakeholders**.
 
 <figure>
-  <img src="/assets/blog/approaches-for-explainable-artificial-intelligence/cover.png" alt="Kinds of AI explanations">
+  <img src="/assets/blog/approaches-for-explainable-artificial-intelligence/cover.png" alt="Kinds of AI explanations" width="651" height="442" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Kinds of AI explanations. The paper separates feature-based token explanations from broader design explanations.</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ The paper uses a hiring example to make the problem concrete. Imagine Nora appli
 Nora asks a simple question: **Why was I rejected?**
 
 <figure>
-  <img src="/assets/blog/approaches-for-explainable-artificial-intelligence/figure-02.png" alt="Prediction-based hiring decision">
+  <img src="/assets/blog/approaches-for-explainable-artificial-intelligence/figure-02.png" alt="Prediction-based hiring decision" width="826" height="270" loading="lazy" decoding="async">
   <figcaption>A prediction-based hiring decision. The explanation can refer to data, learning process, learned function, representation, or Nora's measured features.</figcaption>
 </figure>
 

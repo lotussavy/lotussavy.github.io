@@ -7,7 +7,7 @@ categories:
 reading_time: 6
 sitemap: true
 robots: index,follow
-description: A clear guide to Tennessee's metropolitan, micropolitan, and combined statistical areas, and why these county-based regions matter for planning and mobility analysis.
+description: "A guide to Tennessee's metropolitan, micropolitan, and combined statistical areas for transportation and regional planning."
 image: /assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/cover.png
 source_url: https://www.census.gov/geographies/reference-maps/2003/geo/statecbsa.html
 ---
@@ -43,7 +43,7 @@ Before the 2003 definition changes, Tennessee had seven Metropolitan Statistical
 The Knoxville area also changed. Sevier County was removed from the Knoxville MSA, leaving Anderson, Blount, Knox, Loudon, and Union counties in that metro definition. Sevier County became the Sevierville Micropolitan Statistical Area instead.
 
 <figure>
-  <img src="/assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/cover.png" alt="Tennessee Metropolitan Statistical Areas">
+  <img src="/assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/cover.png" alt="Tennessee Metropolitan Statistical Areas" width="1400" height="634" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Tennessee Metropolitan Statistical Areas</figcaption>
 </figure>
 
@@ -54,7 +54,7 @@ This kind of change can look technical, but it has real planning implications. A
 The 2003 definitions also designated 20 Micropolitan Statistical Areas in Tennessee.
 
 <figure>
-  <img src="/assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/figure-02.png" alt="Tennessee Micropolitan Statistical Areas">
+  <img src="/assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/figure-02.png" alt="Tennessee Micropolitan Statistical Areas" width="1400" height="723" loading="lazy" decoding="async">
   <figcaption>Tennessee Micropolitan Statistical Areas</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ For transportation planning, these places should not be treated as isolated smal
 Combined Statistical Areas capture a broader regional relationship. They recognize that adjacent metro and micro areas can become linked through labor markets and commuting flows.
 
 <figure>
-  <img src="/assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/figure-03.png" alt="Tennessee Combined Statistical Areas">
+  <img src="/assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/figure-03.png" alt="Tennessee Combined Statistical Areas" width="1400" height="680" loading="lazy" decoding="async">
   <figcaption>Tennessee Combined Statistical Areas</figcaption>
 </figure>
 

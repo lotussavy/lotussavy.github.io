@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Kamal Acharya"
-description: "Kamal Acharya holds a Ph.D. in Information Systems from UMBC and researches interpretable AI, Advanced Air Mobility demand modeling, neurosymbolic systems, forecasting, and optimization."
+seo_title: "Kamal Acharya | AAM and Neurosymbolic AI"
+description: "Kamal Acharya is a UMBC Ph.D. researcher specializing in Advanced Air Mobility demand modeling, neurosymbolic AI, forecasting, and optimization."
 permalink: /
 last_modified_at: 2026-04-30
 ---
@@ -53,17 +54,17 @@ last_modified_at: 2026-04-30
   <h2>Research Focus</h2>
   <div class="home-card-grid">
     <article class="home-card">
-      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="24" height="24" />
+      <img src="{{ '/assets/icons/research.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Advanced Air Mobility Demand Modeling</h3>
       <p>Forecasting future travel demand, infrastructure needs, and operational constraints for emerging air mobility systems.</p>
     </article>
     <article class="home-card">
-      <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" width="24" height="24" />
+      <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Neurosymbolic AI</h3>
       <p>Combining neural learning with symbolic reasoning to make AI systems more interpretable, controllable, and useful for decision support.</p>
     </article>
     <article class="home-card">
-      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" />
+      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Optimization for Transportation Planning</h3>
       <p>Building AI-assisted methods for scenario analysis, resilient mobility planning, and operational decision-making.</p>
     </article>
@@ -74,17 +75,17 @@ last_modified_at: 2026-04-30
   <h2>Professional Snapshot</h2>
   <div class="home-card-grid">
     <article class="home-card">
-      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" />
+      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Current Role</h3>
       <p>Graduate Research Assistant at UMBC, contributing to NASA ULI research initiatives.</p>
     </article>
     <article class="home-card">
-      <img src="{{ '/assets/icons/book.svg' | relative_url }}" alt="" width="24" height="24" />
+      <img src="{{ '/assets/icons/book.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Research Output</h3>
       <p>15+ publications across IEEE journals and major AI and transportation conferences.</p>
     </article>
     <article class="home-card">
-      <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" width="24" height="24" />
+      <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Core Areas</h3>
       <p>Neurosymbolic AI, AAM demand modeling, optimization, and trustworthy AI systems.</p>
     </article>

@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Symbolic Regression for Small Data Sets"
 title: Symbolic regression outperforms other models for small data sets
 date: '2024-04-10'
 categories:
@@ -70,14 +71,14 @@ The comparison included both interpretable and less interpretable models:
 The QLattice models were tested with AIC and BIC criteria, both of which penalize unnecessary complexity. The other models were tested with typical configurations, such as different tree depths or different numbers of estimators.
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-outperforms-other-models-for-small-data-sets/cover.png" alt="Models and configurations in the comparison">
+  <img src="/assets/blog/symbolic-regression-outperforms-other-models-for-small-data-sets/cover.png" alt="Models and configurations in the comparison" width="527" height="333" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Models and configurations in the comparison</figcaption>
 </figure>
 
 ## Results
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-outperforms-other-models-for-small-data-sets/figure-02.png" alt="The summary results of our benchmarking.">
+  <img src="/assets/blog/symbolic-regression-outperforms-other-models-for-small-data-sets/figure-02.png" alt="The summary results of our benchmarking." width="705" height="339" loading="lazy" decoding="async">
   <figcaption>The summary results of our benchmarking.</figcaption>
 </figure>
 

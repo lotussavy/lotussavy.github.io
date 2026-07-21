@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "How Neural Networks Accelerate Disaster Air Planning"
 title: Improving Pre-Disaster Air Mobility Planning with Neural Network-Accelerated Genetic Algorithms
 date: '2024-11-11'
 categories:
@@ -30,7 +31,7 @@ The framework evaluates candidate destination airports based on three major sign
 The optimization goal is to maximize useful evacuation capacity while minimizing operational variability. In a disaster context, reliability matters. A high-capacity destination is less useful if its ability to absorb traffic is highly unstable.
 
 <figure>
-  <img src="/assets/blog/improving-pre-disaster-air-mobility-planning-with-neural-network-accelerated-genetic-algorithms/cover.png" alt="Research methodology">
+  <img src="/assets/blog/improving-pre-disaster-air-mobility-planning-with-neural-network-accelerated-genetic-algorithms/cover.png" alt="Research methodology" width="908" height="315" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Research methodology</figcaption>
 </figure>
 
@@ -74,14 +75,14 @@ The standalone genetic algorithm performs well when given enough population size
 The neural network stabilizes after about 25 training epochs. On its own, it does not outperform the GA, but that is not its role. Its value is in guiding the GA.
 
 <figure>
-  <img src="/assets/blog/improving-pre-disaster-air-mobility-planning-with-neural-network-accelerated-genetic-algorithms/figure-02.png" alt="Genetic algorithm performance">
+  <img src="/assets/blog/improving-pre-disaster-air-mobility-planning-with-neural-network-accelerated-genetic-algorithms/figure-02.png" alt="Genetic algorithm performance" width="674" height="429" loading="lazy" decoding="async">
   <figcaption>Genetic algorithm performance</figcaption>
 </figure>
 
 The NN-accelerated GA reaches comparable solutions with a much smaller search process: population size 15 and 5 generations. That is the key result. The hybrid model produces near-identical airport selections with much lower computational load.
 
 <figure>
-  <img src="/assets/blog/improving-pre-disaster-air-mobility-planning-with-neural-network-accelerated-genetic-algorithms/figure-03.png" alt="Fitness scores for GA and NN-accelerated GA methods">
+  <img src="/assets/blog/improving-pre-disaster-air-mobility-planning-with-neural-network-accelerated-genetic-algorithms/figure-03.png" alt="Fitness scores for GA and NN-accelerated GA methods" width="674" height="429" loading="lazy" decoding="async">
   <figcaption>Fitness scores for GA and NN-accelerated GA methods</figcaption>
 </figure>
 

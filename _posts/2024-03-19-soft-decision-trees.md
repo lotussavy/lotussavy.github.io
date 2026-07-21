@@ -19,7 +19,7 @@ The paper **"Soft Decision Trees"** by Ozan Irsoy, Olcay Taner Yildiz, and Ethem
 That small change makes the tree behave less like a set of abrupt rules and more like a weighted mixture of local predictions.
 
 <figure>
-  <img src="/assets/blog/soft-decision-trees/cover.png" alt="Hard and soft decision tree fits on a toy regression dataset">
+  <img src="/assets/blog/soft-decision-trees/cover.png" alt="Hard and soft decision tree fits on a toy regression dataset" width="422" height="684" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Hard and soft tree fits. The soft tree produces a smoother curve with far fewer leaves.</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ That small change makes the tree behave less like a set of abrupt rules and more
 
 In a standard binary decision tree, each internal node applies a test to the input. If the test is true, the input goes to the left child. Otherwise, it goes to the right child.
 
-![](/assets/blog/soft-decision-trees/figure-02.png)
+![](/assets/blog/soft-decision-trees/figure-02.png){: width="458" height="80" loading="lazy" decoding="async" }
 
 This gives the model a very clear structure. For classification, the leaf usually stores a class label or class distribution. For regression, the leaf stores a numeric value. The prediction is made by one path from the root to one leaf.
 
@@ -37,11 +37,11 @@ That path-based behavior is useful when the true decision boundary is naturally 
 
 A soft decision tree keeps the tree structure but changes what happens at an internal node. Instead of choosing only one child, the node computes a probability for the left child and a probability for the right child. The output of the node is then a weighted combination of the outputs of both subtrees.
 
-![](/assets/blog/soft-decision-trees/figure-03.png)
+![](/assets/blog/soft-decision-trees/figure-03.png){: width="458" height="44" loading="lazy" decoding="async" }
 
 In the binary case, the gating function produces a value between 0 and 1:
 
-![](/assets/blog/soft-decision-trees/figure-04.png)
+![](/assets/blog/soft-decision-trees/figure-04.png){: width="370" height="68" loading="lazy" decoding="async" }
 
 Here, the gating function is a sigmoid applied to a linear function of the input. If the gate returns a value close to 1, the left subtree dominates. If it returns a value close to 0, the right subtree dominates. If it returns something near 0.5, both sides matter.
 
@@ -52,7 +52,7 @@ So the tree is still making decisions, but the decisions are no longer all-or-no
 The response of a soft tree is computed recursively. A leaf returns its stored value. An internal node calls both children, weights their outputs by the gate, and returns the weighted sum.
 
 <figure>
-  <img src="/assets/blog/soft-decision-trees/figure-05.png" alt="Pseudocode for calculating the response of the subtree rooted at node m">
+  <img src="/assets/blog/soft-decision-trees/figure-05.png" alt="Pseudocode for calculating the response of the subtree rooted at node m" width="517" height="247" loading="lazy" decoding="async">
   <figcaption>Pseudocode for calculating the response of the subtree rooted at node m.</figcaption>
 </figure>
 
@@ -68,12 +68,12 @@ The paper trains the tree incrementally, much like a normal decision tree. It st
 
 The model uses different loss functions depending on the task:
 
-![](/assets/blog/soft-decision-trees/figure-06.png)
+![](/assets/blog/soft-decision-trees/figure-06.png){: width="517" height="88" loading="lazy" decoding="async" }
 
 For regression, the objective is squared error. For classification, the objective is cross-entropy. The paper focuses on two-class classification, where the final tree output can be interpreted as a probability.
 
 <figure>
-  <img src="/assets/blog/soft-decision-trees/figure-07.png" alt="Pseudocode for finding the best split for node m using a training set and validation set">
+  <img src="/assets/blog/soft-decision-trees/figure-07.png" alt="Pseudocode for finding the best split for node m using a training set and validation set" width="550" height="797" loading="lazy" decoding="async">
   <figcaption>Pseudocode for finding the best split for node <em>m</em> using training and validation data.</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ In other words, soft routing reduces the need for extra leaves whose only job is
 ## Regression Results
 
 <figure>
-  <img src="/assets/blog/soft-decision-trees/figure-08.png" alt="Regression results comparing average error and number of nodes for soft and hard decision trees">
+  <img src="/assets/blog/soft-decision-trees/figure-08.png" alt="Regression results comparing average error and number of nodes for soft and hard decision trees" width="475" height="369" loading="lazy" decoding="async">
   <figcaption>Regression datasets: average error and number of nodes for soft and hard decision trees.</figcaption>
 </figure>
 
@@ -121,7 +121,7 @@ There is a cost: a prediction in a soft tree visits all paths rather than one pa
 ## Classification Results
 
 <figure>
-  <img src="/assets/blog/soft-decision-trees/figure-09.png" alt="Classification results comparing accuracy and tree size for soft trees, hard trees, and linear discriminant trees">
+  <img src="/assets/blog/soft-decision-trees/figure-09.png" alt="Classification results comparing accuracy and tree size for soft trees, hard trees, and linear discriminant trees" width="565" height="369" loading="lazy" decoding="async">
   <figcaption>Classification datasets: accuracy and tree size for soft trees, hard trees, and linear discriminant trees.</figcaption>
 </figure>
 

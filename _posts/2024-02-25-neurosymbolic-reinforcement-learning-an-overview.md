@@ -7,7 +7,7 @@ categories:
 reading_time: 10
 sitemap: true
 robots: index,follow
-description: "An accessible overview of neurosymbolic reinforcement learning, explaining how neural learning, symbolic reasoning, and RL can work together to improve interpretability, sample efficiency, reward shaping, planning, and safety."
+description: "Learn how neurosymbolic reinforcement learning combines neural learning, symbolic reasoning, and planning for interpretable and safer agents."
 image: /assets/blog/neurosymbolic-reinforcement-learning-an-overview/cover.png
 source_url: https://medium.com/@lotussavy/neurosymbolic-reinforcement-learning-98ce91bc3cc4
 ---
@@ -24,7 +24,7 @@ Neurosymbolic reinforcement learning tries to address these limitations by combi
 - **symbolic reasoning**, for structure, rules, logic, and interpretability
 - **reinforcement learning**, for sequential decision-making through interaction
 
-![Neurosymbolic RL model](/assets/blog/neurosymbolic-reinforcement-learning-an-overview/cover.png)
+![Neurosymbolic RL model](/assets/blog/neurosymbolic-reinforcement-learning-an-overview/cover.png){: width="1025" height="501" loading="eager" decoding="async" fetchpriority="high" }
 
 This article is based on the survey paper **"Neurosymbolic Reinforcement Learning and Planning: A Survey"**, which organizes the field into three broad categories: **Learning for Reasoning**, **Reasoning for Learning**, and **Learning-Reasoning**.
 
@@ -84,7 +84,7 @@ In **Learning for Reasoning**, the learning component helps the symbolic compone
 The neural model may process raw or unstructured data and convert it into a symbolic representation. The symbolic system can then reason over that representation.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-02.png" alt="Learning for Reasoning RL model">
+  <img src="/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-02.png" alt="Learning for Reasoning RL model" width="1030" height="496" loading="lazy" decoding="async">
   <figcaption>Learning for Reasoning: neural learning supports symbolic reasoning.</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ In **Reasoning for Learning**, the symbolic component helps the RL agent learn b
 Here, symbolic knowledge can guide exploration, shape rewards, restrict actions, initialize policies, or provide high-level plans.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-03.png" alt="Reasoning for Learning RL model">
+  <img src="/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-03.png" alt="Reasoning for Learning RL model" width="1056" height="740" loading="lazy" decoding="async">
   <figcaption>Reasoning for Learning: symbolic knowledge guides neural reinforcement learning.</figcaption>
 </figure>
 
@@ -146,7 +146,7 @@ In **Learning-Reasoning**, neural and symbolic components interact bidirectional
 The neural part helps build or refine symbolic representations, while the symbolic part guides or constrains the neural learner. Information flows both ways.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-04.png" alt="Learning-Reasoning RL model">
+  <img src="/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-04.png" alt="Learning-Reasoning RL model" width="1018" height="600" loading="lazy" decoding="async">
   <figcaption>Learning-Reasoning: neural and symbolic components interact with each other.</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ The advantage is flexibility. The system can learn from data while still using s
 
 The challenge is coordination. The neural and symbolic components must exchange information in a form that is meaningful, stable, and trainable.
 
-![](/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-05.png)
+![](/assets/blog/neurosymbolic-reinforcement-learning-an-overview/figure-05.png){: width="1395" height="397" loading="lazy" decoding="async" }
 
 ## Why This Matters for Reward Shaping
 

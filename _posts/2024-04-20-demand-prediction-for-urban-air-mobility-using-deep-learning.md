@@ -29,7 +29,7 @@ The authors use a benchmark dataset of 150,000 taxi records and compare three de
 The Transformer model performs best in the reported experiments, reaching an RMSE of 0.64. The paper also argues that this kind of trained model could later support transfer learning when real UAM data becomes available.
 
 <figure>
-  <img src="/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/cover.png" alt="UAM operations">
+  <img src="/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/cover.png" alt="UAM operations" width="1179" height="653" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>UAM operations</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ Because real UAM operations are still limited, the paper makes a practical assum
 ## Methodology
 
 <figure>
-  <img src="/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-02.png" alt="Detail process">
+  <img src="/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-02.png" alt="Detail process" width="795" height="842" loading="lazy" decoding="async">
   <figcaption>Detail process</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ LSTM networks are designed for sequential data. They use gates to decide what in
 
 For UAM demand prediction, an LSTM can learn temporal patterns such as repeated daily or weekly travel behavior.
 
-![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-03.png)
+![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-03.png){: width="665" height="229" loading="lazy" decoding="async" }
 
 ### Gated recurrent unit (GRU)
 
@@ -96,7 +96,7 @@ GRU networks are a simpler recurrent architecture. They also use gates to manage
 
 In this study, GRU serves as another recurrent baseline for comparing sequence-modeling performance.
 
-![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-04.png)
+![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-04.png){: width="665" height="229" loading="lazy" decoding="async" }
 
 ### Transformer
 
@@ -104,11 +104,11 @@ Transformers use attention rather than recurrence as their central mechanism. At
 
 This can be powerful for mobility demand because demand may depend on patterns at multiple time scales. A trip request may be influenced by recent activity, time of day, broader weekly behavior, or recurring spatial patterns.
 
-![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-05.png)
+![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-05.png){: width="665" height="285" loading="lazy" decoding="async" }
 
 ## Results
 
-![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-06.png)
+![](/assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/figure-06.png){: width="665" height="177" loading="lazy" decoding="async" }
 
 The paper reports that the Transformer model achieves the best performance among the tested models, with an RMSE of 0.64. This suggests that attention-based models may be better suited than recurrent models for capturing the demand patterns in the prepared taxi-based dataset.
 

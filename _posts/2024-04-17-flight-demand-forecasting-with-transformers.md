@@ -49,7 +49,7 @@ For airport demand forecasting, this is useful because the model must combine se
 TFT is attractive not only because it can improve accuracy, but also because it offers interpretability tools. Variable selection and attention can help analysts understand which inputs and time periods influenced the forecast.
 
 <figure>
-  <img src="/assets/blog/flight-demand-forecasting-with-transformers/cover.jpeg" alt="TFT architecture[2]">
+  <img src="/assets/blog/flight-demand-forecasting-with-transformers/cover.jpeg" alt="TFT architecture[2]" width="1400" height="764" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>TFT architecture[2]</figcaption>
 </figure>
 
@@ -93,14 +93,14 @@ The evaluation compares TFT with several earlier forecasting approaches:
 The paper reports that TFT predicts departure demand more accurately than the traditional baselines by large margins. Across the tested settings, TFT improves over linear regression and autoregression, and the model benefits from the richer input data.
 
 <figure>
-  <img src="/assets/blog/flight-demand-forecasting-with-transformers/figure-02.png" alt="Model performances comparison">
+  <img src="/assets/blog/flight-demand-forecasting-with-transformers/figure-02.png" alt="Model performances comparison" width="901" height="291" loading="lazy" decoding="async">
   <figcaption>Model performances comparison</figcaption>
 </figure>
 
 The LAS quarter-hour comparison shows why this matters operationally. A good model must capture sudden changes, not just average daily patterns. TFT's attention-based design helps it model demand surges more effectively than simpler baselines.
 
 <figure>
-  <img src="/assets/blog/flight-demand-forecasting-with-transformers/figure-03.png" alt="LAS models quarter-hour departure demand forecasting results comparison.">
+  <img src="/assets/blog/flight-demand-forecasting-with-transformers/figure-03.png" alt="LAS models quarter-hour departure demand forecasting results comparison." width="823" height="576" loading="lazy" decoding="async">
   <figcaption>LAS models quarter-hour departure demand forecasting results comparison.</figcaption>
 </figure>
 

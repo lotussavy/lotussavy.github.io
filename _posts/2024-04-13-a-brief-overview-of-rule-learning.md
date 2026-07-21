@@ -7,8 +7,7 @@ categories:
 reading_time: 8
 sitemap: true
 robots: index,follow
-description: A readable overview of rule learning, including descriptive rule discovery,
-  predictive rule learning, association rules, decision lists, and covering algorithms.
+description: "An overview of descriptive and predictive rule learning, association rules, decision lists, and covering algorithms."
 image: /assets/blog/a-brief-overview-of-rule-learning/cover.png
 source_url: https://medium.com/@lotussavy/a-brief-overview-of-rule-learning-476e59d51fad
 ---
@@ -32,7 +31,7 @@ The paper *A Brief Overview of Rule Learning* by Johannes Fürnkranz and Tomáš
 That distinction is useful because not every rule is meant to be a classifier. Some rules are meant to explain what is happening inside a dataset. Others are meant to make decisions.
 
 <figure>
-  <img src="/assets/blog/a-brief-overview-of-rule-learning/cover.png" alt="Types of Rule Learning">
+  <img src="/assets/blog/a-brief-overview-of-rule-learning/cover.png" alt="Types of Rule Learning" width="800" height="275" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Types of Rule Learning</figcaption>
 </figure>
 
@@ -148,7 +147,7 @@ It is also called separate-and-conquer:
 The name captures the idea. Each rule separates out part of the problem, and the algorithm keeps learning rules until the target examples are covered or a stopping condition is reached.
 
 <figure>
-  <img src="/assets/blog/a-brief-overview-of-rule-learning/figure-02.png" alt="The covering algorithm for finding a rule set">
+  <img src="/assets/blog/a-brief-overview-of-rule-learning/figure-02.png" alt="The covering algorithm for finding a rule set" width="601" height="398" loading="lazy" decoding="async">
   <figcaption>The covering algorithm for finding a rule set</figcaption>
 </figure>
 

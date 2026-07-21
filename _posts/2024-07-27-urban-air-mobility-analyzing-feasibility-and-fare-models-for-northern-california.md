@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Northern California UAM Feasibility and Fare Models"
 title: 'Urban Air Mobility: Analyzing Feasibility and Fare Models for Northern California'
 date: '2024-07-27'
 categories:
@@ -74,9 +75,9 @@ That difference is important. Larger aircraft can spread operating costs across 
 
 ## Results
 
-![](/assets/blog/urban-air-mobility-analyzing-feasibility-and-fare-models-for-northern-california/cover.png)
+![](/assets/blog/urban-air-mobility-analyzing-feasibility-and-fare-models-for-northern-california/cover.png){: width="1041" height="482" loading="eager" decoding="async" fetchpriority="high" }
 
-![](/assets/blog/urban-air-mobility-analyzing-feasibility-and-fare-models-for-northern-california/figure-02.png)
+![](/assets/blog/urban-air-mobility-analyzing-feasibility-and-fare-models-for-northern-california/figure-02.png){: width="1015" height="508" loading="lazy" decoding="async" }
 
 The study concludes that UAM could be feasible in Northern California under the right infrastructure and fare assumptions. The 300-site scenario provides the strongest balance in the analysis, and fares in the range of roughly `$1.00` to `$1.25` per passenger-mile are identified as more competitive.
 

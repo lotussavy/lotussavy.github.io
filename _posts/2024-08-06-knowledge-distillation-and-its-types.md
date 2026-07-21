@@ -39,7 +39,7 @@ The result is often a smaller model that trains more smoothly and performs bette
 Traditional knowledge distillation is usually grouped into three major types: response-based, feature-based, and relation-based.
 
 <figure>
-  <img src="/assets/blog/knowledge-distillation-and-its-types/cover.png" alt="Types of traditional knowledge distillation: response-based, feature-based, and relation-based">
+  <img src="/assets/blog/knowledge-distillation-and-its-types/cover.png" alt="Types of traditional knowledge distillation: response-based, feature-based, and relation-based" width="484" height="889" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Types of traditional knowledge distillation: response-based, feature-based, and relation-based</figcaption>
 </figure>
 
@@ -90,7 +90,7 @@ The difficulty is complexity. Relational knowledge can be expensive to compute, 
 Traditional distillation usually transfers numerical behavior: logits, features, attention, or relationships. Symbolic knowledge distillation takes a different direction. It tries to extract knowledge from a model into explicit symbolic forms such as rules, logic statements, structured datasets, knowledge graphs, programs, rationales, or concept-level representations.
 
 <figure>
-  <img src="/assets/blog/knowledge-distillation-and-its-types/figure-02.png" alt="Symbolic knowledge distillation">
+  <img src="/assets/blog/knowledge-distillation-and-its-types/figure-02.png" alt="Symbolic knowledge distillation" width="1048" height="136" loading="lazy" decoding="async">
   <figcaption>Symbolic knowledge distillation</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ The goal is not only compression. Symbolic distillation can also improve interpr
 Traditional distillation usually asks the student to imitate the teacher's behavior. Symbolic distillation asks the system to extract and represent the teacher's knowledge in a more explicit form.
 
 <figure>
-  <img src="/assets/blog/knowledge-distillation-and-its-types/figure-03.png" alt="Comparison of traditional and symbolic knowledge distillation process">
+  <img src="/assets/blog/knowledge-distillation-and-its-types/figure-03.png" alt="Comparison of traditional and symbolic knowledge distillation process" width="1030" height="209" loading="lazy" decoding="async">
   <figcaption>Comparison of traditional and symbolic knowledge distillation process</figcaption>
 </figure>
 

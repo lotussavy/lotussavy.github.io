@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Air Taxi Demand Prediction with Machine Learning"
 title: Predicting demand for air taxi urban aviation services using machine learning algorithms
 date: '2024-04-22'
 categories:
@@ -20,7 +21,7 @@ If demand is underestimated, passengers wait too long and aircraft sit in the wr
 Rajendran, Srinivas, and Grimshaw approach this problem as a machine learning classification task. Instead of predicting an exact passenger count, the study predicts whether air taxi demand in a given place and time will be low, moderate, or high. That framing is useful for operations because many real decisions are also categorical: send more vehicles, hold capacity steady, or reduce service.
 
 <figure>
-  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/cover.jpg" alt="Illustration of air taxi operations for door-to-door transportation">
+  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/cover.jpg" alt="Illustration of air taxi operations for door-to-door transportation" width="388" height="175" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Illustration of air taxi operations for door-to-door transportation</figcaption>
 </figure>
 
@@ -40,10 +41,10 @@ The first step is to turn pickup coordinates into service regions. The authors u
 
 Next, the pickup timestamp is transformed into temporal features such as month, day of week, hour of day, and weekday or weekend indicator. The data is then grouped by location ID, date, and hour. This produces the kind of structured demand table a model can learn from: where the demand happened, when it happened, and what conditions surrounded it.
 
-![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-02.png)
+![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-02.png){: width="886" height="415" loading="lazy" decoding="async" }
 
 <figure>
-  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-03.png" alt="Description of data">
+  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-03.png" alt="Description of data" width="973" height="414" loading="lazy" decoding="async">
   <figcaption>Description of data</figcaption>
 </figure>
 
@@ -59,44 +60,44 @@ The paper compares four popular machine learning algorithms: multinomial logisti
 
 Multinomial logistic regression is the most interpretable baseline. It estimates the probability that a demand observation belongs to one of several categories: low, moderate, or high. It is useful because it provides a clear benchmark and helps reveal whether simpler linear relationships already explain much of the demand pattern.
 
-![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-04.png)
+![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-04.png){: width="557" height="472" loading="lazy" decoding="async" }
 
 ### Artificial Neural Network
 
 The neural network model is designed to capture more complex relationships between the predictors and demand level. For example, the effect of hour of day may depend on location, and the effect of weather may differ between airport trips and central-city trips. Neural networks can represent these nonlinear patterns, although they are usually less transparent than simpler models.
 
-![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-05.png)
+![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-05.png){: width="617" height="443" loading="lazy" decoding="async" }
 
 ### Random Forests
 
 Random forests combine many decision trees and average their predictions. This makes them strong general-purpose models for tabular data because they can handle nonlinear relationships, interactions between variables, and mixed feature types. They are also less dependent on a single unstable tree.
 
-![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-06.png)
+![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-06.png){: width="617" height="409" loading="lazy" decoding="async" }
 
 ### Gradient Boosting
 
 Gradient boosting also uses decision trees, but it builds them sequentially. Each new tree focuses on correcting the errors made by the previous ones. This often makes gradient boosting especially powerful for structured prediction problems where many small signals combine to shape the final outcome.
 
-![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-07.png)
+![](/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-07.png){: width="604" height="392" loading="lazy" decoding="async" }
 
 ## What the Results Show
 
 <figure>
-  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-08.png" alt="Estimated air taxi demand variation over different days of week and months">
+  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-08.png" alt="Estimated air taxi demand variation over different days of week and months" width="1066" height="331" loading="lazy" decoding="async">
   <figcaption>Estimated air taxi demand variation over different days of week and months</figcaption>
 </figure>
 
 The results show that air taxi demand is strongly shaped by time and place. Certain locations, time periods, and weekdays repeatedly emerge as important predictors. That is exactly what operators should expect in a city like New York: airport flows, work trips, nightlife, tourism, and weekday commuting all create different demand rhythms.
 
 <figure>
-  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-09.png" alt="Performance of different machine learning algorithms for air taxi demand level prediction">
+  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-09.png" alt="Performance of different machine learning algorithms for air taxi demand level prediction" width="1279" height="420" loading="lazy" decoding="async">
   <figcaption>Performance of different machine learning algorithms for air taxi demand level prediction</figcaption>
 </figure>
 
 Among the four models, gradient boosting delivers the strongest predictive performance in the study. That result is not surprising. Demand is rarely driven by one clean variable. It is shaped by combinations: a specific station, at a specific hour, on a specific weekday, under a specific weather condition. Gradient boosting is well suited for learning those layered patterns from tabular data.
 
 <figure>
-  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-10.png" alt="Top features using gradient boosting for different stations">
+  <img src="/assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/figure-10.png" alt="Top features using gradient boosting for different stations" width="1268" height="252" loading="lazy" decoding="async">
   <figcaption>Top features using gradient boosting for different stations</figcaption>
 </figure>
 

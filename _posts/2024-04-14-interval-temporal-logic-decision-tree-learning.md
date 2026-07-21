@@ -38,7 +38,7 @@ Imagine four patients. Some have fever. Some have headache. A static decision tr
 That flattening can make a useful pattern disappear.
 
 <figure>
-  <img src="/assets/blog/interval-temporal-logic-decision-tree-learning/cover.png" alt="Example of static and temporal treatment of information in the medical domain">
+  <img src="/assets/blog/interval-temporal-logic-decision-tree-learning/cover.png" alt="Example of static and temporal treatment of information in the medical domain" width="968" height="694" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Example of static and temporal treatment of information in the medical domain</figcaption>
 </figure>
 
@@ -54,21 +54,21 @@ Classic decision-tree learning uses entropy and information gain to choose usefu
 
 Entropy measures how mixed a dataset is with respect to the target classes. If all examples at a node belong to the same class, the node is pure. If the classes are evenly mixed, the node is uncertain.
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-02.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-02.png){: width="968" height="106" loading="lazy" decoding="async" }
 
 When a decision tree tests an attribute, it partitions the dataset. A good split sends examples into groups that are more class-homogeneous than the original group.
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-03.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-03.png){: width="551" height="87" loading="lazy" decoding="async" }
 
 A categorical split checks values such as `symptom = fever`. A numerical split checks thresholds such as `temperature <= 38`.
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-04.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-04.png){: width="551" height="87" loading="lazy" decoding="async" }
 
 The tree chooses the split that produces the largest information gain: the greatest reduction in uncertainty.
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-05.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-05.png){: width="657" height="87" loading="lazy" decoding="async" }
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-06.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-06.png){: width="887" height="222" loading="lazy" decoding="async" }
 
 Temporal ID3 keeps this same spirit. It still asks: which split best separates the classes? The difference is that a split can now be temporal.
 
@@ -86,7 +86,7 @@ headache holds from day 2 to day 4
 Allen's interval relations describe how two intervals relate. One interval may occur before another, meet another, begin with another, end with another, occur during another, or overlap another. Each relation also has an inverse.
 
 <figure>
-  <img src="/assets/blog/interval-temporal-logic-decision-tree-learning/figure-07.png" alt="Allen’s interval relations and HS modalities">
+  <img src="/assets/blog/interval-temporal-logic-decision-tree-learning/figure-07.png" alt="Allen’s interval relations and HS modalities" width="983" height="393" loading="lazy" decoding="async">
   <figcaption>Allen’s interval relations and HS modalities</figcaption>
 </figure>
 
@@ -106,11 +106,11 @@ there exists an overlapping interval where headache holds
 
 This lets a decision tree test not only whether a proposition holds on the current interval, but whether a related interval exists with some property.
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-08.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-08.png){: width="519" height="86" loading="lazy" decoding="async" }
 
 Each instance in the dataset is a timeline: a collection of intervals labeled with propositions. A proposition such as `fever` or `headache` is true on the intervals where that condition holds.
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-09.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-09.png){: width="867" height="201" loading="lazy" decoding="async" }
 
 ## Learning Interval Temporal Logic Decision Trees
 
@@ -134,7 +134,7 @@ A local split asks whether a proposition holds on the current reference interval
 Does fever hold on this interval?
 ```
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-10.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-10.png){: width="496" height="89" loading="lazy" decoding="async" }
 
 A temporal split asks whether there is a related interval, connected by an Allen relation, where a proposition holds:
 
@@ -144,21 +144,21 @@ Is there a later interval where fever holds?
 Is there an interval during this one where alarm_active holds?
 ```
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-11.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-11.png){: width="496" height="89" loading="lazy" decoding="async" }
 
 The algorithm computes information gain for these temporal splits just as ID3 computes information gain for ordinary attribute splits.
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-12.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-12.png){: width="819" height="89" loading="lazy" decoding="async" }
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-13.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-13.png){: width="891" height="89" loading="lazy" decoding="async" }
 
-![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-14.png)
+![](/assets/blog/interval-temporal-logic-decision-tree-learning/figure-14.png){: width="830" height="95" loading="lazy" decoding="async" }
 The best split is the one that most reduces class uncertainty.
 
 ### The Algorithm
 
 <figure>
-  <img src="/assets/blog/interval-temporal-logic-decision-tree-learning/figure-15.png" alt="The algorithm Temporal ID3">
+  <img src="/assets/blog/interval-temporal-logic-decision-tree-learning/figure-15.png" alt="The algorithm Temporal ID3" width="884" height="800" loading="lazy" decoding="async">
   <figcaption>The algorithm Temporal ID3</figcaption>
 </figure>
 

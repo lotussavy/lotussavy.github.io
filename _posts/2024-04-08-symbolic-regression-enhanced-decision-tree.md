@@ -7,7 +7,7 @@ categories:
 reading_time: 9
 sitemap: true
 robots: index,follow
-description: "A practical explanation of Symbolic Regression Enhanced Decision Trees, where symbolic regression discovers expressive split rules for compact and interpretable classification trees."
+description: "Learn how symbolic regression creates expressive split rules for compact, interpretable decision-tree classifiers."
 image: /assets/blog/symbolic-regression-enhanced-decision-tree/cover.png
 source_url: https://medium.com/@lotussavy/symbolic-regression-enhanced-decision-tree-ceafa3a06d33
 ---
@@ -77,7 +77,7 @@ Symbolic regression searches for mathematical expressions that fit a task. Unlik
 In SREDT, symbolic regression is used to generate candidate split functions.
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/cover.png" alt="SymbolicRegressor algorithm">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/cover.png" alt="SymbolicRegressor algorithm" width="1135" height="459" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>The symbolic regressor searches over candidate expressions that can be used as split rules.</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ where `f(x)` is discovered by symbolic regression.
 SREDT keeps the recursive tree-building structure of CART, but changes how a split is selected.
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-02.png" alt="Decision tree algorithm">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-02.png" alt="Decision tree algorithm" width="1193" height="657" loading="lazy" decoding="async">
   <figcaption>A standard decision tree searches over feature-threshold splits.</figcaption>
 </figure>
 
@@ -114,7 +114,7 @@ In a standard decision tree, the algorithm loops over features and thresholds. I
 SREDT replaces that feature-threshold search with symbolic regression.
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-03.png" alt="SREDT algorithm">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-03.png" alt="SREDT algorithm" width="1136" height="386" loading="lazy" decoding="async">
   <figcaption>SREDT replaces the usual split search with symbolic regression over candidate expressions.</figcaption>
 </figure>
 
@@ -166,14 +166,14 @@ These variants explore a practical question: can symbolic splits be made more st
 The XOR problem is a clean example of why axis-aligned trees can struggle.
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-04.png" alt="Decision tree approach to the XOR problem">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-04.png" alt="Decision tree approach to the XOR problem" width="493" height="681" loading="lazy" decoding="async">
   <figcaption>A standard decision tree approximates the XOR boundary with multiple axis-aligned cuts.</figcaption>
 </figure>
 
 In XOR, the label depends on an interaction between two variables. A standard decision tree must carve the plane into rectangles.
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-05.png" alt="SREDT approach to the XOR problem">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-05.png" alt="SREDT approach to the XOR problem" width="400" height="490" loading="lazy" decoding="async">
   <figcaption>SREDT can discover a symbolic split that captures the XOR structure more compactly.</figcaption>
 </figure>
 
@@ -186,12 +186,12 @@ This is exactly the kind of case where symbolic regression helps: the important 
 The half-moon dataset shows another limitation of axis-aligned splits. The boundary is curved, so a standard tree approximates it through many rectangular regions.
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-06.png" alt="Decision tree approach to the half-moon problem">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-06.png" alt="Decision tree approach to the half-moon problem" width="439" height="837" loading="lazy" decoding="async">
   <figcaption>A standard decision tree uses many axis-aligned regions to approximate a curved boundary.</figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-07.png" alt="SREDT approach to the half-moon problem">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-07.png" alt="SREDT approach to the half-moon problem" width="345" height="453" loading="lazy" decoding="async">
   <figcaption>SREDT can use richer symbolic expressions to create more compact curved or nonlinear splits.</figcaption>
 </figure>
 
@@ -200,7 +200,7 @@ This illustrates the practical benefit: symbolic expressions can capture nonline
 ## Experimental Results
 
 <figure>
-  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-08.png" alt="Accuracy comparison of SREDT variants and baseline models across six datasets">
+  <img src="/assets/blog/symbolic-regression-enhanced-decision-tree/figure-08.png" alt="Accuracy comparison of SREDT variants and baseline models across six datasets" width="1069" height="391" loading="lazy" decoding="async">
   <figcaption>Accuracy comparison of SREDT variants, traditional models, and deep models across six datasets.</figcaption>
 </figure>
 

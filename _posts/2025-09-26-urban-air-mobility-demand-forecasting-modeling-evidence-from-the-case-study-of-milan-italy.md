@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Urban Air Mobility Demand Forecasting in Milan"
 title: 'Urban Air Mobility Demand Forecasting: Modeling Evidence from the Case Study of Milan (Italy)'
 date: '2025-09-26'
 categories:
@@ -8,7 +9,7 @@ categories:
 reading_time: 7
 sitemap: true
 robots: index,follow
-description: A clear look at Milan's UAM demand forecasting study, including airport shuttles, intercity services, air taxis, vertiport scenarios, fares, and traveler preferences.
+description: "Explore Milan UAM demand forecasts for airport shuttles, intercity services, air taxis, vertiport scenarios, fares, and traveler preferences."
 image: /assets/blog/urban-air-mobility-demand-forecasting-modeling-evidence-from-the-case-study-of-milan-italy/cover.png
 source_url: https://doi.org/10.1186/s12544-024-00700-x
 ---
@@ -20,7 +21,7 @@ Coppola, De Fabiis, and Silvestri study that question in Milan and the wider Lom
 The study is useful because it does not assume that UAM will automatically attract passengers. It uses surveys, stated-preference experiments, random utility mode choice models, and multimodal network simulation to estimate when travelers may choose UAM and when they will stay with cars, taxis, trains, or public transport.
 
 <figure>
-  <img src="/assets/blog/urban-air-mobility-demand-forecasting-modeling-evidence-from-the-case-study-of-milan-italy/cover.png" alt="Flowchart describing the methodological approach adopted in the Milan UAM study">
+  <img src="/assets/blog/urban-air-mobility-demand-forecasting-modeling-evidence-from-the-case-study-of-milan-italy/cover.png" alt="Flowchart describing the methodological approach adopted in the Milan UAM study" width="800" height="412" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Flowchart describing the methodological approach adopted in the Milan UAM study</figcaption>
 </figure>
 

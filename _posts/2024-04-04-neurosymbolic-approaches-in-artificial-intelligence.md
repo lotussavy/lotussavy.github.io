@@ -7,7 +7,7 @@ categories:
 reading_time: 8
 sitemap: true
 robots: index,follow
-description: "A practical overview of major neuro-symbolic AI approaches, including neural models for symbolic tasks, symbolic knowledge for deep learning, explainability, and hybrid reasoning systems."
+description: "Review major neuro-symbolic AI approaches that connect deep learning, symbolic knowledge, explainability, and hybrid reasoning."
 image: /assets/blog/neurosymbolic-approaches-in-artificial-intelligence/cover.png
 source_url: https://medium.com/@lotussavy/neurosymbolic-approaches-in-artificial-intelligence-1a4a64161829
 ---
@@ -19,7 +19,7 @@ Neural systems are good at learning from messy data: images, text, speech, senso
 The goal of neurosymbolic AI is to make these two sides work together.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-approaches-in-artificial-intelligence/cover.png" alt="General representation of neurosymbolic AI">
+  <img src="/assets/blog/neurosymbolic-approaches-in-artificial-intelligence/cover.png" alt="General representation of neurosymbolic AI" width="810" height="622" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>A general representation of neurosymbolic AI: neural learning and symbolic reasoning interact to improve intelligence, reliability, and explanation.</figcaption>
 </figure>
 

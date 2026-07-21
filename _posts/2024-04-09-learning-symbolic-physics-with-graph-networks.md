@@ -45,7 +45,7 @@ The paper uses this similarity as an inductive bias. Instead of letting the netw
 For example, in a 3D gravitational system, force is represented by a 3-dimensional vector. If the graph network's message space is also 3-dimensional, the model is gently pushed toward learning something force-like. It is still trained from data, but the structure of the model makes a physically meaningful solution easier to find.
 
 <figure>
-  <img src="/assets/blog/learning-symbolic-physics-with-graph-networks/cover.png" alt="A schematic depicting how we extract physical knowledge from a GNN">
+  <img src="/assets/blog/learning-symbolic-physics-with-graph-networks/cover.png" alt="A schematic depicting how we extract physical knowledge from a GNN" width="1189" height="936" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>A schematic depicting how we extract physical knowledge from a GNN</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ For the n-body experiments, the training systems used a fixed number of bodies. 
 This matters because real physical laws should scale. Newtonian gravity does not stop working when we add another planet. A model that has truly learned a pairwise interaction rule should be able to apply that rule to larger systems.
 
 <figure>
-  <img src="/assets/blog/learning-symbolic-physics-with-graph-networks/figure-02.png" alt="These plots demonstrate the improvement in generalization from minimizing the message passing space">
+  <img src="/assets/blog/learning-symbolic-physics-with-graph-networks/figure-02.png" alt="These plots demonstrate the improvement in generalization from minimizing the message passing space" width="860" height="339" loading="lazy" decoding="async">
   <figcaption>These plots demonstrate the improvement in generalization from minimizing the message passing space</figcaption>
 </figure>
 

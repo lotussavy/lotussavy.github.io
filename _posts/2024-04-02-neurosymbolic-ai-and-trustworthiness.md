@@ -7,7 +7,7 @@ categories:
 reading_time: 9
 sitemap: true
 robots: index,follow
-description: "A practical explanation of how neuro-symbolic AI can support trustworthy AI, based on a systematic review of interpretability, fairness, privacy, safety, and symbolic reasoning methods."
+description: "Explore how neuro-symbolic AI can improve interpretability, fairness, privacy, safety, and trustworthy reasoning."
 image: /assets/blog/neurosymbolic-ai-and-trustworthiness/cover.png
 source_url: https://medium.com/@lotussavy/neurosymbolic-ai-and-trustworthiness-6470d1da4b10
 ---
@@ -19,7 +19,7 @@ The paper **"Neuro-Symbolic methods for Trustworthy AI: a systematic review"** b
 The answer is both promising and uneven. Neuro-symbolic AI has strong potential for trustworthiness, especially interpretability. But the review also shows that most current work is concentrated on explanations, while fairness, privacy, and safety receive much less attention.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai-and-trustworthiness/cover.png" alt="Neurosymbolic AI illustration">
+  <img src="/assets/blog/neurosymbolic-ai-and-trustworthiness/cover.png" alt="Neurosymbolic AI illustration" width="810" height="622" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Neuro-symbolic AI combines neural learning with symbolic structures such as logic, rules, graphs, and programs.</figcaption>
 </figure>
 

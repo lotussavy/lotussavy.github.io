@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Certifications and Professional Credentials"
-description: "Certificates, professional credentials, reviewer recognitions, and training records for Kamal Acharya in AI, machine learning, research ethics, and cybersecurity."
+description: "Certificates, professional credentials, reviewer recognition, and training completed by Kamal Acharya in AI, research, and cybersecurity."
 permalink: /gallery/
 ---
 

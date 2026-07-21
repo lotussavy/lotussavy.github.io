@@ -7,7 +7,7 @@ categories:
 reading_time: 7
 sitemap: true
 robots: index,follow
-description: A clear introduction to the gravity model in transportation planning, including trip distribution, productions, attractions, impedance, calibration, uses, and limitations.
+description: "Learn the gravity model for transportation planning, including trip distribution, impedance, calibration, applications, and limitations."
 image: /assets/blog/gravity-model-in-transportation-planning/cover.png
 source_url: https://tfresource.org/topics/Trip_distribution
 ---
@@ -18,7 +18,7 @@ In other words, the gravity model helps turn trip ends into trip flows.
 
 The idea is borrowed from Newton's law of gravity. Bigger places tend to interact more, and places that are farther apart tend to interact less. In transportation, "bigger" usually means more people, jobs, services, shopping, schools, or other trip-attracting activity. "Farther apart" usually means higher travel time, distance, cost, or inconvenience.
 
-![](/assets/blog/gravity-model-in-transportation-planning/cover.png)
+![](/assets/blog/gravity-model-in-transportation-planning/cover.png){: width="800" height="800" loading="eager" decoding="async" fetchpriority="high" }
 
 ## Where the Gravity Model Fits
 
@@ -37,7 +37,7 @@ The gravity model operates mainly in step two. It takes trip productions and tri
 
 The basic form says that interaction between two zones increases with the size of the origin and destination and decreases with travel impedance.
 
-![](/assets/blog/gravity-model-in-transportation-planning/figure-02.png)
+![](/assets/blog/gravity-model-in-transportation-planning/figure-02.png){: width="735" height="387" loading="lazy" decoding="async" }
 
 In transportation terms, the model says:
 
@@ -76,7 +76,7 @@ Short trips usually have high friction-factor values because they are easy to ma
 
 The extended gravity model introduces calibration parameters to better fit observed travel behavior.
 
-![](/assets/blog/gravity-model-in-transportation-planning/figure-03.png)
+![](/assets/blog/gravity-model-in-transportation-planning/figure-03.png){: width="715" height="270" loading="lazy" decoding="async" }
 
 The article's earlier draft described these parameters as lambda, alpha, and beta. A practical way to interpret them is:
 

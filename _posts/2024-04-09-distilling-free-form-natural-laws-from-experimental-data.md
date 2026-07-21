@@ -75,7 +75,7 @@ In other words, the algorithm does not need to be told, "find the Hamiltonian" o
 ## Process
 
 <figure>
-  <img src="/assets/blog/distilling-free-form-natural-laws-from-experimental-data/cover.png" alt="Computational approach for detecting conservation laws from experimentally collected data. (A)&lt;br&gt;First, calculate partial derivatives between variables from the data, then search for equations that may&lt;br&gt;describe a physical invariance. To measure how well an equation describes an invariance, derive the same&lt;br&gt;partial derivatives symbolically to compare with the data.">
+  <img src="/assets/blog/distilling-free-form-natural-laws-from-experimental-data/cover.png" alt="Computational approach for detecting conservation laws from experimentally collected data. (A)&lt;br&gt;First, calculate partial derivatives between variables from the data, then search for equations that may&lt;br&gt;describe a physical invariance. To measure how well an equation describes an invariance, derive the same&lt;br&gt;partial derivatives symbolically to compare with the data." width="700" height="552" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Computational approach for detecting conservation laws from experimentally collected data. (A)<br>First, calculate partial derivatives between variables from the data, then search for equations that may<br>describe a physical invariance. To measure how well an equation describes an invariance, derive the same<br>partial derivatives symbolically to compare with the data.</figcaption>
 </figure>
 
@@ -90,14 +90,14 @@ This creates a tradeoff between accuracy and parsimony. The algorithm does not r
 That is a useful way to think about scientific theory itself. A good law is not merely a formula that fits. It is a compact explanation that earns its complexity.
 
 <figure>
-  <img src="/assets/blog/distilling-free-form-natural-laws-from-experimental-data/figure-02.png" alt="(B) The representation of a symbolic equation in computer memory is a list of successive mathematical operations. (C) This list representation corresponds to a graph, where nodes represent mathematical building blocks and leaves represent parameters and system variables. Both (B) and (C)correspond to the same equation. The algorithm varies these structures to search the space of equations.">
+  <img src="/assets/blog/distilling-free-form-natural-laws-from-experimental-data/figure-02.png" alt="(B) The representation of a symbolic equation in computer memory is a list of successive mathematical operations. (C) This list representation corresponds to a graph, where nodes represent mathematical building blocks and leaves represent parameters and system variables. Both (B) and (C)correspond to the same equation. The algorithm varies these structures to search the space of equations." width="681" height="310" loading="lazy" decoding="async">
   <figcaption>(B) The representation of a symbolic equation in computer memory is a list of successive mathematical operations. (C) This list representation corresponds to a graph, where nodes represent mathematical building blocks and leaves represent parameters and system variables. Both (B) and (C)correspond to the same equation. The algorithm varies these structures to search the space of equations.</figcaption>
 </figure>
 
 ## Results
 
 <figure>
-  <img src="/assets/blog/distilling-free-form-natural-laws-from-experimental-data/figure-03.png" alt="Summary of laws inferred from experimental data collected from physical systems. Depending on the types of variables provided to the algorithm, it detects different types of laws.">
+  <img src="/assets/blog/distilling-free-form-natural-laws-from-experimental-data/figure-03.png" alt="Summary of laws inferred from experimental data collected from physical systems. Depending on the types of variables provided to the algorithm, it detects different types of laws." width="1067" height="863" loading="lazy" decoding="async">
   <figcaption>Summary of laws inferred from experimental data collected from physical systems. Depending on the types of variables provided to the algorithm, it detects different types of laws.</figcaption>
 </figure>
 

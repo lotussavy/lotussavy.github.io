@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Value of Statistical Life in Economic Analysis"
 title: Guidance on Value of Statistical Life (VSL) in Economic Analysis
 date: '2024-06-06'
 categories:
@@ -17,7 +18,7 @@ Safety rules often prevent tragedies that never happen. A stronger vehicle stand
 That is where the Value of a Statistical Life, or VSL, comes in. VSL is not the price of one person's life. It is a way to measure how much people are willing to pay for small reductions in fatality risk, aggregated across a population.
 
 <figure>
-  <img src="/assets/blog/guidance-on-value-of-statistical-life-vsl-in-economic-analysis/cover.png" alt="Current and prior year VSL table">
+  <img src="/assets/blog/guidance-on-value-of-statistical-life-vsl-in-economic-analysis/cover.png" alt="Current and prior year VSL table" width="530" height="707" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Current and prior year VSL table</figcaption>
 </figure>
 

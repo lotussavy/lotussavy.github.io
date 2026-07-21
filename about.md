@@ -2,7 +2,7 @@
 layout: default
 title: "About Kamal Acharya"
 permalink: /about/
-description: "Short biography of Kamal Acharya, who holds a Ph.D. in Information Systems from UMBC and researches Advanced Air Mobility, neurosymbolic AI, forecasting, optimization, and trustworthy machine learning."
+description: "About Kamal Acharya, a UMBC Ph.D. researcher working in Advanced Air Mobility, neurosymbolic AI, forecasting, optimization, and trustworthy AI."
 robots: index,follow
 sitemap: true
 ---

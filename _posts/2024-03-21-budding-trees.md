@@ -19,7 +19,7 @@ The paper **"Budding Trees"** by Ozan Irsoy, Olcay Taner Yildiz, and Ethem Alpay
 That sounds strange at first, but it gives the model a useful ability: a node can gradually grow children when they help, and gradually return to being a leaf when they do not. Growth and pruning become part of the same learning process.
 
 <figure>
-  <img src="/assets/blog/budding-trees/cover.png" alt="Hard and soft tree fits on a sinusoidal toy dataset">
+  <img src="/assets/blog/budding-trees/cover.png" alt="Hard and soft tree fits on a sinusoidal toy dataset" width="701" height="356" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Hard and soft tree fits. The hard tree creates a piecewise constant approximation, while soft routing gives smoother interpolation between leaves.</figcaption>
 </figure>
 
@@ -27,31 +27,31 @@ That sounds strange at first, but it gives the model a useful ability: a node ca
 
 A hard decision tree sends each input down exactly one path. At every internal node, the model applies a test and chooses either the left or right child.
 
-![](/assets/blog/budding-trees/figure-02.png)
+![](/assets/blog/budding-trees/figure-02.png){: width="474" height="126" loading="lazy" decoding="async" }
 
 If the node is a leaf, it returns a stored response value. For regression, that value is numeric. For binary classification, it can represent the probability of the positive class.
 
 Many classic trees use univariate splits, where a node tests one feature against a threshold.
 
-![](/assets/blog/budding-trees/figure-03.png)
+![](/assets/blog/budding-trees/figure-03.png){: width="276" height="54" loading="lazy" decoding="async" }
 
 Multivariate trees generalize this idea by using a linear function of the input.
 
-![](/assets/blog/budding-trees/figure-04.png)
+![](/assets/blog/budding-trees/figure-04.png){: width="276" height="54" loading="lazy" decoding="async" }
 
 This creates oblique splits instead of axis-aligned splits. A univariate split cuts along one feature axis; a multivariate split can cut across a combination of features.
 
 Soft decision trees change the routing rule. Instead of choosing only one child, the node sends the input to both children with weights determined by a gating function.
 
-![](/assets/blog/budding-trees/figure-05.png)
+![](/assets/blog/budding-trees/figure-05.png){: width="667" height="76" loading="lazy" decoding="async" }
 
 The gate is a sigmoid:
 
-![](/assets/blog/budding-trees/figure-06.png)
+![](/assets/blog/budding-trees/figure-06.png){: width="501" height="76" loading="lazy" decoding="async" }
 
 The value of the gate can be interpreted as the responsibility assigned to the left child, while `1 - g(x)` is the responsibility assigned to the right child.
 
-![](/assets/blog/budding-trees/figure-07.png)
+![](/assets/blog/budding-trees/figure-07.png){: width="564" height="34" loading="lazy" decoding="async" }
 
 This is why soft trees often fit smooth regression functions better than hard trees. Even if the leaves store constant values, the soft gates blend the leaf responses and avoid abrupt jumps at split boundaries.
 
@@ -63,7 +63,7 @@ A budding tree adds one more soft quantity: **leafness**.
 
 In a normal tree, a node is either a leaf or not. In a budding tree, every node has a parameter `gamma`, written as `γ`, that controls how leaf-like it is.
 
-![](/assets/blog/budding-trees/figure-08.png)
+![](/assets/blog/budding-trees/figure-08.png){: width="667" height="25" loading="lazy" decoding="async" }
 
 The response of a budding node combines two parts:
 
@@ -94,7 +94,7 @@ So budding trees combine growing and pruning in one continuous process.
 
 For regression, the paper optimizes squared error plus a regularization term on `γ`.
 
-![](/assets/blog/budding-trees/figure-09.png)
+![](/assets/blog/budding-trees/figure-09.png){: width="601" height="92" loading="lazy" decoding="async" }
 
 The first term measures prediction error. The second term penalizes nodes whose `γ` is below 1. Since `γ = 1` means "this node is a leaf," the regularizer pushes the tree toward simpler structures.
 
@@ -106,11 +106,11 @@ The optimization is constrained so that every `γ` stays between 0 and 1. If an 
 
 The paper defines a responsibility signal for each node during stochastic gradient descent.
 
-![](/assets/blog/budding-trees/figure-10.png)
+![](/assets/blog/budding-trees/figure-10.png){: width="143" height="38" loading="lazy" decoding="async" }
 
 This responsibility tells the model how much a node contributes to the current error. The error is backpropagated from the root toward the leaves, similar in spirit to neural-network training.
 
-![](/assets/blog/budding-trees/figure-11.png)
+![](/assets/blog/budding-trees/figure-11.png){: width="674" height="533" loading="lazy" decoding="async" }
 
 The gradients update:
 
@@ -124,7 +124,7 @@ If an error signal suggests that a leaf cannot explain the data well, `γ` can d
 
 The authors use an AdaGrad-style adaptive learning rate.
 
-![](/assets/blog/budding-trees/figure-12.png)
+![](/assets/blog/budding-trees/figure-12.png){: width="437" height="112" loading="lazy" decoding="async" }
 
 This is useful because nodes near the root receive updates more often than deeper nodes. Adaptive learning rates allow rare parameters, often deeper in the tree, to receive larger effective updates when they finally become active.
 
@@ -141,7 +141,7 @@ This makes the architecture usable for regression, binary classification, and mu
 ## What Training Looks Like
 
 <figure>
-  <img src="/assets/blog/budding-trees/figure-13.png" alt="The evolution of a budding tree during training">
+  <img src="/assets/blog/budding-trees/figure-13.png" alt="The evolution of a budding tree during training" width="800" height="589" loading="lazy" decoding="async">
   <figcaption>The evolution of a budding tree during training.</figcaption>
 </figure>
 

@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Business Travel Demand for Local AAM Markets"
 title: Evaluation of business travel as a potential customer field of a local AAM market
 date: '2024-06-13'
 categories:
@@ -38,9 +39,9 @@ This matters because AAM demand is not only about distance. A 40 km trip between
 
 Each itinerary is evaluated with a mode choice model. The traveler may choose between modes such as car, taxi, public transport, and AAM. The model compares each option using a utility function that includes travel time, cost, and mode-specific preferences.
 
-![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/cover.png)
+![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/cover.png){: width="613" height="266" loading="eager" decoding="async" fetchpriority="high" }
 
-![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-02.png)
+![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-02.png){: width="800" height="256" loading="lazy" decoding="async" }
 
 For cars and taxis, travel time is calculated through OpenTripPlanner and then adjusted using the TomTom Traffic Index for Hamburg. The traffic adjustment increases road travel time by 36%, reflecting congestion. Taxi waiting time is set to 5 minutes, and taxi cost includes a base fare plus a per-kilometer rate.
 
@@ -48,7 +49,7 @@ Public transport time is also calculated with OpenTripPlanner, using schedules a
 
 The model is calibrated using Hamburg traffic demand data and the open-source Biogeme package. The estimated parameters capture how strongly business travelers respond to time and cost.
 
-![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-03.png)
+![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-03.png){: width="432" height="120" loading="lazy" decoding="async" }
 
 For this use case, the model estimates a value of time of about `EUR 2` per saved minute. That is high, but plausible for business travel. It means time savings can justify higher fares more easily than in commuting markets.
 
@@ -59,7 +60,7 @@ The AAM journey is modeled as a three-part trip.
 First, the passenger travels from the origin to a vertiport. Then they fly between vertiports. Finally, they travel from the destination vertiport to the final destination.
 
 <figure>
-  <img src="/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-04.png" alt="AAM mode">
+  <img src="/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-04.png" alt="AAM mode" width="758" height="563" loading="lazy" decoding="async">
   <figcaption>AAM mode</figcaption>
 </figure>
 
@@ -67,16 +68,16 @@ If the access or egress distance is less than 1.7 km, the passenger walks. If it
 
 The flight itself is simplified into vertical climb, cruise, and descent. The study uses two AAM vehicle configurations. A multicopter serves shorter urban distances, while a vectored-thrust vehicle serves longer routes between cities and surrounding areas. If the cruise distance exceeds 60% of the first vehicle's maximum range, the model switches to the second configuration.
 
-![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-05.png)
+![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-05.png){: width="748" height="327" loading="lazy" decoding="async" }
 
-![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-06.png)
+![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-06.png){: width="748" height="327" loading="lazy" decoding="async" }
 
 This distinction is important. AAM economics depend heavily on vehicle range, cost per kilometer, utilization, and capacity. The right aircraft for a short city hop may not be the right aircraft for a longer metropolitan-area connection.
 
 ## What the Hamburg Results Show
 
 <figure>
-  <img src="/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-07.png" alt="Histogram of road distance in the network">
+  <img src="/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-07.png" alt="Histogram of road distance in the network" width="800" height="545" loading="lazy" decoding="async">
   <figcaption>Histogram of road distance in the network</figcaption>
 </figure>
 
@@ -84,11 +85,11 @@ The modeled itinerary distances show one major peak around 25 km, representing t
 
 The cost structure also shows two AAM regimes. Shorter routes use one vehicle configuration, while longer routes shift to another. This creates visible cost changes around the commuter-belt distance.
 
-![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-08.png)
+![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-08.png){: width="260" height="141" loading="lazy" decoding="async" }
 
 Most modeled AAM business demand appears in the 40-60 km flight-distance range. This is where the service can meaningfully connect Hamburg's center with surrounding business destinations. Shorter trips are less attractive because access, egress, and fare structure reduce the advantage of flying.
 
-![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-09.png)
+![](/assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/figure-09.png){: width="800" height="607" loading="lazy" decoding="async" }
 
 The study finds that AAM travel time is roughly 85% of taxi travel time for relevant itineraries, while AAM costs are about 45% higher than taxi costs. That is the tradeoff at the heart of the market: business travelers may pay more when the time savings are valuable enough, but the service is not automatically dominant.
 

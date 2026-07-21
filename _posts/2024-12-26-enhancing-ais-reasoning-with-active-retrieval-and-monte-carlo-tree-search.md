@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Active Retrieval and MCTS for AI Reasoning"
 title: Enhancing AI's Reasoning with Active Retrieval and Monte Carlo Tree Search
 date: '2024-12-26'
 categories:
@@ -17,7 +18,7 @@ Large language models and multimodal models can answer many questions, but multi
 Dong, Zhang, Deng, Zhu, Dou, and Wen propose AR-MCTS, a framework for progressive multimodal reasoning through active retrieval and Monte Carlo Tree Search. The central idea is that a model should not reason in one blind pass. It should retrieve useful information as needed, explore possible reasoning paths, and learn from step-level rewards.
 
 <figure>
-  <img src="/assets/blog/enhancing-ais-reasoning-with-active-retrieval-and-monte-carlo-tree-search/cover.png" alt="AR-MCTS framework overview">
+  <img src="/assets/blog/enhancing-ais-reasoning-with-active-retrieval-and-monte-carlo-tree-search/cover.png" alt="AR-MCTS framework overview" width="1338" height="546" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>AR-MCTS framework overview</figcaption>
 </figure>
 
