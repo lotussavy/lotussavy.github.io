@@ -1,3 +1,95 @@
+- type: dissertation
+  year: 2026
+  authors:
+    - "Kamal Acharya"
+  title: "Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI"
+  slug: "enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai"
+  venue: "University of Maryland, Baltimore County (UMBC)"
+  degree: "Doctor of Philosophy in Information Systems"
+  advisor: "Dr. Houbing Song"
+  co_advisor: "Dr. Alvaro Velasquez"
+  schema_part_of: "CollegeOrUniversity"
+  pdf: "/assets/publications/Dissertation.pdf"
+  tags:
+    - "Advanced Air Mobility"
+    - "Demand Modeling"
+    - "Neurosymbolic AI"
+  research_area: "Advanced Air Mobility Demand Modeling and Neurosymbolic AI"
+  hero_subtitle: "A behaviorally grounded, data-driven, and interpretable framework for forecasting demand in emerging Urban and Regional Air Mobility systems."
+  abstract_summary: "Advanced Air Mobility demand forecasting is constrained by limited historical data, spatial and temporal variation in traveler behavior, and black-box models that lack interpretability. This dissertation addresses these challenges through three connected advances: a generalized-cost framework for behaviorally grounded adoption modeling, learning-based methods integrated with optimization and spatial interaction models, and a neurosymbolic framework that embeds decision-tree rules within neural networks for accurate and transparent demand prediction."
+  plain_language_summary: "This dissertation develops practical and interpretable ways to estimate who may use future air mobility services, where demand may emerge, and how data-driven forecasts can better support transportation planning."
+  featured_summary: "This dissertation develops practical and interpretable methods for estimating who may use future air mobility services and where demand may emerge. It combines traveler behavior, spatial modeling, optimization, machine learning, and symbolic rules to support transparent transportation-planning decisions."
+  impact: "Reliable demand estimates are essential for deciding where Advanced Air Mobility services and infrastructure should be deployed. By combining traveler behavior, spatial modeling, optimization, machine learning, and symbolic rules, this dissertation makes demand forecasts more useful and explainable for policy, infrastructure, and operational decisions."
+  research_summary:
+    - "The dissertation studies demand modeling for both Urban Air Mobility and Regional Air Mobility, where historical operational data are scarce and traveler decisions vary substantially across places and times. It frames demand prediction as a behavioral and planning problem rather than only a statistical forecasting task."
+    - "A Generalized Cost of Trip framework combines monetary cost, travel-time value, reliability, and perceived risk. Case studies in Tennessee and New York City show that time and cost dominate adoption decisions and reveal strong spatial and temporal differences in potential demand."
+    - "The research also combines machine learning with genetic optimization and gravity models, then introduces a neurosymbolic framework that embeds decision-tree-derived rules in neural networks. Together, these methods improve computational efficiency, predictive representation, robustness under sparse data, and interpretability."
+  framework_steps:
+    title: "Dissertation Contributions"
+    items:
+      - name: "Behaviorally Grounded Adoption"
+        description: "Develops a Generalized Cost of Trip framework incorporating monetary cost, travel time, reliability, and perceived risk across regional and urban case studies."
+      - name: "Data-Driven Spatial Estimation"
+        description: "Integrates learning with genetic optimization and gravity models to improve air mobility planning, nonlinear demand estimation, and flow representation."
+      - name: "Interpretable Neurosymbolic Learning"
+        description: "Embeds decision-tree-derived symbolic rules within neural networks to balance predictive accuracy, robustness, and transparent reasoning."
+  contributions:
+    - "Introduces a generalized-cost framework for modeling AAM adoption across multiple spatial scales."
+    - "Combines neural learning with classical optimization to accelerate airport-selection and flight-allocation planning."
+    - "Enhances gravity-based demand estimation with machine learning to capture nonlinear spatial and socioeconomic relationships."
+    - "Develops a neurosymbolic demand model that incorporates interpretable decision-tree rules into neural networks."
+  committee:
+    - name: "Dr. Houbing Song"
+      role: "Chair and Advisor"
+      affiliation: "University of Maryland, Baltimore County"
+      profile_url: "https://umbc.edu/academics/faculty/houbing-song/"
+      background: "Tenured Associate Professor in Information Systems and Computer Science and Electrical Engineering. His research covers AI and machine learning, cyber-physical systems, the Internet of Things, cybersecurity, and aviation big-data analytics."
+    - name: "Dr. Alvaro Velasquez"
+      role: "Co-Advisor"
+      affiliation: "University of Colorado Boulder"
+      profile_url: "https://www.colorado.edu/cs/alvaro-velasquez"
+      background: "Assistant Professor of Computer Science whose work focuses on neurosymbolic AI and autonomy. His background also includes leading machine-intelligence research programs at DARPA and the Air Force Research Laboratory."
+    - name: "Dr. Nirmalya Roy"
+      role: "Committee Member"
+      affiliation: "University of Maryland, Baltimore County"
+      profile_url: "https://mpsc.umbc.edu/nroy"
+      background: "Professor of Information Systems and director of the Mobile, Pervasive and Sensor Computing Laboratory. His research includes pervasive computing, sensor systems, activity recognition, smart environments, and health analytics."
+    - name: "Dr. Lei Zhang"
+      role: "Committee Member"
+      affiliation: "University of Maryland, Baltimore County"
+      profile_url: "https://est.umbc.edu/leizhang/"
+      background: "Assistant Professor of Information Systems specializing in software engineering and its interaction with emerging technologies, particularly machine learning, quantum computing, natural-language processing, and quantum-safe software."
+    - name: "Dr. Liang Sun"
+      role: "Committee Member"
+      affiliation: "Baylor University"
+      profile_url: "https://www.ecs.baylor.edu/person/dr-liang-sun"
+      background: "Tenured Associate Professor of Mechanical Engineering and director of the Advanced Vehicle Intelligence and Autonomy Laboratory. His research focuses on autonomous systems, multi-agent robotics, Advanced Air Mobility, and energy-aware operations."
+    - name: "Dr. Kai Sun"
+      role: "Committee Member"
+      affiliation: "University of Maryland, Baltimore County"
+      profile_url: "https://umbc.edu/academics/faculty/sun-kai/"
+      background: "Assistant Professor of Information Systems specializing in operations research and decision support. His research focuses on optimization under uncertainty, multi-objective optimization, graph-based algorithms, and data analytics and machine learning, with applications in healthcare, service systems, product development, and manufacturing."
+  modeling_approaches_title: "Methods and Study Settings"
+  modeling_approaches:
+    - name: "Generalized Cost of Trip"
+      description: "Represents adoption decisions through monetary cost, time valuation, reliability, and perceived risk."
+    - name: "Spatial Case Studies"
+      description: "Evaluates Regional Air Mobility in Tennessee and high-resolution Urban Air Mobility demand across New York City taxi zones."
+    - name: "Learning-Accelerated Optimization"
+      description: "Uses neural networks to improve the efficiency of genetic-algorithm planning for airport selection and flight allocation."
+    - name: "Machine-Learning Gravity Model"
+      description: "Captures nonlinear spatial, socioeconomic, and transportation relationships missing from traditional gravity formulations."
+    - name: "Neurosymbolic Neural Networks"
+      description: "Integrates human-readable decision-tree rules with neural learning for interpretable and robust demand forecasts."
+  bibtex: |
+    @phdthesis{acharya2026enhancing,
+      author={Acharya, Kamal},
+      title={Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI},
+      school={University of Maryland, Baltimore County},
+      year={2026},
+      type={Doctoral dissertation}
+    }
+
 - type: journal
   year: 2026
   authors:
