@@ -23,6 +23,8 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% assign publication_type_label = "Journal Article" %}
   {% elsif publication.type == "conference" %}
     {% assign publication_type_label = "Conference Paper" %}
+  {% elsif publication.type == "dissertation" %}
+    {% assign publication_type_label = "Doctoral Dissertation" %}
   {% endif %}
   {% assign first_author = publication.authors | first | split: " " | first | remove: "." | remove: "," | downcase %}
   {% assign cite_key = first_author | append: publication.year | append: "-" | append: publication.title | slugify %}
@@ -56,7 +58,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       <a href="{{ publication.source_url }}" target="_blank" rel="noopener noreferrer">Publisher Page</a>
       {% endif %}
       {% if publication.pdf %}
-      <a href="{{ publication.pdf }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
       {% endif %}
       <a href="#citation">Cite</a>
     </p>
@@ -74,6 +76,9 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% endif %}
     {% if publication.research_gaps %}
     <a href="#research-gaps">Research Gaps</a>
+    {% endif %}
+    {% if publication.committee %}
+    <a href="#dissertation-committee">Committee</a>
     {% endif %}
     <a href="#citation">Citation</a>
     <a href="#related">Related</a>
@@ -135,6 +140,23 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       <li>{{ contribution }}</li>
       {% endfor %}
     </ul>
+  </section>
+  {% endif %}
+
+  {% if publication.committee %}
+  <section class="publication-detail-section" id="dissertation-committee">
+    <h2>Dissertation Committee</h2>
+    <p class="publication-section-intro">The committee brought together expertise in artificial intelligence, autonomous systems, transportation, software engineering, pervasive computing, and energy infrastructure.</p>
+    <div class="publication-committee-grid">
+      {% for member in publication.committee %}
+      <article class="publication-committee-card">
+        <p class="publication-committee-role">{{ member.role }}</p>
+        <h3>{% if member.profile_url %}<a href="{{ member.profile_url }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
+        <p class="publication-committee-affiliation">{{ member.affiliation }}</p>
+        <p>{{ member.background }}</p>
+      </article>
+      {% endfor %}
+    </div>
   </section>
   {% endif %}
 
@@ -208,6 +230,24 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
         <dd>{{ publication.status }}</dd>
       </div>
       {% endif %}
+      {% if publication.degree %}
+      <div>
+        <dt>Degree</dt>
+        <dd>{{ publication.degree }}</dd>
+      </div>
+      {% endif %}
+      {% if publication.advisor %}
+      <div>
+        <dt>Advisor</dt>
+        <dd>{{ publication.advisor }}</dd>
+      </div>
+      {% endif %}
+      {% if publication.co_advisor %}
+      <div>
+        <dt>Co-advisor</dt>
+        <dd>{{ publication.co_advisor }}</dd>
+      </div>
+      {% endif %}
       {% if publication.doi %}
       <div>
         <dt>DOI</dt>
@@ -267,7 +307,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       <a href="{{ publication.preprint_url }}" target="_blank" rel="noopener noreferrer">Preprint</a>
       {% endif %}
       {% if publication.pdf %}
-      <a href="{{ publication.pdf }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
       {% endif %}
     </p>
   </section>
@@ -277,6 +317,13 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     <h2>Citation</h2>
     {% if publication.bibtex %}
     <pre class="publication-citation"><code>{{ publication.bibtex | escape }}</code></pre>
+    {% elsif publication.type == "dissertation" %}
+    <pre class="publication-citation"><code>@phdthesis{ {{- cite_key -}},
+  title = { {{- publication.title -}} },
+  author = { {{- publication.authors | join: " and " -}} },
+  school = { {{- publication.venue -}} },
+  year = { {{- publication.year -}} }
+}</code></pre>
     {% elsif publication.type == "journal" %}
     <pre class="publication-citation"><code>@article{ {{- cite_key -}},
   title = { {{- publication.title -}} },

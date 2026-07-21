@@ -671,23 +671,24 @@
   background: linear-gradient(135deg, #f2f9ff 0%, #f8fcff 62%, #f5faf4 100%);
   border: 1px solid #d9e8f5;
   border-radius: 14px;
-  padding: 24px;
+  padding: 20px 22px;
   margin-bottom: 24px;
 }
 
 .pub-hero h1 {
-  margin-top: 0;
+  margin: 0 0 8px;
   color: #16385d;
 }
 
 .pub-hero p {
-  margin-bottom: 0;
+  max-width: 850px;
+  margin: 0;
   color: #2f4f74;
   line-height: 1.7;
 }
 
 .pub-links {
-  margin-top: 12px !important;
+  margin-top: 10px !important;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
@@ -698,7 +699,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .pub-jump-nav span {
@@ -760,6 +761,105 @@
   margin: 26px 0;
 }
 
+.pub-research-context {
+  display: block;
+  margin-top: 42px;
+  padding-top: 8px;
+  border-top: 1px solid #dbe7f5;
+}
+
+.pub-dissertation-section {
+  margin: 28px 0;
+}
+
+.pub-dissertation-section > h2 {
+  color: #16385d;
+  border-bottom: 1px solid #dbe7f5;
+  padding-bottom: 8px;
+}
+
+.pub-dissertation-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #d9e8f5;
+  border-left: 4px solid #2c6cb0;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f7fbff 0%, #ffffff 72%, #f6faf5 100%);
+}
+
+.pub-dissertation-label {
+  margin: 0 0 6px;
+  color: #2c6cb0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pub-dissertation-card h3 {
+  margin: 0 0 8px;
+  color: #17395d;
+  font-size: 1.22rem;
+  line-height: 1.4;
+}
+
+.pub-dissertation-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pub-dissertation-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.pub-dissertation-card p {
+  color: #355479;
+  line-height: 1.65;
+}
+
+.pub-dissertation-content > p:last-child {
+  margin-bottom: 0;
+}
+
+.pub-dissertation-meta {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.pub-dissertation-actions {
+  display: grid;
+  gap: 9px;
+  min-width: 190px;
+  text-align: center;
+}
+
+.pub-dissertation-actions a {
+  padding: 8px 12px;
+  border: 1px solid #cdddec;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1b456f;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.pub-dissertation-actions a:hover {
+  background: #eef6ff;
+}
+
+.pub-dissertation-actions .pub-dissertation-primary {
+  border-color: #2c6cb0;
+  background: #2c6cb0;
+  color: #ffffff;
+}
+
+.pub-dissertation-actions .pub-dissertation-primary:hover {
+  background: #225a95;
+}
+
 .pub-summary {
   background: #ffffff;
   border: 1px solid #dbe7f5;
@@ -805,7 +905,21 @@
 }
 
 @media (max-width: 900px) {
+  .pub-dissertation-card {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-dissertation-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .pub-theme-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .pub-dissertation-actions {
     grid-template-columns: 1fr;
   }
 }
@@ -1181,6 +1295,64 @@
   gap: 8px;
 }
 
+.publication-section-intro {
+  max-width: 780px;
+  color: #526b86;
+  line-height: 1.65;
+}
+
+.publication-committee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.publication-committee-card {
+  padding: 16px;
+  border: 1px solid #dbe7f5;
+  border-top: 3px solid #2c6cb0;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.publication-committee-card h3 {
+  margin: 4px 0 3px;
+  color: #17395d;
+  font-size: 1.04rem;
+}
+
+.publication-committee-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication-committee-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.publication-committee-card p {
+  margin: 8px 0 0;
+  color: #355479;
+  line-height: 1.6;
+}
+
+.publication-committee-card .publication-committee-role {
+  margin: 0;
+  color: #2c6cb0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.publication-committee-card .publication-committee-affiliation {
+  margin-top: 0;
+  color: #526b86;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 .publication-author-list {
   display: flex;
   flex-wrap: wrap;
@@ -1271,7 +1443,8 @@
 
 @media (max-width: 900px) {
   .publication-card-grid-four,
-  .publication-gap-grid {
+  .publication-gap-grid,
+  .publication-committee-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -1288,6 +1461,7 @@
   .publication-card-grid,
   .publication-card-grid-four,
   .publication-gap-grid,
+  .publication-committee-grid,
   .publication-detail-list {
     grid-template-columns: 1fr;
   }
