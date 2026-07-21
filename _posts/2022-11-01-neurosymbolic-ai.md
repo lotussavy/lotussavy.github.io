@@ -7,7 +7,7 @@ categories:
 reading_time: 11
 sitemap: true
 robots: index,follow
-description: "An accessible introduction to neurosymbolic AI: why combining neural networks with symbolic reasoning can improve explainability, data efficiency, causal reasoning, and trustworthy decision-making."
+description: "An introduction to neurosymbolic AI and how neural networks and symbolic reasoning support explainability, data efficiency, and trustworthy decisions."
 image: /assets/blog/neurosymbolic-ai/cover.jpeg
 source_url: https://medium.com/@lotussavy/neurosymbolic-ai-752ca6aede39
 ---
@@ -21,7 +21,7 @@ The other instinct says intelligence should be learned from **data, examples, pa
 Neurosymbolic AI is the attempt to bring these two instincts together.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai/cover.jpeg" alt="Neurosymbolic AI illustration">
+  <img src="/assets/blog/neurosymbolic-ai/cover.jpeg" alt="Neurosymbolic AI illustration" width="800" height="267" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Neurosymbolic AI tries to combine neural pattern learning with symbolic reasoning.</figcaption>
 </figure>
 
@@ -96,7 +96,7 @@ Henry Kautz described several ways to think about neural-symbolic integration. T
 In this pattern, symbolic inputs are converted into neural representations, processed by a neural model, and then converted back into symbolic outputs.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai/figure-02.png" alt="Symbolic Neuro Symbolic architecture">
+  <img src="/assets/blog/neurosymbolic-ai/figure-02.png" alt="Symbolic Neuro Symbolic architecture" width="694" height="136" loading="lazy" decoding="async">
   <figcaption>Symbolic inputs are encoded for neural processing and decoded back into symbolic outputs.</figcaption>
 </figure>
 
@@ -109,7 +109,7 @@ The strength of this approach is flexibility. The weakness is that the symbolic 
 Here, a symbolic system remains in control, but it calls a neural component as a subroutine.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai/figure-03.png" alt="Symbolic system with neural subroutine">
+  <img src="/assets/blog/neurosymbolic-ai/figure-03.png" alt="Symbolic system with neural subroutine" width="694" height="184" loading="lazy" decoding="async">
   <figcaption>A symbolic reasoner can use a neural model for perception or pattern recognition.</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ One way to think about this pattern is: the neural model answers "what is presen
 This pattern is a pipeline. A neural model processes raw input and produces a symbolic representation. A symbolic reasoner then operates on that representation.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai/figure-04.png" alt="Neural model feeding symbolic reasoner">
+  <img src="/assets/blog/neurosymbolic-ai/figure-04.png" alt="Neural model feeding symbolic reasoner" width="694" height="154" loading="lazy" decoding="async">
   <figcaption>A neural model converts raw input into symbols that a reasoning system can use.</figcaption>
 </figure>
 
@@ -135,7 +135,7 @@ This is attractive because it separates perception from reasoning. But it also c
 In this pattern, symbolic knowledge is used to guide or train a neural model. Rules, programs, equations, or logical constraints become part of the learning process.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai/figure-05.png" alt="Symbolic knowledge compiled into neural model">
+  <img src="/assets/blog/neurosymbolic-ai/figure-05.png" alt="Symbolic knowledge compiled into neural model" width="694" height="210" loading="lazy" decoding="async">
   <figcaption>Symbolic knowledge can be used to shape what a neural model learns.</figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ The benefit is data efficiency. If a model does not have to rediscover known rul
 This approach encodes symbolic statements directly into neural structures.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai/figure-06.png" alt="Symbolic structure encoded inside neural representation">
+  <img src="/assets/blog/neurosymbolic-ai/figure-06.png" alt="Symbolic structure encoded inside neural representation" width="694" height="166" loading="lazy" decoding="async">
   <figcaption>Logical or symbolic relationships can be embedded into neural representations.</figcaption>
 </figure>
 
@@ -161,7 +161,7 @@ This direction is appealing because it tries to make reasoning differentiable. T
 In this pattern, symbolic reasoning is embedded inside a neural system.
 
 <figure>
-  <img src="/assets/blog/neurosymbolic-ai/figure-07.png" alt="Symbolic reasoning embedded in neural system">
+  <img src="/assets/blog/neurosymbolic-ai/figure-07.png" alt="Symbolic reasoning embedded in neural system" width="694" height="236" loading="lazy" decoding="async">
   <figcaption>Symbolic reasoning can be embedded inside a broader neural architecture.</figcaption>
 </figure>
 

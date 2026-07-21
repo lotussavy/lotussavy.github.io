@@ -7,7 +7,7 @@ categories:
 reading_time: 6
 sitemap: true
 robots: index,follow
-description: A practical introduction to Advanced Air Mobility, including urban air taxis, regional mobility, cargo, public services, infrastructure, autonomy, and deployment challenges.
+description: "An introduction to Advanced Air Mobility, covering air taxis, regional mobility, cargo, infrastructure, autonomy, and deployment challenges."
 image: /assets/blog/advanced-air-mobility/cover.png
 source_url: https://www.nasa.gov/mission/advanced-air-mobility/
 ---
@@ -16,7 +16,7 @@ Advanced Air Mobility, or AAM, is the idea that aviation can become a more flexi
 
 The phrase sounds futuristic, but the motivation is practical. Many roads are congested. Some communities are poorly connected to major airports. Emergency services often need faster access. Logistics networks are under pressure to move goods more quickly. AAM asks whether smaller, cleaner, more automated aircraft can fill those gaps.
 
-![](/assets/blog/advanced-air-mobility/cover.png)
+![](/assets/blog/advanced-air-mobility/cover.png){: width="661" height="374" loading="eager" decoding="async" fetchpriority="high" }
 
 ## What Makes AAM Different
 

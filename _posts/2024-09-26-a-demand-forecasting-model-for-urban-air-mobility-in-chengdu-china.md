@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "UAM Demand Forecasting in Chengdu"
 title: A Demand Forecasting Model for Urban Air Mobility in Chengdu, China
 date: '2024-09-26'
 categories:
@@ -24,7 +25,7 @@ Chengdu is a large, growing metropolitan area with increasing travel demand and 
 The researchers divide the study area into 25 traffic zones based on land use, population density, administrative boundaries, roads, rivers, and the need to support future UAM takeoff and landing sites.
 
 <figure>
-  <img src="/assets/blog/a-demand-forecasting-model-for-urban-air-mobility-in-chengdu-china/cover.png" alt="Analytical framework for Chengdu UAM demand forecasting">
+  <img src="/assets/blog/a-demand-forecasting-model-for-urban-air-mobility-in-chengdu-china/cover.png" alt="Analytical framework for Chengdu UAM demand forecasting" width="800" height="679" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Analytical framework for Chengdu UAM demand forecasting</figcaption>
 </figure>
 

@@ -7,7 +7,7 @@ categories:
 reading_time: 9
 sitemap: true
 robots: index,follow
-description: "A practical overview of explainable AI in cybersecurity, covering intrusion detection, malware analysis, anomaly detection, cyber-risk scoring, trust, debugging, and model improvement."
+description: "Explore explainable AI in cybersecurity for intrusion detection, malware analysis, anomaly detection, risk scoring, debugging, and model trust."
 image: /assets/blog/explainable-ai-in-cybersecurity/cover.png
 source_url: https://medium.com/@lotussavy/explainable-ai-in-cybersecurity-31db718a3e82
 ---
@@ -19,7 +19,7 @@ That is where explainable AI (XAI) becomes important.
 AI models are increasingly used for intrusion detection, malware classification, phishing detection, anomaly detection, vulnerability scoring, fraud detection, and cyber-risk analysis. These models can be accurate, but accuracy alone is not enough when analysts must investigate threats, justify alerts, reduce false positives, and respond quickly.
 
 <figure>
-  <img src="/assets/blog/explainable-ai-in-cybersecurity/cover.png" alt="Growth of publications related to explainable AI in cybersecurity">
+  <img src="/assets/blog/explainable-ai-in-cybersecurity/cover.png" alt="Growth of publications related to explainable AI in cybersecurity" width="843" height="453" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Research interest in explainable AI for cybersecurity has grown as AI-based security systems have become more common. Graph source: <a href="https://app.dimensions.ai/discover/publication">Dimensions publication search</a>, using the query phrase "Explainable AND Artificial AND Intelligence AND Cybersecurity".</figcaption>
 </figure>
 

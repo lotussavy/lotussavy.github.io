@@ -7,7 +7,7 @@ categories:
 reading_time: 8
 sitemap: true
 robots: index,follow
-description: "A practical overview of the major challenges in deep reinforcement learning, including sample inefficiency, poor generalization, interpretability, reproducibility, safety, and real-world deployment."
+description: "Explore key deep reinforcement learning challenges, including sample efficiency, generalization, reproducibility, interpretability, safety, and deployment."
 image: /assets/blog/challenges-in-deep-reinforcement-learning/cover.png
 source_url: https://medium.com/@lotussavy/challenges-in-deep-reinforcement-learning-46ec2eaab3c2
 ---
@@ -19,7 +19,7 @@ Instead of only learning from labeled examples, a reinforcement learning agent l
 That combination has produced impressive results in games, robotics, autonomous driving, resource allocation, recommendation, and control systems.
 
 <figure>
-  <img src="/assets/blog/challenges-in-deep-reinforcement-learning/cover.png" alt="Deep reinforcement learning concept illustration">
+  <img src="/assets/blog/challenges-in-deep-reinforcement-learning/cover.png" alt="Deep reinforcement learning concept illustration" width="1400" height="735" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Deep reinforcement learning combines neural function approximation with trial-and-error decision making.</figcaption>
 </figure>
 

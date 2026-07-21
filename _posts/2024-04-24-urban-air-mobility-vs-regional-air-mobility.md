@@ -7,12 +7,12 @@ categories:
 reading_time: 6
 sitemap: true
 robots: index,follow
-description: A practical comparison of Urban Air Mobility and Regional Air Mobility, including aircraft, infrastructure, markets, costs, and how the two systems may work together.
+description: "Compare Urban and Regional Air Mobility by aircraft, infrastructure, markets, costs, operating ranges, and potential integration."
 image: /assets/blog/urban-air-mobility-vs-regional-air-mobility/cover.png
 source_url: https://ntrs.nasa.gov/citations/20210014033
 ---
 
-![](/assets/blog/urban-air-mobility-vs-regional-air-mobility/cover.png)
+![](/assets/blog/urban-air-mobility-vs-regional-air-mobility/cover.png){: width="719" height="696" loading="eager" decoding="async" fetchpriority="high" }
 
 Urban Air Mobility (UAM) and Regional Air Mobility (RAM) are often discussed as if they are competing ideas. In reality, they are two branches of the same larger Advanced Air Mobility movement.
 
@@ -40,7 +40,7 @@ RAM tries to change that by using the large network of existing local and region
 
 Unlike UAM, RAM does not usually require vertical takeoff. Many RAM aircraft can use runways that already exist. That gives them a major efficiency advantage. Fixed-wing aircraft generally fly farther, carry more payload, and use less energy than VTOL aircraft on the same route.
 
-![](/assets/blog/urban-air-mobility-vs-regional-air-mobility/figure-02.png)
+![](/assets/blog/urban-air-mobility-vs-regional-air-mobility/figure-02.png){: width="736" height="466" loading="lazy" decoding="async" }
 
 ## The Shared Technology Base
 

@@ -45,7 +45,7 @@ The authors study two kinds of sequences:
 The float setting is harder because the operator space is larger and numerical precision matters more.
 
 <figure>
-  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/cover.png" alt="Operators used in generators">
+  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/cover.png" alt="Operators used in generators" width="455" height="176" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Operators used in generators</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ The process works roughly as follows:
 6. Select a length l randomly between l_{min} and l_{max} and calculate the subsequent l terms based on the initial conditions set. The effective input sequence length is thus n_{input} = d_{eff} + l.
 
 <figure>
-  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/figure-02.png" alt="Hyperparameters of generator">
+  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/figure-02.png" alt="Hyperparameters of generator" width="455" height="242" loading="lazy" decoding="async">
   <figcaption>Hyperparameters of generator</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ This representation turns a formula tree into a sequence the Transformer can rea
 ## Results
 
 <figure>
-  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/figure-03.png" alt="The symbolic model extrapolates further and with higher precision than the numeric model">
+  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/figure-03.png" alt="The symbolic model extrapolates further and with higher precision than the numeric model" width="800" height="243" loading="lazy" decoding="async">
   <figcaption>The symbolic model extrapolates further and with higher precision than the numeric model</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ The reason is intuitive. If a numeric model predicts the next values directly, e
 The paper also shows that difficulty rises quickly with expression complexity. More operators, deeper recurrence, and shorter input sequences all make the task harder. This is expected: a short sequence gives fewer clues, and a complex recurrence has more possible explanations.
 
 <figure>
-  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/figure-04.png" alt="Accuracy of models on various in-domain and out-of-domain groups.">
+  <img src="/assets/blog/deep-symbolic-regression-for-recurrent-sequences/figure-04.png" alt="Accuracy of models on various in-domain and out-of-domain groups." width="419" height="293" loading="lazy" decoding="async">
   <figcaption>Accuracy of models on various in-domain and out-of-domain groups.</figcaption>
 </figure>
 

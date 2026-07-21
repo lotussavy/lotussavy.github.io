@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Symbolic Models with Deep-Learning Inductive Biases"
 title: Discovering Symbolic Models from Deep Learning with Inductive Biases
 date: '2024-04-09'
 categories:
@@ -8,7 +9,7 @@ categories:
 reading_time: 8
 sitemap: true
 robots: index,follow
-description: "A practical explanation of how symbolic equations can be extracted from trained deep learning models by using inductive biases, sparse latent spaces, graph networks, and symbolic regression."
+description: "Learn how inductive biases, sparse latent spaces, graph networks, and symbolic regression extract equations from deep models."
 image: /assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/cover.png
 source_url: https://medium.com/@lotussavy/discovering-symbolic-models-from-deep-learning-with-inductive-biases-0f286ff29d76
 ---
@@ -25,7 +26,7 @@ The core idea is elegant:
 
 Instead of asking symbolic regression to search the full problem from scratch, the neural network first learns a useful decomposition. Symbolic regression is then applied to smaller pieces of the model.
 
-![](/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/cover.png)
+![](/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/cover.png){: width="1193" height="587" loading="eager" decoding="async" fetchpriority="high" }
 
 ## Why Symbolic Models Matter
 
@@ -58,7 +59,7 @@ That is the key:
 **Use inductive bias to make the neural model learn the right internal decomposition, then extract symbolic rules from that decomposition.**
 
 <figure>
-  <img src="/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/figure-02.png" alt="Extraction of physical equations from a dataset">
+  <img src="/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/figure-02.png" alt="Extraction of physical equations from a dataset" width="924" height="470" loading="lazy" decoding="async">
   <figcaption>Symbolic equations are extracted by fitting expressions to internal functions learned by a neural model.</figcaption>
 </figure>
 
@@ -105,7 +106,7 @@ This is a common lesson in scientific machine learning: the goal is not merely t
 The paper uses graph neural networks for physical systems because GNNs match the structure of interacting particles.
 
 <figure>
-  <img src="/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/figure-03.png" alt="Internal structure of the graph neural network used in experiments">
+  <img src="/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/figure-03.png" alt="Internal structure of the graph neural network used in experiments" width="1400" height="925" loading="lazy" decoding="async">
   <figcaption>The internal GNN structure decomposes a physical system into object states, pairwise messages, and updates.</figcaption>
 </figure>
 
@@ -137,7 +138,7 @@ This replacement step is important. It is not enough to produce a plausible equa
 ## Implementation of the Inductive Bias
 
 <figure>
-  <img src="/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/figure-04.png" alt="Implementation and exploitation of inductive bias on GNNs">
+  <img src="/assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/figure-04.png" alt="Implementation and exploitation of inductive bias on GNNs" width="975" height="691" loading="lazy" decoding="async">
   <figcaption>The method uses architectural bias and sparse representations to make symbolic extraction easier.</figcaption>
 </figure>
 

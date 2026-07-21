@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Knowledge Distillation and Large Language Models"
 title: Milestones in Knowledge Distillation and Large Language Models
 date: '2024-08-06'
 categories:
@@ -21,7 +22,7 @@ This timeline follows the major milestones that shaped language modeling and kno
 ## A Long Road to Language Intelligence
 
 <figure>
-  <img src="/assets/blog/milestones-in-knowledge-distillation-and-large-language-models/cover.png" alt="Milestones in the history of large language models and knowledge distillation">
+  <img src="/assets/blog/milestones-in-knowledge-distillation-and-large-language-models/cover.png" alt="Milestones in the history of large language models and knowledge distillation" width="780" height="695" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Milestones in the history of large language models and knowledge distillation</figcaption>
 </figure>
 

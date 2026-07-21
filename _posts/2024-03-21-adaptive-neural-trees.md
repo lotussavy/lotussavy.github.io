@@ -7,7 +7,7 @@ categories:
 reading_time: 8
 sitemap: true
 robots: index,follow
-description: "A practical explanation of Adaptive Neural Trees, a model that combines the representation learning power of neural networks with the conditional structure and lightweight inference of decision trees."
+description: "Explore Adaptive Neural Trees, which combine neural representation learning with conditional tree structures and efficient inference."
 image: /assets/blog/adaptive-neural-trees/cover.png
 source_url: https://medium.com/@lotussavy/adaptive-neural-trees-ae7bc36da9d1
 ---
@@ -21,7 +21,7 @@ The paper asks a simple but powerful question:
 That question matters because neural networks and decision trees solve different parts of the learning problem beautifully. Neural networks are excellent at representation learning: they transform raw data into useful internal features. Decision trees are excellent at conditional computation: for a given input, they follow only one path through the tree. ANTs try to bring these two strengths into one model.
 
 <figure>
-  <img src="/assets/blog/adaptive-neural-trees/cover.png" alt="Combination of Neural Networks and Decision Trees gives Adaptive Neural Trees">
+  <img src="/assets/blog/adaptive-neural-trees/cover.png" alt="Combination of Neural Networks and Decision Trees gives Adaptive Neural Trees" width="1034" height="284" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Adaptive Neural Trees combine neural representation learning with tree-structured decision making.</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ An Adaptive Neural Tree is a tree where the edges, internal nodes, and leaves ar
 
 Instead of asking a tree to split raw input features directly, ANTs allow the input to be transformed as it moves through the tree. Each path from the root to a leaf becomes a small neural network. At the same time, the tree structure decides which path is used for each input.
 
-![](/assets/blog/adaptive-neural-trees/figure-02.png)
+![](/assets/blog/adaptive-neural-trees/figure-02.png){: width="882" height="205" loading="lazy" decoding="async" }
 
 The model is built from three types of modules:
 
@@ -64,7 +64,7 @@ The model is built from three types of modules:
 This design is the main reason ANTs are interesting. The model is not just a decision tree wrapped around a neural network. The neural computation is distributed through the tree itself.
 
 <figure>
-  <img src="/assets/blog/adaptive-neural-trees/figure-03.png" alt="An example Adaptive Neural Tree">
+  <img src="/assets/blog/adaptive-neural-trees/figure-03.png" alt="An example Adaptive Neural Tree" width="556" height="426" loading="lazy" decoding="async">
   <figcaption>An example ANT. Transformers live on edges, routers live at internal nodes, and solvers live at leaves.</figcaption>
 </figure>
 
@@ -72,12 +72,12 @@ This design is the main reason ANTs are interesting. The model is not just a dec
 
 Think of an input image entering the root of the tree. It first passes through a transformer, which creates a learned representation. A router then looks at that representation and decides which branch should be followed. The process repeats until the input reaches a leaf node, where a solver produces the prediction.
 
-![](/assets/blog/adaptive-neural-trees/figure-04.png)
+![](/assets/blog/adaptive-neural-trees/figure-04.png){: width="1064" height="132" loading="lazy" decoding="async" }
 
 The important detail is that routing is learned. The model is not using a manually written rule such as "if pixel intensity is greater than this value, go left." Instead, the router can itself be a neural network that learns what information is useful for splitting the data.
 
 <figure>
-  <img src="/assets/blog/adaptive-neural-trees/figure-05.png" alt="Routing path through an Adaptive Neural Tree">
+  <img src="/assets/blog/adaptive-neural-trees/figure-05.png" alt="Routing path through an Adaptive Neural Tree" width="1252" height="429" loading="lazy" decoding="async">
   <figcaption>The red path shows one possible route taken by an input through the tree.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ At a candidate leaf, the training algorithm considers three options:
 2. **Split** the node by adding a router and two child leaves.
 3. **Deepen** the path by adding another transformer before the solver.
 
-![](/assets/blog/adaptive-neural-trees/figure-06.png)
+![](/assets/blog/adaptive-neural-trees/figure-06.png){: width="712" height="90" loading="lazy" decoding="async" }
 
 This is a useful way to think about the model's decision process:
 
@@ -109,7 +109,7 @@ This is a useful way to think about the model's decision process:
 The authors train the proposed alternatives locally, compare them using validation loss, and choose the best option. This process continues level by level until additional growth no longer helps.
 
 <figure>
-  <img src="/assets/blog/adaptive-neural-trees/figure-07.png" alt="Growth phase of Adaptive Neural Trees">
+  <img src="/assets/blog/adaptive-neural-trees/figure-07.png" alt="Growth phase of Adaptive Neural Trees" width="576" height="498" loading="lazy" decoding="async">
   <figcaption>The growth phase lets the model choose between splitting, deepening, or keeping the current node.</figcaption>
 </figure>
 
@@ -122,7 +122,7 @@ In the paper, refinement often polarizes router decisions. In plain terms, some 
 Many earlier models tried to combine neural networks and decision trees. The paper positions ANTs as a more complete version of this family.
 
 <figure>
-  <img src="/assets/blog/adaptive-neural-trees/figure-08.png" alt="Comparison of tree-structured neural networks">
+  <img src="/assets/blog/adaptive-neural-trees/figure-08.png" alt="Comparison of tree-structured neural networks" width="649" height="320" loading="lazy" decoding="async">
   <figcaption>ANTs combine path-level feature learning, learned routers, and architecture growth.</figcaption>
 </figure>
 
@@ -142,7 +142,7 @@ The authors evaluate ANTs on three types of tasks:
 - **MNIST**, a handwritten digit classification dataset.
 - **CIFAR-10**, a natural image classification dataset.
 
-![](/assets/blog/adaptive-neural-trees/figure-09.png)
+![](/assets/blog/adaptive-neural-trees/figure-09.png){: width="832" height="168" loading="lazy" decoding="async" }
 
 The results are not meant to show that ANTs beat every modern deep architecture. Instead, the paper makes a more nuanced point: a tree-structured neural model can remain competitive while using conditional computation and learning interpretable hierarchies.
 
@@ -152,14 +152,14 @@ On MNIST, ANT variants achieved over 99% accuracy. One particularly interesting 
 
 On CIFAR-10, ANTs achieved over 90% accuracy and outperformed older tree-based methods such as deep forests. Larger architectures such as DenseNet still performed better, but they used many more parameters. The paper's point is not "ANTs replace all CNNs"; it is that conditional, tree-shaped neural models can be accurate and efficient.
 
-![](/assets/blog/adaptive-neural-trees/figure-10.png)
+![](/assets/blog/adaptive-neural-trees/figure-10.png){: width="820" height="475" loading="lazy" decoding="async" }
 
 ## The Most Interesting Result: Learned Hierarchies
 
 For me, the most engaging part of the paper is not just the accuracy table. It is the learned hierarchy.
 
 <figure>
-  <img src="/assets/blog/adaptive-neural-trees/figure-11.png" alt="Learned hierarchy on CIFAR-10">
+  <img src="/assets/blog/adaptive-neural-trees/figure-11.png" alt="Learned hierarchy on CIFAR-10" width="820" height="426" loading="lazy" decoding="async">
   <figcaption>An ANT can learn meaningful class groupings, such as separating natural and man-made objects.</figcaption>
 </figure>
 
@@ -171,7 +171,7 @@ This point needs a careful interpretation. A learned tree is not automatically a
 
 The growth phase builds the tree using local decisions. That is efficient, but local decisions can create branches that later turn out to be unnecessary. The refinement phase helps correct this.
 
-![](/assets/blog/adaptive-neural-trees/figure-12.png)
+![](/assets/blog/adaptive-neural-trees/figure-12.png){: width="832" height="359" loading="lazy" decoding="async" }
 
 In the paper's CIFAR-10 analysis, refinement improves generalization and can make some routing probabilities close to zero or one. When a branch is rarely visited after refinement, it becomes a candidate for pruning. This is one of the cleanest connections between decision-tree behavior and neural optimization in the paper: the model can grow, specialize, and then simplify.
 

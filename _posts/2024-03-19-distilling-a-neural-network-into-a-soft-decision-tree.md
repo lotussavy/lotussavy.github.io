@@ -7,7 +7,7 @@ categories:
 reading_time: 8
 sitemap: true
 robots: index,follow
-description: "A practical explanation of Frosst and Hinton's method for distilling a neural network into a soft decision tree, trading some accuracy for a more interpretable model."
+description: "Learn how neural-network knowledge can be distilled into a soft decision tree to trade some predictive accuracy for greater interpretability."
 image: /assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/cover.png
 source_url: https://medium.com/@lotussavy/distilling-a-neural-network-into-a-soft-decision-tree-9cd6c22ef85a
 ---
@@ -58,7 +58,7 @@ A standard decision tree makes hard decisions. At each internal node, the input 
 A soft decision tree makes probabilistic decisions. Each internal node computes the probability of taking one branch or the other.
 
 <figure>
-  <img src="/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/cover.png" alt="Soft binary decision tree with one internal node and two leaves">
+  <img src="/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/cover.png" alt="Soft binary decision tree with one internal node and two leaves" width="467" height="493" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>A soft binary decision tree assigns probabilities to branches instead of making purely hard splits.</figcaption>
 </figure>
 
@@ -70,13 +70,13 @@ Each internal node has:
 
 The probability of taking the right branch is:
 
-![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-02.png)
+![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-02.png){: width="212" height="25" loading="lazy" decoding="async" }
 
 Here, `x` is the input and `sigma` is the sigmoid function.
 
 The paper also introduces an inverse temperature parameter `beta`, which controls how sharp the decision is.
 
-![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-03.png)
+![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-03.png){: width="247" height="25" loading="lazy" decoding="async" }
 
 When `beta` is larger, the decision becomes closer to a hard left-or-right choice. When it is smaller, the decision is softer.
 
@@ -84,7 +84,7 @@ When `beta` is larger, the decision becomes closer to a hard left-or-right choic
 
 Each leaf stores a learned probability distribution over classes.
 
-![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-04.png)
+![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-04.png){: width="194" height="50" loading="lazy" decoding="async" }
 
 This is different from a normal tree where a leaf may simply store a class label. In a soft decision tree, a leaf can say something like:
 
@@ -102,7 +102,7 @@ This paper trains the whole soft decision tree with mini-batch gradient descent.
 
 The training loss minimizes the cross-entropy between the tree's leaf distributions and the target distribution, weighted by the probability of reaching each leaf.
 
-![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-05.png)
+![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-05.png){: width="430" height="33" loading="lazy" decoding="async" }
 
 This gives the model a differentiable objective, which makes gradient-based training possible.
 
@@ -112,11 +112,11 @@ One practical problem with soft trees is that a node may learn to send almost al
 
 To reduce this problem, the authors add a regularization penalty that encourages internal nodes to use both subtrees.
 
-![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-06.png)
+![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-06.png){: width="197" height="55" loading="lazy" decoding="async" }
 
 The full penalty is summed over internal nodes:
 
-![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-07.png)
+![](/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-07.png){: width="460" height="33" loading="lazy" decoding="async" }
 
 The paper also notes that this penalty should decay with depth. Near the root, balanced splits are often useful. Deeper in the tree, an uneven split may be natural because the node may only be responsible for a narrow subset of classes.
 
@@ -135,7 +135,7 @@ That result captures the main tradeoff:
 - The distilled tree is more interpretable than the neural network.
 
 <figure>
-  <img src="/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-08.png" alt="Visualization of a soft decision tree trained on MNIST">
+  <img src="/assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/figure-08.png" alt="Visualization of a soft decision tree trained on MNIST" width="722" height="376" loading="lazy" decoding="async">
   <figcaption>A depth-4 soft decision tree trained on MNIST. Internal nodes show learned filters, and leaves show class distributions.</figcaption>
 </figure>
 

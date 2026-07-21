@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Technology Predictions for 2035–2049"
 title: Predictions for abundant, awesome, technology-based, Possible Tomorrows (2035-2049)
 date: '2024-04-22'
 categories:
@@ -16,7 +17,7 @@ Vinod Khosla's TED 2024 talk is not a cautious forecast. It is a deliberately bo
 
 The phrase "possible tomorrows" matters. These are not guaranteed outcomes, and Khosla does not present them as a passive future waiting to arrive. The argument is more active: if entrepreneurs build aggressively, if policy avoids short-term thinking, and if society allows useful technologies to scale, the next two decades could be far more abundant than many people expect.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/cover.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/cover.png){: width="1305" height="630" loading="eager" decoding="async" fetchpriority="high" }
 
 ## The Core Idea: Abundance Through Technology
 
@@ -26,7 +27,7 @@ The predictions span several areas: AI doctors and tutors, low-cost robotic labo
 
 That is the exciting part of the talk. It imagines technology not merely as convenience, but as a way to expand human capability.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-02.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-02.png){: width="1305" height="630" loading="lazy" decoding="async" }
 
 ## Expertise Could Become Cheap and Always Available
 
@@ -36,7 +37,7 @@ This is a powerful idea because expertise is one of the biggest bottlenecks in t
 
 If AI can deliver reliable, personalized guidance at scale, education and healthcare could shift from scarce services to always-on support systems. The challenge, of course, is trust. Medical AI must be safe, audited, regulated, and designed around human responsibility. Education AI must help students think, not simply generate answers for them.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-03.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-03.png){: width="1305" height="666" loading="lazy" decoding="async" }
 
 ## Labor Could Be Reshaped by Robotics
 
@@ -46,7 +47,7 @@ If that happens, the economic impact could be enormous. Industries built around 
 
 But this is also one of the predictions that needs the most social planning. Cheap robotic labor could create abundance, but it could also disrupt wages, job identity, regional economies, and political stability. The optimistic version requires new pathways for people to move into better work, not simply a wave of replacement.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-04.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-04.png){: width="1305" height="666" loading="lazy" decoding="async" }
 
 ## Programming May Become a Human-Language Skill
 
@@ -56,7 +57,7 @@ This does not mean professional software engineering disappears. Complex systems
 
 That could unlock a huge amount of latent creativity. Many people know the problem they want to solve but do not know how to translate it into code. AI-assisted programming narrows that gap.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-05.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-05.png){: width="1305" height="666" loading="lazy" decoding="async" }
 
 ## Creativity, Entertainment, and Design Will Be More Personalized
 
@@ -66,7 +67,7 @@ This is already visible today. Generative AI can help people draft, compose, ske
 
 The opportunity is obvious: more people can create. The risk is also obvious: creative labor markets, copyright rules, authenticity, and cultural value all become more complicated. If everything can be generated cheaply, society will have to decide what originality, authorship, and taste mean in a world of infinite media.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-06.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-06.png){: width="1305" height="666" loading="lazy" decoding="async" }
 
 ## Transportation, Energy, and Climate Could Move Faster Than Expected
 
@@ -76,9 +77,9 @@ The same optimism applies to climate technology. Khosla argues that better techn
 
 This is an important distinction. Climate progress is not only about sacrifice. It can also come from replacing dirty systems with better systems that are cheaper, cleaner, and easier to adopt.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-07.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-07.png){: width="1305" height="666" loading="lazy" decoding="async" }
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-08.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-08.png){: width="1390" height="722" loading="lazy" decoding="async" }
 
 ## Food, Fertilizer, and Resources Could Become More Plentiful
 
@@ -88,9 +89,9 @@ Food is another part of the abundance thesis. Alternative proteins and greener f
 
 That is where the prediction becomes interesting. The future of food will not be won only by moral persuasion. It will be won by better products.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-09.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-09.png){: width="1390" height="722" loading="lazy" decoding="async" }
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-10.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-10.png){: width="1390" height="722" loading="lazy" decoding="async" }
 
 ## Medicine Could Become More Personal
 
@@ -100,7 +101,7 @@ That would be a major change. Today, medicine often relies on population-level e
 
 The promise is huge, but the standards must be high. Personalized medicine requires data privacy, clinical validation, equitable access, and careful integration with physicians. A future with better healthcare should not become a future where only wealthy people receive the best models.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-11.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-11.png){: width="1390" height="722" loading="lazy" decoding="async" }
 
 ## What Could Slow These Tomorrows Down
 
@@ -108,9 +109,9 @@ The most useful part of this vision is that it does not ignore friction. Several
 
 That is the practical lesson. Technology alone is not enough. Abundance requires deployment. Deployment requires capital, regulation, public trust, infrastructure, and persistence. Even a breakthrough can stall if it cannot fit into the real world.
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-12.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-12.png){: width="1390" height="722" loading="lazy" decoding="async" }
 
-![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-13.png)
+![](/assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/figure-13.png){: width="1390" height="722" loading="lazy" decoding="async" }
 
 ## A Better Way to Read the Prediction
 

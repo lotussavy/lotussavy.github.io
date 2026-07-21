@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "AAM Airport Shuttle and Air Taxi Market Potential"
 title: 'Advanced Air Mobility: Demand Analysis and Market Potential of the Airport Shuttle and Air Taxi Markets'
 date: '2024-06-14'
 categories:
@@ -19,7 +20,7 @@ Goyal, Reiche, Fernando, and Cohen study that question by estimating the market 
 The study is valuable because it does not stop at unconstrained demand. It applies real-world limits such as infrastructure availability, willingness to pay, time of day, weather, and operating assumptions. That makes the results more conservative, but also more useful.
 
 <figure>
-  <img src="/assets/blog/advanced-air-mobility-demand-analysis-and-market-potential-of-the-airport-shuttle-and-air-taxi-markets/cover.png" alt="Operational assumptions">
+  <img src="/assets/blog/advanced-air-mobility-demand-analysis-and-market-potential-of-the-airport-shuttle-and-air-taxi-markets/cover.png" alt="Operational assumptions" width="800" height="343" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Operational assumptions</figcaption>
 </figure>
 
@@ -36,7 +37,7 @@ Studying both markets together helps show how AAM may evolve. Airport shuttle se
 The paper uses an AAM travel demand model built around five steps: trip generation, scoping, trip distribution, mode choice modeling, and constraint application.
 
 <figure>
-  <img src="/assets/blog/advanced-air-mobility-demand-analysis-and-market-potential-of-the-airport-shuttle-and-air-taxi-markets/figure-02.png" alt="Demand model for AAM">
+  <img src="/assets/blog/advanced-air-mobility-demand-analysis-and-market-potential-of-the-airport-shuttle-and-air-taxi-markets/figure-02.png" alt="Demand model for AAM" width="800" height="363" loading="lazy" decoding="async">
   <figcaption>Demand model for AAM</figcaption>
 </figure>
 
@@ -77,7 +78,7 @@ For example, a traveler may prefer AAM if the ground trip is long, the time savi
 The final step applies constraints that make the market estimate more realistic.
 
 <figure>
-  <img src="/assets/blog/advanced-air-mobility-demand-analysis-and-market-potential-of-the-airport-shuttle-and-air-taxi-markets/figure-03.png" alt="Process for applying constraints">
+  <img src="/assets/blog/advanced-air-mobility-demand-analysis-and-market-potential-of-the-airport-shuttle-and-air-taxi-markets/figure-03.png" alt="Process for applying constraints" width="1400" height="661" loading="lazy" decoding="async">
   <figcaption>Process for applying constraints</figcaption>
 </figure>
 

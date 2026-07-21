@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Structural Fire Risk Prediction for City Properties"
 title: Data-Driven Structural Fire Risk Prediction for City Properties
 date: '2024-08-06'
 categories:
@@ -7,7 +8,7 @@ categories:
 reading_time: 7
 sitemap: true
 robots: index,follow
-description: A practical look at how machine learning can help fire departments prioritize property inspections using historical fire incidents, violations, inspections, and property data.
+description: "Learn how machine learning helps fire departments prioritize inspections using incidents, violations, inspections, and property data."
 image: /assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/cover.png
 source_url: https://doi.org/10.1609/aaai.v38i21.30325
 ---
@@ -33,7 +34,7 @@ The study uses data from a South Dakota fire department, covering more than 72,0
 The data includes property characteristics such as age, construction type, occupancy type, square footage, and location. It also includes historical fire incidents, fire inspections, code violations, crime counts, and utility disconnections.
 
 <figure>
-  <img src="/assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/cover.png" alt="Dataset with attributes and time range">
+  <img src="/assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/cover.png" alt="Dataset with attributes and time range" width="1262" height="305" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Dataset with attributes and time range</figcaption>
 </figure>
 
@@ -78,7 +79,7 @@ That result is meaningful because the task is difficult. Structural fires are ra
 The authors also run reduced-dataset experiments where properties with missing values are removed. In that setting, Random Forest performs best with an AUC of 0.699. However, the reduced dataset performs worse overall than the full dataset, which reinforces the value of using models that can handle missing data instead of throwing away incomplete records.
 
 <figure>
-  <img src="/assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/figure-02.png" alt="Comparing performance of XGBoost, AdaBoost, and Random Forest models using cumulative fire count curves">
+  <img src="/assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/figure-02.png" alt="Comparing performance of XGBoost, AdaBoost, and Random Forest models using cumulative fire count curves" width="631" height="488" loading="lazy" decoding="async">
   <figcaption>Comparing performance of XGBoost, AdaBoost, and Random Forest models using cumulative fire count curves</figcaption>
 </figure>
 
@@ -89,7 +90,7 @@ The main takeaway is not that one model is universally best. It is that a data-d
 The authors also analyze feature importance to better understand what the model is using.
 
 <figure>
-  <img src="/assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/figure-03.png" alt="Feature importance list">
+  <img src="/assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/figure-03.png" alt="Feature importance list" width="711" height="421" loading="lazy" decoding="async">
   <figcaption>Feature importance list</figcaption>
 </figure>
 

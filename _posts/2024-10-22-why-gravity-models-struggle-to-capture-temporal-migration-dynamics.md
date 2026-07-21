@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Why Gravity Models Miss Temporal Migration"
 title: Why Gravity Models Struggle to Capture Temporal Migration Dynamics
 date: '2024-10-22'
 categories:
@@ -18,7 +19,7 @@ But Beyer, Schewe, and Lotze-Campen make a sharper point: strong spatial fit doe
 
 That distinction matters because gravity models are often used not only to describe historical migration patterns, but also to forecast future flows under changing population, income, or climate conditions.
 
-![](/assets/blog/why-gravity-models-struggle-to-capture-temporal-migration-dynamics/cover.png)
+![](/assets/blog/why-gravity-models-struggle-to-capture-temporal-migration-dynamics/cover.png){: width="1024" height="1024" loading="eager" decoding="async" fetchpriority="high" }
 
 ## Spatial Fit Can Hide Temporal Failure
 

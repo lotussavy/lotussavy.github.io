@@ -7,7 +7,7 @@ categories:
 reading_time: 6
 sitemap: true
 robots: index,follow
-description: A clear walkthrough of a data-driven origin-destination matrix estimation method that uses traffic speeds, flows, production-attraction patterns, shortest paths, and PCA.
+description: "Explore data-driven origin-destination matrix estimation using traffic speed, flow, production-attraction patterns, routing, and PCA."
 image: /assets/blog/a-data-driven-method-for-od-matrix-estimation/cover.png
 source_url: https://doi.org/10.1016/j.trc.2019.05.014
 ---
@@ -31,7 +31,7 @@ The data-driven method in this paper tries to reduce that dependence.
 ## The Proposed Framework
 
 <figure>
-  <img src="/assets/blog/a-data-driven-method-for-od-matrix-estimation/cover.png" alt="Framework of the data-driven OD matrix estimation method">
+  <img src="/assets/blog/a-data-driven-method-for-od-matrix-estimation/cover.png" alt="Framework of the data-driven OD matrix estimation method" width="800" height="352" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Framework of the data-driven OD matrix estimation method</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ This is valuable for scalability. It also helps regularize the estimation proble
 
 ## Application and Validation
 
-![](/assets/blog/a-data-driven-method-for-od-matrix-estimation/figure-02.png)
+![](/assets/blog/a-data-driven-method-for-od-matrix-estimation/figure-02.png){: width="800" height="336" loading="lazy" decoding="async" }
 
 The authors test the method on two networks.
 

@@ -8,7 +8,7 @@ categories:
 reading_time: 8
 sitemap: true
 robots: index,follow
-description: A clear guide to symbolic knowledge distillation for LLMs, including direct distillation, multilevel distillation, reinforcement learning, and why symbolic outputs matter.
+description: "A guide to symbolic knowledge distillation for LLMs, including direct, multilevel, and reinforcement-learning approaches."
 image: /assets/blog/symbolic-knowledge-distillation-of-large-language-models/cover.png
 source_url: https://doi.org/10.1109/TAI.2024.3428519
 ---
@@ -56,7 +56,7 @@ Once the teacher generates responses, the outputs are converted into a usable fo
 The distilled knowledge can then be reviewed by humans or scored by a critic model. A critic model such as RoBERTa or another classifier can help filter outputs for relevance, coherence, factuality, or acceptability.
 
 <figure>
-  <img src="/assets/blog/symbolic-knowledge-distillation-of-large-language-models/cover.png" alt="Overview of direct distillation process for LLMs">
+  <img src="/assets/blog/symbolic-knowledge-distillation-of-large-language-models/cover.png" alt="Overview of direct distillation process for LLMs" width="499" height="195" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Overview of direct distillation process for LLMs</figcaption>
 </figure>
 
@@ -71,7 +71,7 @@ Multilevel distillation adds iteration. Instead of generating symbolic knowledge
 The process begins with a large teacher model that produces an initial knowledge base or dataset. That output is filtered for quality. A smaller student model is then trained on the filtered data. The student generates new outputs, which are again filtered. The cycle repeats, gradually improving the student and the distilled dataset.
 
 <figure>
-  <img src="/assets/blog/symbolic-knowledge-distillation-of-large-language-models/figure-02.png" alt="Overview of multilevel distillation process for LLMs">
+  <img src="/assets/blog/symbolic-knowledge-distillation-of-large-language-models/figure-02.png" alt="Overview of multilevel distillation process for LLMs" width="637" height="363" loading="lazy" decoding="async">
   <figcaption>Overview of multilevel distillation process for LLMs</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ The process usually has two stages:
 The language model is then fine-tuned on the selected outputs, often using an offline reinforcement learning objective or preference-aligned training method. Over time, the model learns to generate outputs that are more likely to pass the quality filter.
 
 <figure>
-  <img src="/assets/blog/symbolic-knowledge-distillation-of-large-language-models/figure-03.png" alt="Overview of distillation process using reinforcement learning">
+  <img src="/assets/blog/symbolic-knowledge-distillation-of-large-language-models/figure-03.png" alt="Overview of distillation process using reinforcement learning" width="647" height="372" loading="lazy" decoding="async">
   <figcaption>Overview of distillation process using reinforcement learning</figcaption>
 </figure>
 

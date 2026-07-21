@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Logical Rule Extraction from Time Series"
 title: Towards a General Method for Logical Rule Extraction from Time Series
 date: '2024-04-13'
 categories:
@@ -52,7 +53,7 @@ The paper uses interval temporal logic based on Allen's interval relations. Thes
 That matters because temporal rules are more expressive than ordinary association rules. They can describe not only what happens, but when it happens relative to something else.
 
 <figure>
-  <img src="/assets/blog/towards-a-general-method-for-logical-rule-extraction-from-time-series/cover.png" alt="Allen’s interval relations">
+  <img src="/assets/blog/towards-a-general-method-for-logical-rule-extraction-from-time-series/cover.png" alt="Allen’s interval relations" width="734" height="288" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Allen’s interval relations</figcaption>
 </figure>
 
@@ -83,7 +84,7 @@ If we apply the same idea to the first derivative of the series, the labels can 
 That means the same pipeline can produce rules about states, such as "sodium is high," and rules about trends, such as "chlorine is decreasing."
 
 <figure>
-  <img src="/assets/blog/towards-a-general-method-for-logical-rule-extraction-from-time-series/figure-02.png" alt="A general, domain-independent, temporal abstraction algorithm.">
+  <img src="/assets/blog/towards-a-general-method-for-logical-rule-extraction-from-time-series/figure-02.png" alt="A general, domain-independent, temporal abstraction algorithm." width="285" height="144" loading="lazy" decoding="async">
   <figcaption>A general, domain-independent, temporal abstraction algorithm.</figcaption>
 </figure>
 

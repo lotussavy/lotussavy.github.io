@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Research in Advanced Air Mobility and Neurosymbolic AI"
-description: "Research by Kamal Acharya on Advanced Air Mobility demand forecasting, neurosymbolic AI, trustworthy decision systems, and optimization for transportation planning."
+seo_title: "AAM and Neurosymbolic AI Research | Kamal Acharya"
+description: "Research by Kamal Acharya in Advanced Air Mobility forecasting, neurosymbolic AI, trustworthy decision systems, and transportation optimization."
 permalink: /research/
 last_modified_at: 2026-04-30
 ---
@@ -185,21 +186,21 @@ last_modified_at: 2026-04-30
   </p>
   <div class="research-support-grid" aria-label="Research support organizations">
     <article class="research-support-card">
-      <img src="{{ '/assets/logos/NASA-logo.png' | relative_url }}" alt="NASA logo" />
+      <img src="{{ '/assets/logos/NASA-logo.png' | relative_url }}" alt="NASA logo" width="1638" height="1362" loading="lazy" decoding="async" />
       <div>
         <h3>NASA ARMD University Leadership Initiative</h3>
         <p>Cooperative Agreement No. 80NSSC23M0059 supporting Advanced Air Mobility research context.</p>
       </div>
     </article>
     <article class="research-support-card">
-      <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF logo" />
+      <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF logo" width="98" height="98" loading="lazy" decoding="async" />
       <div>
         <h3>National Science Foundation</h3>
         <p>Grant Nos. 2317117 and 2309760 supporting AI-assisted modeling, planning, and decision systems.</p>
       </div>
     </article>
     <article class="research-support-card">
-      <img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" />
+      <img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="1200" height="1848" loading="lazy" decoding="async" />
       <div>
         <h3>University of Maryland, Baltimore County</h3>
         <p>Academic and institutional research environment supporting AI, transportation, and decision systems work.</p>

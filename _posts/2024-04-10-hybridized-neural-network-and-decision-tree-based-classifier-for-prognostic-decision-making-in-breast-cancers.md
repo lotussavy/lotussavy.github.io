@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Neural Network–Decision Tree Breast Cancer Classifier"
 title: Hybridized neural network and decision tree based classifier for prognostic
   decision making in breast cancers
 date: '2024-04-10'
@@ -45,13 +46,13 @@ The appeal of RBF networks is practical:
 In the paper, the RBF network is used as the neural component of the hybrid classifier. The authors also discuss using derivative information from the activation function during weight updates and error computation, with the aim of improving learning behavior.
 
 <figure>
-  <img src="/assets/blog/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancers/cover.png" alt="RBFN">
+  <img src="/assets/blog/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancers/cover.png" alt="RBFN" width="378" height="305" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>RBFN</figcaption>
 </figure>
 
 Before classification, the data is normalized using min-max normalization. This rescales feature values into a common range, typically from 0 to 1. For medical data, this step is important because different features may be measured on very different scales. Without normalization, a feature with large numeric values can dominate the learning process even if it is not clinically more important.
 
-![](/assets/blog/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancers/figure-02.png)
+![](/assets/blog/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancers/figure-02.png){: width="462" height="669" loading="lazy" decoding="async" }
 
 The second part of the hybrid model is the decision tree.
 
@@ -71,7 +72,7 @@ For breast cancer prognosis, this is a sensible direction. A purely opaque model
 
 ## Evaluation
 
-![](/assets/blog/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancers/figure-03.png)
+![](/assets/blog/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancers/figure-03.png){: width="656" height="352" loading="lazy" decoding="async" }
 
 The paper compares the proposed hybrid classifier with commonly used machine learning methods, including K-nearest neighbors, support vector machines, and Naive Bayes. According to the reported results, the hybrid RBF and decision tree approach achieves higher accuracy than these baseline classifiers.
 

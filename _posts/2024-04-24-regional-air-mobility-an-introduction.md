@@ -12,7 +12,7 @@ image: /assets/blog/regional-air-mobility-an-introduction/cover.png
 source_url: https://ntrs.nasa.gov/citations/20210014033
 ---
 
-![](/assets/blog/regional-air-mobility-an-introduction/cover.png)
+![](/assets/blog/regional-air-mobility-an-introduction/cover.png){: width="937" height="852" loading="eager" decoding="async" fetchpriority="high" }
 
 Regional Air Mobility, or RAM, is built around a simple but powerful idea: many trips are too long to feel convenient by car, but too short or too poorly served to make commercial flying attractive.
 
@@ -21,7 +21,7 @@ Think about a 150-, 250-, or 400-mile trip. Driving can eat up most of a day. Co
 RAM asks whether we can use smaller aircraft, cleaner propulsion, automation, better operations, and existing local airports to make those regional trips faster and easier. The goal is not to replace every road trip or every airline route. The goal is to open a better middle option for communities that are not well served by today's hub-focused aviation system.
 
 <figure>
-  <img src="/assets/blog/regional-air-mobility-an-introduction/figure-02.png" alt="Air transportation in the USA">
+  <img src="/assets/blog/regional-air-mobility-an-introduction/figure-02.png" alt="Air transportation in the USA" width="864" height="445" loading="lazy" decoding="async">
   <figcaption>Air transportation in the USA</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ RAM uses emerging aviation technologies to connect communities through smaller, 
 
 The key is that RAM builds on airports that already exist. Instead of concentrating travelers into a few large hubs, RAM imagines a more distributed network. A traveler could start closer to home, fly directly or with fewer delays to a regional destination, and arrive closer to where they actually need to be.
 
-![](/assets/blog/regional-air-mobility-an-introduction/figure-03.png)
+![](/assets/blog/regional-air-mobility-an-introduction/figure-03.png){: width="909" height="396" loading="lazy" decoding="async" }
 
 That is the difference between a road network and a node-based air network. Cars are limited by highways, traffic, construction, accidents, and indirect routing. Aircraft can connect two nodes more directly. If the aircraft are affordable, quiet, clean, and easy to operate from smaller airports, regional air service becomes more practical.
 

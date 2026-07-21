@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Teaching in AI, Machine Learning, Programming, and Systems"
+seo_title: "AI and Machine Learning Teaching | Kamal Acharya"
 description: "Teaching profile for Kamal Acharya, covering programming, artificial intelligence, machine learning, data science, computer systems, and research mentoring."
 permalink: /teaching/
 ---

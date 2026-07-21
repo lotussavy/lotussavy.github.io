@@ -31,7 +31,7 @@ The question is not which vision is more exciting. The question is which one peo
 The study uses a large stated-preference and revealed-preference survey in Milan. Travelers were interviewed at airports, rail stations, and other major urban hubs. The survey asked respondents about current travel behavior and then presented hypothetical choice situations involving cars, taxis, public transport, and UAM.
 
 <figure>
-  <img src="/assets/blog/urban-air-mobility-uam-airport-shuttles-or-city-taxis/cover.png" alt="Example of a choice situation in the stated preference experiment">
+  <img src="/assets/blog/urban-air-mobility-uam-airport-shuttles-or-city-taxis/cover.png" alt="Example of a choice situation in the stated preference experiment" width="1400" height="701" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Example of a choice situation in the stated preference experiment</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ The study finds that willingness to pay for UAM airport shuttles is higher than 
 For airport shuttle services, estimated value of travel time savings ranges from about 48 to 69 euros per hour. For city-taxi services, the range is about 34 to 44 euros per hour. That means willingness to pay for airport UAM is roughly 44% to 57% higher than for metropolitan UAM trips.
 
 <figure>
-  <img src="/assets/blog/urban-air-mobility-uam-airport-shuttles-or-city-taxis/figure-02.png" alt="Cumulative distributions and median values for in-vehicle value of travel time savings">
+  <img src="/assets/blog/urban-air-mobility-uam-airport-shuttles-or-city-taxis/figure-02.png" alt="Cumulative distributions and median values for in-vehicle value of travel time savings" width="1104" height="874" loading="lazy" decoding="async">
   <figcaption>Cumulative distributions and median values for in-vehicle value of travel time savings</figcaption>
 </figure>
 

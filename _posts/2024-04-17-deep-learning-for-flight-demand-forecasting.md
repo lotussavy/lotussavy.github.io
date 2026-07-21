@@ -52,12 +52,12 @@ The output is a sequence of future departure demand values. In the study, the ti
 
 This setup is more realistic than a single-step forecast. Airport operators need to know how demand may evolve across a future window, not only what happens at the next time step.
 
-![](/assets/blog/deep-learning-for-flight-demand-forecasting/cover.png)
+![](/assets/blog/deep-learning-for-flight-demand-forecasting/cover.png){: width="695" height="37" loading="eager" decoding="async" fetchpriority="high" }
 
-![](/assets/blog/deep-learning-for-flight-demand-forecasting/figure-02.png)
+![](/assets/blog/deep-learning-for-flight-demand-forecasting/figure-02.png){: width="695" height="37" loading="lazy" decoding="async" }
 
 <figure>
-  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-03.png" alt="Listed inputs and outputs for departure demand prediction">
+  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-03.png" alt="Listed inputs and outputs for departure demand prediction" width="794" height="186" loading="lazy" decoding="async">
   <figcaption>Listed inputs and outputs for departure demand prediction</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Deep learning offers a different approach. Instead of manually defining all rule
 The paper uses deep learning to support [Pacer](https://sites.mitre.org/mobileaviationresearch/pacer-original/), which aims to improve surface situation awareness for General Aviation operations.
 
 <figure>
-  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-04.png" alt="Deep learning architecture for Pacer’s demand and delay forecasting[1]">
+  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-04.png" alt="Deep learning architecture for Pacer’s demand and delay forecasting[1]" width="762" height="360" loading="lazy" decoding="async">
   <figcaption>Deep learning architecture for Pacer’s demand and delay forecasting[1]</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ The paper describes a five-stage feature-processing pipeline:
 This step is not glamorous, but it is central. In operational forecasting, model performance often depends as much on feature preparation and data quality as on the neural architecture.
 
 <figure>
-  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-05.png" alt="Feature processing procedure for Pacer demand forecasting[1]">
+  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-05.png" alt="Feature processing procedure for Pacer demand forecasting[1]" width="918" height="123" loading="lazy" decoding="async">
   <figcaption>Feature processing procedure for Pacer demand forecasting[1]</figcaption>
 </figure>
 
@@ -108,7 +108,7 @@ The encoder reads past demand and observed airport-state information. The decode
 The authors use LSTM cells because they are well suited for sequence modeling and can handle longer dependencies better than simple recurrent neural networks.
 
 <figure>
-  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-06.png" alt="Seq2seq architecture for our departure demand time series forecasting[1]">
+  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-06.png" alt="Seq2seq architecture for our departure demand time series forecasting[1]" width="933" height="364" loading="lazy" decoding="async">
   <figcaption>Seq2seq architecture for our departure demand time series forecasting[1]</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ Which parts of the recent past are most relevant for this specific future time?
 The paper uses Luong-style attention to improve departure demand forecasting.
 
 <figure>
-  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-07.png" alt="Seq2seq with attention architecture for our departure demand time series forecasting[1]">
+  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-07.png" alt="Seq2seq with attention architecture for our departure demand time series forecasting[1]" width="922" height="474" loading="lazy" decoding="async">
   <figcaption>Seq2seq with attention architecture for our departure demand time series forecasting[1]</figcaption>
 </figure>
 
@@ -145,14 +145,14 @@ The authors compare several models, including:
 The strongest model is seq2seq with attention using both ASPM and SWIM inputs. According to the paper, this model reduces mean squared error by 62% compared with the autoregressive baseline and by 39% compared with linear regression. Even when only ASPM is used, seq2seq with attention still performs best among the tested methods.
 
 <figure>
-  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-08.png" alt="Model performances comparison">
+  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-08.png" alt="Model performances comparison" width="904" height="238" loading="lazy" decoding="async">
   <figcaption>Model performances comparison</figcaption>
 </figure>
 
 The most important operational finding is that SWIM's near-real-time data helps the model react to sudden demand changes. The paper notes that only the seq2seq with attention model using SWIM was able to capture a sudden demand surge on January 10, 2020 in the LAS test period.
 
 <figure>
-  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-09.png" alt="LAS models quarter-hour departure demand forecasting results comparison">
+  <img src="/assets/blog/deep-learning-for-flight-demand-forecasting/figure-09.png" alt="LAS models quarter-hour departure demand forecasting results comparison" width="890" height="625" loading="lazy" decoding="async">
   <figcaption>LAS models quarter-hour departure demand forecasting results comparison</figcaption>
 </figure>
 

@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Advanced Regional Air Mobility Demand and Operations"
 title: Demand modeling and operations optimization for advanced regional air mobility
 date: '2024-04-29'
 categories:
@@ -25,7 +26,7 @@ The Northeast Corridor is one of the densest and most economically important reg
 The region has around 74 million people, roughly 22% of the U.S. population. Yet fewer than 80 airports in the corridor receive scheduled commercial air service. That gap is exactly why advanced regional air mobility is interesting: there are many communities, many trips, and many underused airports, but not always convenient scheduled air service.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/cover.png" alt="U.S. Northeast Corridor used for implementation">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/cover.png" alt="U.S. Northeast Corridor used for implementation" width="562" height="466" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>U.S. Northeast Corridor used for implementation</figcaption>
 </figure>
 
@@ -38,7 +39,7 @@ The central problem is not simply "how many people travel?" The real question is
 That requires a mode choice model. Travelers compare options based on cost, time, convenience, reliability, access, and other less visible preferences. A new regional air service must beat the alternatives door to door, not just airport to airport.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-02.png" alt="Technical approach for demand modeling">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-02.png" alt="Technical approach for demand modeling" width="1128" height="631" loading="lazy" decoding="async">
   <figcaption>Technical approach for demand modeling</figcaption>
 </figure>
 
@@ -49,7 +50,7 @@ The authors use historical 2008 data to calibrate their model, then apply it to 
 Traditional transportation planning often uses a four-step model: trip generation, trip distribution, mode choice, and route assignment.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-03.png" alt="Four-step travel model">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-03.png" alt="Four-step travel model" width="889" height="168" loading="lazy" decoding="async">
   <figcaption>Four-step travel model</figcaption>
 </figure>
 
@@ -68,14 +69,14 @@ For driving, the paper estimates cost using IRS standard mileage rates and drivi
 For air travel, the authors use the Department of Transportation's DB1B database, a 10% sample of U.S. airline ticket sales. They build a simplified airfare model using passenger yield, which is airfare normalized by distance.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-04.png" alt="Passenger yield for nonstop and connecting itineraries">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-04.png" alt="Passenger yield for nonstop and connecting itineraries" width="658" height="461" loading="lazy" decoding="async">
   <figcaption>Passenger yield for nonstop and connecting itineraries</figcaption>
 </figure>
 
 The analysis compares nonstop and connecting yields and finds that the difference is small enough to use a combined regression for forecasting.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-05.png" alt="Yield regressions for itineraries in 2008 and 2040">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-05.png" alt="Yield regressions for itineraries in 2008 and 2040" width="1004" height="403" loading="lazy" decoding="async">
   <figcaption>Yield regressions for itineraries in 2008 and 2040</figcaption>
 </figure>
 
@@ -88,14 +89,14 @@ Time is often the reason regional air mobility becomes attractive. A flight may 
 For automobile travel, driving times are estimated through Bing Maps, including both quiet-hour and rush-hour conditions. For air travel, total time includes more than the flight. It includes driving to the airport, time spent at the airport, block time, possible connection time, and driving from the arrival airport to the final destination.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-06.png" alt="Block time regressions for 2008 and 2040">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-06.png" alt="Block time regressions for 2008 and 2040" width="1016" height="409" loading="lazy" decoding="async">
   <figcaption>Block time regressions for 2008 and 2040</figcaption>
 </figure>
 
 The paper assumes conventional 2008 air travel includes about 90 minutes of airport latency for check-in, security, and boarding. For 2040 RAM operations, that latency is reduced to 48 minutes, reflecting smaller regional airports and faster small-aircraft boarding.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-07.png" alt="Door-to-door travel times">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-07.png" alt="Door-to-door travel times" width="1251" height="818" loading="lazy" decoding="async">
   <figcaption>Door-to-door travel times</figcaption>
 </figure>
 
@@ -105,12 +106,12 @@ The time results are intuitive. For short trips, air travel struggles because ai
 
 To combine money and time into one decision metric, the study uses Generalized Cost of Travel. This concept adds direct monetary cost to the opportunity cost of time.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-08.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-08.png){: width="292" height="59" loading="lazy" decoding="async" }
 
 The opportunity cost of time is estimated using travelers' value of time, derived from median hourly wage data from the Bureau of Labor Statistics. This lets the model compare a cheaper but slower car trip against a more expensive but faster air trip.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-09.png" alt="Auto and air generalized costs of travel as a function of door-to-door distance">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-09.png" alt="Auto and air generalized costs of travel as a function of door-to-door distance" width="1005" height="390" loading="lazy" decoding="async">
   <figcaption>Auto and air generalized costs of travel as a function of door-to-door distance</figcaption>
 </figure>
 
@@ -120,22 +121,22 @@ The important result is that air travel becomes more competitive in more markets
 
 The model assumes travelers prefer modes with lower generalized cost, but it also recognizes that not everything is captured in dollars and minutes. Air travel has friction, such as security and schedule constraints, but it also has benefits, such as productivity during the trip.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-10.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-10.png){: width="565" height="64" loading="lazy" decoding="async" }
 
 The authors represent these effects through utility functions and then use a multinomial logit model to estimate the probability that travelers choose air rather than automobile.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-11.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-11.png){: width="565" height="69" loading="lazy" decoding="async" }
 
 The model is calibrated against the observed 2008 TAF data using maximum likelihood estimation.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-12.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-12.png){: width="544" height="75" loading="lazy" decoding="async" }
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-13.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-13.png){: width="797" height="72" loading="lazy" decoding="async" }
 
 The calibrated model produces parameters that allow the predicted 2008 mode choices to be compared with actual observed choices. That validation step is important because it checks whether the model can reproduce known behavior before forecasting future behavior.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-14.png" alt="2008 air travel market preference and error">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-14.png" alt="2008 air travel market preference and error" width="904" height="347" loading="lazy" decoding="async">
   <figcaption>2008 air travel market preference and error</figcaption>
 </figure>
 
@@ -146,29 +147,29 @@ The paper reports that 80% of markets have less than 15% market preference error
 The forecast shows that not every regional market can support service. Many origin-destination pairs have fewer than 10 passengers per day, which may be difficult to serve economically without subsidy or cargo support.
 
 <figure>
-  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-15.png" alt="Joint distribution of air travel demand and door-to-door direct distance">
+  <img src="/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-15.png" alt="Joint distribution of air travel demand and door-to-door direct distance" width="596" height="548" loading="lazy" decoding="async">
   <figcaption>Joint distribution of air travel demand and door-to-door direct distance</figcaption>
 </figure>
 
 The more promising markets are in the range of about 10 to 75 passengers per day and 50 to 350 miles. These are not necessarily the largest city pairs. In fact, the study suggests that RAM may be most useful in markets that are too thin for conventional airline service but large enough to support small-gauge regional aircraft.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-16.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-16.png){: width="1137" height="622" loading="lazy" decoding="async" }
 
 Nonstop itineraries are consistently more attractive than connecting itineraries. This is expected because nonstop service saves time and avoids connection penalties. Connecting service may still matter for network coverage, but it is less likely to pull travelers out of cars on shorter routes.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-17.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-17.png){: width="1117" height="720" loading="lazy" decoding="async" }
 
 The model also estimates auto-to-air switching among business travelers. As trips get longer, the relative time savings from RAM generally increase, and more travelers are willing to shift from driving to air.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-18.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-18.png){: width="1130" height="702" loading="lazy" decoding="async" }
 
 One important nuance is that the switching rate is not always highest on the longest routes. For very long trips, many travelers are already predicted to fly in the baseline forecast, so there may be fewer drivers left to convert. The strongest RAM opportunity often sits in the middle: trips long enough for major time savings, but not already well captured by conventional air service.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-19.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-19.png){: width="1138" height="777" loading="lazy" decoding="async" }
 
 Finally, the network maps show how demand aggregates across airports. Even when the study focuses on thinner regional markets, larger metropolitan areas still show high total passenger counts because many viable origin-destination markets connect through them.
 
-![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-20.png)
+![](/assets/blog/demand-modeling-for-advanced-regional-air-mobility/figure-20.png){: width="1138" height="433" loading="lazy" decoding="async" }
 
 ## Why This Matters
 

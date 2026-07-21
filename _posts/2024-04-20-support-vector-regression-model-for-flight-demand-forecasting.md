@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "SVR for Flight Demand Forecasting"
 title: Support vector regression model for flight demand forecasting
 date: '2024-04-20'
 categories:
@@ -30,13 +31,13 @@ First, demand has seasonality. Flights can be grouped into peak, medium, and off
 
 Second, demand varies by day of week. For the business route example, bookings are higher in the first three days of the week and lowest on Sunday.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/cover.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/cover.png){: width="1322" height="226" loading="eager" decoding="async" fetchpriority="high" }
 
 These patterns motivate the paper's core modeling choice: build forecasting models on classified data, rather than treating every flight as if it belongs to the same demand environment.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-02.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-02.png){: width="1217" height="652" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-03.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-03.png){: width="1160" height="690" loading="lazy" decoding="async" }
 
 ## Organization of data and detruncation
 
@@ -53,11 +54,11 @@ Given the bookings observed so far,
 what will the final booking count be at departure?
 ```
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-04.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-04.png){: width="658" height="418" loading="lazy" decoding="async" }
 
 For historical flights that have already departed, all DCP values are known. For future flights still in the pre-sale period, later DCP values are missing because those dates have not arrived yet. The model must forecast DCP0 using the currently available DCP history.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-05.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-05.png){: width="610" height="681" loading="lazy" decoding="async" }
 
 ### Detruncation
 
@@ -67,11 +68,11 @@ This matters because airline booking data can be constrained. If a fare class is
 
 To adjust for this, the authors use an Expectation-Maximization (EM) algorithm. The goal is to estimate what demand might have looked like if it had not been artificially limited by booking controls.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-06.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-06.png){: width="641" height="321" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-07.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-07.png){: width="641" height="647" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-08.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-08.png){: width="641" height="112" loading="lazy" decoding="async" }
 
 ## Forecasting Models
 
@@ -83,17 +84,17 @@ If a future flight currently has 80 bookings, and similar historical flights usu
 
 This approach is simple and interpretable, but it assumes that future booking pickup behaves like the historical average.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-09.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-09.png){: width="641" height="112" loading="lazy" decoding="async" }
 
 ### Linear regression model
 
 Linear regression models the relationship between current bookings and final bookings using a straight-line relationship. It is easy to estimate and understand, but it may struggle when booking behavior is nonlinear or disrupted by irregular demand patterns.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-10.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-10.png){: width="641" height="112" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-11.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-11.png){: width="800" height="127" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-12.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-12.png){: width="641" height="112" loading="lazy" decoding="async" }
 
 ### Exponential smoothing model
 
@@ -101,7 +102,7 @@ Exponential smoothing gives more weight to recent observations while still using
 
 However, it still relies on a relatively simple temporal structure. It does not fully use the shape of the early booking curve as a feature vector.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-13.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-13.png){: width="652" height="172" loading="lazy" decoding="async" }
 
 ### SVR model
 
@@ -118,19 +119,19 @@ traditional models: current booking count + DOW/season
 SVR model: early booking sequence + current booking count + classification context
 ```
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-14.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-14.png){: width="652" height="172" loading="lazy" decoding="async" }
 
 The model is especially attractive for flight bookings because booking curves can fluctuate. SVR can adapt to nonlinear random changes better than simple pickup or smoothing models.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-15.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-15.png){: width="654" height="264" loading="lazy" decoding="async" }
 
 Equation (13) is convex quadratic programming problem, its dual problem can be obtained by using Lagrangian relaxation as equation (15).
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-16.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-16.png){: width="648" height="307" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-17.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-17.png){: width="671" height="555" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-18.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-18.png){: width="692" height="610" loading="lazy" decoding="async" }
 
 ## Data set
 
@@ -150,7 +151,7 @@ The paper evaluates performance using RMSE and accuracy.
 
 RMSE measures the size of forecasting errors, with lower values being better. Accuracy is defined from the relative error between predicted demand and final observed demand.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-19.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-19.png){: width="656" height="435" loading="lazy" decoding="async" }
 
 ## Results
 
@@ -158,9 +159,9 @@ The results show that the SVR model improves forecasting accuracy and reduces RM
 
 The practical reason is clear. Traditional models mostly use the current booking count and broad attributes such as DOW and PMO. SVR uses more of the early booking sequence, so it can recognize richer demand patterns.
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-20.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-20.png){: width="800" height="260" loading="lazy" decoding="async" }
 
-![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-21.png)
+![](/assets/blog/support-vector-regression-model-for-flight-demand-forecasting/figure-21.png){: width="800" height="289" loading="lazy" decoding="async" }
 
 ## Why It Matters
 

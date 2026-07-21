@@ -67,7 +67,7 @@ In the graph network framework, a graph is represented as:
 `G = (u, V, E)`
 
 <figure>
-  <img src="/assets/blog/graph-neural-networks/cover.png" alt="Definition of a graph with global, node, and edge attributes">
+  <img src="/assets/blog/graph-neural-networks/cover.png" alt="Definition of a graph with global, node, and edge attributes" width="917" height="530" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>A graph can contain global attributes, node attributes, and edge attributes.</figcaption>
 </figure>
 
@@ -93,7 +93,7 @@ This makes the block a **graph-to-graph** module.
 
 ### Internal Structure
 
-![](/assets/blog/graph-neural-networks/figure-02.png)
+![](/assets/blog/graph-neural-networks/figure-02.png){: width="915" height="210" loading="lazy" decoding="async" }
 
 A graph network block has update functions and aggregation functions.
 
@@ -120,7 +120,7 @@ The easiest way to understand GNNs is to think in terms of messages.
 Each edge computes a message from its sender node, receiver node, edge features, and global context. Each node receives messages from neighboring edges and aggregates them. The node then updates its own representation. Finally, the graph can update its global representation using information from all nodes and edges.
 
 <figure>
-  <img src="/assets/blog/graph-neural-networks/figure-03.png" alt="Updates in a graph network block">
+  <img src="/assets/blog/graph-neural-networks/figure-03.png" alt="Updates in a graph network block" width="961" height="282" loading="lazy" decoding="async">
   <figcaption>Updates in a GNN block. Blue marks the element being updated, while black marks the elements used in the update.</figcaption>
 </figure>
 
@@ -140,7 +140,7 @@ The graph network block usually updates information in this order:
 4. Aggregate edge and node information for the global attribute.
 5. Update the global attribute.
 
-![](/assets/blog/graph-neural-networks/figure-04.png)
+![](/assets/blog/graph-neural-networks/figure-04.png){: width="999" height="516" loading="lazy" decoding="async" }
 
 The edge update can use:
 
@@ -165,11 +165,11 @@ This design is general. Different GNN models can be seen as special cases depend
 
 ## Algorithm View
 
-![](/assets/blog/graph-neural-networks/figure-05.png)
+![](/assets/blog/graph-neural-networks/figure-05.png){: width="937" height="228" loading="lazy" decoding="async" }
 
 The algorithm form makes the modularity clear. A graph network block applies learned functions to each edge, each node, and the graph-level state.
 
-![](/assets/blog/graph-neural-networks/figure-06.png)
+![](/assets/blog/graph-neural-networks/figure-06.png){: width="937" height="355" loading="lazy" decoding="async" }
 
 Because the same functions are reused across all edges and nodes, the model can process graphs of different sizes. This is one reason GNNs are attractive for combinatorial generalization.
 

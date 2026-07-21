@@ -7,7 +7,7 @@ categories:
 reading_time: 11
 sitemap: true
 robots: index,follow
-description: "A practical explanation of what generative AI needs to become trustworthy AI, based on Lenat and Marcus's discussion of LLM limitations, reasoning, provenance, ethics, context, and Cyc-style symbolic knowledge."
+description: "Explore what generative AI needs to become trustworthy, including reasoning, provenance, ethics, context, and symbolic knowledge."
 image: /assets/blog/generative-ai-to-trustworthy-ai/cover.png
 source_url: https://medium.com/@lotussavy/generative-ai-to-trustworthy-ai-a194b0e55748
 ---
@@ -19,7 +19,7 @@ But fluency is not the same as trustworthiness.
 An answer can sound confident and still be wrong. A citation can look realistic and still be fabricated. A model can answer correctly today and fail on the same kind of question tomorrow. A system can be aligned in normal settings and still be vulnerable to adversarial prompts.
 
 <figure>
-  <img src="/assets/blog/generative-ai-to-trustworthy-ai/cover.png" alt="Challenges associated with large language models">
+  <img src="/assets/blog/generative-ai-to-trustworthy-ai/cover.png" alt="Challenges associated with large language models" width="352" height="344" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Large language models are powerful, but trust requires more than fluent generation.</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Trustworthy AI needs more than plausible language. It needs knowledge, reasoning
 Lenat and Marcus describe 16 desiderata for future trustworthy AI. These are not small feature requests. They are the kinds of capabilities that separate fluent response generation from reliable reasoning.
 
 <figure>
-  <img src="/assets/blog/generative-ai-to-trustworthy-ai/figure-02.png" alt="Sixteen desiderata for future trustworthy AI">
+  <img src="/assets/blog/generative-ai-to-trustworthy-ai/figure-02.png" alt="Sixteen desiderata for future trustworthy AI" width="647" height="491" loading="lazy" decoding="async">
   <figcaption>Lenat and Marcus outline 16 desiderata for future trustworthy AI.</figcaption>
 </figure>
 

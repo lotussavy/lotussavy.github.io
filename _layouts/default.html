@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css' | relative_url }}">
 
-    {% seo %}
+    {% assign browser_title = page.seo_title | default: page.title | default: site.title %}
+    <title>{{ browser_title | escape }}</title>
+    {% seo title=false %}
     {% include head-custom.html %}
   </head>
 

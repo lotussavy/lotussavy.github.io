@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Urban Air Mobility Attractiveness in Jakarta"
 title: Assessing Urban Air Mobility Attractiveness in Jakarta — A Case Study
 date: '2024-08-15'
 categories:
@@ -31,7 +32,7 @@ The study focuses on demand modeling rather than the full infrastructure and cer
 The paper builds on a modular computational framework for UAM network analysis. The framework compares a ground-only trip with a mixed ground-and-air trip.
 
 <figure>
-  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/cover.png" alt="UAM network model of the modular computational framework">
+  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/cover.png" alt="UAM network model of the modular computational framework" width="648" height="270" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>UAM network model of the modular computational framework</figcaption>
 </figure>
 
@@ -40,7 +41,7 @@ The comparison uses an effective cost metric. Effective cost combines two pieces
 1. Operating cost, based on the cost of using ground and air vehicles.
 2. Time cost, based on total trip time multiplied by the passenger's value of time.
 
-![](/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-02.png)
+![](/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-02.png){: width="687" height="230" loading="lazy" decoding="async" }
 
 This is a practical way to model mode choice. A traveler does not simply choose the fastest trip or the cheapest trip. They choose based on the tradeoff between time and money. A high-value-of-time traveler may prefer UAM even if it costs more, while a low-value-of-time traveler may stay with ground transport.
 
@@ -51,7 +52,7 @@ The study uses several data sources to approximate airport-access demand.
 First, the authors collect points of interest across Jakarta, including location types such as hotels, apartments, hostels, museums, parks, and other urban destinations. These points are divided into likely origins and destinations. Rest-related locations such as apartments and hostels are treated as possible origins, while recreational or activity-oriented locations can serve as destinations.
 
 <figure>
-  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-03.png" alt="Jakarta points of interest and existing helipads">
+  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-03.png" alt="Jakarta points of interest and existing helipads" width="1221" height="836" loading="lazy" decoding="async">
   <figcaption>Jakarta points of interest and existing helipads</figcaption>
 </figure>
 
@@ -73,12 +74,12 @@ For departing passengers, the trip begins somewhere in Jakarta and ends at CGK a
 
 To estimate when each passenger must leave, the model calculates the geodesic distance between the passenger's origin and CGK using the haversine formula. Ground travel time is estimated using an average Jakarta driving speed of about 26 km/h from the TomTom Traffic Index for March 14, 2024.
 
-![](/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-04.png)
+![](/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-04.png){: width="680" height="82" loading="lazy" decoding="async" }
 
 The result is a modeled departure time from the passenger's origin. The framework then compares the ground-only option with the UAM option.
 
 <figure>
-  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-05.png" alt="UAM network model adapted for departing passenger scenario">
+  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-05.png" alt="UAM network model adapted for departing passenger scenario" width="572" height="169" loading="lazy" decoding="async">
   <figcaption>UAM network model adapted for departing passenger scenario</figcaption>
 </figure>
 
@@ -91,7 +92,7 @@ For arriving passengers, the trip begins at CGK and ends somewhere in Jakarta. T
 The final destination is sampled from the Jakarta metropolitan area using the same demand-generation approach. The framework then evaluates whether the traveler would choose ground transportation or UAM based on effective cost.
 
 <figure>
-  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-06.png" alt="UAM network model adapted for arriving passenger scenario">
+  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-06.png" alt="UAM network model adapted for arriving passenger scenario" width="597" height="171" loading="lazy" decoding="async">
   <figcaption>UAM network model adapted for arriving passenger scenario</figcaption>
 </figure>
 
@@ -100,7 +101,7 @@ The arriving and departing cases are not identical. Airport-to-city trips and ci
 ## Results: When UAM Becomes Attractive
 
 <figure>
-  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-07.png" alt="Fraction of UAM-preferred trips between CGK and Jakarta metro area">
+  <img src="/assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/figure-07.png" alt="Fraction of UAM-preferred trips between CGK and Jakarta metro area" width="890" height="479" loading="lazy" decoding="async">
   <figcaption>Fraction of UAM-preferred trips between CGK and Jakarta metro area</figcaption>
 </figure>
 

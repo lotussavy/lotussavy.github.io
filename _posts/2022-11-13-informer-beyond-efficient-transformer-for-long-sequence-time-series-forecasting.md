@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Informer for Long-Horizon Time-Series Forecasting"
 title: "Informer: Efficient Transformers for Long Sequence Time-Series Forecasting"
 date: '2022-11-13'
 categories:
@@ -7,7 +8,7 @@ categories:
 reading_time: 10
 sitemap: true
 robots: index,follow
-description: "A clear explanation of Informer, an efficient Transformer architecture for long sequence time-series forecasting that uses ProbSparse attention, self-attention distilling, and a generative decoder."
+description: "Learn how Informer uses ProbSparse attention, attention distilling, and a generative decoder for efficient long-horizon time-series forecasting."
 image: /assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/cover.png
 source_url: https://medium.com/@lotussavy/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting-141488c6e22e
 ---
@@ -18,7 +19,7 @@ Predicting the next hour of electricity demand is one problem. Predicting the ne
 
 That is the setting of the paper **"Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting"**, presented at AAAI 2021. The paper proposes Informer, a Transformer-based architecture designed specifically for **long sequence time-series forecasting (LSTF)**.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/cover.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/cover.png){: width="800" height="128" loading="eager" decoding="async" fetchpriority="high" }
 
 The key idea is not simply to use a Transformer for time series. The key idea is to make the Transformer usable when both the input sequence and the forecast horizon are long.
 
@@ -35,7 +36,7 @@ Together, these changes make Informer an important early architecture for effici
 Time-series forecasting appears in energy systems, finance, weather, transportation, sensor networks, disease modeling, supply chains, and many other domains.
 
 <figure>
-  <img src="/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-02.png" alt="Applications of sequence prediction">
+  <img src="/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-02.png" alt="Applications of sequence prediction" width="800" height="382" loading="lazy" decoding="async">
   <figcaption>Long sequence forecasting appears in many real-world planning problems.</figcaption>
 </figure>
 
@@ -49,7 +50,7 @@ Traditional forecasting methods often work well for short horizons. But when we 
 The Informer paper illustrates this with an LSTM forecasting electrical transformer temperature. As the prediction length grows, the mean squared error rises and inference speed drops sharply.
 
 <figure>
-  <img src="/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-03.png" alt="LSTM limitations for long sequence forecasting">
+  <img src="/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-03.png" alt="LSTM limitations for long sequence forecasting" width="800" height="382" loading="lazy" decoding="async">
   <figcaption>Long prediction horizons can expose the limits of recurrent models.</figcaption>
 </figure>
 
@@ -61,7 +62,7 @@ It is useful to separate two related but different problems.
 
 **Long sequence input learning** asks a model to understand a long input. For example, a model may read an entire book and classify its genre, summarize it, or answer a question about it.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-04.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-04.png){: width="800" height="390" loading="lazy" decoding="async" }
 
 **Long sequence time-series forecasting** asks a model to predict a long future sequence from a long historical sequence. Here, the model must connect past and future over time.
 
@@ -78,11 +79,11 @@ Transformers are attractive because self-attention creates direct connections be
 
 This is useful in time series. A temperature reading today may depend on patterns from yesterday, last week, or a similar time in a previous cycle. Attention gives the model a mechanism to look across the sequence and decide which parts matter.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-06.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-06.png){: width="800" height="195" loading="lazy" decoding="async" }
 
 This is why Transformers became powerful in natural language processing and computer vision, and why researchers started applying them to forecasting.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-10.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-10.png){: width="800" height="163" loading="lazy" decoding="async" }
 
 But vanilla Transformers have a major weakness for long sequences: standard self-attention has **quadratic complexity**. If the sequence length is `L`, attention compares every position with every other position, giving roughly `O(L^2)` time and memory cost.
 
@@ -100,7 +101,7 @@ Third, **step-by-step decoding is slow**. If the model predicts one future point
 
 Informer is designed around these three problems.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-11.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-11.png){: width="800" height="502" loading="lazy" decoding="async" }
 
 ## 1. ProbSparse Self-Attention
 
@@ -108,11 +109,11 @@ The first contribution is **ProbSparse self-attention**.
 
 The intuition is that not all queries in self-attention are equally important. In many attention maps, only a small number of query-key interactions carry most of the useful information. Many others contribute little.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-12.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-12.png){: width="800" height="320" loading="lazy" decoding="async" }
 
 The paper observes that attention scores often follow a long-tail pattern. A few dominant pairs matter a lot, while many pairs are relatively uninformative.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-13.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-13.png){: width="650" height="290" loading="lazy" decoding="async" }
 
 ProbSparse attention tries to focus computation on the most informative queries. Instead of computing full attention for every query, it selects the queries that are likely to have the most concentrated, non-uniform attention distributions.
 
@@ -122,11 +123,11 @@ The rough idea is:
 - lazy queries behave closer to uniform attention
 - computing attention for active queries preserves most of the useful dependency information
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-14.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-14.png){: width="800" height="350" loading="lazy" decoding="async" }
 
 The result is a self-attention mechanism with approximately `O(L log L)` time and memory complexity instead of `O(L^2)`.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-15.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-15.png){: width="800" height="389" loading="lazy" decoding="async" }
 
 This is the main efficiency gain in Informer. It makes long input sequences more tractable while trying to preserve the useful alignment behavior of attention.
 
@@ -138,7 +139,7 @@ Even with sparse attention, stacking many encoder layers over long sequences can
 
 The distilling operation uses convolution and pooling to keep dominant features while shortening the sequence representation. In practical terms, the model compresses the feature map as it moves deeper into the encoder.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-16.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-16.png){: width="800" height="360" loading="lazy" decoding="async" }
 
 This helps the encoder handle long inputs without carrying the full-length sequence through every layer.
 
@@ -152,7 +153,7 @@ A common encoder-decoder model predicts future values step by step. That can be 
 
 Informer avoids this by predicting the entire output sequence in one forward pass.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-17.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-17.png){: width="800" height="338" loading="lazy" decoding="async" }
 
 The decoder receives two parts:
 
@@ -165,7 +166,7 @@ The model then generates the full forecast sequence directly. This design is one
 
 Putting the pieces together, Informer is an encoder-decoder architecture adapted for long-horizon forecasting.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-18.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-18.png){: width="800" height="338" loading="lazy" decoding="async" }
 
 The encoder receives long historical inputs and uses ProbSparse attention plus distilling to build efficient long-range representations. The decoder receives a start sequence and future placeholders, then produces the forecast in a single forward pass.
 
@@ -199,15 +200,15 @@ The main empirical result is that Informer performs well as the prediction horiz
 
 For univariate forecasting, Informer produces lower errors across many settings and maintains smoother performance as the horizon increases.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-19.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-19.png){: width="800" height="327" loading="lazy" decoding="async" }
 
 For multivariate forecasting, the same general pattern holds. Informer remains competitive and often outperforms recurrent, convolutional, and Transformer-based baselines.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-20.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-20.png){: width="1400" height="506" loading="lazy" decoding="async" }
 
 The paper also studies different time granularities. This matters because forecasting at minute-level resolution and hourly resolution can expose different temporal patterns.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-21.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-21.png){: width="1316" height="720" loading="lazy" decoding="async" }
 
 The broader result is not just that Informer improves accuracy. It also improves the practicality of Transformer-style forecasting for long sequences.
 
@@ -219,7 +220,7 @@ The ablation studies are important because they show why each component matters.
 
 When compared with other efficient attention mechanisms, ProbSparse attention performs well and avoids some memory failures that occur when implementations still depend on full attention masks.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-23.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-23.png){: width="1400" height="576" loading="lazy" decoding="async" }
 
 This supports the paper's query sparsity assumption: many attention computations are redundant, and focusing on dominant queries can preserve forecasting performance.
 
@@ -227,7 +228,7 @@ This supports the paper's query sparsity assumption: many attention computations
 
 Removing distilling makes the model more likely to run out of memory on longer inputs.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-24.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-24.png){: width="1400" height="595" loading="lazy" decoding="async" }
 
 This supports the role of distilling as a practical mechanism for long input processing.
 
@@ -235,7 +236,7 @@ This supports the role of distilling as a practical mechanism for long input pro
 
 The generative decoder helps the model avoid slow dynamic decoding and reduces the problem of error accumulation over long outputs.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-25.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-25.png){: width="1400" height="575" loading="lazy" decoding="async" }
 
 This is especially important in long-horizon forecasting because predicting one future value at a time can become both slow and fragile.
 
@@ -243,13 +244,13 @@ This is especially important in long-horizon forecasting because predicting one 
 
 Informer is designed not only for accuracy but also for efficiency.
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-26.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-26.png){: width="1400" height="467" loading="lazy" decoding="async" }
 
 The paper reports that Informer is faster than other Transformer-based methods during training and much faster during testing because of the generative decoder.
 
 The theoretical comparison is also important:
 
-![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-27.png)
+![](/assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/figure-27.png){: width="1400" height="424" loading="lazy" decoding="async" }
 
 Compared with vanilla Transformer attention, Informer reduces the layer-level time and memory cost from quadratic complexity toward `O(L log L)`. That is the difference between a method that looks good in theory and a method that can be used on longer real-world sequences.
 

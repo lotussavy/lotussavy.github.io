@@ -7,7 +7,7 @@ categories:
 reading_time: 6
 sitemap: true
 robots: index,follow
-description: A practical walkthrough of a New York City AAM simulation framework that connects demand modeling, scheduling, fleet size, vertiport capacity, and passenger delay.
+description: "Explore a New York City AAM simulation connecting demand, scheduling, fleet size, vertiport capacity, and passenger delay."
 image: /assets/blog/demand-and-capacity-modeling-for-advanced-air-mobility/cover.png
 source_url: https://doi.org/10.2514/6.2021-2381
 ---
@@ -25,7 +25,7 @@ Those two questions are tightly connected. A city may have strong demand for air
 That is why the paper builds a flexible simulation framework. It combines demand modeling, aircraft scheduling, and discrete-event simulation so researchers can test how fleet size, aircraft passenger capacity, and landing-site capacity affect performance.
 
 <figure>
-  <img src="/assets/blog/demand-and-capacity-modeling-for-advanced-air-mobility/cover.png" alt="Flow chart of the complete AAM simulation framework">
+  <img src="/assets/blog/demand-and-capacity-modeling-for-advanced-air-mobility/cover.png" alt="Flow chart of the complete AAM simulation framework" width="800" height="286" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Flow chart of the complete AAM simulation framework</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ The demand model captures both space and time. New York City is divided into a f
 The authors use a Poisson distribution to sample possible request counts. This is a common approach when modeling events that occur randomly over time, such as trip requests. If a historical origin-destination pair has a known request rate, the Poisson model can generate simulated demand for a future time window.
 
 <figure>
-  <img src="/assets/blog/demand-and-capacity-modeling-for-advanced-air-mobility/figure-02.png" alt="Mapping origin-destination pairs using a grid world and Poisson distributions">
+  <img src="/assets/blog/demand-and-capacity-modeling-for-advanced-air-mobility/figure-02.png" alt="Mapping origin-destination pairs using a grid world and Poisson distributions" width="800" height="321" loading="lazy" decoding="async">
   <figcaption>Mapping origin-destination pairs using a grid world and Poisson distributions</figcaption>
 </figure>
 

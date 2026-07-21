@@ -1,5 +1,6 @@
 ---
 layout: article
+seo_title: "Knowledge Representation in Neurosymbolic AI"
 title: Knowledge Representation and Knowledge Embeddings in Neurosymbolic AI
 date: '2024-04-05'
 categories:
@@ -23,7 +24,7 @@ The second part is about **knowledge embedding**. Once the knowledge is represen
 These two choices shape what a neuro-symbolic system can learn, how it reasons, and how easy it is to inspect.
 
 <figure>
-  <img src="/assets/blog/knowledge-representation-and-knowledge-embeddings-in-neurosymbolic-ai/cover.png" alt="Overview of symbolic knowledge representations">
+  <img src="/assets/blog/knowledge-representation-and-knowledge-embeddings-in-neurosymbolic-ai/cover.png" alt="Overview of symbolic knowledge representations" width="1400" height="256" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Symbolic knowledge in neuro-symbolic AI can be represented as graphs, logic, programs, symbolic expressions, and other formal structures.</figcaption>
 </figure>
 
