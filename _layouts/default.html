@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#173a62">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css' | relative_url }}">
 
     {% assign browser_title = page.seo_title | default: page.title | default: site.title %}
@@ -14,18 +16,19 @@
   </head>
 
   <body id="top">
+    <a class="skip-link" href="#main_content">Skip to main content</a>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <p id="project_title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
-          <p id="project_tagline">{{ site.header_tagline | default: site.description }}</p>
+          <p id="project_tagline">Incoming Postdoctoral Research Associate at <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></p>
 
           <!-- NAVIGATION -->
           <nav id="main-nav" aria-label="Primary navigation">
             <ul>
               {% for item in site.data.navigation %}
-                <li><a href="{{ item.url | relative_url }}">{{ item.label }}</a></li>
+                <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
               {% endfor %}
             </ul>
           </nav>
@@ -43,7 +46,7 @@
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="footer-identity">
-          {{ site.author.name }} · Ph.D. in Information Systems, UMBC · {{ site.author.location }}
+          {{ site.author.name }} · Incoming Postdoctoral Research Associate · <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>
         </p>
         <p class="footer-contact">
           Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
@@ -53,6 +56,8 @@
           <ul>
             <li><a href="{{ '/about/' | relative_url }}">About</a></li>
             <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+            <li><a href="{{ '/talks/' | relative_url }}">Talks</a></li>
+            <li><a href="{{ '/service/' | relative_url }}">Service</a></li>
             <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
             <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
             <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>

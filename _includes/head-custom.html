@@ -1,11 +1,7 @@
-{% if page.robots %}
-<meta name="robots" content="{{ page.robots }}">
-{% endif %}
-{% assign social_image = page.image | default: site.image %}
-{% if social_image %}
-<meta property="og:image" content="{{ social_image | absolute_url }}">
-<meta name="twitter:image" content="{{ social_image | absolute_url }}">
-{% endif %}
+{% assign robots_directive = page.robots | default: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" %}
+<meta name="robots" content="{{ robots_directive }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 {% assign page_keywords = page.keywords %}
 {% if page_keywords == nil and page.collection == 'publications' and page.publication_slug %}
 {% assign publication_for_keywords = site.data.publications | where: "slug", page.publication_slug | first %}
@@ -27,16 +23,11 @@
   "name": "{{ site.author.name }}",
   "url": "{{ site.author.url }}",
   "image": "{{ site.image | absolute_url }}",
-  "email": "mailto:{{ site.author.email }}",
   "jobTitle": "{{ site.institution.role }}",
-  "affiliation": {
+  "alumniOf": {
     "@type": "CollegeOrUniversity",
-    "name": "{{ site.institution.name }}",
-    "department": "{{ site.institution.department }}"
-  },
-  "worksFor": {
-    "@type": "CollegeOrUniversity",
-    "name": "{{ site.institution.name }}"
+    "name": "University of Maryland, Baltimore County",
+    "url": "https://umbc.edu/"
   },
   "identifier": {
     "@type": "PropertyValue",

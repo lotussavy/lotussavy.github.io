@@ -4,11 +4,11 @@ title: "Talks and Presentations on AI and Advanced Air Mobility"
 seo_title: "AI and Advanced Air Mobility Talks | Kamal Acharya"
 description: "Selected talks, posters, and invited presentations by Kamal Acharya on neurosymbolic AI, Advanced Air Mobility, optimization, and trustworthy AI systems."
 permalink: /talks/
-last_modified_at: 2026-07-18
+last_modified_at: 2026-07-24
 ---
 
 <section class="talks-hero">
-  <h1>Talks & Presentations</h1>
+  <h1>Talks and Presentations</h1>
   <p>
     Selected conference talks, research seminars, and invited sessions on Neurosymbolic AI,
     Advanced Air Mobility, and trustworthy AI systems.
@@ -16,7 +16,7 @@ last_modified_at: 2026-07-18
 </section>
 
 <section class="talks-section">
-  <h2>Conference Presentation</h2>
+  <h2 id="conference-presentations">Conference Presentations</h2>
 
   <article class="talk-item">
     <h3>Urban Air Mobility Flight Demand Modeling for Airports in New York City</h3>
@@ -135,7 +135,7 @@ last_modified_at: 2026-07-18
 </section>
 
 <section class="talks-section">
-  <h2>Poster Presentation</h2>
+  <h2 id="poster-presentations">Poster Presentations</h2>
   <article class="talk-item">
     <h3>Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm</h3>
     <p><strong>27th IEEE International Conference on Intelligent Transportation Systems (ITSC 2024)</strong> | Edmonton, Canada | Poster Presentation</p>
@@ -159,7 +159,7 @@ last_modified_at: 2026-07-18
     <h3>Demand Modeling for Advanced Air Mobility</h3>
     <p><strong>COEIT Research Day 2025</strong> | April 11, 2025 | Poster Presentation</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" />
+      <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" /></a>
     </p>
     <p>
       Presented in the afternoon poster session at the second COEIT Research Day.
@@ -202,13 +202,13 @@ last_modified_at: 2026-07-18
 
 
 <section class="talks-section">
-  <h2>Invited Talks</h2>
+  <h2 id="invited-talks">Invited Talks</h2>
 
   <article class="talk-item">
     <h3>Trustworthy Neurosymbolic AI for Predictive Decision Support</h3>
-    <p><strong>Population Health Sciences Special Seminar</strong> | Weill Cornell Medicine | Postdoctoral Associate Position Presentation</p>
+    <p><strong>Population Health Sciences Special Seminar</strong> | <a href="https://weill.cornell.edu/" target="_blank" rel="noopener noreferrer">Weill Cornell Medicine</a></p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/weill-cornell-population-health-sciences.png' | relative_url }}" alt="Weill Cornell Medicine Population Health Sciences logo" width="320" height="110" loading="lazy" />
+      <a href="https://weill.cornell.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/weill-cornell-population-health-sciences.png' | relative_url }}" alt="Weill Cornell Medicine Population Health Sciences logo" width="320" height="110" loading="lazy" /></a>
     </p>
     <p>
       Delivered a special seminar on trustworthy neurosymbolic AI for predictive decision support,
@@ -216,7 +216,7 @@ last_modified_at: 2026-07-18
       decision-making contexts.
     </p>
     <p>
-      Presented as part of a postdoctoral associate position seminar with Dr. Yiye Zhang.
+      Hosted by <a href="https://scholar.google.com/citations?user=1nlecg4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Yiye Zhang</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/Postdoc_Presentation.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -225,9 +225,9 @@ last_modified_at: 2026-07-18
 
   <article class="talk-item">
     <h3>Neurosymbolic AI for Advanced Air Mobility</h3>
-    <p><strong>IS 792 Guest Lecture</strong> | UMBC Department of Information Systems</p>
+    <p><strong>IS 792 Guest Lecture</strong> | <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a> Department of Information Systems</p>
     <p>
-      <img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" />
+      <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" /></a>
     </p>
     <p>
       Delivered a guest lecture on neurosymbolic methods for Advanced Air Mobility,
@@ -235,7 +235,7 @@ last_modified_at: 2026-07-18
       demand modeling, and future AAM operations.
     </p>
     <p>
-      Invited by Dr. Houbing Herbert Song; session included active student discussion
+      Invited by <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing Herbert Song</a>; session included active student discussion
       on research and deployment directions in trustworthy AAM systems.
     </p>
        <p class="talk-links">
@@ -256,11 +256,11 @@ last_modified_at: 2026-07-18
       AI/ML and cybersecurity modules, including hands-on mentoring and participant guidance.
     </p>
     <p>
-      <strong>Role Highlight:</strong> TA, Department of Information Systems, UMBC.
+      <strong>Role Highlight:</strong> TA, Department of Information Systems, <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a>.
     </p>
     <div class="training-logos" aria-label="Program institutions and funder">
       <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF" width="320" height="110" loading="lazy" />
-      <img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC" width="320" height="110" loading="lazy" />
+      <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC" width="320" height="110" loading="lazy" /></a>
       <img src="{{ '/assets/logos/umd-logo.jpeg' | relative_url }}" alt="UMass Dartmouth" width="320" height="110" loading="lazy" />
     </div>
     <p>

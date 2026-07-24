@@ -1,10 +1,10 @@
 ---
 layout: default
 title: "Kamal Acharya"
-seo_title: "Kamal Acharya | AAM and Neurosymbolic AI"
-description: "Kamal Acharya is a UMBC Ph.D. researcher specializing in Advanced Air Mobility demand modeling, neurosymbolic AI, forecasting, and optimization."
+seo_title: "Kamal Acharya | Incoming Baylor Postdoc in AI and Mobility"
+description: "Kamal Acharya is an incoming Baylor postdoctoral researcher specializing in Advanced Air Mobility, neurosymbolic AI, forecasting, and optimization."
 permalink: /
-last_modified_at: 2026-04-30
+last_modified_at: 2026-07-24
 ---
 
 <section class="home-hero">
@@ -36,7 +36,7 @@ last_modified_at: 2026-04-30
     systems and resilient transportation planning.
   </p>
   <p class="home-collab-line">
-    Open to collaboration in AAM forecasting, trustworthy AI, and neurosymbolic systems.
+    Incoming Postdoctoral Research Associate in Mechanical Engineering at <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>, joining the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> in August 2026.
   </p>
   <p class="home-cta-group">
     <a class="home-action-link" href="{{ '/publications/' | relative_url }}">View Publications</a>
@@ -76,25 +76,34 @@ last_modified_at: 2026-04-30
   <div class="home-card-grid">
     <article class="home-card">
       <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
-      <h3>Current Role</h3>
-      <p>Graduate Research Assistant at UMBC, contributing to NASA ULI research initiatives.</p>
+      <h3>Incoming Postdoctoral Appointment</h3>
+      <p>Incoming Postdoctoral Research Associate in Mechanical Engineering at <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>, joining the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> in August 2026.</p>
     </article>
     <article class="home-card">
       <img src="{{ '/assets/icons/book.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Research Output</h3>
-      <p>15+ publications across IEEE journals and major AI and transportation conferences.</p>
+      <p>17+ peer-reviewed publications across IEEE journals and major AI and transportation conferences.</p>
     </article>
     <article class="home-card">
       <img src="{{ '/assets/icons/chip.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
       <h3>Core Areas</h3>
-      <p>Neurosymbolic AI, AAM demand modeling, optimization, and trustworthy AI systems.</p>
+      <p>Trustworthy and neurosymbolic AI, symbolic knowledge distillation, foundation models, multimodal learning, and intelligent transportation.</p>
+    </article>
+    <article class="home-card">
+      <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
+      <h3>Professional Leadership</h3>
+      <p>IEEE Senior Member, IEEE Baltimore Section Vice-Chair Elect, and Co-Chair of the <a href="https://site.ieee.org/baltimore/technical-colloquium-landing-page/colloquium-committee/" target="_blank" rel="noopener noreferrer">2026 IEEE Baltimore Technical Colloquium and Professional Development Conference</a>.</p>
     </article>
   </div>
 </section>
 
 <section class="home-section">
-  <h2>Current Projects</h2>
+  <h2>Research and Upcoming Work</h2>
   <div class="home-work-list">
+    <article class="home-work-item">
+      <h3><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor</a> <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a></h3>
+      <p>Beginning in August 2026, conducting aerospace and AI research involving experimentation, data analysis, research software and datasets, scholarly publication, proposal development, and student mentorship.</p>
+    </article>
     <article class="home-work-item">
       <h3>NASA ULI AAM Demand Modeling</h3>
       <p>Developing demand forecasting workflows for mobility-energy coordinated Advanced Air Mobility systems.</p>

@@ -39,6 +39,7 @@
   image: "Coursera (UC San Diego).png"
 
 - title: "Coursera University of Michigan"
+  title_url: "https://umich.edu/"
   issuer: "Coursera"
   year: "2024"
   image: "Coursera (University of Michigan).png"
@@ -59,6 +60,7 @@
   image: "ICECI Reviewer Certificate.png"
 
 - title: "IEEEXtreme Certificate"
+  title_url: "https://ieeextreme.org/"
   issuer: "IEEE"
   year: "2024"
   image: "IEEEXtreme Certificate.jpeg"
@@ -95,6 +97,7 @@
 
 - title: "Ph.D. Candidacy"
   issuer: "UMBC"
+  issuer_url: "https://umbc.edu/"
   year: "2025"
   image: "Phd Candidacy.jpg"
 
@@ -129,7 +132,9 @@
   image: "Udemy (NLTK).jpg"
 
 - title: "UMBC COEIT"
+  title_url: "https://umbc.edu/"
   issuer: "UMBC College of Engineering and Information Technology"
+  issuer_url: "https://umbc.edu/"
   year: "2025"
   image: "UMBC COEIT.jpg"
 

@@ -4,7 +4,7 @@ title: "Research in Advanced Air Mobility and Neurosymbolic AI"
 seo_title: "AAM and Neurosymbolic AI Research | Kamal Acharya"
 description: "Research by Kamal Acharya in Advanced Air Mobility forecasting, neurosymbolic AI, trustworthy decision systems, and transportation optimization."
 permalink: /research/
-last_modified_at: 2026-04-30
+last_modified_at: 2026-07-24
 ---
 
 <section class="research-hero">
@@ -18,6 +18,32 @@ last_modified_at: 2026-04-30
     real transportation planning environments where demand, infrastructure, policy, and operational
     constraints interact.
   </p>
+</section>
+
+<section class="research-section">
+  <h2>Incoming <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor</a> Research Appointment</h2>
+  <article class="research-project">
+    <h3><a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> · Aerospace, Intelligence, and Autonomy</h3>
+    <p>
+      I will join the AVIA (Advanced Vehicle Intelligence and Autonomy)
+      Lab in <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>'s Department of Mechanical Engineering as an Incoming Postdoctoral Research Associate on August 17, 2026, working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a>.
+      The lab develops machine learning, optimization, control, and
+      estimation methods for aerospace and autonomous systems.
+    </p>
+    <p>
+      The lab's broader research includes multi-agent coordination, scheduling and task allocation,
+      energy-consumption modeling, airborne wind-energy optimization, uncertainty-aware decision
+      making, advanced air mobility, tethered systems, drone surveying, and human–AI interaction.
+    </p>
+    <p>My appointment responsibilities include:</p>
+    <ul>
+      <li>Designing and documenting research experiments and experimental protocols.</li>
+      <li>Analyzing and validating data and developing recommendations from research results.</li>
+      <li>Building research databases, datasets, software, and quality-control workflows.</li>
+      <li>Preparing manuscripts, conference papers, reports, and presentations.</li>
+      <li>Supporting grant proposals, student mentorship, and laboratory research infrastructure.</li>
+    </ul>
+  </article>
 </section>
 
 <section class="research-section">
@@ -50,6 +76,15 @@ last_modified_at: 2026-04-30
         including temporal demand prediction, scenario analysis, resource allocation, scheduling, and
         disaster-response mobility planning. A recurring theme is using AI to accelerate search and
         improve decision quality while preserving transparency for planners and domain experts.
+      </p>
+    </article>
+    <article class="research-card">
+      <h3>Foundation Models and Multimodal Learning</h3>
+      <p>
+        I connect foundation models with symbolic knowledge, heterogeneous data, and domain
+        constraints for reliable reasoning and forecasting. Current interests include large language
+        models, symbolic knowledge distillation, multimodal and spatiotemporal learning, knowledge
+        representation and reasoning, and explainable predictive modeling for cyber-physical systems.
       </p>
     </article>
   </div>
@@ -168,19 +203,47 @@ last_modified_at: 2026-04-30
   <h2>Methodology</h2>
   <ul class="research-list">
     <li><strong>Modeling:</strong> Time-series forecasting, predictive analytics, uncertainty-aware learning.</li>
-    <li><strong>AI Techniques:</strong> Deep learning, reinforcement learning, neurosymbolic architectures.</li>
+    <li><strong>AI Techniques:</strong> Deep learning, neurosymbolic reinforcement learning, foundation models, symbolic knowledge distillation, and knowledge representation and reasoning.</li>
+    <li><strong>Data:</strong> Multimodal and spatiotemporal machine learning for heterogeneous mobility and cyber-physical systems data.</li>
     <li><strong>Optimization:</strong> Multi-objective and constraint-aware optimization pipelines.</li>
     <li><strong>Validation:</strong> Scenario-based evaluation with practical transportation constraints.</li>
   </ul>
 </section>
 
+<section class="research-section">
+  <h2>Research Talks and Presentations</h2>
+  <p>
+    I present my work on neurosymbolic AI, Advanced Air Mobility, trustworthy decision support,
+    demand forecasting, and transportation optimization through invited seminars, conference
+    presentations, and research posters.
+  </p>
+  <div class="research-grid">
+    <article class="research-card">
+      <h3>Invited Talks</h3>
+      <p>Research seminars on trustworthy neurosymbolic AI and knowledge-guided predictive decision support.</p>
+      <p><a href="{{ '/talks/#invited-talks' | relative_url }}">View invited talks</a></p>
+    </article>
+    <article class="research-card">
+      <h3>Conference Presentations</h3>
+      <p>Presentations at AIAA, IJCAI, IEEE, and related venues covering AAM, forecasting, and interpretable AI.</p>
+      <p><a href="{{ '/talks/#conference-presentations' | relative_url }}">View conference presentations</a></p>
+    </article>
+    <article class="research-card">
+      <h3>Posters and Research Seminars</h3>
+      <p>Poster presentations that communicate methods and findings to interdisciplinary research audiences.</p>
+      <p><a href="{{ '/talks/#poster-presentations' | relative_url }}">View poster presentations</a></p>
+    </article>
+  </div>
+  <p><a href="{{ '/talks/' | relative_url }}"><strong>View all talks, presentations, posters, slides, and training activities →</strong></a></p>
+</section>
+
 <section class="research-section research-support-section">
   <h2>Funding and Research Support</h2>
   <p>
-    My current research is shaped by collaborative research support at UMBC, including work connected
+    My current research is shaped by collaborative research support at <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a>, including work connected
     to the NASA Aeronautics Research Mission Directorate (ARMD) University Leadership Initiative (ULI)
     under cooperative agreement number <strong>80NSSC23M0059</strong>, with additional support from the
-    U.S. National Science Foundation under Grant Nos. <strong>2317117</strong> and <strong>2309760</strong>.
+    U.S. National Science Foundation AI/ML cybersecurity projects under Grant Nos. <strong>OAC-2309760</strong> and <strong>OAC-2229976</strong>.
     This support helps frame my work on demand forecasting, mobility-energy coordination,
     transportation planning, and AI-assisted decision support for future aviation systems.
   </p>
@@ -196,14 +259,21 @@ last_modified_at: 2026-04-30
       <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF logo" width="98" height="98" loading="lazy" decoding="async" />
       <div>
         <h3>National Science Foundation</h3>
-        <p>Grant Nos. 2317117 and 2309760 supporting AI-assisted modeling, planning, and decision systems.</p>
+        <p>Grant Nos. OAC-2309760 and OAC-2229976 supporting AI/ML cybersecurity research and training.</p>
       </div>
     </article>
     <article class="research-support-card">
-      <img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="1200" height="1848" loading="lazy" decoding="async" />
+      <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="1200" height="1848" loading="lazy" decoding="async" /></a>
       <div>
-        <h3>University of Maryland, Baltimore County</h3>
+        <h3><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County</a></h3>
         <p>Academic and institutional research environment supporting AI, transportation, and decision systems work.</p>
+      </div>
+    </article>
+    <article class="research-support-card">
+      <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/logos/baylor-university.svg' | relative_url }}" alt="Baylor University logo" width="250" height="46" loading="lazy" decoding="async" /></a>
+      <div>
+        <h3><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></h3>
+        <p>Incoming postdoctoral research environment supporting aerospace AI, autonomy, optimization, and advanced mobility research through the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a>, beginning August 2026.</p>
       </div>
     </article>
   </div>
