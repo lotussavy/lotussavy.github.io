@@ -3,6 +3,22 @@
 
 @import "jekyll-theme-slate";
 
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  z-index: 1000;
+  padding: 0.65rem 1rem;
+  background: #ffffff;
+  color: #173a62;
+  font-weight: 700;
+  transform: translateY(-120%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 .inner {
   max-width: 1200px;
 }
@@ -42,6 +58,16 @@
 
 #main-nav a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+#main-nav a[aria-current="page"] {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f5c542;
+  outline-offset: 3px;
 }
 
 /* Footer Navigation Styles */

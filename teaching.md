@@ -4,6 +4,7 @@ title: "Teaching in AI, Machine Learning, Programming, and Systems"
 seo_title: "AI and Machine Learning Teaching | Kamal Acharya"
 description: "Teaching profile for Kamal Acharya, covering programming, artificial intelligence, machine learning, data science, computer systems, and research mentoring."
 permalink: /teaching/
+last_modified_at: 2026-07-24
 ---
 
 <section class="teaching-hero">
@@ -12,6 +13,29 @@ permalink: /teaching/
     I enjoy teaching at the intersection of computing fundamentals, AI, and applied systems.
     My teaching emphasizes conceptual clarity, hands-on implementation, and real-world problem solving.
   </p>
+</section>
+
+<section class="teaching-section">
+  <h2>Teaching Experience and Mentorship</h2>
+  <p>I bring more than ten years of classroom, laboratory, and student-project experience across undergraduate, graduate, and professional training settings.</p>
+  <div class="teaching-grid">
+    <article class="teaching-card">
+      <h3>UMBC</h3>
+      <p>Graduate teaching and mentoring in computing, including laboratory instruction, assessment, and technical guidance.</p>
+    </article>
+    <article class="teaching-card">
+      <h3>NSF Cybersecurity Training</h3>
+      <p>Teaching assistant and mentor for an NSF-supported AI and machine learning cybersecurity program in 2024.</p>
+    </article>
+    <article class="teaching-card">
+      <h3>University Teaching</h3>
+      <p>Lecturer at Janakpur Engineering College and visiting lecturer at colleges affiliated with <a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a> and <a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a> from 2012–2021.</p>
+    </article>
+    <article class="teaching-card">
+      <h3>Student Mentoring</h3>
+      <p>Supervised capstone projects, guided applied research, designed course materials, and mentored students in programming, databases, machine learning, and information systems.</p>
+    </article>
+  </div>
 </section>
 
 <section class="teaching-section">
