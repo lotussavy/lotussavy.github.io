@@ -53,20 +53,18 @@ last_modified_at: 2026-07-24
       <h3>Ph.D., Information Systems</h3>
       <p><strong><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></strong> · 2026</p>
       <p>
-        Dissertation: <em>Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI</em>
+        Dissertation: <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}"><em>Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI</em></a>
       </p>
       <p>Advisor: <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing Song</a> · Co-Advisor: <a href="https://scholar.google.com/citations?hl=en&amp;user=1g3pA4cAAAAJ" target="_blank" rel="noopener noreferrer">Dr. Alvaro Velasquez</a></p>
     </article>
     <article class="cv-item">
       <h3>M.Sc., Information System Engineering</h3>
       <p><strong><a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a></strong> · 2019</p>
-      <p>Himalayan Institute of Science and Technology</p>
-      <p>Thesis: <em>An Analysis of Classification Algorithms for Nepali News</em> · Supervisor: Dr. Subarna Shakya</p>
+      <p>Thesis: <em>An Analysis of Classification Algorithms for Nepali News</em></p>
     </article>
     <article class="cv-item">
       <h3>B.E., Electronics and Communication Engineering</h3>
       <p><strong><a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a></strong> · 2011</p>
-      <p>Himalaya College of Engineering</p>
       <p>Project: <em>Distance and Speed Measurement Using Ultrasound</em></p>
     </article>
   </div>
