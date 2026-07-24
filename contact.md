@@ -1,8 +1,9 @@
 ---
 layout: default
 title: "Contact Kamal Acharya"
-description: "Contact Kamal Acharya for research collaboration, invited talks, teaching opportunities, and AI applications in transportation and safety-critical systems."
+description: "Contact Kamal Acharya, an incoming Baylor University postdoctoral researcher, for collaboration, invited talks, teaching, and AI applications in transportation."
 permalink: /contact/
+last_modified_at: 2026-07-22
 ---
 
 <section class="contact-hero">
@@ -10,6 +11,9 @@ permalink: /contact/
   <p>
     I welcome conversations about research collaboration, invited talks, and AI applications
     in transportation and safety-critical systems.
+  </p>
+  <p>
+    I am an Incoming Postdoctoral Research Associate in <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>'s Department of Mechanical Engineering, starting in August 2026.
   </p>
 </section>
 
@@ -59,5 +63,5 @@ permalink: /contact/
     <a href="{{ '/talks/' | relative_url }}">Talks</a> |
     <a href="{{ '/cv/' | relative_url }}">CV</a>
   </p>
-  <p class="contact-note">Last updated: April 2026</p>
+  <p class="contact-note">Last updated: July 2026</p>
 </section>

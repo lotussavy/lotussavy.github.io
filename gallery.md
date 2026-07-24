@@ -35,10 +35,10 @@ permalink: /gallery/
         <img src="{{ cert_thumb | relative_url }}" alt="{{ cert.title }}" width="700" height="525" loading="lazy" />
       </a>
       <figcaption>
-        <strong>{{ cert.title }}</strong>
+        <strong>{% if cert.title_url %}<a href="{{ cert.title_url }}" target="_blank" rel="noopener noreferrer">{{ cert.title }}</a>{% else %}{{ cert.title }}{% endif %}</strong>
         {% if cert.issuer or cert.year %}
           <span class="gallery-meta">
-            {% if cert.issuer %}{{ cert.issuer }}{% endif %}{% if cert.issuer and cert.year %} · {% endif %}{% if cert.year %}{{ cert.year }}{% endif %}
+            {% if cert.issuer %}{% if cert.issuer_url %}<a href="{{ cert.issuer_url }}" target="_blank" rel="noopener noreferrer">{{ cert.issuer }}</a>{% else %}{{ cert.issuer }}{% endif %}{% endif %}{% if cert.issuer and cert.year %} · {% endif %}{% if cert.year %}{{ cert.year }}{% endif %}
           </span>
         {% endif %}
       </figcaption>

@@ -14,7 +14,7 @@ source_url: https://ai.northeastern.edu/event/giving-ai-some-common-sense
 
 Modern AI can write fluent paragraphs, generate code, summarize long documents, identify objects in images, and outperform humans on many narrow benchmarks. Yet it can still fail in ways that feel deeply strange. It may miss an obvious implication, misunderstand a simple physical situation, invent a confident answer, or behave as if the world is only a pattern in text rather than a place with causes, goals, constraints, and consequences.
 
-That gap is what Ron Brachman's Northeastern University lecture, "Giving AI Some Common Sense," is about. The talk asks a question that has followed artificial intelligence for decades: what would it take for machines to understand enough about the everyday world to act sensibly when something unexpected happens?
+That gap is what Ron Brachman's [Northeastern University](https://www.northeastern.edu/) lecture, "Giving AI Some Common Sense," is about. The talk asks a question that has followed artificial intelligence for decades: what would it take for machines to understand enough about the everyday world to act sensibly when something unexpected happens?
 
 ![](/assets/blog/giving-ai-some-common-sense/cover.png){: width="1400" height="786" loading="eager" decoding="async" fetchpriority="high" }
 
@@ -150,5 +150,5 @@ The path forward is not to abandon modern machine learning. It is to build syste
 
 ## References
 
-1. Northeastern University Institute for Experiential AI, 2024. Giving AI Some Common Sense. https://ai.northeastern.edu/event/giving-ai-some-common-sense
+1. [Northeastern University](https://www.northeastern.edu/) Institute for Experiential AI, 2024. Giving AI Some Common Sense. https://ai.northeastern.edu/event/giving-ai-some-common-sense
 2. Brachman, R.J. and Levesque, H.J., 2022. *Machines like Us: Toward AI with Common Sense*. MIT Press. https://mitpress.mit.edu/9780262547321/machines-like-us/

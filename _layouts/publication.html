@@ -38,7 +38,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% endif %}
     <p class="publication-meta">
       <span>{{ publication.year }}</span>
-      <span>{{ publication.venue }}</span>
+      <span>{% if publication.venue_url %}<a href="{{ publication.venue_url }}" target="_blank" rel="noopener noreferrer">{{ publication.venue }}</a>{% else %}{{ publication.venue }}{% endif %}</span>
       {% if publication.doi %}
       <span>DOI: {{ publication.doi }}</span>
       {% endif %}
@@ -152,7 +152,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       <article class="publication-committee-card">
         <p class="publication-committee-role">{{ member.role }}</p>
         <h3>{% if member.profile_url %}<a href="{{ member.profile_url }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
-        <p class="publication-committee-affiliation">{{ member.affiliation }}</p>
+        <p class="publication-committee-affiliation">{% if member.affiliation_url %}<a href="{{ member.affiliation_url }}" target="_blank" rel="noopener noreferrer">{{ member.affiliation }}</a>{% else %}{{ member.affiliation }}{% endif %}</p>
         <p>{{ member.background }}</p>
       </article>
       {% endfor %}
@@ -194,7 +194,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       </div>
       <div>
         <dt>Venue</dt>
-        <dd>{% if publication.type == "book_chapter" %}In {% endif %}{{ publication.venue }}</dd>
+        <dd>{% if publication.type == "book_chapter" %}In {% endif %}{% if publication.venue_url %}<a href="{{ publication.venue_url }}" target="_blank" rel="noopener noreferrer">{{ publication.venue }}</a>{% else %}{{ publication.venue }}{% endif %}</dd>
       </div>
       <div>
         <dt>Year</dt>
@@ -239,13 +239,13 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       {% if publication.advisor %}
       <div>
         <dt>Advisor</dt>
-        <dd>{{ publication.advisor }}</dd>
+        <dd>{% if publication.advisor_url %}<a href="{{ publication.advisor_url }}" target="_blank" rel="noopener noreferrer">{{ publication.advisor }}</a>{% else %}{{ publication.advisor }}{% endif %}</dd>
       </div>
       {% endif %}
       {% if publication.co_advisor %}
       <div>
         <dt>Co-advisor</dt>
-        <dd>{{ publication.co_advisor }}</dd>
+        <dd>{% if publication.co_advisor_url %}<a href="{{ publication.co_advisor_url }}" target="_blank" rel="noopener noreferrer">{{ publication.co_advisor }}</a>{% else %}{{ publication.co_advisor }}{% endif %}</dd>
       </div>
       {% endif %}
       {% if publication.doi %}
@@ -272,7 +272,11 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       {% endfor %}
     </ul>
     {% else %}
-    <p>{{ publication.authors | join: ", " }}</p>
+    <p>
+      {% for author in publication.authors %}
+        {% if author == "Song H." or author == "Song H. H." %}<a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Sun L." %}<a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Velasquez A." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=1g3pA4cAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Vasiloff K." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=0y4KHOsAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Kamal Acharya" or author == "Acharya K." or author == "Kamal A." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Wang Z." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=dlbsvskAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Sharifi I." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=-ycaNLMAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Lad M." %}<a href="https://www.linkedin.com/in/mehullad/" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Liu Y." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=YJuZfyUAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Liu D." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=qBUOUsoAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Raza W." %}<a href="https://scholar.google.com/citations?user=qOyRccEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Dourado C." %}<a href="https://scholar.google.com/citations?user=_HJ0aGoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Niu S." %}<a href="https://scholar.google.com/citations?user=sSWFYOsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Hakim S. B." %}<a href="https://scholar.google.com/citations?user=KsokPmwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Da Costa K. A." %}<a href="https://scholar.google.com/citations?user=PpZNWkYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Guizani M." %}<a href="https://scholar.google.com/citations?user=RigrYkcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Jagatheesaperumal S. K." %}<a href="https://scholar.google.com/citations?user=jUyBt7UAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "De Macedo A. R." %}<a href="https://scholar.google.com/citations?user=Wumz-bwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "De Albuquerque V. H. C." %}<a href="https://scholar.google.com/citations?user=meI2k88AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Adil M." %}<a href="https://scholar.google.com/citations?user=vGsjsaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
     {% endif %}
   </section>
 
