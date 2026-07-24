@@ -60,12 +60,10 @@ last_modified_at: 2026-07-24
     <article class="cv-item">
       <h3>M.Sc., Information System Engineering</h3>
       <p><strong><a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a></strong> · 2019</p>
-      <p>Thesis: <em>An Analysis of Classification Algorithms for Nepali News</em></p>
     </article>
     <article class="cv-item">
       <h3>B.E., Electronics and Communication Engineering</h3>
       <p><strong><a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a></strong> · 2011</p>
-      <p>Project: <em>Distance and Speed Measurement Using Ultrasound</em></p>
     </article>
   </div>
 </section>
@@ -95,7 +93,7 @@ last_modified_at: 2026-07-24
       </ul>
     </article>
     <article class="cv-item">
-      <h3>Teaching Assistant (AI/ML Cybersecurity Program) · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
+      <h3>Teaching Assistant (<a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">AI/ML Cybersecurity Program</a>) · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
       <p>2024</p>
       <ul>
         <li>Supported NSF-funded graduate training in AI/ML and cybersecurity.</li>
@@ -110,26 +108,6 @@ last_modified_at: 2026-07-24
         <li>Built deep learning workflows for micro-level and macro-level mobility prediction.</li>
       </ul>
     </article>
-    <article class="cv-item">
-      <h3>IT Coordinator · College of Applied Business and Technology</h3>
-      <p>2014–2021</p>
-      <p>Coordinated institutional IT services, systems, and technical support.</p>
-    </article>
-    <article class="cv-item">
-      <h3>Visiting Lecturer · Various Colleges</h3>
-      <p>2012–2021</p>
-      <p>Taught computing and information-systems courses at colleges affiliated with <a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a> and <a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a>.</p>
-    </article>
-    <article class="cv-item">
-      <h3>Web Developer · Uniweb Technologies</h3>
-      <p>2013–2014</p>
-      <p>Developed and maintained web applications and database-backed systems.</p>
-    </article>
-    <article class="cv-item">
-      <h3>Lecturer · Janakpur Engineering College</h3>
-      <p>2012–2013</p>
-      <p>Taught undergraduate computer engineering courses and supported student projects.</p>
-    </article>
   </div>
 </section>
 
@@ -137,13 +115,13 @@ last_modified_at: 2026-07-24
   <h2>Selected Achievements</h2>
   <ul class="cv-list">
     <li><a href="https://ieeexplore.ieee.org/document/10709672" target="_blank" rel="noopener noreferrer">IEEE Computational Intelligence Society Publication Spotlight, 2024</a>.</li>
-    <li>Outstanding Reviewer, IEEE Transactions on Neural Networks and Learning Systems (2024–2025).</li>
+    <li>Outstanding Reviewer, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer">IEEE Transactions on Neural Networks and Learning Systems</a> (2024–2025).</li>
     <li><a href="https://coeit.umbc.edu/2025-talks-poster-sessions/" target="_blank" rel="noopener noreferrer">Doctoral Research Poster Award, UMBC, 2025</a>.</li>
     <li>Leadership roles in IEEE Baltimore Section and technical conferences.</li>
     <li>IEEE Senior Member and IEEE Baltimore Section Vice-Chair Elect (2026–Present).</li>
     <li>Co-Chair, <a href="https://site.ieee.org/baltimore/technical-colloquium-landing-page/colloquium-committee/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Technical Colloquium and Professional Development Conference, 2026</a>.</li>
     <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> travel and professional development grants (2026).</li>
-    <li>Member, Phi Kappa Phi.</li>
+    <li>Member, <a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi</a>.</li>
   </ul>
 </section>
 

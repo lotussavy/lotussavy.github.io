@@ -102,7 +102,9 @@
   image: "Phd Candidacy.jpg"
 
 - title: "Phi Kappa Phi"
+  title_url: "https://www.phikappaphi.org/"
   issuer: "The Honor Society of Phi Kappa Phi"
+  issuer_url: "https://www.phikappaphi.org/"
   year: "2025"
   image: "Phi Kappa Phi.jpg"
 

@@ -24,12 +24,12 @@ last_modified_at: 2026-07-24
       <p>Graduate teaching and mentoring in computing, including laboratory instruction, assessment, and technical guidance.</p>
     </article>
     <article class="teaching-card">
-      <h3>NSF Cybersecurity Training</h3>
+      <h3><a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">NSF Cybersecurity Training</a></h3>
       <p>Teaching assistant and mentor for an NSF-supported AI and machine learning cybersecurity program in 2024.</p>
     </article>
     <article class="teaching-card">
       <h3>University Teaching</h3>
-      <p>Lecturer at Janakpur Engineering College and visiting lecturer at colleges affiliated with <a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a> and <a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a> from 2012–2021.</p>
+      <p><a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a> and <a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a> · 2012–2021</p>
     </article>
     <article class="teaching-card">
       <h3>Student Mentoring</h3>

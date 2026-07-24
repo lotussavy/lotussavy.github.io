@@ -58,7 +58,7 @@ Related invited seminars, conference presentations, and posters are available in
 
 - <a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Travel Grant, 2026
 - <a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Professional Development Grant, 2026
-- Outstanding Reviewer, IEEE Transactions on Neural Networks and Learning Systems, 2024–2025
+- Outstanding Reviewer, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer">IEEE Transactions on Neural Networks and Learning Systems</a>, 2024–2025
 - <a href="https://coeit.umbc.edu/2025-talks-poster-sessions/" target="_blank" rel="noopener noreferrer">Doctoral Research Poster Award, UMBC, 2025</a>
 - <a href="https://ieeexplore.ieee.org/document/10709672" target="_blank" rel="noopener noreferrer">IEEE Computational Intelligence Society Publication Spotlight, 2024</a>
-- Member, Phi Kappa Phi
+- Member, <a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi</a>
