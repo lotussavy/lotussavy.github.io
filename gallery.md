@@ -10,9 +10,6 @@ permalink: /gallery/
   <p>
     Visual portfolio showcasing earned certificates, professional credentials, and recognitions.
   </p>
-  <p class="gallery-count">
-    Total certificates: {{ site.data.certificates | size }}
-  </p>
 </section>
 
 <section class="gallery-section">

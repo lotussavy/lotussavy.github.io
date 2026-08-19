@@ -2,8 +2,8 @@
 title: "Kamal Acharya"
 theme: jekyll-theme-slate
 tagline: "Interpretable AI for Future Mobility"
-header_tagline: "Incoming Postdoctoral Research Associate at Baylor University"
-description: "Incoming Baylor postdoctoral researcher in Mechanical Engineering working in Advanced Air Mobility, neurosymbolic AI, and intelligent transportation."
+header_tagline: "Postdoctoral Research Associate at Baylor University"
+description: "Baylor University postdoctoral researcher in Mechanical Engineering working in Advanced Air Mobility, neurosymbolic AI, and intelligent transportation."
 url: https://lotussavy.github.io
 baseurl: ""
 repository: lotussavy/lotussavy.github.io
@@ -21,7 +21,7 @@ defaults:
 author:
   name: Kamal Acharya
   email: lotussavy@gmail.com
-  location: "Baltimore, MD, USA"
+  location: "Waco, TX, USA"
   orcid: "0000-0002-9712-0265"
   github: lotussavy
   linkedin: lotussavy318
@@ -37,7 +37,7 @@ institution:
   lab: "AVIA (Advanced Vehicle Intelligence and Autonomy) Lab"
   lab_url: "https://avia.research.baylor.edu/"
   location: "Waco, Texas"
-  role: "Incoming Postdoctoral Research Associate"
+  role: "Postdoctoral Research Associate"
   supervisor: "Dr. Liang Sun"
   start_date: "August 17, 2026"
 
@@ -62,7 +62,7 @@ show_social_links: true
 # SEO settings
 keywords: "Kamal Acharya, Baylor University, Mechanical Engineering, Postdoctoral Research Associate, Advanced Air Mobility, AAM demand forecasting, Urban Air Mobility, Regional Air Mobility, Neurosymbolic AI, Explainable AI, Trustworthy AI, Symbolic Knowledge Distillation, Transportation Planning, Origin-Destination Matrix Estimation, Time Series Forecasting, Optimization, UMBC"
 lang: en-US
-timezone: America/New_York
+timezone: America/Chicago
 twitter:
   username: lotussavy
   card: summary_large_image

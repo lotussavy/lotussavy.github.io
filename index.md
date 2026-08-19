@@ -1,10 +1,10 @@
 ---
 layout: default
 title: "Kamal Acharya"
-seo_title: "Kamal Acharya | Incoming Baylor Postdoc in AI and Mobility"
-description: "Kamal Acharya is an incoming Baylor postdoctoral researcher specializing in Advanced Air Mobility, neurosymbolic AI, forecasting, and optimization."
+seo_title: "Kamal Acharya | Baylor Postdoc in AI and Mobility"
+description: "Kamal Acharya is a Baylor University postdoctoral researcher specializing in Advanced Air Mobility, neurosymbolic AI, forecasting, and optimization."
 permalink: /
-last_modified_at: 2026-07-24
+last_modified_at: 2026-08-19
 ---
 
 <section class="home-hero">
@@ -36,7 +36,7 @@ last_modified_at: 2026-07-24
     systems and resilient transportation planning.
   </p>
   <p class="home-collab-line">
-    Incoming Postdoctoral Research Associate in Mechanical Engineering at <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>, joining the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> in August 2026.
+    Postdoctoral Research Associate in Mechanical Engineering at <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a> and a member of the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> since August 2026.
   </p>
   <p class="home-cta-group">
     <a class="home-action-link" href="{{ '/publications/' | relative_url }}">View Publications</a>
@@ -76,8 +76,8 @@ last_modified_at: 2026-07-24
   <div class="home-card-grid">
     <article class="home-card">
       <img src="{{ '/assets/icons/briefcase.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
-      <h3>Incoming Postdoctoral Appointment</h3>
-      <p>Incoming Postdoctoral Research Associate in Mechanical Engineering at <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>, joining the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> in August 2026.</p>
+      <h3>Postdoctoral Appointment</h3>
+      <p>Postdoctoral Research Associate in Mechanical Engineering at <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a> and a member of the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> since August 2026.</p>
     </article>
     <article class="home-card">
       <img src="{{ '/assets/icons/book.svg' | relative_url }}" alt="" width="24" height="24" loading="lazy" decoding="async" />
@@ -98,11 +98,11 @@ last_modified_at: 2026-07-24
 </section>
 
 <section class="home-section">
-  <h2>Research and Upcoming Work</h2>
+  <h2>Research and Project Highlights</h2>
   <div class="home-work-list">
     <article class="home-work-item">
       <h3><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor</a> <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a></h3>
-      <p>Beginning in August 2026, conducting aerospace and AI research involving experimentation, data analysis, research software and datasets, scholarly publication, proposal development, and student mentorship.</p>
+      <p>Conducting aerospace and AI research involving experimentation, data analysis, research software and datasets, scholarly publication, proposal development, and student mentorship.</p>
     </article>
     <article class="home-work-item">
       <h3>NASA ULI AAM Demand Modeling</h3>
@@ -128,7 +128,7 @@ last_modified_at: 2026-07-24
     </article>
     <article class="home-work-item">
       <h3><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility</a></h3>
-      <p><span class="home-badge">IEEE TITS</span> Journal publication analyzing open challenges and modeling opportunities for AAM demand forecasting.</p>
+      <p><span class="home-badge">IEEE T-ITS</span> Journal publication analyzing open challenges and modeling opportunities for AAM demand forecasting.</p>
     </article>
     <article class="home-work-item">
       <h3><a href="{{ '/publications/survey-on-symbolic-knowledge-distillation-of-large-language-models/' | relative_url }}">Symbolic Knowledge Distillation of Large Language Models</a></h3>

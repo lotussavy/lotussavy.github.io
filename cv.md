@@ -1,15 +1,15 @@
 ---
 layout: default
 title: "Kamal Acharya Curriculum Vitae"
-description: "CV for Kamal Acharya, an incoming Baylor postdoctoral researcher and UMBC Information Systems Ph.D., covering research, publications, teaching, and skills."
+description: "CV for Kamal Acharya, a Baylor University postdoctoral researcher and UMBC Information Systems Ph.D., covering research, publications, teaching, and skills."
 permalink: /cv/
-last_modified_at: 2026-07-24
+last_modified_at: 2026-08-19
 ---
 
 <section class="cv-hero">
   <h1>Kamal Acharya</h1>
   <p class="cv-subtitle">
-    Ph.D. in Information Systems · Advanced Air Mobility · Neurosymbolic AI
+    Postdoctoral Research Associate at Baylor University · Advanced Air Mobility · Neurosymbolic AI
   </p>
   <p>
     Researcher and educator focused on interpretable AI systems for transportation planning,
@@ -28,8 +28,8 @@ last_modified_at: 2026-07-24
   <h2>Profile Snapshot</h2>
   <div class="cv-grid">
     <article class="cv-card">
-      <h3>Incoming Postdoctoral Appointment</h3>
-      <p>Incoming Postdoctoral Research Associate in Mechanical Engineering, <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>, beginning August 17, 2026.</p>
+      <h3>Postdoctoral Appointment</h3>
+      <p>Postdoctoral Research Associate in Mechanical Engineering, <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>, since August 17, 2026.</p>
     </article>
     <article class="cv-card">
       <h3>Research Domains</h3>
@@ -72,8 +72,8 @@ last_modified_at: 2026-07-24
   <h2>Experience</h2>
   <div class="cv-timeline">
     <article class="cv-item">
-      <h3>Incoming Postdoctoral Research Associate · <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></h3>
-      <p>August 2026 · Department of Mechanical Engineering · Waco, Texas</p>
+      <h3>Postdoctoral Research Associate · <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></h3>
+      <p>August 2026–Present · Department of Mechanical Engineering · Waco, Texas</p>
       <p>Working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a> in the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA (Advanced Vehicle Intelligence and Autonomy) Lab</a>.</p>
       <ul>
         <li>Design and execute aerospace and artificial intelligence research experiments and document experimental protocols.</li>
@@ -148,10 +148,10 @@ last_modified_at: 2026-07-24
 <section class="cv-section">
   <h2>Professional Links</h2>
   <p>
-    <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en">Google Scholar</a> |
-    <a href="https://orcid.org/0000-0002-9712-0265">ORCID</a> |
-    <a href="https://linkedin.com/in/lotussavy318">LinkedIn</a> |
-    <a href="https://github.com/lotussavy">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
+    <a href="https://orcid.org/0000-0002-9712-0265" target="_blank" rel="noopener noreferrer">ORCID</a> |
+    <a href="https://linkedin.com/in/lotussavy318" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+    <a href="https://github.com/lotussavy" target="_blank" rel="noopener noreferrer">GitHub</a>
   </p>
-  <p class="cv-last-updated">Last updated: July 2026</p>
+  <p class="cv-last-updated">Last updated: August 2026</p>
 </section>
