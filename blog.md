@@ -92,6 +92,6 @@ sitemap: true
     |
     <a href="mailto:lotussavy@gmail.com">Email</a>
     |
-    <a href="https://linkedin.com/in/lotussavy318">LinkedIn</a>
+    <a href="https://linkedin.com/in/lotussavy318" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </p>
 </section>

@@ -247,7 +247,7 @@ last_modified_at: 2026-07-24
 
 
 <section class="talks-section">
-  <h2>Trainings</h2>
+  <h2>Training</h2>
   <article class="talk-item">
     <h3>Operationalizing AI/Machine Learning for Cybersecurity Training</h3>
     <p><strong>2024 Training Session</strong> | May 20, 2024 - August 9, 2024 (12 Weeks)</p>

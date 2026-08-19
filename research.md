@@ -4,7 +4,7 @@ title: "Research in Advanced Air Mobility and Neurosymbolic AI"
 seo_title: "AAM and Neurosymbolic AI Research | Kamal Acharya"
 description: "Research by Kamal Acharya in Advanced Air Mobility forecasting, neurosymbolic AI, trustworthy decision systems, and transportation optimization."
 permalink: /research/
-last_modified_at: 2026-07-24
+last_modified_at: 2026-08-19
 ---
 
 <section class="research-hero">
@@ -21,28 +21,21 @@ last_modified_at: 2026-07-24
 </section>
 
 <section class="research-section">
-  <h2>Incoming <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor</a> Research Appointment</h2>
+  <h2><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor</a> Research Appointment</h2>
   <article class="research-project">
     <h3><a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a> · Aerospace, Intelligence, and Autonomy</h3>
     <p>
-      I will join the AVIA (Advanced Vehicle Intelligence and Autonomy)
-      Lab in <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>'s Department of Mechanical Engineering as an Incoming Postdoctoral Research Associate on August 17, 2026, working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a>.
-      The lab develops machine learning, optimization, control, and
-      estimation methods for aerospace and autonomous systems.
+      I joined the AVIA (Advanced Vehicle Intelligence and Autonomy)
+      Lab in <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>'s Department of Mechanical Engineering as a Postdoctoral Research Associate on August 17, 2026, working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a>.
+      My work explores how machine learning, optimization, control, and uncertainty-aware decision
+      methods can support advanced mobility and autonomous aerospace systems.
     </p>
     <p>
-      The lab's broader research includes multi-agent coordination, scheduling and task allocation,
-      energy-consumption modeling, airborne wind-energy optimization, uncertainty-aware decision
-      making, advanced air mobility, tethered systems, drone surveying, and human–AI interaction.
+      At Baylor, I am building on my background in mobility-demand modeling and trustworthy AI while
+      expanding my research in intelligent and autonomous aerospace systems. I contribute through
+      computational experiments, research software and datasets, scholarly publications, collaborative
+      proposals, and student mentorship.
     </p>
-    <p>My appointment responsibilities include:</p>
-    <ul>
-      <li>Designing and documenting research experiments and experimental protocols.</li>
-      <li>Analyzing and validating data and developing recommendations from research results.</li>
-      <li>Building research databases, datasets, software, and quality-control workflows.</li>
-      <li>Preparing manuscripts, conference papers, reports, and presentations.</li>
-      <li>Supporting grant proposals, student mentorship, and laboratory research infrastructure.</li>
-    </ul>
   </article>
 </section>
 
@@ -159,7 +152,7 @@ last_modified_at: 2026-07-24
 </section>
 
 <section class="research-section">
-  <h2>Active Projects</h2>
+  <h2>Selected Projects</h2>
 
   <article class="research-project">
     <h3>NASA ULI: AAM Demand Modeling</h3>
@@ -240,11 +233,11 @@ last_modified_at: 2026-07-24
 <section class="research-section research-support-section">
   <h2>Funding and Research Support</h2>
   <p>
-    My current research is shaped by collaborative research support at <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a>, including work connected
+    My research has been shaped by collaborative research support at <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a>, including work connected
     to the NASA Aeronautics Research Mission Directorate (ARMD) University Leadership Initiative (ULI)
     under cooperative agreement number <strong>80NSSC23M0059</strong>, with additional support from the
     U.S. National Science Foundation AI/ML cybersecurity projects under Grant Nos. <strong>OAC-2309760</strong> and <strong>OAC-2229976</strong>.
-    This support helps frame my work on demand forecasting, mobility-energy coordination,
+    This support has helped frame my work on demand forecasting, mobility-energy coordination,
     transportation planning, and AI-assisted decision support for future aviation systems.
   </p>
   <div class="research-support-grid" aria-label="Research support organizations">
@@ -273,7 +266,7 @@ last_modified_at: 2026-07-24
       <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/logos/baylor-university.svg' | relative_url }}" alt="Baylor University logo" width="250" height="46" loading="lazy" decoding="async" /></a>
       <div>
         <h3><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></h3>
-        <p>Incoming postdoctoral research environment supporting aerospace AI, autonomy, optimization, and advanced mobility research through the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a>, beginning August 2026.</p>
+        <p>Current postdoctoral research environment supporting aerospace AI, autonomy, optimization, and advanced mobility research through the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a>.</p>
       </div>
     </article>
   </div>

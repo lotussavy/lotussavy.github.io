@@ -1,19 +1,19 @@
 ---
 layout: default
 title: "Contact Kamal Acharya"
-description: "Contact Kamal Acharya, an incoming Baylor University postdoctoral researcher, for collaboration, invited talks, teaching, and AI applications in transportation."
+description: "Contact Kamal Acharya, a Baylor University postdoctoral researcher, for collaboration, invited talks, teaching, and AI applications in transportation."
 permalink: /contact/
-last_modified_at: 2026-07-22
+last_modified_at: 2026-08-19
 ---
 
 <section class="contact-hero">
-  <h1>Get In Touch</h1>
+  <h1>Get in Touch</h1>
   <p>
     I welcome conversations about research collaboration, invited talks, and AI applications
     in transportation and safety-critical systems.
   </p>
   <p>
-    I am an Incoming Postdoctoral Research Associate in <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>'s Department of Mechanical Engineering, starting in August 2026.
+    I am a Postdoctoral Research Associate in <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>'s Department of Mechanical Engineering and a member of the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a>.
   </p>
 </section>
 
@@ -23,7 +23,7 @@ last_modified_at: 2026-07-22
     <article class="contact-card">
       <h3>Email</h3>
       <p><a href="mailto:lotussavy@gmail.com">lotussavy@gmail.com</a></p>
-      <p class="contact-note">Preferred way is email.</p>
+      <p class="contact-note">Email is the best way to reach me.</p>
     </article>
     <article class="contact-card">
       <h3>Phone</h3>
@@ -58,10 +58,10 @@ last_modified_at: 2026-07-22
   <p>
     <a href="{{ '/research/' | relative_url }}">Research</a> |
     <a href="{{ '/publications/' | relative_url }}">Publications</a> |
-    <a href="{{ '/blog' | relative_url }}">Blog</a> |
+    <a href="{{ '/blog/' | relative_url }}">Blog</a> |
     <a href="{{ '/teaching/' | relative_url }}">Teaching</a> |
     <a href="{{ '/talks/' | relative_url }}">Talks</a> |
     <a href="{{ '/cv/' | relative_url }}">CV</a>
   </p>
-  <p class="contact-note">Last updated: July 2026</p>
+  <p class="contact-note">Last updated: August 2026</p>
 </section>

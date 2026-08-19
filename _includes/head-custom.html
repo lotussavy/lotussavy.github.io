@@ -24,6 +24,11 @@
   "url": "{{ site.author.url }}",
   "image": "{{ site.image | absolute_url }}",
   "jobTitle": "{{ site.institution.role }}",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "{{ site.institution.name }}",
+    "url": "https://www.baylor.edu/"
+  },
   "alumniOf": {
     "@type": "CollegeOrUniversity",
     "name": "University of Maryland, Baltimore County",

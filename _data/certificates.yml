@@ -90,6 +90,13 @@
   year: "2025"
   image: "Indoor Skydiving.jpg"
 
+- title: "International Biltek Congress"
+  title_url: "https://www.biltek.org/"
+  issuer: "BILTEK"
+  issuer_url: "https://www.biltek.org/"
+  year: "2025"
+  image: "International Biltek Congress.pdf"
+
 - title: "Outstanding Reviewer"
   issuer: "Conference/Journal"
   year: "2025"
