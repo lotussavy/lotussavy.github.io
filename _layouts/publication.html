@@ -26,6 +26,9 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% elsif publication.type == "dissertation" %}
     {% assign publication_type_label = "Doctoral Dissertation" %}
   {% endif %}
+  {% if publication.display_type_label %}
+    {% assign publication_type_label = publication.display_type_label %}
+  {% endif %}
   {% assign first_author = publication.authors | first | split: " " | first | remove: "." | remove: "," | downcase %}
   {% assign cite_key = first_author | append: publication.year | append: "-" | append: publication.title | slugify %}
 
@@ -33,36 +36,78 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     <a class="publication-back-link" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
     <p class="publication-type">{{ publication_type_label }}</p>
     <h1>{{ publication.title }}</h1>
-    {% if publication.hero_subtitle %}
+    <p class="publication-byline" aria-label="Authors">
+      <span>By</span>
+      {% if publication.author_details %}
+        {% for author in publication.author_details %}
+          {% if author.scholar_url %}<a href="{{ author.scholar_url }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>{% else %}<strong>{{ author.name }}</strong>{% endif %}{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}
+        {% endfor %}
+      {% else %}
+        {% for author in publication.authors %}<strong>{{ author }}</strong>{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}{% endfor %}
+      {% endif %}
+    </p>
+    {% if publication.hero_subtitle and publication.minimal_page != true %}
     <p class="publication-hero-subtitle">{{ publication.hero_subtitle }}</p>
     {% endif %}
     <p class="publication-meta">
       <span>{{ publication.year }}</span>
+      {% unless publication.minimal_page %}
       <span>{% if publication.venue_url %}<a href="{{ publication.venue_url }}" target="_blank" rel="noopener noreferrer">{{ publication.venue }}</a>{% else %}{{ publication.venue }}{% endif %}</span>
+      {% if publication.degree %}<span>{{ publication.degree }}</span>{% endif %}
       {% if publication.doi %}
       <span>DOI: {{ publication.doi }}</span>
       {% endif %}
+      {% endunless %}
     </p>
-    {% if publication.tags %}
+    {% if publication.type == 'dissertation' and publication.advisor %}
+    <p class="publication-dissertation-mentors">
+      Advisor: {% if publication.advisor_url %}<a href="{{ publication.advisor_url }}" target="_blank" rel="noopener noreferrer">{{ publication.advisor }}</a>{% else %}{{ publication.advisor }}{% endif %}
+      {% if publication.co_advisor %}<span aria-hidden="true">·</span> Co-advisor: {% if publication.co_advisor_url %}<a href="{{ publication.co_advisor_url }}" target="_blank" rel="noopener noreferrer">{{ publication.co_advisor }}</a>{% else %}{{ publication.co_advisor }}{% endif %}{% endif %}
+    </p>
+    {% endif %}
+    {% if publication.tags and publication.minimal_page != true %}
     <p class="publication-hero-tags" aria-label="Featured keywords">
       {% for tag in publication.tags limit: 3 %}
         <span>{{ tag }}</span>
       {% endfor %}
     </p>
     {% endif %}
+    {% unless publication.minimal_page %}
     <p class="publication-hero-actions">
+      {% if publication.primary_access_url %}
+      <a class="publication-primary-access" href="{{ publication.primary_access_url }}" target="_blank" rel="noopener noreferrer">{{ publication.primary_access_label | default: "Read Open-Access Paper" }}</a>
+      {% elsif publication.repository_url and publication.status == nil %}
+      <a class="publication-primary-access" href="{{ publication.repository_url }}" target="_blank" rel="noopener noreferrer">Open Repository Copy</a>
+      {% endif %}
       {% if publication.url %}
       <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">DOI</a>
       {% endif %}
       {% if publication.source_url %}
       <a href="{{ publication.source_url }}" target="_blank" rel="noopener noreferrer">Publisher Page</a>
       {% endif %}
-      {% if publication.pdf %}
-      <a href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      {% if publication.pdf and publication.primary_access_url == nil %}
+      <a href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">{% if publication.type == 'dissertation' %}Download Dissertation{% else %}PDF{% endif %}</a>
       {% endif %}
       <a href="#citation">Cite</a>
     </p>
+    {% endunless %}
   </header>
+
+  {% unless publication.minimal_page %}
+
+  {% if publication.abstract_summary %}
+  <section class="publication-highlight" id="abstract">
+    <div>
+      <h2>Abstract</h2>
+      <p>{{ publication.abstract_summary }}</p>
+    </div>
+  </section>
+  {% elsif publication.availability_note %}
+  <aside class="publication-metadata-notice">
+    <strong>About this record</strong>
+    <p>{{ publication.availability_note }}</p>
+  </aside>
+  {% endif %}
 
   {% if publication.hero_subtitle or publication.framework_steps or publication.modeling_approaches or publication.research_gaps %}
   <nav class="publication-mini-nav" aria-label="Publication page sections">
@@ -71,11 +116,20 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% if publication.framework_steps %}
     <a href="#framework">Framework</a>
     {% endif %}
+    {% if publication.key_findings %}
+    <a href="#key-findings">Findings</a>
+    {% endif %}
+    {% if publication.dissertation_outputs %}
+    <a href="#dissertation-outputs">Publications</a>
+    {% endif %}
     {% if publication.modeling_approaches %}
     <a href="#modeling-approaches">Methods</a>
     {% endif %}
     {% if publication.research_gaps %}
     <a href="#research-gaps">Research Gaps</a>
+    {% endif %}
+    {% if publication.intended_audiences %}
+    <a href="#audience">Audience</a>
     {% endif %}
     {% if publication.committee %}
     <a href="#dissertation-committee">Committee</a>
@@ -85,42 +139,57 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   </nav>
   {% endif %}
 
-  {% if publication.abstract_summary %}
-  <section class="publication-highlight" id="abstract">
+  {% if publication.plain_language_summary or publication.impact %}
+  <section class="publication-reader-summary" aria-label="Reader summary">
+    {% if publication.plain_language_summary %}
+    <div id="plain-language-summary">
+      <p class="publication-summary-label">In brief</p>
+      <h2>What This Work Does</h2>
+      <p>{{ publication.plain_language_summary }}</p>
+    </div>
+    {% endif %}
+    {% if publication.impact %}
+    <div id="why-this-paper-matters">
+      <p class="publication-summary-label">Research impact</p>
+      <h2>Why It Matters</h2>
+      <p>{{ publication.impact }}</p>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if publication.survey_metrics %}
+  <section class="publication-survey-overview" aria-label="Survey scope">
     <div>
-      <h2>Abstract</h2>
-      <p>{{ publication.abstract_summary }}</p>
+      <p class="publication-section-kicker">Survey at a glance</p>
+      <h2>A Structured View of AAM Demand</h2>
+    </div>
+    <div class="publication-survey-metrics">
+      {% for metric in publication.survey_metrics %}
+      <div><strong>{{ metric.value }}</strong><span>{{ metric.label }}</span></div>
+      {% endfor %}
     </div>
   </section>
   {% endif %}
 
-  {% if publication.plain_language_summary %}
-  <section class="publication-detail-section" id="plain-language-summary">
-    <h2>Plain-Language Summary</h2>
-    <p>{{ publication.plain_language_summary }}</p>
-  </section>
-  {% endif %}
-
-  {% if publication.impact %}
-  <section class="publication-impact" id="why-this-paper-matters">
-    <h2>Why This Paper Matters</h2>
-    <p>{{ publication.impact }}</p>
-  </section>
-  {% endif %}
-
-  {% if publication.research_summary %}
-  <section class="publication-detail-section publication-research-summary" id="research-summary">
-    <h2>Research Summary</h2>
-    {% for paragraph in publication.research_summary %}
-    <p>{{ paragraph }}</p>
-    {% endfor %}
+  {% if publication.status == nil and publication.type != 'dissertation' and publication.survey_metrics == nil and publication.framework_steps %}
+  <section class="publication-paper-overview" aria-label="Paper overview">
+    <div>
+      <p class="publication-section-kicker">Paper at a glance</p>
+      <h2>Research Scope</h2>
+    </div>
+    <div class="publication-paper-metrics">
+      <div><strong>{{ publication.framework_steps.items.size }}</strong><span>Research stages</span></div>
+      {% if publication.modeling_approaches %}<div><strong>{{ publication.modeling_approaches.size }}</strong><span>Methods or application areas</span></div>{% endif %}
+      {% if publication.research_gaps %}<div><strong>{{ publication.research_gaps.size }}</strong><span>Future research directions</span></div>{% endif %}
+    </div>
   </section>
   {% endif %}
 
   {% if publication.framework_steps %}
   <section class="publication-detail-section" id="framework">
     <h2>{{ publication.framework_steps.title | default: "Research Framework" }}</h2>
-    <div class="publication-card-grid publication-card-grid-four">
+    <div class="publication-card-grid publication-card-grid-four{% if publication.framework_style == 'pipeline' or publication.status == nil and publication.type != 'dissertation' %} publication-framework-pipeline{% endif %}">
       {% for step in publication.framework_steps.items %}
       <article class="publication-info-card">
         <span>{{ forloop.index }}</span>
@@ -143,17 +212,66 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   </section>
   {% endif %}
 
+  {% if publication.key_findings %}
+  <section class="publication-detail-section" id="key-findings">
+    <p class="publication-section-kicker">Evidence at a glance</p>
+    <h2>Key Findings</h2>
+    <div class="publication-findings-grid">
+      {% for item in publication.key_findings %}
+      <article>
+        <strong>{{ item.metric }}</strong>
+        <p>{{ item.finding }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if publication.dissertation_outputs %}
+  <section class="publication-detail-section" id="dissertation-outputs">
+    <p class="publication-section-kicker">Research connected to the dissertation</p>
+    <h2>Selected Publications</h2>
+    <div class="publication-output-list">
+      {% for output in publication.dissertation_outputs %}
+        {% assign output_publication = site.data.publications | where: "slug", output.slug | first %}
+        {% if output_publication %}
+        <article>
+          <span>{{ output.connection }}</span>
+          <h3><a href="{{ '/publications/' | append: output_publication.slug | append: '/' | relative_url }}">{{ output_publication.title }}</a></h3>
+          <p>{{ output_publication.venue }} · {{ output_publication.year }}</p>
+        </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
   {% if publication.committee %}
   <section class="publication-detail-section" id="dissertation-committee">
     <h2>Dissertation Committee</h2>
     <p class="publication-section-intro">The committee brought together expertise in artificial intelligence, autonomous systems, transportation, software engineering, pervasive computing, and energy infrastructure.</p>
-    <div class="publication-committee-grid">
+    <div class="publication-committee-grid{% if publication.type == 'dissertation' %} publication-committee-grid-compact{% endif %}">
       {% for member in publication.committee %}
       <article class="publication-committee-card">
         <p class="publication-committee-role">{{ member.role }}</p>
         <h3>{% if member.profile_url %}<a href="{{ member.profile_url }}" target="_blank" rel="noopener noreferrer">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</h3>
         <p class="publication-committee-affiliation">{% if member.affiliation_url %}<a href="{{ member.affiliation_url }}" target="_blank" rel="noopener noreferrer">{{ member.affiliation }}</a>{% else %}{{ member.affiliation }}{% endif %}</p>
-        <p>{{ member.background }}</p>
+        {% if publication.type == 'dissertation' and member.expertise %}<p>{{ member.expertise }}</p>{% else %}<p>{{ member.background }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if publication.research_support %}
+  <section class="publication-detail-section publication-support" id="research-support">
+    <p class="publication-section-kicker">Acknowledgment</p>
+    <h2>Research Support</h2>
+    <div class="publication-support-grid">
+      {% for support in publication.research_support %}
+      <article>
+        <h3>{{ support.organization }}</h3>
+        <p>{{ support.detail }}</p>
       </article>
       {% endfor %}
     </div>
@@ -163,7 +281,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% if publication.modeling_approaches %}
   <section class="publication-detail-section" id="modeling-approaches">
     <h2>{{ publication.modeling_approaches_title | default: "Modeling Approaches Reviewed" }}</h2>
-    <div class="publication-card-grid">
+    <div class="publication-card-grid{% if publication.modeling_style == 'comparison' or publication.status == nil and publication.type != 'dissertation' %} publication-model-comparison{% endif %}">
       {% for approach in publication.modeling_approaches %}
       <article class="publication-info-card">
         <h3>{{ approach.name }}</h3>
@@ -177,9 +295,41 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% if publication.research_gaps %}
   <section class="publication-detail-section" id="research-gaps">
     <h2>Research Gaps</h2>
+    {% if publication.research_gap_groups %}
+    <div class="publication-gap-groups">
+      {% for group in publication.research_gap_groups %}
+      <article>
+        <h3>{{ group.theme }}</h3>
+        <p>{{ group.items }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    {% elsif publication.status == nil %}
+    <ol class="publication-research-agenda">
+      {% for gap in publication.research_gaps %}
+      <li><span>{{ gap }}</span></li>
+      {% endfor %}
+    </ol>
+    {% else %}
     <div class="publication-gap-grid">
       {% for gap in publication.research_gaps %}
       <span>{{ gap }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  {% if publication.intended_audiences %}
+  <section class="publication-detail-section" id="audience">
+    <p class="publication-section-kicker">Who this survey is for</p>
+    <h2>Designed for Research and Decision-Making</h2>
+    <div class="publication-audience-grid">
+      {% for audience in publication.intended_audiences %}
+      <article>
+        <h3>{{ audience.role }}</h3>
+        <p>{{ audience.description }}</p>
+      </article>
       {% endfor %}
     </div>
   </section>
@@ -257,29 +407,6 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     </dl>
   </section>
 
-  <section class="publication-detail-section" id="authors">
-    <h2>Authors</h2>
-    {% if publication.author_details %}
-    <ul class="publication-author-list">
-      {% for author in publication.author_details %}
-      <li>
-        {% if author.scholar_url %}
-        <a href="{{ author.scholar_url }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>
-        {% else %}
-        <span>{{ author.name }}</span>
-        {% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-    {% else %}
-    <p>
-      {% for author in publication.authors %}
-        {% if author == "Song H." or author == "Song H. H." %}<a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Sun L." %}<a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Velasquez A." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=1g3pA4cAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Vasiloff K." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=0y4KHOsAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Kamal Acharya" or author == "Acharya K." or author == "Kamal A." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Wang Z." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=dlbsvskAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Sharifi I." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=-ycaNLMAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Lad M." %}<a href="https://www.linkedin.com/in/mehullad/" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Liu Y." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=YJuZfyUAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Liu D." %}<a href="https://scholar.google.com/citations?hl=en&amp;user=qBUOUsoAAAAJ" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Raza W." %}<a href="https://scholar.google.com/citations?user=qOyRccEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Dourado C." %}<a href="https://scholar.google.com/citations?user=_HJ0aGoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Niu S." %}<a href="https://scholar.google.com/citations?user=sSWFYOsAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Hakim S. B." %}<a href="https://scholar.google.com/citations?user=KsokPmwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Da Costa K. A." %}<a href="https://scholar.google.com/citations?user=PpZNWkYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Guizani M." %}<a href="https://scholar.google.com/citations?user=RigrYkcAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Jagatheesaperumal S. K." %}<a href="https://scholar.google.com/citations?user=jUyBt7UAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "De Macedo A. R." %}<a href="https://scholar.google.com/citations?user=Wumz-bwAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "De Albuquerque V. H. C." %}<a href="https://scholar.google.com/citations?user=meI2k88AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% elsif author == "Adil M." %}<a href="https://scholar.google.com/citations?user=vGsjsaIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">{{ author }}</a>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
-      {% endfor %}
-    </p>
-    {% endif %}
-  </section>
-
   {% if publication.tags %}
   <section class="publication-detail-section" id="research-topics">
     <h2>Research Topics</h2>
@@ -311,7 +438,10 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       <a href="{{ publication.preprint_url }}" target="_blank" rel="noopener noreferrer">Preprint</a>
       {% endif %}
       {% if publication.pdf %}
-      <a href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
+      <a href="{{ publication.pdf | relative_url }}" target="_blank" rel="noopener noreferrer">{% if publication.type == 'dissertation' %}Web-Optimized PDF{% else %}PDF{% endif %}</a>
+      {% endif %}
+      {% if publication.original_pdf %}
+      <a href="{{ publication.original_pdf | relative_url }}" target="_blank" rel="noopener noreferrer">Original PDF</a>
       {% endif %}
     </p>
   </section>
@@ -378,6 +508,8 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% endif %}
   </section>
   {% endif %}
+
+  {% endunless %}
 
 </article>
 {% else %}

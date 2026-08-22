@@ -4,98 +4,88 @@ title: "Teaching in AI, Machine Learning, Programming, and Systems"
 seo_title: "AI and Machine Learning Teaching | Kamal Acharya"
 description: "Teaching profile for Kamal Acharya, covering programming, artificial intelligence, machine learning, data science, computer systems, and research mentoring."
 permalink: /teaching/
-last_modified_at: 2026-07-24
+last_modified_at: 2026-08-22
 ---
 
 <section class="teaching-hero">
-  <h1>Teaching</h1>
+  <p class="teaching-eyebrow">Teaching</p>
+  <h1>Learning Through Clarity and Practice</h1>
   <p>
-    I enjoy teaching at the intersection of computing fundamentals, AI, and applied systems.
-    My teaching emphasizes conceptual clarity, hands-on implementation, and real-world problem solving.
+    I teach computing and artificial intelligence through conceptual clarity, hands-on implementation,
+    and project-based problem solving.
   </p>
+  <p class="teaching-meta">10+ years <span aria-hidden="true">·</span> Undergraduate &amp; graduate instruction <span aria-hidden="true">·</span> Research mentoring</p>
 </section>
 
 <section class="teaching-section">
-  <h2>Teaching Experience and Mentorship</h2>
-  <p>I bring more than ten years of classroom, laboratory, and student-project experience across undergraduate, graduate, and professional training settings.</p>
-  <div class="teaching-grid">
-    <article class="teaching-card">
-      <h3>UMBC</h3>
-      <p>Graduate teaching and mentoring in computing, including laboratory instruction, assessment, and technical guidance.</p>
+  <h2>Teaching Experience</h2>
+  <div class="teaching-timeline">
+    <article class="teaching-timeline-item">
+      <p class="teaching-date">2024</p>
+      <div>
+        <h3><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a> · <a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">NSF Cybersecurity Training</a></h3>
+        <p>Teaching assistant and mentor for graduate training in artificial intelligence, machine learning, and cybersecurity.</p>
+      </div>
     </article>
-    <article class="teaching-card">
-      <h3><a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">NSF Cybersecurity Training</a></h3>
-      <p>Teaching assistant and mentor for an NSF-supported AI and machine learning cybersecurity program in 2024.</p>
+    <article class="teaching-timeline-item">
+      <p class="teaching-date">2012–2021</p>
+      <div>
+        <h3><a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a> &amp; <a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a></h3>
+        <p>University teaching in programming, computer systems, networks, databases, and applied computing.</p>
+      </div>
     </article>
-    <article class="teaching-card">
-      <h3>University Teaching</h3>
-      <p><a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a> and <a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a> · 2012–2021</p>
-    </article>
-    <article class="teaching-card">
-      <h3>Student Mentoring</h3>
-      <p>Supervised capstone projects, guided applied research, designed course materials, and mentored students in programming, databases, machine learning, and information systems.</p>
+    <article class="teaching-timeline-item">
+      <p class="teaching-date">Ongoing</p>
+      <div>
+        <h3>Student &amp; Research Mentoring</h3>
+        <p>Capstone supervision, applied research guidance, reproducible workflows, and technical communication.</p>
+      </div>
     </article>
   </div>
 </section>
 
 <section class="teaching-section">
-  <h2>Teaching Strengths</h2>
+  <h2>Teaching Areas</h2>
   <div class="teaching-grid">
     <article class="teaching-card">
-      <h3>Programming & Software Development</h3>
-      <p>C, C++, Python, PHP, data structures, and algorithmic problem-solving.</p>
+      <h3>Programming &amp; Software Development</h3>
+      <p>C, C++, Python, PHP, data structures, and algorithmic problem solving.</p>
     </article>
     <article class="teaching-card">
-      <h3>Artificial Intelligence & Data Science</h3>
-      <p>Machine learning workflows, data mining, and interpretable AI foundations.</p>
+      <h3>AI, Machine Learning &amp; Data Science</h3>
+      <p>Artificial intelligence, machine-learning workflows, data mining, and interpretable AI.</p>
     </article>
     <article class="teaching-card">
-      <h3>Computer Systems & Architecture</h3>
-      <p>Computer organization, microprocessors, and systems-level reasoning.</p>
+      <h3>Computer Systems</h3>
+      <p>Computer organization, microprocessors, digital logic, and systems-level reasoning.</p>
     </article>
     <article class="teaching-card">
-      <h3>Networks & Communication</h3>
-      <p>Data communication, computer networks, and advanced internetworking topics.</p>
+      <h3>Networks &amp; Communication</h3>
+      <p>Computer networks, data communication, communication systems, and internetworking.</p>
     </article>
   </div>
 </section>
 
-<section class="teaching-section">
-  <h2>Courses Taught</h2>
-  <ul class="teaching-list">
-    <li>Programming: C, C++, PHP, Python</li>
-    <li>Data Mining and Artificial Intelligence</li>
-    <li>Computer Organization and Microprocessors</li>
-    <li>Computer Networks and Data Communication</li>
-    <li>Digital Logic and Communication Systems</li>
-    <li>Capstone and project supervision courses</li>
+<section class="teaching-section teaching-interests">
+  <h2>Teaching Interests</h2>
+  <ul class="teaching-interest-tags" aria-label="Teaching interests">
+    <li>Machine Learning &amp; Applied AI</li>
+    <li>Neurosymbolic AI</li>
+    <li>Time-Series Forecasting</li>
+    <li>Transportation Optimization</li>
+    <li>AI Research Methods</li>
   </ul>
 </section>
 
-<section class="teaching-section">
-  <h2>Courses I Can Teach</h2>
-  <ul class="teaching-list">
-    <li>Machine Learning and Applied AI</li>
-    <li>Neurosymbolic AI (introductory and advanced seminar format)</li>
-    <li>Time Series Forecasting and Predictive Modeling</li>
-    <li>Optimization for Intelligent Transportation Systems</li>
-    <li>Research Methods for AI and Information Systems</li>
-  </ul>
-</section>
-
-<section class="teaching-section">
-  <h2>Mentoring & Instructional Approach</h2>
-  <p>
-    I structure courses to balance theory, coding practice, and project-based learning.
-    In mentoring, I focus on helping students define clear research questions, build reproducible workflows,
-    and communicate technical results effectively.
-  </p>
-</section>
-
-<section class="teaching-section">
-  <h2>Teaching Contact</h2>
-  <p>
-    For teaching invitations, guest lectures, workshops, or student mentoring collaboration:
-    <a href="{{ '/contact/' | relative_url }}">Contact</a>.
-  </p>
+<section class="teaching-section teaching-collaboration">
+  <div>
+    <p class="teaching-eyebrow">Mentoring &amp; Collaboration</p>
+    <h2>Supporting the Next Question</h2>
+    <p>
+      I help students formulate clear research questions, build reproducible computational workflows,
+      and communicate technical results effectively. I welcome guest lectures, workshops, curriculum
+      collaboration, and research mentoring opportunities.
+    </p>
+  </div>
+  <a class="home-action-link" href="{{ '/contact/' | relative_url }}">Get in Touch</a>
 </section>

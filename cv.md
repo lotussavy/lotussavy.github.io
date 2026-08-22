@@ -3,47 +3,19 @@ layout: default
 title: "Kamal Acharya Curriculum Vitae"
 description: "CV for Kamal Acharya, a Baylor University postdoctoral researcher and UMBC Information Systems Ph.D., covering research, publications, teaching, and skills."
 permalink: /cv/
-last_modified_at: 2026-08-19
+last_modified_at: 2026-08-22
 ---
 
 <section class="cv-hero">
-  <h1>Kamal Acharya</h1>
-  <p class="cv-subtitle">
-    Postdoctoral Research Associate at Baylor University · Advanced Air Mobility · Neurosymbolic AI
-  </p>
+  <p class="cv-eyebrow">Academic Profile</p>
+  <h1>Curriculum Vitae</h1>
   <p>
-    Researcher and educator focused on interpretable AI systems for transportation planning,
-    demand modeling, and optimization in safety-critical environments.
+    Research experience, education, teaching, professional service, and technical expertise in
+    interpretable AI and future transportation systems.
   </p>
   <p class="cv-hero-links">
-    <a href="{{ '/CV.pdf' | relative_url }}">Download Full CV (PDF)</a>
-    <a href="{{ '/publications/' | relative_url }}">Publications</a>
-    <a href="{{ '/research/' | relative_url }}">Research</a>
-    <a href="{{ '/service/' | relative_url }}">Service</a>
-    <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    <a class="cv-download" href="{{ '/CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download Full CV (PDF)</a>
   </p>
-</section>
-
-<section class="cv-section">
-  <h2>Profile Snapshot</h2>
-  <div class="cv-grid">
-    <article class="cv-card">
-      <h3>Postdoctoral Appointment</h3>
-      <p>Postdoctoral Research Associate in Mechanical Engineering, <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>, since August 17, 2026.</p>
-    </article>
-    <article class="cv-card">
-      <h3>Research Domains</h3>
-      <p>Trustworthy and Neurosymbolic AI, Foundation Models, Symbolic Knowledge Distillation, Multimodal Learning, and Intelligent Transportation.</p>
-    </article>
-    <article class="cv-card">
-      <h3>Academic Output</h3>
-      <p>17+ peer-reviewed publications across IEEE journals, IJCAI, AIAA, and related venues.</p>
-    </article>
-    <article class="cv-card">
-      <h3>Teaching Experience</h3>
-      <p>10+ years of university-level teaching and mentorship in computing and AI.</p>
-    </article>
-  </div>
 </section>
 
 <section class="cv-section">
@@ -73,14 +45,12 @@ last_modified_at: 2026-08-19
   <div class="cv-timeline">
     <article class="cv-item">
       <h3>Postdoctoral Research Associate · <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></h3>
-      <p>August 2026–Present · Department of Mechanical Engineering · Waco, Texas</p>
-      <p>Working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a> in the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA (Advanced Vehicle Intelligence and Autonomy) Lab</a>.</p>
+      <p>August 2026–Present · Department of Mechanical Engineering</p>
+      <p>Working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a> in the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a>.</p>
       <ul>
-        <li>Design and execute aerospace and artificial intelligence research experiments and document experimental protocols.</li>
-        <li>Analyze and validate experimental data, maintain research datasets, and implement quality-control procedures.</li>
-        <li>Prepare manuscripts, conference papers, technical reports, and research presentations.</li>
-        <li>Support externally funded proposal development and identify new research opportunities.</li>
-        <li>Mentor graduate and undergraduate researchers and contribute to laboratory research infrastructure.</li>
+        <li>Conduct research in aerospace AI, autonomy, optimization, and advanced mobility.</li>
+        <li>Develop research software, datasets, experiments, and scholarly publications.</li>
+        <li>Support proposal development and mentor graduate and undergraduate researchers.</li>
       </ul>
     </article>
     <article class="cv-item">
@@ -93,8 +63,8 @@ last_modified_at: 2026-08-19
       </ul>
     </article>
     <article class="cv-item">
-      <h3>Teaching Assistant (<a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">AI/ML Cybersecurity Program</a>) · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
-      <p>2024</p>
+      <h3>Teaching Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
+      <p>2024 · <a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">AI/ML Cybersecurity Program</a></p>
       <ul>
         <li>Supported NSF-funded graduate training in AI/ML and cybersecurity.</li>
         <li>Mentored interdisciplinary student teams on research implementation and reporting.</li>
@@ -104,54 +74,56 @@ last_modified_at: 2026-08-19
       <h3>Research Assistant · <a href="https://erau.edu/" target="_blank" rel="noopener noreferrer">Embry-Riddle Aeronautical University</a></h3>
       <p>2022–2023</p>
       <ul>
-        <li>Worked on air mobility prediction and optimization under emergency scenarios.</li>
-        <li>Built deep learning workflows for micro-level and macro-level mobility prediction.</li>
+        <li>Studied air-mobility prediction and optimization under emergency scenarios.</li>
+        <li>Built deep-learning workflows for micro- and macro-level mobility prediction.</li>
       </ul>
     </article>
   </div>
 </section>
 
 <section class="cv-section">
-  <h2>Selected Achievements</h2>
+  <h2>Honors &amp; Recognition</h2>
   <ul class="cv-list">
     <li><a href="https://ieeexplore.ieee.org/document/10709672" target="_blank" rel="noopener noreferrer">IEEE Computational Intelligence Society Publication Spotlight, 2024</a>.</li>
     <li>Outstanding Reviewer, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer">IEEE Transactions on Neural Networks and Learning Systems</a> (2024–2025).</li>
     <li><a href="https://coeit.umbc.edu/2025-talks-poster-sessions/" target="_blank" rel="noopener noreferrer">Doctoral Research Poster Award, UMBC, 2025</a>.</li>
-    <li>Leadership roles in IEEE Baltimore Section and technical conferences.</li>
     <li>IEEE Senior Member and IEEE Baltimore Section Vice-Chair Elect (2026–Present).</li>
     <li>Co-Chair, <a href="https://site.ieee.org/baltimore/technical-colloquium-landing-page/colloquium-committee/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Technical Colloquium and Professional Development Conference, 2026</a>.</li>
-    <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> travel and professional development grants (2026).</li>
+    <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Travel Grant, 2026.</li>
+    <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Professional Development Grant, 2026.</li>
     <li>Member, <a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi</a>.</li>
   </ul>
 </section>
 
 <section class="cv-section">
-  <h2>Skills</h2>
-  <div class="cv-skills">
-    <p><strong>Programming:</strong> Python, C/C++, SQL, PHP</p>
-    <p><strong>AI/ML:</strong> Deep Learning, Reinforcement Learning, Neurosymbolic AI, Time Series Forecasting</p>
-    <p><strong>Tools:</strong> PyTorch, TensorFlow, Scikit-learn, Pandas, NumPy, GeoPandas, MATLAB, Jupyter, Linux, Docker, Git, CUDA, MySQL</p>
-    <p><strong>Languages:</strong> English, Nepali, Hindi</p>
+  <h2>Technical Skills</h2>
+  <div class="cv-skills-grid">
+    <article class="cv-skill-card">
+      <h3>Programming</h3>
+      <p>Python · C/C++ · SQL · PHP</p>
+    </article>
+    <article class="cv-skill-card">
+      <h3>AI &amp; Machine Learning</h3>
+      <p>Deep Learning · Reinforcement Learning · Neurosymbolic AI · Time-Series Forecasting</p>
+    </article>
+    <article class="cv-skill-card">
+      <h3>Research Tools</h3>
+      <p>PyTorch · TensorFlow · Scikit-learn · Pandas · GeoPandas · MATLAB · Docker · Git · CUDA</p>
+    </article>
+    <article class="cv-skill-card">
+      <h3>Languages</h3>
+      <p>English · Nepali · Hindi</p>
+    </article>
   </div>
 </section>
 
 <section class="cv-section">
-  <h2>Professional Service</h2>
-  <p>See my <a href="{{ '/service/' | relative_url }}">professional service and leadership</a> for IEEE roles, conference organization, editorial work, and journal reviewing.</p>
-</section>
-
-<section class="cv-section">
-  <h2>Certificates and Credentials</h2>
-  <p>View my <a href="{{ '/gallery/' | relative_url }}">professional certificates, training credentials, and recognitions</a>.</p>
-</section>
-
-<section class="cv-section">
-  <h2>Professional Links</h2>
-  <p>
-    <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
-    <a href="https://orcid.org/0000-0002-9712-0265" target="_blank" rel="noopener noreferrer">ORCID</a> |
-    <a href="https://linkedin.com/in/lotussavy318" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-    <a href="https://github.com/lotussavy" target="_blank" rel="noopener noreferrer">GitHub</a>
-  </p>
+  <h2>Additional Information</h2>
+  <div class="cv-additional-links">
+    <a href="{{ '/teaching/' | relative_url }}">Teaching <span aria-hidden="true">→</span></a>
+    <a href="{{ '/service/' | relative_url }}">Professional Service <span aria-hidden="true">→</span></a>
+    <a href="{{ '/gallery/' | relative_url }}">Certificates &amp; Credentials <span aria-hidden="true">→</span></a>
+    <a href="{{ '/talks/' | relative_url }}">Talks &amp; Presentations <span aria-hidden="true">→</span></a>
+  </div>
   <p class="cv-last-updated">Last updated: August 2026</p>
 </section>

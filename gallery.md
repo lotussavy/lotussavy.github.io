@@ -1,21 +1,37 @@
 ---
 layout: default
-title: "Certifications and Professional Credentials"
-description: "Certificates, professional credentials, reviewer recognition, and training completed by Kamal Acharya in AI, research, and cybersecurity."
+title: "Credentials and Recognition"
+description: "Selected professional recognition, research credentials, service, and technical training completed by Kamal Acharya."
 permalink: /gallery/
 ---
 
 <section class="gallery-hero">
-  <h1>Certifications</h1>
-  <p>
-    Visual portfolio showcasing earned certificates, professional credentials, and recognitions.
-  </p>
+  <p class="gallery-eyebrow">Professional portfolio</p>
+  <h1>Credentials &amp; Recognition</h1>
+  <p>Selected honors, professional service, and training supporting my work in AI and engineering.</p>
+  <nav class="gallery-jump-nav" aria-label="Credential categories">
+    <a href="#recognition">Recognition</a>
+    <a href="#research-training">Research training</a>
+    <a href="#professional-service">Professional service</a>
+    <a href="#technical-training">Technical training</a>
+  </nav>
 </section>
 
-<section class="gallery-section">
-  {% if site.data.certificates and site.data.certificates.size > 0 %}
-  <div class="gallery-grid">
-    {% for cert in site.data.certificates %}
+{% assign gallery_categories = "recognition|Professional Recognition|recognition, research_training|Research & Ethics Training|research-training, service|Conference & Professional Service|professional-service, technical_training|Technical Training|technical-training" | split: ", " %}
+{% if site.data.certificates and site.data.certificates.size > 0 %}
+  {% for category_config in gallery_categories %}
+    {% assign category_parts = category_config | split: "|" %}
+    {% assign category_key = category_parts[0] %}
+    {% assign category_title = category_parts[1] %}
+    {% assign category_id = category_parts[2] %}
+    {% assign category_items = site.data.certificates | where: "category", category_key %}
+<section class="gallery-section gallery-category" id="{{ category_id }}">
+  <div class="gallery-section-heading">
+    <h2>{{ category_title }}</h2>
+    <span>{{ category_items.size }}</span>
+  </div>
+  <div class="gallery-grid{% if category_key == 'recognition' %} gallery-grid-featured{% elsif category_key == 'technical_training' %} gallery-grid-compact{% endif %}">
+    {% for cert in category_items %}
     {% assign cert_image = '/assets/gallery/certificates/' | append: cert.image %}
     {% assign cert_thumb_name = cert.image | split: '.' | first | append: '.webp' %}
     {% assign cert_thumb = '/assets/gallery/certificates/thumbs/' | append: cert_thumb_name %}
@@ -42,9 +58,12 @@ permalink: /gallery/
     </figure>
     {% endfor %}
   </div>
-  {% else %}
+</section>
+  {% endfor %}
+{% else %}
+<section class="gallery-section">
   <p class="gallery-note">
     No certificate images configured yet. Add records in <code>_data/certificates.yml</code>.
   </p>
-  {% endif %}
 </section>
+{% endif %}

@@ -11,7 +11,28 @@
 
     {% assign browser_title = page.seo_title | default: page.title | default: site.title %}
     <title>{{ browser_title | escape }}</title>
+    {% if page.collection == 'publications' %}
+    {% assign publication_canonical = page.canonical_url | default: page.url | absolute_url %}
+    <meta name="author" content="{{ site.author.name | escape }}">
+    <meta name="description" content="{{ page.description | escape }}">
+    <link rel="canonical" href="{{ publication_canonical }}">
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.description | escape }}">
+    <meta property="og:url" content="{{ publication_canonical }}">
+    <meta property="og:site_name" content="{{ site.title | escape }}">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="{{ site.image | absolute_url }}">
+    <meta property="og:image:alt" content="{{ site.author.name | escape }} — research publication">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | escape }}">
+    <meta name="twitter:description" content="{{ page.description | escape }}">
+    <meta name="twitter:image" content="{{ site.image | absolute_url }}">
+    {% if site.twitter.username %}<meta name="twitter:site" content="@{{ site.twitter.username | remove: '@' }}">{% endif %}
+    {% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification }}">{% endif %}
+    {% else %}
     {% seo title=false %}
+    {% endif %}
     {% include head-custom.html %}
   </head>
 

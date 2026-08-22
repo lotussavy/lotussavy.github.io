@@ -146,7 +146,24 @@
 {% endif %}
 {% if page.collection == 'publications' and page.publication_slug %}
 {% assign publication = site.data.publications | where: "slug", page.publication_slug | first %}
-{% if publication %}
+{% if publication and publication.minimal_page != true %}
+{% comment %}Highwire Press metadata used by Google Scholar and scholarly indexers.{% endcomment %}
+<meta name="citation_title" content="{{ publication.title | escape }}">
+{% if publication.author_details %}
+  {% for author in publication.author_details %}
+<meta name="citation_author" content="{{ author.name | escape }}">
+  {% endfor %}
+{% else %}
+  {% for author in publication.authors %}
+<meta name="citation_author" content="{{ author | escape }}">
+  {% endfor %}
+{% endif %}
+<meta name="citation_publication_date" content="{% if publication.publication_date %}{{ publication.publication_date | date: '%Y/%m/%d' }}{% else %}{{ publication.year }}{% endif %}">
+{% if publication.type == 'journal' %}<meta name="citation_journal_title" content="{{ publication.venue | escape }}">{% elsif publication.type == 'conference' %}<meta name="citation_conference_title" content="{{ publication.venue | escape }}">{% elsif publication.type == 'book_chapter' %}<meta name="citation_book_title" content="{{ publication.venue | escape }}">{% elsif publication.type == 'dissertation' %}<meta name="citation_dissertation_institution" content="{{ publication.venue | escape }}">{% endif %}
+{% if publication.volume %}<meta name="citation_volume" content="{{ publication.volume | escape }}">{% endif %}
+{% if publication.issue %}<meta name="citation_issue" content="{{ publication.issue | escape }}">{% endif %}
+{% if publication.pages %}{% assign citation_pages = publication.pages | replace: '–', '-' | split: '-' %}<meta name="citation_firstpage" content="{{ citation_pages | first | strip | escape }}">{% if citation_pages.size > 1 %}<meta name="citation_lastpage" content="{{ citation_pages | last | strip | escape }}">{% endif %}{% endif %}
+{% if publication.doi %}<meta name="citation_doi" content="{{ publication.doi | escape }}">{% endif %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -156,11 +173,20 @@
   "description": {{ publication.abstract_summary | default: page.description | default: publication.title | jsonify }},
   "mainEntityOfPage": "{{ page.url | absolute_url }}",
   "author": [
-    {% for author in publication.authors %}
-    { "@type": "Person", "name": {{ author | jsonify }} }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
+    {% if publication.author_details %}
+      {% for author in publication.author_details %}
+    { "@type": "Person", "name": {{ author.name | jsonify }}{% if author.scholar_url %}, "sameAs": {{ author.scholar_url | jsonify }}{% endif %}{% if author.name == site.author.name %}, "@id": "{{ site.author.url }}#person"{% endif %} }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% else %}
+      {% for author in publication.authors %}
+    { "@type": "Person", "name": {{ author | jsonify }}{% if author == site.author.name %}, "@id": "{{ site.author.url }}#person"{% endif %} }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endif %}
   ],
-  "datePublished": "{{ publication.year }}",
+  "datePublished": "{% if publication.publication_date %}{{ publication.publication_date | date: '%Y-%m-%d' }}{% else %}{{ publication.year }}{% endif %}",
+  {% if publication.volume %}"volumeNumber": {{ publication.volume | jsonify }},{% endif %}
+  {% if publication.issue %}"issueNumber": {{ publication.issue | jsonify }},{% endif %}
+  {% if publication.pages %}"pagination": {{ publication.pages | jsonify }},{% endif %}
   "isPartOf": { "@type": "{{ publication.schema_part_of | default: 'PublicationIssue' }}", "name": {{ publication.venue | jsonify }} }{% if publication.url %},
   "url": "{{ publication.url }}",
   "sameAs": "{{ publication.url }}"{% endif %}{% if publication.doi %},

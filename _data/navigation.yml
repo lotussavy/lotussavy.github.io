@@ -1,18 +1,12 @@
-- label: "🏠 Home"
-  url: /
-- label: "👤 About"
+- label: "About"
   url: /about/
-- label: "🔬 Research"
+- label: "Research"
   url: /research/
-- label: "🧑‍🏫 Teaching"
-  url: /teaching/
-- label: "🤝 Service"
-  url: /service/
-- label: "📚 Publications"
+- label: "Publications"
   url: /publications/
-- label: "📄 CV"
+- label: "CV"
   url: /cv/
-- label: "✍️ Blog"
+- label: "Blog"
   url: /blog/
-- label: "📧 Contact"
+- label: "Contact"
   url: /contact/

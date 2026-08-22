@@ -8,11 +8,24 @@ last_modified_at: 2026-07-24
 ---
 
 <section class="talks-hero">
-  <h1>Talks and Presentations</h1>
-  <p>
-    Selected conference talks, research seminars, and invited sessions on Neurosymbolic AI,
-    Advanced Air Mobility, and trustworthy AI systems.
-  </p>
+  <div class="talks-hero-main">
+    <div class="talks-hero-copy">
+      <p class="talks-eyebrow">Speaking &amp; presentations</p>
+      <h1>Ideas Shared Beyond the Page</h1>
+      <p>Presenting interpretable AI and future-mobility research through conferences, invited seminars, and visual storytelling.</p>
+    </div>
+    <div class="talks-hero-summary" aria-label="Presentation summary">
+      <div><strong>6</strong><span>Conference talks</span></div>
+      <div><strong>3</strong><span>Research posters</span></div>
+      <div><strong>2</strong><span>Invited talks</span></div>
+    </div>
+  </div>
+  <nav class="talks-jump-nav" aria-label="Presentation categories">
+    <a href="#conference-presentations">Conference Talks</a>
+    <a href="#poster-presentations">Posters</a>
+    <a href="#invited-talks">Invited Talks</a>
+    <a href="#training">Training</a>
+  </nav>
 </section>
 
 <section class="talks-section">
@@ -27,9 +40,6 @@ last_modified_at: 2026-07-24
     <p>
       Presented flight demand modeling research for airport-connected Urban Air Mobility in New York City,
       focusing on demand estimation methods for future advanced air mobility operations.
-    </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=0y4KHOsAAAAJ" target="_blank" rel="noopener noreferrer">Katherine Vasiloff</a>, <a href="https://scholar.google.com/citations?hl=en&user=dlbsvskAAAAJ" target="_blank" rel="noopener noreferrer">Zhenbo Wang</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/2026_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -47,9 +57,6 @@ last_modified_at: 2026-07-24
       Presented a comprehensive survey of neurosymbolic AI methods for Advanced Air Mobility,
       emphasizing interpretable, reliable, and safety-aware decision support.
     </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=-ycaNLMAAAAJ" target="_blank" rel="noopener noreferrer">Iman Sharifi</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IJCAI_2025_Slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.24963/ijcai.2025/1151" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -65,9 +72,6 @@ last_modified_at: 2026-07-24
     <p>
       Presented a neurosymbolic travel demand prediction method that integrates decision tree rules into
       neural network learning for more interpretable demand modeling.
-    </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IWCMC_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -85,9 +89,6 @@ last_modified_at: 2026-07-24
       Presented a data-driven enhancement of gravity models for trip demand prediction,
       connecting classical transportation modeling with modern AI methods.
     </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IEEE_CAI_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.1109/CAI64502.2025.00145" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -104,9 +105,6 @@ last_modified_at: 2026-07-24
       Presented regional air mobility demand modeling research for Tennessee, highlighting how demand
       estimation can support future AAM planning and infrastructure decisions.
     </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>, and <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/2025_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.2514/6.2025-2783" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -122,9 +120,6 @@ last_modified_at: 2026-07-24
     <p>
       Presented demand modeling research for Advanced Air Mobility, addressing opportunities and
       challenges in data-driven AAM planning.
-    </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p class="talk-links">
         <a href="{{ '/assets/slides/IEEE_Big_Data_2024.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -146,9 +141,6 @@ last_modified_at: 2026-07-24
       Presented a poster on improving pre-disaster air mobility planning
       with a neural network-accelerated genetic algorithm framework.
     </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=1g3pA4cAAAAJ" target="_blank" rel="noopener noreferrer">Alvaro Velasquez</a>, <a href="https://scholar.google.com/citations?hl=en&user=YJuZfyUAAAAJ" target="_blank" rel="noopener noreferrer">Yongxin Liu</a>, <a href="https://scholar.google.com/citations?hl=en&user=qBUOUsoAAAAJ" target="_blank" rel="noopener noreferrer">Dahai Liu</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a> and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Herbert Song</a>.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/ITSC_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
       <a href="https://doi.org/10.1109/ITSC58415.2024.10920105" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -168,12 +160,7 @@ last_modified_at: 2026-07-24
       Poster presented a data-driven view of AAM demand modeling,
       highlighting planning implications for future air mobility operations.
     </p>
-    <p>
-      <strong>Doctorate Student Award</strong> (Poster Session Winner)
-    </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
-    </p>
+    <p><span class="talk-award">Award Winner</span> Doctorate Student Award · Poster Session</p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/COEIT_2025_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
       <a href="https://ieeexplore.ieee.org/document/10825121" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -185,9 +172,6 @@ last_modified_at: 2026-07-24
     <p><strong>IJCAI 2025</strong> | Montreal, Canada | Poster Presentation</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" width="320" height="110" loading="lazy" />
-    </p>
-    <p>
-      <strong>Authors:</strong> <a href="https://scholar.google.com/citations?hl=en&user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Kamal Acharya</a>, <a href="https://scholar.google.com/citations?hl=en&user=-ycaNLMAAAAJ" target="_blank" rel="noopener noreferrer">Iman Sharifi</a>, <a href="https://www.linkedin.com/in/mehullad" target="_blank" rel="noopener noreferrer">Mehul Lad</a>, <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Liang Sun</a>, and <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Houbing Song</a>.
     </p>
     <p>
       Poster summarized the neurosymbolic AI landscape for AAM, emphasizing how symbolic reasoning
@@ -204,7 +188,7 @@ last_modified_at: 2026-07-24
 <section class="talks-section">
   <h2 id="invited-talks">Invited Talks</h2>
 
-  <article class="talk-item">
+  <article class="talk-item talk-item-featured">
     <h3>Trustworthy Neurosymbolic AI for Predictive Decision Support</h3>
     <p><strong>Population Health Sciences Special Seminar</strong> | <a href="https://weill.cornell.edu/" target="_blank" rel="noopener noreferrer">Weill Cornell Medicine</a></p>
     <p>
@@ -223,7 +207,7 @@ last_modified_at: 2026-07-24
     </p>
   </article>
 
-  <article class="talk-item">
+  <article class="talk-item talk-item-featured">
     <h3>Neurosymbolic AI for Advanced Air Mobility</h3>
     <p><strong>IS 792 Guest Lecture</strong> | <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a> Department of Information Systems</p>
     <p>
@@ -247,7 +231,7 @@ last_modified_at: 2026-07-24
 
 
 <section class="talks-section">
-  <h2>Training</h2>
+  <h2 id="training">Training</h2>
   <article class="talk-item">
     <h3>Operationalizing AI/Machine Learning for Cybersecurity Training</h3>
     <p><strong>2024 Training Session</strong> | May 20, 2024 - August 9, 2024 (12 Weeks)</p>
@@ -273,20 +257,11 @@ last_modified_at: 2026-07-24
   </article>
 </section>
 
-<section class="talks-section">
-  <h2>Speaking Topics</h2>
-  <ul class="talks-list">
-    <li>Neurosymbolic AI for interpretable and trustworthy decision-making.</li>
-    <li>Advanced Air Mobility demand modeling and infrastructure planning.</li>
-    <li>Optimization for transportation resilience and emergency response.</li>
-    <li>Bridging research and deployment in safety-critical AI systems.</li>
-  </ul>
-</section>
-
-<section class="talks-section">
-  <h2>Invite Me To Speak</h2>
-  <p>
-    I am open to invited talks, research seminars, workshops, and interdisciplinary panels.
-    For speaking requests, please use the <a href="{{ '/contact/' | relative_url }}">Contact page</a>.
-  </p>
+<section class="talks-invite">
+  <div>
+    <p class="talks-eyebrow">Speaking invitations</p>
+    <h2>Invite Me to Speak</h2>
+    <p>I am available for research seminars, workshops, and interdisciplinary panels.</p>
+  </div>
+  <a href="{{ '/contact/' | relative_url }}">Start a conversation <span aria-hidden="true">→</span></a>
 </section>
