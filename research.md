@@ -89,7 +89,7 @@ last_modified_at: 2026-08-23
 </section>
 
 <section class="research-section research-support-section">
-  <h2>Funding and Research Support</h2>
+  <h2>Research Support and Collaborating Institutions</h2>
   <div class="research-support-grid" aria-label="Research support organizations">
     <a class="research-support-card" href="https://www.nasa.gov/mission/advanced-air-mobility/" target="_blank" rel="noopener noreferrer" aria-label="NASA Advanced Air Mobility">
       <img src="{{ '/assets/logos/NASA-logo.png' | relative_url }}" alt="NASA" width="1638" height="1362" loading="lazy" decoding="async" />
@@ -108,6 +108,9 @@ last_modified_at: 2026-08-23
     </a>
     <a class="research-support-card" href="https://www.ncat.edu/cobe/transportation-institute/catm/" target="_blank" rel="noopener noreferrer" aria-label="Center for Advanced Transportation Mobility">
       <img src="{{ '/assets/logos/catm-logo.png' | relative_url }}" alt="Center for Advanced Transportation Mobility" width="682" height="314" loading="lazy" decoding="async" />
+    </a>
+    <a class="research-support-card" href="https://www.gov.br/cnpq/" target="_blank" rel="noopener noreferrer" aria-label="Research supported by CNPq">
+      <img src="{{ '/assets/logos/cnpq-logo.png' | relative_url }}" alt="CNPq" width="2306" height="710" loading="lazy" decoding="async" />
     </a>
     <a class="research-support-card" href="https://www.bgsu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Bowling Green State University">
       <img src="{{ '/assets/logos/bgsu-stacked-logo.svg' | relative_url }}" alt="Bowling Green State University" width="156" height="67" loading="lazy" decoding="async" />
