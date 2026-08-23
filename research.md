@@ -109,9 +109,6 @@ last_modified_at: 2026-08-23
     <a class="research-support-card" href="https://www.ncat.edu/cobe/transportation-institute/catm/" target="_blank" rel="noopener noreferrer" aria-label="Center for Advanced Transportation Mobility">
       <img src="{{ '/assets/logos/catm-logo.png' | relative_url }}" alt="Center for Advanced Transportation Mobility" width="682" height="314" loading="lazy" decoding="async" />
     </a>
-    <a class="research-support-card" href="https://www.gov.br/cnpq/" target="_blank" rel="noopener noreferrer" aria-label="Research supported by CNPq">
-      <img src="{{ '/assets/logos/cnpq-logo.png' | relative_url }}" alt="CNPq" width="2306" height="710" loading="lazy" decoding="async" />
-    </a>
     <a class="research-support-card" href="https://www.bgsu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Bowling Green State University">
       <img src="{{ '/assets/logos/bgsu-stacked-logo.svg' | relative_url }}" alt="Bowling Green State University" width="156" height="67" loading="lazy" decoding="async" />
     </a>
