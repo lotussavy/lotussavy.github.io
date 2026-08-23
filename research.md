@@ -4,7 +4,7 @@ title: "Research in Advanced Air Mobility and Neurosymbolic AI"
 seo_title: "AAM and Neurosymbolic AI Research | Kamal Acharya"
 description: "Research by Kamal Acharya in Advanced Air Mobility forecasting, neurosymbolic AI, trustworthy decision systems, and transportation optimization."
 permalink: /research/
-last_modified_at: 2026-08-22
+last_modified_at: 2026-08-23
 ---
 
 <section class="research-hero">
@@ -102,6 +102,15 @@ last_modified_at: 2026-08-22
     </a>
     <a class="research-support-card" href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer" aria-label="Baylor University">
       <img src="{{ '/assets/logos/baylor-university.svg' | relative_url }}" alt="Baylor University" width="250" height="46" loading="lazy" decoding="async" />
+    </a>
+    <a class="research-support-card" href="https://erau.edu/" target="_blank" rel="noopener noreferrer" aria-label="Embry-Riddle Aeronautical University">
+      <img class="research-support-logo-erau" src="{{ '/assets/logos/embry-riddle-aeronautical-university.svg' | relative_url }}" alt="Embry-Riddle Aeronautical University" width="242" height="40" loading="lazy" decoding="async" />
+    </a>
+    <a class="research-support-card" href="https://www.ncat.edu/cobe/transportation-institute/catm/" target="_blank" rel="noopener noreferrer" aria-label="Center for Advanced Transportation Mobility">
+      <img src="{{ '/assets/logos/catm-logo.png' | relative_url }}" alt="Center for Advanced Transportation Mobility" width="682" height="314" loading="lazy" decoding="async" />
+    </a>
+    <a class="research-support-card" href="https://www.bgsu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Bowling Green State University">
+      <img src="{{ '/assets/logos/bgsu-stacked-logo.svg' | relative_url }}" alt="Bowling Green State University" width="156" height="67" loading="lazy" decoding="async" />
     </a>
   </div>
 </section>

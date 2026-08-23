@@ -1068,9 +1068,13 @@ button:focus-visible {
 
 .research-support-card img {
   width: 100%;
-  max-width: 120px;
+  max-width: 140px;
   height: 76px;
   object-fit: contain;
+}
+
+.research-support-card .research-support-logo-erau {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(39%) saturate(1878%) hue-rotate(169deg) brightness(91%) contrast(101%);
 }
 
 .research-collaboration {
@@ -1107,7 +1111,7 @@ button:focus-visible {
   }
 
   .research-support-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
