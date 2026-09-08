@@ -4,7 +4,7 @@ title: "Professional Service and Leadership"
 seo_title: "Professional Service and IEEE Leadership | Kamal Acharya"
 description: "IEEE leadership, conference organization, editorial service, and peer review by Kamal Acharya."
 permalink: /service/
-last_modified_at: 2026-08-22
+last_modified_at: 2026-09-07
 ---
 
 <section class="service-hero">
@@ -83,15 +83,16 @@ last_modified_at: 2026-08-22
 <section class="service-section">
   <h2>Selected Journal Reviewing</h2>
   <div class="service-review-grid">
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer">IEEE Transactions on Neural Networks and Learning Systems</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9078688" target="_blank" rel="noopener noreferrer">IEEE Transactions on Artificial Intelligence</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Transportation Systems</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank" rel="noopener noreferrer">IEEE Internet of Things Journal</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=30" target="_blank" rel="noopener noreferrer">IEEE Transactions on Consumer Electronics</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6745853" target="_blank" rel="noopener noreferrer">IEEE Systems, Man, and Cybernetics Magazine</a>
-    <a href="https://journalofbigdata.springeropen.com/" target="_blank" rel="noopener noreferrer">Journal of Big Data</a>
-    <a href="https://link.springer.com/journal/13369" target="_blank" rel="noopener noreferrer">Arabian Journal for Science and Engineering</a>
-    <a href="https://itiis.org/" target="_blank" rel="noopener noreferrer">KSII Transactions on Internet and Information Systems</a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="64 papers reviewed">64</span><span>IEEE Transactions on Intelligent Transportation Systems</span></a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="22 papers reviewed">22</span><span>IEEE Transactions on Neural Networks and Learning Systems</span></a>
+    <a href="https://itiis.org/" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="18 papers reviewed">18</span><span>KSII Transactions on Internet and Information Systems</span></a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=30" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="11 papers reviewed">11</span><span>IEEE Transactions on Consumer Electronics</span></a>
+    <a href="https://link.springer.com/journal/13369" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="10 papers reviewed">10</span><span>Arabian Journal for Science and Engineering</span></a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="4 papers reviewed">4</span><span>IEEE Internet of Things Journal</span></a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9078688" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="4 papers reviewed">4</span><span>IEEE Transactions on Artificial Intelligence</span></a>
+    <a href="https://standards.ieee.org/about/policies/opcom/commag/" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="2 papers reviewed">2</span><span>IEEE Communications Standards Magazine</span></a>
+    <a href="https://journalofbigdata.springeropen.com/" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="2 papers reviewed">2</span><span>Journal of Big Data</span></a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6731005" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="1 paper reviewed">1</span><span>IEEE Systems, Man, and Cybernetics Magazine</span></a>
   </div>
 </section>
 

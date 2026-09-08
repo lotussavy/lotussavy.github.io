@@ -4,7 +4,7 @@ title: "Talks and Presentations on AI and Advanced Air Mobility"
 seo_title: "AI and Advanced Air Mobility Talks | Kamal Acharya"
 description: "Selected talks, posters, and invited presentations by Kamal Acharya on neurosymbolic AI, Advanced Air Mobility, optimization, and trustworthy AI systems."
 permalink: /talks/
-last_modified_at: 2026-07-24
+last_modified_at: 2026-09-07
 ---
 
 <section class="talks-hero">
@@ -17,7 +17,7 @@ last_modified_at: 2026-07-24
     <div class="talks-hero-summary" aria-label="Presentation summary">
       <div><strong>6</strong><span>Conference talks</span></div>
       <div><strong>3</strong><span>Research posters</span></div>
-      <div><strong>2</strong><span>Invited talks</span></div>
+      <div><strong>3</strong><span>Invited talks</span></div>
     </div>
   </div>
   <nav class="talks-jump-nav" aria-label="Presentation categories">
@@ -37,10 +37,6 @@ last_modified_at: 2026-07-24
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" width="320" height="110" loading="lazy" />
     </p>
-    <p>
-      Presented flight demand modeling research for airport-connected Urban Air Mobility in New York City,
-      focusing on demand estimation methods for future advanced air mobility operations.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/2026_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.2514/6.2026-1475" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -52,10 +48,6 @@ last_modified_at: 2026-07-24
     <p><strong>IJCAI 2025</strong> | Montreal, Canada | Conference Presentation</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" width="320" height="110" loading="lazy" />
-    </p>
-    <p>
-      Presented a comprehensive survey of neurosymbolic AI methods for Advanced Air Mobility,
-      emphasizing interpretable, reliable, and safety-aware decision support.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IJCAI_2025_Slides.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -69,10 +61,6 @@ last_modified_at: 2026-07-24
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IWCMC.png' | relative_url }}" alt="IWCMC logo" width="320" height="110" loading="lazy" />
     </p>
-    <p>
-      Presented a neurosymbolic travel demand prediction method that integrates decision tree rules into
-      neural network learning for more interpretable demand modeling.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IWCMC_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.1109/IWCMC65282.2025.11059465" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -84,10 +72,6 @@ last_modified_at: 2026-07-24
     <p><strong>IEEE CAI 2025</strong> | Santa Clara, CA, USA | Conference Presentation</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-CAI.png' | relative_url }}" alt="IEEE CAI logo" width="320" height="110" loading="lazy" />
-    </p>
-    <p>
-      Presented a data-driven enhancement of gravity models for trip demand prediction,
-      connecting classical transportation modeling with modern AI methods.
     </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/IEEE_CAI_2025.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -101,10 +85,6 @@ last_modified_at: 2026-07-24
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" width="320" height="110" loading="lazy" />
     </p>
-    <p>
-      Presented regional air mobility demand modeling research for Tennessee, highlighting how demand
-      estimation can support future AAM planning and infrastructure decisions.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/2025_AIAA_SciTech.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
       <a href="https://doi.org/10.2514/6.2025-2783" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -116,10 +96,6 @@ last_modified_at: 2026-07-24
     <p><strong>IEEE BigData 2024</strong> | Washington, DC, USA | Conference Presentation</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-BigData.jpeg' | relative_url }}" alt="IEEE BigData logo" width="320" height="110" loading="lazy" />
-    </p>
-    <p>
-      Presented demand modeling research for Advanced Air Mobility, addressing opportunities and
-      challenges in data-driven AAM planning.
     </p>
     <p class="talk-links">
         <a href="{{ '/assets/slides/IEEE_Big_Data_2024.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
@@ -137,10 +113,6 @@ last_modified_at: 2026-07-24
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/ITSC-logo.png' | relative_url }}" alt="27th IEEE ITSC logo" width="320" height="110" loading="lazy" />
     </p>
-    <p>
-      Presented a poster on improving pre-disaster air mobility planning
-      with a neural network-accelerated genetic algorithm framework.
-    </p>
     <p class="talk-links">
       <a href="{{ '/assets/slides/ITSC_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
       <a href="https://doi.org/10.1109/ITSC58415.2024.10920105" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -152,13 +124,6 @@ last_modified_at: 2026-07-24
     <p><strong>COEIT Research Day 2025</strong> | April 11, 2025 | Poster Presentation</p>
     <p>
       <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" /></a>
-    </p>
-    <p>
-      Presented in the afternoon poster session at the second COEIT Research Day.
-    </p>
-    <p>
-      Poster presented a data-driven view of AAM demand modeling,
-      highlighting planning implications for future air mobility operations.
     </p>
     <p><span class="talk-award">Award Winner</span> Doctorate Student Award · Poster Session</p>
     <p class="talk-links">
@@ -173,10 +138,6 @@ last_modified_at: 2026-07-24
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" width="320" height="110" loading="lazy" />
     </p>
-    <p>
-      Poster summarized the neurosymbolic AI landscape for AAM, emphasizing how symbolic reasoning
-      and machine learning can be combined for interpretable and reliable decision support.
-    </p>
     <p class="talk-links">
         <a href="{{ '/assets/slides/IJCAI_Poster.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Poster</a>
       <a href="https://doi.org/10.24963/ijcai.2025/1151" target="_blank" rel="noopener noreferrer">Publication</a>
@@ -189,15 +150,24 @@ last_modified_at: 2026-07-24
   <h2 id="invited-talks">Invited Talks</h2>
 
   <article class="talk-item talk-item-featured">
+    <h3>Neurosymbolic AI (NSAI): Learning Meets Reasoning</h3>
+    <p><strong><a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">Advanced Vehicle Intelligence and Autonomy (AVIA) Lab</a> Invited Talk</strong> | September 4, 2026 | <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></p>
+    <p>
+      <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/baylor-university.svg' | relative_url }}" alt="Baylor University logo" width="320" height="110" loading="lazy" /></a>
+    </p>
+    <p>
+      Hosted by <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a>.
+    </p>
+    <p class="talk-links">
+      <a href="{{ '/assets/slides/AVIA_Neurosymbolic_AI_2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
+    </p>
+  </article>
+
+  <article class="talk-item talk-item-featured">
     <h3>Trustworthy Neurosymbolic AI for Predictive Decision Support</h3>
     <p><strong>Population Health Sciences Special Seminar</strong> | <a href="https://weill.cornell.edu/" target="_blank" rel="noopener noreferrer">Weill Cornell Medicine</a></p>
     <p>
       <a href="https://weill.cornell.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/weill-cornell-population-health-sciences.png' | relative_url }}" alt="Weill Cornell Medicine Population Health Sciences logo" width="320" height="110" loading="lazy" /></a>
-    </p>
-    <p>
-      Delivered a special seminar on trustworthy neurosymbolic AI for predictive decision support,
-      focusing on interpretable, reliable, and knowledge-guided AI methods for high-stakes
-      decision-making contexts.
     </p>
     <p>
       Hosted by <a href="https://scholar.google.com/citations?user=1nlecg4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Yiye Zhang</a>.
@@ -214,13 +184,7 @@ last_modified_at: 2026-07-24
       <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" /></a>
     </p>
     <p>
-      Delivered a guest lecture on neurosymbolic methods for Advanced Air Mobility,
-      focusing on symbolic reasoning and machine learning approaches for reliability,
-      demand modeling, and future AAM operations.
-    </p>
-    <p>
-      Invited by <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing Herbert Song</a>; session included active student discussion
-      on research and deployment directions in trustworthy AAM systems.
+      Invited by <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing Herbert Song</a>.
     </p>
        <p class="talk-links">
       <a href="{{ '/assets/slides/UMBCInvited.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>

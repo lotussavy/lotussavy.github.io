@@ -5,7 +5,7 @@ permalink: /about/
 description: "About Kamal Acharya, a Baylor University postdoctoral researcher working in Advanced Air Mobility, neurosymbolic AI, forecasting, and trustworthy AI."
 robots: index,follow
 sitemap: true
-last_modified_at: 2026-08-22
+last_modified_at: 2026-09-07
 ---
 
 <section class="about-hero">
@@ -25,7 +25,7 @@ last_modified_at: 2026-08-22
         I am a Postdoctoral Research Associate in Mechanical Engineering at
         <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a>
         and a member of the
-        <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a>.
+        <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">Advanced Vehicle Intelligence and Autonomy (AVIA) Lab</a>.
         I develop interpretable AI and forecasting methods for advanced mobility and autonomous aerospace systems.
       </p>
       <p>

@@ -3,7 +3,7 @@ layout: default
 title: "Kamal Acharya Curriculum Vitae"
 description: "CV for Kamal Acharya, a Baylor University postdoctoral researcher and UMBC Information Systems Ph.D., covering research, publications, teaching, and skills."
 permalink: /cv/
-last_modified_at: 2026-08-22
+last_modified_at: 2026-09-07
 ---
 
 <section class="cv-hero">
@@ -46,7 +46,7 @@ last_modified_at: 2026-08-22
     <article class="cv-item">
       <h3>Postdoctoral Research Associate · <a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a></h3>
       <p>August 2026–Present · Department of Mechanical Engineering</p>
-      <p>Working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a> in the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">AVIA Lab</a>.</p>
+      <p>Working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a> in the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">Advanced Vehicle Intelligence and Autonomy (AVIA) Lab</a>.</p>
       <ul>
         <li>Conduct research in aerospace AI, autonomy, optimization, and advanced mobility.</li>
         <li>Develop research software, datasets, experiments, and scholarly publications.</li>

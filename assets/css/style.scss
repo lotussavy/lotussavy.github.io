@@ -3196,6 +3196,7 @@ button:focus-visible {
 .service-review-grid a {
   display: flex;
   align-items: center;
+  gap: 12px;
   min-height: 58px;
   padding: 12px 14px;
   border: 1px solid #dbe7f5;
@@ -3206,6 +3207,20 @@ button:focus-visible {
   line-height: 1.4;
   text-decoration: none;
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.service-review-count {
+  display: inline-flex;
+  flex: 0 0 38px;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  border-radius: 8px;
+  background: #eaf3fb;
+  color: #173a62;
+  font-size: 0.95rem;
+  font-weight: 750;
+  line-height: 1;
 }
 
 .service-review-grid a:hover {
