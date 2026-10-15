@@ -4,14 +4,15 @@ seo_title: "UAM Demand Forecasting in Chengdu"
 title: A Demand Forecasting Model for Urban Air Mobility in Chengdu, China
 date: '2024-09-26'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A readable walkthrough of a four-step UAM demand forecasting model for Chengdu, China, with a focus on modal split, shared operations, and 2030 demand.
 image: /assets/blog/a-demand-forecasting-model-for-urban-air-mobility-in-chengdu-china/cover.png
 source_url: https://doi.org/10.1016/j.geits.2024.100173
+post_type: "Paper analysis"
 ---
 
 Urban Air Mobility can only become a real transportation service if demand is strong enough to support operations. Aircraft performance matters, but so do trip distance, cost, access to vertiports, and whether travelers would choose UAM over cars or public transport.

@@ -4,13 +4,16 @@ seo_title: "Why Gravity Models Miss Temporal Migration"
 title: Why Gravity Models Struggle to Capture Temporal Migration Dynamics
 date: '2024-10-22'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: A clear explanation of why gravity models can fit spatial migration patterns well but fail to predict how migration changes over time.
 image: /assets/blog/why-gravity-models-struggle-to-capture-temporal-migration-dynamics/cover.png
 source_url: https://doi.org/10.1057/s41599-022-01067-x
+post_type: "Paper analysis"
+related_posts:
+  - "/blog/2024/08/25/gravity-model-in-transportation-planning/"
 ---
 
 Gravity models are powerful for explaining spatial interaction. They can show why migration flows are larger between some country pairs than others: larger populations, higher income differences, shorter distances, shared language, colonial ties, or other structural factors.

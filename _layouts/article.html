@@ -13,6 +13,12 @@ layout: default
           {% for category in page.categories %}
             <span class="category-tag">{{ category }}</span>
           {% endfor %}
+          {% if page.post_type %}
+            <span class="category-tag format-label">{{ page.post_type }}</span>
+          {% endif %}
+          {% if page.last_modified_at %}
+            <span class="article-updated">Updated {{ page.last_modified_at | date: "%B %d, %Y" }}</span>
+          {% endif %}
         </div>
       {% endif %}
     </div>
@@ -21,6 +27,20 @@ layout: default
   <div class="article-content">
     {{ content }}
   </div>
+
+  {% if page.related_posts %}
+  <section class="related-articles" aria-labelledby="related-articles-title">
+    <h2 id="related-articles-title">Related research notes</h2>
+    <ul>
+      {% for related_url in page.related_posts %}
+        {% assign related_post = site.posts | where: "url", related_url | first %}
+        {% if related_post %}
+        <li><a href="{{ related_post.url | relative_url }}">{{ related_post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
   <footer class="article-footer">
     <div class="article-navigation">

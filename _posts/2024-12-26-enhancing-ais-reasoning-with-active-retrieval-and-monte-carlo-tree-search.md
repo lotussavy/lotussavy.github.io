@@ -4,13 +4,14 @@ seo_title: "Active Retrieval and MCTS for AI Reasoning"
 title: Enhancing AI's Reasoning with Active Retrieval and Monte Carlo Tree Search
 date: '2024-12-26'
 categories:
-- Explainable AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: A clear explanation of AR-MCTS, a framework that improves multimodal reasoning by combining active retrieval, Monte Carlo Tree Search, and process rewards.
 image: /assets/blog/enhancing-ais-reasoning-with-active-retrieval-and-monte-carlo-tree-search/cover.png
 source_url: https://arxiv.org/abs/2412.14835
+post_type: "Paper analysis"
 ---
 
 Large language models and multimodal models can answer many questions, but multi-step reasoning remains difficult. The challenge becomes even harder when the task combines text and images, requires external knowledge, and needs several intermediate decisions before the final answer.

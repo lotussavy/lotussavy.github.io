@@ -4,14 +4,15 @@ seo_title: "Air Taxi Demand Prediction with Machine Learning"
 title: Predicting demand for air taxi urban aviation services using machine learning algorithms
 date: '2024-04-22'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: A practical look at how machine learning can classify air taxi demand across locations and time periods using ride and weather data.
 image: /assets/blog/predicting-demand-for-air-taxi-urban-aviation-services-using-machine-learning-algorithms/cover.jpg
 source_url: https://doi.org/10.1016/j.jairtraman.2021.102043
+post_type: "Paper analysis"
 ---
 
 Air taxi planning is not only about designing aircraft or building vertiports. It also depends on a question operators will have to answer every hour: where will demand appear next?

@@ -4,13 +4,14 @@ seo_title: "Structural Fire Risk Prediction for City Properties"
 title: Data-Driven Structural Fire Risk Prediction for City Properties
 date: '2024-08-06'
 categories:
-- Technical Articles
+- "Machine Learning & Modeling"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: "Learn how machine learning helps fire departments prioritize inspections using incidents, violations, inspections, and property data."
 image: /assets/blog/data-driven-structural-fire-risk-prediction-for-city-properties/cover.png
 source_url: https://doi.org/10.1609/aaai.v38i21.30325
+post_type: "Paper analysis"
 ---
 
 Fire departments do not have unlimited inspection capacity. They have to decide which buildings to inspect first, often across tens of thousands of properties, while fire incidents remain rare and difficult to predict.

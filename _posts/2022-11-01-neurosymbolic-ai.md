@@ -3,13 +3,14 @@ layout: article
 title: Neurosymbolic AI
 date: '2022-11-01'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 11
 sitemap: true
 robots: index,follow
 description: "An introduction to neurosymbolic AI and how neural networks and symbolic reasoning support explainability, data efficiency, and trustworthy decisions."
 image: /assets/blog/neurosymbolic-ai/cover.jpeg
 source_url: https://medium.com/@lotussavy/neurosymbolic-ai-752ca6aede39
+post_type: "Technical explainer"
 ---
 
 Artificial intelligence has always had two competing instincts.

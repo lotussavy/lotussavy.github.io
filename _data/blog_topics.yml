@@ -1,19 +1,11 @@
-- title: "Advanced Air Mobility"
+- title: "AAM & Mobility Systems"
   slug: "advanced-air-mobility"
-  description: "Demand modeling, regional air mobility, air taxi planning, OD estimation, and transportation forecasting."
+  description: "Demand modeling, regional and urban air mobility, infrastructure planning, and operational systems."
 
-- title: "Neurosymbolic AI"
+- title: "Neurosymbolic & Trustworthy AI"
   slug: "neurosymbolic-ai"
-  description: "Hybrid neural-symbolic systems, rule learning, symbolic regression, and trustworthy reasoning."
+  description: "Neural-symbolic learning, interpretable reasoning, knowledge distillation, and explainable AI."
 
-- title: "Machine Learning"
+- title: "Machine Learning & Modeling"
   slug: "machine-learning"
-  description: "Deep learning, forecasting models, decision trees, knowledge distillation, and graph neural networks."
-
-- title: "Explainable AI"
-  slug: "explainable-ai"
-  description: "Interpretability, cybersecurity, trustworthy AI, and decision models that expose their reasoning."
-
-- title: "Technical Articles"
-  slug: "technical-articles"
-  description: "Research notes, paper summaries, and technical explainers that span multiple AI and mobility topics."
+  description: "Forecasting, deep learning, decision models, graph methods, and data-driven analysis."

@@ -4,8 +4,8 @@ seo_title: "SVR for Flight Demand Forecasting"
 title: Support vector regression model for flight demand forecasting
 date: '2024-04-20'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 6
 sitemap: true
 robots: index,follow
@@ -13,6 +13,7 @@ description: A readable explanation of using support vector regression to foreca
   final airline bookings from early pre-sale booking patterns.
 image: /assets/blog/support-vector-regression-model-for-flight-demand-forecasting/cover.png
 source_url: https://medium.com/@lotussavy/support-vector-regression-model-for-%EF%AC%82ight-demand-forecasting-5fbd97b6b519
+post_type: "Paper analysis"
 ---
 
 Flight demand forecasting is one of the quiet engines behind airline revenue management.

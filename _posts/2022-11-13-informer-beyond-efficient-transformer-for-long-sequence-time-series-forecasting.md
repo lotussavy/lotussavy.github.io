@@ -4,13 +4,14 @@ seo_title: "Informer for Long-Horizon Time-Series Forecasting"
 title: "Informer: Efficient Transformers for Long Sequence Time-Series Forecasting"
 date: '2022-11-13'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 10
 sitemap: true
 robots: index,follow
 description: "Learn how Informer uses ProbSparse attention, attention distilling, and a generative decoder for efficient long-horizon time-series forecasting."
 image: /assets/blog/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting/cover.png
 source_url: https://medium.com/@lotussavy/informer-beyond-efficient-transformer-for-long-sequence-time-series-forecasting-141488c6e22e
+post_type: "Paper analysis"
 ---
 
 Long sequence time-series forecasting is one of those problems that looks simple until the prediction horizon becomes long.

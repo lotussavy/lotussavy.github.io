@@ -4,13 +4,16 @@ seo_title: "Challenges in Estimating Origin-Destination Flows"
 title: Understanding the Challenges of Estimating Traffic Origin-Destination (OD) Flows
 date: '2024-08-16'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear explanation of why traffic origin-destination flow estimation is difficult, especially in large congested networks with limited observations.
 image: /assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/cover.png
 source_url: https://doi.org/10.1016/j.trc.2019.05.014
+post_type: "Technical explainer"
+related_posts:
+  - "/blog/2024/09/26/a-data-driven-method-for-od-matrix-estimation/"
 ---
 
 Origin-destination flow estimation sounds simple: find out where trips start, where they end, and how those trips change over time. In practice, it is one of the hardest problems in transportation modeling.

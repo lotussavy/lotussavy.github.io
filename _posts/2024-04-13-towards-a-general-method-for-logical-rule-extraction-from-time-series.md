@@ -4,7 +4,7 @@ seo_title: "Logical Rule Extraction from Time Series"
 title: Towards a General Method for Logical Rule Extraction from Time Series
 date: '2024-04-13'
 categories:
-- Technical Articles
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 5
 sitemap: true
 robots: index,follow
@@ -12,6 +12,7 @@ description: A readable explanation of a general pipeline for turning multivaria
   time series into timelines and extracting temporal logical rules from them.
 image: /assets/blog/towards-a-general-method-for-logical-rule-extraction-from-time-series/cover.png
 source_url: https://medium.com/@lotussavy/towards-a-general-method-for-logical-rule-extraction-from-time-series-ca2f7bdc1014
+post_type: "Paper analysis"
 ---
 
 Time series data is everywhere: patient histories, weather measurements, factory sensors, smart homes, water-quality monitoring, financial signals, and more. But raw time series are hard to explain. A long sequence of numbers may show something important, yet the pattern is often buried under noise, scale differences, irregular timing, and domain-specific details.

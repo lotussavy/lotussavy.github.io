@@ -4,14 +4,15 @@ seo_title: "Symbolic Models with Deep-Learning Inductive Biases"
 title: Discovering Symbolic Models from Deep Learning with Inductive Biases
 date: '2024-04-09'
 categories:
-- Neurosymbolic AI
-- Machine Learning
+- "Neurosymbolic & Trustworthy AI"
+- "Machine Learning & Modeling"
 reading_time: 8
 sitemap: true
 robots: index,follow
 description: "Learn how inductive biases, sparse latent spaces, graph networks, and symbolic regression extract equations from deep models."
 image: /assets/blog/discovering-symbolic-models-from-deep-learning-with-inductive-biases/cover.png
 source_url: https://medium.com/@lotussavy/discovering-symbolic-models-from-deep-learning-with-inductive-biases-0f286ff29d76
+post_type: "Paper analysis"
 ---
 
 Deep learning is powerful, but it often gives us models that are difficult to understand. Symbolic models are the opposite: they can be compact, interpretable, and general, but discovering them from data is hard.

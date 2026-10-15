@@ -3,13 +3,14 @@ layout: article
 title: Demand and Capacity Modeling for Advanced Air Mobility
 date: '2024-06-13'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: "Explore a New York City AAM simulation connecting demand, scheduling, fleet size, vertiport capacity, and passenger delay."
 image: /assets/blog/demand-and-capacity-modeling-for-advanced-air-mobility/cover.png
 source_url: https://doi.org/10.2514/6.2021-2381
+post_type: "Paper analysis"
 ---
 
 Advanced Air Mobility will not succeed just because an eVTOL aircraft can fly. It has to work as a transportation system. That means passengers must be picked up on time, aircraft must be available where demand appears, vertiports must have enough capacity, and the airspace must handle the resulting traffic.

@@ -4,14 +4,17 @@ seo_title: "Urban Air Mobility Demand Forecasting in Milan"
 title: 'Urban Air Mobility Demand Forecasting: Modeling Evidence from the Case Study of Milan (Italy)'
 date: '2025-09-26'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: "Explore Milan UAM demand forecasts for airport shuttles, intercity services, air taxis, vertiport scenarios, fares, and traveler preferences."
 image: /assets/blog/urban-air-mobility-demand-forecasting-modeling-evidence-from-the-case-study-of-milan-italy/cover.png
 source_url: https://doi.org/10.1186/s12544-024-00700-x
+post_type: "Paper analysis"
+related_posts:
+  - "/blog/2025/09/26/urban-air-mobility-uam-airport-shuttles-or-city-taxis/"
 ---
 
 Urban Air Mobility is often discussed as if the aircraft are the hard part. But a working UAM market depends on a different question: who will actually choose it over existing modes?

@@ -4,13 +4,15 @@ seo_title: "Value of Statistical Life in Economic Analysis"
 title: Guidance on Value of Statistical Life (VSL) in Economic Analysis
 date: '2024-06-06'
 categories:
-- Technical Articles
+- "AAM & Mobility Systems"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: A clear explanation of how the U.S. Department of Transportation uses the Value of a Statistical Life to measure safety benefits in economic analysis.
 image: /assets/blog/guidance-on-value-of-statistical-life-vsl-in-economic-analysis/cover.png
 source_url: https://www.transportation.gov/office-policy/transportation-policy/revised-departmental-guidance-on-valuation-of-a-statistical-life-in-economic-analysis
+post_type: "Technical explainer"
+last_modified_at: "2026-10-15"
 ---
 
 Safety rules often prevent tragedies that never happen. A stronger vehicle standard, safer roadway design, better aviation procedure, or improved rail regulation may reduce the probability of fatal injury across millions of people. The challenge for economic analysis is that those benefits are real, but they are probabilistic.
@@ -40,7 +42,7 @@ The U.S. Department of Transportation uses VSL in benefit-cost analysis for regu
 
 ## The Current DOT VSL
 
-Under DOT's current guidance page, the VSL estimate for analyses using a 2025 base year is `$14.2 million`. The same page lists prior-year values, including `$13.7 million` for 2024, `$13.2 million` for 2023, and `$12.5 million` for 2022.
+Under the U.S. Department of Transportation guidance effective March 20, 2026, the VSL estimate for analyses using a 2025 base year is `$14.2 million`. The same page lists prior-year values, including `$13.7 million` for 2024, `$13.2 million` for 2023, and `$12.5 million` for 2022. Check the DOT table when preparing a new analysis because the applicable value depends on its base year.
 
 These values are updated because willingness to pay for safety changes over time with prices and real income. When analysts conduct a benefit-cost analysis, they should use the VSL value corresponding to the base year of the analysis, not simply reuse an older number.
 

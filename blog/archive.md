@@ -36,6 +36,7 @@ sitemap: true
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         {% if post.categories and post.categories.size > 0 %}
         <span>{{ post.categories | first }}</span>
+        {% if post.post_type %}<span class="format-label">{{ post.post_type }}</span>{% endif %}
         {% endif %}
       </li>
       {% if forloop.last %}</ul>{% endif %}

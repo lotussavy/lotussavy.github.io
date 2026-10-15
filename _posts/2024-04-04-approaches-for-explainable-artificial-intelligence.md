@@ -3,13 +3,14 @@ layout: article
 title: Approaches for Explainable Artificial Intelligence
 date: '2024-04-04'
 categories:
-- Explainable AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "Learn about the RVS framework for explainable AI, including feature, design, representation, training-data, and stakeholder explanations."
 image: /assets/blog/approaches-for-explainable-artificial-intelligence/cover.png
 source_url: https://medium.com/@lotussavy/approaches-for-explainable-artificial-intelligence-93c2d0b6b31b
+post_type: "Paper analysis"
 ---
 
 Explainable AI is often treated as a technical problem: take a black-box model, compute feature importance, show a saliency map, or generate a counterfactual. Those tools are useful, but they are not the whole story.

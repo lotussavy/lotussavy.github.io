@@ -4,13 +4,14 @@ seo_title: "Technology Predictions for 2035–2049"
 title: Predictions for abundant, awesome, technology-based, Possible Tomorrows (2035-2049)
 date: '2024-04-22'
 categories:
-- Technical Articles
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 5
 sitemap: true
 robots: index,follow
 description: A more grounded look at Vinod Khosla's TED 2024 vision for technology-driven possible tomorrows between 2035 and 2049.
 image: /assets/blog/predictions-for-abundant-awesome-technology-based-possible-tomorrows-20352049/cover.png
 source_url: https://www.khoslaventures.com/posts/ted-12-predictions-for-the-future-of-technology
+post_type: "Research perspective"
 ---
 
 Vinod Khosla's TED 2024 talk is not a cautious forecast. It is a deliberately bold vision of what the world could look like between 2035 and 2049 if AI, robotics, climate technology, biotechnology, and entrepreneurial risk-taking keep compounding.

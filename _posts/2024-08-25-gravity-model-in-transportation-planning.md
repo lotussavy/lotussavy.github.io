@@ -3,13 +3,16 @@ layout: article
 title: Gravity Model in Transportation Planning
 date: '2024-08-25'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: "Learn the gravity model for transportation planning, including trip distribution, impedance, calibration, applications, and limitations."
 image: /assets/blog/gravity-model-in-transportation-planning/cover.png
 source_url: https://tfresource.org/topics/Trip_distribution
+post_type: "Technical explainer"
+related_posts:
+  - "/blog/2024/10/22/why-gravity-models-struggle-to-capture-temporal-migration-dynamics/"
 ---
 
 The gravity model is one of the classic tools in transportation planning. It helps answer a simple but important question: once we know how many trips are produced in each zone and how many trips are attracted to each zone, how should those trips be distributed between origins and destinations?

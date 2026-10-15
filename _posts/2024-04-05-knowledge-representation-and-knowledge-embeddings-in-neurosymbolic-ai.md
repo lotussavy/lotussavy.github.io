@@ -4,13 +4,14 @@ seo_title: "Knowledge Representation in Neurosymbolic AI"
 title: Knowledge Representation and Knowledge Embeddings in Neurosymbolic AI
 date: '2024-04-05'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "A practical explanation of symbolic knowledge representations and where that knowledge can be embedded inside neuro-symbolic AI systems."
 image: /assets/blog/knowledge-representation-and-knowledge-embeddings-in-neurosymbolic-ai/cover.png
 source_url: https://medium.com/@lotussavy/knowledge-representation-and-knowledge-embeddings-in-neurosymbolic-ai-7c9109c4c4bf
+post_type: "Technical explainer"
 ---
 
 Neurosymbolic AI depends on a simple but deep question:

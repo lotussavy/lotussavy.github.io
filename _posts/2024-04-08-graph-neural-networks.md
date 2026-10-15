@@ -3,13 +3,14 @@ layout: article
 title: Graph Neural Networks
 date: '2024-04-08'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "A practical introduction to graph neural networks, message passing, graph network blocks, and relational inductive bias for learning over structured data."
 image: /assets/blog/graph-neural-networks/cover.png
 source_url: https://medium.com/@lotussavy/graph-neural-networks-ab52ecee9d9b
+post_type: "Technical explainer"
 ---
 
 Many important problems are not naturally arranged as rows in a table or pixels in an image. They are made of entities and relationships.

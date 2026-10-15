@@ -3,8 +3,8 @@ layout: article
 title: Deep Learning for Flight Demand Forecasting
 date: '2024-04-17'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 4
 sitemap: true
 robots: index,follow
@@ -12,6 +12,7 @@ description: A readable explanation of using seq2seq and attention-based deep
   learning models to forecast airport departure demand for strategic planning.
 image: /assets/blog/deep-learning-for-flight-demand-forecasting/cover.png
 source_url: https://medium.com/@lotussavy/deep-learning-for-flight-demand-forecasting-ccbd1514a929
+post_type: "Paper analysis"
 ---
 
 Airport congestion is often a timing problem.

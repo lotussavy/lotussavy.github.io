@@ -4,13 +4,14 @@ seo_title: "Business Travel Demand for Local AAM Markets"
 title: Evaluation of business travel as a potential customer field of a local AAM market
 date: '2024-06-13'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear look at how business travel demand can be modeled as a potential early market for Advanced Air Mobility in Hamburg.
 image: /assets/blog/evaluation-of-business-travel-as-a-potential-customer-field-of-a-local-aam-market/cover.png
 source_url: https://elib.dlr.de/196084/
+post_type: "Paper analysis"
 ---
 
 Business travelers are an attractive customer group for Advanced Air Mobility because they often value time savings more than leisure travelers or daily commuters. If an air taxi can cut travel time between a city center and a business destination, a company may be willing to pay a premium.

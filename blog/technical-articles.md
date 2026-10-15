@@ -1,9 +1,11 @@
 ---
-layout: blog-category
-title: Technical Articles
-category: Technical Articles
-description: "Technical articles, paper summaries, and research notes spanning AI, transportation, demand forecasting, and planning."
+layout: blog-topic-alias
+title: "Technical Articles"
+description: "Technical explainers and paper analyses are now organized by research area."
 permalink: /blog/technical-articles/
-robots: index,follow
-sitemap: true
+target_topic_url: "/blog/archive/"
+target_topic_title: "the full research notes archive"
+robots: noindex,follow
+sitemap: false
 ---
+

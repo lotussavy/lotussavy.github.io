@@ -3,13 +3,16 @@ layout: article
 title: 'Regional Air Mobility: An Introduction'
 date: '2024-04-24'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear introduction to Regional Air Mobility, why it matters for 50-500 mile trips, and how local airports could become useful transportation hubs again.
 image: /assets/blog/regional-air-mobility-an-introduction/cover.png
 source_url: https://ntrs.nasa.gov/citations/20210014033
+post_type: "Technical explainer"
+related_posts:
+  - "/blog/2024/04/24/urban-air-mobility-vs-regional-air-mobility/"
 ---
 
 ![](/assets/blog/regional-air-mobility-an-introduction/cover.png){: width="937" height="852" loading="eager" decoding="async" fetchpriority="high" }

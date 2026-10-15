@@ -1,19 +1,21 @@
 ---
 layout: default
-title: Blog & Articles
-description: "Technical articles by Kamal Acharya on Advanced Air Mobility, Neurosymbolic AI, Explainable AI, demand forecasting, and machine learning."
+title: Research Notes & Perspectives
+description: "Research notes, paper analyses, and technical explainers by Kamal Acharya on Advanced Air Mobility, neurosymbolic AI, trustworthy AI, and mobility modeling."
 permalink: /blog/
 robots: index,follow
 sitemap: true
 ---
 
 <section class="blog-hero">
-  <p class="blog-eyebrow">Research Notes & Technical Articles</p>
-  <h1>Blog & Technical Articles</h1>
+  <p class="blog-eyebrow">Research notes &amp; perspectives</p>
+  <h1>Research Notes &amp; Perspectives</h1>
   <p>
-    Notes, paper summaries, and research reflections on Advanced Air Mobility,
-    Neurosymbolic AI, Explainable AI, demand forecasting, and machine learning.
+    Research notes on how data-driven and neurosymbolic AI can support mobility
+    demand modeling, infrastructure planning, and operational decisions.
+    Browse by research area or by article format.
   </p>
+  <p class="blog-taxonomy-note">Posts are organized by research area and article format. A post may appear in more than one research area when it connects methods with mobility applications.</p>
 </section>
 
 <nav class="blog-subnav" aria-label="Blog sections">
@@ -46,6 +48,7 @@ sitemap: true
         {% for category in post.categories %}
         <span>{{ category }}</span>
         {% endfor %}
+        {% if post.post_type %}<span class="format-label">{{ post.post_type }}</span>{% endif %}
       </p>
       {% endif %}
       <p>{{ post.description | default: post.excerpt | strip_html | truncate: 145 }}</p>

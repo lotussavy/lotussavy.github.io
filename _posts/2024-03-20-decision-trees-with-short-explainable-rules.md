@@ -3,13 +3,14 @@ layout: article
 title: Decision Trees with Short Explainable Rules
 date: '2024-03-20'
 categories:
-- Explainable AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "Learn how decision trees can optimize for shorter explanations by reducing the number of distinct attributes used in prediction rules."
 image: /assets/blog/decision-trees-with-short-explainable-rules/cover.png
 source_url: https://medium.com/@lotussavy/decision-trees-with-short-explainable-rules-5a5c170abde9
+post_type: "Paper analysis"
 ---
 
 Decision trees are often described as interpretable models. That is partly true, but it is not automatic. A tree with hundreds of nodes, repeated tests, and long root-to-leaf paths can be technically readable while still being painful to explain.

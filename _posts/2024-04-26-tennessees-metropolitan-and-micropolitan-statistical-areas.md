@@ -3,13 +3,14 @@ layout: article
 title: Tennessee's Metropolitan and Micropolitan Statistical Areas
 date: '2024-04-26'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: "A guide to Tennessee's metropolitan, micropolitan, and combined statistical areas for transportation and regional planning."
 image: /assets/blog/tennessees-metropolitan-and-micropolitan-statistical-areas/cover.png
 source_url: https://www.census.gov/geographies/reference-maps/2003/geo/statecbsa.html
+post_type: "Paper analysis"
 ---
 
 Metropolitan and micropolitan statistical areas sound like dry geography labels, but they are useful tools for understanding how people, jobs, counties, and regional economies connect.

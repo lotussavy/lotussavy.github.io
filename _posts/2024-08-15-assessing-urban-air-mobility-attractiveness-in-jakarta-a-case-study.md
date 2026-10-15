@@ -4,13 +4,14 @@ seo_title: "Urban Air Mobility Attractiveness in Jakarta"
 title: Assessing Urban Air Mobility Attractiveness in Jakarta — A Case Study
 date: '2024-08-15'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A practical look at a Jakarta UAM case study that estimates when airport travelers may prefer air mobility over ground transportation.
 image: /assets/blog/assessing-urban-air-mobility-attractiveness-in-jakarta-a-case-study/cover.png
 source_url: https://doi.org/10.2514/6.2024-3557
+post_type: "Paper analysis"
 ---
 
 Jakarta is one of the clearest places to ask whether Urban Air Mobility can solve a real transportation problem. The city is dense, economically important, and heavily congested. Airport access is especially painful because travelers moving between Soekarno-Hatta International Airport (CGK) and the Jakarta metro area can lose a large amount of time on the ground.

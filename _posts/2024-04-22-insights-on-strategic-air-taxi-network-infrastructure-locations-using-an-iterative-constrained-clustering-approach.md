@@ -4,13 +4,14 @@ seo_title: "Strategic Air Taxi Infrastructure via Clustering"
 title: Insights on strategic air taxi network infrastructure locations using an iterative constrained clustering approach
 date: '2024-04-22'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A readable look at how NYC taxi data and constrained clustering can help planners decide where early air taxi vertistops should go.
 image: /assets/blog/insights-on-strategic-air-taxi-network-infrastructure-locations-using-an-iterative-constrained-clustering-approach/cover.png
 source_url: https://doi.org/10.1016/j.tre.2019.06.003
+post_type: "Paper analysis"
 ---
 
 Air taxi networks are often imagined through the aircraft first: quiet electric vehicles lifting off from rooftops, crossing a city in minutes, and landing near the passenger's destination. But the aircraft is only one part of the system. The harder question is much more grounded: where should the network actually be built?

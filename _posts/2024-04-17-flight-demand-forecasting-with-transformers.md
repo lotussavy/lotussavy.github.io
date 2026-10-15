@@ -3,8 +3,8 @@ layout: article
 title: Flight Demand Forecasting with Transformers
 date: '2024-04-17'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 5
 sitemap: true
 robots: index,follow
@@ -12,6 +12,7 @@ description: A practical explanation of using Temporal Fusion Transformers to im
   multi-horizon airport departure demand forecasting.
 image: /assets/blog/flight-demand-forecasting-with-transformers/cover.jpeg
 source_url: https://medium.com/@lotussavy/flight-demand-forecasting-with-transformers-ec73582bb2aa
+post_type: "Paper analysis"
 ---
 
 Predicting airport departure demand is difficult because airports are dynamic systems. Demand changes by time of day, day of week, season, weather, scheduled airline activity, and sudden General Aviation surges around public events. A useful forecast must look ahead across multiple future time steps and update as new operational information arrives.

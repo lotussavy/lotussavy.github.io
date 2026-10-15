@@ -4,13 +4,17 @@ seo_title: "Knowledge Distillation and Large Language Models"
 title: Milestones in Knowledge Distillation and Large Language Models
 date: '2024-08-06'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A readable timeline of how language models evolved from early symbolic and statistical systems to transformers, LLMs, and symbolic knowledge distillation.
 image: /assets/blog/milestones-in-knowledge-distillation-and-large-language-models/cover.png
 source_url: https://doi.org/10.1109/TAI.2024.3428519
+post_type: "Technical explainer"
+related_posts:
+  - "/blog/2024/08/06/knowledge-distillation-and-its-types/"
+  - "/blog/2024/08/06/symbolic-knowledge-distillation-of-large-language-models/"
 ---
 
 The history of large language models is also the history of a tension: models keep getting more capable as they grow, but growth makes them harder to train, deploy, inspect, and trust.

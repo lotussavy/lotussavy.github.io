@@ -3,7 +3,7 @@ layout: article
 title: Interval Temporal Logic Decision Tree Learning
 date: '2024-04-14'
 categories:
-- Technical Articles
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 7
 sitemap: true
 robots: index,follow
@@ -11,6 +11,7 @@ description: A readable explanation of Temporal ID3, a decision-tree learning me
   that uses interval temporal logic to classify timelines instead of static records.
 image: /assets/blog/interval-temporal-logic-decision-tree-learning/cover.png
 source_url: https://medium.com/@lotussavy/interval-temporal-logic-decision-tree-learning-6a9b70447995
+post_type: "Paper analysis"
 ---
 
 Decision trees are popular because they are easy to understand. A trained tree is not just a predictor; it is a sequence of readable decisions. Each path from the root to a leaf can be interpreted as a rule.

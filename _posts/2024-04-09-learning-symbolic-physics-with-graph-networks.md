@@ -3,7 +3,7 @@ layout: article
 title: Learning Symbolic Physics with Graph Networks
 date: '2024-04-09'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 5
 sitemap: true
 robots: index,follow
@@ -11,6 +11,7 @@ description: A readable explanation of how graph networks can learn physical
   interactions, expose force-like messages, and support symbolic law discovery.
 image: /assets/blog/learning-symbolic-physics-with-graph-networks/cover.png
 source_url: https://medium.com/@lotussavy/learning-symbolic-physics-with-graph-networks-265d74c9ca1c
+post_type: "Paper analysis"
 ---
 
 Deep learning can predict many physical systems surprisingly well. But prediction is not the same as understanding.

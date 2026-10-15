@@ -3,13 +3,14 @@ layout: article
 title: Budding Trees
 date: '2024-03-21'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "A practical explanation of Budding Trees, a differentiable decision-tree model where each node can smoothly move between being a leaf and an internal split."
 image: /assets/blog/budding-trees/cover.png
 source_url: https://medium.com/@lotussavy/budding-trees-1b60d248377a
+post_type: "Paper analysis"
 ---
 
 Traditional decision trees grow in a very discrete way. A node is either a leaf or an internal decision node. During training, the algorithm decides to split a leaf, creates two children, and then moves on. Later, a separate pruning step may remove parts of the tree if they overfit.

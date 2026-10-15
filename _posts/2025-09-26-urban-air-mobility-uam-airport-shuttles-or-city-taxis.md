@@ -3,13 +3,16 @@ layout: article
 title: 'Urban Air Mobility (UAM): Airport Shuttles or City-Taxis?'
 date: '2025-09-26'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear explanation of why Milan survey evidence suggests airport shuttle routes may be a stronger early Urban Air Mobility market than city taxi services.
 image: /assets/blog/urban-air-mobility-uam-airport-shuttles-or-city-taxis/cover.png
 source_url: https://doi.org/10.1016/j.tranpol.2024.03.003
+post_type: "Paper analysis"
+related_posts:
+  - "/blog/2025/09/26/urban-air-mobility-demand-forecasting-modeling-evidence-from-the-case-study-of-milan-italy/"
 ---
 
 Urban Air Mobility is often imagined as a citywide flying-taxi network: open an app, walk to a nearby vertiport, fly across the city, and land close to the destination. That vision is attractive, but it may not be the best place for UAM to begin.

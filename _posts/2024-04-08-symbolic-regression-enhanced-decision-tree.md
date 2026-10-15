@@ -3,13 +3,14 @@ layout: article
 title: Symbolic Regression Enhanced Decision Tree
 date: '2024-04-08'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "Learn how symbolic regression creates expressive split rules for compact, interpretable decision-tree classifiers."
 image: /assets/blog/symbolic-regression-enhanced-decision-tree/cover.png
 source_url: https://medium.com/@lotussavy/symbolic-regression-enhanced-decision-tree-ceafa3a06d33
+post_type: "Paper analysis"
 ---
 
 Decision trees are popular because they are easy to inspect. A prediction can be explained as a path of simple rules: if this feature is below a threshold, go left; otherwise, go right.

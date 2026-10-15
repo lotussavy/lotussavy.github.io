@@ -3,13 +3,14 @@ layout: article
 title: From Generative AI to Trustworthy AI
 date: '2024-03-04'
 categories:
-- Explainable AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 11
 sitemap: true
 robots: index,follow
 description: "Explore what generative AI needs to become trustworthy, including reasoning, provenance, ethics, context, and symbolic knowledge."
 image: /assets/blog/generative-ai-to-trustworthy-ai/cover.png
 source_url: https://medium.com/@lotussavy/generative-ai-to-trustworthy-ai-a194b0e55748
+post_type: "Research perspective"
 ---
 
 Generative AI has become the public face of modern artificial intelligence. Large language models can write, summarize, translate, code, answer questions, and hold conversations with impressive fluency.
@@ -247,4 +248,4 @@ In short:
 
 ## Reference
 
-1. Lenat, D., & Marcus, G. (2023). *Getting from Generative AI to Trustworthy AI: What LLMs might learn from Cyc*. arXiv:2308.04445.
+1. Lenat, D., & Marcus, G. (2023). [*Getting from Generative AI to Trustworthy AI: What LLMs might learn from Cyc*](https://arxiv.org/abs/2308.04445). arXiv:2308.04445.

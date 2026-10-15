@@ -4,14 +4,15 @@ seo_title: "OD Matrix Forecasting with Graph Recurrent Networks"
 title: Stochastic Origin-Destination Matrix Forecasting Using Dual-Stage Graph Convolutional, Recurrent Neural Networks
 date: '2024-09-27'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear explanation of stochastic OD matrix forecasting with matrix factorization, graph convolutional networks, and recurrent neural networks.
 image: /assets/blog/stochastic-origin-destination-matrix-forecasting-using-dual-stage-graph-convolutional-recurrent-neural-networks/cover.png
 source_url: https://doi.org/10.1109/ICDE48307.2020.00126
+post_type: "Paper analysis"
 ---
 
 Origin-destination matrices are usually used to describe traffic between regions. A cell in the matrix may record how many trips moved from one region to another, or what the average travel speed or cost was between that pair.

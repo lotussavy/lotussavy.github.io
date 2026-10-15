@@ -4,13 +4,14 @@ seo_title: "Advanced Regional Air Mobility Demand and Operations"
 title: Demand modeling and operations optimization for advanced regional air mobility
 date: '2024-04-29'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 12
 sitemap: true
 robots: index,follow
 description: A practical walkthrough of how researchers estimate future demand for advanced regional air mobility in the U.S. Northeast Corridor.
 image: /assets/blog/demand-modeling-for-advanced-regional-air-mobility/cover.png
 source_url: https://doi.org/10.2514/6.2021-3179
+post_type: "Paper analysis"
 ---
 
 Regional Air Mobility sounds compelling in theory: smaller, cleaner aircraft connecting communities that are too far apart for convenient driving but not well served by today's airline network. The harder question is whether enough people would actually use it.

@@ -3,7 +3,7 @@ layout: article
 title: Distilling Free-Form Natural Laws from Experimental Data
 date: '2024-04-09'
 categories:
-- Technical Articles
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 6
 sitemap: true
 robots: index,follow
@@ -11,6 +11,7 @@ description: A readable look at how symbolic regression can rediscover physical 
   directly from experimental data, from simple oscillators to chaotic double pendulums.
 image: /assets/blog/distilling-free-form-natural-laws-from-experimental-data/cover.png
 source_url: https://medium.com/@lotussavy/distilling-free-form-natural-laws-from-experimental-data-f55341ae0fa6
+post_type: "Paper analysis"
 ---
 
 ## Distilling Free-Form Natural Laws<br>from Experimental Data

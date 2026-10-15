@@ -1,0 +1,43 @@
+cadence: monthly
+relaunch_start: "2026-11"
+
+workflow:
+  - week: 1
+    action: "Choose a question from current research or Search Console queries; compare it with the archive to avoid overlap."
+  - week: 2
+    action: "Draft one post and identify primary sources for every central claim."
+  - week: 3
+    action: "Verify claims, numbers, DOI links, figure rights, and internal links; preview on desktop and mobile."
+  - week: 4
+    action: "Publish; link from the relevant research or publication page; review Search Console after data accumulates."
+
+formats:
+  - "Research perspective"
+  - "Paper analysis"
+  - "Technical explainer"
+
+calendar:
+  - month: "2026-11"
+    topic: "From demand forecasts to operational decisions in Advanced Air Mobility"
+    format: "Research perspective"
+    scope: "Show how a forecast can inform infrastructure, assignment, scheduling, and scenario evaluation using public research and approved project information."
+  - month: "2026-12"
+    topic: "What makes an AAM demand model behaviorally credible?"
+    format: "Technical explainer"
+    scope: "Explain why model evaluation should consider plausible responses to changes in distance, time, and cost, alongside predictive fit."
+  - month: "2027-01"
+    topic: "Airport shuttles or city taxis: what Milan evidence can and cannot establish"
+    format: "Paper analysis"
+    scope: "Differentiate the two existing Milan studies by research question, evidence, and limitations; update and link the current posts rather than duplicate them."
+  - month: "2027-02"
+    topic: "How symbolic knowledge distillation can make model knowledge inspectable"
+    format: "Technical explainer"
+    scope: "Explain the published symbolic knowledge distillation survey and distinguish its main approaches."
+  - month: "2027-03"
+    topic: "How demand and capacity interact in AAM operations"
+    format: "Paper analysis"
+    scope: "Use established published studies to explain how fleet, vertiport capacity, scheduling, and demand shape service outcomes."
+  - month: "2027-04"
+    topic: "Where neurosymbolic AI may help trustworthy mobility systems"
+    format: "Research perspective"
+    scope: "Connect explicit knowledge, learned models, and operational constraints while stating limitations and avoiding unsupported deployment claims."

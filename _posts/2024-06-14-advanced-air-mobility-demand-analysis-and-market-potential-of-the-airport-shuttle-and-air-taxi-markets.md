@@ -4,13 +4,14 @@ seo_title: "AAM Airport Shuttle and Air Taxi Market Potential"
 title: 'Advanced Air Mobility: Demand Analysis and Market Potential of the Airport Shuttle and Air Taxi Markets'
 date: '2024-06-14'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear walkthrough of how researchers estimated the demand and market potential for AAM airport shuttle and air taxi services in the United States.
 image: /assets/blog/advanced-air-mobility-demand-analysis-and-market-potential-of-the-airport-shuttle-and-air-taxi-markets/cover.png
 source_url: https://doi.org/10.3390/su13137421
+post_type: "Paper analysis"
 ---
 
 Advanced Air Mobility is exciting because it promises faster trips, flexible routing, airport connections, and new urban transportation options. But the market cannot be judged only by enthusiasm or aircraft renderings. The core question is practical: how many people would actually use these services, and under what constraints?

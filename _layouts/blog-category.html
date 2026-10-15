@@ -28,6 +28,7 @@ layout: default
         <p class="blog-meta">
           {{ post.date | date: "%B %d, %Y" }}
           {% if post.reading_time %} · {{ post.reading_time }} min read{% endif %}
+          {% if post.post_type %} · <span class="format-label">{{ post.post_type }}</span>{% endif %}
         </p>
         <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p>{{ post.description | default: post.excerpt | strip_html | truncate: 210 }}</p>

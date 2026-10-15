@@ -3,7 +3,7 @@ layout: article
 title: Deep Symbolic Regression for Recurrent Sequences
 date: '2024-04-10'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 5
 sitemap: true
 robots: index,follow
@@ -11,6 +11,7 @@ description: A readable explanation of how Transformers can infer symbolic recur
   relations from integer and float sequences, then use those formulas to extrapolate.
 image: /assets/blog/deep-symbolic-regression-for-recurrent-sequences/cover.png
 source_url: https://medium.com/@lotussavy/deep-symbolic-regression-for-recurrent-sequences-c92277384c12
+post_type: "Paper analysis"
 ---
 
 Given the sequence `1, 2, 4, 7, 11, 16`, what comes next?

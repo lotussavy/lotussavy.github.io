@@ -5,7 +5,7 @@ title: Hybridized neural network and decision tree based classifier for prognost
   decision making in breast cancers
 date: '2024-04-10'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 5
 sitemap: true
 robots: index,follow
@@ -13,6 +13,7 @@ description: A readable explanation of a hybrid radial basis function network an
   decision tree approach for supporting breast cancer prognosis.
 image: /assets/blog/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancers/cover.png
 source_url: https://medium.com/@lotussavy/hybridized-neural-network-and-decision-tree-based-classifier-for-prognostic-decision-making-in-breast-cancersg-in-931f3bab3cde
+post_type: "Paper analysis"
 ---
 
 Breast cancer diagnosis and prognosis are not only technical problems. They are high-stakes decisions that affect treatment planning, follow-up care, and the emotional lives of patients and families. In this setting, even a small improvement in classification can matter, but only if the model is reliable, understandable, and used as support for clinicians rather than as a replacement for medical judgment.

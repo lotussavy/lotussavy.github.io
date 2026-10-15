@@ -3,13 +3,16 @@ layout: article
 title: A Data-Driven Method for OD Matrix Estimation
 date: '2024-09-26'
 categories:
-- Technical Articles
+- "AAM & Mobility Systems"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: "Explore data-driven origin-destination matrix estimation using traffic speed, flow, production-attraction patterns, routing, and PCA."
 image: /assets/blog/a-data-driven-method-for-od-matrix-estimation/cover.png
 source_url: https://doi.org/10.1016/j.trc.2019.05.014
+post_type: "Paper analysis"
+related_posts:
+  - "/blog/2024/08/16/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/"
 ---
 
 Origin-destination matrix estimation is one of the hardest inverse problems in transportation. We want to know how many trips move from every origin zone to every destination zone, but we usually observe only fragments of the traffic system: speeds, flows, counts, travel times, or partial trajectory samples.

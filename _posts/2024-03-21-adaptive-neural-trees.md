@@ -3,13 +3,14 @@ layout: article
 title: Adaptive Neural Trees
 date: '2024-03-21'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 8
 sitemap: true
 robots: index,follow
 description: "Explore Adaptive Neural Trees, which combine neural representation learning with conditional tree structures and efficient inference."
 image: /assets/blog/adaptive-neural-trees/cover.png
 source_url: https://medium.com/@lotussavy/adaptive-neural-trees-ae7bc36da9d1
+post_type: "Paper analysis"
 ---
 
 Some machine learning ideas are interesting because they perform well. Others are interesting because they make us rethink the shape of a model. Adaptive Neural Trees (ANTs), proposed by Tanno et al. at ICML 2019, fall into the second category.

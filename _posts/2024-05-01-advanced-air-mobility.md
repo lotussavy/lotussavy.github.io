@@ -3,13 +3,14 @@ layout: article
 title: Advanced Air Mobility
 date: '2024-05-01'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: "An introduction to Advanced Air Mobility, covering air taxis, regional mobility, cargo, infrastructure, autonomy, and deployment challenges."
 image: /assets/blog/advanced-air-mobility/cover.png
 source_url: https://www.nasa.gov/mission/advanced-air-mobility/
+post_type: "Technical explainer"
 ---
 
 Advanced Air Mobility, or AAM, is the idea that aviation can become a more flexible part of everyday transportation. It includes urban air taxis, regional flights between smaller communities, cargo delivery, emergency response, medical transport, inspection services, and other missions that use new aircraft and digital operations to move people or goods through the air.

@@ -3,13 +3,14 @@ layout: article
 title: Explainable AI in Cybersecurity
 date: '2023-03-25'
 categories:
-- Explainable AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "Explore explainable AI in cybersecurity for intrusion detection, malware analysis, anomaly detection, risk scoring, debugging, and model trust."
 image: /assets/blog/explainable-ai-in-cybersecurity/cover.png
 source_url: https://medium.com/@lotussavy/explainable-ai-in-cybersecurity-31db718a3e82
+post_type: "Technical explainer"
 ---
 
 Cybersecurity is a high-stakes domain. A model that flags an intrusion, malware sample, vulnerability, or anomalous behavior can influence urgent operational decisions. Security teams need to know not only **what** the model predicted, but also **why** it made that prediction.

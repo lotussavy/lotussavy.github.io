@@ -3,13 +3,14 @@ layout: article
 title: 'Neurosymbolic Reinforcement Learning: An Overview'
 date: '2024-02-25'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 10
 sitemap: true
 robots: index,follow
 description: "Learn how neurosymbolic reinforcement learning combines neural learning, symbolic reasoning, and planning for interpretable and safer agents."
 image: /assets/blog/neurosymbolic-reinforcement-learning-an-overview/cover.png
 source_url: https://medium.com/@lotussavy/neurosymbolic-reinforcement-learning-98ce91bc3cc4
+post_type: "Technical explainer"
 ---
 
 Reinforcement learning (RL) is built around a simple idea: an agent learns by interacting with an environment. It observes a state, takes an action, receives a reward, and gradually improves its behavior.

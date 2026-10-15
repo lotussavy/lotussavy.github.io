@@ -4,14 +4,14 @@ seo_title: "Explainable AI vs. Neurosymbolic AI"
 title: Demystifying the Difference Between Explainable AI and Neurosymbolic AI
 date: '2024-11-26'
 categories:
-- Neurosymbolic AI
-- Explainable AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A practical explanation of how Explainable AI and Neurosymbolic AI differ, where they overlap, and why both matter for trustworthy systems.
 image: /assets/blog/demystifying-the-difference-between-explainable-ai-and-neurosymbolic-ai/cover.png
 source_url: https://www.darpa.mil/research/programs/explainable-artificial-intelligence
+post_type: "Paper analysis"
 ---
 
 Explainable AI and neurosymbolic AI are often mentioned together because both are connected to trust, reasoning, and human understanding. But they are not the same thing.

@@ -3,13 +3,14 @@ layout: article
 title: Soft Decision Trees
 date: '2024-03-19'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "A practical explanation of soft decision trees, where internal nodes route examples probabilistically so every leaf can contribute to the final prediction."
 image: /assets/blog/soft-decision-trees/cover.png
 source_url: https://medium.com/@lotussavy/soft-decision-trees-ffb9b47f6ae1
+post_type: "Technical explainer"
 ---
 
 Decision trees are popular because they are easy to understand: start at the root, ask a question, move left or right, and keep going until a leaf gives the final prediction. That simplicity is also their weakness. A hard split creates a sharp boundary. Two points that are almost identical can fall on different sides of a threshold and receive very different predictions.

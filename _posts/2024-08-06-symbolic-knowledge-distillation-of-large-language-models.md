@@ -3,14 +3,18 @@ layout: article
 title: Symbolic Knowledge Distillation of Large Language Models
 date: '2024-08-06'
 categories:
-- Neurosymbolic AI
-- Machine Learning
+- "Neurosymbolic & Trustworthy AI"
+- "Machine Learning & Modeling"
 reading_time: 8
 sitemap: true
 robots: index,follow
 description: "A guide to symbolic knowledge distillation for LLMs, including direct, multilevel, and reinforcement-learning approaches."
 image: /assets/blog/symbolic-knowledge-distillation-of-large-language-models/cover.png
 source_url: https://doi.org/10.1109/TAI.2024.3428519
+post_type: "Paper analysis"
+related_posts:
+  - "/blog/2024/08/06/knowledge-distillation-and-its-types/"
+  - "/blog/2024/08/06/milestones-in-knowledge-distillation-and-large-language-models/"
 ---
 
 Large language models contain a huge amount of useful knowledge, but most of it is hidden inside model weights. We can prompt the model and observe its outputs, but the knowledge itself is not stored in a form that is easy to inspect, verify, reuse, or reason over.

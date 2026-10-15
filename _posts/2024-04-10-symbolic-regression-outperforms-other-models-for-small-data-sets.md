@@ -4,7 +4,7 @@ seo_title: "Symbolic Regression for Small Data Sets"
 title: Symbolic regression outperforms other models for small data sets
 date: '2024-04-10'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 6
 sitemap: true
 robots: index,follow
@@ -12,6 +12,7 @@ description: A practical look at why symbolic regression can be a strong choice 
   data is scarce, interpretability matters, and overfitting is a constant risk.
 image: /assets/blog/symbolic-regression-outperforms-other-models-for-small-data-sets/cover.png
 source_url: https://medium.com/@lotussavy/symbolic-regression-outperforms-other-models-for-small-data-sets-6b0998e827c6
+post_type: "Paper analysis"
 ---
 
 Machine learning often looks most impressive when data is abundant. Give a model millions of examples, enough computing power, and careful tuning, and it can discover patterns that are hard for humans to see.

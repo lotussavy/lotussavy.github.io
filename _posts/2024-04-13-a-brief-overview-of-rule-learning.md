@@ -3,13 +3,14 @@ layout: article
 title: A Brief Overview of Rule Learning
 date: '2024-04-13'
 categories:
-- Technical Articles
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 8
 sitemap: true
 robots: index,follow
 description: "An overview of descriptive and predictive rule learning, association rules, decision lists, and covering algorithms."
 image: /assets/blog/a-brief-overview-of-rule-learning/cover.png
 source_url: https://medium.com/@lotussavy/a-brief-overview-of-rule-learning-476e59d51fad
+post_type: "Technical explainer"
 ---
 
 Rule learning is one of the most natural ways to make machine learning understandable.

@@ -3,13 +3,17 @@ layout: article
 title: Knowledge Distillation and Its Types
 date: '2024-08-06'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear guide to knowledge distillation, including response-based, feature-based, relation-based, and symbolic knowledge distillation.
 image: /assets/blog/knowledge-distillation-and-its-types/cover.png
 source_url: https://doi.org/10.1109/TAI.2024.3428519
+post_type: "Technical explainer"
+related_posts:
+  - "/blog/2024/08/06/milestones-in-knowledge-distillation-and-large-language-models/"
+  - "/blog/2024/08/06/symbolic-knowledge-distillation-of-large-language-models/"
 ---
 
 Modern machine learning models can be extremely powerful, but that power often comes with a cost. Large models are expensive to train, slow to run, hard to deploy on small devices, and sometimes too opaque for sensitive applications.

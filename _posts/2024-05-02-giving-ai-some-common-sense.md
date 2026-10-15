@@ -3,13 +3,14 @@ layout: article
 title: Giving AI Some Common Sense
 date: '2024-05-02'
 categories:
-- Technical Articles
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A readable reflection on Ron Brachman's Northeastern lecture about why AI systems need common sense before they can be trusted to act autonomously.
 image: /assets/blog/giving-ai-some-common-sense/cover.png
 source_url: https://ai.northeastern.edu/event/giving-ai-some-common-sense
+post_type: "Research perspective"
 ---
 
 Modern AI can write fluent paragraphs, generate code, summarize long documents, identify objects in images, and outperform humans on many narrow benchmarks. Yet it can still fail in ways that feel deeply strange. It may miss an obvious implication, misunderstand a simple physical situation, invent a confident answer, or behave as if the world is only a pattern in text rather than a place with causes, goals, constraints, and consequences.

@@ -3,13 +3,14 @@ layout: article
 title: A Traffic Demand Analysis Method for Urban Air Mobility
 date: '2024-08-08'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: "Explore a Bay Area UAM demand method comparing multimodal air trips and road commutes across congestion and vertiport scenarios."
 image: /assets/blog/a-traffic-demand-analysis-method-for-urban-air-mobility/cover.png
 source_url: https://doi.org/10.1109/TITS.2021.3052229
+post_type: "Paper analysis"
 ---
 
 Urban Air Mobility is often promoted as a way to avoid congestion, but that promise needs to be tested carefully. A flying vehicle can be fast in the air, yet the full trip still includes ground access, transfers at vertiports, waiting time, and the final trip from the destination vertiport to the traveler's actual destination.

@@ -3,13 +3,14 @@ layout: article
 title: Neurosymbolic Approaches in Artificial Intelligence
 date: '2024-04-04'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 8
 sitemap: true
 robots: index,follow
 description: "Review major neuro-symbolic AI approaches that connect deep learning, symbolic knowledge, explainability, and hybrid reasoning."
 image: /assets/blog/neurosymbolic-approaches-in-artificial-intelligence/cover.png
 source_url: https://medium.com/@lotussavy/neurosymbolic-approaches-in-artificial-intelligence-1a4a64161829
+post_type: "Paper analysis"
 ---
 
 Neurosymbolic AI is not one algorithm. It is a family of approaches that try to combine two different strengths: the pattern-learning ability of neural networks and the structured reasoning ability of symbolic AI.

@@ -3,13 +3,16 @@ layout: article
 title: Urban Air Mobility vs. Regional Air Mobility
 date: '2024-04-24'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 6
 sitemap: true
 robots: index,follow
 description: "Compare Urban and Regional Air Mobility by aircraft, infrastructure, markets, costs, operating ranges, and potential integration."
 image: /assets/blog/urban-air-mobility-vs-regional-air-mobility/cover.png
 source_url: https://ntrs.nasa.gov/citations/20210014033
+post_type: "Technical explainer"
+related_posts:
+  - "/blog/2024/04/24/regional-air-mobility-an-introduction/"
 ---
 
 ![](/assets/blog/urban-air-mobility-vs-regional-air-mobility/cover.png){: width="719" height="696" loading="eager" decoding="async" fetchpriority="high" }

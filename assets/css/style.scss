@@ -3009,6 +3009,44 @@ button:focus-visible {
   background: #deecff;
 }
 
+.blog-taxonomy-note {
+  margin-top: 10px;
+  color: #5a7391;
+  font-size: 0.9rem;
+}
+
+.format-label {
+  color: #225b47 !important;
+  background: #e5f4ee !important;
+}
+
+.blog-post-type {
+  color: #225b47;
+  font-weight: 600;
+}
+
+.article-updated {
+  color: #5a7391;
+  font-size: 0.85em;
+}
+
+.related-articles {
+  margin: 28px 0 36px;
+  padding: 20px 24px;
+  border-left: 4px solid #168b8a;
+  background: #f4f9fb;
+  border-radius: 0 12px 12px 0;
+}
+
+.related-articles h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.related-articles ul {
+  margin-bottom: 0;
+}
+
 .blog-card p {
   color: #355479;
 }

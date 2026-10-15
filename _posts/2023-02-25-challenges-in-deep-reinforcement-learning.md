@@ -3,13 +3,14 @@ layout: article
 title: Challenges in Deep Reinforcement Learning
 date: '2023-02-25'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 8
 sitemap: true
 robots: index,follow
 description: "Explore key deep reinforcement learning challenges, including sample efficiency, generalization, reproducibility, interpretability, safety, and deployment."
 image: /assets/blog/challenges-in-deep-reinforcement-learning/cover.png
 source_url: https://medium.com/@lotussavy/challenges-in-deep-reinforcement-learning-46ec2eaab3c2
+post_type: "Technical explainer"
 ---
 
 Deep reinforcement learning (DRL) is one of the most exciting areas of artificial intelligence because it gives machines a way to learn through interaction.

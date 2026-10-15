@@ -4,13 +4,14 @@ seo_title: "Northern California UAM Feasibility and Fare Models"
 title: 'Urban Air Mobility: Analyzing Feasibility and Fare Models for Northern California'
 date: '2024-07-27'
 categories:
-- Advanced Air Mobility
+- "AAM & Mobility Systems"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A clear look at how researchers evaluated UAM landing-site feasibility, commuter demand, and fare levels in the Greater Northern California region.
 image: /assets/blog/urban-air-mobility-analyzing-feasibility-and-fare-models-for-northern-california/cover.png
 source_url: https://doi.org/10.1109/ICNSURV.2019.8735267
+post_type: "Paper analysis"
 ---
 
 Urban Air Mobility is often described as a way to escape ground congestion, but the real feasibility question is more specific: where would aircraft land, how many passengers would use the service, and what fare would make the system financially realistic?

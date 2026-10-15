@@ -3,8 +3,8 @@ layout: article
 title: Demand prediction for urban air mobility using deep learning
 date: '2024-04-20'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 5
 sitemap: true
 robots: index,follow
@@ -12,6 +12,7 @@ description: A readable explanation of using LSTM, GRU, and Transformer models t
   estimate future Urban Air Mobility demand from taxi-trip data.
 image: /assets/blog/demand-prediction-for-urban-air-mobility-using-deep-learning/cover.png
 source_url: https://medium.com/@lotussavy/demand-prediction-for-urban-air-mobility-using-deep-learning-633e18a97bac
+post_type: "Paper analysis"
 ---
 
 Urban Air Mobility sounds futuristic, but the business question is very practical: will enough people use it?

@@ -4,14 +4,15 @@ seo_title: "How Neural Networks Accelerate Disaster Air Planning"
 title: Improving Pre-Disaster Air Mobility Planning with Neural Network-Accelerated Genetic Algorithms
 date: '2024-11-11'
 categories:
-- Advanced Air Mobility
-- Machine Learning
+- "AAM & Mobility Systems"
+- "Machine Learning & Modeling"
 reading_time: 7
 sitemap: true
 robots: index,follow
 description: A practical explanation of how neural networks can accelerate genetic algorithms for pre-disaster air mobility evacuation planning.
 image: /assets/blog/improving-pre-disaster-air-mobility-planning-with-neural-network-accelerated-genetic-algorithms/cover.png
 source_url: https://doi.org/10.48550/arXiv.2408.00790
+post_type: "Paper analysis"
 ---
 
 When a hurricane or other major disaster approaches, transportation systems face a difficult planning problem. Demand for evacuation increases, but airports still need to support normal operations, limited aircraft capacity, uncertain weather windows, and changing operational constraints.

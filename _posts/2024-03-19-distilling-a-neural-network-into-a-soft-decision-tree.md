@@ -3,13 +3,14 @@ layout: article
 title: Distilling a Neural Network Into a Soft Decision Tree
 date: '2024-03-19'
 categories:
-- Machine Learning
+- "Machine Learning & Modeling"
 reading_time: 8
 sitemap: true
 robots: index,follow
 description: "Learn how neural-network knowledge can be distilled into a soft decision tree to trade some predictive accuracy for greater interpretability."
 image: /assets/blog/distilling-a-neural-network-into-a-soft-decision-tree/cover.png
 source_url: https://medium.com/@lotussavy/distilling-a-neural-network-into-a-soft-decision-tree-9cd6c22ef85a
+post_type: "Paper analysis"
 ---
 
 Deep neural networks are powerful, but they are often hard to explain.

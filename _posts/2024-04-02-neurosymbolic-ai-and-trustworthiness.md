@@ -3,13 +3,14 @@ layout: article
 title: Neurosymbolic AI and Trustworthiness
 date: '2024-04-02'
 categories:
-- Neurosymbolic AI
+- "Neurosymbolic & Trustworthy AI"
 reading_time: 9
 sitemap: true
 robots: index,follow
 description: "Explore how neuro-symbolic AI can improve interpretability, fairness, privacy, safety, and trustworthy reasoning."
 image: /assets/blog/neurosymbolic-ai-and-trustworthiness/cover.png
 source_url: https://medium.com/@lotussavy/neurosymbolic-ai-and-trustworthiness-6470d1da4b10
+post_type: "Paper analysis"
 ---
 
 Trustworthy AI is not just about getting high benchmark scores. A model can be accurate and still be hard to inspect, unfair to certain groups, fragile under distribution shift, unsafe in deployment, or careless with private data.
