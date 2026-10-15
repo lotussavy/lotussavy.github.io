@@ -19,7 +19,9 @@ Urban Air Mobility is often imagined as a citywide flying-taxi network: open an 
 
 Coppola, De Fabiis, and Silvestri ask a sharper question: should early UAM services focus on airport shuttles or city-taxis?
 
-Using a large survey campaign in the Milan metropolitan area, the authors estimate how much travelers are willing to pay for travel time savings across different UAM use cases. Their conclusion is practical: airport shuttle services look more financially sustainable than city-taxi services in the early market.
+Using a large survey campaign in the Milan metropolitan area, the authors estimate travelers’ value of travel-time savings across different UAM use cases. The estimates suggest stronger early-market potential for airport shuttles than city-taxis in the Milan sample. They do not establish that airport-shuttle operations would be profitable after aircraft, infrastructure, and operating costs are considered.
+
+For the broader demand model, including airport, intercity, and air-taxi scenarios, see [Urban Air Mobility Demand Forecasting: Modeling Evidence from the Case Study of Milan (Italy)](/blog/2025/09/26/urban-air-mobility-demand-forecasting-modeling-evidence-from-the-case-study-of-milan-italy/).
 
 ## Why the Question Matters
 

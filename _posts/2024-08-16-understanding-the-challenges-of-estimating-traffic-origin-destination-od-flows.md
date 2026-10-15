@@ -20,6 +20,8 @@ Origin-destination flow estimation sounds simple: find out where trips start, wh
 
 The reason is straightforward. We rarely observe every traveler from origin to destination. Instead, we observe fragments: traffic counts, speeds, sensors, surveys, GPS traces, mobile phone samples, toll records, or partial trajectories. From those fragments, we try to reconstruct a full OD matrix.
 
+This note focuses on the general estimation challenges. For a technical walkthrough of one data-driven approach, including production-attraction estimates, path assumptions, and PCA, see [A Data-Driven Method for OD Matrix Estimation](/blog/2024/09/26/a-data-driven-method-for-od-matrix-estimation/).
+
 Krishnakumari, van Lint, Djukic, and Cats describe this challenge clearly in their work on data-driven OD matrix estimation. The problem is not only that data is incomplete. It is that the OD estimation problem is severely underdetermined, especially in large congested networks.
 
 ![](/assets/blog/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/cover.png){: width="800" height="800" loading="eager" decoding="async" fetchpriority="high" }

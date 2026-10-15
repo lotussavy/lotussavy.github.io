@@ -21,6 +21,8 @@ Large language models contain a huge amount of useful knowledge, but most of it 
 
 Symbolic knowledge distillation tries to solve that problem. Instead of only compressing a large model into a smaller neural model, it aims to extract knowledge into more explicit forms: rules, facts, rationales, logic statements, knowledge graphs, semantic frames, structured datasets, or other symbolic representations.
 
+This article focuses on symbolic distillation specifically. For the broader taxonomy of response-, feature-, relation-, and symbolic-based approaches, see [Knowledge Distillation and Its Types](/blog/2024/08/06/knowledge-distillation-and-its-types/); for historical context, see [Milestones in Knowledge Distillation and Large Language Models](/blog/2024/08/06/milestones-in-knowledge-distillation-and-large-language-models/).
+
 This makes symbolic distillation especially important for large language models. LLMs are powerful, but they are expensive, opaque, and sometimes unreliable. If we can distill part of their knowledge into structured forms, we can build systems that are smaller, more interpretable, and easier to validate.
 
 ## Why Symbolic Distillation Matters

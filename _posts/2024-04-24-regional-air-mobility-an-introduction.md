@@ -19,6 +19,8 @@ related_posts:
 
 Regional Air Mobility, or RAM, is built around a simple but powerful idea: many trips are too long to feel convenient by car, but too short or too poorly served to make commercial flying attractive.
 
+This article introduces RAM and its potential role. For a direct comparison of RAM and Urban Air Mobility across markets and infrastructure, see [Urban Air Mobility vs. Regional Air Mobility](/blog/2024/04/24/urban-air-mobility-vs-regional-air-mobility/).
+
 Think about a 150-, 250-, or 400-mile trip. Driving can eat up most of a day. Commercial air travel may require a long drive to a major airport, parking, security, boarding, a connecting flight, and another long ground transfer at the other end. For many travelers, the hassle makes the car feel like the least bad option.
 
 RAM asks whether we can use smaller aircraft, cleaner propulsion, automation, better operations, and existing local airports to make those regional trips faster and easier. The goal is not to replace every road trip or every airline route. The goal is to open a better middle option for communities that are not well served by today's hub-focused aviation system.

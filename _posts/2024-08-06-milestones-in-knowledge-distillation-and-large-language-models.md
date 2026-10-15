@@ -21,6 +21,8 @@ The history of large language models is also the history of a tension: models ke
 
 Knowledge distillation enters that story as a practical response. If a large model contains valuable knowledge, can we transfer some of it into a smaller, cheaper, and more understandable form? That question has become more urgent as language models have moved from early statistical systems to billion- and trillion-parameter architectures.
 
+This article follows the historical timeline. For a method-by-method overview, see [Knowledge Distillation and Its Types](/blog/2024/08/06/knowledge-distillation-and-its-types/); for the symbolic distillation methods in the survey, see [Symbolic Knowledge Distillation of Large Language Models](/blog/2024/08/06/symbolic-knowledge-distillation-of-large-language-models/).
+
 This timeline follows the major milestones that shaped language modeling and knowledge distillation, with special attention to why symbolic knowledge distillation has become an important direction for the next generation of AI systems.
 
 ## A Long Road to Language Intelligence

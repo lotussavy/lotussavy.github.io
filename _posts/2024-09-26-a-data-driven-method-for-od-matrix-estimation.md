@@ -17,6 +17,8 @@ related_posts:
 
 Origin-destination matrix estimation is one of the hardest inverse problems in transportation. We want to know how many trips move from every origin zone to every destination zone, but we usually observe only fragments of the traffic system: speeds, flows, counts, travel times, or partial trajectory samples.
 
+This article examines one published data-driven method in detail. For a broader explanation of why OD estimation is underdetermined and difficult, see [Understanding the Challenges of Estimating Traffic Origin-Destination (OD) Flows](/blog/2024/08/16/understanding-the-challenges-of-estimating-traffic-origin-destination-od-flows/).
+
 Krishnakumari, van Lint, Djukic, and Cats propose a data-driven method that takes a different route from many traditional OD estimation approaches. Instead of relying on iterative dynamic network loading and strong assumptions about equilibrium traffic assignment, their framework uses observed supply patterns such as speeds and flows to estimate OD matrices more directly.
 
 The main idea is practical: if the network's traffic state contains information about where demand is being produced and attracted, then machine learning and dimensionality reduction can help recover a plausible OD pattern.

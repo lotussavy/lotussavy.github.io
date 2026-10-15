@@ -23,6 +23,8 @@ Coppola, De Fabiis, and Silvestri study that question in Milan and the wider Lom
 
 The study is useful because it does not assume that UAM will automatically attract passengers. It uses surveys, stated-preference experiments, random utility mode choice models, and multimodal network simulation to estimate when travelers may choose UAM and when they will stay with cars, taxis, trains, or public transport.
 
+This post focuses on the broader Milan demand model. For a closer comparison of stated willingness to pay for airport shuttles and city-taxis, see [the companion Milan service comparison](/blog/2025/09/26/urban-air-mobility-uam-airport-shuttles-or-city-taxis/).
+
 <figure>
   <img src="/assets/blog/urban-air-mobility-demand-forecasting-modeling-evidence-from-the-case-study-of-milan-italy/cover.png" alt="Flowchart describing the methodological approach adopted in the Milan UAM study" width="800" height="412" loading="eager" decoding="async" fetchpriority="high">
   <figcaption>Flowchart describing the methodological approach adopted in the Milan UAM study</figcaption>
@@ -66,9 +68,7 @@ UAM scenarios vary by the number of vertiports and by fare level. The paper cons
 
 ## What the Results Show
 
-The study finds that airport shuttles are the most promising early UAM service. In the modeled scenarios, airport shuttles reach a modal share of about 2-5% for airport trips.
-
-Air taxis are less dominant but still show some potential, with modeled modal shares around 1-3%. Intercity UAM demand is more sensitive to distance and access-egress time. Longer access time to or from vertiports quickly reduces attractiveness.
+The paper’s abstract and conclusion summarize airport-shuttle modal shares as 2–5% of airport trips and air-taxi shares as 1–3%. Its detailed scenario results report airport-shuttle shares from 0.6% in Scenario 1 to 2.1% in Scenario 4, while intercity and air-taxi shares are below 0.2%. These figures are not presented consistently across the paper’s summary and scenario-level results, so they should be reported separately rather than treated as one range. Across the simulated scenarios, airport shuttles remain the strongest of the three use cases. The study also finds that intercity UAM demand falls as flight distance and access/egress time increase.
 
 This is an important result. UAM is not a universal replacement for urban transport. It performs best where the trip is time-sensitive, the access points are convenient, and competing modes are less direct or less reliable.
 

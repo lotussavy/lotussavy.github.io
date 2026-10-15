@@ -19,6 +19,8 @@ related_posts:
 
 Urban Air Mobility (UAM) and Regional Air Mobility (RAM) are often discussed as if they are competing ideas. In reality, they are two branches of the same larger Advanced Air Mobility movement.
 
+This article compares the two concepts. For a fuller introduction to RAM’s purpose and potential use cases, see [Regional Air Mobility: An Introduction](/blog/2024/04/24/regional-air-mobility-an-introduction/).
+
 Both aim to make aviation more accessible. Both depend on cleaner propulsion, better automation, digital operations, lower operating costs, and public trust. Both imagine a future where air travel is not limited to large airports, major airlines, and long-distance trips.
 
 The difference is the mission. UAM is about moving people and goods within or around dense metropolitan areas. RAM is about connecting communities across longer regional distances, usually using existing airports. One is built for the city. The other is built for the region.

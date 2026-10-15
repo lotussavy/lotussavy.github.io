@@ -20,6 +20,8 @@ Modern machine learning models can be extremely powerful, but that power often c
 
 Knowledge distillation is one way to reduce that cost. The idea is simple: train a smaller student model to learn from a larger teacher model. If the process works well, the student becomes faster and lighter while preserving much of the teacher's performance.
 
+This article introduces the main distillation families. For the historical development of language models and distillation, see [Milestones in Knowledge Distillation and Large Language Models](/blog/2024/08/06/milestones-in-knowledge-distillation-and-large-language-models/); for a focused review of symbolic methods, see [Symbolic Knowledge Distillation of Large Language Models](/blog/2024/08/06/symbolic-knowledge-distillation-of-large-language-models/).
+
 This is especially useful when a large model performs well in research but is too heavy for real deployment. A model running on a phone, browser, robot, vehicle, medical device, or edge server may need to be compact, efficient, and reliable. Distillation helps move intelligence from a large system into a smaller one.
 
 ## The Teacher-Student Idea
