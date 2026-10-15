@@ -35,7 +35,7 @@ last_modified_at: 2026-10-15
         I connect travel behavior, infrastructure, energy needs, and service design to support urban
         and regional AAM planning.
       </p>
-      <p class="research-feature"><strong>Featured:</strong> NASA ULI demand forecasting and mobility-energy coordination.</p>
+      <p class="research-feature"><strong>Example paper:</strong> Demand forecasting and energy-aware portal siting for Regional Air Mobility.</p>
       <p class="research-program-link"><a href="{{ '/publications/demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility/' | relative_url }}">Read the 2026 portal-siting paper →</a></p>
     </article>
 
@@ -50,7 +50,7 @@ last_modified_at: 2026-10-15
         I combine neural learning with symbolic rules and constraints for more interpretable,
         robust, and controllable AI.
       </p>
-      <p class="research-feature"><strong>Featured:</strong> Neurosymbolic demand prediction and symbolic distillation of LLMs.</p>
+      <p class="research-feature"><strong>Example paper:</strong> The IJCAI 2025 survey on neurosymbolic AI in Advanced Air Mobility.</p>
       <p class="research-program-link"><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Read the IJCAI 2025 survey →</a></p>
     </article>
 
@@ -65,7 +65,7 @@ last_modified_at: 2026-10-15
         I build transparent forecasting and optimization pipelines for scenario analysis,
         scheduling, and resilient mobility planning.
       </p>
-      <p class="research-feature"><strong>Featured:</strong> Neural-accelerated optimization for pre-disaster mobility planning.</p>
+      <p class="research-feature"><strong>Example paper:</strong> A neural-network-accelerated genetic algorithm for pre-disaster mobility planning.</p>
       <p class="research-program-link"><a href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Read the IEEE ITSC 2024 paper →</a></p>
     </article>
   </div>
