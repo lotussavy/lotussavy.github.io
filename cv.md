@@ -103,11 +103,37 @@ last_modified_at: 2026-10-15
 
 <section class="cv-section">
   <h2>Professional Service &amp; Membership</h2>
+  <h3>Leadership and Conference Service</h3>
   <ul class="cv-list">
-    <li>IEEE Baltimore Section Vice-Chair (2026–Present).</li>
-    <li>Co-Chair, <a href="https://site.ieee.org/baltimore/technical-colloquium-landing-page/colloquium-committee/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Technical Colloquium and Professional Development Conference, 2026</a>.</li>
-    <li>IEEE Senior Member.</li>
-    <li>Member, <a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi</a>.</li>
+    <li>Vice-Chair, <a href="https://site.ieee.org/baltimore/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Section</a>, 2026.</li>
+    <li>Co-Chair, <a href="https://site.ieee.org/baltimore/technical-colloquium-landing-page/colloquium-committee/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Technical Colloquium &amp; Professional Development Conference</a>, 2026.</li>
+    <li>Conference Secretary, IEEE Baltimore Technical Colloquium &amp; Professional Development Conference, 2025.</li>
+    <li><a href="https://ieeeday.org/ambassadors-2025/" target="_blank" rel="noopener noreferrer">IEEE Day Ambassador</a>, IEEE Region 2, 2025–2026.</li>
+    <li>Region 2 Lead, <a href="https://ieeextreme.org/" target="_blank" rel="noopener noreferrer">IEEEXtreme</a> 18.0, 19.0, and 20.0.</li>
+    <li>Technical Program Committee Member, <a href="https://www.iaria.org/conferences2026/ComICCGI26.html" target="_blank" rel="noopener noreferrer">21st International Multi-Conference on Computing in the Global Information Technology (ICCGI 2026)</a>.</li>
+  </ul>
+  <h3>Editorial Role</h3>
+  <ul class="cv-list">
+    <li>Newsletter Editor, <a href="https://eigtrust.acm.org/leadership/" target="_blank" rel="noopener noreferrer">ACM Emerging Interest Group on Trustworthy AI and Autonomous Systems (EIGTRUST)</a>, 2026–Present.</li>
+  </ul>
+  <h3>Journal Peer Review Service</h3>
+  <ul class="cv-list">
+    <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener noreferrer">IEEE Transactions on Intelligent Transportation Systems</a>, 2022–Present.</li>
+    <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9078688" target="_blank" rel="noopener noreferrer">IEEE Transactions on Artificial Intelligence</a>, 2023–Present.</li>
+    <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer">IEEE Transactions on Neural Networks and Learning Systems</a>, 2024–Present.</li>
+    <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=30" target="_blank" rel="noopener noreferrer">IEEE Transactions on Consumer Electronics</a>, 2024–Present.</li>
+    <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6731005" target="_blank" rel="noopener noreferrer">IEEE Systems, Man, and Cybernetics Magazine</a>, 2024–Present.</li>
+    <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907" target="_blank" rel="noopener noreferrer">IEEE Internet of Things Journal</a>, 2025–Present.</li>
+    <li><a href="https://journalofbigdata.springeropen.com/" target="_blank" rel="noopener noreferrer">Journal of Big Data</a>, 2024–Present.</li>
+    <li><a href="https://link.springer.com/journal/13369" target="_blank" rel="noopener noreferrer">Arabian Journal for Science and Engineering</a>, 2025–Present.</li>
+    <li><a href="https://itiis.org/" target="_blank" rel="noopener noreferrer">KSII Transactions on Internet and Information Systems</a>, 2024–Present.</li>
+  </ul>
+  <h3>Professional Memberships</h3>
+  <ul class="cv-list">
+    <li>Senior Member, <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">Institute of Electrical and Electronics Engineers (IEEE)</a>.</li>
+    <li>Member, <a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer">Association for Computing Machinery (ACM)</a>.</li>
+    <li>Member, <a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi Honor Society</a>.</li>
+    <li>Registered Engineer, Nepal Engineering Council.</li>
   </ul>
 </section>
 
