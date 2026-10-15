@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Contact Kamal Acharya"
-description: "Contact Kamal Acharya, a Baylor University postdoctoral researcher, for collaboration, invited talks, teaching, and AI applications in transportation."
+description: "Contact Kamal Acharya, a Baylor University postdoctoral researcher in trustworthy and neurosymbolic AI, interpretable machine learning, and Advanced Air Mobility."
 permalink: /contact/
 last_modified_at: 2026-08-19
 ---
@@ -9,11 +9,12 @@ last_modified_at: 2026-08-19
 <section class="contact-hero">
   <p class="contact-eyebrow">Contact</p>
   <h1>Let’s Connect</h1>
-  <p>I welcome conversations about research collaboration, invited talks, and student mentoring in AI and future mobility.</p>
+  <p>I welcome research collaborations, invited talks, and student research inquiries in trustworthy and neurosymbolic AI, interpretable machine learning, and Advanced Air Mobility.</p>
   <a class="contact-email-button" href="mailto:lotussavy@gmail.com" aria-label="Email Kamal Acharya">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.1L20.2 7H3.8L12 12.1Zm0 2.3L3 8.8V17h18V8.8l-9 5.6Z"/></svg>
     Email me
   </a>
+  <p><a href="mailto:lotussavy@gmail.com">lotussavy@gmail.com</a></p>
 </section>
 
 <section class="contact-section">
@@ -24,21 +25,21 @@ last_modified_at: 2026-08-19
         <svg viewBox="0 0 24 24"><path d="M7 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm10 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM7 13c4 0 7 2 7 5v2H0v-2c0-3 3-5 7-5Zm10-.5c3.4 0 6 1.8 6 4.5v3h-7v-2c0-1.7-.8-3.2-2.2-4.3.9-.8 2-1.2 3.2-1.2Z"/></svg>
       </span>
       <h3>Research Collaboration</h3>
-      <p>Interpretable AI, Advanced Air Mobility, forecasting, and optimization.</p>
+      <p>Trustworthy and neurosymbolic AI, interpretable demand modeling, and optimization for Advanced Air Mobility.</p>
     </article>
     <article class="contact-card">
       <span class="contact-card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="M11 3h2v10h-2V3Zm-4 7a5 5 0 0 0 10 0h2a7 7 0 0 1-6 6.9V20h4v2H7v-2h4v-3.1A7 7 0 0 1 5 10h2Z"/></svg>
       </span>
       <h3>Invited Talks</h3>
-      <p>Research seminars and discussions on trustworthy AI and future mobility.</p>
+      <p>Seminars on neurosymbolic AI, symbolic knowledge distillation, trustworthy AI, and future mobility.</p>
     </article>
     <article class="contact-card">
       <span class="contact-card-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L4 8v6H2V7l10-5Zm-6 9.2 6 3 6-3V17c-1.5 2-3.5 3-6 3s-4.5-1-6-3v-5.8Z"/></svg>
       </span>
       <h3>Student Mentoring</h3>
-      <p>Guidance on research, technical communication, and interdisciplinary AI projects.</p>
+      <p>Research guidance in AI and machine learning, technical communication, and interdisciplinary project development.</p>
     </article>
   </div>
 </section>
