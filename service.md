@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Professional Service and Leadership"
-seo_title: "Professional Service and IEEE Leadership | Kamal Acharya"
-description: "IEEE leadership, conference organization, editorial service, and peer review by Kamal Acharya."
+seo_title: "Professional Service and Leadership | Kamal Acharya"
+description: "IEEE leadership, conference and editorial service, journal peer review, and professional memberships for Kamal Acharya."
 permalink: /service/
 last_modified_at: 2026-10-15
 ---
@@ -11,30 +11,45 @@ last_modified_at: 2026-10-15
   <p class="service-eyebrow">Academic Community</p>
   <h1>Professional Service &amp; Leadership</h1>
   <p>
-    I support the research community through IEEE leadership, conference organization, editorial work,
-    peer review, and student-focused professional development.
+    I contribute to the research community through IEEE leadership, conference organization,
+    editorial service, and peer review. My service also includes mentoring and professional
+    development activities for students and researchers.
   </p>
 </section>
 
 <section class="service-section">
-  <h2>IEEE Leadership</h2>
+  <h2>Professional Leadership</h2>
   <div class="service-leadership-grid">
-    <article class="service-leadership-card">
-      <p class="service-role-type">Membership</p>
-      <h3><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">IEEE Senior Member</a></h3>
-    </article>
     <article class="service-leadership-card">
       <p class="service-role-type">2026–Present</p>
       <h3><a href="https://site.ieee.org/baltimore/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Section Vice-Chair</a></h3>
     </article>
     <article class="service-leadership-card">
-      <p class="service-role-type">Region 2 · 2025</p>
+      <p class="service-role-type">IEEE Region 2 · 2025–2026</p>
       <h3><a href="https://ieeeday.org/ambassadors-2025/" target="_blank" rel="noopener noreferrer">IEEE Day Ambassador</a></h3>
     </article>
     <article class="service-leadership-card">
-      <p class="service-role-type">Region 2</p>
-      <h3><a href="https://ieeextreme.org/" target="_blank" rel="noopener noreferrer">IEEEXtreme Lead</a></h3>
-      <p>IEEEXtreme 18.0, 19.0, and 20.0</p>
+      <p class="service-role-type">IEEE Region 2</p>
+      <h3><a href="https://ieeextreme.org/" target="_blank" rel="noopener noreferrer">IEEEXtreme Regional Lead</a></h3>
+      <p>Regional leadership for IEEEXtreme 18.0, 19.0, and 20.0</p>
+    </article>
+  </div>
+</section>
+
+<section class="service-section">
+  <h2>Professional Memberships</h2>
+  <div class="service-leadership-grid">
+    <article class="service-leadership-card">
+      <p class="service-role-type">Senior Member</p>
+      <h3><a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">Institute of Electrical and Electronics Engineers (IEEE)</a></h3>
+    </article>
+    <article class="service-leadership-card">
+      <p class="service-role-type">Member</p>
+      <h3><a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer">Association for Computing Machinery (ACM)</a></h3>
+    </article>
+    <article class="service-leadership-card">
+      <p class="service-role-type">Member</p>
+      <h3><a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi Honor Society</a></h3>
     </article>
   </div>
 </section>
@@ -53,7 +68,7 @@ last_modified_at: 2026-10-15
       <p class="service-date">2026–Present</p>
       <div>
         <h3>Newsletter Editor</h3>
-        <p><a href="https://eigtrust.acm.org/leadership/" target="_blank" rel="noopener noreferrer">ACM EIGTRUST</a></p>
+        <p><a href="https://eigtrust.acm.org/leadership/" target="_blank" rel="noopener noreferrer">ACM Emerging Interest Group on Trustworthy AI and Autonomous Systems (EIGTRUST)</a></p>
       </div>
     </article>
     <article class="service-timeline-item">
@@ -67,7 +82,7 @@ last_modified_at: 2026-10-15
       <p class="service-date">2026</p>
       <div>
         <h3>Technical Program Committee Member</h3>
-        <p><a href="https://www.iaria.org/conferences2026/ComICCGI26.html" target="_blank" rel="noopener noreferrer">ICCGI 2026</a></p>
+        <p><a href="https://www.iaria.org/conferences2026/ComICCGI26.html" target="_blank" rel="noopener noreferrer">21st International Multi-Conference on Computing in the Global Information Technology (ICCGI 2026)</a></p>
       </div>
     </article>
     <article class="service-timeline-item">
@@ -81,7 +96,8 @@ last_modified_at: 2026-10-15
 </section>
 
 <section class="service-section">
-  <h2>Selected Journal Reviewing</h2>
+  <h2>Selected Journal Peer Review</h2>
+  <p>Review counts are shown by journal.</p>
   <div class="service-review-grid">
     <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="64 papers reviewed">64</span><span>IEEE Transactions on Intelligent Transportation Systems</span></a>
     <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer"><span class="service-review-count" aria-label="22 papers reviewed">22</span><span>IEEE Transactions on Neural Networks and Learning Systems</span></a>
