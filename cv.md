@@ -79,7 +79,7 @@ last_modified_at: 2026-10-15
       </ul>
     </article>
     <article class="cv-item">
-      <h3>Earlier Teaching &amp; Academic Leadership · Nepal</h3>
+      <h3>Earlier Teaching &amp; Academic Leadership</h3>
       <p>2012–2021</p>
       <ul>
         <li>Visiting Lecturer at colleges affiliated with Tribhuvan and Purbanchal universities; Lecturer at Janakpur Engineering College (2012–2013).</li>
