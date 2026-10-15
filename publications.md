@@ -16,6 +16,7 @@ last_modified_at: 2026-08-22
   <p>Doctoral research and peer-reviewed work in Advanced Air Mobility, neurosymbolic AI, intelligent transportation, optimization, and trustworthy machine learning.</p>
   <nav class="pub-jump-nav" aria-label="Publication overview and page links">
     <span>Jump to:</span>
+    <a href="#selected-publications">Selected</a>
     <a href="#doctoral-dissertation">Dissertation</a>
     <a href="#journal-articles">Journals</a>
     <a href="#conference-proceedings">Conferences</a>
@@ -29,6 +30,33 @@ last_modified_at: 2026-08-22
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path class="profile-icon-cutout" d="M7.2 7.1h1.7v1.7H7.2V7.1Zm0 3.1h1.7v6.7H7.2v-6.7Zm3.2-3.1h3.5c3.2 0 5.1 1.9 5.1 4.9s-1.9 4.9-5.1 4.9h-3.5V7.1Zm1.7 1.6v6.6h1.7c2.2 0 3.4-1.2 3.4-3.3s-1.2-3.3-3.4-3.3h-1.7Z"/></svg>
     </a>
   </p>
+</section>
+
+{% assign selected_slugs = "demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions|demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility|integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey|survey-on-symbolic-knowledge-distillation-of-large-language-models" | split: "|" %}
+<section class="pub-selected-section" id="selected-publications">
+  <h2>Selected Publications</h2>
+  <p class="pub-selected-intro">A small selection spanning air-mobility demand, infrastructure planning, and neurosymbolic AI.</p>
+  <div class="pub-selected-grid">
+  {% for selected_slug in selected_slugs %}
+    {% assign selected_publication = site.data.publications | where: "slug", selected_slug | first %}
+    {% if selected_publication %}
+    <article class="pub-selected-card">
+      <p class="pub-selected-meta">{{ selected_publication.year }} · {{ selected_publication.venue }}</p>
+      <h3><a href="{{ '/publications/' | append: selected_publication.slug | append: '/' | relative_url }}">{{ selected_publication.title }}</a></h3>
+      <p class="pub-selected-summary">{% case selected_publication.slug %}
+        {% when "demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions" %}Surveys AAM demand-modeling approaches and identifies gaps in behavior, infrastructure, and operational constraints.
+        {% when "demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility" %}Connects tract-level demand forecasts to energy-aware decisions about Regional Air Mobility portal locations.
+        {% when "integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey" %}Maps neurosymbolic AI approaches to AAM challenges, with a focus on transparency, reliability, and aviation constraints.
+        {% when "survey-on-symbolic-knowledge-distillation-of-large-language-models" %}Reviews methods for translating knowledge in large language models into explicit symbolic representations that support interpretability and efficiency.
+        {% endcase %}</p>
+      <p class="pub-selected-actions">
+        <a href="{{ '/publications/' | append: selected_publication.slug | append: '/' | relative_url }}">Details</a>
+        {% if selected_publication.url %}<a href="{{ selected_publication.url }}" target="_blank" rel="noopener noreferrer">DOI</a>{% endif %}
+      </p>
+    </article>
+    {% endif %}
+  {% endfor %}
+  </div>
 </section>
 
 {% assign dissertations = site.data.publications | where: "type", "dissertation" %}
