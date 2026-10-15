@@ -4,7 +4,7 @@ title: "Professional Service and Leadership"
 seo_title: "Professional Service and IEEE Leadership | Kamal Acharya"
 description: "IEEE leadership, conference organization, editorial service, and peer review by Kamal Acharya."
 permalink: /service/
-last_modified_at: 2026-09-07
+last_modified_at: 2026-10-15
 ---
 
 <section class="service-hero">
@@ -25,7 +25,7 @@ last_modified_at: 2026-09-07
     </article>
     <article class="service-leadership-card">
       <p class="service-role-type">2026–Present</p>
-      <h3><a href="https://site.ieee.org/baltimore/" target="_blank" rel="noopener noreferrer">Baltimore Section Vice-Chair Elect</a></h3>
+      <h3><a href="https://site.ieee.org/baltimore/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Section Vice-Chair</a></h3>
     </article>
     <article class="service-leadership-card">
       <p class="service-role-type">Region 2 · 2025</p>
