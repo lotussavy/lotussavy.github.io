@@ -4,16 +4,20 @@ title: "Research in Advanced Air Mobility and Neurosymbolic AI"
 seo_title: "AAM and Neurosymbolic AI Research | Kamal Acharya"
 description: "Research by Kamal Acharya in Advanced Air Mobility forecasting, neurosymbolic AI, trustworthy decision systems, and transportation optimization."
 permalink: /research/
-last_modified_at: 2026-08-23
+last_modified_at: 2026-10-15
 ---
 
 <section class="research-hero">
   <p class="research-eyebrow">Research</p>
   <h1>Interpretable Intelligence for Future Transportation</h1>
   <p>
-    I develop interpretable AI, forecasting, and optimization methods for advanced mobility and
-    autonomous systems. My work connects predictive modeling with the operational, infrastructure,
-    and policy constraints that shape real transportation decisions.
+    My research develops interpretable and neurosymbolic AI for Advanced Air Mobility (AAM) demand
+    modeling, with a focus on translating forecasts into operational decisions.
+  </p>
+  <p>
+    At Baylor, I contribute to a NASA University Leadership Initiative (ULI) project by connecting
+    AAM demand forecasts with aircraft assignment and scheduling, distributed optimization, and
+    simulation to evaluate safe, energy-efficient operations and infrastructure needs.
   </p>
 </section>
 
