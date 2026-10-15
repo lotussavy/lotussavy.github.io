@@ -142,7 +142,7 @@ last_modified_at: 2026-10-15
     <li>Senior Member, <a href="https://www.ieee.org/" target="_blank" rel="noopener noreferrer">Institute of Electrical and Electronics Engineers (IEEE)</a>.</li>
     <li>Member, <a href="https://www.acm.org/" target="_blank" rel="noopener noreferrer">Association for Computing Machinery (ACM)</a>.</li>
     <li>Member, <a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi Honor Society</a>.</li>
-    <li>Registered Engineer, Nepal Engineering Council.</li>
+
   </ul>
 </section>
 
@@ -163,7 +163,7 @@ last_modified_at: 2026-10-15
     </article>
     <article class="cv-skill-card">
       <h3>Languages</h3>
-      <p>English · Nepali · Hindi</p>
+      <p>English</p>
     </article>
   </div>
 </section>
