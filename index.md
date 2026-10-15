@@ -2,9 +2,9 @@
 layout: default
 title: "Kamal Acharya"
 seo_title: "Kamal Acharya | Baylor Postdoc in AI and Mobility"
-description: "Kamal Acharya is a Baylor University postdoctoral researcher specializing in Advanced Air Mobility, neurosymbolic AI, forecasting, and optimization."
+description: "Kamal Acharya is a Baylor University postdoctoral researcher connecting Advanced Air Mobility demand modeling, neurosymbolic AI, and energy-aware operations research."
 permalink: /
-last_modified_at: 2026-08-22
+last_modified_at: 2026-10-15
 ---
 
 <section class="home-hero">
@@ -17,11 +17,15 @@ last_modified_at: 2026-08-22
     {% endif %}
     <div>
       <h1 class="home-title">Interpretable AI for Future Mobility</h1>
-      <p class="home-subtitle">Advanced Air Mobility · Neurosymbolic AI · Demand Forecasting · Optimization</p>
+      <p class="home-subtitle">Advanced Air Mobility · Neurosymbolic AI · Demand Modeling · Operations Research</p>
     </div>
   </div>
   <p class="home-intro">
-    I build transparent decision-support tools for emerging and resilient transportation systems.
+    I am a Postdoctoral Research Associate in Mechanical Engineering at Baylor University. My research connects Advanced Air Mobility demand forecasts with aircraft assignment and scheduling, distributed optimization, and simulation to evaluate safe, energy-efficient operations.
+  </p>
+  <p class="home-actions">
+    <a class="home-action-link" href="{{ '/research/' | relative_url }}">Explore Research</a>
+    <a class="home-action-link home-action-link-secondary" href="{{ '/cv/' | relative_url }}">View CV</a>
   </p>
   <p class="home-profile-links" aria-label="Academic and professional profiles">
     <a class="profile-icon profile-icon-scholar" href="https://scholar.google.com/citations?hl=en&amp;user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
@@ -43,16 +47,16 @@ last_modified_at: 2026-08-22
   <h2>Selected Publications</h2>
   <div class="home-work-list">
     <article class="home-work-item">
-      <h3><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Integrating Neurosymbolic AI in Advanced Air Mobility</a></h3>
-      <p><span class="home-badge">IJCAI 2025</span> A survey of neurosymbolic methods for safer and more interpretable air-mobility systems.</p>
+      <h3><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions</a></h3>
+      <p><span class="home-badge">IEEE T-ITS 2026</span> A survey of AAM demand modeling methods and research priorities, including infrastructure and equity.</p>
     </article>
     <article class="home-work-item">
-      <h3><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility</a></h3>
-      <p><span class="home-badge">IEEE T-ITS 2026</span> Challenges, opportunities, and research directions in AAM demand forecasting.</p>
+      <h3><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</a></h3>
+      <p><span class="home-badge">IJCAI 2025</span> Examines how neurosymbolic AI could support reliable, transparent, and regulation-aware AAM systems.</p>
     </article>
     <article class="home-work-item">
-      <h3><a href="{{ '/publications/survey-on-symbolic-knowledge-distillation-of-large-language-models/' | relative_url }}">Symbolic Knowledge Distillation of Large Language Models</a></h3>
-      <p><span class="home-badge">IEEE TAI 2024</span> Methods for extracting explicit, interpretable knowledge from large language models.</p>
+      <h3><a href="{{ '/publications/neurosymbolic-reinforcement-learning-and-planning-survey/' | relative_url }}">Neurosymbolic Reinforcement Learning and Planning: A Survey</a></h3>
+      <p><span class="home-badge">IEEE TAI 2024</span> Reviews methods combining neural learning, symbolic reasoning, and reinforcement learning for interpretable planning.</p>
     </article>
   </div>
   <p><a href="{{ '/publications/' | relative_url }}">View all publications →</a></p>
