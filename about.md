@@ -30,8 +30,12 @@ last_modified_at: 2026-10-15
         distributed optimization, and simulation to study energy-aware fleet operations and infrastructure planning.
       </p>
       <p>
-        My doctoral research at UMBC focused on data-driven and neurosymbolic methods for AAM demand modeling.
+        My doctoral research at UMBC focused on data-driven and neurosymbolic approaches to AAM demand modeling.
         Moving from demand prediction toward the operational decisions those forecasts inform continues to shape my work.
+      </p>
+      <p>
+        Alongside research, I bring more than a decade of university teaching experience and have mentored students
+        in research and engineering projects.
       </p>
       <p class="about-meta">
         <a href="{{ '/research/' | relative_url }}">Explore Research</a>
@@ -56,7 +60,6 @@ last_modified_at: 2026-10-15
       <p class="about-timeline-date">Aug 2023–May 2026</p>
       <div>
         <h3>Graduate Research Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
-        <p>Doctoral research on interpretable, data-driven, and neurosymbolic approaches to AAM demand modeling and simulation.</p>
       </div>
     </article>
     <article class="about-timeline-item">
@@ -77,6 +80,7 @@ last_modified_at: 2026-10-15
       <div>
         <h3>Ph.D. in Information Systems</h3>
         <p><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County</a></p>
+        <p>Dissertation: <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}"><em>Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI</em></a></p>
       </div>
     </article>
     <article class="about-timeline-item">
