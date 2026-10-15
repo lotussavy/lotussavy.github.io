@@ -143,44 +143,59 @@
   authors:
     - "Vasiloff K."
     - "Acharya K."
+    - "Arif M. A."
     - "Wang Z."
-    - "Song H."
+    - "Song H. H."
+    - "Wang F."
     - "Sun L."
   author_details:
     - name: "Katherine Vasiloff"
       scholar_url: "https://scholar.google.com/citations?hl=en&user=0y4KHOsAAAAJ"
     - name: "Kamal Acharya"
       scholar_url: "https://scholar.google.com/citations?user=0uLqckgAAAAJ&hl=en"
+    - name: "Md Arifin Arif"
     - name: "Zhenbo Wang"
       scholar_url: "https://scholar.google.com/citations?hl=en&user=dlbsvskAAAAJ"
     - name: "Houbing Herbert Song"
       scholar_url: "https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&hl=en"
+    - name: "Fengyu Wang"
     - name: "Liang Sun"
       scholar_url: "https://scholar.google.com/citations?user=zvMPg9gAAAAJ&hl=en&oi=ao"
   title: "Demand Forecast and Energy-Aware Portal Siting for Regional Air Mobility"
   slug: "demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility"
-  minimal_page: true
-  display_type_label: "Unpublished Work"
   venue: "Journal of Air Transport Management"
-  status: "under major revision"
+  volume: 139
+  pages: "Article 103143"
+  doi: "10.1016/j.jairtraman.2026.103143"
+  url: "https://doi.org/10.1016/j.jairtraman.2026.103143"
+  source_url: "https://www.sciencedirect.com/science/article/pii/S0969699726001791"
   schema_part_of: "Periodical"
   tags:
     - "Advanced Air Mobility"
     - "Demand Forecasting"
     - "Infrastructure Planning"
   research_area: "Advanced Air Mobility and Infrastructure Planning"
-  abstract_summary: "This manuscript focuses on regional air mobility demand forecasting and energy-aware portal siting. It connects travel demand estimation with infrastructure placement so that future regional air mobility networks can be evaluated not only by passenger demand, but also by operational energy needs and practical deployment constraints."
+  abstract_summary: "This study develops a data-driven, mixed-integer programming framework for Regional Air Mobility portal siting. It combines census-tract-level demand forecasts with airport revenue and cost estimation, emissions modeling, and energy-aware, multi-objective location planning."
   research_summary:
-    - "This work studies regional air mobility as an infrastructure planning problem rather than only a demand prediction problem. The central question is how to forecast where passenger demand may emerge while also identifying portal locations that can support energy-aware operations."
-    - "The paper is positioned around the practical deployment needs of regional air mobility networks. By connecting demand estimates with portal siting, the study supports planning decisions that must balance passenger access, operational feasibility, and future electrified aviation constraints."
-    - "Because this manuscript does not yet have a public version of record, the page currently summarizes the research direction conservatively. Additional details should be added after the article metadata and abstract become publicly available."
-  plain_language_summary: "The work asks where regional air mobility services are likely to be useful and how planners can place portals while accounting for both passenger demand and energy-aware operations."
+    - "The study connects Regional Air Mobility demand forecasting with decisions about where to locate portals, treating demand and infrastructure as linked planning problems."
+    - "Its data-driven framework uses census-tract-level demand and mixed-integer programming to evaluate portal locations alongside airport revenues, costs, emissions, and energy considerations."
+    - "The multi-objective siting approach provides a basis for comparing infrastructure plans across passenger demand and operational feasibility."
+  plain_language_summary: "The paper estimates where Regional Air Mobility demand may emerge, then uses optimization to identify portal locations while accounting for costs, emissions, and energy needs."
   contributions:
-    - "Connects demand forecasting with portal siting for regional air mobility planning."
-    - "Frames infrastructure planning around both mobility demand and energy-aware operation."
-    - "Supports practical planning decisions for emerging AAM service networks."
-  impact: "This work is intended to help planners evaluate regional air mobility as a deployable transportation system rather than as an isolated aircraft technology."
-  availability_note: "I could not verify a public abstract for this manuscript online. Detailed publication metadata will be updated after the article has a public version of record."
+    - "Combines census-tract-level demand forecasts with Regional Air Mobility portal siting."
+    - "Uses mixed-integer programming to evaluate infrastructure locations across multiple objectives."
+    - "Integrates airport revenue and cost estimation, emissions modeling, and energy-aware planning."
+  impact: "The work links demand estimates to concrete infrastructure decisions, helping planners compare potential Regional Air Mobility portal networks using both mobility and energy considerations."
+  bibtex: |
+    @article{vasiloff2026demand,
+      author={Vasiloff, Katherine and Acharya, Kamal and Arif, Md Arifin and Wang, Zhenbo and Song, Houbing Herbert and Wang, Fengyu and Sun, Liang},
+      title={Demand Forecast and Energy-Aware Portal Siting for Regional Air Mobility},
+      journal={Journal of Air Transport Management},
+      volume={139},
+      pages={103143},
+      year={2026},
+      doi={10.1016/j.jairtraman.2026.103143}
+    }
 
 - type: journal
   year: 2026
