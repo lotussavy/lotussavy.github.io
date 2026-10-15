@@ -140,6 +140,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% endif %}
 
   {% if publication.plain_language_summary or publication.impact %}
+  {% unless page.compact_detail %}
   <section class="publication-reader-summary" aria-label="Reader summary">
     {% if publication.plain_language_summary %}
     <div id="plain-language-summary">
@@ -156,6 +157,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     </div>
     {% endif %}
   </section>
+  {% endunless %}
   {% endif %}
 
   {% if publication.survey_metrics %}
@@ -398,7 +400,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
         <dd>{% if publication.co_advisor_url %}<a href="{{ publication.co_advisor_url }}" target="_blank" rel="noopener noreferrer">{{ publication.co_advisor }}</a>{% else %}{{ publication.co_advisor }}{% endif %}</dd>
       </div>
       {% endif %}
-      {% if publication.doi %}
+      {% if publication.doi and page.compact_detail != true %}
       <div>
         <dt>DOI</dt>
         <dd><a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.doi }}</a></dd>
@@ -407,7 +409,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     </dl>
   </section>
 
-  {% if publication.tags %}
+  {% if publication.tags and page.compact_detail != true %}
   <section class="publication-detail-section" id="research-topics">
     <h2>Research Topics</h2>
     <p class="pub-tags" aria-label="Publication topics">
@@ -419,6 +421,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% endif %}
 
   {% if publication.url or publication.source_url or publication.repository_url or publication.preprint_url or publication.pdf or publication.availability_note %}
+  {% unless page.compact_detail %}
   <section class="publication-detail-section" id="links-and-access">
     <h2>Links and Access</h2>
     {% if publication.availability_note %}
@@ -445,6 +448,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       {% endif %}
     </p>
   </section>
+  {% endunless %}
   {% endif %}
 
   <section class="publication-detail-section" id="citation">
