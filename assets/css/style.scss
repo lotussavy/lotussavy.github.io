@@ -915,23 +915,55 @@ button:focus-visible {
   margin-top: 0;
 }
 
-.research-method-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
+.research-method-flow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.research-method-tags li {
-  padding: 7px 12px;
+.research-method-flow-step {
+  position: relative;
+  min-width: 0;
+  padding: 17px;
   border: 1px solid #cfe0ef;
-  border-radius: 999px;
+  border-radius: 10px;
   background: #ffffff;
-  color: #24547f;
-  font-size: 0.9rem;
-  font-weight: 600;
+}
+
+.research-method-flow-step:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  z-index: 1;
+  color: #2c6cb0;
+  content: "→";
+  font-size: 1.35rem;
+  font-weight: 700;
+  transform: translate(50%, -50%);
+}
+
+.research-method-flow-number {
+  display: block;
+  margin-bottom: 8px;
+  color: #2c6cb0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.research-method-flow-step h3 {
+  margin: 0 0 8px;
+  color: #17395d;
+  font-size: 1.05rem;
+}
+
+.research-method-flow-step p {
+  margin: 0;
+  color: #40566d;
+  line-height: 1.6;
 }
 
 .research-grid {
@@ -4141,5 +4173,20 @@ button:focus-visible {
   .teaching-collaboration {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+
+@media (max-width: 760px) {
+  .research-method-flow {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .research-method-flow-step:not(:last-child)::after {
+    top: auto;
+    right: 50%;
+    bottom: -23px;
+    transform: translate(50%, 0) rotate(90deg);
   }
 }
