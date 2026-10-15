@@ -67,7 +67,7 @@ twitter:
   username: lotussavy
   card: summary_large_image
 # Paste your Google Search Console verification token here. Leave blank until you are ready to verify.
-google_site_verification: "pmZct0Bz5BhvakECTlzkCs7k0HmieB2hCt5nyRYI0sk"
+google_site_verification: "hSF98JtE5NbBmnRMQ3bNdmpUgRtHS67XKmAnwjgTjig"
 
 plugins:
   - jekyll-seo-tag
