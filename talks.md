@@ -1,18 +1,18 @@
 ---
 layout: default
 title: "Talks and Presentations on AI and Advanced Air Mobility"
-seo_title: "AI and Advanced Air Mobility Talks | Kamal Acharya"
-description: "Selected talks, posters, and invited presentations by Kamal Acharya on neurosymbolic AI, Advanced Air Mobility, optimization, and trustworthy AI systems."
+seo_title: "Research Talks & Presentations | Kamal Acharya"
+description: "Conference presentations, research posters, invited seminars, and graduate training by Kamal Acharya on interpretable AI, neurosymbolic AI, and Advanced Air Mobility."
 permalink: /talks/
-last_modified_at: 2026-09-07
+last_modified_at: 2026-10-15
 ---
 
 <section class="talks-hero">
   <div class="talks-hero-main">
     <div class="talks-hero-copy">
       <p class="talks-eyebrow">Speaking &amp; presentations</p>
-      <h1>Ideas Shared Beyond the Page</h1>
-      <p>Presenting interpretable AI and future-mobility research through conferences, invited seminars, and visual storytelling.</p>
+      <h1>Research Talks &amp; Presentations</h1>
+      <p>I share research on interpretable and neurosymbolic AI, Advanced Air Mobility demand modeling, and trustworthy decision support through conference presentations, invited seminars, posters, and graduate training.</p>
     </div>
     <div class="talks-hero-summary" aria-label="Presentation summary">
       <div><strong>6</strong><span>Conference talks</span></div>
@@ -21,10 +21,10 @@ last_modified_at: 2026-09-07
     </div>
   </div>
   <nav class="talks-jump-nav" aria-label="Presentation categories">
-    <a href="#conference-presentations">Conference Talks</a>
+    <a href="#conference-presentations">Conference Presentations</a>
     <a href="#poster-presentations">Posters</a>
     <a href="#invited-talks">Invited Talks</a>
-    <a href="#training">Training</a>
+    <a href="#training">Graduate Training</a>
   </nav>
 </section>
 
@@ -33,7 +33,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>Urban Air Mobility Flight Demand Modeling for Airports in New York City</h3>
-    <p><strong>AIAA SCITECH 2026 Forum</strong> | Orlando, FL, USA | Conference Presentation</p>
+    <p><strong>AIAA SCITECH 2026 Forum</strong> | Orlando, FL, USA</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" width="320" height="110" loading="lazy" />
     </p>
@@ -45,7 +45,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</h3>
-    <p><strong>IJCAI 2025</strong> | Montreal, Canada | Conference Presentation</p>
+    <p><strong>IJCAI 2025</strong> | Montreal, Canada</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" width="320" height="110" loading="lazy" />
     </p>
@@ -57,7 +57,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>Neurosymbolic Approach for Travel Demand Prediction: Integrating Decision Tree Rules into Neural Networks</h3>
-    <p><strong>IWCMC 2025</strong> | Abu Dhabi, United Arab Emirates | Conference Presentation</p>
+    <p><strong>IWCMC 2025</strong> | Abu Dhabi, United Arab Emirates</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IWCMC.png' | relative_url }}" alt="IWCMC logo" width="320" height="110" loading="lazy" />
     </p>
@@ -69,7 +69,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>A Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction</h3>
-    <p><strong>IEEE CAI 2025</strong> | Santa Clara, CA, USA | Conference Presentation</p>
+    <p><strong>IEEE CAI 2025</strong> | Santa Clara, CA, USA</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-CAI.png' | relative_url }}" alt="IEEE CAI logo" width="320" height="110" loading="lazy" />
     </p>
@@ -81,7 +81,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>Regional Air Mobility Flight Demand Modeling in Tennessee State</h3>
-    <p><strong>AIAA SCITECH 2025 Forum</strong> | Orlando, FL, USA | Conference Presentation</p>
+    <p><strong>AIAA SCITECH 2025 Forum</strong> | Orlando, FL, USA</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/AIAA.jpg' | relative_url }}" alt="AIAA logo" width="320" height="110" loading="lazy" />
     </p>
@@ -93,7 +93,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>Demand Modeling for Advanced Air Mobility</h3>
-    <p><strong>IEEE BigData 2024</strong> | Washington, DC, USA | Conference Presentation</p>
+    <p><strong>IEEE BigData 2024</strong> | Washington, DC, USA</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IEEE-BigData.jpeg' | relative_url }}" alt="IEEE BigData logo" width="320" height="110" loading="lazy" />
     </p>
@@ -109,7 +109,7 @@ last_modified_at: 2026-09-07
   <h2 id="poster-presentations">Poster Presentations</h2>
   <article class="talk-item">
     <h3>Improving Air Mobility for Pre-Disaster Planning with Neural Network Accelerated Genetic Algorithm</h3>
-    <p><strong>27th IEEE International Conference on Intelligent Transportation Systems (ITSC 2024)</strong> | Edmonton, Canada | Poster Presentation</p>
+    <p><strong>27th IEEE International Conference on Intelligent Transportation Systems (ITSC 2024)</strong> | Edmonton, Canada</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/ITSC-logo.png' | relative_url }}" alt="27th IEEE ITSC logo" width="320" height="110" loading="lazy" />
     </p>
@@ -121,7 +121,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>Demand Modeling for Advanced Air Mobility</h3>
-    <p><strong>COEIT Research Day 2025</strong> | April 11, 2025 | Poster Presentation</p>
+    <p><strong>COEIT Research Day 2025</strong> | April 11, 2025</p>
     <p>
       <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" /></a>
     </p>
@@ -134,7 +134,7 @@ last_modified_at: 2026-09-07
 
   <article class="talk-item">
     <h3>Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</h3>
-    <p><strong>IJCAI 2025</strong> | Montreal, Canada | Poster Presentation</p>
+    <p><strong>IJCAI 2025</strong> | Montreal, Canada</p>
     <p>
       <img class="talk-affiliation-logo" src="{{ '/assets/logos/IJCAI-logo.png' | relative_url }}" alt="IJCAI 2025 logo" width="320" height="110" loading="lazy" />
     </p>
@@ -147,7 +147,7 @@ last_modified_at: 2026-09-07
 
 
 <section class="talks-section">
-  <h2 id="invited-talks">Invited Talks</h2>
+  <h2 id="invited-talks">Invited Talks &amp; Seminars</h2>
 
   <article class="talk-item talk-item-featured">
     <h3>Neurosymbolic AI (NSAI): Learning Meets Reasoning</h3>
@@ -178,14 +178,12 @@ last_modified_at: 2026-09-07
   </article>
 
   <article class="talk-item talk-item-featured">
-    <h3>Neurosymbolic AI for Advanced Air Mobility</h3>
-    <p><strong>IS 792 Guest Lecture</strong> | <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a> Department of Information Systems</p>
+    <h3>Neurosymbolic AI for Advanced Air Mobility: Foundations, Technical Advances, and an Approach to Travel Demand Modeling</h3>
+    <p><strong>IS 792: Advanced Topics in Information Systems</strong> | November 20, 2025 | <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></p>
     <p>
       <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img class="talk-affiliation-logo" src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC logo" width="320" height="110" loading="lazy" /></a>
     </p>
-    <p>
-      Invited by <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing Herbert Song</a>.
-    </p>
+    <p>Guest lecture hosted by <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing Herbert Song</a>.</p>
        <p class="talk-links">
       <a href="{{ '/assets/slides/UMBCInvited.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Slides</a>
     </p>
@@ -195,24 +193,18 @@ last_modified_at: 2026-09-07
 
 
 <section class="talks-section">
-  <h2 id="training">Training</h2>
+  <h2 id="training">Graduate Training</h2>
   <article class="talk-item">
     <h3>Operationalizing AI/Machine Learning for Cybersecurity Training</h3>
-    <p><strong>2024 Training Session</strong> | May 20, 2024 - August 9, 2024 (12 Weeks)</p>
-    <p>
-      Served as a <strong>Teaching Assistant (TA)</strong> and delivered training support for
-      AI/ML and cybersecurity modules, including hands-on mentoring and participant guidance.
-    </p>
-    <p>
-      <strong>Role Highlight:</strong> TA, Department of Information Systems, <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a>.
-    </p>
+    <p><strong>NSF-funded graduate program</strong> | May 20–August 9, 2024</p>
+    <p>As a teaching assistant in the UMBC Department of Information Systems, I supported hands-on AI/ML and cybersecurity instruction and mentored interdisciplinary teams on research implementation, technical reports, and presentations. The program was supported by NSF grants OAC-2309760 and OAC-2229976.</p>
     <div class="training-logos" aria-label="Program institutions and funder">
       <img src="{{ '/assets/logos/nsf-logo.gif' | relative_url }}" alt="NSF" width="320" height="110" loading="lazy" />
       <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/logos/umbc-logo.png' | relative_url }}" alt="UMBC" width="320" height="110" loading="lazy" /></a>
       <img src="{{ '/assets/logos/umd-logo.jpeg' | relative_url }}" alt="UMass Dartmouth" width="320" height="110" loading="lazy" />
     </div>
     <p>
-      Full program details (instructors, structure, eligibility, stipend, and updates) are available on the official page.
+      Program details and training materials:
     </p>
     <p class="talk-links">
       <a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">Program Page</a>
