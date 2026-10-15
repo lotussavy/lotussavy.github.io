@@ -72,15 +72,24 @@ last_modified_at: 2026-10-15
 </section>
 
 <section class="research-section research-methods-section">
-  <h2>Methods</h2>
-  <ul class="research-method-tags" aria-label="Research methods">
-    <li>Time-Series Forecasting</li>
-    <li>Deep Learning</li>
-    <li>Symbolic Reasoning</li>
-    <li>Multimodal Learning</li>
-    <li>Multi-Objective Optimization</li>
-    <li>Scenario Evaluation</li>
-  </ul>
+  <h2>From Forecasts to Operational Decisions</h2>
+  <ol class="research-method-flow">
+    <li class="research-method-flow-step">
+      <span class="research-method-flow-number">01</span>
+      <h3>Forecast demand</h3>
+      <p>Estimate where and when travelers may use Advanced Air Mobility through behavioral, spatial, and data-driven models.</p>
+    </li>
+    <li class="research-method-flow-step">
+      <span class="research-method-flow-number">02</span>
+      <h3>Optimize operations and infrastructure</h3>
+      <p>Use forecasts to inform portal siting, aircraft assignment and scheduling, and distributed operational planning.</p>
+    </li>
+    <li class="research-method-flow-step">
+      <span class="research-method-flow-number">03</span>
+      <h3>Evaluate with simulation</h3>
+      <p>Test how alternative plans affect service, energy use, and infrastructure needs under different operating scenarios.</p>
+    </li>
+  </ol>
 </section>
 
 <section class="research-section">
