@@ -1,20 +1,21 @@
 ---
 layout: default
 title: "Kamal Acharya Curriculum Vitae"
-description: "CV for Kamal Acharya, a Baylor University postdoctoral researcher and UMBC Information Systems Ph.D., covering research, publications, teaching, and skills."
+description: "Academic profile of Kamal Acharya, a Baylor University postdoctoral research associate working on interpretable AI, Advanced Air Mobility demand modeling, optimization, and simulation."
 permalink: /cv/
-last_modified_at: 2026-09-07
+last_modified_at: 2026-10-15
 ---
 
 <section class="cv-hero">
   <p class="cv-eyebrow">Academic Profile</p>
   <h1>Curriculum Vitae</h1>
   <p>
-    Research experience, education, teaching, professional service, and technical expertise in
-    interpretable AI and future transportation systems.
+    I develop interpretable and neurosymbolic AI methods for Advanced Air Mobility, connecting
+    demand forecasts with optimization and simulation to support infrastructure and operational decisions.
   </p>
   <p class="cv-hero-links">
     <a class="cv-download" href="{{ '/CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">Download Full CV (PDF)</a>
+    <a class="cv-download" href="{{ '/publications/' | relative_url }}">View Publications</a>
   </p>
 </section>
 
@@ -22,19 +23,19 @@ last_modified_at: 2026-09-07
   <h2>Education</h2>
   <div class="cv-timeline">
     <article class="cv-item">
-      <h3>Ph.D., Information Systems</h3>
+      <h3>Ph.D. in Information Systems</h3>
       <p><strong><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></strong> · 2026</p>
       <p>
         Dissertation: <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}"><em>Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI</em></a>
       </p>
-      <p>Advisor: <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing Song</a> · Co-Advisor: <a href="https://scholar.google.com/citations?hl=en&amp;user=1g3pA4cAAAAJ" target="_blank" rel="noopener noreferrer">Dr. Alvaro Velasquez</a></p>
+      <p>Advisor: <a href="https://scholar.google.com/citations?user=iJ_XxxoAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Dr. Houbing H. Song</a> · Co-Advisor: <a href="https://scholar.google.com/citations?hl=en&amp;user=1g3pA4cAAAAJ" target="_blank" rel="noopener noreferrer">Dr. Alvaro Velasquez</a></p>
     </article>
     <article class="cv-item">
-      <h3>M.Sc., Information System Engineering</h3>
+      <h3>M.Sc. in Information System Engineering</h3>
       <p><strong><a href="https://www.purbanchaluniversity.edu.np/" target="_blank" rel="noopener noreferrer">Purbanchal University</a></strong> · 2019</p>
     </article>
     <article class="cv-item">
-      <h3>B.E., Electronics and Communication Engineering</h3>
+      <h3>B.E. in Electronics and Communication Engineering</h3>
       <p><strong><a href="https://tu.edu.np/" target="_blank" rel="noopener noreferrer">Tribhuvan University</a></strong> · 2011</p>
     </article>
   </div>
@@ -48,22 +49,21 @@ last_modified_at: 2026-09-07
       <p>August 2026–Present · Department of Mechanical Engineering</p>
       <p>Working with <a href="https://scholar.google.com/citations?user=zvMPg9gAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Dr. Liang Sun</a> in the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">Advanced Vehicle Intelligence and Autonomy (AVIA) Lab</a>.</p>
       <ul>
-        <li>Conduct research in aerospace AI, autonomy, optimization, and advanced mobility.</li>
-        <li>Develop research software, datasets, experiments, and scholarly publications.</li>
-        <li>Support proposal development and mentor graduate and undergraduate researchers.</li>
+        <li>Contribute to NASA ULI research on mobility–energy coordination for Advanced Air Mobility infrastructure and operations.</li>
+        <li>Connect demand projections with aircraft assignment and scheduling, distributed optimization, and simulation to evaluate safe, energy-efficient operating scenarios.</li>
       </ul>
     </article>
     <article class="cv-item">
-      <h3>Graduate Research Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
+      <h3>Graduate Research Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></h3>
       <p>2023–2026</p>
       <ul>
-        <li>Developed data-driven and neurosymbolic models for AAM demand estimation.</li>
-        <li>Built rolling-horizon simulation workflows for mobility planning scenarios.</li>
-        <li>Contributed to NASA ULI-aligned infrastructure and policy analysis.</li>
+        <li>Developed data-driven and neurosymbolic models for Advanced Air Mobility demand estimation.</li>
+        <li>Built rolling-horizon simulation workflows for mobility-planning scenarios.</li>
+        <li>Contributed to NASA ULI analyses connecting demand forecasts with infrastructure planning and policy scenarios.</li>
       </ul>
     </article>
     <article class="cv-item">
-      <h3>Teaching Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
+      <h3>Teaching Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></h3>
       <p>2024 · <a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">AI/ML Cybersecurity Program</a></p>
       <ul>
         <li>Supported NSF-funded graduate training in AI/ML and cybersecurity.</li>
@@ -74,11 +74,20 @@ last_modified_at: 2026-09-07
       <h3>Research Assistant · <a href="https://erau.edu/" target="_blank" rel="noopener noreferrer">Embry-Riddle Aeronautical University</a></h3>
       <p>2022–2023</p>
       <ul>
-        <li>Studied air-mobility prediction and optimization under emergency scenarios.</li>
+        <li>Studied air-mobility prediction and optimization for emergency scenarios.</li>
         <li>Built deep-learning workflows for micro- and macro-level mobility prediction.</li>
       </ul>
     </article>
   </div>
+</section>
+
+<section class="cv-section">
+  <h2>Selected Publications</h2>
+  <ul class="cv-list">
+    <li><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}"><em>Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions</em></a>. <strong>IEEE Transactions on Intelligent Transportation Systems</strong>, 2026. A survey of AAM demand-modeling methods, challenges, and research directions.</li>
+    <li><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}"><em>Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</em></a>. <strong>IJCAI</strong>, 2025. Reviews how neurosymbolic methods can address AAM needs for transparency and reliability.</li>
+    <li><a href="{{ '/publications/survey-on-symbolic-knowledge-distillation-of-large-language-models/' | relative_url }}"><em>A Survey on Symbolic Knowledge Distillation of Large Language Models</em></a>. <strong>IEEE Transactions on Artificial Intelligence</strong>, 2024. Surveys approaches for expressing model knowledge in explicit symbolic forms.</li>
+  </ul>
 </section>
 
 <section class="cv-section">
@@ -87,28 +96,35 @@ last_modified_at: 2026-09-07
     <li><a href="https://ieeexplore.ieee.org/document/10709672" target="_blank" rel="noopener noreferrer">IEEE Computational Intelligence Society Publication Spotlight, 2024</a>.</li>
     <li>Outstanding Reviewer, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer">IEEE Transactions on Neural Networks and Learning Systems</a> (2024–2025).</li>
     <li><a href="https://coeit.umbc.edu/2025-talks-poster-sessions/" target="_blank" rel="noopener noreferrer">Doctoral Research Poster Award, UMBC, 2025</a>.</li>
-    <li>IEEE Senior Member and IEEE Baltimore Section Vice-Chair Elect (2026–Present).</li>
-    <li>Co-Chair, <a href="https://site.ieee.org/baltimore/technical-colloquium-landing-page/colloquium-committee/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Technical Colloquium and Professional Development Conference, 2026</a>.</li>
     <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Travel Grant, 2026.</li>
     <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Professional Development Grant, 2026.</li>
+  </ul>
+</section>
+
+<section class="cv-section">
+  <h2>Professional Service &amp; Membership</h2>
+  <ul class="cv-list">
+    <li>IEEE Baltimore Section Vice-Chair (2026–Present).</li>
+    <li>Co-Chair, <a href="https://site.ieee.org/baltimore/technical-colloquium-landing-page/colloquium-committee/" target="_blank" rel="noopener noreferrer">IEEE Baltimore Technical Colloquium and Professional Development Conference, 2026</a>.</li>
+    <li>IEEE Senior Member.</li>
     <li>Member, <a href="https://www.phikappaphi.org/" target="_blank" rel="noopener noreferrer">Phi Kappa Phi</a>.</li>
   </ul>
 </section>
 
 <section class="cv-section">
-  <h2>Technical Skills</h2>
+  <h2>Research Methods &amp; Technical Skills</h2>
   <div class="cv-skills-grid">
     <article class="cv-skill-card">
+      <h3>Research Methods</h3>
+      <p>Advanced Air Mobility demand modeling · Deep learning · Reinforcement learning · Neurosymbolic AI · Simulation · Multi-objective optimization · Spatial analysis</p>
+    </article>
+    <article class="cv-skill-card">
       <h3>Programming</h3>
-      <p>Python · C/C++ · SQL · PHP</p>
+      <p>Python · C/C++ · SQL</p>
     </article>
     <article class="cv-skill-card">
-      <h3>AI &amp; Machine Learning</h3>
-      <p>Deep Learning · Reinforcement Learning · Neurosymbolic AI · Time-Series Forecasting</p>
-    </article>
-    <article class="cv-skill-card">
-      <h3>Research Tools</h3>
-      <p>PyTorch · TensorFlow · Scikit-learn · Pandas · GeoPandas · MATLAB · Docker · Git · CUDA</p>
+      <h3>Software &amp; Research Tools</h3>
+      <p>PyTorch · TensorFlow · Scikit-learn · Pandas · GeoPandas · MATLAB · Docker · Git · CUDA · CircuitLab</p>
     </article>
     <article class="cv-skill-card">
       <h3>Languages</h3>
@@ -125,5 +141,5 @@ last_modified_at: 2026-09-07
     <a href="{{ '/gallery/' | relative_url }}">Certificates &amp; Credentials <span aria-hidden="true">→</span></a>
     <a href="{{ '/talks/' | relative_url }}">Talks &amp; Presentations <span aria-hidden="true">→</span></a>
   </div>
-  <p class="cv-last-updated">Last updated: August 2026</p>
+  <p class="cv-last-updated">Last updated: October 2026</p>
 </section>
