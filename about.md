@@ -59,7 +59,7 @@ last_modified_at: 2026-10-15
     <article class="about-timeline-item">
       <p class="about-timeline-date">Aug 2023–May 2026</p>
       <div>
-        <h3>Graduate Research Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC</a></h3>
+        <h3>Graduate Research Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County</a></h3>
       </div>
     </article>
     <article class="about-timeline-item">
