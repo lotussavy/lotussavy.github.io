@@ -24,7 +24,7 @@ last_modified_at: 2026-10-15
   <div class="cv-timeline">
     <article class="cv-item">
       <h3>Ph.D. in Information Systems</h3>
-      <p><strong><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></strong> · 2026</p>
+      <p><strong><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></strong> · May 2026</p>
       <p>
         Dissertation: <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}"><em>Enhancing Demand Modeling for Advanced Air Mobility Using Data-Driven Learning and Neurosymbolic AI</em></a>
       </p>
@@ -55,7 +55,7 @@ last_modified_at: 2026-10-15
     </article>
     <article class="cv-item">
       <h3>Graduate Research Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></h3>
-      <p>2023–2026</p>
+      <p>August 2023–May 2026</p>
       <ul>
         <li>Developed data-driven and neurosymbolic models for Advanced Air Mobility demand estimation.</li>
         <li>Built rolling-horizon simulation workflows for mobility-planning scenarios.</li>
@@ -64,7 +64,7 @@ last_modified_at: 2026-10-15
     </article>
     <article class="cv-item">
       <h3>Teaching Assistant · <a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County (UMBC)</a></h3>
-      <p>2024 · <a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">AI/ML Cybersecurity Program</a></p>
+      <p>May–August 2024 · <a href="https://www.cis.umassd.edu/~jyuan/cybertraining/index.html" target="_blank" rel="noopener noreferrer">AI/ML Cybersecurity Program</a></p>
       <ul>
         <li>Supported NSF-funded graduate training in AI/ML and cybersecurity.</li>
         <li>Mentored interdisciplinary student teams on research implementation and reporting.</li>
@@ -72,10 +72,18 @@ last_modified_at: 2026-10-15
     </article>
     <article class="cv-item">
       <h3>Research Assistant · <a href="https://erau.edu/" target="_blank" rel="noopener noreferrer">Embry-Riddle Aeronautical University</a></h3>
-      <p>2022–2023</p>
+      <p>August 2022–August 2023</p>
       <ul>
         <li>Studied air-mobility prediction and optimization for emergency scenarios.</li>
         <li>Built deep-learning workflows for micro- and macro-level mobility prediction.</li>
+      </ul>
+    </article>
+    <article class="cv-item">
+      <h3>Earlier Teaching &amp; Academic Leadership · Nepal</h3>
+      <p>2012–2021</p>
+      <ul>
+        <li>Visiting Lecturer at colleges affiliated with Tribhuvan and Purbanchal universities; Lecturer at Janakpur Engineering College (2012–2013).</li>
+        <li>As Information Technology Coordinator at the College of Applied Business and Technology (2014–2021), taught computing courses, helped establish an R&amp;D unit, and organized IT programs and workshops.</li>
       </ul>
     </article>
   </div>
@@ -84,6 +92,7 @@ last_modified_at: 2026-10-15
 <section class="cv-section">
   <h2>Selected Publications</h2>
   <ul class="cv-list">
+    <li><a href="{{ '/publications/demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility/' | relative_url }}"><em>Demand Forecast and Energy-Aware Portal Siting for Regional Air Mobility</em></a>. <strong>Journal of Air Transport Management</strong>, 2026. Connects demand forecasting with energy-aware infrastructure siting for regional air mobility.</li>
     <li><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}"><em>Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions</em></a>. <strong>IEEE Transactions on Intelligent Transportation Systems</strong>, 2026. A survey of AAM demand-modeling methods, challenges, and research directions.</li>
     <li><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}"><em>Integrating Neurosymbolic AI in Advanced Air Mobility: A Comprehensive Survey</em></a>. <strong>IJCAI</strong>, 2025. Reviews how neurosymbolic methods can address AAM needs for transparency and reliability.</li>
     <li><a href="{{ '/publications/survey-on-symbolic-knowledge-distillation-of-large-language-models/' | relative_url }}"><em>A Survey on Symbolic Knowledge Distillation of Large Language Models</em></a>. <strong>IEEE Transactions on Artificial Intelligence</strong>, 2024. Surveys approaches for expressing model knowledge in explicit symbolic forms.</li>
@@ -96,7 +105,7 @@ last_modified_at: 2026-10-15
     <li><a href="https://ieeexplore.ieee.org/document/10709672" target="_blank" rel="noopener noreferrer">IEEE Computational Intelligence Society Publication Spotlight, 2024</a>.</li>
     <li>Outstanding Reviewer, <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer">IEEE Transactions on Neural Networks and Learning Systems</a> (2024–2025).</li>
     <li><a href="https://coeit.umbc.edu/2025-talks-poster-sessions/" target="_blank" rel="noopener noreferrer">Doctoral Research Poster Award, UMBC, 2025</a>.</li>
-    <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Travel Grant, 2026.</li>
+    <li>Conference Travel Grant, Department of Information Systems, UMBC, 2026.</li>
     <li><a href="https://gsa.umbc.edu/" target="_blank" rel="noopener noreferrer">UMBC Graduate Student Association</a> Professional Development Grant, 2026.</li>
   </ul>
 </section>
@@ -142,15 +151,15 @@ last_modified_at: 2026-10-15
   <div class="cv-skills-grid">
     <article class="cv-skill-card">
       <h3>Research Methods</h3>
-      <p>Advanced Air Mobility demand modeling · Deep learning · Reinforcement learning · Neurosymbolic AI · Simulation · Multi-objective optimization · Spatial analysis</p>
+      <p>Advanced Air Mobility demand modeling · Deep learning · Reinforcement learning · Neurosymbolic AI · Mixed-integer and distributed optimization · ADMM · Gravity modeling · Scenario-based simulation</p>
     </article>
     <article class="cv-skill-card">
       <h3>Programming</h3>
-      <p>Python · C/C++ · SQL</p>
+      <p>Python · C · C++ · PHP · SQL</p>
     </article>
     <article class="cv-skill-card">
       <h3>Software &amp; Research Tools</h3>
-      <p>PyTorch · TensorFlow · Scikit-learn · Pandas · GeoPandas · MATLAB · Docker · Git · CUDA · CircuitLab</p>
+      <p>PyTorch · TensorFlow · Scikit-learn · Gurobi · Pyomo · MATLAB · Git · MySQL · CircuitLab</p>
     </article>
     <article class="cv-skill-card">
       <h3>Languages</h3>
