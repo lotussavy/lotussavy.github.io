@@ -36,7 +36,7 @@ last_modified_at: 2026-10-15
         and regional AAM planning.
       </p>
       <p class="research-feature"><strong>Featured:</strong> NASA ULI demand forecasting and mobility-energy coordination.</p>
-      <p class="research-program-link"><a href="{{ '/publications/' | relative_url }}">Related publications →</a></p>
+      <p class="research-program-link"><a href="{{ '/publications/demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility/' | relative_url }}">Read the 2026 portal-siting paper →</a></p>
     </article>
 
     <article class="research-program">
@@ -51,7 +51,7 @@ last_modified_at: 2026-10-15
         robust, and controllable AI.
       </p>
       <p class="research-feature"><strong>Featured:</strong> Neurosymbolic demand prediction and symbolic distillation of LLMs.</p>
-      <p class="research-program-link"><a href="{{ '/publications/' | relative_url }}">Related publications →</a></p>
+      <p class="research-program-link"><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Read the IJCAI 2025 survey →</a></p>
     </article>
 
     <article class="research-program">
@@ -66,7 +66,7 @@ last_modified_at: 2026-10-15
         scheduling, and resilient mobility planning.
       </p>
       <p class="research-feature"><strong>Featured:</strong> Neural-accelerated optimization for pre-disaster mobility planning.</p>
-      <p class="research-program-link"><a href="{{ '/publications/' | relative_url }}">Related publications →</a></p>
+      <p class="research-program-link"><a href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Read the IEEE ITSC 2024 paper →</a></p>
     </article>
   </div>
 </section>
