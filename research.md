@@ -72,22 +72,36 @@ last_modified_at: 2026-10-15
 </section>
 
 <section class="research-section research-methods-section">
+  <p class="research-flow-eyebrow">Research workflow</p>
   <h2>From Forecasts to Operational Decisions</h2>
+  <p class="research-flow-intro">A connected workflow turns demand estimates into plans, then tests those plans against operational scenarios.</p>
   <ol class="research-method-flow">
     <li class="research-method-flow-step">
-      <span class="research-method-flow-number">01</span>
+      <div class="research-method-flow-topline">
+        <span class="research-method-flow-number">01</span>
+        <span class="research-method-flow-label">Forecast</span>
+      </div>
       <h3>Forecast demand</h3>
-      <p>Estimate where and when travelers may use Advanced Air Mobility through behavioral, spatial, and data-driven models.</p>
+      <p>Estimate where and when travelers may use Advanced Air Mobility.</p>
+      <p class="research-method-flow-detail">Behavioral, spatial, and data-driven models</p>
     </li>
     <li class="research-method-flow-step">
-      <span class="research-method-flow-number">02</span>
+      <div class="research-method-flow-topline">
+        <span class="research-method-flow-number">02</span>
+        <span class="research-method-flow-label">Plan</span>
+      </div>
       <h3>Optimize operations and infrastructure</h3>
-      <p>Use forecasts to inform portal siting, aircraft assignment and scheduling, and distributed operational planning.</p>
+      <p>Connect forecasts to portal siting, aircraft assignment and scheduling, and distributed optimization.</p>
+      <p class="research-method-flow-detail">Infrastructure, scheduling, and optimization</p>
     </li>
     <li class="research-method-flow-step">
-      <span class="research-method-flow-number">03</span>
-      <h3>Evaluate with simulation</h3>
-      <p>Test how alternative plans affect service, energy use, and infrastructure needs under different operating scenarios.</p>
+      <div class="research-method-flow-topline">
+        <span class="research-method-flow-number">03</span>
+        <span class="research-method-flow-label">Evaluate</span>
+      </div>
+      <h3>Test scenarios in simulation</h3>
+      <p>Compare service and energy outcomes under alternative operating plans.</p>
+      <p class="research-method-flow-detail">Service, energy, and scenario analysis</p>
     </li>
   </ol>
 </section>
