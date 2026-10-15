@@ -78,14 +78,6 @@ last_modified_at: 2026-10-15
         <li>Built deep-learning workflows for micro- and macro-level mobility prediction.</li>
       </ul>
     </article>
-    <article class="cv-item">
-      <h3>Earlier Teaching &amp; Academic Leadership</h3>
-      <p>2012–2021</p>
-      <ul>
-        <li>Visiting Lecturer at colleges affiliated with Tribhuvan and Purbanchal universities; Lecturer at Janakpur Engineering College (2012–2013).</li>
-        <li>As Information Technology Coordinator at the College of Applied Business and Technology (2014–2021), taught computing courses, helped establish an R&amp;D unit, and organized IT programs and workshops.</li>
-      </ul>
-    </article>
   </div>
 </section>
 
@@ -160,10 +152,6 @@ last_modified_at: 2026-10-15
     <article class="cv-skill-card">
       <h3>Software &amp; Research Tools</h3>
       <p>PyTorch · TensorFlow · Scikit-learn · Gurobi · Pyomo · MATLAB · Git · MySQL · CircuitLab</p>
-    </article>
-    <article class="cv-skill-card">
-      <h3>Languages</h3>
-      <p>English</p>
     </article>
   </div>
 </section>
