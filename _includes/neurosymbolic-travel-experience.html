@@ -227,7 +227,7 @@
     var depth=+el("ns-depth").value, col={v01:2,v001:3,v0001:4}[el("ns-threshold").value], current=counts[depth-3], all=current[1], selected=current[col];
     str("ns-depth-value",depth);str("ns-all-count",all.toLocaleString());str("ns-selected-count",selected.toLocaleString());str("ns-pct-count",Math.round(selected/all*100)+"%");
     var svg=el("ns-rule-chart");
-    while(svg.lastChild && !["title","desc"].includes(svg.lastChild.tagName.toLowerCase()))svg.removeChild(svg.lastChild);
+    Array.from(svg.children).forEach(function(node){if(!["title","desc"].includes(node.tagName.toLowerCase()))svg.removeChild(node);});
     var x=function(i){return 48+i*47;},y=function(v){return 252-(v/2700)*216;};
     [0,500,1000,1500,2000,2500].forEach(function(v){
       svg.appendChild(svgEl("line",{x1:43,y1:y(v),x2:620,y2:y(v),stroke:"#cbdbe4","stroke-width":1}));
