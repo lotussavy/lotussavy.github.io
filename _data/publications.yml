@@ -233,7 +233,9 @@
     - "Intelligent Transportation Systems"
   research_area: "Advanced Air Mobility Demand Modeling"
   publication_date: "2026-03-16"
-  pages: "1-21"
+  pages: "7454-7474"
+  volume: "27"
+  issue: "7"
   repository_url: "https://mdsoar.org/items/3c77e11d-d68b-4e50-988d-e325c63ef9b9"
   source_url: "https://ieeexplore.ieee.org/abstract/document/11435518"
   pdf: "https://mdsoar.org/bitstreams/c0ad7dfd-f5d5-4744-9531-3112288b24ff/download"
@@ -314,10 +316,9 @@
       journal={IEEE Transactions on Intelligent Transportation Systems},
       title={Demand Modeling for Advanced Air Mobility: Challenges, Opportunities, and Future Directions},
       year={2026},
-      volume={},
-      number={},
-      pages={1-21},
-      keywords={Active appearance model;Atmospheric modeling;Urban air mobility;Random access memory;Aircraft;Surveys;Biological system modeling;Aircraft propulsion;Adaptation models;Analytical models;Advanced air mobility;air transportation;data analytics and data science;transportation demand modeling and estimation},
+      volume={27},
+      number={7},
+      pages={7454--7474},
       doi={10.1109/TITS.2026.3671002}}
 
 - type: journal
