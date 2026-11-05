@@ -1,0 +1,228 @@
+<section class="ram-experience" id="ram-lab" aria-labelledby="ram-title">
+  <div class="ram-lead">
+    <p class="ram-kicker">Interactive research experience · AIAA SciTech 2025</p>
+    <h2 id="ram-title">The Airport Access Problem</h2>
+    <p>Can regional flights outperform driving once airport access, air travel, cost, time, and safety risk are considered? Explore the paper's Tennessee airport-network scenarios, generalized travel-cost framework, and reported RAM-favorable conditions.</p>
+    <div class="ram-facts" aria-label="Study scope">
+      <div><strong>50–500 mi</strong><span>Study trip-distance range</span></div>
+      <div><strong>5</strong><span>Major hubs in initial network</span></div>
+      <div><strong>≈300 mi</strong><span>Long-distance finding</span></div>
+    </div>
+    <p class="ram-fine">Reported conditions are findings from modeled Tennessee MSA origin–destination scenarios, not guaranteed outcomes for a new trip.</p>
+  </div>
+  <div class="ram-nav" role="group" aria-label="Research experience sections">
+    <button type="button" data-ram-tab="discover" class="is-active" aria-pressed="true"><small>01</small>Discover</button>
+    <button type="button" data-ram-tab="compare" aria-pressed="false"><small>02</small>Compare</button>
+    <button type="button" data-ram-tab="explain" aria-pressed="false"><small>03</small>Explain</button>
+  </div>
+
+  <section class="ram-scene" id="ram-discover" data-ram-panel="discover" aria-labelledby="ram-discover-title">
+    <p class="ram-kicker">01 · Network accessibility</p>
+    <h3 id="ram-discover-title">Why the nearest regional airport can matter</h3>
+    <p>Under the five-hub case, a traveler may need long ground access and egress to reach major airports. The expanded-network case considers nearby regional airports, which may reduce backtracking. Toggle the two scenarios to trace the journey.</p>
+    <div class="ram-choice" role="group" aria-label="Select airport-network scenario">
+      <button type="button" class="is-active" data-ram-network="five" aria-pressed="true">Five major hubs</button>
+      <button type="button" data-ram-network="expanded" aria-pressed="false">Expanded airport network</button>
+    </div>
+    <div class="ram-diagram">
+      <svg id="ram-route-svg" viewBox="0 0 720 256" role="img" aria-labelledby="ram-diagram-title ram-diagram-desc">
+        <title id="ram-diagram-title">Schematic RAM journey and airport access</title>
+        <desc id="ram-diagram-desc">Ground access, an inter-airport flight, and ground egress for the two network scenarios. This is a conceptual schematic, not a geographic or distance-accurate route map.</desc>
+        <g fill="none" stroke="#d7e6ec" stroke-width="1"><path d="M20 37H700M20 90H700M20 143H700M20 196H700"/><path d="M85 20V226M207 20V226M360 20V226M513 20V226M640 20V226"/></g>
+        <g id="ram-journey-layer"></g>
+      </svg>
+      <div class="ram-legend"><span><i class="ram-key-ground"></i>Ground access / egress</span><span><i class="ram-key-air"></i>RAM flight</span></div>
+      <p class="ram-fine">Conceptual route topology only. The relative path lengths are illustrative, not measured Tennessee travel times, mileage, or trip costs.</p>
+    </div>
+    <div class="ram-description" aria-live="polite">
+      <strong id="ram-network-heading">Five-major-airport scenario</strong>
+      <p id="ram-network-desc">The study tests BNA, CHA, MEM, TRI, and TYS as major airport hubs. Reaching a distant hub can offset the time advantages of flying for certain origin–destination pairs.</p>
+    </div>
+    <div class="ram-hubs">
+      <strong>Major airports included in the five-hub case</strong>
+      <div><span>BNA · Nashville</span><span>CHA · Chattanooga</span><span>MEM · Memphis</span><span>TRI · Tri-Cities</span><span>TYS · Knoxville</span></div>
+    </div>
+    <p class="ram-fine">The paper models travel at the metropolitan statistical area (MSA) level using MSA population centroids. Its expanded-airport scenario adds regional airport access; this demonstration does not calculate actual closest-airport assignments.</p>
+  </section>
+
+  <section class="ram-scene" id="ram-compare" data-ram-panel="compare" hidden aria-labelledby="ram-compare-title">
+    <p class="ram-kicker">02 · Compare generalized travel costs</p>
+    <h3 id="ram-compare-title">Cost + time + risk: what changes the choice?</h3>
+    <p>Generalized Travel Cost (GTC) converts direct spending, travel time, and risk into comparable money-equivalent components. This <strong>illustrative scenario calculator</strong> shows the mechanics of an access–flight–egress journey, not a re-execution of the paper's calibrated regressions.</p>
+    <div class="ram-equation"><strong>Illustrative positive cost magnitude</strong><div>GTC = monetary expense + (hourly time value × hours traveled) + monetized risk</div><small>The research paper uses negative generalized-cost utilities; this demonstration displays positive cost magnitudes so lower is preferable.</small></div>
+    <div class="ram-cost-grid">
+      <div class="ram-cost-controls">
+        <label for="ram-value-time">Value of travel time <output id="ram-value-time-o">$30/h</output></label>
+        <input type="range" id="ram-value-time" min="10" max="100" step="5" value="30">
+        <label for="ram-ground-time">Direct driving time <output id="ram-ground-time-o">5.0 h</output></label>
+        <input type="range" id="ram-ground-time" min="1" max="10" step=".5" value="5">
+        <label for="ram-ground-cost">Driving expense <output id="ram-ground-cost-o">$85</output></label>
+        <input type="range" id="ram-ground-cost" min="20" max="300" step="5" value="85">
+        <label for="ram-access-time">Total airport ground access + egress <output id="ram-access-time-o">1.5 h</output></label>
+        <input type="range" id="ram-access-time" min=".5" max="5" step=".5" value="1.5">
+        <label for="ram-flight-time">RAM flight time <output id="ram-flight-time-o">1.0 h</output></label>
+        <input type="range" id="ram-flight-time" min=".5" max="3" step=".5" value="1">
+        <label for="ram-airfare">RAM ticket + airport transfers <output id="ram-airfare-o">$195</output></label>
+        <input type="range" id="ram-airfare" min="50" max="500" step="5" value="195">
+        <label for="ram-risk">Risk-cost allowance, each mode <output id="ram-risk-o">$0</output></label>
+        <input type="range" id="ram-risk" min="0" max="40" step="5" value="0">
+        <button type="button" id="ram-reset">Reset illustration</button>
+      </div>
+      <div class="ram-comparison" aria-live="polite">
+        <div class="ram-cost-header"><strong>Illustrative GTC</strong><span>Lower cost magnitude is better</span></div>
+        <div class="ram-cost-line"><div><span>Ground trip</span><strong id="ram-ground-total">$235</strong></div><div class="ram-bar-track"><div id="ram-ground-bar" class="ram-bar ram-ground-bar"></div></div></div>
+        <div class="ram-cost-line"><div><span>Regional air + access</span><strong id="ram-air-total">$270</strong></div><div class="ram-bar-track"><div id="ram-air-bar" class="ram-bar ram-air-bar"></div></div></div>
+        <div class="ram-difference"><strong id="ram-result">Driving has lower illustrated GTC</strong><p id="ram-margin">Illustrative scenario only.</p></div>
+        <div class="ram-breakdown"><strong>Why does this matter?</strong><p>Airport access and egress can consume time savings. The published five-hub scenario can have inefficient backtracking; expanding the airport network improves access on some routes.</p></div>
+      </div>
+    </div>
+    <p class="ram-fine">This widget uses user-adjustable hypothetical inputs and a simplified additive formula. It does not predict actual Tennessee demand, RAM adoption probabilities, safety outcomes, or route-level costs. No measured result is attributed to its outputs.</p>
+  </section>
+
+  <section class="ram-scene" id="ram-explain" data-ram-panel="explain" hidden aria-labelledby="ram-explain-title">
+    <p class="ram-kicker">03 · Interpret the paper's results</p>
+    <h3 id="ram-explain-title">When does RAM become more attractive?</h3>
+    <p>The published scenario analysis highlights a combination of longer distances, substantial air-travel share, and higher ground generalized cost. Select each criterion to understand its role.</p>
+    <div class="ram-evidence" role="group" aria-label="Study findings">
+      <button type="button" data-ram-criterion="distance" class="is-active" aria-pressed="true"><strong>~300 mi+</strong><span>Longer trips</span></button>
+      <button type="button" data-ram-criterion="share" aria-pressed="false"><strong>&gt;80%</strong><span>Air-component share</span></button>
+      <button type="button" data-ram-criterion="time" aria-pressed="false"><strong>&gt;1 h</strong><span>Air travel time</span></button>
+      <button type="button" data-ram-criterion="ground" aria-pressed="false"><strong>&gt;300</strong><span>Ground GTC magnitude</span></button>
+    </div>
+    <div class="ram-evidence-explainer" aria-live="polite">
+      <strong id="ram-evidence-heading">Travel distance</strong>
+      <p id="ram-evidence-description">In the expanded-airport scenario, RAM becomes comparatively attractive for longer OD pairs, particularly beyond roughly 300 miles. This is a model-specific pattern, not a universal threshold.</p>
+    </div>
+    <div class="ram-steps">
+      <div><span>01</span><strong>Trips</strong><p>Analyze 50–500-mile Tennessee MSA origin–destination demand from national travel data.</p></div>
+      <div><span>02</span><strong>Generalized costs</strong><p>Estimate driving and air travel cost, time, and monetized safety risk.</p></div>
+      <div><span>03</span><strong>Airport access</strong><p>Compare five major hubs against an expanded regional network.</p></div>
+      <div><span>04</span><strong>Mode choice</strong><p>Interpret a probabilistic preference model under study assumptions.</p></div>
+    </div>
+    <p class="ram-fine">Interpretation requires care: these criteria are reported for modeled scenarios, not independently validated traveler adoption outcomes. The paper assumes MSA centroid origins and destinations, with simplified access and operational assumptions.</p>
+  </section>
+
+  <section class="ram-scholar" id="ram-academic">
+    <p class="ram-kicker">Academic record</p>
+    <h3>Study details and sources</h3>
+    <details><summary>Abstract</summary><div class="ram-detail"><p>{{ publication.abstract_summary }}</p></div></details>
+    <details><summary>Contributions, assumptions and limitations</summary><div class="ram-detail">
+      <ul>{% for contribution in publication.contributions %}<li>{{ contribution }}</li>{% endfor %}</ul>
+      <p><strong>Study limitations:</strong> MSA-centroid representation, modeled rather than observed RAM adoption, potential airport access constraints, seasonal demand variation, and untested real-world operational availability.</p>
+    </div></details>
+    <details id="citation"><summary>Citation and publication details</summary><div class="ram-detail"><p>{{ publication.venue }} · {{ publication.year }} · pp. {{ publication.pages }}</p><p><a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">DOI: {{ publication.doi }}</a></p><pre><code>{{ publication.bibtex | escape }}</code></pre></div></details>
+    <p class="ram-links"><a href="{{ publication.preprint_url }}" target="_blank" rel="noopener noreferrer">Read full preprint</a><a href="{{ publication.source_url }}" target="_blank" rel="noopener noreferrer">Publisher paper</a><a href="https://github.com/lotussavy/AIAAScitecth-2025" target="_blank" rel="noopener noreferrer">Research code and notebooks</a></p>
+  </section>
+</section>
+
+<style>
+.ram-experience{--ram-navy:#173a62;--ram-teal:#078b95;--ram-soft:#f1f7fa;--ram-border:#d6e5ec;--ram-muted:#54718a;color:#2f4e6e;max-width:100%;margin:1.5rem 0 2rem}
+.ram-experience *{box-sizing:border-box}
+.ram-experience h2,.ram-experience h3{color:var(--ram-navy);line-height:1.22;margin:.2rem 0 .8rem}
+.ram-experience h2{font-size:clamp(1.45rem,3vw,2.1rem)}.ram-experience h3{font-size:clamp(1.22rem,2.5vw,1.7rem)}
+.ram-experience p{line-height:1.6}
+.ram-experience .ram-lead,.ram-experience .ram-scene,.ram-experience .ram-scholar{border:1px solid var(--ram-border);border-radius:16px;background:white;padding:clamp(1rem,2.6vw,1.8rem);margin:0 0 1rem}
+.ram-experience .ram-lead{background:linear-gradient(125deg,#f1fbfa,#fff 72%)}
+.ram-experience .ram-kicker{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ram-teal);font-weight:800;margin:0 0 .5rem}
+.ram-experience .ram-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin:1.1rem 0}
+.ram-experience .ram-facts>div{border:1px solid var(--ram-border);border-radius:11px;padding:.8rem;background:white}
+.ram-experience .ram-facts strong{display:block;color:var(--ram-navy);font-size:clamp(1.2rem,2.6vw,2rem);font-variant-numeric:tabular-nums}
+.ram-experience .ram-facts span{font-size:.79rem;color:var(--ram-muted)}
+.ram-experience .ram-fine{font-size:.8rem;color:var(--ram-muted);line-height:1.55}
+.ram-experience button,.ram-experience input{font:inherit}
+.ram-experience button:focus-visible,.ram-experience input:focus-visible,.ram-experience summary:focus-visible{outline:3px solid #e5a044;outline-offset:3px}
+.ram-experience [hidden]{display:none!important}
+.ram-experience .ram-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.45rem;margin:1rem 0}
+.ram-experience .ram-nav button,.ram-experience .ram-choice button{border:1px solid var(--ram-border);border-radius:10px;background:#edf5f8;color:var(--ram-navy);font-weight:750;padding:.8rem;cursor:pointer}
+.ram-experience .ram-nav button small{display:block;color:var(--ram-muted);letter-spacing:.12em}
+.ram-experience .ram-nav button.is-active,.ram-experience .ram-choice button.is-active{background:#d9f2ed;border-color:var(--ram-teal);box-shadow:inset 0 -3px var(--ram-teal)}
+.ram-experience .ram-choice{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.1rem 0}
+.ram-experience .ram-diagram{border-radius:14px;background:var(--ram-soft);border:1px solid var(--ram-border);padding:1rem}
+.ram-experience .ram-diagram svg{width:100%;height:auto;display:block}
+.ram-experience .ram-legend{display:flex;gap:1rem;flex-wrap:wrap;margin:.6rem 0;font-size:.78rem;color:var(--ram-muted)}
+.ram-experience .ram-legend i{width:18px;height:3px;display:inline-block;vertical-align:middle;margin-right:.4rem}
+.ram-experience .ram-key-ground{background:#e29e48}.ram-experience .ram-key-air{background:#078b95}
+.ram-experience .ram-description,.ram-experience .ram-hubs,.ram-experience .ram-equation,.ram-experience .ram-comparison,.ram-experience .ram-evidence-explainer{background:var(--ram-soft);border-radius:13px;padding:1rem;margin:1rem 0}
+.ram-experience .ram-description strong,.ram-experience .ram-hubs strong,.ram-experience .ram-equation strong{color:var(--ram-navy)}
+.ram-experience .ram-description p{margin:.4rem 0 0}
+.ram-experience .ram-hubs>div{display:flex;flex-wrap:wrap;gap:.45rem;margin:.8rem 0 0}
+.ram-experience .ram-hubs span{padding:.35rem .6rem;border-radius:999px;background:white;border:1px solid var(--ram-border);font-size:.82rem}
+.ram-experience .ram-equation>div{font-weight:750;color:var(--ram-navy);font-size:clamp(.94rem,2.2vw,1.2rem);padding:.8rem;text-align:center}
+.ram-experience .ram-equation small{color:var(--ram-muted);font-size:.8rem}
+.ram-experience .ram-cost-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.ram-experience .ram-cost-controls{border:1px solid var(--ram-border);border-radius:12px;padding:1rem}
+.ram-experience .ram-cost-controls label{display:block;margin:.5rem 0 0;font-size:.86rem;font-weight:700;color:var(--ram-navy)}
+.ram-experience output{float:right;color:var(--ram-teal);font-variant-numeric:tabular-nums}
+.ram-experience input[type=range]{accent-color:var(--ram-teal);width:100%;display:block;margin:.3rem 0 .85rem}
+.ram-experience .ram-cost-controls button{background:#fff;border:1px solid var(--ram-border);color:var(--ram-navy);padding:.5rem .8rem;border-radius:8px;cursor:pointer}
+.ram-experience .ram-cost-header{display:flex;align-items:center;justify-content:space-between;gap:.8rem;flex-wrap:wrap;margin-bottom:1rem}
+.ram-experience .ram-cost-header strong,.ram-experience .ram-difference strong{color:var(--ram-navy)}
+.ram-experience .ram-cost-header span{font-size:.78rem;color:var(--ram-muted)}
+.ram-experience .ram-cost-line{margin:1rem 0}
+.ram-experience .ram-cost-line>div:first-child{display:flex;justify-content:space-between;gap:.5rem;margin-bottom:.5rem;font-size:.86rem}
+.ram-experience .ram-bar-track{height:18px;background:#dbe7ed;border-radius:99px;overflow:hidden}
+.ram-experience .ram-bar{height:100%;border-radius:99px;transition:width .22s}
+.ram-experience .ram-ground-bar{background:#a6b5c2}.ram-experience .ram-air-bar{background:var(--ram-teal)}
+.ram-experience .ram-difference{border-top:1px solid var(--ram-border);padding-top:1rem;margin-top:1.2rem}
+.ram-experience .ram-difference p{font-size:.85rem;color:var(--ram-muted)}
+.ram-experience .ram-breakdown{border-top:1px solid var(--ram-border);padding-top:.7rem;margin-top:.7rem}
+.ram-experience .ram-breakdown p{font-size:.85rem;margin:.3rem 0}
+.ram-experience .ram-evidence{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem;margin:1rem 0}
+.ram-experience .ram-evidence button{background:var(--ram-soft);color:var(--ram-navy);border:1px solid var(--ram-border);border-radius:11px;padding:.8rem .4rem;cursor:pointer;text-align:center}
+.ram-experience .ram-evidence button.is-active{background:#dcf4f1;border-color:var(--ram-teal)}
+.ram-experience .ram-evidence button strong{display:block;font-size:clamp(1.1rem,2vw,1.5rem);font-variant-numeric:tabular-nums}
+.ram-experience .ram-evidence button span{font-size:.72rem;color:var(--ram-muted)}
+.ram-experience .ram-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.ram-experience .ram-steps>div{border:1px solid var(--ram-border);border-radius:11px;padding:.8rem;background:#fafdfd}
+.ram-experience .ram-steps span{font-size:.78rem;color:var(--ram-teal);font-weight:800}
+.ram-experience .ram-steps strong{display:block;color:var(--ram-navy)}
+.ram-experience .ram-steps p{font-size:.8rem;line-height:1.48}
+.ram-experience .ram-scholar details{border-top:1px solid var(--ram-border);padding:.8rem 0}
+.ram-experience .ram-scholar summary{cursor:pointer;font-weight:750;color:var(--ram-navy)}
+.ram-experience .ram-detail{padding:.6rem .2rem}
+.ram-experience .ram-detail pre{overflow-wrap:anywhere;white-space:pre-wrap;background:var(--ram-soft);border-radius:8px;padding:1rem}
+.ram-experience .ram-links{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0}
+.ram-experience .ram-links a{background:#e9f5f6;border:1px solid var(--ram-border);border-radius:8px;padding:.5rem .8rem;font-size:.85rem;text-decoration:none;font-weight:750}
+@media(max-width:760px){.ram-experience .ram-cost-grid{grid-template-columns:1fr}.ram-experience .ram-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.ram-experience .ram-evidence{grid-template-columns:repeat(2,minmax(0,1fr))}.ram-experience .ram-facts{gap:.3rem}.ram-experience .ram-facts>div{padding:.55rem}.ram-experience .ram-facts span{font-size:.67rem}}
+@media(prefers-reduced-motion:reduce){.ram-experience .ram-bar{transition:none}}
+</style>
+<script>
+(function(){
+"use strict";
+var root=document.getElementById("ram-lab");if(!root||root.dataset.initialized==="1")return;root.dataset.initialized="1";
+function el(id){return document.getElementById(id);}
+function show(id,value){el(id).textContent=value;}
+function groupButtons(attr,value){root.querySelectorAll("["+attr+"]").forEach(function(b){var on=b.getAttribute(attr)===value;b.classList.toggle("is-active",on);b.setAttribute("aria-pressed",String(on));});}
+root.querySelectorAll("[data-ram-tab]").forEach(function(b){b.addEventListener("click",function(){var key=b.getAttribute("data-ram-tab");groupButtons("data-ram-tab",key);root.querySelectorAll("[data-ram-panel]").forEach(function(panel){panel.hidden=panel.getAttribute("data-ram-panel")!==key;});});});
+var ns="http://www.w3.org/2000/svg";
+function svgNode(tag,attrs,textValue){var n=document.createElementNS(ns,tag);Object.keys(attrs).forEach(function(k){n.setAttribute(k,String(attrs[k]));});if(textValue!==undefined)n.textContent=textValue;return n;}
+function network(mode){
+ var g=el("ram-journey-layer");g.replaceChildren();
+ var expanded=mode==="expanded";
+ var points=expanded?[{x:70,y:163,name:"Origin MSA",col:"#173a62"},{x:220,y:138,name:"Regional hub",col:"#078b95"},{x:498,y:138,name:"Regional hub",col:"#078b95"},{x:650,y:163,name:"Destination MSA",col:"#173a62"}]:[{x:70,y:163,name:"Origin MSA",col:"#173a62"},{x:232,y:51,name:"Major hub",col:"#078b95"},{x:489,y:51,name:"Major hub",col:"#078b95"},{x:650,y:163,name:"Destination MSA",col:"#173a62"}];
+ for(var i=0;i<points.length-1;i++){var a=points[i],b=points[i+1];var ground=i!==1;var line=svgNode("line",{x1:a.x,y1:a.y,x2:b.x,y2:b.y,stroke:ground?"#e29e48":"#078b95","stroke-width":ground?5:4,"stroke-linecap":"round","stroke-dasharray":ground?"8 6":"10 5"});g.appendChild(line);}
+ points.forEach(function(p){g.appendChild(svgNode("circle",{cx:p.x,cy:p.y,r:13,fill:p.col,stroke:"#fff","stroke-width":3}));g.appendChild(svgNode("text",{x:p.x,y:p.y+28,"text-anchor":"middle","font-size":12,fill:"#173a62","font-weight":700},p.name));});
+ g.appendChild(svgNode("text",{x:360,y:expanded?119:34,"text-anchor":"middle","font-size":12,fill:"#078b95","font-weight":700},"RAM FLIGHT"));
+ g.appendChild(svgNode("text",{x:130,y:expanded?124:93,"text-anchor":"middle","font-size":11,fill:"#ad7132"},"Ground"));
+ g.appendChild(svgNode("text",{x:593,y:expanded?124:93,"text-anchor":"middle","font-size":11,fill:"#ad7132"},"Ground"));
+ show("ram-network-heading",expanded?"Expanded regional-airport scenario":"Five-major-airport scenario");
+ show("ram-network-desc",expanded?"Additional airports closer to regional demand centers can shorten ground access and egress and reduce backtracking. The paper finds a smoother and more competitive RAM generalized-cost pattern for longer trips.":"With only BNA, CHA, MEM, TRI, and TYS as hubs, reaching airports may require lengthy ground access or backtracking for some OD pairs, undermining potential flight savings.");
+}
+root.querySelectorAll("[data-ram-network]").forEach(function(b){b.addEventListener("click",function(){var v=b.getAttribute("data-ram-network");groupButtons("data-ram-network",v);network(v);});});network("five");
+var controlIds=["ram-value-time","ram-ground-time","ram-ground-cost","ram-access-time","ram-flight-time","ram-airfare","ram-risk"];
+var defaults=[30,5,85,1.5,1,195,0];
+function money(v){return "$"+Math.round(v).toLocaleString("en-US");}
+function updateCosts(){
+ var v=controlIds.map(function(id){return +el(id).value;});var ground=v[2]+v[0]*v[1]+v[6],air=v[5]+v[0]*(v[3]+v[4])+v[6];
+ show("ram-value-time-o",money(v[0])+"/h");show("ram-ground-time-o",v[1].toFixed(1)+" h");show("ram-ground-cost-o",money(v[2]));show("ram-access-time-o",v[3].toFixed(1)+" h");show("ram-flight-time-o",v[4].toFixed(1)+" h");show("ram-airfare-o",money(v[5]));show("ram-risk-o",money(v[6]));
+ show("ram-ground-total",money(ground));show("ram-air-total",money(air));
+ var max=Math.max(ground,air,1);el("ram-ground-bar").style.width=(100*ground/max)+"%";el("ram-air-bar").style.width=(100*air/max)+"%";
+ var diff=Math.abs(air-ground);show("ram-result",Math.abs(air-ground)<.01?"Illustrative cost tie":air<ground?"RAM has lower illustrated GTC":"Driving has lower illustrated GTC");
+ show("ram-margin","Illustrative difference: "+money(diff)+". This is a user-defined scenario, not a forecast.");
+}
+controlIds.forEach(function(id){el(id).addEventListener("input",updateCosts);});el("ram-reset").addEventListener("click",function(){controlIds.forEach(function(id,i){el(id).value=defaults[i];});updateCosts();});updateCosts();
+var facts={distance:["Trip distance","Under the expanded network scenario, RAM becomes more competitive for longer trips, particularly beyond roughly 300 miles. The paper does not claim every longer trip will favor RAM."],share:["Air component's share","The reported mode-selection analysis highlights cases where air transportation accounts for more than 80% of total RAM generalized travel cost. This is a modeled relationship, not a universal passenger preference."],time:["Air travel time","Air travel times above one hour appear among RAM-favorable modeled conditions for selected origin–destination pairs. Airport access time remains important."],ground:["Ground generalized cost","RAM selection is reported for certain OD pairs where ground GTC magnitude exceeds 300. Sign and units must be interpreted according to the paper's cost/utility convention."]};
+root.querySelectorAll("[data-ram-criterion]").forEach(function(b){b.addEventListener("click",function(){var key=b.getAttribute("data-ram-criterion");groupButtons("data-ram-criterion",key);show("ram-evidence-heading",facts[key][0]);show("ram-evidence-description",facts[key][1]);});});
+})();
+</script>
