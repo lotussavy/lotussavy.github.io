@@ -99,6 +99,8 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% include neurosymbolic-travel-experience.html %}
   {% endif %}
 
+  {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %}
+
   {% if publication.abstract_summary %}
   <section class="publication-highlight" id="abstract">
     <div>
@@ -516,6 +518,8 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% endif %}
   </section>
   {% endif %}
+
+  {% endunless %}
 
   {% endunless %}
 
