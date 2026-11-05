@@ -12,14 +12,18 @@
     <p class="ns-footnote">Headline improvements are maxima reported in the paper, not results of every configuration or guarantees for new inputs. This experience does not run a trained neural network.</p>
   </div>
 
-  <nav class="ns-tabs" aria-label="Interactive research sections">
-    <a href="#ns-method">Method</a><a href="#ns-results">Findings</a><a href="#ns-explore">Rule explorer</a><a href="#ns-scholar">Paper details</a>
-  </nav>
+  <div class="ns-studio-nav" role="group" aria-label="Choose research experience">
+    <button type="button" class="is-active" data-ns-scene="discover" aria-pressed="true"><span>01</span> Discover</button>
+    <button type="button" data-ns-scene="compare" aria-pressed="false"><span>02</span> Compare</button>
+    <button type="button" data-ns-scene="explain" aria-pressed="false"><span>03</span> Explain</button>
+  </div>
+  <p class="ns-studio-prompt" id="ns-studio-prompt" aria-live="polite">Watch how symbolic knowledge becomes neural-network input.</p>
 
-  <section class="ns-panel" id="ns-method" aria-labelledby="ns-method-title">
+  <section class="ns-panel ns-scene" data-ns-scene-panel="discover" id="ns-method" aria-labelledby="ns-method-title">
     <p class="ns-eyebrow">01 · The method</p>
-    <h3 id="ns-method-title">Three ways to learn travel demand</h3>
+    <h3 id="ns-method-title">See what changes when we add symbolic knowledge</h3>
     <p>County-level geospatial, economic, and mobility features inform neural forecasting. The proposed approach also extracts if–then rules from a decision tree, encodes them as additional features, and combines both representations.</p>
+    <button type="button" id="ns-transform" class="ns-transform">✦ Add symbolic knowledge <span aria-hidden="true">→</span></button>
     <div class="ns-method-grid" role="group" aria-label="Compare model inputs">
       <button class="ns-method is-active" data-ns-method="original" type="button" aria-pressed="true"><span>Original</span><small>Raw features → NN</small></button>
       <button class="ns-method" data-ns-method="rules" type="button" aria-pressed="false"><span>Rules only</span><small>DT indicators → NN</small></button>
@@ -36,7 +40,7 @@
     <p class="ns-footnote">Method schematic, not a visualization of trained model weights. Symbolic indicators are inputs, not hard constraints on the NN output.</p>
   </section>
 
-  <section class="ns-explorer-group" id="ns-explore" aria-label="Explore rules and complexity">
+  <section class="ns-explorer-group ns-scene" data-ns-scene-panel="explain" id="ns-explore" hidden aria-label="Explore rules and complexity">
   <div class="ns-explorer-heading"><div><p class="ns-eyebrow">03 · Interactive rule laboratory</p><h3>Explore the symbolic knowledge</h3></div>
   <div class="ns-tool-tabs" role="group" aria-label="Choose exploration tool">
     <button type="button" data-ns-tool="rules" class="is-active" aria-pressed="true">Decision rules</button>
@@ -44,8 +48,9 @@
   </div></div>
 <section class="ns-panel ns-tool-panel" data-ns-panel="rules" id="ns-rule-lab" aria-labelledby="ns-rule-title">
     <p class="ns-eyebrow">Decision-tree rules</p>
-    <h3 id="ns-rule-title">Change the inputs. Follow the rule.</h3>
+    <h3 id="ns-rule-title">Follow a decision through the published tree</h3>
     <p>Explore the eight depth-3 rule regions reported in Table II. Values are explanatory inputs to the published tree; the result shown is the associated decision-tree leaf mean, <em>not</em> a new neural-network prediction.</p>
+    <div class="ns-tree-viz" aria-label="Interactive decision tree highlighting the active route"><svg id="ns-tree-svg" viewBox="0 0 680 235" role="img" aria-label="Published depth-three decision tree. Active decision branches are highlighted as sliders change."></svg><p class="ns-footnote">A schematic of the exact Table II decision conditions; labels and the selected leaf update as you explore.</p></div>
     <div class="ns-lab-grid">
       <div class="ns-controls">
         <label for="ns-distance">Origin–destination distance <output id="ns-distance-value" for="ns-distance">40 mi</output></label>
@@ -97,9 +102,12 @@
 
   </section>
 
-<section class="ns-panel" id="ns-results" aria-labelledby="ns-results-title">
+<section class="ns-panel ns-scene" data-ns-scene-panel="compare" id="ns-results" hidden aria-labelledby="ns-results-title">
     <p class="ns-eyebrow">02 · Experimental evidence</p>
-    <h3 id="ns-results-title">What improved, and what remains uncertain?</h3>
+    <h3 id="ns-results-title">Compare the evidence, not just the models</h3>
+    <div class="ns-metric-toggle" role="group" aria-label="Inspect reported evaluation metric"><button class="is-active" data-ns-metric="mae" aria-pressed="true" type="button">MAE ↓</button><button data-ns-metric="r2" aria-pressed="false" type="button">R² ↑</button><button data-ns-metric="cpc" aria-pressed="false" type="button">CPC ↑</button></div>
+    <div class="ns-metric-focus" aria-live="polite"><strong id="ns-focus-title">Mean Absolute Error</strong><p id="ns-focus-copy">Lower is better. The paper reports up to 24.19% reduction in MAE relative to neural-network baselines for the reported comparison.</p></div>
+    <div class="ns-evidence-link"><span>Complexity of the selected configuration</span><strong id="ns-evidence-depth">Depth 10</strong><strong id="ns-evidence-rules">374 retained rules</strong><button type="button" id="ns-go-explain">Explore depth &amp; threshold →</button></div>
     <div class="ns-results-grid">
       <div><strong>MAE ↓</strong><p>Figure 3 shows lower error for combined input features than the original-only neural baseline across tested tree depths.</p></div>
       <div><strong>R² ↑</strong><p>Combining original and rule-derived features generally increases explained variance. Performance does not rise monotonically with depth.</p></div>
@@ -122,7 +130,7 @@
       <p><strong>DOI:</strong> <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.doi }}</a></p>
       <pre class="publication-citation"><code>{{ publication.bibtex | escape }}</code></pre>
     </div></details>
-    <p class="ns-footnote">Original abstract, bibliography, and publication links remain available here; the default repeated cards are intentionally omitted for this paper only.</p>
+    
   </section>
 </section>
 
@@ -198,6 +206,32 @@
 @media(max-width:720px){.ns-experience .ns-lab-grid{grid-template-columns:1fr}.ns-experience .ns-network{gap:.3rem}.ns-experience .ns-join,.ns-experience .ns-arrow{font-size:1rem}.ns-experience .ns-results-grid{grid-template-columns:1fr}}
 @media(max-width:460px){.ns-experience .ns-metrics,.ns-experience .ns-counts{gap:.3rem}.ns-experience .ns-metrics>div,.ns-experience .ns-counts>div{padding:.55rem}.ns-experience .ns-method-grid{gap:.3rem}.ns-experience .ns-method{padding:.5rem .2rem}.ns-experience .ns-method small{font-size:.67rem}}
 @media(prefers-reduced-motion:reduce){.ns-experience *{transition:none!important;animation:none!important}}
+
+
+.ns-experience .ns-studio-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.5rem;margin:1rem 0 .3rem}
+.ns-experience .ns-studio-nav button{background:#edf5f8;border:1px solid var(--ns-border);border-radius:12px;padding:.8rem .5rem;cursor:pointer;color:var(--ns-ink);font-weight:750}
+.ns-experience .ns-studio-nav button span{display:block;font-size:.7rem;letter-spacing:.1em;font-weight:600;color:var(--ns-muted)}
+.ns-experience .ns-studio-nav button.is-active{background:#d9f2f0;border-color:var(--ns-accent);box-shadow:inset 0 -3px var(--ns-accent)}
+.ns-experience .ns-studio-prompt{margin:.5rem 0 .9rem;font-size:.88rem;color:var(--ns-muted)}
+.ns-experience .ns-scene{animation:ns-appear .25s ease-out}
+.ns-experience .ns-transform{display:block;margin:.8rem auto 1.2rem;background:var(--ns-ink);color:#fff;border-radius:999px;border:1px solid var(--ns-ink);padding:.7rem 1.5rem;cursor:pointer;font-weight:750;transition:transform .2s,background .2s}
+.ns-experience .ns-transform:hover{transform:translateY(-2px);background:var(--ns-accent)}
+.ns-experience .ns-network.is-transformed .ns-input-rule{animation:ns-rule-pulse .65s ease-out}
+.ns-experience .ns-tree-viz{background:#f2f7fa;border:1px solid var(--ns-border);border-radius:14px;padding:1rem;margin:.75rem 0 1rem}
+.ns-experience .ns-tree-viz svg{width:100%;display:block;height:auto}
+.ns-experience .ns-metric-toggle{display:flex;gap:.4rem;flex-wrap:wrap}
+.ns-experience .ns-metric-toggle button{padding:.5rem 1rem;border-radius:9px;border:1px solid var(--ns-border);background:#edf5f8;color:var(--ns-ink);cursor:pointer}
+.ns-experience .ns-metric-toggle button.is-active{background:#d9f2f0;border-color:var(--ns-accent);font-weight:800}
+.ns-experience .ns-metric-focus{border-left:4px solid var(--ns-accent);background:#eef7fa;padding:.85rem 1.2rem;margin:1rem 0}
+.ns-experience .ns-metric-focus p{margin:.35rem 0;font-size:.93rem}
+.ns-experience .ns-evidence-link{display:flex;align-items:center;flex-wrap:wrap;gap:.65rem;background:#f0f6f9;border-radius:12px;padding:.7rem 1rem;margin:1rem 0}
+.ns-experience .ns-evidence-link span{font-size:.85rem;color:var(--ns-muted)}
+.ns-experience .ns-evidence-link strong{font-size:.85rem}
+.ns-experience .ns-evidence-link button{margin-left:auto;border:0;background:#173a62;color:#fff;border-radius:8px;padding:.5rem .7rem;cursor:pointer}
+@keyframes ns-rule-pulse{0%{transform:scale(.92);box-shadow:0 0 0 0 rgba(8,126,144,.4)}65%{box-shadow:0 0 0 12px rgba(8,126,144,0)}100%{transform:scale(1)}}
+@keyframes ns-appear{from{opacity:.5;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:580px){.ns-experience .ns-studio-nav button{font-size:.85rem}.ns-experience .ns-evidence-link button{margin-left:0}}
+@media(prefers-reduced-motion:reduce){.ns-experience .ns-scene,.ns-experience .ns-network.is-transformed .ns-input-rule{animation:none!important}}
 </style>
 <script>
 (function(){
@@ -205,6 +239,22 @@
   var root=document.getElementById("interactive-research");
   if(!root || root.dataset.initialized==="true")return;
   root.dataset.initialized="true";
+  var sceneDescriptions={discover:"Watch how symbolic knowledge becomes neural-network input.",compare:"Explore published findings and examine the rule-complexity trade-off.",explain:"Follow the decision-tree rule for a selected county-flow scenario."};
+  function showScene(scene){
+    root.querySelectorAll("[data-ns-scene]").forEach(function(b){var yes=b.getAttribute("data-ns-scene")===scene;b.classList.toggle("is-active",yes);b.setAttribute("aria-pressed",String(yes));});
+    root.querySelectorAll("[data-ns-scene-panel]").forEach(function(p){p.hidden=p.getAttribute("data-ns-scene-panel")!==scene;});
+    var desc=document.getElementById("ns-studio-prompt");if(desc)desc.textContent=sceneDescriptions[scene];
+  }
+  root.querySelectorAll("[data-ns-scene]").forEach(function(b){b.addEventListener("click",function(){showScene(b.getAttribute("data-ns-scene"));});});
+  document.getElementById("ns-go-explain").addEventListener("click",function(){showScene("explain");root.querySelector('[data-ns-tool="complexity"]').click();});
+  var metricDetails={
+    mae:["Mean Absolute Error","Lower is better. Up to 24.19% reduction is reported against the neural-network comparison. This maximum does not apply to every model configuration."],
+    r2:["Coefficient of Determination","Higher is better. The paper reports a 1.79% improvement in R² for the reported comparison, while gains vary by depth and rule selection."],
+    cpc:["Common Part of Commuters","Higher is better. The reported CPC improvement is 6.49% for the comparison summarized in the paper, indicating closer overlap with observed flows."]
+  };
+  root.querySelectorAll("[data-ns-metric]").forEach(function(b){b.addEventListener("click",function(){var key=b.getAttribute("data-ns-metric");root.querySelectorAll("[data-ns-metric]").forEach(function(x){var active=x===b;x.classList.toggle("is-active",active);x.setAttribute("aria-pressed",String(active));});document.getElementById("ns-focus-title").textContent=metricDetails[key][0];document.getElementById("ns-focus-copy").textContent=metricDetails[key][1];});});
+  document.getElementById("ns-transform").addEventListener("click",function(){var button=root.querySelector('[data-ns-method="combined"]');button.click();var net=root.querySelector(".ns-network");net.classList.remove("is-transformed");void net.offsetWidth;net.classList.add("is-transformed");this.textContent="✓ Symbolic knowledge added";});
+
   function el(id){return document.getElementById(id);}
   function str(id,value){var node=el(id);if(node)node.textContent=value;}
   root.querySelectorAll("[data-ns-tool]").forEach(function(btn){
@@ -240,6 +290,35 @@
     {id:7,mean:515.81,desc:"46.08 < Distance ≤ 58.77 mi · Destination natural areas ≤ 935.5",test:function(v){return v.d>46.08&&v.d<=58.77&&v.na<=935.5;}},
     {id:8,mean:106.32,desc:"Distance > 58.77 mi · Destination POIs ≤ 773.5",test:function(v){return v.d>58.77&&v.dp<=773.5;}}
   ];
+  function drawDecisionTree(v,matched){
+    var svg=el("ns-tree-svg");while(svg.firstChild)svg.removeChild(svg.firstChild);
+    var ns="http://www.w3.org/2000/svg";
+    function shape(tag,attrs,txt){var n=document.createElementNS(ns,tag);Object.keys(attrs).forEach(function(k){n.setAttribute(k,attrs[k]);});if(txt!==undefined)n.textContent=txt;svg.appendChild(n);return n;}
+    var nodes=[
+      {id:"distance",x:340,y:23,text:"Distance ≤ 46.08 mi?"},
+      {id:"poiSmall",x:170,y:85,text:"Dest. POIs > 323?"},
+      {id:"distanceLarge",x:510,y:85,text:"Distance ≤ 58.77?"},
+      {id:"origin",x:92,y:149,text:"Origin POIs > 307?"},
+      {id:"poiMid",x:247,y:149,text:"Dest. POIs > 243?"},
+      {id:"nature",x:435,y:149,text:"Natural areas > 935?"},
+      {id:"poiLarge",x:596,y:149,text:"Dest. POIs > 773?"}
+    ];
+    var paths=[
+      ["distance","poiSmall",v.d<=46.08],["distance","distanceLarge",v.d>46.08],
+      ["poiSmall","origin",v.d<=46.08&&v.dp>323],["poiSmall","poiMid",v.d<=46.08&&v.dp<=323],
+      ["distanceLarge","nature",v.d>46.08&&v.d<=58.77],["distanceLarge","poiLarge",v.d>58.77]
+    ];
+    var map={};nodes.forEach(function(n){map[n.id]=n;});
+    paths.forEach(function(p){var a=map[p[0]],b=map[p[1]];shape("line",{x1:a.x,y1:a.y+12,x2:b.x,y2:b.y-12,stroke:p[2]?"#078c8c":"#b7c8d1","stroke-width":p[2]?4:2,"stroke-linecap":"round",opacity:p[2]?1:.55});});
+    nodes.forEach(function(n){var active=(n.id==="distance")||(n.id==="poiSmall"&&v.d<=46.08)||(n.id==="distanceLarge"&&v.d>46.08)||(n.id==="origin"&&v.d<=46.08&&v.dp>323)||(n.id==="poiMid"&&v.d<=46.08&&v.dp<=323)||(n.id==="nature"&&v.d>46.08&&v.d<=58.77)||(n.id==="poiLarge"&&v.d>58.77);
+      shape("rect",{x:n.x-78,y:n.y-13,width:156,height:27,rx:9,fill:active?"#d8f3ef":"#fff",stroke:active?"#078c8c":"#b7c8d1","stroke-width":active?2:1});
+      shape("text",{x:n.x,y:n.y+4,"text-anchor":"middle","font-size":11,fill:"#173a62","font-weight":active?700:400},n.text);
+    });
+    var leafX={1:63,2:119,3:213,4:404,5:276,6:561,7:469,8:630}[matched.id];
+    shape("path",{d:"M"+leafX+" 165 V188",stroke:"#078c8c","stroke-width":2,fill:"none"});
+    shape("rect",{x:leafX-43,y:190,width:86,height:28,rx:11,fill:"#173a62"});
+    shape("text",{x:leafX,y:208,"text-anchor":"middle","font-size":11,fill:"#fff","font-weight":700},"Rule "+matched.id);
+  }
   function updateRule(){
     var v={d:+inputs.distance.value,dp:+inputs.destination.value,op:+inputs.origin.value,na:+inputs.nature.value};
     str("ns-distance-value",v.d+" mi");str("ns-dest-poi-value",v.dp);str("ns-origin-poi-value",v.op);str("ns-nature-value",v.na);
@@ -248,6 +327,7 @@
     str("ns-rule-number","Rule "+matched.id);str("ns-rule-description",matched.desc);
     str("ns-branch-path",matched.desc.replace(/ · /g," → "));
     str("ns-leaf-mean",matched.mean.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2}));
+    drawDecisionTree(v,matched);
   }
   Object.keys(inputs).forEach(function(key){inputs[key].addEventListener("input",updateRule);});
   el("ns-reset-rule").addEventListener("click",function(){inputs.distance.value=40;inputs.destination.value=400;inputs.origin.value=350;inputs.nature.value=1000;updateRule();});
@@ -266,7 +346,7 @@
   }
   function updateChart(){
     var depth=+el("ns-depth").value, col={v01:2,v001:3,v0001:4}[el("ns-threshold").value], current=counts[depth-3], all=current[1], selected=current[col];
-    str("ns-depth-value",depth);str("ns-all-count",all.toLocaleString());str("ns-selected-count",selected.toLocaleString());str("ns-pct-count",Math.round(selected/all*100)+"%");
+    str("ns-depth-value",depth);str("ns-all-count",all.toLocaleString());str("ns-selected-count",selected.toLocaleString());str("ns-pct-count",Math.round(selected/all*100)+"%");str("ns-evidence-depth","Depth "+depth);str("ns-evidence-rules",selected.toLocaleString()+" retained rules");
     var svg=el("ns-rule-chart");
     Array.from(svg.children).forEach(function(node){if(!["title","desc"].includes(node.tagName.toLowerCase()))svg.removeChild(node);});
     var x=function(i){return 48+i*47;},y=function(v){return 252-(v/2700)*216;};
