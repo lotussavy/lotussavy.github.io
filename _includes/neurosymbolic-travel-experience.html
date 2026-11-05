@@ -108,12 +108,8 @@
     <div class="ns-metric-toggle" role="group" aria-label="Inspect reported evaluation metric"><button class="is-active" data-ns-metric="mae" aria-pressed="true" type="button">MAE ↓</button><button data-ns-metric="r2" aria-pressed="false" type="button">R² ↑</button><button data-ns-metric="cpc" aria-pressed="false" type="button">CPC ↑</button></div>
     <div class="ns-metric-focus" aria-live="polite"><strong id="ns-focus-title">Mean Absolute Error</strong><p id="ns-focus-copy">Lower is better. The paper reports up to 24.19% reduction in MAE relative to neural-network baselines for the reported comparison.</p></div>
     <div class="ns-evidence-link"><span>Complexity of the selected configuration</span><strong id="ns-evidence-depth">Depth 10</strong><strong id="ns-evidence-rules">374 retained rules</strong><button type="button" id="ns-go-explain">Explore depth &amp; threshold →</button></div>
-    <div class="ns-results-grid">
-      <div><strong>MAE ↓</strong><p>Figure 3 shows lower error for combined input features than the original-only neural baseline across tested tree depths.</p></div>
-      <div><strong>R² ↑</strong><p>Combining original and rule-derived features generally increases explained variance. Performance does not rise monotonically with depth.</p></div>
-      <div><strong>CPC ↑</strong><p>Combined features yield better overlap between modeled and observed commuter flows in the reported comparison.</p></div>
-    </div>
-    <p>The paper compares original features, rules alone, and combined features using MAE, R², and Common Part of Commuters (CPC). Figures 3–5 contain the performance curves; this page does not reproduce unverified numerical points from the figure images.</p>
+
+    <p class="ns-footnote">The reported maxima summarize individual comparisons. Exact per-configuration performance curves from Figures 3–5 are not yet available as verified numerical series; this comparison does not extrapolate them.</p>
     <div class="ns-sources"><a href="https://doi.org/10.1109/IWCMC65282.2025.11059465" target="_blank" rel="noopener noreferrer">Publisher DOI</a><a href="https://arxiv.org/abs/2502.01680" target="_blank" rel="noopener noreferrer">Read paper and figures</a><a href="https://github.com/lotussavy/IWCMC-2025" target="_blank" rel="noopener noreferrer">Research notebooks</a></div>
     <p class="ns-footnote">Limits: county-level Tennessee setting; rules are interpretable inputs, but their contribution inside the final neural network is not fully transparent. An individual slider choice is not validated out-of-sample.</p>
   </section>
