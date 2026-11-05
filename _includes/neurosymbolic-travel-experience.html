@@ -13,7 +13,7 @@
   </div>
 
   <nav class="ns-tabs" aria-label="Interactive research sections">
-    <a href="#ns-method">Method</a><a href="#ns-rule-lab">Rule explorer</a><a href="#ns-complexity">Rule selection</a><a href="#ns-results">Results</a>
+    <a href="#ns-method">Method</a><a href="#ns-results">Findings</a><a href="#ns-explore">Rule explorer</a><a href="#ns-scholar">Paper details</a>
   </nav>
 
   <section class="ns-panel" id="ns-method" aria-labelledby="ns-method-title">
@@ -36,8 +36,14 @@
     <p class="ns-footnote">Method schematic, not a visualization of trained model weights. Symbolic indicators are inputs, not hard constraints on the NN output.</p>
   </section>
 
-  <section class="ns-panel" id="ns-rule-lab" aria-labelledby="ns-rule-title">
-    <p class="ns-eyebrow">02 · Decision-tree rules</p>
+  <section class="ns-explorer-group" id="ns-explore" aria-label="Explore rules and complexity">
+  <div class="ns-explorer-heading"><div><p class="ns-eyebrow">03 · Interactive rule laboratory</p><h3>Explore the symbolic knowledge</h3></div>
+  <div class="ns-tool-tabs" role="group" aria-label="Choose exploration tool">
+    <button type="button" data-ns-tool="rules" class="is-active" aria-pressed="true">Decision rules</button>
+    <button type="button" data-ns-tool="complexity" aria-pressed="false">Rule complexity</button>
+  </div></div>
+<section class="ns-panel ns-tool-panel" data-ns-panel="rules" id="ns-rule-lab" aria-labelledby="ns-rule-title">
+    <p class="ns-eyebrow">Decision-tree rules</p>
     <h3 id="ns-rule-title">Change the inputs. Follow the rule.</h3>
     <p>Explore the eight depth-3 rule regions reported in Table II. Values are explanatory inputs to the published tree; the result shown is the associated decision-tree leaf mean, <em>not</em> a new neural-network prediction.</p>
     <div class="ns-lab-grid">
@@ -64,8 +70,8 @@
     </div>
   </section>
 
-  <section class="ns-panel" id="ns-complexity" aria-labelledby="ns-complexity-title">
-    <p class="ns-eyebrow">03 · Model complexity</p>
+  <section class="ns-panel ns-tool-panel" data-ns-panel="complexity" id="ns-complexity" hidden aria-labelledby="ns-complexity-title">
+    <p class="ns-eyebrow">Rule complexity</p>
     <h3 id="ns-complexity-title">What happens as the tree grows?</h3>
     <p>Rule counts from Table IV. Increasing tree depth produces many candidate rules. Variance-based selection retains only a subset, depending on the threshold.</p>
     <div class="ns-choices">
@@ -89,8 +95,10 @@
     <p class="ns-footnote">The chart displays rule counts, not model accuracy. More retained rules do not necessarily imply better predictions.</p>
   </section>
 
-  <section class="ns-panel" id="ns-results" aria-labelledby="ns-results-title">
-    <p class="ns-eyebrow">04 · Experimental evidence</p>
+  </section>
+
+<section class="ns-panel" id="ns-results" aria-labelledby="ns-results-title">
+    <p class="ns-eyebrow">02 · Experimental evidence</p>
     <h3 id="ns-results-title">What improved, and what remains uncertain?</h3>
     <div class="ns-results-grid">
       <div><strong>MAE ↓</strong><p>Figure 3 shows lower error for combined input features than the original-only neural baseline across tested tree depths.</p></div>
@@ -100,6 +108,21 @@
     <p>The paper compares original features, rules alone, and combined features using MAE, R², and Common Part of Commuters (CPC). Figures 3–5 contain the performance curves; this page does not reproduce unverified numerical points from the figure images.</p>
     <div class="ns-sources"><a href="https://doi.org/10.1109/IWCMC65282.2025.11059465" target="_blank" rel="noopener noreferrer">Publisher DOI</a><a href="https://arxiv.org/abs/2502.01680" target="_blank" rel="noopener noreferrer">Read paper and figures</a><a href="https://github.com/lotussavy/IWCMC-2025" target="_blank" rel="noopener noreferrer">Research notebooks</a></div>
     <p class="ns-footnote">Limits: county-level Tennessee setting; rules are interpretable inputs, but their contribution inside the final neural network is not fully transparent. An individual slider choice is not validated out-of-sample.</p>
+  </section>
+  <section class="ns-panel ns-scholar" id="ns-scholar">
+    <p class="ns-eyebrow">04 · Academic record</p>
+    <h3>Read the research details</h3>
+    <details><summary>Abstract</summary><div class="ns-details-content"><p>{{ publication.abstract_summary }}</p></div></details>
+    <details><summary>Key contributions and limitations</summary><div class="ns-details-content">
+      <ul>{% for contribution in publication.contributions limit: 3 %}<li>{{ contribution }}</li>{% endfor %}</ul>
+      <p><strong>Limitations and next steps:</strong> Interpretability of each symbolic feature's ultimate influence on neural predictions, transfer to other regions, and incorporation of temporal and multimodal information require further investigation.</p>
+    </div></details>
+    <details id="citation"><summary>Citation and publication information</summary><div class="ns-details-content">
+      <p><strong>Venue:</strong> {{ publication.venue }} · {{ publication.year }} · pp. {{ publication.pages }}</p>
+      <p><strong>DOI:</strong> <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">{{ publication.doi }}</a></p>
+      <pre class="publication-citation"><code>{{ publication.bibtex | escape }}</code></pre>
+    </div></details>
+    <p class="ns-footnote">Original abstract, bibliography, and publication links remain available here; the default repeated cards are intentionally omitted for this paper only.</p>
   </section>
 </section>
 
@@ -161,6 +184,17 @@
 .ns-experience .ns-results-grid strong{font-size:1.2rem;color:var(--ns-ink)}
 .ns-experience .ns-results-grid p{font-size:.87rem;margin:.4rem 0}
 .ns-experience .ns-sources{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+.ns-experience .ns-explorer-group{border:1px solid var(--ns-border);border-radius:18px;padding:clamp(.7rem,2vw,1.3rem);margin:1.3rem 0}
+.ns-experience .ns-explorer-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.ns-experience .ns-explorer-group .ns-panel{margin:.75rem 0 0;border-radius:12px}
+.ns-experience .ns-tool-tabs{display:flex;gap:.4rem;flex-wrap:wrap}
+.ns-experience .ns-tool-tabs button{border:1px solid var(--ns-border);background:#f2f7fa;color:var(--ns-ink);padding:.5rem .8rem;border-radius:8px;cursor:pointer}
+.ns-experience .ns-tool-tabs button.is-active{background:#dff4f3;border-color:var(--ns-accent);font-weight:700}
+.ns-experience [hidden]{display:none!important}
+.ns-experience .ns-scholar details{border-top:1px solid var(--ns-border);padding:.8rem 0}
+.ns-experience .ns-scholar summary{font-weight:650;color:var(--ns-ink);cursor:pointer;padding:.25rem 0}
+.ns-experience .ns-scholar .ns-details-content{padding:.5rem .4rem 0}
+.ns-experience .ns-scholar pre{max-width:100%;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere}
 @media(max-width:720px){.ns-experience .ns-lab-grid{grid-template-columns:1fr}.ns-experience .ns-network{gap:.3rem}.ns-experience .ns-join,.ns-experience .ns-arrow{font-size:1rem}.ns-experience .ns-results-grid{grid-template-columns:1fr}}
 @media(max-width:460px){.ns-experience .ns-metrics,.ns-experience .ns-counts{gap:.3rem}.ns-experience .ns-metrics>div,.ns-experience .ns-counts>div{padding:.55rem}.ns-experience .ns-method-grid{gap:.3rem}.ns-experience .ns-method{padding:.5rem .2rem}.ns-experience .ns-method small{font-size:.67rem}}
 @media(prefers-reduced-motion:reduce){.ns-experience *{transition:none!important;animation:none!important}}
@@ -173,6 +207,13 @@
   root.dataset.initialized="true";
   function el(id){return document.getElementById(id);}
   function str(id,value){var node=el(id);if(node)node.textContent=value;}
+  root.querySelectorAll("[data-ns-tool]").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      var selected=btn.getAttribute("data-ns-tool");
+      root.querySelectorAll("[data-ns-tool]").forEach(function(b){var active=b===btn;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",String(active));});
+      root.querySelectorAll("[data-ns-panel]").forEach(function(panel){panel.hidden=panel.getAttribute("data-ns-panel")!==selected;});
+    });
+  });
   var methods={
     original:"Baseline: the neural network receives original spatial, economic, and mobility features only.",
     rules:"Rules only: the neural network receives encoded decision-tree rule indicators; the original feature vector is not included.",
