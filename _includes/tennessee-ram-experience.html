@@ -64,8 +64,10 @@
         <input type="range" id="ram-flight-time" min=".5" max="3" step=".5" value="1">
         <label for="ram-airfare">RAM ticket + airport transfers <output id="ram-airfare-o">$195</output></label>
         <input type="range" id="ram-airfare" min="50" max="500" step="5" value="195">
-        <label for="ram-risk">Risk-cost allowance, each mode <output id="ram-risk-o">$0</output></label>
-        <input type="range" id="ram-risk" min="0" max="40" step="5" value="0">
+        <label for="ram-ground-risk">Illustrative ground risk cost <output id="ram-ground-risk-o">$0</output></label>
+        <input type="range" id="ram-ground-risk" min="0" max="40" step="5" value="0">
+        <label for="ram-air-risk">Illustrative RAM risk cost <output id="ram-air-risk-o">$0</output></label>
+        <input type="range" id="ram-air-risk" min="0" max="40" step="5" value="0">
         <button type="button" id="ram-reset">Reset illustration</button>
       </div>
       <div class="ram-comparison" aria-live="polite">
@@ -76,7 +78,7 @@
         <div class="ram-breakdown"><strong>Why does this matter?</strong><p>Airport access and egress can consume time savings. The published five-hub scenario can have inefficient backtracking; expanding the airport network improves access on some routes.</p></div>
       </div>
     </div>
-    <p class="ram-fine">This widget uses user-adjustable hypothetical inputs and a simplified additive formula. It does not predict actual Tennessee demand, RAM adoption probabilities, safety outcomes, or route-level costs. No measured result is attributed to its outputs.</p>
+    <p class="ram-fine">This widget uses user-adjustable hypothetical inputs, including separately adjustable ground and air risk-cost assumptions, and a simplified additive formula. It does not predict actual Tennessee demand, RAM adoption probabilities, safety outcomes, or route-level costs. No measured result is attributed to its outputs.</p>
   </section>
 
   <section class="ram-scene" id="ram-explain" data-ram-panel="explain" hidden aria-labelledby="ram-explain-title">
@@ -210,12 +212,12 @@ function network(mode){
  show("ram-network-desc",expanded?"Additional airports closer to regional demand centers can shorten ground access and egress and reduce backtracking. The paper finds a smoother and more competitive RAM generalized-cost pattern for longer trips.":"With only BNA, CHA, MEM, TRI, and TYS as hubs, reaching airports may require lengthy ground access or backtracking for some OD pairs, undermining potential flight savings.");
 }
 root.querySelectorAll("[data-ram-network]").forEach(function(b){b.addEventListener("click",function(){var v=b.getAttribute("data-ram-network");groupButtons("data-ram-network",v);network(v);});});network("five");
-var controlIds=["ram-value-time","ram-ground-time","ram-ground-cost","ram-access-time","ram-flight-time","ram-airfare","ram-risk"];
-var defaults=[30,5,85,1.5,1,195,0];
+var controlIds=["ram-value-time","ram-ground-time","ram-ground-cost","ram-access-time","ram-flight-time","ram-airfare","ram-ground-risk","ram-air-risk"];
+var defaults=[30,5,85,1.5,1,195,0,0];
 function money(v){return "$"+Math.round(v).toLocaleString("en-US");}
 function updateCosts(){
- var v=controlIds.map(function(id){return +el(id).value;});var ground=v[2]+v[0]*v[1]+v[6],air=v[5]+v[0]*(v[3]+v[4])+v[6];
- show("ram-value-time-o",money(v[0])+"/h");show("ram-ground-time-o",v[1].toFixed(1)+" h");show("ram-ground-cost-o",money(v[2]));show("ram-access-time-o",v[3].toFixed(1)+" h");show("ram-flight-time-o",v[4].toFixed(1)+" h");show("ram-airfare-o",money(v[5]));show("ram-risk-o",money(v[6]));
+ var v=controlIds.map(function(id){return +el(id).value;});var ground=v[2]+v[0]*v[1]+v[6],air=v[5]+v[0]*(v[3]+v[4])+v[7];
+ show("ram-value-time-o",money(v[0])+"/h");show("ram-ground-time-o",v[1].toFixed(1)+" h");show("ram-ground-cost-o",money(v[2]));show("ram-access-time-o",v[3].toFixed(1)+" h");show("ram-flight-time-o",v[4].toFixed(1)+" h");show("ram-airfare-o",money(v[5]));show("ram-ground-risk-o",money(v[6]));show("ram-air-risk-o",money(v[7]));
  show("ram-ground-total",money(ground));show("ram-air-total",money(air));
  var max=Math.max(ground,air,1);el("ram-ground-bar").style.width=(100*ground/max)+"%";el("ram-air-bar").style.width=(100*air/max)+"%";
  var diff=Math.abs(air-ground);show("ram-result",Math.abs(air-ground)<.01?"Illustrative cost tie":air<ground?"RAM has lower illustrated GTC":"Driving has lower illustrated GTC");
