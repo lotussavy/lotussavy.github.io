@@ -32,7 +32,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% assign first_author = publication.authors | first | split: " " | first | remove: "." | remove: "," | downcase %}
   {% assign cite_key = first_author | append: publication.year | append: "-" | append: publication.title | slugify %}
 
-  <header class="publication-hero">
+  <header class="publication-hero{% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %} publication-hero--ns{% endif %}">
     <a class="publication-back-link" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
     <p class="publication-type">{{ publication_type_label }}</p>
     <h1>{{ publication.title }}</h1>
