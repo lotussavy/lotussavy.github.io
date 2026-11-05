@@ -1,0 +1,218 @@
+<section class="gm-experience" id="gravity-research" aria-labelledby="gm-title">
+  <div class="gm-intro">
+    <p class="gm-eyebrow">Interactive research experience · IEEE CAI 2025</p>
+    <h2 id="gm-title">Beyond Population and Distance</h2>
+    <p>Discover how geographic, economic, social, and mobility data improve county-to-county travel-demand models in Tennessee and New York. Explore the modeling idea, compare published results, and examine the predictors ranked in the paper.</p>
+    <div class="gm-highlights" aria-label="Maximum published New York neural-network improvements">
+      <div><strong>63.59%</strong><span>Lower MAE · NY neural network</span></div>
+      <div><strong>51.48%</strong><span>Higher R² · NY neural network</span></div>
+      <div><strong>44.32%</strong><span>Higher CPC · NY neural network</span></div>
+    </div>
+    <p class="gm-note">These are the paper's New York neural-network comparisons, not universal gains or predictions produced by this page. Source: Table II.</p>
+  </div>
+
+  <div class="gm-tabs" role="group" aria-label="Explore the research">
+    <button class="is-active" type="button" data-gm-scene="discover" aria-pressed="true"><small>01</small>Discover</button>
+    <button type="button" data-gm-scene="compare" aria-pressed="false"><small>02</small>Compare</button>
+    <button type="button" data-gm-scene="explain" aria-pressed="false"><small>03</small>Explain</button>
+  </div>
+
+  <section class="gm-scene" data-gm-panel="discover" aria-labelledby="gm-discover-title">
+    <p class="gm-eyebrow">01 · The modeling idea</p>
+    <h3 id="gm-discover-title">From classical gravity to richer travel patterns</h3>
+    <p>The conventional gravity formulation relates trips between an origin and destination to their populations and the distance between them. The study evaluates machine-learning models using limited gravity-style inputs and more extensive county-level features.</p>
+    <div class="gm-switch" role="group" aria-label="Choose feature set">
+      <button class="is-active" type="button" data-gm-input="baseline" aria-pressed="true">Original gravity inputs</button>
+      <button type="button" data-gm-input="enhanced" aria-pressed="false">Data-driven features</button>
+    </div>
+    <div class="gm-flow" aria-label="Input data and model pipeline">
+      <div class="gm-flow-card"><span class="gm-step">01 · ORIGIN</span><strong>County i</strong><small>Population and characteristics</small></div>
+      <div class="gm-connection" aria-hidden="true">↔</div>
+      <div class="gm-flow-card"><span class="gm-step">02 · DESTINATION</span><strong>County j</strong><small>Population and characteristics</small></div>
+      <div class="gm-connection" aria-hidden="true">→</div>
+      <div class="gm-flow-card gm-output"><span class="gm-step">03 · ESTIMATION</span><strong>Travel flow Tᵢⱼ</strong><small>County-to-county trips</small></div>
+    </div>
+    <div class="gm-feature-panel">
+      <p class="gm-small-heading" id="gm-feature-title">Population · Distance · Travel time</p>
+      <div class="gm-feature-chips" id="gm-feature-chips">
+        <span>Origin population</span><span>Destination population</span><span>Distance</span><span>Travel time</span>
+      </div>
+      <p id="gm-discover-explain">Baseline feature set: population, distance, and travel time are used to represent origin–destination connections in the paper's first dataset.</p>
+    </div>
+    <div class="gm-equation">
+      <strong>Classical gravity equation</strong>
+      <p class="gm-formula" aria-label="Trips equals origin population times destination population divided by distance to the beta power">Tᵢⱼ = (Pᵢ × Pⱼ) / dᵢⱼ<sup>β</sup></p>
+      <p>Experiment with the equation's relative sensitivity. Values below are <strong>illustrative normalized flows</strong>—not trained model predictions or paper results.</p>
+      <div class="gm-demo-grid">
+        <label>Origin population multiplier <output id="gm-origin-value">1.0×</output><input id="gm-origin" type="range" min="50" max="200" value="100" step="10"></label>
+        <label>Destination population multiplier <output id="gm-dest-value">1.0×</output><input id="gm-dest" type="range" min="50" max="200" value="100" step="10"></label>
+        <label>Distance multiplier <output id="gm-distance-value">1.0×</output><input id="gm-distance" type="range" min="50" max="200" value="100" step="10"></label>
+        <label>Distance-decay exponent β <output id="gm-beta-value">1.0</output><input id="gm-beta" type="range" min="50" max="200" value="100" step="10"></label>
+      </div>
+      <div class="gm-simulator-result"><span>Relative gravity-model flow</span><strong id="gm-index">1.00×</strong><button type="button" id="gm-reset">Reset</button></div>
+    </div>
+    <p class="gm-note">The study uses 27 county attributes grouped into eight categories; origin and destination measurements create richer pair-level features. The enhanced models are learned from data rather than calculated by this simple illustrative equation.</p>
+  </section>
+
+  <section class="gm-scene" data-gm-panel="compare" hidden aria-labelledby="gm-compare-title">
+    <p class="gm-eyebrow">02 · Published experimental evidence</p>
+    <h3 id="gm-compare-title">Compare actual model results</h3>
+    <p>Explore the exact Table II values for three regression models across Tennessee and New York. The two bars compare each model's original gravity-style feature set with the enriched data-driven feature set.</p>
+    <div class="gm-controls">
+      <label>Study area<select id="gm-region"><option value="TN">Tennessee</option><option value="NY" selected>New York</option></select></label>
+      <label>Machine-learning model<select id="gm-model"><option value="NN">Neural Network</option><option value="RF">Random Forest</option><option value="GB">Gradient Boosting</option></select></label>
+    </div>
+    <div class="gm-metric-tabs" role="group" aria-label="Performance metric">
+      <button type="button" data-gm-metric="MAE" class="is-active" aria-pressed="true">MAE ↓</button>
+      <button type="button" data-gm-metric="R2" aria-pressed="false">R² ↑</button>
+      <button type="button" data-gm-metric="CPC" aria-pressed="false">CPC ↑</button>
+    </div>
+    <div class="gm-chart">
+      <div class="gm-chart-title"><strong id="gm-metric-heading">Mean Absolute Error</strong><span id="gm-metric-goal">Lower is better</span></div>
+      <div class="gm-bar-row"><span>Original features</span><div class="gm-bar-track"><div class="gm-bar gm-bar-before" id="gm-before-bar"></div></div><strong id="gm-before-num">0.0879</strong></div>
+      <div class="gm-bar-row"><span>Data-driven features</span><div class="gm-bar-track"><div class="gm-bar gm-bar-after" id="gm-after-bar"></div></div><strong id="gm-after-num">0.0320</strong></div>
+      <div class="gm-improvement"><strong id="gm-improvement">63.59% lower error</strong><span id="gm-improvement-caption">Reported improvement for New York neural networks</span></div>
+    </div>
+    <div class="gm-all-table">
+      <p class="gm-small-heading">Full model comparison · selected study area</p>
+      <div class="gm-table-scroll"><table><thead><tr><th scope="col">Model</th><th scope="col">MAE reduction</th><th scope="col">R² gain</th><th scope="col">CPC gain</th></tr></thead><tbody id="gm-summary-rows"><tr><td>Neural Network</td><td>63.59%</td><td>51.48%</td><td>44.32%</td></tr></tbody></table></div>
+    </div>
+    <p class="gm-note">Source: Table II in the six-page IEEE CAI 2025 paper. Changes are percentages reported by the authors; values are normalized evaluation metrics. This is a comparison of <em>feature sets within each ML model</em>, not a claimed head-to-head improvement over every conventional gravity formula.</p>
+  </section>
+
+  <section class="gm-scene" data-gm-panel="explain" hidden aria-labelledby="gm-explain-title">
+    <p class="gm-eyebrow">03 · Interpreting predictors</p>
+    <h3 id="gm-explain-title">Which features matter across regions?</h3>
+    <p>Table III reports ranked features for each model and state. Explore the actual order of the top ten predictors. Neural-network rankings use SHAP; Random Forest and Gradient Boosting use their respective feature-importance analyses.</p>
+    <div class="gm-controls">
+      <label>Region<select id="gm-explain-region"><option value="TN">Tennessee</option><option value="NY" selected>New York</option></select></label>
+      <label>Model<select id="gm-explain-model"><option value="NN">Neural Network</option><option value="RF">Random Forest</option><option value="GB">Gradient Boosting</option></select></label>
+    </div>
+    <div class="gm-feature-ranking" id="gm-feature-ranking" aria-live="polite"></div>
+    <div class="gm-feature-definition"><strong id="gm-ranked-name">Travel time</strong><p id="gm-ranked-detail">Trip time between counties, identified as an important predictor.</p></div>
+    <div class="gm-insight"><strong id="gm-insight-heading">New York · Neural Network</strong><p id="gm-insight-copy">Travel time and distance lead the ranking; recreation, public land use, and building counts also appear among prominent predictors.</p></div>
+    <p class="gm-note">Feature ranking is not a causal estimate, nor a prediction for a newly selected county pair. O and D mean origin and destination. Rank order is taken from Table III; no numerical feature-importance magnitudes were reported in the table.</p>
+  </section>
+
+  <section class="gm-scholar" id="gm-paper-details">
+    <p class="gm-eyebrow">Academic record</p>
+    <h3>Read the paper details</h3>
+    <details><summary>Abstract</summary><div class="gm-detail-body"><p>{{ publication.abstract_summary }}</p></div></details>
+    <details><summary>Contributions and limitations</summary><div class="gm-detail-body"><ul>{% for contribution in publication.contributions %}<li>{{ contribution }}</li>{% endfor %}</ul><p><strong>Scope and limits:</strong> County-level Tennessee and New York data; feature availability, temporal generalization, cross-region transfer, and interpretation of learned relationships need additional study.</p><p><strong>Data period:</strong> March 15–April 15, 2021, as specified in the study.</p></div></details>
+    <details id="citation"><summary>Publication details and BibTeX</summary><div class="gm-detail-body"><p><strong>{{ publication.venue }}</strong> · {{ publication.year }} · pp. {{ publication.pages }}</p><p><a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">DOI: {{ publication.doi }}</a></p><pre><code>{{ publication.bibtex | escape }}</code></pre></div></details>
+    <p class="gm-paper-links"><a href="{{ publication.preprint_url }}" target="_blank" rel="noopener noreferrer">Read full paper</a> <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer">Publisher DOI</a></p>
+  </section>
+</section>
+
+<style>
+.gm-experience{--gm-navy:#173a62;--gm-teal:#087f8c;--gm-border:#d7e5ec;--gm-muted:#55718b;--gm-bg:#f0f7fa;color:#294b69;margin:1.5rem 0 2.5rem;max-width:100%}
+.gm-experience *{box-sizing:border-box}
+.gm-experience .gm-intro,.gm-experience .gm-scene,.gm-experience .gm-scholar{border:1px solid var(--gm-border);border-radius:17px;background:#fff;padding:clamp(1rem,2.7vw,1.6rem);margin:0 0 1.1rem}
+.gm-experience .gm-intro{background:linear-gradient(125deg,#f2fbfc 0%,#fff 75%)}
+.gm-experience .gm-eyebrow{color:var(--gm-teal);font-size:.76rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;margin:0 0 .65rem}
+.gm-experience h2,.gm-experience h3{color:var(--gm-navy);line-height:1.24;margin:0 0 .7rem}
+.gm-experience h2{font-size:clamp(1.5rem,3vw,2.15rem)}.gm-experience h3{font-size:clamp(1.2rem,2.3vw,1.65rem)}
+.gm-experience p{line-height:1.6}
+.gm-experience .gm-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin:1rem 0}
+.gm-experience .gm-highlights>div{padding:.8rem;background:#fff;border:1px solid var(--gm-border);border-radius:11px}
+.gm-experience .gm-highlights strong{display:block;color:var(--gm-navy);font-size:clamp(1.3rem,2.7vw,2rem);font-variant-numeric:tabular-nums}
+.gm-experience .gm-highlights span{font-size:.78rem;color:var(--gm-muted)}
+.gm-experience .gm-note{font-size:.81rem;color:var(--gm-muted)}
+.gm-experience .gm-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.45rem;margin:1rem 0}
+.gm-experience button,.gm-experience select{font:inherit}
+.gm-experience button:focus-visible,.gm-experience select:focus-visible,.gm-experience input:focus-visible,.gm-experience summary:focus-visible{outline:3px solid #e9a23e;outline-offset:3px}
+.gm-experience .gm-tabs button{border:1px solid var(--gm-border);border-radius:11px;background:#edf5f8;color:var(--gm-navy);font-weight:750;padding:.75rem;cursor:pointer}
+.gm-experience .gm-tabs button small{display:block;letter-spacing:.14em;color:var(--gm-muted)}
+.gm-experience .gm-tabs button.is-active{background:#ddf4f1;border-color:var(--gm-teal);box-shadow:inset 0 -3px var(--gm-teal)}
+.gm-experience [hidden]{display:none!important}
+.gm-experience .gm-switch,.gm-experience .gm-metric-tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin:1rem 0}
+.gm-experience .gm-switch button,.gm-experience .gm-metric-tabs button{background:#eef6f9;border:1px solid var(--gm-border);border-radius:9px;padding:.6rem .85rem;color:var(--gm-navy);cursor:pointer}
+.gm-experience .gm-switch button.is-active,.gm-experience .gm-metric-tabs button.is-active{background:#d8f1ef;border-color:var(--gm-teal);font-weight:750}
+.gm-experience .gm-flow{display:flex;align-items:center;justify-content:center;gap:.5rem;background:var(--gm-bg);border-radius:13px;padding:1rem;flex-wrap:wrap}
+.gm-experience .gm-flow-card{flex:1 1 135px;border:1px solid var(--gm-border);padding:.85rem .6rem;border-radius:11px;background:#fff;min-width:120px;text-align:center}
+.gm-experience .gm-flow-card>*{display:block}.gm-experience .gm-flow-card strong{color:var(--gm-navy);font-size:1rem}.gm-experience .gm-flow-card small{font-size:.74rem;color:var(--gm-muted)}
+.gm-experience .gm-step{font-size:.69rem;color:var(--gm-teal);font-weight:800}.gm-experience .gm-connection{font-size:1.6rem;color:var(--gm-teal);font-weight:800}.gm-experience .gm-output{border-color:#89c8c5}
+.gm-experience .gm-feature-panel,.gm-experience .gm-equation,.gm-experience .gm-chart,.gm-experience .gm-all-table,.gm-experience .gm-feature-definition,.gm-experience .gm-insight{background:var(--gm-bg);border-radius:13px;padding:1rem;margin:1rem 0}
+.gm-experience .gm-small-heading{font-weight:800;color:var(--gm-navy);margin:.3rem 0 .7rem}
+.gm-experience .gm-feature-chips{display:flex;gap:.4rem;flex-wrap:wrap}.gm-experience .gm-feature-chips span{background:#fff;border:1px solid var(--gm-border);border-radius:999px;padding:.3rem .65rem;font-size:.81rem}
+.gm-experience .gm-formula{font-family:Georgia,serif;text-align:center;font-size:clamp(1.3rem,3vw,2rem);font-weight:700;color:var(--gm-navy);margin:.8rem 0}
+.gm-experience .gm-demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.5rem}
+.gm-experience .gm-demo-grid label{display:block;font-size:.84rem;font-weight:650}
+.gm-experience output{float:right;color:var(--gm-teal);font-variant-numeric:tabular-nums}
+.gm-experience input[type=range]{display:block;width:100%;accent-color:var(--gm-teal);margin:.6rem 0}
+.gm-experience .gm-simulator-result{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;border-top:1px solid var(--gm-border);padding-top:.8rem}
+.gm-experience .gm-simulator-result strong{color:var(--gm-navy);font-size:1.4rem}
+.gm-experience .gm-simulator-result button{margin-left:auto;border:1px solid var(--gm-border);background:#fff;color:var(--gm-navy);padding:.45rem .8rem;border-radius:7px;cursor:pointer}
+.gm-experience .gm-controls{display:flex;gap:.8rem;flex-wrap:wrap;margin:1rem 0}.gm-experience .gm-controls label{font-size:.84rem;font-weight:700;min-width:min(200px,100%);flex:1}
+.gm-experience select{display:block;width:100%;margin-top:.3rem;padding:.5rem;border:1px solid var(--gm-border);border-radius:8px;background:#fff;color:var(--gm-navy)}
+.gm-experience .gm-chart-title{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;flex-wrap:wrap;margin-bottom:1rem}
+.gm-experience .gm-chart-title strong{color:var(--gm-navy)}.gm-experience .gm-chart-title span{font-size:.8rem;color:var(--gm-muted)}
+.gm-experience .gm-bar-row{display:grid;grid-template-columns:145px minmax(0,1fr) 65px;gap:.6rem;align-items:center;margin:.85rem 0}
+.gm-experience .gm-bar-row span{font-size:.83rem}.gm-experience .gm-bar-row strong{font-variant-numeric:tabular-nums;text-align:right;color:var(--gm-navy)}
+.gm-experience .gm-bar-track{height:18px;border-radius:99px;background:#dbe8ef;overflow:hidden}
+.gm-experience .gm-bar{height:100%;border-radius:99px;transition:width .3s;width:20%}.gm-experience .gm-bar-before{background:#899baa}.gm-experience .gm-bar-after{background:#0b8990}
+.gm-experience .gm-improvement{border-top:1px solid var(--gm-border);padding-top:.8rem;display:flex;flex-direction:column;gap:.2rem}
+.gm-experience .gm-improvement strong{color:var(--gm-teal);font-size:1.25rem}.gm-experience .gm-improvement span{font-size:.82rem;color:var(--gm-muted)}
+.gm-experience .gm-table-scroll{overflow-x:auto}.gm-experience table{width:100%;border-collapse:collapse;font-size:.85rem}
+.gm-experience th,.gm-experience td{text-align:left;padding:.65rem .5rem;border-bottom:1px solid var(--gm-border);white-space:nowrap}
+.gm-experience th{color:var(--gm-navy)}.gm-experience .gm-feature-ranking{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;margin:.8rem 0}
+.gm-experience .gm-rank{display:flex;align-items:center;gap:.5rem;text-align:left;min-width:0;border:1px solid var(--gm-border);border-radius:9px;padding:.65rem;background:#f4f9fb;color:var(--gm-navy);cursor:pointer;font-size:.85rem}
+.gm-experience .gm-rank strong{font-variant-numeric:tabular-nums;color:var(--gm-teal);min-width:20px}.gm-experience .gm-rank.is-active{border-color:var(--gm-teal);background:#daf3f0}
+.gm-experience .gm-feature-definition strong,.gm-experience .gm-insight strong{color:var(--gm-navy)}.gm-experience .gm-feature-definition p,.gm-experience .gm-insight p{margin:.35rem 0}
+.gm-experience .gm-scholar details{border-top:1px solid var(--gm-border);padding:.85rem 0}
+.gm-experience .gm-scholar summary{font-weight:750;color:var(--gm-navy);cursor:pointer}
+.gm-experience .gm-detail-body{padding:.6rem .2rem}.gm-experience .gm-detail-body pre{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%;background:#f2f7f9;border-radius:9px;padding:1rem}
+.gm-experience .gm-paper-links{display:flex;gap:.65rem;flex-wrap:wrap}.gm-experience .gm-paper-links a{display:inline-block;border:1px solid var(--gm-border);border-radius:8px;background:#eef6f9;padding:.55rem .9rem;text-decoration:none;font-weight:750}
+@media(max-width:680px){.gm-experience .gm-demo-grid,.gm-experience .gm-feature-ranking{grid-template-columns:1fr}.gm-experience .gm-bar-row{grid-template-columns:107px minmax(0,1fr) 56px;gap:.3rem}.gm-experience .gm-bar-row span{font-size:.75rem}.gm-experience .gm-bar-row strong{font-size:.76rem}}
+@media(max-width:450px){.gm-experience .gm-highlights{gap:.3rem}.gm-experience .gm-highlights>div{padding:.55rem}.gm-experience .gm-highlights span{font-size:.67rem}.gm-experience .gm-flow-card{flex-basis:100%}.gm-experience .gm-connection{transform:rotate(90deg)}}
+@media(prefers-reduced-motion:reduce){.gm-experience *{transition:none!important;animation:none!important}}
+</style>
+<script>
+(function(){
+ "use strict";
+ var root=document.getElementById("gravity-research");if(!root||root.dataset.initialized)return;root.dataset.initialized="1";
+ function get(id){return document.getElementById(id);}
+ function set(id,s){get(id).textContent=s;}
+ root.querySelectorAll("[data-gm-scene]").forEach(function(b){b.addEventListener("click",function(){var v=b.getAttribute("data-gm-scene");root.querySelectorAll("[data-gm-scene]").forEach(function(x){var active=x===b;x.classList.toggle("is-active",active);x.setAttribute("aria-pressed",String(active));});root.querySelectorAll("[data-gm-panel]").forEach(function(x){x.hidden=x.getAttribute("data-gm-panel")!==v;});});});
+ var categories=["Land use","Points of interest","Roads","Terminals","Buildings","Economics","Education","Population"];
+ var demoFeatures=["Origin population","Destination population","Distance","Travel time"];
+ var expandedFeatures=["Land use (7)","Points of interest (8)","Road categories (3)","Transport terminals","Building counts","Economic indicators (5)","Education","Population","Distance","Travel time"];
+ root.querySelectorAll("[data-gm-input]").forEach(function(b){b.addEventListener("click",function(){var v=b.getAttribute("data-gm-input");root.querySelectorAll("[data-gm-input]").forEach(function(x){var active=x===b;x.classList.toggle("is-active",active);x.setAttribute("aria-pressed",String(active));});get("gm-feature-chips").replaceChildren();(v==="baseline"?demoFeatures:expandedFeatures).forEach(function(z){var sp=document.createElement("span");sp.textContent=z;get("gm-feature-chips").appendChild(sp);});set("gm-feature-title",v==="baseline"?"Original gravity-style inputs":"Expanded geographic and socioeconomic inputs");set("gm-discover-explain",v==="baseline"?"Dataset 1: population, origin–destination distance, and travel time.":"Dataset 2: the original features plus detailed county-level geography, land use, points of interest, roads, economic variables, education, and infrastructure. The 27 attributes form eight categories in Table I.");});});
+ function updateDemo(){var pi=+get("gm-origin").value/100,pj=+get("gm-dest").value/100,di=+get("gm-distance").value/100,beta=+get("gm-beta").value/100;set("gm-origin-value",pi.toFixed(1)+"×");set("gm-dest-value",pj.toFixed(1)+"×");set("gm-distance-value",di.toFixed(1)+"×");set("gm-beta-value",beta.toFixed(1));set("gm-index",(pi*pj/Math.pow(di,beta)).toFixed(2)+"×");}
+ ["gm-origin","gm-dest","gm-distance","gm-beta"].forEach(function(id){get(id).addEventListener("input",updateDemo);});
+ get("gm-reset").addEventListener("click",function(){["gm-origin","gm-dest","gm-distance","gm-beta"].forEach(function(id){get(id).value=100;});updateDemo();});updateDemo();
+ // Exact numerical results from Table II (MAE, R², CPC), not figure digitization.
+ var values={
+  TN:{NN:{MAE:[.1026,.0622,39.38],R2:[.8274,.9406,13.68],CPC:[.7206,.8412,16.73]},RF:{MAE:[.0420,.0402,4.29],R2:[.9746,.9781,.36],CPC:[.9121,.9169,.53]},GB:{MAE:[.1070,.0957,10.56],R2:[.8814,.9180,4.15],CPC:[.7554,.7894,4.50]}},
+  NY:{NN:{MAE:[.0879,.0320,63.59],R2:[.6444,.9762,51.48],CPC:[.6295,.9085,44.32]},RF:{MAE:[.0255,.0208,18.43],R2:[.9755,.9874,1.22],CPC:[.9291,.9456,1.78]},GB:{MAE:[.0620,.0527,15.00],R2:[.9395,.9654,2.75],CPC:[.8231,.8631,4.86]}}
+ };
+ var names={NN:"Neural Network",RF:"Random Forest",GB:"Gradient Boosting"};
+ var activeMetric="MAE";var metrics={MAE:["Mean Absolute Error","Lower is better","reduction"],R2:["Coefficient of determination (R²)","Higher is better","increase"],CPC:["Common Part of Commuters","Higher is better","increase"]};
+ function updateCompare(){
+  var region=get("gm-region").value,model=get("gm-model").value,a=values[region][model][activeMetric],max=Math.max(a[0],a[1],.0001);set("gm-metric-heading",metrics[activeMetric][0]);set("gm-metric-goal",metrics[activeMetric][1]);
+  set("gm-before-num",a[0].toFixed(4));set("gm-after-num",a[1].toFixed(4));get("gm-before-bar").style.width=(100*a[0]/max)+"%";get("gm-after-bar").style.width=(100*a[1]/max)+"%";
+  set("gm-improvement",a[2].toFixed(2)+"% "+metrics[activeMetric][2]);set("gm-improvement-caption","Reported "+(region==="NY"?"New York":"Tennessee")+" · "+names[model]+" comparison");
+  get("gm-summary-rows").replaceChildren();
+  ["NN","RF","GB"].forEach(function(key){var tr=document.createElement("tr");[names[key],values[region][key].MAE[2].toFixed(2)+"%",values[region][key].R2[2].toFixed(2)+"%",values[region][key].CPC[2].toFixed(2)+"%"].forEach(function(t){var td=document.createElement("td");td.textContent=t;tr.appendChild(td);});if(key===model)tr.style.background="#e0f3f0";get("gm-summary-rows").appendChild(tr);});
+ }
+ root.querySelectorAll("[data-gm-metric]").forEach(function(b){b.addEventListener("click",function(){activeMetric=b.getAttribute("data-gm-metric");root.querySelectorAll("[data-gm-metric]").forEach(function(x){var yes=x===b;x.classList.toggle("is-active",yes);x.setAttribute("aria-pressed",String(yes));});updateCompare();});});
+ ["gm-region","gm-model"].forEach(function(id){get(id).addEventListener("change",updateCompare);});updateCompare();
+ var ranks={
+ TN:{NN:["Distance","Time","F27-D","F27-O","F26-D","F4-O","F4-D","F25-O","F17-D","F20-D"],RF:["Time","F11-D","F14-O","F26-D","F27-D","F16-D","Distance","F18-O","F5-O","F8-O"],GB:["Time","F26-D","F16-D","F27-D","F14-O","F11-D","F17-D","Distance","F8-O","F18-O"]},
+ NY:{NN:["Time","Distance","F12-D","F5-D","F20-O","F5-O","F10-O","F8-D","F10-D","F14-D"],RF:["Time","Distance","F22-D","F8-D","F21-D","F26-D","F13-D","F23-D","F8-O","F19-D"],GB:["Time","Distance","F26-D","F8-D","F21-D","F20-O","F23-D","F16-O","F16-D","F4-D"]}
+ };
+ var features={F4:"Commercial land-use count",F5:"Public-purpose land-use count",F8:"Education points of interest",F10:"Public services points of interest",F11:"Healthcare points of interest",F12:"Recreation points of interest",F13:"Heritage points of interest",F14:"Transport points of interest",F16:"Highways",F17:"Roadways",F18:"Streets",F19:"Transport terminals",F20:"Buildings",F21:"Unemployment rate",F22:"Median household income",F23:"Share of state median household income",F25:"Child poverty percentage",F26:"College-completion percentage",F27:"Population"};
+ function describe(code){if(code==="Distance")return["Travel distance","Distance between county origin and destination."];
+  if(code==="Time")return["Travel time","Estimated travel duration between counties, calculated using OSRM."];
+  var m=code.match(/^(F\d+)-(O|D)$/);if(!m)return[code,"Ranked feature reported in the paper."];
+  return[(features[m[1]]||m[1])+" · "+(m[2]==="O"?"origin":"destination"),"Feature "+m[1]+" measured for the "+(m[2]==="O"?"origin":"destination")+" county. Category and definition follow Table I."]; }
+ function updateExplain(){
+  var region=get("gm-explain-region").value,model=get("gm-explain-model").value,list=ranks[region][model];get("gm-feature-ranking").replaceChildren();
+  list.forEach(function(code,index){var button=document.createElement("button");button.type="button";button.className="gm-rank"+(index===0?" is-active":"");var b=document.createElement("strong");b.textContent=String(index+1).padStart(2,"0");var span=document.createElement("span");span.textContent=describe(code)[0];button.append(b,span);button.addEventListener("click",function(){root.querySelectorAll(".gm-rank").forEach(function(x){x.classList.toggle("is-active",x===button);});var detail=describe(code);set("gm-ranked-name",detail[0]);set("gm-ranked-detail",detail[1]);});get("gm-feature-ranking").appendChild(button);});
+  var first=describe(list[0]);set("gm-ranked-name",first[0]);set("gm-ranked-detail",first[1]);
+  set("gm-insight-heading",(region==="NY"?"New York":"Tennessee")+" · "+names[model]);
+  set("gm-insight-copy",region==="NY"?"Time and distance are consistently prominent, while destination infrastructure and socioeconomic attributes also appear among the ranked drivers.":"Time and distance recur among important predictors; destination amenities, education, and population also feature in the rankings.");
+ }
+ ["gm-explain-region","gm-explain-model"].forEach(function(id){get(id).addEventListener("change",updateExplain);});updateExplain();
+})();
+</script>
