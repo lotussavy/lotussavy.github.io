@@ -1,0 +1,249 @@
+
+<section class="ns-experience" id="interactive-research" aria-labelledby="ns-title">
+  <div class="ns-intro">
+    <p class="ns-eyebrow">Interactive research experience · IWCMC 2025</p>
+    <h2 id="ns-title">When Neural Networks Learn from Rules</h2>
+    <p>How can interpretable decision-tree rules improve neural-network predictions of county-to-county travel demand? Explore the published method, actual symbolic rules, and the trade-off between rule complexity and selection.</p>
+    <div class="ns-metrics" aria-label="Maximum reported improvements versus neural-network baselines">
+      <div><strong>24.19%</strong><span>Up to lower MAE</span></div>
+      <div><strong>1.79%</strong><span>Reported R² improvement</span></div>
+      <div><strong>6.49%</strong><span>Reported CPC improvement</span></div>
+    </div>
+    <p class="ns-footnote">Headline improvements are maxima reported in the paper, not results of every configuration or guarantees for new inputs. This experience does not run a trained neural network.</p>
+  </div>
+
+  <nav class="ns-tabs" aria-label="Interactive research sections">
+    <a href="#ns-method">Method</a><a href="#ns-rule-lab">Rule explorer</a><a href="#ns-complexity">Rule selection</a><a href="#ns-results">Results</a>
+  </nav>
+
+  <section class="ns-panel" id="ns-method" aria-labelledby="ns-method-title">
+    <p class="ns-eyebrow">01 · The method</p>
+    <h3 id="ns-method-title">Three ways to learn travel demand</h3>
+    <p>County-level geospatial, economic, and mobility features inform neural forecasting. The proposed approach also extracts if–then rules from a decision tree, encodes them as additional features, and combines both representations.</p>
+    <div class="ns-method-grid" role="group" aria-label="Compare model inputs">
+      <button class="ns-method is-active" data-ns-method="original" type="button" aria-pressed="true"><span>Original</span><small>Raw features → NN</small></button>
+      <button class="ns-method" data-ns-method="rules" type="button" aria-pressed="false"><span>Rules only</span><small>DT indicators → NN</small></button>
+      <button class="ns-method" data-ns-method="combined" type="button" aria-pressed="false"><span>Combined</span><small>Raw + rules → NN</small></button>
+    </div>
+    <div class="ns-network" aria-label="Diagram of selected model input">
+      <div class="ns-input" id="ns-raw-input"><span class="ns-network-icon" aria-hidden="true">x</span><strong>Original features</strong><small>Spatial, socioeconomic, mobility</small></div>
+      <div class="ns-join" aria-hidden="true">+</div>
+      <div class="ns-input ns-input-rule is-muted" id="ns-rule-input"><span class="ns-network-icon" aria-hidden="true">0 / 1</span><strong>Symbolic indicators</strong><small>Extracted decision-tree rules</small></div>
+      <div class="ns-arrow" aria-hidden="true">→</div>
+      <div class="ns-output"><span class="ns-network-icon" aria-hidden="true">NN</span><strong>Trip-demand estimate</strong><small>Learned nonlinear prediction</small></div>
+    </div>
+    <p class="ns-explainer" id="ns-method-caption" aria-live="polite">Baseline: the neural network receives original features only.</p>
+    <p class="ns-footnote">Method schematic, not a visualization of trained model weights. Symbolic indicators are inputs, not hard constraints on the NN output.</p>
+  </section>
+
+  <section class="ns-panel" id="ns-rule-lab" aria-labelledby="ns-rule-title">
+    <p class="ns-eyebrow">02 · Decision-tree rules</p>
+    <h3 id="ns-rule-title">Change the inputs. Follow the rule.</h3>
+    <p>Explore the eight depth-3 rule regions reported in Table II. Values are explanatory inputs to the published tree; the result shown is the associated decision-tree leaf mean, <em>not</em> a new neural-network prediction.</p>
+    <div class="ns-lab-grid">
+      <div class="ns-controls">
+        <label for="ns-distance">Origin–destination distance <output id="ns-distance-value" for="ns-distance">40 mi</output></label>
+        <input id="ns-distance" type="range" min="10" max="100" step="1" value="40">
+        <label for="ns-dest-poi">Destination points of interest <output id="ns-dest-poi-value" for="ns-dest-poi">400</output></label>
+        <input id="ns-dest-poi" type="range" min="100" max="900" step="1" value="400">
+        <label for="ns-origin-poi">Origin points of interest <output id="ns-origin-poi-value" for="ns-origin-poi">350</output></label>
+        <input id="ns-origin-poi" type="range" min="100" max="600" step="1" value="350">
+        <label for="ns-nature">Destination natural areas <output id="ns-nature-value" for="ns-nature">1000</output></label>
+        <input id="ns-nature" type="range" min="300" max="1500" step="1" value="1000">
+        <button class="ns-reset" type="button" id="ns-reset-rule">Reset scenario</button>
+      </div>
+      <div class="ns-rule-result" aria-live="polite">
+        <p class="ns-eyebrow">Matched symbolic rule</p>
+        <strong class="ns-rule-number" id="ns-rule-number">Rule 1</strong>
+        <p id="ns-rule-description">Distance ≤ 46.08 mi; destination POIs &gt; 323; origin POIs &gt; 307.</p>
+        <div class="ns-branch"><span id="ns-branch-path">Distance ≤ 46.08 → destination POIs &gt; 323 → origin POIs &gt; 307</span></div>
+        <span class="ns-result-label">Published decision-tree leaf mean</span>
+        <strong class="ns-result-number" id="ns-leaf-mean">31,867.81</strong>
+        <p class="ns-footnote">Table II leaf means are descriptive tree values in the paper's modeling units. These controls do not estimate the causal effect of changing a feature.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ns-panel" id="ns-complexity" aria-labelledby="ns-complexity-title">
+    <p class="ns-eyebrow">03 · Model complexity</p>
+    <h3 id="ns-complexity-title">What happens as the tree grows?</h3>
+    <p>Rule counts from Table IV. Increasing tree depth produces many candidate rules. Variance-based selection retains only a subset, depending on the threshold.</p>
+    <div class="ns-choices">
+      <label for="ns-depth">Decision tree depth: <output id="ns-depth-value" for="ns-depth">10</output></label>
+      <input id="ns-depth" type="range" min="3" max="15" value="10" step="1">
+      <label for="ns-threshold">Variance threshold</label>
+      <select id="ns-threshold"><option value="v01">0.01</option><option value="v001">0.001</option><option value="v0001" selected>0.0001</option></select>
+    </div>
+    <div class="ns-counts" aria-live="polite">
+      <div><strong id="ns-all-count">505</strong><span>Extracted rules</span></div>
+      <div><strong id="ns-selected-count">374</strong><span>Retained rules</span></div>
+      <div><strong id="ns-pct-count">74%</strong><span>Retained share</span></div>
+    </div>
+    <div class="ns-plot-wrap">
+      <svg id="ns-rule-chart" viewBox="0 0 640 290" role="img" aria-labelledby="ns-chart-title ns-chart-desc">
+        <title id="ns-chart-title">Rule count by tree depth</title>
+        <desc id="ns-chart-desc">Line chart comparing all extracted rules with rules retained at the chosen variance threshold, for tree depths 3 through 15.</desc>
+      </svg>
+      <div class="ns-legend"><span><i class="ns-key ns-key-all"></i> All extracted rules</span><span><i class="ns-key ns-key-retained"></i> Retained rules</span></div>
+    </div>
+    <p class="ns-footnote">The chart displays rule counts, not model accuracy. More retained rules do not necessarily imply better predictions.</p>
+  </section>
+
+  <section class="ns-panel" id="ns-results" aria-labelledby="ns-results-title">
+    <p class="ns-eyebrow">04 · Experimental evidence</p>
+    <h3 id="ns-results-title">What improved, and what remains uncertain?</h3>
+    <div class="ns-results-grid">
+      <div><strong>MAE ↓</strong><p>Figure 3 shows lower error for combined input features than the original-only neural baseline across tested tree depths.</p></div>
+      <div><strong>R² ↑</strong><p>Combining original and rule-derived features generally increases explained variance. Performance does not rise monotonically with depth.</p></div>
+      <div><strong>CPC ↑</strong><p>Combined features yield better overlap between modeled and observed commuter flows in the reported comparison.</p></div>
+    </div>
+    <p>The paper compares original features, rules alone, and combined features using MAE, R², and Common Part of Commuters (CPC). Figures 3–5 contain the performance curves; this page does not reproduce unverified numerical points from the figure images.</p>
+    <div class="ns-sources"><a href="https://doi.org/10.1109/IWCMC65282.2025.11059465" target="_blank" rel="noopener noreferrer">Publisher DOI</a><a href="https://arxiv.org/abs/2502.01680" target="_blank" rel="noopener noreferrer">Read paper and figures</a><a href="https://github.com/lotussavy/IWCMC-2025" target="_blank" rel="noopener noreferrer">Research notebooks</a></div>
+    <p class="ns-footnote">Limits: county-level Tennessee setting; rules are interpretable inputs, but their contribution inside the final neural network is not fully transparent. An individual slider choice is not validated out-of-sample.</p>
+  </section>
+</section>
+
+<style>
+.ns-experience{--ns-ink:#173a62;--ns-accent:#087e90;--ns-border:#d5e2e9;--ns-bg:#f1f7fa;--ns-muted:#50667a;max-width:100%;margin:2.5rem 0;color:#18344a}
+.ns-experience *{box-sizing:border-box}
+.ns-experience .ns-eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--ns-accent);margin:0 0 .5rem}
+.ns-experience h2,.ns-experience h3{color:var(--ns-ink);margin:.25rem 0 .75rem;line-height:1.23}
+.ns-experience .ns-intro{border:1px solid var(--ns-border);border-radius:18px;background:linear-gradient(125deg,#eaf6fb,#fff 75%);padding:clamp(1rem,3vw,2rem)}
+.ns-experience .ns-intro h2{font-size:clamp(1.5rem,3.4vw,2.2rem)}
+.ns-experience p{line-height:1.65}
+.ns-experience .ns-metrics,.ns-experience .ns-counts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1.2rem 0}
+.ns-experience .ns-metrics>div,.ns-experience .ns-counts>div{background:white;border:1px solid var(--ns-border);border-radius:12px;padding:1rem}
+.ns-experience .ns-metrics strong,.ns-experience .ns-counts strong{display:block;font-size:clamp(1.2rem,3vw,2rem);line-height:1.25;color:var(--ns-ink);font-variant-numeric:tabular-nums}
+.ns-experience .ns-metrics span,.ns-experience .ns-counts span{font-size:.8rem;color:var(--ns-muted)}
+.ns-experience .ns-footnote{font-size:.82rem;color:var(--ns-muted);line-height:1.55}
+.ns-experience .ns-tabs{display:flex;gap:.55rem;flex-wrap:wrap;margin:1.3rem 0}
+.ns-experience .ns-tabs a,.ns-experience .ns-sources a{display:inline-block;color:var(--ns-ink);background:#edf5f8;border:1px solid var(--ns-border);padding:.5rem .8rem;border-radius:999px;text-decoration:none;font-size:.9rem}
+.ns-experience .ns-tabs a:hover,.ns-experience .ns-sources a:hover{border-color:var(--ns-accent);background:#dff0f4}
+.ns-experience .ns-panel{background:#fff;border:1px solid var(--ns-border);border-radius:18px;padding:clamp(1rem,3vw,1.8rem);margin:1.3rem 0;scroll-margin-top:1rem}
+.ns-experience .ns-panel h3{font-size:clamp(1.24rem,2.6vw,1.7rem)}
+.ns-experience .ns-method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem;margin:1.2rem 0}
+.ns-experience button,.ns-experience select{font:inherit}
+.ns-experience button:focus-visible,.ns-experience a:focus-visible,.ns-experience input:focus-visible,.ns-experience select:focus-visible{outline:3px solid #e59d46;outline-offset:3px}
+.ns-experience .ns-method{cursor:pointer;padding:.75rem .45rem;border:1px solid var(--ns-border);border-radius:12px;background:#f6fafc;color:var(--ns-ink);text-align:center}
+.ns-experience .ns-method.is-active{background:#dff4f3;border:2px solid var(--ns-accent)}
+.ns-experience .ns-method span,.ns-experience .ns-method small{display:block}
+.ns-experience .ns-method span{font-weight:750}
+.ns-experience .ns-method small{font-size:.75rem;color:var(--ns-muted)}
+.ns-experience .ns-network{display:flex;gap:.6rem;align-items:center;justify-content:center;background:var(--ns-bg);border-radius:14px;padding:1rem;flex-wrap:wrap}
+.ns-experience .ns-input,.ns-experience .ns-output{flex:1 1 145px;min-width:120px;text-align:center;padding:.8rem .6rem;border:1px solid var(--ns-border);border-radius:12px;background:white;transition:opacity .2s,border-color .2s}
+.ns-experience .ns-output{border-color:#91c6c9}
+.ns-experience .ns-input.is-muted,.ns-experience .ns-join.is-muted{opacity:.22}
+.ns-experience .ns-input strong,.ns-experience .ns-output strong,.ns-experience .ns-input small,.ns-experience .ns-output small{display:block}
+.ns-experience .ns-input strong,.ns-experience .ns-output strong{font-size:.85rem}
+.ns-experience .ns-input small,.ns-experience .ns-output small{font-size:.72rem;color:var(--ns-muted)}
+.ns-experience .ns-network-icon{display:block;font-weight:800;font-size:1.2rem;color:var(--ns-accent)}
+.ns-experience .ns-join,.ns-experience .ns-arrow{font-weight:800;color:var(--ns-accent);font-size:1.4rem}
+.ns-experience .ns-explainer{font-weight:650;color:var(--ns-ink)}
+.ns-experience .ns-lab-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+.ns-experience .ns-controls,.ns-experience .ns-rule-result{border:1px solid var(--ns-border);border-radius:14px;background:var(--ns-bg);padding:1.1rem}
+.ns-experience label{display:block;color:var(--ns-ink);font-size:.9rem;font-weight:650;margin:.85rem 0 .25rem}
+.ns-experience output{float:right;color:var(--ns-accent);font-variant-numeric:tabular-nums}
+.ns-experience input[type=range]{width:100%;accent-color:var(--ns-accent);cursor:pointer}
+.ns-experience .ns-reset{margin-top:.9rem;padding:.45rem .75rem;border:1px solid var(--ns-border);border-radius:8px;background:white;color:var(--ns-ink);cursor:pointer}
+.ns-experience .ns-rule-number{display:block;color:var(--ns-ink);font-size:1.45rem}
+.ns-experience .ns-branch{border-left:3px solid var(--ns-accent);padding:.65rem .8rem;background:#fff;color:var(--ns-muted);font-size:.86rem}
+.ns-experience .ns-result-label{display:block;margin-top:1.4rem;color:var(--ns-muted);font-size:.85rem}
+.ns-experience .ns-result-number{display:block;font-size:clamp(1.7rem,3vw,2.4rem);color:var(--ns-ink);font-variant-numeric:tabular-nums}
+.ns-experience .ns-choices{max-width:480px}
+.ns-experience select{width:100%;max-width:230px;padding:.55rem;border:1px solid var(--ns-border);border-radius:9px;background:#fff;color:var(--ns-ink)}
+.ns-experience .ns-plot-wrap{padding:.8rem;background:var(--ns-bg);border-radius:14px}
+.ns-experience #ns-rule-chart{display:block;width:100%;height:auto;max-height:350px;overflow:visible}
+.ns-experience .ns-legend{display:flex;gap:1.1rem;flex-wrap:wrap;font-size:.82rem;color:var(--ns-muted);justify-content:center}
+.ns-experience .ns-key{display:inline-block;width:16px;height:3px;vertical-align:middle;margin-right:.3rem}
+.ns-experience .ns-key-all{background:#8999aa}.ns-experience .ns-key-retained{background:var(--ns-accent)}
+.ns-experience .ns-results-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1rem 0}
+.ns-experience .ns-results-grid>div{background:var(--ns-bg);padding:1rem;border-radius:12px;border:1px solid var(--ns-border)}
+.ns-experience .ns-results-grid strong{font-size:1.2rem;color:var(--ns-ink)}
+.ns-experience .ns-results-grid p{font-size:.87rem;margin:.4rem 0}
+.ns-experience .ns-sources{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+@media(max-width:720px){.ns-experience .ns-lab-grid{grid-template-columns:1fr}.ns-experience .ns-network{gap:.3rem}.ns-experience .ns-join,.ns-experience .ns-arrow{font-size:1rem}.ns-experience .ns-results-grid{grid-template-columns:1fr}}
+@media(max-width:460px){.ns-experience .ns-metrics,.ns-experience .ns-counts{gap:.3rem}.ns-experience .ns-metrics>div,.ns-experience .ns-counts>div{padding:.55rem}.ns-experience .ns-method-grid{gap:.3rem}.ns-experience .ns-method{padding:.5rem .2rem}.ns-experience .ns-method small{font-size:.67rem}}
+@media(prefers-reduced-motion:reduce){.ns-experience *{transition:none!important;animation:none!important}}
+</style>
+<script>
+(function(){
+  "use strict";
+  var root=document.getElementById("interactive-research");
+  if(!root || root.dataset.initialized==="true")return;
+  root.dataset.initialized="true";
+  function el(id){return document.getElementById(id);}
+  function str(id,value){var node=el(id);if(node)node.textContent=value;}
+  var methods={
+    original:"Baseline: the neural network receives original spatial, economic, and mobility features only.",
+    rules:"Rules only: the neural network receives encoded decision-tree rule indicators; the original feature vector is not included.",
+    combined:"Proposed approach: the neural network receives original features together with selected decision-tree rule indicators."
+  };
+  root.querySelectorAll("[data-ns-method]").forEach(function(btn){
+    btn.addEventListener("click",function(){
+      var method=btn.getAttribute("data-ns-method");
+      root.querySelectorAll("[data-ns-method]").forEach(function(b){var active=b===btn;b.classList.toggle("is-active",active);b.setAttribute("aria-pressed",String(active));});
+      el("ns-raw-input").classList.toggle("is-muted",method==="rules");
+      el("ns-rule-input").classList.toggle("is-muted",method==="original");
+      root.querySelector(".ns-join").classList.toggle("is-muted",method!=="combined");
+      str("ns-method-caption",methods[method]);
+    });
+  });
+  var inputs={distance:el("ns-distance"),destination:el("ns-dest-poi"),origin:el("ns-origin-poi"),nature:el("ns-nature")};
+  var ruleSet=[
+    {id:1,mean:31867.81,desc:"Distance ≤ 46.08 mi · Destination POIs > 323 · Origin POIs > 307",test:function(v){return v.d<=46.08&&v.dp>323&&v.op>307;}},
+    {id:2,mean:9709.81,desc:"Distance ≤ 46.08 mi · Destination POIs > 323 · Origin POIs ≤ 307",test:function(v){return v.d<=46.08&&v.dp>323&&v.op<=307;}},
+    {id:3,mean:6492.03,desc:"Distance ≤ 46.08 mi · 243 < Destination POIs ≤ 323",test:function(v){return v.d<=46.08&&v.dp>243&&v.dp<=323;}},
+    {id:4,mean:2728.70,desc:"46.08 < Distance ≤ 58.77 mi · Destination natural areas > 935.5",test:function(v){return v.d>46.08&&v.d<=58.77&&v.na>935.5;}},
+    {id:5,mean:1648.22,desc:"Distance ≤ 46.08 mi · Destination POIs ≤ 243",test:function(v){return v.d<=46.08&&v.dp<=243;}},
+    {id:6,mean:544.09,desc:"Distance > 58.77 mi · Destination POIs > 773.5",test:function(v){return v.d>58.77&&v.dp>773.5;}},
+    {id:7,mean:515.81,desc:"46.08 < Distance ≤ 58.77 mi · Destination natural areas ≤ 935.5",test:function(v){return v.d>46.08&&v.d<=58.77&&v.na<=935.5;}},
+    {id:8,mean:106.32,desc:"Distance > 58.77 mi · Destination POIs ≤ 773.5",test:function(v){return v.d>58.77&&v.dp<=773.5;}}
+  ];
+  function updateRule(){
+    var v={d:+inputs.distance.value,dp:+inputs.destination.value,op:+inputs.origin.value,na:+inputs.nature.value};
+    str("ns-distance-value",v.d+" mi");str("ns-dest-poi-value",v.dp);str("ns-origin-poi-value",v.op);str("ns-nature-value",v.na);
+    var matched=ruleSet.find(function(r){return r.test(v);});
+    if(!matched)return;
+    str("ns-rule-number","Rule "+matched.id);str("ns-rule-description",matched.desc);
+    str("ns-branch-path",matched.desc.replace(/ · /g," → "));
+    str("ns-leaf-mean",matched.mean.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2}));
+  }
+  Object.keys(inputs).forEach(function(key){inputs[key].addEventListener("input",updateRule);});
+  el("ns-reset-rule").addEventListener("click",function(){inputs.distance.value=40;inputs.destination.value=400;inputs.origin.value=350;inputs.nature.value=1000;updateRule();});
+  updateRule();
+
+  var counts=[
+    [3,8,6,8,8],[4,16,7,14,16],[5,32,11,24,32],[6,64,15,32,58],[7,116,18,46,101],
+    [8,202,20,60,163],[9,324,20,83,251],[10,505,23,103,374],[11,753,20,128,531],
+    [12,1069,18,157,735],[13,1485,14,164,992],[14,2006,8,174,1278],[15,2628,5,171,1595]
+  ];
+  var svgNS="http://www.w3.org/2000/svg";
+  function svgEl(tag,attrs,textContent){
+    var n=document.createElementNS(svgNS,tag);Object.keys(attrs).forEach(function(k){n.setAttribute(k,String(attrs[k]));});
+    if(textContent!==undefined)n.textContent=textContent;
+    return n;
+  }
+  function updateChart(){
+    var depth=+el("ns-depth").value, col={v01:2,v001:3,v0001:4}[el("ns-threshold").value], current=counts[depth-3], all=current[1], selected=current[col];
+    str("ns-depth-value",depth);str("ns-all-count",all.toLocaleString());str("ns-selected-count",selected.toLocaleString());str("ns-pct-count",Math.round(selected/all*100)+"%");
+    var svg=el("ns-rule-chart");
+    Array.from(svg.children).forEach(function(node){if(!["title","desc"].includes(node.tagName.toLowerCase()))svg.removeChild(node);});
+    var x=function(i){return 48+i*47;},y=function(v){return 252-(v/2700)*216;};
+    [0,500,1000,1500,2000,2500].forEach(function(v){
+      svg.appendChild(svgEl("line",{x1:43,y1:y(v),x2:620,y2:y(v),stroke:"#cbdbe4","stroke-width":1}));
+      svg.appendChild(svgEl("text",{x:36,y:y(v)+4,"text-anchor":"end","font-size":12,fill:"#557086"},v.toLocaleString()));
+    });
+    counts.forEach(function(r,i){if(i%2===0)svg.appendChild(svgEl("text",{x:x(i),y:274,"text-anchor":"middle","font-size":12,fill:"#557086"},r[0]));});
+    [{col:1,color:"#8999aa",dash:"6 5"},{col:col,color:"#087e90",dash:null}].forEach(function(s){
+      var points=counts.map(function(r,i){return x(i)+","+y(r[s.col]);}).join(" ");
+      var p=svgEl("polyline",{points:points,fill:"none",stroke:s.color,"stroke-width":3,"stroke-linejoin":"round","stroke-linecap":"round"});
+      if(s.dash)p.setAttribute("stroke-dasharray",s.dash);
+      svg.appendChild(p);
+    });
+    var ix=depth-3;
+    svg.appendChild(svgEl("line",{x1:x(ix),y1:25,x2:x(ix),y2:252,stroke:"#087e90","stroke-width":1.5,"stroke-dasharray":"4 4",opacity:.6}));
+    [all,selected].forEach(function(value,i){svg.appendChild(svgEl("circle",{cx:x(ix),cy:y(value),r:6,fill:i?"#087e90":"#8999aa",stroke:"#fff","stroke-width":2}));});
+  }
+  el("ns-depth").addEventListener("input",updateChart);el("ns-threshold").addEventListener("change",updateChart);updateChart();
+})();
+</script>
