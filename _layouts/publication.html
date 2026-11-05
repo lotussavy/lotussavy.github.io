@@ -32,7 +32,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% assign first_author = publication.authors | first | split: " " | first | remove: "." | remove: "," | downcase %}
   {% assign cite_key = first_author | append: publication.year | append: "-" | append: publication.title | slugify %}
 
-  <header class="publication-hero{% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %} publication-hero--ns{% endif %}">
+  <header class="publication-hero{% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' %} publication-hero--ns{% endif %}">
     <a class="publication-back-link" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
     <p class="publication-type">{{ publication_type_label }}</p>
     <h1>{{ publication.title }}</h1>
@@ -46,14 +46,16 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
         {% for author in publication.authors %}<strong>{{ author }}</strong>{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}{% endfor %}
       {% endif %}
     </p>
-    {% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %}
+    {% if publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' %}
+    <p class="publication-hero-subtitle">Traditional gravity models explain trip flows using population and distance, but modern travel is shaped by a richer combination of socioeconomic, geographic, and mobility factors. This paper compares conventional and data-driven features across three machine-learning models using Tennessee and New York county-level data. Discover how the models work, explore the paper's exact performance comparisons, and examine which predictors matter most in each state.</p>
+    {% elsif publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %}
     <p class="publication-hero-subtitle">Accurate travel-demand prediction is essential to transportation planning, but conventional neural networks can be difficult to interpret. This paper investigates how decision-tree-derived rules can be incorporated into neural learning to forecast travel flows between regions. Explore the interactive research experience below to see how symbolic knowledge enters the model, examine the reported performance improvements, and follow the published decision rules and rule-selection trade-offs.</p>
     {% else %}
     {% if publication.hero_subtitle and publication.minimal_page != true %}
     <p class="publication-hero-subtitle">{{ publication.hero_subtitle }}</p>
     {% endif %}
     {% endif %}
-    {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %}
+    {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' %}
     <p class="publication-meta">
       <span>{{ publication.year }}</span>
       {% unless publication.minimal_page %}
@@ -104,8 +106,11 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %}
     {% include neurosymbolic-travel-experience.html %}
   {% endif %}
+  {% if publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' %}
+    {% include gravity-model-experience.html %}
+  {% endif %}
 
-  {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %}
+  {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' %}
 
   {% if publication.abstract_summary %}
   <section class="publication-highlight" id="abstract">
