@@ -32,7 +32,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% assign first_author = publication.authors | first | split: " " | first | remove: "." | remove: "," | downcase %}
   {% assign cite_key = first_author | append: publication.year | append: "-" | append: publication.title | slugify %}
 
-  <header class="publication-hero{% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' %} publication-hero--ns{% endif %}">
+  <header class="publication-hero{% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %} publication-hero--ns{% endif %}">
     <a class="publication-back-link" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
     <p class="publication-type">{{ publication_type_label }}</p>
     <h1>{{ publication.title }}</h1>
@@ -46,7 +46,9 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
         {% for author in publication.authors %}<strong>{{ author }}</strong>{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}{% endfor %}
       {% endif %}
     </p>
-    {% if publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' %}
+    {% if publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
+    <p class="publication-hero-subtitle">Airport trips in New York City are expensive, congested and sensitive to unexpected delays. This paper analyzes 2023 taxi and for-hire vehicle trips to JFK, LaGuardia and Newark and models when a hypothetical urban air mobility option might become competitive. Explore airport-access geography, compare published early-to-mature pricing and speed assumptions, and discover how time and reliability influence modeled demand.</p>
+    {% elsif publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' %}
     <p class="publication-hero-subtitle">Regional air travel may offer a practical alternative for medium-distance trips—but only when airport access, fares, travel time, and risk justify the journey. This Tennessee study models travel between metropolitan regions and compares a five-major-airport network with expanded regional-airport access. Explore the travel network, investigate generalized travel-cost trade-offs, and interpret the conditions associated with stronger modeled RAM demand.</p>
     {% elsif publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' %}
     <p class="publication-hero-subtitle">Traditional gravity models explain trip flows using population and distance, but modern travel is shaped by a richer combination of socioeconomic, geographic, and mobility factors. This paper compares conventional and data-driven features across three machine-learning models using Tennessee and New York county-level data. Discover how the models work, explore the paper's exact performance comparisons, and examine which predictors matter most in each state.</p>
@@ -57,7 +59,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     <p class="publication-hero-subtitle">{{ publication.hero_subtitle }}</p>
     {% endif %}
     {% endif %}
-    {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' %}
+    {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
     <p class="publication-meta">
       <span>{{ publication.year }}</span>
       {% unless publication.minimal_page %}
@@ -114,8 +116,11 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% if publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' %}
     {% include tennessee-ram-experience.html %}
   {% endif %}
+  {% if publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
+    {% include nyc-uam-experience.html %}
+  {% endif %}
 
-  {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' %}
+  {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
 
   {% if publication.abstract_summary %}
   <section class="publication-highlight" id="abstract">
