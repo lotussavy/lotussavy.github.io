@@ -32,7 +32,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% assign first_author = publication.authors | first | split: " " | first | remove: "." | remove: "," | downcase %}
   {% assign cite_key = first_author | append: publication.year | append: "-" | append: publication.title | slugify %}
 
-  <header class="publication-hero{% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %} publication-hero--ns{% endif %}">
+  <header class="publication-hero{% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' or publication.slug == 'improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm' %} publication-hero--ns{% endif %}">
     <a class="publication-back-link" href="{{ '/publications/' | relative_url }}">Back to Publications</a>
     <p class="publication-type">{{ publication_type_label }}</p>
     <h1>{{ publication.title }}</h1>
@@ -46,7 +46,9 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
         {% for author in publication.authors %}<strong>{{ author }}</strong>{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}{% endfor %}
       {% endif %}
     </p>
-    {% if publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
+    {% if publication.slug == 'improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm' %}
+    <p class="publication-hero-subtitle">Preparing evacuation flights before a hurricane requires increasing outbound capacity without unnecessarily disrupting routine airport operations. This paper combines airport capability estimates with a genetic algorithm accelerated by neural-network-generated destination selections. Explore how the hybrid search works, compare the published configurations and scheduling findings, and interact with the paper's ten-bit candidate representation and fitness function.</p>
+    {% elsif publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
     <p class="publication-hero-subtitle">Airport trips in New York City are expensive, congested and sensitive to unexpected delays. This paper analyzes 2023 taxi and for-hire vehicle trips to JFK, LaGuardia and Newark and models when a hypothetical urban air mobility option might become competitive. Explore airport-access geography, compare published early-to-mature pricing and speed assumptions, and discover how time and reliability influence modeled demand.</p>
     {% elsif publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' %}
     <p class="publication-hero-subtitle">Regional air travel may offer a practical alternative for medium-distance trips—but only when airport access, fares, travel time, and risk justify the journey. This Tennessee study models travel between metropolitan regions and compares a five-major-airport network with expanded regional-airport access. Explore the travel network, investigate generalized travel-cost trade-offs, and interpret the conditions associated with stronger modeled RAM demand.</p>
@@ -59,7 +61,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     <p class="publication-hero-subtitle">{{ publication.hero_subtitle }}</p>
     {% endif %}
     {% endif %}
-    {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
+    {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' or publication.slug == 'improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm' %}
     <p class="publication-meta">
       <span>{{ publication.year }}</span>
       {% unless publication.minimal_page %}
@@ -119,8 +121,11 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
   {% if publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
     {% include nyc-uam-experience.html %}
   {% endif %}
+  {% if publication.slug == 'improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm' %}
+    {% include pre-disaster-ga-experience.html %}
+  {% endif %}
 
-  {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' %}
+  {% unless publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' or publication.slug == 'data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction' or publication.slug == 'regional-air-mobility-flight-demand-modeling-in-tennessee-state' or publication.slug == 'urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city' or publication.slug == 'improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm' %}
 
   {% if publication.abstract_summary %}
   <section class="publication-highlight" id="abstract">
