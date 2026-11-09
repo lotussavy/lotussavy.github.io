@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "Research in Advanced Air Mobility and Neurosymbolic AI"
-seo_title: "Interactive Research | AAM, Neurosymbolic AI and Optimization | Kamal Acharya"
-description: "Explore the research connecting Advanced Air Mobility demand forecasting, interpretable neurosymbolic AI, and energy-aware optimization through an interactive research map and linked publications."
+seo_title: "Research | AAM Demand Modeling and eVTOL Optimization | Kamal Acharya"
+description: "Kamal Acharya’s completed PhD research in Advanced Air Mobility demand modeling and neurosymbolic AI, and ongoing Baylor research in eVTOL scheduling and optimization."
 permalink: /research/
 last_modified_at: 2026-11-09
 ---
