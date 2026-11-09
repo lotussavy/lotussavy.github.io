@@ -8,6 +8,30 @@
 @media(max-width:850px){.hm-hero{grid-template-columns:1fr auto}.hm-portrait-frame{width:170px}.hm-publications{grid-template-columns:1fr 1fr}.hm-section-head{display:block}.hm-section-head>p{margin-top:.3rem}}
 @media(max-width:650px){.hm-hero{grid-template-columns:1fr}.hm-portrait{grid-row:1;justify-content:flex-start}.hm-portrait-frame{width:116px;aspect-ratio:1/1;transform:none}.hm-portrait-frame img{transform:none}.hm-overview,.hm-columns,.hm-publications,.hm-project{grid-template-columns:1fr}.hm-milestone{grid-template-columns:78px 1fr}.hm-philosophy{align-items:flex-start;flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.hm-page *{scroll-behavior:auto}}
+
+/* A lighter editorial presentation; scoped to the homepage only. */
+.hm-page{--hm-ink:#193952;--hm-line:#e2eaed}
+.hm-hero{background:radial-gradient(ellipse at 90% 10%,rgba(111,194,187,.19),transparent 42%),linear-gradient(130deg,#f8fbfa,#edf5f5 65%,#f4f8fb);color:#183a52;border:1px solid #dbe7e8;box-shadow:0 14px 35px rgba(22,69,84,.055)}
+.hm-hero h1{color:#193b55}.hm-hero p{color:#3c5b6c}.hm-kicker{color:#157e7e!important}.hm-role{color:#43667a!important}.hm-statement{color:#1a445a!important}
+.hm-actions a{color:#175071;border:1px solid #abcbd2;background:#fff}.hm-actions a:first-child{background:#195d77;color:#fff;border-color:#195d77}
+.hm-actions a:hover{background:#e2f3f0;color:#104861}.hm-actions a:first-child:hover{background:#10475d;color:#fff}
+.hm-profile a{color:#28627a;border-color:#cbdde1;background:#fff}.hm-profile a:hover{background:#e5f4f3}
+.hm-portrait-frame{background:#fff;border-color:#dde9e9;box-shadow:0 18px 36px rgba(31,73,90,.12);transform:rotate(1deg)}
+.hm-portrait-frame img{transform:rotate(-1deg)}
+.hm-status{box-shadow:0 5px 15px rgba(29,72,86,.035)}.hm-section{margin:2.4rem 0}.hm-project{background:linear-gradient(120deg,#f8fbfc,#edf7f5)}
+.hm-project-viz{display:flex;flex-direction:column;gap:.55rem;justify-content:center;padding:.7rem;border-radius:12px;background:#fff;border:1px solid #d8e8e8}
+.hm-route-svg{width:100%;height:auto;display:block;max-height:220px}.hm-route-line{fill:none;stroke:#98b8c2;stroke-width:2;stroke-dasharray:5 6}.hm-route-active{fill:none;stroke:#1a938e;stroke-width:3;stroke-linecap:round}
+.hm-route-node{fill:#e0f4f0;stroke:#348787;stroke-width:2}.hm-route-node-core{fill:#1a6f7e}.hm-route-label{fill:#315f71;font-family:system-ui,sans-serif;font-size:12px;font-weight:700}
+.hm-aircraft{fill:#176f83;stroke:#fff;stroke-width:2}.hm-aircraft-track{offset-path:path("M48 140 L163 52 L286 123");animation:hm-fly 9s linear infinite;offset-rotate:0deg}
+@keyframes hm-fly{from{offset-distance:0%}to{offset-distance:100%}}
+.hm-viz-footer{display:flex;gap:.5rem;justify-content:space-between;align-items:center;flex-wrap:wrap}.hm-viz-footer span{font-size:.72rem;color:#547482}.hm-viz-toggle{padding:.32rem .65rem;border:1px solid #c4dcd9;border-radius:7px;background:#f5fbfa;color:#175970;font-size:.75rem;font-weight:800;cursor:pointer}
+.hm-viz-toggle:focus-visible{outline:3px solid #f1b94c;outline-offset:2px}
+.hm-project-viz.is-paused .hm-aircraft-track{animation-play-state:paused}
+.hm-viz-legend{display:grid;gap:.35rem}.hm-viz-legend span{font-size:.75rem;color:#446575}
+@media(max-width:850px){.hm-portrait-frame{width:170px}}
+@media(max-width:650px){.hm-portrait-frame{width:116px;transform:none}.hm-portrait-frame img{transform:none}.hm-project-viz{min-height:230px}}
+@media(prefers-reduced-motion:reduce){.hm-aircraft-track{animation:none;offset-distance:45%}.hm-viz-toggle{display:none}}
+
 </style>
 <section class="hm-hero" aria-labelledby="hm-title">
   <div>
@@ -100,12 +124,20 @@
       <p class="hm-project-note">This is ongoing research. Detailed methods and performance results will be shared when ready for public release.</p>
       <a class="hm-more" href="{{ '/research/' | relative_url }}">Explore the research direction →</a>
     </div>
-    <div class="hm-project-meta" aria-label="Operational research themes">
-      <span>Aircraft assignment</span>
-      <span>Passenger demand</span>
-      <span>Battery and charging</span>
-      <span>Vertiport operations</span>
-      <span>Scenario evaluation</span>
+    <div class="hm-project-viz" id="hm-project-viz" aria-label="Illustration of four vertiports connected by possible aircraft routes">
+      <svg class="hm-route-svg" viewBox="0 0 330 205" role="img" aria-labelledby="hm-diagram-title hm-diagram-desc">
+        <title id="hm-diagram-title">Vertiport network</title>
+        <desc id="hm-diagram-desc">Four vertiports and a moving aircraft show an illustrative route. This is not a simulation or experimental result.</desc>
+        <path class="hm-route-line" d="M48 140 L163 52 L286 123 L179 177 Z M48 140 L286 123"/>
+        <path class="hm-route-active" d="M48 140 L163 52 L286 123"/>
+        <g class="hm-aircraft-track"><circle class="hm-aircraft" cx="0" cy="0" r="9"/></g>
+        <g><circle class="hm-route-node" cx="48" cy="140" r="15"/><circle class="hm-route-node-core" cx="48" cy="140" r="5"/><text class="hm-route-label" x="48" y="170" text-anchor="middle">V1</text></g>
+        <g><circle class="hm-route-node" cx="163" cy="52" r="15"/><circle class="hm-route-node-core" cx="163" cy="52" r="5"/><text class="hm-route-label" x="163" y="25" text-anchor="middle">V2</text></g>
+        <g><circle class="hm-route-node" cx="286" cy="123" r="15"/><circle class="hm-route-node-core" cx="286" cy="123" r="5"/><text class="hm-route-label" x="286" y="153" text-anchor="middle">V3</text></g>
+        <g><circle class="hm-route-node" cx="179" cy="177" r="15"/><circle class="hm-route-node-core" cx="179" cy="177" r="5"/><text class="hm-route-label" x="179" y="204" text-anchor="middle">V4</text></g>
+      </svg>
+      <div class="hm-viz-footer"><span>eVTOL network · Concept illustration</span><button type="button" class="hm-viz-toggle" id="hm-viz-toggle" aria-pressed="false" aria-label="Pause aircraft animation">Pause</button></div>
+      <div class="hm-viz-legend"><span>Aircraft assignment · Charging · Vertiport operations</span></div>
     </div>
   </div>
 </section>
@@ -129,4 +161,16 @@
   </div>
   <a href="{{ '/contact/' | relative_url }}">Get in touch</a>
 </section>
+<script>
+(function(){
+  var panel=document.getElementById('hm-project-viz'), button=document.getElementById('hm-viz-toggle');
+  if(!panel||!button)return;
+  button.addEventListener('click',function(){
+    var paused=panel.classList.toggle('is-paused');
+    button.textContent=paused?'Play':'Pause';
+    button.setAttribute('aria-pressed',String(paused));
+    button.setAttribute('aria-label',paused?'Resume aircraft animation':'Pause aircraft animation');
+  });
+})();
+</script>
 </div>
