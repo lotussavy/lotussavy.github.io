@@ -119,6 +119,10 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     {% endunless %}
   </header>
 
+  {% if publication.slug == 'enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai' %}
+    {% include dissertation-research-journey.html %}
+  {% endif %}
+
   {% unless publication.minimal_page %}
 
   {% if publication.slug == 'neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks' %}
