@@ -33,6 +33,15 @@
 @media(prefers-reduced-motion:reduce){.hm-aircraft-track{animation:none;offset-distance:45%}.hm-viz-toggle{display:none}}
 
 .hm-video-frame{display:flex;flex-direction:column;align-self:center;gap:.55rem;min-width:0}.hm-video-frame video{width:100%;aspect-ratio:16/9;display:block;border-radius:12px;background:#102334;box-shadow:0 10px 26px rgba(13,38,55,.13)}.hm-video-caption{font-size:.78rem!important;line-height:1.5!important;color:#566e7a!important;margin:0!important}
+/* Keep detailed captions and comparison labels legible by giving the video an entire row. */
+.hm-project--video{display:block}
+.hm-project--video .hm-video-frame{width:100%;margin:1.35rem 0 .25rem}
+.hm-project--video .hm-video-frame video{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}
+.hm-project--video .hm-video-frame .hm-video-caption{font-size:.87rem!important;line-height:1.6!important}
+.hm-watch-larger{display:inline-flex;align-items:center;gap:.4rem;padding:.55rem .8rem;border-radius:8px;background:#e9f5f4;color:#185e75!important;font-size:.86rem;font-weight:800;text-decoration:none;border:1px solid #bedbd9}
+.hm-watch-larger:hover{text-decoration:underline}
+@media(max-width:650px){.hm-project--video{padding:1rem}.hm-project--video .hm-video-frame{margin-top:1rem}}
+
 </style>
 <section class="hm-hero" aria-labelledby="hm-title">
   <div>
@@ -117,7 +126,9 @@
     <div><span class="hm-label">Current research</span><h2 id="hm-current-title">Planning the operation of eVTOL fleets</h2></div>
     <p>Moving from the question of where demand exists to how future services can respond.</p>
   </div>
-  <div class="hm-project">
+    {% assign home_ev_video = site.static_files | where_exp: "file", "file.path == '/assets/videos/Final-48s.mp4'" | first %}
+    {% assign home_ev_poster = site.static_files | where_exp: "file", "file.path == '/assets/images/evtol-research-poster.jpg'" | first %}
+  <div class="hm-project{% if home_ev_video %} hm-project--video{% endif %}">
     <div>
       <h3>Scheduling aircraft under real operating constraints</h3>
       <p>Imagine several vertiports, a limited fleet of electric aircraft, and passenger requests arriving throughout the day. An aircraft must have enough energy to complete a trip and retain a safe reserve; charging and vehicle availability influence the next assignment.</p>
@@ -125,15 +136,14 @@
       <p class="hm-project-note">This is ongoing research. Detailed methods and performance results will be shared when ready for public release.</p>
       <a class="hm-more" href="{{ '/research/' | relative_url }}">Explore the research direction →</a>
     </div>
-    {% assign home_ev_video = site.static_files | where_exp: "file", "file.path == '/assets/videos/Final-48s.mp4'" | first %}
-    {% assign home_ev_poster = site.static_files | where_exp: "file", "file.path == '/assets/images/evtol-research-poster.jpg'" | first %}
     {% if home_ev_video %}
     <div class="hm-video-frame">
       <video controls playsinline preload="none" {% if home_ev_poster %}poster="{{ '/assets/images/evtol-research-poster.jpg' | relative_url }}"{% endif %} aria-label="Overview of ongoing eVTOL fleet scheduling research: Global optimization and PCMTSP">
         <source src="{{ '/assets/videos/Final-48s.mp4' | relative_url }}" type="video/mp4">
         Your browser does not support embedded video. <a href="{{ '/assets/videos/Final-48s.mp4' | relative_url }}">Watch the research video</a>.
       </video>
-      <p class="hm-video-caption">A short research presentation comparing global planning and rolling-horizon PCMTSP scheduling. Experimental results shown in the video are research-specific, not operational guarantees.</p>
+      <p class="hm-video-caption">This video compares global planning with rolling-horizon PCMTSP scheduling. The results relate to the study scenarios, not real-world operating guarantees.</p>
+      <p><a class="hm-watch-larger" href="{{ '/assets/videos/Final-48s.mp4' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open the eVTOL research video in a new tab for a larger view">Watch in a larger view ↗</a></p>
     </div>
     {% else %}
     <div class="hm-project-viz" id="hm-project-viz" aria-label="Illustration of four vertiports connected by possible aircraft routes">
