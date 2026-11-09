@@ -25,7 +25,7 @@ last_modified_at: 2026-10-15
   <p class="research-flow-eyebrow">Featured research journey · PhD 2026</p>
   <h2 id="research-dissertation-heading">Interactive Dissertation: From AAM Demand to Neurosymbolic AI</h2>
   <p>Explore how behaviorally grounded choice, data-driven spatial estimation, and interpretable neural–symbolic learning connect in my UMBC doctoral dissertation.</p>
-  <p><a class="home-action-link" href="{{ '/dissertation/' | relative_url }}">Explore the interactive dissertation journey →</a></p>
+  <p><a class="home-action-link" href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}">Explore the interactive dissertation journey →</a></p>
 </section>
 
 <section class="research-section">
