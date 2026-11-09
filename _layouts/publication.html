@@ -40,7 +40,7 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
       <span>By</span>
       {% if publication.author_details %}
         {% for author in publication.author_details %}
-          {% if author.scholar_url %}<a href="{{ author.scholar_url }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>{% else %}<strong>{{ author.name }}</strong>{% endif %}{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}
+          {% assign author_profile = author.scholar_url | default: author.linkedin_url | default: author.profile_url %}{% if author_profile %}<a href="{{ author_profile }}" target="_blank" rel="noopener noreferrer">{{ author.name }}</a>{% else %}<strong>{{ author.name }}</strong>{% endif %}{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}
         {% endfor %}
       {% else %}
         {% for author in publication.authors %}<strong>{{ author }}</strong>{% unless forloop.last %}<span aria-hidden="true">,</span>{% endunless %}{% endfor %}

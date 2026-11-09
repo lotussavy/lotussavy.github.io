@@ -1,0 +1,58 @@
+# Primary publication theme and compact topic label. Each paper appears once in the gallery.
+demand-forecast-and-energy-aware-portal-siting-for-regional-air-mobility:
+  group: demand
+  tag: "AAM demand · Infrastructure"
+demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions:
+  group: demand
+  tag: "AAM demand · Review"
+urban-air-mobility-flight-demand-modeling-for-airports-in-new-york-city:
+  group: demand
+  tag: "Airport access · AAM demand"
+data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction:
+  group: demand
+  tag: "Spatial models · Forecasting"
+regional-air-mobility-flight-demand-modeling-in-tennessee-state:
+  group: demand
+  tag: "Regional mobility · Forecasting"
+enhancing-forecasting-for-advanced-air-mobility:
+  group: demand
+  tag: "Forecasting · Airport demand"
+demand-modeling-for-advanced-air-mobility:
+  group: demand
+  tag: "Mode choice · Regional mobility"
+comprehensive-review-of-neuro-symbolic-ai-for-robustness-uncertainty-quantification-and-intervenability:
+  group: neuro
+  tag: "Trustworthy AI · Review"
+integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey:
+  group: neuro
+  tag: "Neurosymbolic AI · AAM"
+neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks:
+  group: neuro
+  tag: "Neurosymbolic AI · Travel demand"
+survey-on-symbolic-knowledge-distillation-of-large-language-models:
+  group: neuro
+  tag: "Knowledge distillation · LLMs"
+neurosymbolic-reinforcement-learning-and-planning-survey:
+  group: neuro
+  tag: "Neurosymbolic AI · Reinforcement learning"
+improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm:
+  group: optimization
+  tag: "Operations · Resilience"
+quantum-ai-enhanced-iot-fog-communication-survey-from-cybersecurity-and-data-privacy-perspective:
+  group: collaboration
+  tag: "Cybersecurity · IoT"
+decoding-android-malware-with-fraction-of-features-attention-enhanced-mlp-svm-approach:
+  group: collaboration
+  tag: "Cybersecurity · Malware"
+ai-for-android-malware-detection-and-classification:
+  group: collaboration
+  tag: "Cybersecurity · Book chapter"
+lstm-neural-network-assisted-papr-reduction-for-underwater-acoustic-ofdm-communication:
+  group: collaboration
+  tag: "Communication systems · ML"
+skghoi-spatial-semantic-knowledge-graph-for-human-object-interaction-detection:
+  group: collaboration
+  tag: "Computer vision · Knowledge graphs"
+enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai:
+  group: dissertation
+  tag: "Dissertation · Demand and AI"
