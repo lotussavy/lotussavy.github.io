@@ -51,6 +51,49 @@
 .hm-current-action:hover{background:#12475f}.hm-current-chips{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
 .hm-current-chips span{background:white;border:1px solid #cddfe3;color:#285972;border-radius:9px;padding:.7rem .6rem;font-size:.77rem;font-weight:750;text-align:center}
 @media(max-width:700px){.hm-current-compact{grid-template-columns:1fr;padding:1rem}.hm-current-chips{grid-template-columns:1fr 1fr}}
+
+/* Homepage journey / timeline / publication design */
+.hm-page button:focus-visible{outline:3px solid #e8aa3c;outline-offset:3px}
+.hm-journey-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem}
+.hm-journey-steps button{text-align:left;display:flex;flex-direction:column;gap:.45rem;padding:1rem;background:#f5fafa;border:1px solid #cfe4e6;border-radius:13px;color:#1d5770;cursor:pointer;min-width:0;transition:transform .15s,border-color .15s,background .15s}
+.hm-journey-steps button:hover{transform:translateY(-3px);border-color:#2c9795}
+.hm-journey-steps button[aria-pressed=true]{background:#e2f5f1;border-color:#1a8887;box-shadow:inset 0 -4px #198987}
+.hm-journey-steps svg{width:72px;height:62px;max-width:100%;color:#1b7483}
+.hm-journey-index{font-size:.73rem;font-weight:850;color:#167c80}
+.hm-journey-steps strong{font-size:.9rem;line-height:1.3}
+.hm-journey-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(170px,.55fr);align-items:center;gap:1rem;margin-top:.75rem;border:1px solid #d7e9e8;background:linear-gradient(120deg,#f4faf9,#fff);border-radius:13px;padding:1.25rem}
+.hm-journey-panel h3{font-size:1.18rem;margin:.3rem 0}.hm-journey-panel p{color:#4b6878;font-size:.88rem;line-height:1.6;margin:.45rem 0 .7rem}
+.hm-journey-link{display:inline-block;color:#126c78;font-size:.84rem;font-weight:850;text-decoration:none;border-bottom:1px solid #9ad1d0}
+.hm-journey-mini{display:grid;grid-template-columns:repeat(4,1fr);gap:.25rem;align-items:center;text-align:center;color:#60808a;font-size:.65rem;font-weight:700}
+.hm-journey-track{grid-column:1/-1;height:7px;border-radius:8px;background:#d6e8ea;overflow:hidden;margin-top:.45rem}
+.hm-journey-track i{display:block;background:linear-gradient(90deg,#148f8d,#51c3b8);height:100%;width:25%;border-radius:8px;transition:width .2s}
+.hm-journey-panel[data-hm-active-stage=reason] .hm-journey-track i{width:50%}
+.hm-journey-panel[data-hm-active-stage=decide] .hm-journey-track i{width:75%}
+.hm-journey-panel[data-hm-active-stage=evaluate] .hm-journey-track i{width:100%}
+.hm-journey-note{font-size:.76rem;color:#647d87;margin:.6rem .1rem 0}
+.hm-career-tabs{display:flex;gap:.45rem;flex-wrap:wrap;margin:.7rem 0}
+.hm-career-tabs button{border-radius:999px;padding:.52rem .9rem;background:white;border:1px solid #c9dfe4;color:#326278;font-size:.85rem;font-weight:800;cursor:pointer}
+.hm-career-tabs button[aria-pressed=true]{color:white;background:#195d77;border-color:#195d77}
+.hm-career-surface{border:1px solid #d8e8eb;border-radius:15px;padding:1.15rem 1.35rem;background:#fbfdfd}
+.hm-career-view{display:none;position:relative;padding-left:1rem;border-left:2px solid #a8d8d4}
+.hm-career-surface[data-hm-career-active=research] [data-hm-career-view=research],.hm-career-surface[data-hm-career-active=education] [data-hm-career-view=education]{display:grid;gap:.2rem}
+.hm-career-event{position:relative;display:grid;grid-template-columns:110px 1fr;gap:1rem;padding:.7rem 0}
+.hm-career-event:before{content:"";position:absolute;top:1.05rem;left:calc(-1rem - 6px);width:10px;height:10px;border-radius:50%;background:#248f8c;box-shadow:0 0 0 4px #def4ef}
+.hm-career-year{font-size:.82rem;font-weight:900;color:#187c81}
+.hm-career-event strong{color:#1c415a;font-size:.95rem}.hm-career-event p{font-size:.84rem;color:#587080;margin:.25rem 0}.hm-career-event a{color:#176987}
+.hm-featured-work .hm-publications{align-items:stretch}
+.hm-featured-work .hm-paper{padding:0;overflow:hidden;display:flex;flex-direction:column;transition:transform .16s,box-shadow .16s}
+.hm-featured-work .hm-paper:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(18,67,83,.09)}
+.hm-paper-top{display:flex;align-items:center;justify-content:space-between;gap:.8rem;padding:.6rem .95rem;background:linear-gradient(120deg,#e5f4f1,#f7fbfb);border-bottom:1px solid #dce9e9}
+.hm-paper-top svg{height:64px;width:76px;color:#1f7a85}
+.hm-paper-top span{font-size:.68rem;text-transform:uppercase;color:#26747f;font-weight:850;letter-spacing:.05em;text-align:right}
+.hm-paper-content{display:flex;flex-direction:column;flex:1;padding:1rem}
+.hm-paper-content h3{margin:.4rem 0;font-size:1rem}.hm-paper-content p{font-size:.84rem;color:#526c7e;flex:1}
+.hm-paper-action{font-size:.81rem;font-weight:850;color:#176987;text-decoration:none}
+@media(max-width:750px){.hm-journey-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.hm-journey-panel{grid-template-columns:1fr}.hm-journey-mini{max-width:360px;width:100%}}
+@media(max-width:500px){.hm-journey-steps button{padding:.7rem}.hm-journey-steps svg{width:58px;height:50px}.hm-career-event{grid-template-columns:1fr;gap:.2rem}.hm-career-surface{padding:1rem}}
+@media(prefers-reduced-motion:reduce){.hm-journey-steps button,.hm-journey-track i,.hm-featured-work .hm-paper{transition:none}}
+
 </style>
 <section class="hm-hero" aria-labelledby="hm-title">
   <div>
@@ -78,19 +121,14 @@
   </div>
 </section>
 
-<section class="hm-overview" aria-label="Research background and current focus">
-  <article class="hm-status">
-    <small>Completed · PhD research at UMBC</small>
-    <h2>How might travelers adopt Advanced Air Mobility?</h2>
-    <p>My dissertation developed behaviorally grounded, data-driven, and neurosymbolic approaches to estimating AAM demand, including studies in Tennessee and New York City.</p>
-    <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}">Read about my dissertation →</a>
-  </article>
-  <article class="hm-status">
-    <small>Ongoing · Baylor University</small>
-    <h2>How can an eVTOL fleet serve that demand?</h2>
-    <p>My current research examines aircraft scheduling, passenger assignments, battery reserves, charging constraints, and energy-aware operations as part of a NASA University Leadership Initiative project.</p>
-    <a href="{{ '/research/' | relative_url }}">See my current research →</a>
-  </article>
+<section class="hm-section hm-journey" id="research-journey" aria-labelledby="hm-journey-title">
+<div class="hm-section-head"><div><span class="hm-label">How my research connects</span><h2 id="hm-journey-title">From understanding demand to making decisions</h2></div><p>Choose a stage to see the research question and follow the underlying work.</p></div>
+<div class="hm-journey-steps" role="group" aria-label="Explore research journey stages"><button type="button" data-hm-stage="observe" aria-pressed="true"><span class="hm-journey-index">01 / Observe</span><svg viewBox="0 0 98 84" aria-hidden="true" focusable="false"><path d="M16 58 38 29l20 18 24-29" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><g fill="#dcf8f2" stroke="currentColor" stroke-width="3"><circle cx="16" cy="58" r="6"/><circle cx="38" cy="29" r="6"/><circle cx="58" cy="47" r="6"/><circle cx="82" cy="18" r="6"/></g></svg><strong>Estimate demand</strong></button><button type="button" data-hm-stage="reason" aria-pressed="false"><span class="hm-journey-index">02 / Reason</span><svg viewBox="0 0 98 84" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="3" fill="none"><path d="M17 21 43 14l28 14M17 21l8 39 29 10 17-42M25 60l29-34M43 14l11 56"/></g><g fill="#d7f6ee" stroke="currentColor" stroke-width="3"><circle cx="17" cy="21" r="6"/><circle cx="43" cy="14" r="6"/><circle cx="71" cy="28" r="6"/><circle cx="25" cy="60" r="6"/><circle cx="54" cy="70" r="6"/></g><path d="m42 41 6 6 9-11" stroke="#21b29b" stroke-width="4" fill="none"/></svg><strong>Make AI interpretable</strong></button><button type="button" data-hm-stage="decide" aria-pressed="false"><span class="hm-journey-index">03 / Decide</span><svg viewBox="0 0 98 84" aria-hidden="true" focusable="false"><path d="M13 60Q35 8 58 39T86 16" stroke="currentColor" stroke-width="4" fill="none" stroke-dasharray="5 6"/><g fill="#dcf8f2" stroke="currentColor" stroke-width="3"><circle cx="13" cy="60" r="7"/><circle cx="58" cy="39" r="7"/><circle cx="86" cy="16" r="7"/></g><path d="M39 14v18m-9-9h18M66 60h19" stroke="#28bba8" stroke-width="4" stroke-linecap="round"/></svg><strong>Plan fleet operations</strong></button><button type="button" data-hm-stage="evaluate" aria-pressed="false"><span class="hm-journey-index">04 / Evaluate</span><svg viewBox="0 0 98 84" aria-hidden="true" focusable="false"><rect x="11" y="14" width="76" height="58" rx="8" fill="none" stroke="currentColor" stroke-width="3"/><path d="M25 31h45M25 46h45M25 61h45" stroke="currentColor" stroke-width="2" opacity=".4"/><path d="m25 30 5 5 8-10m-13 22 5 5 8-10m-13 20 5 5 8-10" stroke="#28bba8" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><strong>Test trade-offs</strong></button></div>
+<div class="hm-journey-panel" data-hm-active-stage="observe">
+<div class="hm-journey-panel-text"><span class="hm-label" id="hm-journey-eyebrow">Completed doctoral research</span><h3 id="hm-journey-heading">Where might travelers choose to fly?</h3><p id="hm-journey-desc">Travel behavior, mode choice, and geographic demand modeling help identify potential AAM connections.</p><a class="hm-journey-link" id="hm-journey-link" href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}">Explore dissertation →</a></div>
+<div class="hm-journey-mini" aria-hidden="true"><span>Discover</span><span>Interpret</span><span>Plan</span><span>Test</span><div class="hm-journey-track"><i></i></div></div>
+</div>
+<p class="hm-journey-note">The research stages describe connected questions, not a single experimentally validated end-to-end system. The optimization and evaluation work is ongoing.</p>
 </section>
 
 <section class="hm-section" id="background">
@@ -104,30 +142,21 @@
   </div>
 </section>
 
-<section class="hm-section" id="experience">
-  <div class="hm-section-head">
-    <div><span class="hm-label">Academic background</span><h2>Research experience &amp; education</h2></div>
-    <p>A few milestones from my academic path. My full CV includes additional appointments and professional activities.</p>
-  </div>
-  <div class="hm-columns">
-    <div>
-      <h3>Research experience</h3>
-      <div class="hm-timeline">
-        <article class="hm-milestone"><span class="hm-time">2026–Present</span><div><strong>Postdoctoral Research Associate</strong><p><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a> · Mechanical Engineering · AVIA Lab</p></div></article>
-        <article class="hm-milestone"><span class="hm-time">2023–2026</span><div><strong>Graduate Research Assistant</strong><p><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County</a></p></div></article>
-        <article class="hm-milestone"><span class="hm-time">2022–2023</span><div><strong>Research Assistant</strong><p><a href="https://erau.edu/" target="_blank" rel="noopener noreferrer">Embry-Riddle Aeronautical University</a> · Air mobility and emergency transportation research</p></div></article>
-      </div>
-    </div>
-    <div>
-      <h3>Education</h3>
-      <div class="hm-timeline">
-        <article class="hm-milestone"><span class="hm-time">2026</span><div><strong>PhD · Information Systems</strong><p>University of Maryland, Baltimore County · <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}">Dissertation</a></p></div></article>
-        <article class="hm-milestone"><span class="hm-time">2019</span><div><strong>MSc · Information System Engineering</strong><p>Purbanchal University</p></div></article>
-        <article class="hm-milestone"><span class="hm-time">2011</span><div><strong>BE · Electronics and Communication Engineering</strong><p>Tribhuvan University</p></div></article>
-      </div>
-    </div>
-  </div>
-  <a class="hm-more" href="{{ '/cv/' | relative_url }}">View full academic CV →</a>
+<section class="hm-section hm-career" id="experience" aria-labelledby="hm-career-title">
+<div class="hm-section-head"><div><span class="hm-label">Academic journey</span><h2 id="hm-career-title">Research experience &amp; education</h2></div><p>A concise academic path; the full CV includes additional appointments and professional activities.</p></div>
+<div class="hm-career-tabs" role="group" aria-label="Academic timeline view"><button type="button" data-hm-career="research" aria-pressed="true">Research appointments</button><button type="button" data-hm-career="education" aria-pressed="false">Education</button></div>
+<div class="hm-career-surface" data-hm-career-active="research">
+<div class="hm-career-view" data-hm-career-view="research">
+<article class="hm-career-event"><span class="hm-career-year">2026–Present</span><div><strong>Postdoctoral Research Associate</strong><p><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a> · Mechanical Engineering · AVIA Lab</p></div></article>
+<article class="hm-career-event"><span class="hm-career-year">2023–2026</span><div><strong>Graduate Research Assistant</strong><p><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County</a></p></div></article>
+<article class="hm-career-event"><span class="hm-career-year">2022–2023</span><div><strong>Research Assistant</strong><p><a href="https://erau.edu/" target="_blank" rel="noopener noreferrer">Embry-Riddle Aeronautical University</a> · Air mobility and emergency transportation research</p></div></article>
+</div>
+<div class="hm-career-view" data-hm-career-view="education">
+<article class="hm-career-event"><span class="hm-career-year">2026</span><div><strong>PhD · Information Systems</strong><p>University of Maryland, Baltimore County · <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}">Dissertation</a></p></div></article>
+<article class="hm-career-event"><span class="hm-career-year">2019</span><div><strong>MSc · Information System Engineering</strong><p>Purbanchal University</p></div></article>
+<article class="hm-career-event"><span class="hm-career-year">2011</span><div><strong>BE · Electronics and Communication Engineering</strong><p>Tribhuvan University</p></div></article>
+</div></div>
+<a class="hm-more" href="{{ '/cv/' | relative_url }}">View full academic CV →</a>
 </section>
 
 <section class="hm-section" aria-labelledby="hm-current-title">
@@ -148,17 +177,9 @@
   </div>
 </section>
 
-<section class="hm-section" aria-labelledby="hm-publication-title">
-  <div class="hm-section-head">
-    <div><span class="hm-label">Selected work</span><h2 id="hm-publication-title">Research and publications</h2></div>
-    <p>Three papers highlighting the research questions and methods behind my work.</p>
-  </div>
-  <div class="hm-publications">
-    <article class="hm-paper"><small>IEEE T-ITS · 2026</small><h3><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility</a></h3><p>A review of how emerging air mobility demand can be estimated, with attention to methods, constraints, and research challenges.</p><a class="hm-more" href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Read the research →</a></article>
-    <article class="hm-paper"><small>IJCAI · 2025</small><h3><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Integrating Neurosymbolic AI in AAM</a></h3><p>How learned models and explicit rules may help make decisions in future aviation systems more understandable and reliable.</p><a class="hm-more" href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Read the research →</a></article>
-    <article class="hm-paper"><small>IEEE ITSC · 2024</small><h3><a href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Learning-Accelerated Flight Planning</a></h3><p>A study of neural-network-accelerated genetic optimization for planning additional flights before a weather disaster.</p><a class="hm-more" href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Read the research →</a></article>
-  </div>
-  <a class="hm-more" href="{{ '/publications/' | relative_url }}">Browse all publications →</a>
+<section class="hm-section hm-featured-work" aria-labelledby="hm-publication-title">
+<div class="hm-section-head"><div><span class="hm-label">Research highlights</span><h2 id="hm-publication-title">Three studies to start with</h2></div><p>Selected publications spanning demand, interpretable AI, and operations research.</p></div>
+<div class="hm-publications"><article class="hm-paper"><div class="hm-paper-top"><svg viewBox="0 0 98 84" aria-hidden="true" focusable="false"><path d="M16 58 38 29l20 18 24-29" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><g fill="#dcf8f2" stroke="currentColor" stroke-width="3"><circle cx="16" cy="58" r="6"/><circle cx="38" cy="29" r="6"/><circle cx="58" cy="47" r="6"/><circle cx="82" cy="18" r="6"/></g></svg><span>Advanced Air Mobility</span></div><div class="hm-paper-content"><small>IEEE T-ITS · 2026</small><h3><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility</a></h3><p>A research roadmap for forecasting future AAM travel demand.</p><a class="hm-paper-action" href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Explore paper →</a></div></article><article class="hm-paper"><div class="hm-paper-top"><svg viewBox="0 0 98 84" aria-hidden="true" focusable="false"><g stroke="currentColor" stroke-width="3" fill="none"><path d="M17 21 43 14l28 14M17 21l8 39 29 10 17-42M25 60l29-34M43 14l11 56"/></g><g fill="#d7f6ee" stroke="currentColor" stroke-width="3"><circle cx="17" cy="21" r="6"/><circle cx="43" cy="14" r="6"/><circle cx="71" cy="28" r="6"/><circle cx="25" cy="60" r="6"/><circle cx="54" cy="70" r="6"/></g><path d="m42 41 6 6 9-11" stroke="#21b29b" stroke-width="4" fill="none"/></svg><span>Neurosymbolic AI</span></div><div class="hm-paper-content"><small>IJCAI · 2025</small><h3><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Integrating Neurosymbolic AI in AAM</a></h3><p>A survey of how learned models and explicit knowledge can work together.</p><a class="hm-paper-action" href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Explore paper →</a></div></article><article class="hm-paper"><div class="hm-paper-top"><svg viewBox="0 0 98 84" aria-hidden="true" focusable="false"><path d="M13 60Q35 8 58 39T86 16" stroke="currentColor" stroke-width="4" fill="none" stroke-dasharray="5 6"/><g fill="#dcf8f2" stroke="currentColor" stroke-width="3"><circle cx="13" cy="60" r="7"/><circle cx="58" cy="39" r="7"/><circle cx="86" cy="16" r="7"/></g><path d="M39 14v18m-9-9h18M66 60h19" stroke="#28bba8" stroke-width="4" stroke-linecap="round"/></svg><span>Optimization</span></div><div class="hm-paper-content"><small>IEEE ITSC · 2024</small><h3><a href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Learning-Accelerated Flight Planning</a></h3><p>Neural-network-assisted genetic optimization for pre-disaster aviation planning.</p><a class="hm-paper-action" href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Explore paper →</a></div></article></div><a class="hm-more" href="{{ '/publications/' | relative_url }}">Browse all publications →</a>
 </section>
 
 <section class="hm-section hm-philosophy" aria-labelledby="hm-philosophy-title">
@@ -169,14 +190,26 @@
 </section>
 <script>
 (function(){
-  var panel=document.getElementById('hm-project-viz'), button=document.getElementById('hm-viz-toggle');
-  if(!panel||!button)return;
-  button.addEventListener('click',function(){
-    var paused=panel.classList.toggle('is-paused');
-    button.textContent=paused?'Play':'Pause';
-    button.setAttribute('aria-pressed',String(paused));
-    button.setAttribute('aria-label',paused?'Resume aircraft animation':'Pause aircraft animation');
-  });
+'use strict';
+var page=document.querySelector('.hm-page');if(!page)return;
+var base='{{ site.baseurl }}';
+var stages={"observe":{"eyebrow":"Completed doctoral research","heading":"Where might travelers choose to fly?","desc":"Travel behavior, mode choice, and geographic demand modeling help identify potential AAM connections.","link":"/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/","label":"Explore dissertation"},"reason":{"eyebrow":"Published research","heading":"How can learned predictions be explained?","desc":"Neurosymbolic methods combine patterns learned from data with explicit rules that researchers can inspect.","link":"/publications/neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks/","label":"Explore neurosymbolic research"},"decide":{"eyebrow":"Ongoing Baylor research","heading":"Which aircraft should serve which trip?","desc":"Rolling-horizon scheduling studies aircraft assignments, passenger requests, batteries, charging, and vertiport constraints.","link":"/research/","label":"Explore fleet optimization"},"evaluate":{"eyebrow":"Ongoing Baylor research","heading":"What changes under different scenarios?","desc":"Simulation and scenario comparisons help examine passenger service, energy use, and operational feasibility.","link":"/research/#rh-workflow","label":"Explore research workflow"}};
+var panel=page.querySelector('.hm-journey-panel');
+page.querySelectorAll('[data-hm-stage]').forEach(function(button){button.addEventListener('click',function(){
+var key=button.getAttribute('data-hm-stage'),item=stages[key];if(!panel||!item)return;
+panel.setAttribute('data-hm-active-stage',key);
+page.querySelectorAll('[data-hm-stage]').forEach(function(other){other.setAttribute('aria-pressed',String(other===button))});
+page.querySelector('#hm-journey-eyebrow').textContent=item.eyebrow;
+page.querySelector('#hm-journey-heading').textContent=item.heading;
+page.querySelector('#hm-journey-desc').textContent=item.desc;
+var link=page.querySelector('#hm-journey-link');link.textContent=item.label+' →';link.setAttribute('href',base+item.link);
+})});
+var career=page.querySelector('.hm-career-surface');
+page.querySelectorAll('[data-hm-career]').forEach(function(button){button.addEventListener('click',function(){
+var key=button.getAttribute('data-hm-career');if(!career)return;
+career.setAttribute('data-hm-career-active',key);
+page.querySelectorAll('[data-hm-career]').forEach(function(other){other.setAttribute('aria-pressed',String(other===button))});
+})});
 })();
 </script>
 </div>
