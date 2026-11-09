@@ -69,10 +69,13 @@
       connection: "Demand-modeling research landscape"
   research_support:
     - organization: "NASA Aeronautics Research Mission Directorate"
+      logo: "/assets/logos/NASA-logo.png"
       detail: "University Leadership Initiative, Cooperative Agreement No. 80NSSC23M0059"
     - organization: "U.S. National Science Foundation"
+      logo: "/assets/logos/nsf-logo.gif"
       detail: "Partial support through Grant Nos. 2309760 and 2317117"
     - organization: "U.S. Department of Transportation"
+      logo: "/assets/logos/catm-logo.png"
       detail: "Center for Advanced Transportation Mobility, Grant No. 69A3551747125"
   committee:
     - name: "Dr. Houbing Song"
@@ -114,7 +117,7 @@
       role: "Committee Member"
       affiliation: "University of Maryland, Baltimore County"
       affiliation_url: "https://umbc.edu/"
-      profile_url: "https://umbc.edu/academics/faculty/sun-kai/"
+      profile_url: "https://scholar.google.com/citations?user=D6VZ7bsAAAAJ&hl=en&authuser=1&oi=ao"
       background: "Assistant Professor of Information Systems specializing in operations research and decision support. His research focuses on optimization under uncertainty, multi-objective optimization, graph-based algorithms, and data analytics and machine learning, with applications in healthcare, service systems, product development, and manufacturing."
       expertise: "Optimization under uncertainty and decision support"
   modeling_approaches_title: "Methods and Study Settings"
