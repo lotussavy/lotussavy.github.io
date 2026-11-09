@@ -126,6 +126,8 @@
     <div><span class="hm-label">Current research</span><h2 id="hm-current-title">Planning the operation of eVTOL fleets</h2></div>
     <p>Moving from the question of where demand exists to how future services can respond.</p>
   </div>
+    {% assign home_ev_video = site.static_files | where_exp: "file", "file.path == '/assets/videos/Final-48s.mp4'" | first %}
+    {% assign home_ev_poster = site.static_files | where_exp: "file", "file.path == '/assets/images/evtol-research-poster.jpg'" | first %}
   <div class="hm-project{% if home_ev_video %} hm-project--video{% endif %}">
     <div>
       <h3>Scheduling aircraft under real operating constraints</h3>
@@ -134,8 +136,6 @@
       <p class="hm-project-note">This is ongoing research. Detailed methods and performance results will be shared when ready for public release.</p>
       <a class="hm-more" href="{{ '/research/' | relative_url }}">Explore the research direction →</a>
     </div>
-    {% assign home_ev_video = site.static_files | where_exp: "file", "file.path == '/assets/videos/Final-48s.mp4'" | first %}
-    {% assign home_ev_poster = site.static_files | where_exp: "file", "file.path == '/assets/images/evtol-research-poster.jpg'" | first %}
     {% if home_ev_video %}
     <div class="hm-video-frame">
       <video controls playsinline preload="none" {% if home_ev_poster %}poster="{{ '/assets/images/evtol-research-poster.jpg' | relative_url }}"{% endif %} aria-label="Overview of ongoing eVTOL fleet scheduling research: Global optimization and PCMTSP">
