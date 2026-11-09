@@ -1,0 +1,96 @@
+<style>
+.dj{--ink:#153654;--muted:#52677b;--line:#d9e4ec;--blue:#17679a;--teal:#0b786e;--paper:#f4f8fb;color:var(--ink);font-family:inherit}
+.dj *{box-sizing:border-box}.dj a{color:#126292}.dj-hero{background:linear-gradient(125deg,#102b47,#17496a);color:#fff;padding:clamp(1.2rem,4vw,2.3rem);border-radius:18px;margin:1.2rem 0 1.8rem}.dj-hero *{color:inherit}.dj-kicker{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#a5e6e2}.dj-hero h1{font-size:clamp(1.55rem,3.1vw,2.3rem);line-height:1.2;margin:.6rem 0}.dj-hero p{line-height:1.65;max-width:760px}.dj-meta{font-size:.92rem;opacity:.88}.dj-actions{display:flex;gap:.65rem;flex-wrap:wrap;margin-top:1rem}.dj-actions a{display:inline-block;padding:.65rem .9rem;border:1px solid #b6dbe8;border-radius:8px;text-decoration:none;font-weight:700}.dj-actions a:first-child{background:#fff;color:#153654}.dj-section{margin:2.1rem 0}.dj-section h2{font-size:1.5rem;margin-bottom:.5rem}.dj-lead{color:var(--muted);line-height:1.65}.dj-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.85rem}.dj-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem;box-shadow:0 3px 12px rgba(17,48,75,.04)}.dj-card h3{font-size:1.08rem;margin:.35rem 0}.dj-card p{font-size:.92rem;line-height:1.55;color:var(--muted)}.dj-number{font-size:.76rem;font-weight:800;letter-spacing:.09em;color:var(--teal)}.dj-flow{display:flex;align-items:stretch;gap:.45rem;flex-wrap:wrap}.dj-flow .dj-card{flex:1 1 150px}.dj-arrow{align-self:center;color:var(--teal);font-size:1.35rem}.dj-controls{display:flex;flex-wrap:wrap;gap:.5rem;margin:.8rem 0}.dj button{font:inherit;cursor:pointer}.dj-tab{background:#fff;color:var(--ink);border:1px solid #adc7d9;border-radius:8px;padding:.55rem .85rem;font-weight:700}.dj-tab[aria-selected=true]{background:#153e61;color:#fff;border-color:#153e61}.dj-panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:1.1rem;min-height:145px}.dj-panel h3{margin-top:0}.dj-panel p{line-height:1.6}.dj-panel[hidden]{display:none}.dj-demo{background:#f5f9fb;border:1px solid var(--line);padding:1.1rem;border-radius:12px}.dj-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.dj-form label{display:block;font-weight:700;font-size:.91rem}.dj-form output{font-variant-numeric:tabular-nums;color:#155977}.dj-form input[type=range]{display:block;width:100%;accent-color:#14796e;margin:.6rem 0}.dj-result{background:white;border-left:4px solid var(--teal);padding:1rem;margin-top:1rem;border-radius:6px}.dj-small{color:var(--muted);font-size:.84rem;line-height:1.5}.dj-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}.dj-link{display:block;background:white;border:1px solid var(--line);border-radius:9px;padding:.85rem;text-decoration:none}.dj-link strong{display:block;color:var(--ink)}.dj-link span{display:block;font-size:.86rem;color:var(--muted);margin-top:.3rem}.dj-footer{border-top:1px solid var(--line);padding-top:1rem}.dj button:focus-visible,.dj a:focus-visible,.dj input:focus-visible{outline:3px solid #e9a942;outline-offset:2px}
+@media(max-width:700px){.dj-grid,.dj-links,.dj-form{grid-template-columns:1fr}.dj-arrow{display:none}.dj-hero{border-radius:12px}.dj-card{min-width:0}}
+@media(prefers-reduced-motion:no-preference){.dj-tab{transition:background .16s,color .16s}}
+</style>
+<div class="dj" id="dissertation-journey" aria-label="Interactive dissertation research journey">
+<section class="dj-section" id="dj-discover" aria-labelledby="dj-discover-title">
+  <div class="dj-number">01 · DISCOVER</div>
+  <h2 id="dj-discover-title">From a forecasting problem to a research program</h2>
+  <p class="dj-lead">Advanced Air Mobility spans urban airport connections and regional trips. The dissertation addresses three linked gaps rather than treating demand prediction as an isolated machine-learning problem.</p>
+  <div class="dj-grid">
+    <div class="dj-card"><span class="dj-number">CHALLENGE 1</span><h3>Limited observations</h3><p>Mature passenger-use records for emerging air services do not yet exist. Travel choices must be estimated from related behavioral and spatial evidence.</p></div>
+    <div class="dj-card"><span class="dj-number">CHALLENGE 2</span><h3>Behavior and geography</h3><p>Adoption varies with travel time, monetary cost, perceived risk, reliability, trip purpose and location.</p></div>
+    <div class="dj-card"><span class="dj-number">CHALLENGE 3</span><h3>Model transparency</h3><p>Black-box predictions can be difficult to explain or evaluate when decision-makers need defensible infrastructure and policy assessments.</p></div>
+  </div>
+  <h3>Research logic</h3>
+  <div class="dj-flow" aria-label="Research flow: behavioral choice, spatial estimation, interpretable learning, planning insights">
+    <div class="dj-card"><strong>Traveler behavior</strong><p>Generalized trip cost and adoption assumptions</p></div><span class="dj-arrow" aria-hidden="true">→</span>
+    <div class="dj-card"><strong>Spatial estimation</strong><p>Optimization, gravity models, and learning</p></div><span class="dj-arrow" aria-hidden="true">→</span>
+    <div class="dj-card"><strong>Neurosymbolic reasoning</strong><p>Decision-tree rules integrated with neural networks</p></div><span class="dj-arrow" aria-hidden="true">→</span>
+    <div class="dj-card"><strong>Planning insight</strong><p>Interpretable demand evidence for mobility decisions</p></div>
+  </div>
+</section>
+
+<section class="dj-section" id="dj-compare" aria-labelledby="dj-compare-title">
+  <div class="dj-number">02 · COMPARE</div><h2 id="dj-compare-title">Three complementary dissertation contributions</h2>
+  <p class="dj-lead">Select a research strand to see its question, method, case studies, and role in the overall dissertation.</p>
+  <div class="dj-controls" role="tablist" aria-label="Dissertation research strands">
+    <button class="dj-tab" role="tab" id="dj-tab-0" aria-controls="dj-panel-0" aria-selected="true" tabindex="0">Behavioral adoption</button>
+    <button class="dj-tab" role="tab" id="dj-tab-1" aria-controls="dj-panel-1" aria-selected="false" tabindex="-1">Data-driven estimation</button>
+    <button class="dj-tab" role="tab" id="dj-tab-2" aria-controls="dj-panel-2" aria-selected="false" tabindex="-1">Neurosymbolic learning</button>
+  </div>
+  <div class="dj-panel" id="dj-panel-0" role="tabpanel" aria-labelledby="dj-tab-0">
+    <h3>When does air travel become attractive?</h3>
+    <p><strong>Method:</strong> Generalized Cost of Trip combines monetary fares, time valuation, reliability and perceived risk. <strong>Settings:</strong> regional travel in Tennessee and urban airport-access trips in New York City.</p>
+    <p><strong>Contribution:</strong> Makes demand estimates sensitive to traveler trade-offs and local travel conditions rather than treating distance alone as the adoption mechanism.</p>
+    <a href="{{ '/publications/regional-air-mobility-flight-demand-modeling-in-tennessee-state/' | relative_url }}">Explore the Tennessee study →</a>
+  </div>
+  <div class="dj-panel" id="dj-panel-1" role="tabpanel" aria-labelledby="dj-tab-1" hidden>
+    <h3>How can spatial flows and planning searches be modeled better?</h3>
+    <p><strong>Methods:</strong> machine-learning-enhanced gravity modeling and neural-network-accelerated genetic optimization. These are distinct contributions: gravity models estimate flows, while optimization searches for feasible planning choices.</p>
+    <p><strong>Contribution:</strong> Captures nonlinear spatial interactions and explores how learning can assist optimization without replacing its planning constraints.</p>
+    <a href="{{ '/publications/data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction/' | relative_url }}">Explore the gravity model study →</a>
+  </div>
+  <div class="dj-panel" id="dj-panel-2" role="tabpanel" aria-labelledby="dj-tab-2" hidden>
+    <h3>How can a predictive model make its reasoning inspectable?</h3>
+    <p><strong>Method:</strong> decision-tree-derived symbolic rules are incorporated into a neural-network-based demand prediction approach.</p>
+    <p><strong>Contribution:</strong> Connects flexible learned representations with explicit, inspectable rules, addressing interpretability and robustness under data sparsity.</p>
+    <a href="{{ '/publications/neurosymbolic-approach-for-travel-demand-prediction-integrating-decision-tree-rules-into-neural-networks/' | relative_url }}">Explore the neurosymbolic study →</a>
+  </div>
+</section>
+
+<section class="dj-section" id="dj-explain" aria-labelledby="dj-explain-title">
+  <div class="dj-number">03 · EXPLAIN</div><h2 id="dj-explain-title">Try the travel-choice trade-off</h2>
+  <p class="dj-lead">Adjust trip prices, travel times and value of time. The calculator illustrates the logic of generalized trip cost; it is <strong>not</strong> a calibrated dissertation model, reported experiment, or adoption forecast.</p>
+  <div class="dj-demo">
+    <div class="dj-form">
+      <label>Ground-trip monetary cost: $<output id="dj-groundcost-val">35</output><input id="dj-groundcost" type="range" min="0" max="250" value="35" step="5"></label>
+      <label>Air-trip monetary cost: $<output id="dj-aircost-val">120</output><input id="dj-aircost" type="range" min="0" max="300" value="120" step="5"></label>
+      <label>Ground-trip duration: <output id="dj-groundtime-val">180</output> min<input id="dj-groundtime" type="range" min="30" max="360" value="180" step="10"></label>
+      <label>Door-to-door air-trip duration: <output id="dj-airtime-val">80</output> min<input id="dj-airtime" type="range" min="20" max="240" value="80" step="10"></label>
+      <label>Value of travel time: $<output id="dj-vot-val">40</output>/h<input id="dj-vot" type="range" min="0" max="150" value="40" step="5"></label>
+      <label>Illustrative air reliability/risk penalty: $<output id="dj-risk-val">20</output><input id="dj-risk" type="range" min="0" max="100" value="20" step="5"></label>
+    </div>
+    <div class="dj-result" aria-live="polite"><strong id="dj-recommendation">—</strong><p id="dj-calculation"></p></div>
+    <p class="dj-small">Illustrative formula: generalized cost = monetary cost + (time in hours × value of time) + optional penalty. Ground penalty is set to $0 for this teaching example. Real adoption depends on additional behavioral assumptions and empirical calibration; a lower generalized cost does not establish actual market share.</p>
+  </div>
+</section>
+
+<section class="dj-section" id="dj-papers">
+  <div class="dj-number">04 · CONNECT</div><h2>Follow the studies behind the dissertation</h2>
+  <p class="dj-lead">Each linked publication has its own Discover–Compare–Explain experience. The pages below form a research trail, not an assertion that every paper corresponds to a standalone dissertation chapter.</p>
+  <div class="dj-links">
+    {% assign dissertation_record = site.data.publications | where: "type", "dissertation" | first %}
+    {% for output in dissertation_record.dissertation_outputs %}
+      {% assign linked_paper = site.data.publications | where: "slug", output.slug | first %}
+      {% if linked_paper %}
+      <a class="dj-link" href="{{ '/publications/' | append: output.slug | append: '/' | relative_url }}"><strong>{{ linked_paper.title }}</strong><span>{{ output.connection }} · {{ linked_paper.year }}</span></a>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+</div>
+<script>
+(function(){
+  const root=document.getElementById('dissertation-journey');if(!root)return;
+  const tabs=[...root.querySelectorAll('[role=tab]')];
+  function showTab(i){tabs.forEach((tab,j)=>{const active=j===i;tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;root.querySelector('#dj-panel-'+j).hidden=!active;});tabs[i].focus();}
+  tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>showTab(i));tab.addEventListener('keydown',e=>{if(!['ArrowRight','ArrowLeft','Home','End'].includes(e.key))return;e.preventDefault();showTab(e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length);});});
+  const ids=['groundcost','aircost','groundtime','airtime','vot','risk'];
+  const controls=ids.map(id=>root.querySelector('#dj-'+id));
+  function update(){const [gc,ac,gt,at,vot,risk]=controls.map(c=>Number(c.value));ids.forEach((id,i)=>root.querySelector('#dj-'+id+'-val').textContent=String(controls[i].value));const ground=gc+gt/60*vot,air=ac+at/60*vot+risk;const money=n=>'$'+n.toFixed(2);root.querySelector('#dj-recommendation').textContent=Math.abs(ground-air)<0.005?'Equal modeled generalized costs':(ground<air?'Ground has the lower modeled generalized cost':'Air has the lower modeled generalized cost');root.querySelector('#dj-calculation').textContent='Ground: '+money(ground)+' · Air: '+money(air)+' · Absolute difference: '+money(Math.abs(ground-air))+'.';}
+  controls.forEach(c=>c.addEventListener('input',update));update();
+})();
+</script>
