@@ -338,7 +338,13 @@ If keywords are omitted, head-custom.html falls back to tags from _data/publicat
     <div class="publication-support-grid">
       {% for support in publication.research_support %}
       <article>
+        {% if support.logo %}
+        <div class="publication-support-logo-wrap">
+          <img class="publication-support-logo" src="{{ support.logo | relative_url }}" alt="{{ support.organization }} logo" loading="lazy">
+        </div>
+        {% else %}
         <h3>{{ support.organization }}</h3>
+        {% endif %}
         <p>{{ support.detail }}</p>
       </article>
       {% endfor %}
