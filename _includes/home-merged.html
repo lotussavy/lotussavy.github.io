@@ -1,0 +1,132 @@
+<div class="hm-page">
+<style>
+.hm-page{--hm-ink:#173650;--hm-deep:#102f49;--hm-teal:#117b7c;--hm-line:#dbe8ee;color:var(--hm-ink)}
+.hm-page *{box-sizing:border-box}.hm-page h1,.hm-page h2,.hm-page h3{color:var(--hm-ink);line-height:1.2}.hm-page p{line-height:1.65}.hm-page a:focus-visible{outline:3px solid #f1b94c;outline-offset:3px}
+.hm-hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(190px,.7fr);gap:1.5rem;position:relative;overflow:hidden;padding:clamp(1.4rem,3.4vw,2.7rem);border-radius:19px;background:radial-gradient(ellipse at 88% 17%,rgba(63,171,167,.18),transparent 38%),linear-gradient(135deg,#102b43,#174865);color:#fff}
+.hm-hero h1{color:#fff;font-size:clamp(2.1rem,4vw,3.25rem);letter-spacing:-.035em;margin:.3rem 0}.hm-hero p{color:#d9e9f0;margin:.7rem 0}.hm-kicker{font-size:.75rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:#9de2d9!important}.hm-role{color:#c5e3e7!important;font-size:.9rem;font-weight:700}.hm-statement{font-size:clamp(1.05rem,1.8vw,1.22rem);font-weight:700;color:#fff!important;max-width:680px}.hm-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin:1.2rem 0}.hm-actions a{display:inline-flex;align-items:center;padding:.7rem 1rem;border:1px solid #91b4c2;border-radius:9px;color:#fff;text-decoration:none;font-size:.88rem;font-weight:800}.hm-actions a:first-child{background:#f3fbfb;color:#123850;border-color:#f3fbfb}.hm-portrait{display:flex;align-items:center;justify-content:center}.hm-portrait-frame{width:min(100%,240px);aspect-ratio:4/5;padding:9px;border:1px solid rgba(219,246,248,.5);border-radius:22px;background:rgba(255,255,255,.09);transform:rotate(2deg);box-shadow:0 16px 34px rgba(0,0,0,.18)}.hm-portrait-frame img{display:block;object-fit:cover;width:100%;height:100%;border-radius:15px;background:#edf3f4;transform:rotate(-2deg)}
+.hm-profile{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-top:.9rem}.hm-profile a{border-radius:30px;border:1px solid rgba(217,238,246,.35);padding:.33rem .7rem;font-size:.76rem;text-decoration:none;font-weight:750;color:#effaff}.hm-profile a:hover{background:rgba(255,255,255,.13)}.hm-overview{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin:1.2rem 0 0}.hm-status{padding:1rem 1.1rem;border:1px solid var(--hm-line);border-radius:13px;background:#fff}.hm-status:nth-child(2){background:#f2fafa;border-color:#b6dcd9}.hm-status small{color:#207980;text-transform:uppercase;letter-spacing:.08em;font-size:.72rem;font-weight:850}.hm-status h2{font-size:1.06rem;margin:.3rem 0}.hm-status p{color:#4b6678;font-size:.9rem;margin:.35rem 0}.hm-status a{font-weight:800;font-size:.85rem;color:#176688}.hm-section{margin:2rem 0}.hm-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:.9rem}.hm-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--hm-teal);font-weight:850}.hm-section h2{margin:.2rem 0 .45rem;font-size:clamp(1.35rem,2.2vw,1.75rem)}.hm-section-head>p{max-width:440px;color:#526d7c;font-size:.87rem;margin:0}.hm-bio{border-left:4px solid #2c8095;padding:1.05rem 1.4rem;background:linear-gradient(90deg,#f4fafa,#fff);border-radius:0 12px 12px 0}.hm-bio p{margin:.3rem 0;color:#34576e}.hm-columns{display:grid;grid-template-columns:1fr 1fr;gap:1.3rem}.hm-timeline{display:grid;gap:.65rem}.hm-milestone{display:grid;grid-template-columns:96px 1fr;gap:.75rem;align-items:start;border-bottom:1px solid #e3edf1;padding:.6rem 0}.hm-milestone time,.hm-milestone .hm-time{font-size:.78rem;font-weight:800;color:#247f87}.hm-milestone strong{display:block;color:#183b58;line-height:1.4;font-size:.92rem}.hm-milestone p{font-size:.82rem;color:#597181;margin:.2rem 0}.hm-milestone a{color:#155f82}.hm-project{display:grid;grid-template-columns:minmax(0,1fr) minmax(185px,.65fr);gap:1.2rem;border-radius:16px;background:#f0f7fb;border:1px solid #d5e6ef;padding:1.3rem}.hm-project h3{margin:.35rem 0;font-size:1.22rem}.hm-project p{color:#486779;font-size:.91rem}.hm-project-meta{display:grid;gap:.45rem;align-content:center}.hm-project-meta span{font-size:.81rem;background:#fff;border:1px solid #d3e4ec;padding:.63rem .85rem;border-radius:8px;color:#22516a;font-weight:700}.hm-project-note{font-size:.78rem!important;color:#667f89!important}.hm-publications{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}.hm-paper{padding:1.05rem;border-radius:12px;border:1px solid var(--hm-line);background:#fff}.hm-paper small{display:block;color:#168185;font-size:.71rem;text-transform:uppercase;letter-spacing:.07em;font-weight:850}.hm-paper h3{font-size:.98rem;margin:.5rem 0}.hm-paper h3 a{color:#183d60;text-decoration:none}.hm-paper h3 a:hover{text-decoration:underline}.hm-paper p{font-size:.84rem;color:#4a687d;margin:.5rem 0}.hm-more{display:inline-flex;margin-top:.7rem;color:#1c6685;font-weight:800;font-size:.87rem}.hm-philosophy{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;border:1px solid #c7e2e0;border-radius:14px;padding:1.25rem;background:linear-gradient(120deg,#e9f6f4,#f8fbfd)}.hm-philosophy h2{margin:.25rem 0}.hm-philosophy p{margin:.4rem 0;font-size:.91rem;max-width:660px;color:#3e6172}.hm-philosophy a{display:inline-flex;flex:0 0 auto;padding:.7rem 1rem;border-radius:9px;background:#1b597d;color:#fff;font-size:.85rem;font-weight:800;text-decoration:none}
+@media(max-width:850px){.hm-hero{grid-template-columns:1fr auto}.hm-portrait-frame{width:170px}.hm-publications{grid-template-columns:1fr 1fr}.hm-section-head{display:block}.hm-section-head>p{margin-top:.3rem}}
+@media(max-width:650px){.hm-hero{grid-template-columns:1fr}.hm-portrait{grid-row:1;justify-content:flex-start}.hm-portrait-frame{width:116px;aspect-ratio:1/1;transform:none}.hm-portrait-frame img{transform:none}.hm-overview,.hm-columns,.hm-publications,.hm-project{grid-template-columns:1fr}.hm-milestone{grid-template-columns:78px 1fr}.hm-philosophy{align-items:flex-start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.hm-page *{scroll-behavior:auto}}
+</style>
+<section class="hm-hero" aria-labelledby="hm-title">
+  <div>
+    <p class="hm-kicker">Researcher · Engineer · Educator</p>
+    <h1 id="hm-title">Kamal Acharya</h1>
+    <p class="hm-role">Postdoctoral Research Associate · Mechanical Engineering · Baylor University</p>
+    <p class="hm-statement">Understanding future travel demand. Improving how electric aircraft are planned and operated.</p>
+    <p>I work at the intersection of Advanced Air Mobility, machine learning, neurosymbolic AI, and transportation optimization. My doctoral research focused on predicting demand; at Baylor, I am now studying the decisions needed to operate future eVTOL fleets.</p>
+    <nav class="hm-actions" aria-label="Explore the website">
+      <a href="{{ '/research/' | relative_url }}">Explore my research</a>
+      <a href="{{ '/cv/' | relative_url }}">View my CV</a>
+      <a href="{{ '/contact/' | relative_url }}">Get in touch</a>
+    </nav>
+    <nav class="hm-profile" aria-label="Academic and professional profiles">
+      <a href="https://scholar.google.com/citations?user=0uLqckgAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      <a href="https://orcid.org/0000-0002-9712-0265" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
+      <a href="https://www.linkedin.com/in/lotussavy318/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href="https://github.com/lotussavy" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </nav>
+  </div>
+  <div class="hm-portrait">
+    <div class="hm-portrait-frame">
+      <img src="{{ '/assets/images/profile-300.webp' | relative_url }}" alt="Portrait of Kamal Acharya" width="300" height="375" loading="eager" fetchpriority="high"/>
+    </div>
+  </div>
+</section>
+
+<section class="hm-overview" aria-label="Research background and current focus">
+  <article class="hm-status">
+    <small>Completed · PhD research at UMBC</small>
+    <h2>How might travelers adopt Advanced Air Mobility?</h2>
+    <p>My dissertation developed behaviorally grounded, data-driven, and neurosymbolic approaches to estimating AAM demand, including studies in Tennessee and New York City.</p>
+    <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}">Read about my dissertation →</a>
+  </article>
+  <article class="hm-status">
+    <small>Ongoing · Baylor University</small>
+    <h2>How can an eVTOL fleet serve that demand?</h2>
+    <p>My current research examines aircraft scheduling, passenger assignments, battery reserves, charging constraints, and energy-aware operations as part of a NASA University Leadership Initiative project.</p>
+    <a href="{{ '/research/' | relative_url }}">See my current research →</a>
+  </article>
+</section>
+
+<section class="hm-section" id="background">
+  <div class="hm-section-head">
+    <div><span class="hm-label">Background</span><h2>A little about my path</h2></div>
+    <p>My work has moved from engineering and information systems toward transportation research that connects prediction with decision-making.</p>
+  </div>
+  <div class="hm-bio">
+    <p>I am part of the <a href="https://avia.research.baylor.edu/" target="_blank" rel="noopener noreferrer">Advanced Vehicle Intelligence and Autonomy (AVIA) Lab</a> at Baylor University. Before joining Baylor, I completed my PhD in Information Systems at the University of Maryland, Baltimore County (UMBC), where I studied demand modeling for emerging air mobility services.</p>
+    <p>Teaching has also been an important part of my academic career. I have more than a decade of university teaching experience and have mentored students on research and engineering projects.</p>
+  </div>
+</section>
+
+<section class="hm-section" id="experience">
+  <div class="hm-section-head">
+    <div><span class="hm-label">Academic background</span><h2>Research experience &amp; education</h2></div>
+    <p>A few milestones from my academic path. My full CV includes additional appointments and professional activities.</p>
+  </div>
+  <div class="hm-columns">
+    <div>
+      <h3>Research experience</h3>
+      <div class="hm-timeline">
+        <article class="hm-milestone"><span class="hm-time">2026–Present</span><div><strong>Postdoctoral Research Associate</strong><p><a href="https://www.baylor.edu/" target="_blank" rel="noopener noreferrer">Baylor University</a> · Mechanical Engineering · AVIA Lab</p></div></article>
+        <article class="hm-milestone"><span class="hm-time">2023–2026</span><div><strong>Graduate Research Assistant</strong><p><a href="https://umbc.edu/" target="_blank" rel="noopener noreferrer">University of Maryland, Baltimore County</a></p></div></article>
+        <article class="hm-milestone"><span class="hm-time">2022–2023</span><div><strong>Research Assistant</strong><p><a href="https://erau.edu/" target="_blank" rel="noopener noreferrer">Embry-Riddle Aeronautical University</a> · Air mobility and emergency transportation research</p></div></article>
+      </div>
+    </div>
+    <div>
+      <h3>Education</h3>
+      <div class="hm-timeline">
+        <article class="hm-milestone"><span class="hm-time">2026</span><div><strong>PhD · Information Systems</strong><p>University of Maryland, Baltimore County · <a href="{{ '/publications/enhancing-demand-modeling-for-advanced-air-mobility-using-data-driven-learning-and-neurosymbolic-ai/' | relative_url }}">Dissertation</a></p></div></article>
+        <article class="hm-milestone"><span class="hm-time">2019</span><div><strong>MSc · Information System Engineering</strong><p>Purbanchal University</p></div></article>
+        <article class="hm-milestone"><span class="hm-time">2011</span><div><strong>BE · Electronics and Communication Engineering</strong><p>Tribhuvan University</p></div></article>
+      </div>
+    </div>
+  </div>
+  <a class="hm-more" href="{{ '/cv/' | relative_url }}">View full academic CV →</a>
+</section>
+
+<section class="hm-section" aria-labelledby="hm-current-title">
+  <div class="hm-section-head">
+    <div><span class="hm-label">Current research</span><h2 id="hm-current-title">Planning the operation of eVTOL fleets</h2></div>
+    <p>Moving from the question of where demand exists to how future services can respond.</p>
+  </div>
+  <div class="hm-project">
+    <div>
+      <h3>Scheduling aircraft under real operating constraints</h3>
+      <p>Imagine several vertiports, a limited fleet of electric aircraft, and passenger requests arriving throughout the day. An aircraft must have enough energy to complete a trip and retain a safe reserve; charging and vehicle availability influence the next assignment.</p>
+      <p>My ongoing work at Baylor studies how optimization and simulation can help evaluate these interconnected decisions. The focus includes rolling-horizon scheduling and the trade-offs between service, energy use, and operational feasibility.</p>
+      <p class="hm-project-note">This is ongoing research. Detailed methods and performance results will be shared when ready for public release.</p>
+      <a class="hm-more" href="{{ '/research/' | relative_url }}">Explore the research direction →</a>
+    </div>
+    <div class="hm-project-meta" aria-label="Operational research themes">
+      <span>Aircraft assignment</span>
+      <span>Passenger demand</span>
+      <span>Battery and charging</span>
+      <span>Vertiport operations</span>
+      <span>Scenario evaluation</span>
+    </div>
+  </div>
+</section>
+
+<section class="hm-section" aria-labelledby="hm-publication-title">
+  <div class="hm-section-head">
+    <div><span class="hm-label">Selected work</span><h2 id="hm-publication-title">Research and publications</h2></div>
+    <p>Three papers highlighting the research questions and methods behind my work.</p>
+  </div>
+  <div class="hm-publications">
+    <article class="hm-paper"><small>IEEE T-ITS · 2026</small><h3><a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility</a></h3><p>A review of how emerging air mobility demand can be estimated, with attention to methods, constraints, and research challenges.</p><a class="hm-more" href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Read the research →</a></article>
+    <article class="hm-paper"><small>IJCAI · 2025</small><h3><a href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Integrating Neurosymbolic AI in AAM</a></h3><p>How learned models and explicit rules may help make decisions in future aviation systems more understandable and reliable.</p><a class="hm-more" href="{{ '/publications/integrating-neurosymbolic-ai-in-advanced-air-mobility-comprehensive-survey/' | relative_url }}">Read the research →</a></article>
+    <article class="hm-paper"><small>IEEE ITSC · 2024</small><h3><a href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Learning-Accelerated Flight Planning</a></h3><p>A study of neural-network-accelerated genetic optimization for planning additional flights before a weather disaster.</p><a class="hm-more" href="{{ '/publications/improving-air-mobility-for-pre-disaster-planning-with-neural-network-accelerated-genetic-algorithm/' | relative_url }}">Read the research →</a></article>
+  </div>
+  <a class="hm-more" href="{{ '/publications/' | relative_url }}">Browse all publications →</a>
+</section>
+
+<section class="hm-section hm-philosophy" aria-labelledby="hm-philosophy-title">
+  <div><span class="hm-label">What guides my work</span><h2 id="hm-philosophy-title">Research that can be understood and tested</h2>
+    <p>I care about developing AI methods that people can examine and use in real decisions. Combining learning with domain knowledge—and testing those ideas under uncertainty and operating constraints—is central to how I approach research.</p>
+  </div>
+  <a href="{{ '/contact/' | relative_url }}">Get in touch</a>
+</section>
+</div>
