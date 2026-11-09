@@ -1,5 +1,5 @@
-- label: "About"
-  url: /about/
+- label: "Home"
+  url: /
 - label: "Research"
   url: /research/
 - label: "Publications"
