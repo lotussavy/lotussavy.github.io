@@ -39,6 +39,35 @@
   <body id="top">
     <a class="skip-link" href="#main_content">Skip to main content</a>
 
+    <!-- Critical header styling is inline so a stale stylesheet cannot hide the research artwork. -->
+    <style>
+      #header_wrap.research-animated-header {
+        position:relative!important;isolation:isolate;overflow:hidden;
+        background-color:#0c344c!important;
+        background-image:radial-gradient(ellipse at 85% 25%,rgba(37,149,157,.34),transparent 52%),linear-gradient(115deg,#0b263e 0%,#10445f 57%,#12606b 100%)!important;
+      }
+      #header_wrap.research-animated-header > .inner {position:relative;z-index:2}
+      #header_wrap.research-animated-header > .research-header-art {
+        position:absolute;inset:0 0 0 auto;width:100%;height:100%;display:block;
+        opacity:.78;z-index:0;pointer-events:none;user-select:none;
+      }
+      #header_wrap.research-animated-header #project_title,
+      #header_wrap.research-animated-header #project_title a {color:#fff}
+      #header_wrap.research-animated-header #project_tagline,
+      #header_wrap.research-animated-header #project_tagline a {color:#e7f5f7}
+      #header_wrap.research-animated-header #main-nav {position:relative;z-index:3}
+      #header_wrap.research-animated-header #main-nav a {color:#fff}
+      #header_wrap.research-animated-header #main-nav a[aria-current="page"] {color:#173a62}
+      @media(max-width:760px){
+        #header_wrap.research-animated-header > .research-header-art {width:145%;right:-42%;opacity:.3}
+      }
+      @media(prefers-reduced-motion:reduce){
+        #header_wrap.research-animated-header .research-header-flow,
+        #header_wrap.research-animated-header .research-header-nodes,
+        #header_wrap.research-animated-header .research-header-aircraft {animation:none!important}
+      }
+    </style>
+
     <!-- HEADER -->
     <div id="header_wrap" class="outer research-animated-header">
         <svg class="research-header-art" viewBox="0 0 1280 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
