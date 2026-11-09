@@ -40,7 +40,38 @@
     <a class="skip-link" href="#main_content">Skip to main content</a>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer">
+    <div id="header_wrap" class="outer research-animated-header">
+        <svg class="research-header-art" viewBox="0 0 1280 260" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="research-header-path" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fd7ce"/><stop offset="1" stop-color="#83bce1"/></linearGradient>
+          </defs>
+          <!-- Origin-destination connections -->
+          <g class="research-header-network">
+            <path d="M667 194Q756 92 844 153T1051 77M711 57Q795 196 1002 166" fill="none" stroke="#80c6d4" stroke-opacity=".36" stroke-width="1.6" stroke-dasharray="4 7"/>
+            <path class="research-header-flow" d="M677 193Q772 70 865 141T1090 58" fill="none" stroke="url(#research-header-path)" stroke-width="2.8" stroke-linecap="round" stroke-dasharray="9 8"/>
+            <g fill="#0b394c" stroke="#70d8d0" stroke-width="2"><circle cx="677" cy="193" r="9"/><circle cx="865" cy="141" r="9"/><circle cx="1090" cy="58" r="9"/></g>
+            <g fill="#b7f6eb"><circle cx="677" cy="193" r="3"/><circle cx="865" cy="141" r="3"/><circle cx="1090" cy="58" r="3"/></g>
+          </g>
+          <!-- Neural nodes meet an interpretable rule tree -->
+          <g class="research-header-reason" fill="none" stroke="#79c9d5" stroke-opacity=".65" stroke-width="1.5">
+            <path d="M815 40 857 26 907 49M815 40 855 82 907 49M815 113 857 26 907 49M815 113 855 82 907 49M815 113 855 129 907 49"/>
+            <path d="M920 49h28m17 0v20m0 0-18 18m18-18 18 18"/>
+          </g>
+          <g class="research-header-nodes" fill="#104e65" stroke="#72dcd5" stroke-width="2">
+            <circle cx="815" cy="40" r="5"/><circle cx="815" cy="113" r="5"/><circle cx="857" cy="26" r="5"/><circle cx="855" cy="82" r="5"/><circle cx="855" cy="129" r="5"/><circle cx="907" cy="49" r="7"/>
+          </g>
+          <g fill="none" stroke="#97e8df" stroke-width="1.8"><rect x="948" y="38" width="34" height="22" rx="5"/><rect x="930" y="87" width="33" height="18" rx="4"/><rect x="973" y="87" width="33" height="18" rx="4"/></g>
+          <!-- Aircraft dispatch, charging and vertiport motifs -->
+          <g class="research-header-operations">
+            <path d="M996 199Q1091 112 1213 151" fill="none" stroke="#7ed9d3" stroke-opacity=".65" stroke-width="2" stroke-dasharray="5 8"/>
+            <g fill="#0b3b52" stroke="#9ce8e2" stroke-width="2"><ellipse cx="996" cy="199" rx="21" ry="9"/><ellipse cx="1213" cy="151" rx="21" ry="9"/></g>
+            <g fill="none" stroke="#c3f4eb" stroke-width="2"><path d="M989 199h14m-7-5v10M1206 151h14m-7-5v10"/></g>
+            <g class="research-header-aircraft" transform="translate(1115 132)" fill="none" stroke="#d2fff6" stroke-width="2.3" stroke-linecap="round">
+              <path d="M-16 0h32M0-12v24M-11-10 11 10M11-10-11 10"/><circle cx="-16" cy="0" r="3"/><circle cx="16" cy="0" r="3"/>
+            </g>
+            <g transform="translate(1163 209)" fill="none" stroke="#7fe2d5" stroke-width="2"><rect width="25" height="17" rx="3"/><path d="M1189 214h3v7h-3M1177 211l-4 6h5l-3 6" transform="translate(-1163 -209)"/></g>
+          </g>
+        </svg>
         <header class="inner">
           <p id="project_title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></p>
           <p id="project_tagline">Postdoctoral Research Associate at <a href="https://avia.research.baylor.edu/person/kamal-acharya" target="_blank" rel="noopener noreferrer">Baylor University</a></p>
