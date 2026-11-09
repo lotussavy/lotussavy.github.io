@@ -4465,3 +4465,40 @@ button:focus-visible {
   .publication-hero--ns .publication-byline { margin-top: 15px; gap: 3px 6px; }
   .publication-hero--ns .publication-hero-subtitle { margin-top: 18px; padding: 12px 14px; font-size: .95rem; line-height: 1.65; }
 }
+
+/* Shared academic header: decorative research visualization, no change to content layout. */
+#header_wrap.research-animated-header{
+  position:relative;isolation:isolate;overflow:hidden;
+  background:radial-gradient(ellipse at 85% 20%,rgba(24,136,145,.32),transparent 52%),linear-gradient(115deg,#0b263e 0%,#10445f 57%,#12606b 100%);
+}
+#header_wrap.research-animated-header::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(7,29,48,.34) 0%,rgba(7,29,48,.14) 58%,transparent 100%);
+}
+#header_wrap.research-animated-header > .inner{position:relative;z-index:2}
+#header_wrap.research-animated-header .research-header-art{
+  position:absolute;z-index:0;pointer-events:none;user-select:none;right:0;top:0;
+  width:100%;height:100%;opacity:.56;display:block;
+}
+#header_wrap.research-animated-header #project_title,
+#header_wrap.research-animated-header #project_tagline{position:relative;text-shadow:0 1px 3px rgba(0,15,29,.45)}
+#header_wrap.research-animated-header #project_title,
+#header_wrap.research-animated-header #project_title a{color:#fff}
+#header_wrap.research-animated-header #project_tagline,
+#header_wrap.research-animated-header #project_tagline a{color:#e4f4f7}
+#header_wrap.research-animated-header #main-nav{position:relative;z-index:3}
+#header_wrap.research-animated-header #main-nav a{color:#fff}
+#header_wrap.research-animated-header #main-nav a[aria-current="page"]{color:#173a62}
+.research-header-flow{animation:research-header-flow 16s linear infinite}
+.research-header-nodes{animation:research-header-glow 7s ease-in-out infinite}
+.research-header-aircraft{animation:research-header-hover 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes research-header-flow{to{stroke-dashoffset:-136}}
+@keyframes research-header-glow{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes research-header-hover{0%,100%{translate:0 0}50%{translate:0 -5px}}
+@media(max-width:760px){
+ #header_wrap.research-animated-header .research-header-art{width:140%;right:-35%;opacity:.23}
+ #header_wrap.research-animated-header::before{background:linear-gradient(90deg,rgba(7,29,48,.55),rgba(7,29,48,.3))}
+}
+@media(prefers-reduced-motion:reduce){
+ .research-header-flow,.research-header-nodes,.research-header-aircraft{animation:none!important}
+}
