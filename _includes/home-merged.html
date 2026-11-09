@@ -42,6 +42,15 @@
 .hm-watch-larger:hover{text-decoration:underline}
 @media(max-width:650px){.hm-project--video{padding:1rem}.hm-project--video .hm-video-frame{margin-top:1rem}}
 
+
+/* Brief current-project introduction; full research media lives on the Research page. */
+.hm-current-compact{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(195px,.75fr);gap:1.2rem;align-items:center;padding:1.25rem 1.4rem;background:linear-gradient(120deg,#eef7f5,#f8fbfc);border:1px solid #d5e6e6;border-radius:15px}
+.hm-current-eyebrow{color:#147d80;font-size:.72rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
+.hm-current-compact h3{font-size:1.17rem;margin:.3rem 0}.hm-current-compact p{font-size:.9rem;color:#4b6878;max-width:640px;margin:.5rem 0 .9rem}
+.hm-current-action{display:inline-flex;padding:.6rem .8rem;background:#195d77;color:white!important;text-decoration:none;border-radius:8px;font-size:.84rem;font-weight:800}
+.hm-current-action:hover{background:#12475f}.hm-current-chips{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.hm-current-chips span{background:white;border:1px solid #cddfe3;color:#285972;border-radius:9px;padding:.7rem .6rem;font-size:.77rem;font-weight:750;text-align:center}
+@media(max-width:700px){.hm-current-compact{grid-template-columns:1fr;padding:1rem}.hm-current-chips{grid-template-columns:1fr 1fr}}
 </style>
 <section class="hm-hero" aria-labelledby="hm-title">
   <div>
@@ -123,45 +132,19 @@
 
 <section class="hm-section" aria-labelledby="hm-current-title">
   <div class="hm-section-head">
-    <div><span class="hm-label">Current research</span><h2 id="hm-current-title">Planning the operation of eVTOL fleets</h2></div>
-    <p>Moving from the question of where demand exists to how future services can respond.</p>
+    <div><span class="hm-label">Current focus · Baylor University</span><h2 id="hm-current-title">From predicting demand to operating a fleet</h2></div>
+    <p>A concise look at my ongoing research. The interactive methods and full eVTOL research video are on the Research page.</p>
   </div>
-    {% assign home_ev_video = site.static_files | where_exp: "file", "file.path == '/assets/videos/Final-48s.mp4'" | first %}
-    {% assign home_ev_poster = site.static_files | where_exp: "file", "file.path == '/assets/images/evtol-research-poster.jpg'" | first %}
-  <div class="hm-project" style="display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem">
+  <div class="hm-current-compact">
     <div>
-      <h3>Scheduling aircraft under real operating constraints</h3>
-      <p>Imagine several vertiports, a limited fleet of electric aircraft, and passenger requests arriving throughout the day. An aircraft must have enough energy to complete a trip and retain a safe reserve; charging and vehicle availability influence the next assignment.</p>
-      <p>My ongoing work at Baylor studies how optimization and simulation can help evaluate these interconnected decisions. The focus includes rolling-horizon scheduling and the trade-offs between service, energy use, and operational feasibility.</p>
-      <p class="hm-project-note">This is ongoing research. Detailed methods and performance results will be shared when ready for public release.</p>
-      <a class="hm-more" href="{{ '/research/' | relative_url }}">Explore the research direction →</a>
+      <span class="hm-current-eyebrow">Ongoing · eVTOL operations</span>
+      <h3>Making aircraft decisions under real constraints</h3>
+      <p>Studying how passenger requests, battery reserves, charging, and vertiport availability influence rolling-horizon fleet scheduling.</p>
+      <a class="hm-current-action" href="{{ '/research/' | relative_url }}">Explore the research and video →</a>
     </div>
-    {% if home_ev_video %}
-    <div class="hm-video-frame" style="grid-column:1 / -1;width:100%;max-width:100%;min-width:0">
-      <video controls playsinline preload="metadata" style="display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain" {% if home_ev_poster %}poster="{{ '/assets/images/evtol-research-poster.jpg' | relative_url }}"{% endif %} aria-label="Overview of ongoing eVTOL fleet scheduling research: Global optimization and PCMTSP">
-        <source src="{{ '/assets/videos/Final-48s.mp4' | relative_url }}" type="video/mp4">
-        Your browser does not support embedded video. <a href="{{ '/assets/videos/Final-48s.mp4' | relative_url }}">Watch the research video</a>.
-      </video>
-      <p class="hm-video-caption">The video compares global planning with rolling-horizon PCMTSP scheduling. For the clearest view of its labels and side-by-side diagrams, use fullscreen or the larger-view link. Results relate to the study scenarios, not real-world operating guarantees.</p>
-      <p><a class="hm-watch-larger" href="{{ '/assets/videos/Final-48s.mp4' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Open the eVTOL research video in a new tab for a larger view">Watch in a larger view ↗</a></p>
+    <div class="hm-current-chips" aria-label="Research focus areas">
+      <span>Passenger service</span><span>Fleet dispatch</span><span>Battery &amp; charging</span><span>Operational feasibility</span>
     </div>
-    {% else %}
-    <div class="hm-project-viz" id="hm-project-viz" aria-label="Illustration of four vertiports connected by possible aircraft routes">
-      <svg class="hm-route-svg" viewBox="0 0 330 205" role="img" aria-labelledby="hm-diagram-title hm-diagram-desc">
-        <title id="hm-diagram-title">Vertiport network</title>
-        <desc id="hm-diagram-desc">Four vertiports and a moving aircraft show an illustrative route. This is not a simulation or experimental result.</desc>
-        <path class="hm-route-line" d="M48 140 L163 52 L286 123 L179 177 Z M48 140 L286 123"/>
-        <path class="hm-route-active" d="M48 140 L163 52 L286 123"/>
-        <g class="hm-aircraft-track"><circle class="hm-aircraft" cx="0" cy="0" r="9"/></g>
-        <g><circle class="hm-route-node" cx="48" cy="140" r="15"/><circle class="hm-route-node-core" cx="48" cy="140" r="5"/><text class="hm-route-label" x="48" y="170" text-anchor="middle">V1</text></g>
-        <g><circle class="hm-route-node" cx="163" cy="52" r="15"/><circle class="hm-route-node-core" cx="163" cy="52" r="5"/><text class="hm-route-label" x="163" y="25" text-anchor="middle">V2</text></g>
-        <g><circle class="hm-route-node" cx="286" cy="123" r="15"/><circle class="hm-route-node-core" cx="286" cy="123" r="5"/><text class="hm-route-label" x="286" y="153" text-anchor="middle">V3</text></g>
-        <g><circle class="hm-route-node" cx="179" cy="177" r="15"/><circle class="hm-route-node-core" cx="179" cy="177" r="5"/><text class="hm-route-label" x="179" y="204" text-anchor="middle">V4</text></g>
-      </svg>
-      <div class="hm-viz-footer"><span>eVTOL network · Concept illustration</span><button type="button" class="hm-viz-toggle" id="hm-viz-toggle" aria-pressed="false" aria-label="Pause aircraft animation">Pause</button></div>
-      <div class="hm-viz-legend"><span>Aircraft assignment · Charging · Vertiport operations</span></div>
-    </div>
-    {% endif %}
   </div>
 </section>
 
