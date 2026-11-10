@@ -33,3 +33,40 @@ jobs:
 
       - name: Check local links and media assets
         run: python3 scripts/check_site_links.py _site
+
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Build site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --strict_front_matter
+
+      - name: Install Playwright Chromium
+        run: |
+          npm install --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+
+      - name: Audit desktop and mobile experience
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory _site > /tmp/site-server.log 2>&1 &
+          node scripts/audit_browser.cjs
+
+      - name: Upload screenshots and browser report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-audit
+          path: browser-audit/
+          if-no-files-found: ignore
+          retention-days: 7
