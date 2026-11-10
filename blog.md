@@ -108,7 +108,7 @@ sitemap: true
 <div class="bj-grid" id="bj-grid">
   {% for post in site.posts %}
   {% assign bj_cat = post.categories | join: " | " | downcase %}
-  <article class="bj-article" data-bj-post data-bj-categories="{{ bj_cat | escape }}" data-bj-type="{{ post.post_type | default: '' | downcase | escape }}" data-bj-search="{{ post.title | append: ' ' | append: post.description | append: ' ' | append: post.categories | append: ' ' | append: post.post_type | downcase | strip_html | escape }}">
+  <article class="bj-article" data-bj-post data-bj-categories="{{ bj_cat | escape }}" data-bj-type="{{ post.post_type | default: '' | downcase | escape }}" data-bj-search="{{ post.title | append: ' ' | append: post.description | append: ' ' | append: bj_cat | append: ' ' | append: post.post_type | downcase | strip_html | escape }}">
     <div class="bj-article-mark">
       <svg viewBox="0 0 50 50" aria-hidden="true"><path d="M6 35 20 13l11 14 13-19" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="3 4"/><g fill="#e0f6f1" stroke="currentColor" stroke-width="2"><circle cx="6" cy="35" r="4"/><circle cx="20" cy="13" r="4"/><circle cx="31" cy="27" r="4"/><circle cx="44" cy="8" r="4"/></g></svg>
       <span>{% if post.categories and post.categories.size > 0 %}{{ post.categories | first }}{% else %}Research journal{% endif %}</span>
