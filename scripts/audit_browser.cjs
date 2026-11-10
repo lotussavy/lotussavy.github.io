@@ -7,6 +7,7 @@
  * Requires playwright and a running HTTP server for _site.
  */
 const { chromium } = require('playwright');
+const axe = require('axe-core');
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -22,7 +23,7 @@ const VIEWPORTS = [
   { name: 'tablet', width: 768, height: 1024 },
   { name: 'desktop', width: 1440, height: 900 }
 ];
-const failures = [], warnings = [], results = [];
+const failures = [], warnings = [], results = [], accessibility = [];
 const addFailure = (label, issue) => failures.push(label + ': ' + issue);
 const addWarning = (label, issue) => warnings.push(label + ': ' + issue);
 
@@ -74,6 +75,25 @@ async function main() {
         if (state.h1Count !== 1) addWarning(label, 'Expected one H1; found ' + state.h1Count);
         for (const img of state.missingImages) addFailure(label, 'failed image ' + img);
         for (const e of errors) addFailure(label, 'uncaught JavaScript error ' + e);
+        if (['/', '/research/', '/publications/', '/cv/', '/blog/', '/contact/'].includes(route) && viewport.name !== 'tablet') {
+          await page.addScriptTag({ content: axe.source });
+          const violations = await page.evaluate(async () => {
+            const report = await window.axe.run(document, {
+              runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'] }
+            });
+            return report.violations.map(v => ({
+              id: v.id, impact: v.impact, description: v.help,
+              count: v.nodes.length, targets: v.nodes.slice(0, 3).map(n => n.target.join(' '))
+            }));
+          });
+          accessibility.push({ route, viewport: viewport.name, violations });
+          for (const issue of violations) {
+            // Record all failures for review, without immediately blocking existing
+            // content on issues the browser suite did not introduce.
+            addWarning(label, 'axe ' + issue.impact + ': ' + issue.id + ' (' + issue.count +
+              ' elements: ' + issue.targets.join(', ') + ')');
+          }
+        }
         results.push({ route, viewport: viewport.name, ...state, jsErrors: errors.length });
         if (viewport.name !== 'tablet') {
           const safe = route === '/' ? 'home' : route.replace(/^\/|\/$/g, '').replaceAll('/', '-');
@@ -122,7 +142,7 @@ async function main() {
   } finally {
     await browser.close();
   }
-  fs.writeFileSync(path.join(OUT, 'results.json'), JSON.stringify({ results, failures, warnings }, null, 2));
+  fs.writeFileSync(path.join(OUT, 'results.json'), JSON.stringify({ results, failures, warnings, accessibility }, null, 2));
   const average = values => values.length ? Math.round(values.reduce((a, b) => a + b, 0) / values.length) : 'N/A';
   const mobile = results.filter(r => r.viewport === 'mobile');
   const desktop = results.filter(r => r.viewport === 'desktop');
