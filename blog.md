@@ -11,7 +11,7 @@ sitemap: true
 <div class="bj-page" id="bj-page">
 <style>
 .bj-page{--bj-navy:#10354e;--bj-teal:#137f83;--bj-border:#d8e7ea;--bj-ink:#1b415a;color:var(--bj-ink)}
-.bj-page *{box-sizing:border-box}.bj-page a:focus-visible,.bj-page button:focus-visible,.bj-page input:focus-visible{outline:3px solid #edb448;outline-offset:3px}
+.bj-page *{box-sizing:border-box}.bj-page [hidden]{display:none!important}.bj-page a:focus-visible,.bj-page button:focus-visible,.bj-page input:focus-visible{outline:3px solid #edb448;outline-offset:3px}
 .bj-hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(170px,.7fr);align-items:center;gap:1.4rem;border-radius:19px;padding:clamp(1.4rem,3vw,2.2rem);background:radial-gradient(circle at 85% 25%,rgba(27,167,166,.29),transparent 45%),linear-gradient(123deg,#0c2d46,#15536a);color:#e6f6fa}
 .bj-hero h1{font-size:clamp(1.95rem,3.4vw,2.75rem);color:#fff;line-height:1.15;margin:.45rem 0}.bj-hero p{color:#d7ebf1;line-height:1.6;max-width:690px;margin:.7rem 0}
 .bj-eyebrow{display:block;text-transform:uppercase;letter-spacing:.11em;font-size:.7rem;font-weight:850;color:#158284}.bj-hero .bj-eyebrow{color:#9fe6df}
@@ -73,7 +73,7 @@ sitemap: true
 {% if site.posts and site.posts.size > 0 %}
 {% assign bj_featured = site.posts | first %}
 <section class="bj-section" aria-labelledby="bj-featured-heading">
-  <div class="bj-heading"><div><span class="bj-eyebrow">Editor’s selection · From the journal</span><h2 id="bj-featured-heading">Featured reading</h2></div><p>A starting point from the existing research journal.</p></div>
+  <div class="bj-heading"><div><span class="bj-eyebrow">Latest post · From the journal</span><h2 id="bj-featured-heading">Featured reading</h2></div><p>A starting point from the existing research journal.</p></div>
   <article class="bj-featured">
     <div class="bj-featured-art" aria-hidden="true">
       <svg viewBox="0 0 280 190"><path d="M24 156Q87 30 140 93T255 34M30 45l110 48 100-43" fill="none" stroke="#3c9594" stroke-width="3" stroke-dasharray="7 7"/><g fill="#e1f5f1" stroke="#237d89" stroke-width="3"><circle cx="24" cy="156" r="13"/><circle cx="140" cy="93" r="15"/><circle cx="255" cy="34" r="13"/></g><g stroke="#3f9a9e" stroke-width="2" fill="none"><path d="M97 25 135 52 173 25M97 25 118 112M173 25 162 112"/><circle cx="97" cy="25" r="7"/><circle cx="173" cy="25" r="7"/><circle cx="118" cy="112" r="7"/><circle cx="162" cy="112" r="7"/></g></svg>
@@ -101,7 +101,7 @@ sitemap: true
   {% endfor %}
 </div>
 <div class="bj-format-row"><label for="bj-format">Article type</label><select id="bj-format"><option value="all">All formats</option>
-{% assign bj_types = site.posts | map: "post_type" | uniq | sort %}
+{% assign bj_types = site.posts | map: "post_type" | uniq %}
 {% for kind in bj_types %}{% if kind and kind != empty %}<option value="{{ kind | downcase | escape }}">{{ kind }}</option>{% endif %}{% endfor %}
 </select></div>
 {% if site.posts and site.posts.size > 0 %}
@@ -132,7 +132,16 @@ sitemap: true
 {% for topic in site.data.blog_topics %}
 {% assign topic_posts = site.posts | where_exp: "post", "post.categories contains topic.title" %}
 <a class="bj-topic-card" href="{{ '/blog/' | append: topic.slug | append: '/' | relative_url }}">
-<svg viewBox="0 0 60 60" aria-hidden="true"><path d="M9 44Q24 9 48 23M12 13l22 28 15-24" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="5 5"/><circle cx="9" cy="44" r="5" fill="#d8f4ee" stroke="currentColor" stroke-width="2"/><circle cx="48" cy="23" r="5" fill="#d8f4ee" stroke="currentColor" stroke-width="2"/><circle cx="34" cy="41" r="5" fill="#d8f4ee" stroke="currentColor" stroke-width="2"/></svg>
+{% case topic.slug %}
+{% when 'advanced-air-mobility' %}
+<svg viewBox="0 0 60 60" aria-hidden="true"><path d="M7 46Q29 7 53 21" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="5 5"/><g fill="#d8f4ee" stroke="currentColor" stroke-width="2"><circle cx="7" cy="46" r="6"/><circle cx="53" cy="21" r="6"/></g><path d="M18 18h24m-12-10v20m-8-7 16-7" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></svg>
+{% when 'neurosymbolic-ai' %}
+<svg viewBox="0 0 60 60" aria-hidden="true"><path d="M10 13 31 9 50 21M10 13l6 32 26 4 8-28M16 45 31 30l19-9M31 9v21l11 19" stroke="currentColor" stroke-width="2" fill="none"/><g fill="#d8f4ee" stroke="currentColor" stroke-width="2"><circle cx="10" cy="13" r="5"/><circle cx="31" cy="9" r="5"/><circle cx="50" cy="21" r="5"/><circle cx="16" cy="45" r="5"/><circle cx="42" cy="49" r="5"/></g><path d="m25 30 5 5 9-11" stroke="#168f85" stroke-width="3" fill="none"/></svg>
+{% when 'machine-learning' %}
+<svg viewBox="0 0 60 60" aria-hidden="true"><path d="M9 49V10m0 39h44" stroke="currentColor" stroke-width="2.4" fill="none"/><path d="m14 42 12-11 10 5 15-23" stroke="#208f8e" stroke-width="3" fill="none"/><g fill="#dcf5ed" stroke="currentColor" stroke-width="2"><circle cx="14" cy="42" r="4"/><circle cx="26" cy="31" r="4"/><circle cx="36" cy="36" r="4"/><circle cx="51" cy="13" r="4"/></g></svg>
+{% else %}
+<svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="3" fill="none"/><path d="m20 30 7 7 14-16" stroke="currentColor" stroke-width="3" fill="none"/></svg>
+{% endcase %}
 <small>{{ topic_posts.size }} articles</small><strong>{{ topic.title }}</strong><p>{{ topic.description }}</p><span class="bj-topic-cta">Explore collection →</span></a>
 {% endfor %}
 </div>
