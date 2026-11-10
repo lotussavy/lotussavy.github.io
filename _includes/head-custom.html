@@ -87,7 +87,19 @@
       "position": 3,
       "name": {{ page.title | default: page.name | jsonify }},
       "item": "{{ page.url | absolute_url }}"
-    }{% else %},
+    }{% elsif page.collection == 'posts' or page.url contains '/blog/' %}{% unless page.url == '/blog/' %},
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "{{ '/blog/' | absolute_url }}"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": {{ page.title | default: page.name | jsonify }},
+      "item": "{{ page.url | absolute_url }}"
+    }{% endunless %}{% else %},
     {
       "@type": "ListItem",
       "position": 2,
@@ -98,6 +110,32 @@
 }
 </script>
 {% endif %}
+
+{% comment %}Editorial metadata for original blog notes and analyses, distinct from authored scholarly publications.{% endcomment %}
+{% if page.collection == 'posts' %}
+{% assign article_image = page.image.path | default: page.image | default: site.image %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": "{{ page.url | absolute_url }}#article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: page.excerpt | strip_html | truncate: 190 | jsonify }},
+  "url": "{{ page.url | absolute_url }}",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
+  "author": { "@type": "Person", "@id": "{{ site.author.url }}#person", "name": {{ site.author.name | jsonify }} },
+  "publisher": { "@type": "Person", "@id": "{{ site.author.url }}#person", "name": {{ site.author.name | jsonify }} },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "image": "{{ article_image | absolute_url }}",
+  "inLanguage": {{ site.lang | default: 'en-US' | jsonify }}{% if page.categories and page.categories.size > 0 %},
+  "articleSection": {{ page.categories | join: ", " | jsonify }}{% endif %}{% if page.post_type %},
+  "genre": {{ page.post_type | jsonify }}{% endif %}{% if page.source_url %},
+  "isBasedOn": { "@type": "CreativeWork", "url": {{ page.source_url | jsonify }} }{% endif %}
+}
+</script>
+{% endif %}
+
 {% if page.url == '/publications/' %}
 <script type="application/ld+json">
 {
