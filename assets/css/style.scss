@@ -4502,3 +4502,46 @@ button:focus-visible {
 @media(prefers-reduced-motion:reduce){
  .research-header-flow,.research-header-nodes,.research-header-aircraft{animation:none!important}
 }
+
+
+/* WCAG AA readability refinements from Chromium/axe audit (2026-11).
+   Scoped to light surfaces; preserve white-on-navy hero text and active controls. */
+.hm-page .hm-journey-index{color:#0b5963!important}
+.hm-page .hm-journey-note{color:#415b65!important}
+.hm-page .hm-career-event p a{text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+
+.rh-hub .rh-section .rh-eyebrow,
+.rh-hub .rh-choice-number,
+.rh-hub .rh-exhibit-grid b,
+.rh-hub .rh-step small,
+.rh-hub .rh-state{color:#0b5963!important}
+.rh-hub .rh-hero-picker button[aria-pressed=true] span{color:#0b5963!important}
+
+.pg .pg-section .pg-eyebrow{color:#0a5a61!important}
+
+.cv-modern .cv-section .cv-modern-kicker{color:#0b5963!important}
+.cv-modern .cv-section p,
+.cv-modern .cv-section li,
+.cv-modern .cv-section small,
+.cv-modern .cv-section .cv-modern-description{color:#385565!important}
+.cv-modern .cv-section .cv-modern-skill-tags span{color:#274d59!important}
+.cv-modern .cv-section a{text-decoration:underline;text-underline-offset:2px}
+.cv-modern .cv-modern-paper-list li:before{color:#0b5963!important}
+.cv-modern .cv-modern-disclosure summary{color:#174c5c!important}
+
+.bj-page .bj-section p,
+.bj-page .bj-section small,
+.bj-page .bj-section span:not(.bj-topic-cta),
+.bj-page .bj-count{color:#365361!important}
+.bj-page .bj-section .bj-eyebrow,
+.bj-page .bj-section .bj-featured-meta,
+.bj-page .bj-section .bj-topic-cta{color:#0b5963!important}
+.bj-page .bj-article-mark span{color:#0b5963!important}
+.bj-page .bj-article .bj-date{color:#3d5968!important}
+
+.cm-page .cm-inquiries .cm-eyebrow,
+.cm-page .cm-profiles .cm-eyebrow{color:#0b5963!important}
+.cm-page .cm-inquiries > p,
+.cm-page .cm-option span,
+.cm-page .cm-response p,
+.cm-page .cm-response small{color:#3d5968!important}
