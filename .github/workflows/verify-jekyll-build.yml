@@ -54,13 +54,17 @@ jobs:
 
       - name: Install Playwright Chromium
         run: |
-          npm install --no-save playwright@1.56.1 axe-core@4.10.3
+          npm install --no-save playwright@1.56.1 axe-core@4.10.3 lighthouse@12.8.2
           npx playwright install --with-deps chromium
 
       - name: Audit desktop and mobile experience
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 --directory _site > /tmp/site-server.log 2>&1 &
           node scripts/audit_browser.cjs
+          export CHROME_PATH="$(node -p "require('playwright').chromium.executablePath()")"
+          npx lighthouse http://127.0.0.1:8765/ --output=json --output-path=browser-audit/lighthouse-home-mobile.json --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,seo
+          npx lighthouse http://127.0.0.1:8765/blog/ --preset=desktop --output=json --output-path=browser-audit/lighthouse-blog-desktop.json --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,seo
+          node scripts/summarize_lighthouse.cjs
 
       - name: Upload screenshots and browser report
         if: always()
