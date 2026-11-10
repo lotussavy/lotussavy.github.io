@@ -3,50 +3,49 @@ layout: default
 title: "Contact Kamal Acharya"
 description: "Contact Kamal Acharya, a Baylor University postdoctoral researcher in trustworthy and neurosymbolic AI, interpretable machine learning, and Advanced Air Mobility."
 permalink: /contact/
-last_modified_at: 2026-08-19
+last_modified_at: 2026-11-09
 ---
 
-<section class="contact-hero">
-  <p class="contact-eyebrow">Contact</p>
-  <h1>Let’s Connect</h1>
-  <p>I welcome research collaborations, invited talks, and student research inquiries in trustworthy and neurosymbolic AI, interpretable machine learning, and Advanced Air Mobility.</p>
-  <a class="contact-email-button" href="mailto:lotussavy@gmail.com" aria-label="Email Kamal Acharya">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.1L20.2 7H3.8L12 12.1Zm0 2.3L3 8.8V17h18V8.8l-9 5.6Z"/></svg>
-    Email me
-  </a>
-  <p><a href="mailto:lotussavy@gmail.com">lotussavy@gmail.com</a></p>
+<style>
+.cm-page{--cm-teal:#147f84;--cm-border:#d5e7e7;color:#20475e}.cm-page *{box-sizing:border-box}.cm-page a:focus-visible,.cm-page button:focus-visible{outline:3px solid #ebbc50;outline-offset:3px}
+.cm-page .cm-hero{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(140px,.6fr);align-items:center;gap:1.2rem;background:radial-gradient(circle at 86% 20%,rgba(37,161,162,.32),transparent 45%),linear-gradient(115deg,#0c2f49,#17586b);color:#fff;border:0;border-radius:18px;padding:clamp(1.3rem,3vw,2.1rem)}
+.cm-page .cm-hero h1{font-size:clamp(1.9rem,3vw,2.65rem);color:white}.cm-page .cm-hero p{color:#d8edf1;max-width:700px}.cm-page .cm-hero .contact-eyebrow{color:#a4ece3!important}
+.cm-hero>svg{width:100%;max-height:190px}.cm-hero-links{display:flex;gap:.55rem;flex-wrap:wrap;margin:1rem 0}
+.cm-hero-links a{display:inline-block;background:#e3f9f5;color:#174760!important;border-radius:9px;padding:.7rem .9rem;text-decoration:none;font-weight:800;font-size:.83rem}
+.cm-hero-links a+a{background:transparent;color:#fff!important;border:1px solid #9ad3d3}.cm-page .cm-address a{color:#b5f1ea}
+.cm-page .contact-section{margin:2rem 0}.cm-eyebrow{display:block;font-size:.71rem;color:var(--cm-teal);font-weight:850;letter-spacing:.1em;text-transform:uppercase}
+.cm-page .cm-inquiries h2,.cm-page .cm-profiles h2{color:#18415b;font-size:clamp(1.3rem,2vw,1.6rem);margin:.3rem 0}.cm-page .cm-inquiries>p{color:#547482;font-size:.87rem}
+.cm-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1rem 0}
+.cm-option{cursor:pointer;min-width:0;text-align:left;display:flex;flex-direction:column;gap:.35rem;padding:1rem;border:1px solid var(--cm-border);border-radius:13px;background:#fff;color:#20485c;font:inherit;transition:transform .15s,border-color .15s}
+.cm-option:hover{transform:translateY(-3px);border-color:#20908b}.cm-option[aria-pressed=true]{background:#e7f6f2;border-color:#188d8a;box-shadow:inset 0 -4px #178e88}
+.cm-option svg{width:40px;height:40px;color:#168286;margin-bottom:.3rem}.cm-option strong{font-size:.94rem}.cm-option span{font-size:.79rem;color:#557583;line-height:1.5}
+.cm-response{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1.2rem;padding:1.25rem;background:linear-gradient(120deg,#eff9f7,#fcfefe);border:1px solid #d0e7e4;border-radius:13px}
+.cm-response h3{color:#17435c;margin:.3rem 0;font-size:1.12rem}.cm-response p{color:#527380;font-size:.85rem;margin:.3rem 0}.cm-response small{font-size:.73rem;color:#68808a}
+.cm-response>a{background:#1a6077;color:white!important;padding:.78rem 1rem;border-radius:9px;text-decoration:none;text-align:center;font-size:.82rem;font-weight:800}
+.cm-profiles{padding:1.2rem;border:1px solid var(--cm-border);border-radius:13px;background:#f8fcfb}
+.cm-profiles .home-profile-links{gap:.7rem}.cm-profiles .profile-icon{width:46px;height:46px}
+@media(max-width:770px){.cm-page .cm-hero{grid-template-columns:1fr}.cm-hero>svg{display:none}.cm-options{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cm-options,.cm-response{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.cm-option{transition:none}}
+</style><div class="cm-page">
+<section class="contact-hero cm-hero" aria-labelledby="cm-hero-title">
+ <div><p class="contact-eyebrow">Contact · Collaboration · Conversation</p><h1 id="cm-hero-title">Let's connect ideas.</h1>
+ <p>I welcome research collaborations, speaking invitations and academic inquiries about Advanced Air Mobility, neurosymbolic AI and intelligent transportation systems.</p>
+ <div class="cm-hero-links"><a href="#cm-inquiries">Start a conversation ↓</a><a href="{{ '/research/' | relative_url }}">Explore my research</a></div>
+ <p class="cm-address">Email: <a href="mailto:lotussavy@gmail.com">lotussavy@gmail.com</a></p></div>
+ <svg viewBox="0 0 240 180" aria-hidden="true" focusable="false"><g fill="none" stroke="#7cd9d2" stroke-width="2"><path d="M20 130 85 49 145 97 214 24M20 130 96 156 145 97 217 139M85 49l62-23 67-2"/></g><g fill="#14516a" stroke="#a4efe5" stroke-width="2.5"><circle cx="20" cy="130" r="9"/><circle cx="85" cy="49" r="9"/><circle cx="145" cy="97" r="13"/><circle cx="214" cy="24" r="9"/><circle cx="217" cy="139" r="9"/><circle cx="96" cy="156" r="9"/><circle cx="147" cy="26" r="9"/></g></svg>
 </section>
 
-<section class="contact-section">
-  <h2>Ways to Collaborate</h2>
-  <div class="contact-grid contact-collaboration-grid">
-    <article class="contact-card">
-      <span class="contact-card-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M7 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm10 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM7 13c4 0 7 2 7 5v2H0v-2c0-3 3-5 7-5Zm10-.5c3.4 0 6 1.8 6 4.5v3h-7v-2c0-1.7-.8-3.2-2.2-4.3.9-.8 2-1.2 3.2-1.2Z"/></svg>
-      </span>
-      <h3>Research Collaboration</h3>
-      <p>Trustworthy and neurosymbolic AI, interpretable demand modeling, and optimization for Advanced Air Mobility.</p>
-    </article>
-    <article class="contact-card">
-      <span class="contact-card-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M11 3h2v10h-2V3Zm-4 7a5 5 0 0 0 10 0h2a7 7 0 0 1-6 6.9V20h4v2H7v-2h4v-3.1A7 7 0 0 1 5 10h2Z"/></svg>
-      </span>
-      <h3>Invited Talks</h3>
-      <p>Seminars on neurosymbolic AI, symbolic knowledge distillation, trustworthy AI, and future mobility.</p>
-    </article>
-    <article class="contact-card">
-      <span class="contact-card-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L4 8v6H2V7l10-5Zm-6 9.2 6 3 6-3V17c-1.5 2-3.5 3-6 3s-4.5-1-6-3v-5.8Z"/></svg>
-      </span>
-      <h3>Student Mentoring</h3>
-      <p>Research guidance in AI and machine learning, technical communication, and interdisciplinary project development.</p>
-    </article>
-  </div>
+
+<section class="contact-section cm-inquiries" id="cm-inquiries" aria-labelledby="cm-inquiries-title"><span class="cm-eyebrow">01 · Get in touch</span><h2 id="cm-inquiries-title">What would you like to discuss?</h2>
+<p>Choose a topic to prepare a relevant email with a suggested subject and message.</p>
+<div class="cm-options" role="group" aria-label="Inquiry topics"><button type="button" class="cm-option" data-cm-topic="collaboration" aria-pressed="true"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="11" cy="12" r="6"/><circle cx="35" cy="12" r="6"/><circle cx="23" cy="35" r="6"/><path d="M16 17 20 29m11-12-5 12M17 12h12"/></svg><strong>Research collaboration</strong><span>Collaborate on AAM demand, neurosymbolic AI or optimization.</span></button><button type="button" class="cm-option" data-cm-topic="talk" aria-pressed="false"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="9" y="6" width="30" height="27" rx="4"/><path d="M24 33v9M14 42h20M17 15h14M17 22h10"/></svg><strong>Invited talk</strong><span>Seminars, conferences and invited research presentations.</span></button><button type="button" class="cm-option" data-cm-topic="mentoring" aria-pressed="false"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m5 15 19-9 19 9-19 9L5 15Zm9 9v9c6 6 14 6 20 0v-9M43 15v18"/></svg><strong>Student inquiry</strong><span>Academic discussions, student research and mentoring questions.</span></button></div>
+<div class="cm-response" aria-live="polite"><div><span class="cm-eyebrow" id="cm-response-tag">RESEARCH COLLABORATION</span><h3 id="cm-response-heading">Discuss a research idea</h3><p id="cm-response-copy">Share the research topic, possible collaboration and any relevant work.</p><small>Your email application opens with a draft; nothing is sent automatically.</small></div><a id="cm-response-link" href="mailto:lotussavy@gmail.com?subject=Research%20collaboration%20inquiry">Prepare email ↗</a></div>
 </section>
 
-<section class="contact-section contact-profiles">
+<section class="contact-section contact-profiles cm-profiles">
   <div>
-    <h2>Professional Profiles</h2>
+    <span class="cm-eyebrow">02 · Stay connected</span><h2>Professional profiles</h2>
     <p>Follow my publications, projects, and professional activity.</p>
   </div>
   <p class="home-profile-links" aria-label="Academic and professional profiles">
@@ -64,3 +63,16 @@ last_modified_at: 2026-08-19
     </a>
   </p>
 </section>
+</div><script>
+(function(){'use strict';var root=document.querySelector('.cm-page');if(!root)return;
+var topics={
+ collaboration:{tag:'RESEARCH COLLABORATION',heading:'Discuss a research idea',copy:'Share the research topic, possible collaboration and any relevant work.',subject:'Research collaboration inquiry',body:'Hello,\n\nI am contacting you about a potential research collaboration.\n\nTopic or project:\n\nPossible collaboration:\n\nRelevant links:\n\nBest regards,'},
+ talk:{tag:'INVITED TALK',heading:'Invite a research presentation',copy:'Include event name, intended audience, proposed dates and topic.',subject:'Invitation for a research talk',body:'Hello,\n\nI would like to invite you to present at an event.\n\nEvent and organization:\n\nPotential topic or audience:\n\nDate and format:\n\nBest regards,'},
+ mentoring:{tag:'STUDENT INQUIRY',heading:'Ask about research or mentoring',copy:'Introduce your interests, background and specific research question.',subject:'Student research inquiry',body:'Hello,\n\nI am writing regarding an academic research inquiry.\n\nMy background:\n\nResearch interests or question:\n\nBest regards,'}
+};
+function activate(k){var t=topics[k];if(!t)return;root.querySelectorAll('[data-cm-topic]').forEach(function(b){b.setAttribute('aria-pressed',String(b.getAttribute('data-cm-topic')===k))});
+root.querySelector('#cm-response-tag').textContent=t.tag;root.querySelector('#cm-response-heading').textContent=t.heading;root.querySelector('#cm-response-copy').textContent=t.copy;
+root.querySelector('#cm-response-link').href='mailto:lotussavy@gmail.com?subject='+encodeURIComponent(t.subject)+'&body='+encodeURIComponent(t.body)}
+root.querySelectorAll('[data-cm-topic]').forEach(function(b){b.addEventListener('click',function(){activate(b.getAttribute('data-cm-topic'))})});activate('collaboration');
+})();
+</script>
