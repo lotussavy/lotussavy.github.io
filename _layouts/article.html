@@ -28,6 +28,31 @@ layout: default
     {{ content }}
   </div>
 
+  {% assign insight_area = '' %}
+  {% if page.categories contains 'AAM & Mobility Systems' %}
+    {% assign insight_area = 'aam' %}
+  {% elsif page.categories contains 'Neurosymbolic & Trustworthy AI' %}
+    {% assign insight_area = 'neuro' %}
+  {% elsif page.categories contains 'Machine Learning & Modeling' %}
+    {% assign insight_area = 'modeling' %}
+  {% endif %}
+  {% if insight_area != '' %}
+  <aside class="article-research-bridge" aria-labelledby="article-research-bridge-title">
+    <p class="article-research-bridge-kicker">Related scholarship</p>
+    <h2 id="article-research-bridge-title">Continue into the published research</h2>
+    <p>These research publications provide additional context beyond this blog explanation or paper analysis.</p>
+    {% case insight_area %}
+      {% when 'aam' %}
+      <a href="{{ '/publications/demand-modeling-for-advanced-air-mobility-challenges-opportunities-and-future-directions/' | relative_url }}">Demand Modeling for Advanced Air Mobility — IEEE T-ITS (2026)</a>
+      {% when 'neuro' %}
+      <a href="{{ '/publications/survey-on-symbolic-knowledge-distillation-of-large-language-models/' | relative_url }}">Symbolic Knowledge Distillation of Large Language Models — IEEE TAI (2024)</a>
+      {% when 'modeling' %}
+      <a href="{{ '/publications/data-driven-approach-to-enhancing-gravity-models-for-trip-demand-prediction/' | relative_url }}">Data-Driven Approach to Enhancing Gravity Models for Trip Demand Prediction</a>
+    {% endcase %}
+    <a class="article-bridge-secondary" href="{{ '/publications/' | relative_url }}">Browse all publications →</a>
+  </aside>
+  {% endif %}
+
   {% if page.related_posts %}
   <section class="related-articles" aria-labelledby="related-articles-title">
     <h2 id="related-articles-title">Related research notes</h2>
@@ -204,4 +229,10 @@ layout: default
       font-size: 0.9em;
     }
   }
+  .article-research-bridge{margin:2rem 0;padding:1.25rem 1.4rem;border:1px solid #c9e3df;border-radius:13px;background:linear-gradient(130deg,#eaf8f4,#fbfdfd)}
+  .article-research-bridge h2{font-size:1.18rem;color:#174a60;margin:.25rem 0 .5rem}
+  .article-research-bridge p{color:#50707e;font-size:.86rem;line-height:1.6}
+  .article-research-bridge-kicker{margin:0;color:#137d81!important;font-size:.72rem!important;letter-spacing:.1em;text-transform:uppercase;font-weight:800}
+  .article-research-bridge a{display:block;color:#166785;font-size:.9rem;font-weight:750;margin-top:.6rem}
+  .article-research-bridge .article-bridge-secondary{font-size:.8rem;font-weight:700}
 </style>
