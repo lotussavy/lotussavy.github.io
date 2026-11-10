@@ -22,9 +22,28 @@ last_modified_at: 2026-11-09
 .pg-current{border:1px solid #c6e0d8;border-radius:12px;padding:1.1rem 1.25rem;background:#f1f9f5}.pg-current h2{margin:.3rem 0;font-size:1.24rem}.pg-current p{font-size:.87rem;color:#476b75;line-height:1.65}.pg-current a{font-size:.84rem;font-weight:800;color:#17677e}
 .pg-traditional{border-top:1px solid #dce7eb;padding-top:1.2rem}.pg-traditional summary{cursor:pointer;font-weight:800;color:#155b76;padding:.7rem 0}.pg-traditional .pub-list-section{margin-top:1rem}
 @media(max-width:720px){.pg-gallery,.pg-featured{grid-template-columns:1fr}.pg-card-visual{height:80px}.pg-card-visual svg{width:60px;height:60px}.pg-hero{padding:1.2rem}.pg-metric{padding:.5rem .65rem}}
+
+.pg-knowledge{margin:1.35rem 0 1.7rem;padding:1.2rem 1.35rem;border-radius:13px;border:1px solid #cde2e4;background:linear-gradient(120deg,#f1faf8,#fff)}
+.pg-knowledge h2{font-size:1.18rem;margin:.28rem 0 .5rem}.pg-knowledge p{font-size:.86rem;line-height:1.55;color:#536e7d;margin:.2rem 0 .8rem}
+.pg-knowledge-links{display:flex;flex-wrap:wrap;gap:.5rem}
+.pg-knowledge-links a{display:inline-flex;padding:.5rem .7rem;background:#fff;border:1px solid #d1e3e4;border-radius:8px;color:#146b7d;font-size:.8rem;text-decoration:none;font-weight:750}
+.pg-knowledge-links a:hover{background:#e7f5f1}
+
 </style>
 
 <div class="pg" id="publication-gallery">
+<section class="pg-knowledge" aria-labelledby="pg-knowledge-title">
+<span class="pg-eyebrow">Learn the methods</span>
+<h2 id="pg-knowledge-title">From research papers to practical explanations</h2>
+<p>Explore research notes that explain ideas behind demand modeling and interpretable AI. These are technical explainers and paper analyses, not additional peer-reviewed publications.</p>
+<div class="pg-knowledge-links">
+<a href="{{ '/blog/2024/08/25/gravity-model-in-transportation-planning/' | relative_url }}">Gravity models in transportation →</a>
+<a href="{{ '/blog/2022/11/01/neurosymbolic-ai/' | relative_url }}">Neurosymbolic AI explained →</a>
+<a href="{{ '/blog/2025/09/26/urban-air-mobility-uam-airport-shuttles-or-city-taxis/' | relative_url }}">Airport shuttles vs city taxis →</a>
+<a href="{{ '/blog/' | relative_url }}">Research journal →</a>
+</div>
+</section>
+
 <section class="pg-hero">
   <span class="pg-eyebrow">Research · Papers · Collaborations</span>
   <h1>Publications</h1>
