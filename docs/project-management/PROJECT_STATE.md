@@ -28,7 +28,7 @@
 ## Immediate next action
 1. Verify GitHub Pages build/publishing mode and run `bundle exec jekyll build` in a repository checkout with dependencies.
 2. Confirm production `https://lotussavy.github.io/optimization/` loads with the expected content and valid CSS; test mobile/keyboard and button choices.
-3. After successful verification, add `Optimization Lab` to `_data/navigation.yml` (prefer between Research and Publications), repeat build/link checks, and mark BL-002 **Done**.
+3. Main navigation and footer links have now been committed; confirm they appear on the deployed site, then mark BL-002 **Done** only after build/route checks.
 4. Then begin BL-003 (reusable lesson layout and metadata). Do not count the landing page as OPT-001 or LAB-A.
 
 ## Handoff
