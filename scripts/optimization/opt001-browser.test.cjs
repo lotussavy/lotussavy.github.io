@@ -36,7 +36,7 @@ const { chromium } = require('playwright');
     // A CDN outage should produce a failing review gate, not a false pass.
     await page.waitForFunction(() =>
       Boolean(window.MathJax && window.MathJax.startup && window.MathJax.startup.promise),
-      { timeout: 15000 }
+      null, { timeout: 15000 }
     );
     await page.evaluate(() => window.MathJax.startup.promise);
     const equations = await page.locator('.ol-lesson-body mjx-container').count();
