@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="ol-lesson" aria-labelledby="ol-lesson-title">
+  {% include optimization/lesson-header.html %}
+  <div class="ol-lesson-columns">
+    <div class="ol-lesson-body">
+      {{ content }}
+    </div>
+    <aside class="ol-lesson-aside" aria-label="Lesson information">
+      <div class="ol-lesson-aside-card">
+        <h2>Lesson overview</h2>
+        <dl>
+          <dt>Level</dt><dd>{{ page.level_label | default: page.level | default: 'Foundations' | escape }}</dd>
+          <dt>Time</dt><dd>{{ page.estimated_minutes | default: 10 }} minutes</dd>
+          <dt>Lesson</dt><dd>{{ page.lesson_id | default: 'Preview' | escape }}</dd>
+        </dl>
+        {% if page.prerequisites and page.prerequisites.size > 0 %}
+        <h3>Prerequisites</h3>
+        <ul>{% for item in page.prerequisites %}
+          <li>{% if item.url %}<a href="{{ item.url | relative_url }}">{{ item.title | default: item | escape }}</a>{% else %}{{ item.title | default: item | escape }}{% endif %}</li>
+        {% endfor %}</ul>
+        {% else %}<p>No prerequisites.</p>{% endif %}
+        {% if page.concepts and page.concepts.size > 0 %}
+        <h3>Key concepts</h3>
+        <ul>{% for term in page.concepts %}<li>{{ term | replace: '-', ' ' | escape }}</li>{% endfor %}</ul>
+        {% endif %}
+      </div>
+    </aside>
+  </div>
+  {% include optimization/lesson-footer.html %}
+</article>
