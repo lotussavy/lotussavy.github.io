@@ -164,7 +164,7 @@ We can use **exhaustive enumeration** because the feasible set contains only 13 
 n^*=8,\qquad P(n^*)=\$220.
 \]
 
-<details>
+<details markdown="1">
 <summary><strong>Optional deeper look: an independent algebraic certificate</strong></summary>
 
 We can rewrite the objective by completing the square:
@@ -244,28 +244,28 @@ Even a correctly solved mathematical problem can lead to a misleading practical 
 
 Try these questions *before* opening each explanation. No answers are sent or stored.
 
-<details>
+<details markdown="1">
 <summary><strong>1. Which quantity is the decision variable?</strong> Revenue, fleet size, or profit?</summary>
 
 **Answer: Fleet size \(n\).** We choose \(n\). Revenue and profit are numerical outcomes calculated from that choice. If you chose profit, notice that it measures the outcome we want to improve rather than something directly controlled.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>2. Is a fleet size of 7.5 feasible in this model?</strong></summary>
 
 **Answer: No.** Our feasible set contains only integers from 0 to 12. A real-number fleet size such as 7.5 violates the integer-domain requirement, even though the formula itself can be evaluated at that number.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>3. Why is a fleet of 4 feasible but not optimal?</strong></summary>
 
 **Answer:** Four is an allowed integer, so it is feasible. However, it produces a profit of $140, whereas another feasible fleet size—eight—produces $220. Being allowed does not automatically mean being best.
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>4. What justifies calling eight vehicles globally optimal?</strong></summary>
 
 **Answer:** We evaluated **all 13 feasible integer choices** and found no higher profit. Independently, \(P(n)=220-5(n-8)^2\leq220\) proves the same upper bound. The visual appearance of a peak alone is not the mathematical guarantee.
