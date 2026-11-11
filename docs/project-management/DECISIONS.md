@@ -13,6 +13,9 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-006 | Advanced eVTOL/PCMTSP after foundational track | Baseline | Avoid blocking MVP on research complexity |
 | ADR-007 | Store non-sensitive project docs in repository, excluded from Jekyll published site | Accepted 2026-11-11 | Easy versioning while avoiding public-site navigation; **GitHub contents remain public** |
 
+| ADR-008 | Keep public navigation unchanged until /optimization/ is deployed and checked | Accepted 2026-11-11 | Prevent global broken link while site build/live route remain unverified |
+| ADR-009 | Use landing page with preview-only lab and no links to unpublished lessons | Accepted 2026-11-11 | Avoid misleading users into thinking LAB-A or OPT-001 are already released |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
