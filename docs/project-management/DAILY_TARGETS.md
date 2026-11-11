@@ -17,7 +17,7 @@
 | Date | Primary target | Acceptance evidence | Current state |
 |---|---|---|---|
 | 2026-11-11 | BL-005 verification infrastructure: automated tests + Jekyll smoke-check workflow; capture remaining QA gaps | Workflow committed, source checked, CI results if available; browser/Jekyll uncertainties documented | In Review |
-| 2026-11-12 | BL-005 live/deployment and browser QA, or diagnose workflow failures and repair | Successful Jekyll build, correct preview CSS/JS, responsive/keyboard checks, linked evidence | Planned; do not presume completion |
+| 2026-11-12 | BL-005 live/deployment and browser QA, including Chromium Actions log inspection and repair | Successful Jekyll build, correct preview CSS/JS, responsive/keyboard checks, linked evidence | Planned; do not presume completion |
 | 2026-11-13 | BL-006 editorial design for OPT-001: narrative structure, learning objectives, prediction exercise, assumptions | Article outline, citations/lesson plan reviewed; no premature 'published' label | Planned |
 | 2026-11-16 | BL-006 first full OPT-001 draft using the existing lesson template and LAB-A | Complete draft with math, interpretation, knowledge checks; draft is noindex | Planned |
 | 2026-11-17 | BL-006 scientific/editorial/functional QA and publication decision | Math/content checks, references, full browser verification, release record | Planned |
