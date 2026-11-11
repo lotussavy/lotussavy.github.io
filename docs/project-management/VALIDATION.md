@@ -36,6 +36,33 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 - **Outstanding acceptance:** Clean `bundle exec jekyll build`, preview HTML/CSS generated, browser/keyboard/mobile and review metadata tests. BL-003 remains **In Review**.
 - **Note:** This only creates a reusable editorial preview, not OPT-001 or LAB-A. Neither algorithm nor numerical outputs are claimed.
 
+## BL-004 — Mathematical core and independent verification (2026-11-11)
+
+**Sources:**
+- `assets/js/optimization/profit-model.js`
+- `scripts/optimization/profit-fixtures.json`
+- `scripts/optimization/profit-model.test.cjs`
+- [LAB_A_MODEL.md](LAB_A_MODEL.md)
+
+**Exact test execution:** `node --test /mnt/data/bl004/scripts/optimization/profit-model.test.cjs` on Node.js `v22.16.0`; result **7 tests passed, 0 failed**. The local files were then compared with the GitHub readback by byte length and FNV-1a hash; all three matched (below). The suite is reproducible from repository root with `node --test scripts/optimization/profit-model.test.cjs`.
+
+| GitHub path | Bytes / chars | FNV-1a 32-bit | Match |
+|---|---:|---|---|
+| `assets/js/optimization/profit-model.js` | 2931 | `a164a192` | Yes |
+| `scripts/optimization/profit-fixtures.json` | 433 | `da7d3fcd` | Yes |
+| `scripts/optimization/profit-model.test.cjs` | 3522 | `9cc3acbc` | Yes |
+
+**Coverage and results:**
+1. All **13** feasible integer decisions independently checked against fixed revenue/cost/profit tuples.
+2. Endpoints `0` and `12`, out-of-bounds integers, noninteger, string, null, NaN, infinities and other wrong types rejected appropriately.
+3. Exhaustive sorted set without duplicate candidates.
+4. Unique reported optimizer `n=8`, `P=220`, candidate count 13, exact-enumeration status.
+5. Independent algebraic certificate: `P(n)=220−5(n−8)²`.
+6. Revenue minus cost = profit for all feasible integers.
+7. Immutability/determinism; separate browser-like VM smoke test of `OptimizationProfitModel.solveExact()` passed.
+
+**Task disposition:** BL-004 **Done** (source and mathematical tests complete). This does **not** constitute a browser GUI, a verified Jekyll build, or a published lesson. BL-002/003 browser and build acceptance remain open.
+
 ## Required test categories for future features
 1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
 2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
