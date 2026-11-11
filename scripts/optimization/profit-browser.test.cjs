@@ -11,7 +11,7 @@ const { chromium } = require('playwright');
   try {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
     page.on('pageerror', error => errors.push(error.message));
-    const response = await page.goto(base + '/optimization/labs/profit-preview/', { waitUntil: 'networkidle' });
+    const response = await page.goto(base + '/optimization/labs/profit-preview/', { waitUntil: 'domcontentloaded' });
     assert.equal(response.status(), 200, 'Preview URL should return HTTP 200');
     assert.match(await page.title(), /LAB-A/i);
     assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'noindex,nofollow');
