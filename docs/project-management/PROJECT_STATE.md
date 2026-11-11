@@ -13,7 +13,7 @@
 | BL-002 | In Review | Homepage and navigation source committed; live route/browser tests open |
 | BL-003 | In Review | Shared lesson framework committed; Jekyll render/QA open |
 | BL-004 | Done | Exact model, 13 fixtures, 7 passing mathematical tests, analytical certificate |
-| BL-005 | **In Review** | LAB-A UI, CSS, nonindexed preview, Node test harness committed; 78 assertions passed in simulated DOM; Jekyll/real browser still unverified |
+| BL-005 | **In Review** | LAB-A UI, CSS, nonindexed preview, Node test harness committed; 78 direct UI assertions and five committed test cases (98 additional assertions) passed in simulated DOM; Jekyll/real browser still unverified |
 | BL-006–BL-015 | Proposed | See TASKS.md; OPT-001 is not published |
 
 ## BL-005 files
