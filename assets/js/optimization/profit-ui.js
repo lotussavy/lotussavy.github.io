@@ -70,6 +70,7 @@
       container.querySelector('[data-ol-revenue]').textContent = money(row.revenue);
       container.querySelector('[data-ol-cost]').textContent = money(row.cost);
       container.querySelector('[data-ol-profit]').textContent = money(row.profit);
+      container.querySelector('[data-ol-error]').hidden = true;
       container.querySelector('[data-ol-explanation]').textContent = explain(row, optimum);
       renderChart(container, model, row);
       return row;
