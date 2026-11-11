@@ -28,6 +28,7 @@ sitemap: true
     .ol-btn:hover{transform:translateY(-2px)}
     .ol-btn-primary{background:#d7fff5;color:#123b4c!important}
     .ol-btn-secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.38);color:#fff!important}
+    .ol-lab-preview-link{background:#0d6573;color:#fff!important;border-color:#0d6573}.ol-lab-preview-link:hover{background:#0b5060}
     .ol-hero-visual{min-height:230px;display:flex;align-items:center;justify-content:center}
     .ol-hero-visual svg{width:100%;max-width:390px;height:auto;overflow:visible}
     .ol-section{margin:clamp(2rem,4vw,3.3rem) 0}
@@ -76,7 +77,7 @@ sitemap: true
       <p>Build intuition first. Understand the mathematics next. Then experiment with algorithms, code, and real-world routing problems.</p>
       <div class="ol-actions">
         <a class="ol-btn ol-btn-primary" href="#learning-paths">Explore learning paths ↓</a>
-        <a class="ol-btn ol-btn-secondary" href="#find-your-path">Find your starting point</a>
+        <a class="ol-btn ol-btn-secondary" href="{{ '/optimization/labs/profit-preview/' | relative_url }}">Try LAB-A preview →</a>
       </div>
     </div>
     <div class="ol-hero-visual" aria-hidden="true">
@@ -141,11 +142,12 @@ sitemap: true
     <div class="ol-feature">
       <div>
         <h3>Our first lab: Find the best decision</h3>
-        <p>Choose how many vehicles to operate, observe the effect on revenue and cost, and learn how an objective function identifies the best choice. This is the planned first exercise, not yet an active simulator.</p>
+        <p>Choose how many vehicles to operate, observe revenue, cost, and profit, and discover the best decision using the interactive slider and verified mathematical model.</p>
         <ol class="ol-pipeline" aria-label="Learning process">
           <li>Choose</li><li>Observe</li><li>Predict</li><li>Verify</li>
         </ol>
-        <p class="ol-small">Planned next release: OPT-001 and LAB-A. No unverified solver outputs or interactive controls are presented as complete.</p>
+        <p><a class="ol-btn ol-btn-primary ol-lab-preview-link" href="{{ '/optimization/labs/profit-preview/' | relative_url }}">Open Interactive LAB-A Preview →</a></p>
+        <p class="ol-small"><strong>Development preview:</strong> The simulator is available for exploration; the full OPT-001 lesson and final editorial/accessibility review are still in progress.</p>
       </div>
       <div class="ol-feature-visual" aria-label="Illustration of profit increasing and decreasing with fleet size">
         <svg viewBox="0 0 400 220" role="img" aria-labelledby="ol-plot-title ol-plot-desc">
