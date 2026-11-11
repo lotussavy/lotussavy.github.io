@@ -1,5 +1,14 @@
 # Project Changelog
 
+## 2026-11-11 — BL-006C OPT-001 technical and academic review
+- **Reviewed:** Exact mathematical model, teaching sequence, official citations, draft metadata, quiz explanations and accessibility structure.
+- **Fixed:** LAB-A stylesheet moved from nested section to shared page head for applicable lesson pages.
+- **Added:** OPT-001 Playwright rendered-page regression and CI invocation (equations, disclosures, keyboard, mobile and robot meta checks).
+- **Verified:** All relevant GitHub source readback checks and JavaScript syntax; independently recomputed model outcomes and exact optimizer; MIT/Stanford links reviewed.
+- **Not verified:** Updated CI/Chromium run, Jekyll rendered route, MathJax output and manual screen-reader/contrast.
+- **Decision:** **No publication**; BL-006C remains In Review. Next: capture CI/browser logs and manual accessibility evidence. OPT-002 not started.
+
+
 ## 2026-11-11 — BL-006B complete OPT-001 draft
 - **Created:** `optimization/learn/foundations/what-is-optimization.md` as a draft lesson (noindex/nofollow, sitemap false) with all required conceptual, experiment, mathematical, Python and review sections.
 - **Reused:** LAB-A profit include unchanged, avoiding duplicate solver or UI formulas.
