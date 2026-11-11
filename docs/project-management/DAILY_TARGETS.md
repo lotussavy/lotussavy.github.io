@@ -30,9 +30,16 @@ The date sequence is an illustrative allocation; if a predecessor check fails or
 - **Next distinct session:** BL-006B complete draft. Remaining CI/manual QA should be tracked independently and not silently called complete.
 - The dates in the rolling plan are planning suggestions, not fixed assertions about the work's execution.
 
+## BL-006B scoped work checkpoint (2026-11-11)
+
+- User separately authorized BL-006B in this session. The complete OPT-001 **draft** has been implemented and verified at source level.
+- The source is noindexed and remains unlisted; publication, manual accessibility checks and final academic acceptance are not claimed.
+- **Next distinct working session:** BL-006C review and explicit publication decision, not OPT-002 or the rest of the curriculum.
+- The original November 16/17 dates are illustrative planning allocations superseded by actual user-authorized working sessions.
+
 ## Today's hard stop
 
-**Do not write or publish the full OPT-001 article during the BL-006A design session.** This session is limited to the instructional plan and project records; do not manufacture review/build/deployment passes.
+**Do not publish OPT-001 during the BL-006B drafting session.** Draft creation and isolated Python/source verification are today's acceptance scope; full review and release belong to BL-006C.
 
 ## Next-session restart instruction
 
