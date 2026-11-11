@@ -42,6 +42,9 @@ jobs:
         run: |
           node --test scripts/optimization/profit-model.test.cjs scripts/optimization/profit-ui.test.cjs
 
+      - name: Verify OPT-001 Python teaching example
+        run: python3 scripts/optimization/opt001_example.py
+
       - name: Set up Ruby and Bundler
         uses: ruby/setup-ruby@v1
         with:
@@ -65,6 +68,9 @@ jobs:
           test -f _site/assets/js/optimization/profit-model.js
           test -f _site/assets/js/optimization/profit-ui.js
           grep -q 'noindex,nofollow' _site/optimization/labs/profit-preview/index.html
+          test -f _site/optimization/learn/foundations/what-is-optimization/index.html
+          grep -q 'name="robots" content="noindex,nofollow"' _site/optimization/learn/foundations/what-is-optimization/index.html
+          grep -q 'ol-profit-lab' _site/optimization/learn/foundations/what-is-optimization/index.html
           grep -q 'Optimization Lab' _site/optimization/index.html
           ! test -d _site/docs/project-management
           echo "Optimization Lab build smoke checks passed"
