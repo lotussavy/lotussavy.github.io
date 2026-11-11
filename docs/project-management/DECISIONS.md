@@ -20,6 +20,10 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-011 | Front matter is the lesson metadata contract; draft previews are noindex and off sitemap | Accepted 2026-11-11 | Stable IDs, prerequisites, review flags and editorial controls without server/database |
 | ADR-012 | Scoped `ol-` CSS compiled by Jekyll and conditional load on lesson pages | Accepted 2026-11-11 (pending build verification) | Avoid global stylesheet changes and keep lesson assets isolated |
 
+| ADR-013 | Implement LAB-A as dependency-free deterministic JavaScript, exposed to CommonJS and browsers | Accepted 2026-11-11 | Avoid solver/server dependency; keep mathematics separate from UI and usable with current Jekyll stack |
+| ADR-014 | Report exact optimality only for fixed integer domain 0–12 with full enumeration plus analytical bound | Accepted 2026-11-11 | Guarantees are proven for toy model, not actual fleet operation |
+| ADR-015 | Store independent fixtures and Node tests under excluded `scripts/optimization/` | Accepted 2026-11-11 | Reproducible tests without exposing test assets as production pages |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
