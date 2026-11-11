@@ -1,5 +1,12 @@
 # Project Changelog
 
+## 2026-11-11 — BL-004 profit optimization mathematical core
+- **Added:** `assets/js/optimization/profit-model.js` (browser/Node deterministic engine), `scripts/optimization/profit-fixtures.json` (13 independently fixed candidates), `scripts/optimization/profit-model.test.cjs` (seven test suites), and `docs/project-management/LAB_A_MODEL.md` (API and reproducibility contract).
+- **Validated:** `node --test scripts/optimization/profit-model.test.cjs` locally with 7/7 passes; matched committed GitHub file lengths/hashes; passed browser-global smoke test.
+- **Mathematics:** Unique exact optimum at `n=8`, `P=220` illustrative USD; separate completing-the-square certificate.
+- **Status:** BL-004 **Done**. No LAB-A UI or published OPT-001 lesson.
+- **Next:** BL-005 UI implementation; pending BL-002/003 Jekyll and browser verifications stay open.
+
 ## 2026-11-11 — BL-003 reusable lesson framework
 - **Implemented:** Jekyll `optimization-lesson` layout, shared header/footer includes, scoped stylesheet, non-indexed lesson preview and authoring guide.
 - **Shared layout:** Conditionally loads `optimization-lesson.css` for lesson pages only.
