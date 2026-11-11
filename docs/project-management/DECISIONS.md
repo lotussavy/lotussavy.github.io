@@ -28,6 +28,9 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-017 | Keep LAB-A preview noindexed until browser/lesson review | Accepted 2026-11-11 | Prevent premature claims and avoid linking unfinished OPT-001 publicly |
 | ADR-018 | Drive numerical labels and chart through BL-004 model API only | Accepted 2026-11-11 | Single audited source of objective, candidate list and optimum |
 
+| ADR-019 | Adopt one major milestone per working day and track daily gates | Accepted 2026-11-11 | Protect learning quality and avoid rushing the full curriculum; incomplete gates roll forward |
+| ADR-020 | Use GitHub Actions Node+Jekyll checks as repeatable release evidence | Accepted 2026-11-11 (execution unverified) | Host reproducible build/test checks in repository; a workflow commit alone is not a pass |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
