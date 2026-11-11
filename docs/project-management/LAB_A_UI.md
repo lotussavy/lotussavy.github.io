@@ -17,6 +17,7 @@
 - Reset selects baseline `n=4`.
 - Invalid input displays warning without replacing last valid computed outputs; valid input clears warning.
 - Missing required controls produce predictable initialization error.
+- All five committed UI test cases also executed successfully with compatible test/assert shims in V8 (**98 assertions**); this is not native `node --test` execution.
 - The chart is data-driven from the established BL-004 engine and does not duplicate objective calculations.
 - 78 runtime assertions passed in a JavaScript isolate using the **actual committed model and UI source** with a simulated DOM. This is not real browser rendering.
 - BL-004's prior 7/7 mathematical Node tests remain the numerical reference; the new Node UI test file is committed but **was not executed as a Node command during this BL-005 session**.
