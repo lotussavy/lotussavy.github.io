@@ -1,5 +1,12 @@
 # Project Changelog
 
+## 2026-11-11 — BL-005 profit optimization interactive simulator
+- **Implemented:** Reusable profit lab Jekyll include, scoped stylesheet, source-of-truth-driven DOM controller, and noindexed lab preview page.
+- **Tested:** 78 runtime assertions against actual GitHub JS in simulated DOM; full range of feasible inputs, chart values, Find optimum, Reset and invalid input.
+- **Pending:** Node command for new test file, Jekyll rendering, live deployment, real browser/mobile/keyboard/screen-reader checks.
+- **Status:** In Review; LAB-A not publicly released and OPT-001 is not yet published.
+- **Documentation:** Added LAB_A_UI.md and updated project state, validations, decisions and backlog.
+
 ## 2026-11-11 — BL-004 profit optimization mathematical core
 - **Added:** `assets/js/optimization/profit-model.js` (browser/Node deterministic engine), `scripts/optimization/profit-fixtures.json` (13 independently fixed candidates), `scripts/optimization/profit-model.test.cjs` (seven test suites), and `docs/project-management/LAB_A_MODEL.md` (API and reproducibility contract).
 - **Validated:** `node --test scripts/optimization/profit-model.test.cjs` locally with 7/7 passes; matched committed GitHub file lengths/hashes; passed browser-global smoke test.
