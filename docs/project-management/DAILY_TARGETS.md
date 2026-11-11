@@ -24,9 +24,15 @@
 
 The date sequence is an illustrative allocation; if a predecessor check fails or a session does not take place, move the incomplete target forward rather than silently skipping the gate. There is **no automatic work** between user sessions.
 
+## Actual work completed outside originally suggested date allocation
+
+- **2026-11-11:** The user explicitly authorized starting BL-006A in this session, superseding the previously illustrative November 13 allocation. Instructional design has been completed as a single scoped milestone; no article implementation has begun.
+- **Next distinct session:** BL-006B complete draft. Remaining CI/manual QA should be tracked independently and not silently called complete.
+- The dates in the rolling plan are planning suggestions, not fixed assertions about the work's execution.
+
 ## Today's hard stop
 
-**Do not write or publish OPT-001 today.** The scope is validation infrastructure and reporting for the LAB-A preview. Avoid manufacturing a successful build, screen-reader result or Pages deployment.
+**Do not write or publish the full OPT-001 article during the BL-006A design session.** This session is limited to the instructional plan and project records; do not manufacture review/build/deployment passes.
 
 ## Next-session restart instruction
 
