@@ -1,50 +1,49 @@
 # Project State — Optimization Learning Lab
 
 **Updated:** 2026-11-11  
-**Current milestone:** **BL-006B — OPT-001 complete non-indexed draft (Done as a drafting milestone)**  
-**Next milestone:** **BL-006C — Mathematical/editorial/accessibility review and release decision**  
-**Daily development policy:** One primary milestone per working session; see [DAILY_TARGETS.md](DAILY_TARGETS.md).
+**Current milestone:** **BL-006C — OPT-001 academic, technical and accessibility release review (In Review)**  
+**Release decision:** **Do not publish/index OPT-001** until the outstanding acceptance evidence is verified.  
+**Next working target:** Inspect latest complete CI run for `opt001-browser.test.cjs`, then finish human accessibility/visual checks.  
+**One-major-milestone-per-session policy:** [DAILY_TARGETS.md](DAILY_TARGETS.md).
 
-## Task register snapshot
+## Verified tasks and status
 
-| ID | Status | Evidence / remaining |
+| ID | State | Evidence / outstanding |
 |---|---|---|
-| BL-000 | Done | Continuity documents in GitHub |
-| BL-001 | In Review | Source architecture audited; full deployment-check evidence not fully captured |
-| BL-002 | In Review | Optimization Lab homepage implemented; user confirms LAB-A link works, full release checklist not formally closed |
-| BL-003 | In Review | Shared lesson layout in source; human accessibility QA outstanding |
-| BL-004 | Done | Exact LAB-A engine, reference cases, and mathematical tests |
-| BL-005 | In Review | LAB-A simulator implemented; user reported green CI and usable interface, but exact run ID and screen-reader QA not independently recorded |
-| BL-006A | Done | [OPT_001_INSTRUCTIONAL_DESIGN.md](OPT_001_INSTRUCTIONAL_DESIGN.md) |
-| **BL-006B** | **Done (draft)** | Complete 11-section lesson, reusable LAB-A include, Python reproduction, source checks; not editorially reviewed or published |
-| BL-006C | Ready for next session | Review equation rendering, citations, content, accessibility, build and publication gate |
-| BL-007 and later | Proposed | Not started |
+| BL-000 | Done | Continuity system |
+| BL-001 | In Review | Repository framework audit completed; full production acceptance records incomplete |
+| BL-002 | In Review | Homepage/navigation present and user confirmed lab link works; remaining checklist open |
+| BL-003 | In Review | Reusable lesson layout implemented; manual accessibility audit open |
+| BL-004 | Done | Exact synthetic LAB-A engine, 13 fixtures and independent analytical proof |
+| BL-005 | In Review | LAB-A usable, prior user reported green CI, screen-reader acceptance still unrecorded |
+| BL-006A | Done | Detailed instructional design |
+| BL-006B | Done (draft) | OPT-001 draft, noindex, LAB-A reuse, Python example |
+| **BL-006C** | **In Review** | [OPT_001_REVIEW.md](OPT_001_REVIEW.md) technical/math/editorial audit and fixes; new CI/browser/assistive-technology evidence pending |
+| BL-007+ | Proposed | Nothing started |
 
-## BL-006B artifacts
+## BL-006C work completed
 
-- **Draft lesson:** `optimization/learn/foundations/what-is-optimization.md`
-- **Intended route:** `/optimization/learn/foundations/what-is-optimization/` (not linked from homepage yet)
-- **Safety metadata:** `lesson_status: draft`, `robots: noindex,nofollow`, `sitemap: false`; all review booleans remain false.
-- **LAB-A reuse:** `{% include optimization/labs/profit.html %}` consumes the existing model/UI. No second interactive implementation was created.
-- **Reproduction:** `scripts/optimization/opt001_example.py`; identical Git blob to locally executed script, correct n=8/P=220 output and assertions.
-- **Shared layout fix:** `_layouts/default.html` now emits a robots meta tag for `page.robots`, and conditionally loads MathJax for lesson pages.
-- **Workflow extension:** GitHub Actions tests the Python script and checks that the Jekyll-generated draft page contains LAB-A and the noindex directive.
-- **References:** MIT OpenCourseWare introductory slides; Stanford author-hosted Boyd & Vandenberghe textbook resources; verified URLs in article.
+- Inspected OPT-001 lesson, instructional design, authoring contract, LAB-A model/UI, Jekyll layouts, workflow, project state and prior validation records.
+- Independently recomputed all 13 fleet outcomes, mathematical identity `P(n)=220−5(n−8)²`, unique n=8/P=220 maximum; checked n=10 has larger revenue but lower profit.
+- Confirmed the eleven lesson sections, learning objectives, 158-word introduction, five native answer/proof disclosures, noindex draft metadata and absence of premature OPT-002 links.
+- Verified official MIT OCW introductory optimization lecture and Stanford Boyd/Vandenberghe textbook resource are relevant and reachable.
+- Fixed LAB-A CSS placement: moved stylesheet into lesson-layout document head conditionally via `page.labs contains 'profit-playground'`, removed link nested in lab section.
+- Added `scripts/optimization/opt001-browser.test.cjs`; wired into GitHub Actions. Test is designed to verify actual rendered draft, robots directive, math, slider/keyboard, disclosures, stylesheet placement, narrow screen and JS errors.
+- GitHub source readback and structural checks for changes passed; Playwright test script parsed successfully.
+- **Full CI execution after these modifications was not observed** through accessible connector; the public page also could not be fetched by the external web tool. Do not infer CI outcome from an earlier green run.
+- **No real manual screen-reader or measured WCAG contrast assessment was completed.**
 
-## Verified this session
+## Publication controls
 
-- Ten source checks passed: metadata, noindex/draft flags, LAB-A include, all eleven sections in order, five collapsible answer/proof blocks, reference links, no premature OPT-002 navigation, robots layout rendering instruction, MathJax loading instruction, CI smoke assertions.
-- Exact source of the standalone Python file was executed locally under Python; output `Optimal fleet: 8 vehicles` and `Maximum profit: $220`. Local `git hash-object` matched GitHub blob `8919283fb9ea5bac793910395c2fad2ea694cf4c`.
-- **Not independently verified:** newest GitHub Actions result, compiled Jekyll HTML, MathJax rendering in the browser, screen-reader/mobile review, external-link health from production.
-- **Not done:** publication, adding OPT-001 to the homepage navigation, OPT-002 development.
+OPT-001 stays `lesson_status: draft`, `robots: noindex,nofollow`, `sitemap: false`, and `math_reviewed/accessibility_reviewed/code_verified: false`. The page's source is in a public repository; noindex does not make the page private. No homepage publication link added.
 
-## Next exact action (BL-006C, separate daily session)
+## Next exact action
 
-1. Inspect GitHub Actions result for `optimization-lab-validation.yml`, including generated OPT-001 page and noindex checks.
-2. Visually inspect rendered mathematics (especially backslash-escaped delimiters and `details` content), code blocks, embedded LAB-A, responsive layout and contrast.
-3. Check copy, equations, citation accuracy, quiz explanations, source attribution and Python output; document human review findings.
-4. Test keyboard/screen reader interactions, 375px mobile and reduced motion; fix issues in the existing draft only.
-5. Only **after evidence and approval** decide whether to change draft status/indexing and add a public link. Until then, remain noindexed and unlisted.
+1. Inspect [Optimization Lab GitHub Actions](https://github.com/lotussavy/lotussavy.github.io/actions/workflows/optimization-lab-validation.yml) after the latest code commits. Capture the run ID and inspect both Node/Python/Jekyll checks and new OPT-001 Playwright results. Repair only concrete failures, then rerun.
+2. If the rendered checks pass, inspect the real draft page for math typesetting, disclosure behavior, content legibility and 375px layout.
+3. Conduct and document a manual screen-reader test (NVDA or VoiceOver), keyboard-only path and computed WCAG AA contrast check.
+4. Complete final academic/editorial approval, update review flags only with evidence, and **then** make an explicit release decision. Do not begin OPT-002.
 
-## Resume references
-[OPT_001_INSTRUCTIONAL_DESIGN.md](OPT_001_INSTRUCTIONAL_DESIGN.md), [LESSON_AUTHORING.md](LESSON_AUTHORING.md), [LAB_A_MODEL.md](LAB_A_MODEL.md), [LAB_A_UI.md](LAB_A_UI.md), [VALIDATION.md](VALIDATION.md), [DAILY_TARGETS.md](DAILY_TARGETS.md).
+## Resume materials
+
+[OPT_001_REVIEW.md](OPT_001_REVIEW.md) · [OPT_001_INSTRUCTIONAL_DESIGN.md](OPT_001_INSTRUCTIONAL_DESIGN.md) · [LESSON_AUTHORING.md](LESSON_AUTHORING.md) · [VALIDATION.md](VALIDATION.md) · [DAILY_TARGETS.md](DAILY_TARGETS.md).
