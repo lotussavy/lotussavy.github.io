@@ -27,7 +27,10 @@ const { chromium } = require('playwright');
       [220, 480, 260], [215, 495, 280], [200, 500, 300], [175, 495, 320], [140, 480, 340]
     ];
     for (let n = 0; n <= 12; n += 1) {
-      await slider.fill(String(n));
+      await slider.evaluate((element, value) => {
+        element.value = String(value);
+        element.dispatchEvent(new Event('input', { bubbles: true }));
+      }, n);
       const [profit, revenue, cost] = fixture[n];
       assert.equal(await page.locator('[data-ol-profit]').innerText(), '$' + profit, 'profit n=' + n);
       assert.equal(await page.locator('[data-ol-revenue]').innerText(), '$' + revenue, 'revenue n=' + n);
