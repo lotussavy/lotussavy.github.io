@@ -1,0 +1,47 @@
+---
+---
+/* Optimization lesson design system (BL-003). All selectors scoped to .ol-lesson. */
+.ol-lesson{--ol-ink:#173b52;--ol-muted:#4c6676;--ol-border:#d7e6ec;--ol-bg:#eff6f9;--ol-teal:#087f83;max-width:1160px;margin:0 auto 3rem;color:var(--ol-ink)}
+.ol-lesson *{box-sizing:border-box}
+.ol-lesson :is(a,button,input,select):focus-visible{outline:3px solid #e1ac43;outline-offset:3px}
+.ol-lesson h1,.ol-lesson h2,.ol-lesson h3{color:var(--ol-ink);line-height:1.3}
+.ol-lesson p,.ol-lesson li{line-height:1.72}
+.ol-lesson-header{border-radius:18px;background:linear-gradient(130deg,#f1f8fa,#e9f5f5);padding:clamp(1.2rem,3vw,2.2rem);border:1px solid var(--ol-border)}
+.ol-lesson-header h1{font-size:clamp(1.85rem,4vw,2.9rem);margin:.75rem 0 .5rem}
+.ol-breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;color:var(--ol-muted);font-size:.89rem}
+.ol-breadcrumbs a{color:#096f79}
+.ol-lesson-meta{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-top:1.15rem;font-size:.81rem;color:#476274}
+.ol-lesson-id{font-weight:850;letter-spacing:.08em;color:#087f83}
+.ol-lesson-pill{display:inline-block;border-radius:99px;padding:.2rem .65rem;border:1px solid #bddadc;background:white;color:#326a75;font-weight:750}
+.ol-lesson-draft{background:#fff5df;color:#78571d;border-color:#e8d2a1}
+.ol-lesson-subtitle{font-size:1.07rem;color:#405f70;max-width:72ch;margin:.6rem 0 1.3rem}
+.ol-objectives{margin-top:1.5rem;background:rgba(255,255,255,.83);padding:1rem 1.2rem;border-radius:12px;border:1px solid #dae9ed}
+.ol-objectives h2{font-size:1.05rem;margin:0 0 .5rem}
+.ol-objectives ul{margin:.2rem 0 .2rem 1.2rem;padding:0}
+.ol-lesson-columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(210px,255px);gap:clamp(1.4rem,3vw,2.6rem);align-items:start;margin-top:2rem}
+.ol-lesson-body{min-width:0;overflow-wrap:anywhere}
+.ol-lesson-body h2{margin:2.15rem 0 .7rem;padding-top:.25rem;font-size:1.5rem;border-bottom:1px solid var(--ol-border);padding-bottom:.55rem}
+.ol-lesson-body h3{margin:1.35rem 0 .45rem}
+.ol-lesson-body code{overflow-wrap:anywhere}
+.ol-lesson-body pre{overflow:auto;max-width:100%;padding:1rem;border-radius:10px}
+.ol-lesson-body table{display:block;max-width:100%;overflow-x:auto}
+.ol-lesson-body blockquote{border-left:4px solid #209398;background:#eff8f8;padding:.75rem 1rem;margin:1.2rem 0}
+.ol-lesson-aside-card{border:1px solid var(--ol-border);border-radius:14px;padding:1.1rem;background:white}
+.ol-lesson-aside h2{font-size:1.03rem;margin:0 0 .85rem}
+.ol-lesson-aside h3{font-size:.96rem;margin:1.1rem 0 .3rem}
+.ol-lesson-aside dl{display:grid;grid-template-columns:1fr auto;gap:.6rem;margin:.4rem 0}
+.ol-lesson-aside dt{color:var(--ol-muted)}
+.ol-lesson-aside dd{margin:0;font-weight:700;text-align:right}
+.ol-lesson-aside ul{margin:.3rem 0;padding-left:1.2rem}
+.ol-lesson-aside li{font-size:.88rem}
+.ol-lesson-footer{border-top:1px solid var(--ol-border);margin-top:2.4rem;padding-top:1.4rem}
+.ol-lesson-footer h2{font-size:1.25rem}
+.ol-lesson-links{display:flex;flex-wrap:wrap;gap:.75rem}
+.ol-lesson-link{display:flex;flex-direction:column;gap:.25rem;flex:1 1 180px;text-decoration:none!important;background:#eff7f8;border:1px solid var(--ol-border);padding:.95rem;border-radius:11px;color:#126477!important}
+.ol-lesson-link span{font-size:.78rem;color:#516979}
+.ol-lesson-link strong{font-size:.95rem}
+.ol-review{margin-top:1.4rem;color:#587080;font-size:.8rem;line-height:1.45}
+.ol-review p{margin:.3rem 0}
+@media(max-width:790px){.ol-lesson-columns{grid-template-columns:1fr}.ol-lesson-aside{order:-1}.ol-lesson-aside-card{padding:.95rem}.ol-lesson-aside dl{grid-template-columns:repeat(6,auto);justify-content:start;column-gap:.8rem}}
+@media(max-width:480px){.ol-lesson-header{padding:1.1rem}.ol-lesson-aside dl{grid-template-columns:1fr auto;justify-content:stretch}.ol-lesson-body h2{font-size:1.28rem}}
+@media(prefers-reduced-motion:reduce){.ol-lesson *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
