@@ -2,6 +2,8 @@
   url: /
 - label: "Research"
   url: /research/
+- label: "Optimization Lab"
+  url: /optimization/
 - label: "Publications"
   url: /publications/
 - label: "CV"
