@@ -31,6 +31,11 @@
 - GitHub readback and syntax inspection passed. No successful GitHub Actions execution or live-browser artifact could be retrieved; BL-005 remains **In Review**.
 - The public preview route remained inaccessible through the external verifier, which does not establish a production failure.
 
+## Latest CI diagnosis
+- Screenshot shows four failed workflow runs; the latest job passed checkout, Node setup, and mathematical/UI tests, then failed at Ruby/Bundler setup (later steps skipped).
+- Workflow requested Ruby 3.1 while `Gemfile.lock` contains ActiveSupport 8.1.3, requiring Ruby >=3.2; changed workflow to Ruby 3.3 (commit `690972daa6d5fc92c042eb19a1ad79c5fbe0fe87`).
+- A new run is required to confirm the fix. No build/Chromium pass is claimed.
+
 ## Next exact action
 
 1. Check the [Optimization Lab validation Actions workflow](https://github.com/lotussavy/lotussavy.github.io/actions/workflows/optimization-lab-validation.yml) and its real execution logs. Run via GitHub's 'Run workflow' control if needed.
