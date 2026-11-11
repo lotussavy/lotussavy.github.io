@@ -1,3 +1,21 @@
+## BL-006B — OPT-001 full non-indexed draft (2026-11-11)
+
+**Changes committed:**
+- `optimization/learn/foundations/what-is-optimization.md` — complete draft, eleven learning sections, synthetic case, exact proof, LAB-A include and four answer-feedback disclosures.
+- `scripts/optimization/opt001_example.py` — runnable Python 3.10+ standard-library example.
+- `_layouts/default.html` — output `<meta name="robots" ...>` when front matter provides `page.robots`; conditionally include MathJax for optimization lesson layouts.
+- `.github/workflows/optimization-lab-validation.yml` — run Python example; assert generated draft HTML, noindex and embedded LAB-A.
+
+**Verified:**
+- Ten checks against GitHub readback passed: lesson ID/layout, draft/noindex/sitemap flags, existing LAB-A include, eleven sections in expected order, disclosure Q&A structure, research references, no premature next-lesson link, robots meta instruction, lesson-scoped MathJax instruction and updated CI checks.
+- Standalone Python script executed locally and passed all assertions; printed `Optimal fleet: 8 vehicles` and `Maximum profit: $220`. Exact script local Git blob `8919283fb9ea5bac793910395c2fad2ea694cf4c` matches connected GitHub's blob SHA.
+- Mathematical cases in the draft are consistent with the already verified LAB-A formulas and exact algebraic identity.
+- Introductory references were looked up at official MIT OpenCourseWare and Stanford author-hosted sites.
+
+**Not verified:** Latest GitHub Actions green result after the new CI checks; actual generated HTML and CSS; real rendered MathJax formulas; collapsible details rendering; mobile/keyboard/screen-reader, human academic copy review and release link. These belong to **BL-006C**.
+
+**Status:** BL-006B **Done as draft implementation only**. Article is committed on `main` at a stable direct URL but intentionally not indexed or linked as a released lesson. `math_reviewed`, `code_verified`, `accessibility_reviewed` remain false pending editorial acceptance even though isolated code was executed.
+
 ## BL-006A — OPT-001 instructional design verification (2026-11-11)
 
 - **Artifact:** `docs/project-management/OPT_001_INSTRUCTIONAL_DESIGN.md`; committed `be1e62086cd59defdc02d31b7e228b32d74b083e`.
