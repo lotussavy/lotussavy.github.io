@@ -63,6 +63,15 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 
 **Task disposition:** BL-004 **Done** (source and mathematical tests complete). This does **not** constitute a browser GUI, a verified Jekyll build, or a published lesson. BL-002/003 browser and build acceptance remain open.
 
+## BL-005 — Interactive profit simulator source and runtime (2026-11-11)
+- **Committed:** `_includes/optimization/labs/profit.html`, `assets/css/optimization-profit.scss`, `assets/js/optimization/profit-ui.js`, `optimization/labs/profit-preview.md`, `scripts/optimization/profit-ui.test.cjs`, and [LAB_A_UI.md](LAB_A_UI.md).
+- **Actual runtime:** Executed committed BL-004 model and BL-005 UI JavaScript via V8 with a simulated DOM, passing **78 assertions** for initialization, all 13 fleet settings, SVG highlighted selection, updated accessible descriptions, profit/cost/revenue, Find optimum, Reset, invalid-input alerts, recovery and missing-control errors.
+- **Numerical oracle:** All values came from the verified BL-004 model; optimum = 8 vehicles, $220 profit.
+- **Reproducible Node test:** Added `scripts/optimization/profit-ui.test.cjs`, but that file's Node command was **not executed** during this turn. Run with `node --test scripts/optimization/profit-ui.test.cjs`.
+- **Source-level accessibility:** Native range/label/buttons, live region, SVG title/description, alert semantics, reduced motion and responsive CSS.
+- **Outstanding:** Real browser and screen-reader behavior, 375px QA, Jekyll build/asset deployment, page status; external web check returned both `/optimization/` and preview route inaccessible.
+- **Disposition:** **BL-005 In Review** until remaining verification passes. A simulator component exists in source, but OPT-001 remains unpublished.
+
 ## Required test categories for future features
 1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
 2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
