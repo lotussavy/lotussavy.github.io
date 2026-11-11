@@ -37,6 +37,17 @@
 
 OPT-001 stays `lesson_status: draft`, `robots: noindex,nofollow`, `sitemap: false`, and `math_reviewed/accessibility_reviewed/code_verified: false`. The page's source is in a public repository; noindex does not make the page private. No homepage publication link added.
 
+## 2026-11-11 — GitHub Actions repeated failures and deterministic browser-test repair
+
+- User screenshot shows optimization-lab-validation workflow runs **#16–#20 failed**, including #20 after the accessibility/stylesheet assertions were added. Screenshot shows only run summaries, **not the failing job step or exception**; exact shared root cause remains unconfirmed.
+- Independent source audit revealed a guaranteed mismatch in `scripts/optimization/opt001-browser.test.cjs`: previous selector `.ol-lesson-body details` selected **six** disclosures (five in the OPT-001 article plus one inside the reused LAB-A simulator) but asserted there were **five**. The browser test would fail when reaching this check even with correct HTML.
+- Corrected the selector to restrict to lesson-originated disclosures containing a bold `summary`:
+  `page.locator('.ol-lesson-body details').filter({ has: page.locator('summary strong') })`.
+- Fix commit: `1cb1186bf593bb76614ea16d944dc737ed09a77e`.
+- Verification: GitHub readback, JavaScript parse check passed; counted five lesson-source `<details markdown="1">` and one lab-source `<details>` independently. This supports the specific repair; **does not establish that it caused all five CI failures**.
+- Outstanding: Let GitHub Actions complete new run, inspect exact failing step and error if red; confirm OPT-001 MathJax/browser outputs, keyboard, mobile and human accessibility before changing its draft/noindex status.
+- Status: BL-006C **In Review**, no release, no OPT-002.
+
 ## Next exact action
 
 1. Inspect [Optimization Lab GitHub Actions](https://github.com/lotussavy/lotussavy.github.io/actions/workflows/optimization-lab-validation.yml) after the latest code commits. Capture the run ID and inspect both Node/Python/Jekyll checks and new OPT-001 Playwright results. Repair only concrete failures, then rerun.
