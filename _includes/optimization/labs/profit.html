@@ -1,0 +1,43 @@
+<section class="ol-profit-lab" data-ol-profit-lab aria-labelledby="ol-profit-title">
+  <link rel="stylesheet" href="{{ '/assets/css/optimization-profit.css' | relative_url }}">
+  <div class="ol-profit-intro">
+    <p class="ol-profit-kicker">LAB-A · Interactive intuition · Beginner</p>
+    <h3 id="ol-profit-title">How many vehicles should you operate?</h3>
+    <p>Try different fleet sizes to see how revenue, cost, and profit change. Predict the most profitable fleet size before revealing the exact answer.</p>
+    <p class="ol-profit-disclaimer"><strong>Teaching model:</strong> Synthetic illustrative USD, not real-world fleet economics. Feasible decisions are whole numbers from 0 to 12.</p>
+  </div>
+  <div class="ol-profit-controls">
+    <div class="ol-profit-range-head"><label for="ol-profit-fleet">Number of vehicles</label><output id="ol-profit-fleet-value" for="ol-profit-fleet">4</output></div>
+    <input id="ol-profit-fleet" data-ol-range type="range" min="0" max="12" step="1" value="4" aria-describedby="ol-profit-range-help">
+    <p id="ol-profit-range-help" class="ol-profit-help">Use the arrow keys to adjust the fleet size one vehicle at a time.</p>
+    <div class="ol-profit-actions">
+      <button type="button" data-ol-optimize>Find optimum</button>
+      <button type="button" data-ol-reset>Reset</button>
+    </div>
+  </div>
+  <div class="ol-profit-results" aria-label="Selected fleet financial results">
+    <div><span>Revenue</span><output data-ol-revenue>$320</output></div>
+    <div><span>Cost</span><output data-ol-cost>$180</output></div>
+    <div><span>Profit</span><output data-ol-profit>$140</output></div>
+  </div>
+  <div class="ol-profit-plot-wrap">
+    <h4>Profit by feasible fleet size</h4>
+    <svg data-ol-chart role="img" viewBox="0 0 640 280" aria-labelledby="ol-profit-chart-title ol-profit-chart-description">
+      <title id="ol-profit-chart-title">Profit versus fleet size</title>
+      <desc id="ol-profit-chart-description">Illustrative profit for all integer fleet sizes from 0 through 12. Use the range input to select a fleet.</desc>
+      <g data-ol-chart-content></g>
+    </svg>
+    <p class="ol-profit-help">Graph uses all 13 feasible decisions, independently calculated by the verified model. The highlighted point is your selected fleet.</p>
+  </div>
+  <p class="ol-profit-interpretation" data-ol-explanation role="status" aria-live="polite" aria-atomic="true">At 4 vehicles, revenue is $320, cost is $180, and profit is $140. Explore a different choice.</p>
+  <div class="ol-profit-detail">
+    <details><summary>See the exact mathematical model and verification</summary>
+      <p><strong>Objective:</strong> maximize P(n) = R(n) − C(n), where R(n) = 100n − 5n² and C(n) = 20n + 100.</p>
+      <p><strong>Domain:</strong> n is an integer and 0 ≤ n ≤ 12. Method: exact exhaustive enumeration of 13 decisions. The unique optimum is n = 8, P = $220. Since P(n) = 220 − 5(n − 8)², no feasible decision can exceed $220.</p>
+      <p>Computed values come from the verified LAB-A model, not from a separate chart formula. See <a href="https://github.com/lotussavy/lotussavy.github.io/blob/main/docs/project-management/LAB_A_MODEL.md">model documentation and tests</a>.</p>
+    </details>
+  </div>
+  <p class="ol-profit-error" data-ol-error role="alert" hidden>Interactive calculation unavailable. The illustrative model is described above; please try again later.</p>
+  <script src="{{ '/assets/js/optimization/profit-model.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/optimization/profit-ui.js' | relative_url }}"></script>
+</section>
