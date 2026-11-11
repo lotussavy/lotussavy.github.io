@@ -1,5 +1,14 @@
 # Project Changelog
 
+## 2026-11-11 — BL-005 daily verification infrastructure
+- **Added:** GitHub Actions workflow to run Node profit model/UI tests, build Jekyll, and smoke-check generated Lab assets.
+- **Added:** `DAILY_TARGETS.md` to enforce one primary working milestone per day and prevent rushing into full OPT-001.
+- **Verified:** Workflow and daily plan committed and readable; no combined commit statuses available.
+- **Unverified:** Actual workflow run/result, live Lab routes, browser/keyboard/screen-reader QA; local Bundler/Jekyll and GitHub network unavailable.
+- **Status:** BL-005 still In Review; BL-006 deliberately not started.
+- **Next day:** Check Actions outcome and actual page/interaction behavior, repair only concrete failures.
+
+
 ## 2026-11-11 — BL-005 profit optimization interactive simulator
 - **Implemented:** Reusable profit lab Jekyll include, scoped stylesheet, source-of-truth-driven DOM controller, and noindexed lab preview page.
 - **Tested:** 78 runtime assertions against actual GitHub JS in simulated DOM; full range of feasible inputs, chart values, Find optimum, Reset and invalid input.
