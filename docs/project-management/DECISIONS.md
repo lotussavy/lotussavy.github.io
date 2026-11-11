@@ -31,6 +31,9 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-019 | Adopt one major milestone per working day and track daily gates | Accepted 2026-11-11 | Protect learning quality and avoid rushing the full curriculum; incomplete gates roll forward |
 | ADR-020 | Use GitHub Actions Node+Jekyll checks as repeatable release evidence | Accepted 2026-11-11 (execution unverified) | Host reproducible build/test checks in repository; a workflow commit alone is not a pass |
 
+| ADR-021 | Use prediction-first pedagogy and align five OPT-001 objectives to LAB-A interactions and knowledge checks | Accepted 2026-11-11 (design) | Demonstrate decision/objective/feasibility distinction before mathematical formalization; no lesson published |
+| ADR-022 | Split OPT-001 work into instructional design, draft implementation and separate release review | Accepted 2026-11-11 | Enforce one milestone per session and avoid conflating lesson plan with published page |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
