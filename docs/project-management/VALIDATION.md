@@ -8,6 +8,13 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 - Documentation readback and updated Jekyll exclusion are the acceptance checks.
 - **Not run:** full Jekyll build, GitHub Pages deployment, browser regression, solver tests.
 
+## BL-001 — Core source architecture inspection (2026-11-11)
+- Direct GitHub reads: `_config.yml`, `Gemfile`, `_layouts/default.html`, `_data/navigation.yml`, `index.md`, `research.md`, `blog.md`, `_includes/home-merged.html`, `_includes/research-interactive-hub.html`, `_includes/head-custom.html`, and `assets/css/style.scss`.
+- Verified: Jekyll theme/SEO configuration, shared layout, navigation loop, static front-matter routing patterns, source interaction styles and scripts, scoped responsiveness and motion support, exclusion of continuity documents.
+- **Not tested:** clean build, actual GitHub Pages deployment, precise publishing workflow, entire repository tree, keyboard/browser QA or production route.
+- Evidence: [ARCHITECTURE_AUDIT.md](ARCHITECTURE_AUDIT.md).
+- Status: Source audit **passed**; full BL-001 acceptance **pending**.
+
 ## Required test categories for future features
 1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
 2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
