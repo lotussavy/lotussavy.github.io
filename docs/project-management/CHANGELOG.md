@@ -1,5 +1,13 @@
 # Project Changelog
 
+## 2026-11-11 — CI Ruby setup failure diagnosis and compatibility fix
+- User-provided GitHub Actions screenshot: all four workflow runs failed; latest `verify-lab` job passed checkout, Node setup and Node mathematical/UI tests, then failed at **Set up Ruby and Bundler**. Jekyll/build/Chromium steps were skipped.
+- GitHub source check: workflow used `ruby-version: '3.1'` while `Gemfile.lock` resolves `activesupport (8.1.3)`, which requires Ruby >= 3.2 according to RubyGems. **This is a verified incompatibility**, though the exact step log was not provided, so additional errors remain possible.
+- Changed Ruby version to `3.3` in `.github/workflows/optimization-lab-validation.yml`; commit `690972daa6d5fc92c042eb19a1ad79c5fbe0fe87`.
+- Node test step verified passed via screenshot. **New workflow execution and downstream Jekyll/Chromium tests are not yet verified**. BL-005 remains In Review.
+- Next: inspect the new GitHub Actions run; if setup passes, review build and browser results, address failures one at a time.
+
+
 ## 2026-11-11 — BL-005 Chromium acceptance-test gate
 - **Added:** `scripts/optimization/profit-browser.test.cjs`, testing the generated preview in Playwright Chromium.
 - **Updated:** GitHub Actions to install browser tooling, serve generated Jekyll site and run Chromium tests.
