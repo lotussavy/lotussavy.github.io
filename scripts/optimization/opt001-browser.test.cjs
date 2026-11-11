@@ -29,7 +29,11 @@ const { chromium } = require('playwright');
     assert.equal(await page.locator('[data-ol-profit]').innerText(), '$220', 'Embedded LAB-A updates');
     assert.equal(await page.locator('[data-ol-range]').inputValue(), '8', 'Optimum fleet is eight');
 
-    const disclosures = page.locator('.ol-lesson-body details');
+    // Exclude the simulator's independent model disclosure. The lesson itself
+    // has one optional proof and four answer disclosures with bold summaries.
+    const disclosures = page.locator('.ol-lesson-body details').filter({
+      has: page.locator('summary strong')
+    });
     assert.equal(await disclosures.count(), 5, 'One proof and four knowledge-check disclosures');
     assert.equal(await disclosures.nth(1).getAttribute('open'), null, 'Quiz answer begins collapsed');
     await disclosures.nth(1).locator('summary').click();
