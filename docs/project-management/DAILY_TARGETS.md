@@ -37,9 +37,16 @@ The date sequence is an illustrative allocation; if a predecessor check fails or
 - **Next distinct working session:** BL-006C review and explicit publication decision, not OPT-002 or the rest of the curriculum.
 - The original November 16/17 dates are illustrative planning allocations superseded by actual user-authorized working sessions.
 
+## BL-006C review checkpoint — user-authorized working session (2026-11-11)
+
+- Mathematical, instructional and reference reviews are complete at the source level; HTML stylesheet placement issue fixed.
+- Added rendered-page browser regression and CI acceptance gate. Actual CI execution has not yet been verified, so BL-006C stays In Review.
+- **Next scoped working target:** Obtain a verified green run and finish manual keyboard/screen-reader/contrast checks, then decide on OPT-001 publication.
+- No OPT-002 implementation and no public lesson release in this review session.
+
 ## Today's hard stop
 
-**Do not publish OPT-001 during the BL-006B drafting session.** Draft creation and isolated Python/source verification are today's acceptance scope; full review and release belong to BL-006C.
+**Do not publish OPT-001 until BL-006C CI/browser and manual accessibility acceptance is evidenced.** An earlier green run is not proof that the newest code passes. Do not begin OPT-002.
 
 ## Next-session restart instruction
 
