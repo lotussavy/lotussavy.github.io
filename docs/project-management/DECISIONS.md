@@ -24,6 +24,10 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-014 | Report exact optimality only for fixed integer domain 0–12 with full enumeration plus analytical bound | Accepted 2026-11-11 | Guarantees are proven for toy model, not actual fleet operation |
 | ADR-015 | Store independent fixtures and Node tests under excluded `scripts/optimization/` | Accepted 2026-11-11 | Reproducible tests without exposing test assets as production pages |
 
+| ADR-016 | Implement LAB-A as a reusable Jekyll include plus scoped SCSS and DOM controller | Accepted 2026-11-11 (source-level) | Fits existing stack and keeps educational computation isolated |
+| ADR-017 | Keep LAB-A preview noindexed until browser/lesson review | Accepted 2026-11-11 | Prevent premature claims and avoid linking unfinished OPT-001 publicly |
+| ADR-018 | Drive numerical labels and chart through BL-004 model API only | Accepted 2026-11-11 | Single audited source of objective, candidate list and optimum |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
