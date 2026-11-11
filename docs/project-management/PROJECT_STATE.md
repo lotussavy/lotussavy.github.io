@@ -14,7 +14,7 @@
 - Created [optimization/index.md](../../optimization/index.md) with front matter `layout: default` and `permalink: /optimization/`.
 - Page includes hero, learner orientation selector (client-side), six level cards, first lab preview clearly labeled not live, research links, responsive scoped CSS, and reduced-motion handling.
 - GitHub readback verifies source present. GitHub combined commit statuses and PR-only workflow lookup returned empty arrays; **neither proves build or deployment passed**.
-- Public URL fetch through available browser failed; no live-route assertion is made. No local Jekyll/Bundler runtime was available for a clean build. Main navigation was deliberately unchanged pending deployment verification.
+- Public URL fetch through available browser failed; no live-route assertion is made. No local Jekyll/Bundler runtime was available for a clean build. Main navigation and the shared footer now contain the Optimization Lab link; production rendering remains unverified.
 
 ## Task status
 | ID | Status | Evidence / next |
