@@ -89,6 +89,7 @@ jobs:
           trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
           sleep 2
           node scripts/optimization/profit-browser.test.cjs
+          node scripts/optimization/opt001-browser.test.cjs
 
       - name: Upload generated site for inspection
         if: always()
