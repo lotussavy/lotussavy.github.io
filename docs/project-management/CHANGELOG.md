@@ -1,5 +1,13 @@
 # Project Changelog
 
+## 2026-11-11 — BL-003 reusable lesson framework
+- **Implemented:** Jekyll `optimization-lesson` layout, shared header/footer includes, scoped stylesheet, non-indexed lesson preview and authoring guide.
+- **Shared layout:** Conditionally loads `optimization-lesson.css` for lesson pages only.
+- **Source verification:** Seven file readbacks and 13 source-level assertions passed.
+- **Not verified:** Jekyll build, generated CSS, rendered preview, accessibility/browser QA and live deployment.
+- **Status:** BL-003 In Review pending build and browser verification.
+- **Next:** Validate generated preview; then BL-004 computational model and oracle.
+
 ## 2026-11-11 — Optimization Lab navigation discoverability
 - **Changed:** Added `Optimization Lab` in `_data/navigation.yml` between Research and Publications, and in shared footer of `_layouts/default.html`.
 - **Rationale:** Visitors should discover the Lab from existing website navigation, not only by typing its URL.
