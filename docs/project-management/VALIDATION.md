@@ -19,7 +19,7 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 - **Committed file:** `optimization/index.md` at `07d85b68154f2a6ce12fc39f4bdb5980e824f66b`.
 - **Source readback:** Passed; file present on `main`, front matter declares `layout: default` and `permalink: /optimization/`, with meaningful title and description.
 - **Static source inspection:** Passed for scoped `ol-` CSS, 560px/850px responsive breakpoints, reduced-motion handling, native button/ARIA pressed state, five content sections, and JavaScript path-selection listener. No unpublished lesson links; first lab is labeled a static preview.
-- **Navigation:** Deliberately unchanged until live route is verified.
+- **Navigation:** Main navigation and shared footer now link to `/optimization/`; source readback pending in this session. Live rendered link and production routing not yet verified.
 - **GitHub commit combined statuses:** Returned empty statuses; **not evidence of CI success**.
 - **Commit workflow lookup:** Returned empty PR-triggered workflow runs; **not evidence of Pages deployment status**.
 - **Public URL check:** Request via available browser could not access `https://lotussavy.github.io/optimization/`. Thus the route is **not verified live**.
