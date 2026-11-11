@@ -74,6 +74,7 @@ plugins:
   - jekyll-sitemap
 
 exclude:
+  - docs/project-management/
   - imports/
   - scripts/
   - vendor/
