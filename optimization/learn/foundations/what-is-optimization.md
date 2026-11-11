@@ -227,7 +227,7 @@ Maximum profit: $220
 
 The Python example and interactive LAB-A are conceptually equivalent, but the **website simulator uses the already-tested JavaScript engine**. We do not maintain a separate objective formula in a second user-interface script.
 
-The complete interactive model and its fixed reference results are available in the [LAB-A source repository](https://github.com/lotussavy/lotussavy.github.io/blob/main/assets/js/optimization/profit-model.js). Python example execution will be checked and recorded separately as part of draft validation.
+The complete interactive model and its fixed reference results are available in the [LAB-A source repository](https://github.com/lotussavy/lotussavy.github.io/blob/main/assets/js/optimization/profit-model.js). A [standalone Python version](https://github.com/lotussavy/lotussavy.github.io/blob/main/scripts/optimization/opt001_example.py) is version-controlled for reproducibility; its exact GitHub blob was executed locally and passed the assertions. This does not replace the lesson's final editorial and browser review.
 
 ## Failure modes and assumptions
 
