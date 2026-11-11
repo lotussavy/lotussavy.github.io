@@ -1,5 +1,16 @@
 # Project Changelog
 
+## 2026-11-11 — BL-006B complete OPT-001 draft
+- **Created:** `optimization/learn/foundations/what-is-optimization.md` as a draft lesson (noindex/nofollow, sitemap false) with all required conceptual, experiment, mathematical, Python and review sections.
+- **Reused:** LAB-A profit include unchanged, avoiding duplicate solver or UI formulas.
+- **Added:** Versioned Python reproduction under `scripts/optimization/opt001_example.py`, executed with output n=8/P=220.
+- **Fixed:** Shared layout now honors `page.robots`; lesson-specific MathJax load; Markdown inside knowledge-check disclosures.
+- **Extended CI:** Python reproduction and Jekyll output/noindex checks for the draft.
+- **Verified:** GitHub source readback and ten structural checks; exact Python file locally executed, matching GitHub blob.
+- **Not verified:** New CI run, browser-rendered equations and accessibility. BL-006C remains the release gate.
+- **No publication:** No homepage OPT-001 link, no `published` status, no OPT-002 work.
+
+
 ## 2026-11-11 — BL-006A OPT-001 instructional design
 - **Added:** `docs/project-management/OPT_001_INSTRUCTIONAL_DESIGN.md` with target audience, five aligned objectives, timed storyboard, activity sequence, rigorous mathematics, misconceptions and four planned knowledge checks.
 - **Verified:** GitHub readback and nine structural/content checks.
