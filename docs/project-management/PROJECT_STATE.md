@@ -1,38 +1,36 @@
 # Project State — Optimization Learning Lab
 
 **Last updated:** 2026-11-11  
-**Current milestone:** M0 — Audit and foundation  
-**Active task:** BL-002 — Plan and verify the public `/optimization/` route  
-**Completed:** BL-000 — Project continuity documentation  
-**BL-001 status:** In Review (source audit recorded; full Jekyll build/deployment verification still outstanding)  
-**Public Optimization Lab:** Not yet implemented
+**Current milestone:** M0–M1 transition — Public landing page staged on `main`  
+**Active task:** BL-002 — Route/deployment acceptance verification  
+**Completed:** BL-000 — Continuity infrastructure  
+**Source-implemented:** BL-002 — Jekyll landing page at `optimization/index.md`  
+**Status:** **In Review** — production route and Jekyll build still unverified.
 
-## Verified architecture
-- Public repository: `lotussavy/lotussavy.github.io`, default branch `main`.
-- Site generator: Jekyll with `github-pages` gem and `jekyll-theme-slate`.
-- Layout `_layouts/default.html`; global styles `assets/css/style.scss`; navigation `_data/navigation.yml`.
-- Pages use front-matter permalinks and Jekyll includes. Home/Research/Blog already contain client-side JS interactions.
-- Jekyll excludes `docs/project-management/` from generated site; GitHub repository contents remain public.
-- See [ARCHITECTURE_AUDIT.md](ARCHITECTURE_AUDIT.md) for evidence, findings, proposed implementation and outstanding checks.
+## Latest verified facts
+- Repository: `lotussavy/lotussavy.github.io` (public), branch `main`.
+- Jekyll, `jekyll-theme-slate`, `github-pages` gem, shared `_layouts/default.html`; navigation is `_data/navigation.yml`.
+- Existing UI themes and SEO patterns inspected in [ARCHITECTURE_AUDIT.md](ARCHITECTURE_AUDIT.md).
+- Created [optimization/index.md](../../optimization/index.md) with front matter `layout: default` and `permalink: /optimization/`.
+- Page includes hero, learner orientation selector (client-side), six level cards, first lab preview clearly labeled not live, research links, responsive scoped CSS, and reduced-motion handling.
+- GitHub readback verifies source present. GitHub combined commit statuses and PR-only workflow lookup returned empty arrays; **neither proves build or deployment passed**.
+- Public URL fetch through available browser failed; no live-route assertion is made. No local Jekyll/Bundler runtime was available for a clean build. Main navigation was deliberately unchanged pending deployment verification.
 
-## Implementation decision
-- Follow existing Jekyll architecture for MVP; static-first, reusable HTML includes and plain JS.
-- Proposed route: `/optimization/`. **Source-compatible, not deployment-tested.**
-- No public UI, route, navigation or assets added in BL-001.
-
-## Work status
-| Task | State | Evidence / next |
+## Task status
+| ID | Status | Evidence / next |
 |---|---|---|
-| BL-000 | Done | Continuity files created and verified readable |
-| BL-001 | In Review | Source audit documented; build, workflow and deployment smoke checks remain |
-| BL-002 | Ready | Create minimal route prototype after accounting for outstanding build checks |
-| BL-003–BL-015 | Proposed | Defined in TASKS.md |
+| BL-000 | Done | Continuity files exist and are readable |
+| BL-001 | In Review | Core source audit complete; full Jekyll build/workflow verification outstanding |
+| BL-002 | In Review | Committed landing page; source checks pass; live deployment/build not verified |
+| BL-003 | Proposed | Reusable lesson metadata/layout after route acceptance |
+| BL-004–BL-015 | Proposed | See TASKS.md |
 
-## Next exact action
-BL-002: Add a minimal Jekyll-compatible `optimization/index.md` using `layout: default` and `permalink: /optimization/`; run build and route checks before exposing it in navigation. Maintain the existing theme and document verification in VALIDATION.md.
+## Immediate next action
+1. Verify GitHub Pages build/publishing mode and run `bundle exec jekyll build` in a repository checkout with dependencies.
+2. Confirm production `https://lotussavy.github.io/optimization/` loads with the expected content and valid CSS; test mobile/keyboard and button choices.
+3. After successful verification, add `Optimization Lab` to `_data/navigation.yml` (prefer between Research and Publications), repeat build/link checks, and mark BL-002 **Done**.
+4. Then begin BL-003 (reusable lesson layout and metadata). Do not count the landing page as OPT-001 or LAB-A.
 
-## Last session handoff
-- Added `ARCHITECTURE_AUDIT.md` based on verified repository source files.
-- Inspected Jekyll architecture, page templates, scoped interaction patterns, styles, and SEO hooks.
-- Did **not** run a full build, publish any Lab pages, or verify complete deployment settings.
-- The public site was not intentionally changed in BL-001.
+## Handoff
+Latest page source commit: `07d85b68154f2a6ce12fc39f4bdb5980e824f66b`.  
+Project status is evidence-based; no claim of a verified public deployment.
