@@ -38,6 +38,9 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-024 | Use an existing LAB-A include and versioned Python reproduction; never duplicate browser mathematical logic | Accepted 2026-11-11 | Retain a single audited JavaScript source of interactive results; Python aids independent comprehension |
 | ADR-025 | Emit robots metadata from Jekyll front matter and load MathJax only for lesson pages | Accepted 2026-11-11 (render validation pending) | Ensure development previews request no indexing and equations have a dedicated presentation path |
 
+| ADR-026 | Block OPT-001 publication until current rendered Chromium/MathJax checks and manual accessibility review pass | Accepted 2026-11-11 | Accurate source alone does not establish accessible live math or release readiness |
+| ADR-027 | Load LAB-A stylesheet in the shared lesson head based on declared labs | Accepted 2026-11-11 | Semantic HTML and one consistent reusable component; source change verified, deployed render pending |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
