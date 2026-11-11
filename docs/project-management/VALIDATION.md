@@ -1,3 +1,12 @@
+## BL-006A — OPT-001 instructional design verification (2026-11-11)
+
+- **Artifact:** `docs/project-management/OPT_001_INSTRUCTIONAL_DESIGN.md`; committed `be1e62086cd59defdc02d31b7e228b32d74b083e`.
+- **GitHub readback:** Passed; 15,287-character Markdown design artifact available on `main`.
+- **Nine content checks:** Passed: OPT-001 ID, five learning objectives, required article sections, correct n=8/n=10 teaching contrast, analytical certificate, noindex future draft, explicit out-of-scope full article, accessibility and synthetic-data integrity.
+- **Numerical alignment:** design uses the existing LAB-A reference values; no new computational model or numerical tests introduced.
+- **Out of scope / unverified:** Full OPT-001 Markdown lesson, Jekyll build of that future page, interactive quiz, external bibliography verification, human editorial review and publication.
+- **Status:** BL-006A **Done** as an instructional design milestone, **not** a published or reviewed lesson.
+
 # Validation Ledger — Optimization Learning Lab
 
 Record **what was tested**, its expected/actual output, and evidence. Never report an unexecuted test as passed.
