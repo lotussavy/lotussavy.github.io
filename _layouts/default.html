@@ -11,6 +11,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
     {% if page.layout == 'optimization-lesson' %}
     <link rel="stylesheet" media="screen" href="{{ '/assets/css/optimization-lesson.css' | relative_url }}">
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
+        options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     {% endif %}
 
     {% assign browser_title = page.seo_title | default: page.title | default: site.title %}
