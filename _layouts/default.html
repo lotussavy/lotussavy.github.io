@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
     {% if page.layout == 'optimization-lesson' %}
     <link rel="stylesheet" media="screen" href="{{ '/assets/css/optimization-lesson.css' | relative_url }}">
+    {% if page.labs contains 'profit-playground' %}
+    <link rel="stylesheet" media="screen" href="{{ '/assets/css/optimization-profit.css' | relative_url }}">
+    {% endif %}
     <script>
       window.MathJax = {
         tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },
