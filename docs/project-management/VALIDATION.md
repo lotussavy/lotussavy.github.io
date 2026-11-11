@@ -1,0 +1,31 @@
+# Validation Ledger — Optimization Learning Lab
+
+Record **what was tested**, its expected/actual output, and evidence. Never report an unexecuted test as passed.
+
+## BL-000 — Documentation infrastructure (2026-11-11)
+- Confirmed Jekyll configuration, Gemfile, navigation file and public repository through connected GitHub reads.
+- Created repository-level project-management docs from the original blueprint.
+- Documentation readback and updated Jekyll exclusion are the acceptance checks.
+- **Not run:** full Jekyll build, GitHub Pages deployment, browser regression, solver tests.
+
+## Required test categories for future features
+1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
+2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
+3. **UI integration:** controls, plots, numbers and narrative agree.
+4. **Accessibility:** keyboard, readable labels, contrast, motion preferences.
+5. **Responsive/performance:** desktop, narrow mobile, dependency weight.
+6. **Publishing:** links, metadata, citations, site build, deployed route.
+7. **Regression:** retained results after changes to UI or libraries.
+
+## First lab oracle (illustrative teaching model)
+- n integer in [0,12]; revenue = 100n - 5n²; cost = 20n + 100; profit = 80n - 5n² -100.
+- n=0 => -100; n=4 => 140; n=8 => 220; n=12 => 140.
+- Exhaustive enumeration confirms maximum at n=8 and profit=220.
+- **Status:** Reference expected results only; automated test implementation not yet written.
+
+## Test log format
+| Date | Task | Type | Command or method | Expected | Actual | Status | Evidence |
+|---|---|---|---|---|---|---|---|
+| 2026-11-11 | BL-000 | Repository inspection | GitHub read `_config.yml`, `Gemfile`, `_data/navigation.yml` | Recognize baseline stack | Jekyll/GitHub Pages | Passed | GitHub source reads |
+
+A passing repository read is not evidence of a successful production site deployment.
