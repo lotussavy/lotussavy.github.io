@@ -5,8 +5,8 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ID | Decision | State | Rationale / trigger |
 |---|---|---|---|
 | ADR-000 | Treat GitHub version-controlled files as continuity source of truth | Accepted 2026-11-11 | Chat context can expire; reconstruct work from verifiable artifacts |
-| ADR-001 | Use existing academic site as public home | Proposed | Audit site architecture under BL-001 |
-| ADR-002 | Prefer static-first client-side interactive learning | Proposed | Revisit if verified feature needs remote compute |
+| ADR-001 | Use existing academic site as public home | Accepted 2026-11-11 (source-level) | Existing shared Jekyll shell supports new permalink; deployment test pending |
+| ADR-002 | Prefer static-first Jekyll + vanilla JavaScript for MVP | Accepted 2026-11-11 (provisional until build QA) | Existing site includes client-side interactions; no framework migration needed for first four lessons |
 | ADR-003 | Six-level beginner-to-researcher curriculum | Baseline | Defined in blueprint; revisit after reader testing |
 | ADR-004 | Single article pattern and lab contract | Baseline | Consistency, instructional quality, testability |
 | ADR-005 | MVP: OPT-001–004 and LAB-A/B | Baseline | Keep first release focused |
