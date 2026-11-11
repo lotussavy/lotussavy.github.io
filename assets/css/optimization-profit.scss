@@ -1,0 +1,28 @@
+---
+---
+.ol-profit-lab{--p-ink:#173b52;--p-teal:#087f83;--p-line:#d2e4ea;box-sizing:border-box;background:#f1f8fa;border:1px solid var(--p-line);border-radius:18px;padding:clamp(1rem,2vw,1.6rem);color:var(--p-ink);margin:1.3rem 0}
+.ol-profit-lab *{box-sizing:border-box}.ol-profit-lab [hidden]{display:none!important}
+.ol-profit-lab :is(button,input,summary,a):focus-visible{outline:3px solid #d49b27;outline-offset:3px}
+.ol-profit-lab h3,.ol-profit-lab h4{color:var(--p-ink)}
+.ol-profit-lab h3{margin:.25rem 0 .7rem;font-size:clamp(1.25rem,2.6vw,1.65rem)}
+.ol-profit-lab h4{margin:0 0 .5rem;font-size:1.04rem}
+.ol-profit-kicker{margin:0;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#087f83}
+.ol-profit-intro p{line-height:1.55}.ol-profit-disclaimer{font-size:.84rem;color:#46687a}
+.ol-profit-controls{background:white;border:1px solid var(--p-line);border-radius:13px;padding:1.1rem}
+.ol-profit-range-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;font-weight:750}
+.ol-profit-range-head output{font-size:1.5rem;color:#086c74;font-variant-numeric:tabular-nums}
+.ol-profit-controls input[type=range]{width:100%;min-height:44px;accent-color:#087f83;cursor:pointer}
+.ol-profit-help{font-size:.83rem;line-height:1.5;color:#4f6978;margin:.35rem 0 .7rem}
+.ol-profit-actions{display:flex;gap:.7rem;flex-wrap:wrap}
+.ol-profit-actions button{border:1px solid #0c6573;border-radius:10px;min-height:44px;padding:.65rem 1rem;background:#0d6573;color:#fff;font:inherit;font-weight:750;cursor:pointer}
+.ol-profit-actions button+button{background:white;color:#0d6573}
+.ol-profit-results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1rem 0}
+.ol-profit-results>div{border:1px solid var(--p-line);background:white;border-radius:12px;padding:.85rem;display:flex;flex-direction:column;gap:.3rem}
+.ol-profit-results span{color:#526e7c;font-size:.82rem}.ol-profit-results output{font-size:clamp(1.08rem,2.6vw,1.45rem);font-weight:800;color:#143d50;font-variant-numeric:tabular-nums}
+.ol-profit-plot-wrap{border:1px solid var(--p-line);border-radius:13px;padding:1rem;background:#fff}
+.ol-profit-plot-wrap svg{display:block;width:100%;height:auto;max-height:330px}
+.ol-profit-interpretation{border-left:4px solid #087f83;background:#e6f2f3;padding:.75rem 1rem;line-height:1.6;min-height:3.5rem}
+.ol-profit-detail{font-size:.88rem}.ol-profit-detail summary{font-weight:750;cursor:pointer;padding:.5rem 0}
+.ol-profit-error{color:#9b2424;font-weight:700}
+@media(max-width:500px){.ol-profit-results{grid-template-columns:1fr}.ol-profit-plot-wrap{padding:.6rem}.ol-profit-results>div{flex-direction:row;justify-content:space-between;align-items:center}}
+@media(prefers-reduced-motion:reduce){.ol-profit-lab *{animation:none!important;transition:none!important}}
