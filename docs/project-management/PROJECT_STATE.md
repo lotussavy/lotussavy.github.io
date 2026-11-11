@@ -26,6 +26,11 @@
 - Local environment has Ruby and Node but no Bundler/Jekyll commands; `git ls-remote` fails because GitHub cannot be resolved from the container. Full local build could not be run.
 - No change to LAB-A computational formulas or published content; no OPT-001 lesson created.
 
+## Release-gate strengthening
+- Added a committed Chromium Playwright regression test for the generated LAB-A preview, plus a GitHub Actions stage to run it against a local server after the Jekyll build.
+- GitHub readback and syntax inspection passed. No successful GitHub Actions execution or live-browser artifact could be retrieved; BL-005 remains **In Review**.
+- The public preview route remained inaccessible through the external verifier, which does not establish a production failure.
+
 ## Next exact action
 
 1. Check the [Optimization Lab validation Actions workflow](https://github.com/lotussavy/lotussavy.github.io/actions/workflows/optimization-lab-validation.yml) and its real execution logs. Run via GitHub's 'Run workflow' control if needed.
