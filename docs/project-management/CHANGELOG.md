@@ -1,5 +1,13 @@
 # Project Changelog
 
+## 2026-11-11 — BL-005 Chromium acceptance-test gate
+- **Added:** `scripts/optimization/profit-browser.test.cjs`, testing the generated preview in Playwright Chromium.
+- **Updated:** GitHub Actions to install browser tooling, serve generated Jekyll site and run Chromium tests.
+- **Source verification:** GitHub readback and browser-test JavaScript syntax passed.
+- **Still open:** Successful CI run, Jekyll-generated files, actual Chromium results, production route, screen-reader manual QA.
+- **Decision:** Retain BL-005 **In Review**; do not advance to OPT-001 publication.
+
+
 ## 2026-11-11 — BL-005 daily verification infrastructure
 - **Added:** GitHub Actions workflow to run Node profit model/UI tests, build Jekyll, and smoke-check generated Lab assets.
 - **Added:** `DAILY_TARGETS.md` to enforce one primary working milestone per day and prevent rushing into full OPT-001.
