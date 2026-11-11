@@ -80,16 +80,24 @@ jobs:
           npm install --no-save --package-lock=false playwright@1.56.1
           npx playwright install --with-deps chromium
 
-      - name: Browser-test rendered profit simulator
+      - name: Start local Jekyll test server
         shell: bash
         run: |
-          set -euo pipefail
-          python3 -m http.server 8765 --directory _site >/tmp/optimization-lab-http.log 2>&1 &
-          SERVER_PID=$!
-          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          nohup python3 -m http.server 8765 --directory _site >/tmp/optimization-lab-http.log 2>&1 &
+          echo "SERVER_PID=$!" >> "$GITHUB_ENV"
           sleep 2
-          node scripts/optimization/profit-browser.test.cjs
-          node scripts/optimization/opt001-browser.test.cjs
+          curl --fail --silent --show-error http://127.0.0.1:8765/optimization/ >/dev/null
+
+      - name: Browser-test LAB-A simulator
+        run: node scripts/optimization/profit-browser.test.cjs
+
+      - name: Browser-test OPT-001 lesson
+        if: success() || failure()
+        run: node scripts/optimization/opt001-browser.test.cjs
+
+      - name: Stop local Jekyll test server
+        if: always()
+        run: kill "$SERVER_PID" 2>/dev/null || true
 
       - name: Upload generated site for inspection
         if: always()
