@@ -1,5 +1,14 @@
 # Project Changelog
 
+## 2026-11-11 — LAB-A link added to Optimization homepage
+
+- **Fixed:** Visitors can navigate to the existing interactive LAB-A development preview from the Optimization homepage instead of typing the URL manually.
+- **Changed:** Added top-of-page and lab-section call-to-action links in `optimization/index.md`; corrected outdated "not yet active simulator" copy.
+- **Verified:** GitHub readback confirms both URLs use Jekyll `relative_url`; preview disclosure retained.
+- **Pending:** Live deployment and click-through confirmation.
+- **Commit:** `74ea98a2538c2b5ca4724eea1ab7675b810386e3`.
+
+
 ## 2026-11-11 — CI Ruby setup failure diagnosis and compatibility fix
 - User-provided GitHub Actions screenshot: all four workflow runs failed; latest `verify-lab` job passed checkout, Node setup and Node mathematical/UI tests, then failed at **Set up Ruby and Bundler**. Jekyll/build/Chromium steps were skipped.
 - GitHub source check: workflow used `ruby-version: '3.1'` while `Gemfile.lock` resolves `activesupport (8.1.3)`, which requires Ruby >= 3.2 according to RubyGems. **This is a verified incompatibility**, though the exact step log was not provided, so additional errors remain possible.
