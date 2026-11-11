@@ -83,6 +83,21 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 - **Outstanding:** Confirm actual Actions run and log output, live browser keyboard/mobile/screen-reader QA, production routing and asset delivery.
 - **Daily scope:** Created `DAILY_TARGETS.md` and deferred OPT-001 editorial drafting to a later daily milestone. BL-005 remains **In Review**.
 
+
+## BL-005 release-gate follow-up (2026-11-11)
+
+**Implemented and committed:** `scripts/optimization/profit-browser.test.cjs` (Playwright Chromium regression) and extended `.github/workflows/optimization-lab-validation.yml` to install Chromium, serve the generated Jekyll `_site` locally, and run that regression after Node tests, Jekyll build and artifact checks.
+
+**Browser suite design:** HTTP 200 route; robots `noindex,nofollow`; initial values; all 13 independently listed revenue/cost/profit fixtures; selected SVG point; Find optimum; Reset; arrow-key interaction; 375px viewport and unexpected overflow; reduced motion; uncaught page errors.
+
+**Verified during this turn:** GitHub readback of test/workflow; JavaScript syntax validation of committed browser test passed; Playwright package version `1.56.1` exists; input-range interaction uses explicit `input` event dispatch.
+
+**Not verified:** Successful GitHub Actions workflow run or Jekyll artifact, actual Chromium execution, production GitHub Pages HTML/CSS/JS and accessibility with assistive technology. Public site could not be accessed through available web verifier; GitHub Actions status not observable as a completed run via available connector.
+
+**Release decision:** BL-005 **In Review**, not Done. The automation is a test specification, not test-execution evidence. No OPT-001 publication work has been started.
+
+**Next action:** Inspect the <https://github.com/lotussavy/lotussavy.github.io/actions/workflows/optimization-lab-validation.yml> run and exact logs; if successful, capture evidence and perform real-screen-reader QA. Otherwise repair the concrete failure and rerun. Mark BL-005 Done only after the acceptance criteria have evidence.
+
 ## Required test categories for future features
 1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
 2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
