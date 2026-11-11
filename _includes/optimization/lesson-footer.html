@@ -1,0 +1,23 @@
+<footer class="ol-lesson-footer">
+  <section aria-labelledby="ol-lesson-next-title">
+    <h2 id="ol-lesson-next-title">Continue learning</h2>
+    <div class="ol-lesson-links">
+      {% if page.previous_lesson and page.previous_lesson.url %}
+        <a class="ol-lesson-link" href="{{ page.previous_lesson.url | relative_url }}"><span>← Previous lesson</span><strong>{{ page.previous_lesson.title | escape }}</strong></a>
+      {% endif %}
+      {% if page.next_lesson and page.next_lesson.url %}
+        <a class="ol-lesson-link" href="{{ page.next_lesson.url | relative_url }}"><span>Next lesson →</span><strong>{{ page.next_lesson.title | escape }}</strong></a>
+      {% endif %}
+      <a class="ol-lesson-link" href="{{ '/optimization/' | relative_url }}"><span>Back to</span><strong>Optimization Lab home</strong></a>
+    </div>
+  </section>
+  <div class="ol-review">
+    <p><strong>Editorial status:</strong> {{ page.lesson_status | default: 'draft' | escape }}
+      {% if page.reviewed_on %} · Last reviewed {{ page.reviewed_on | date: '%B %d, %Y' }}{% else %} · Academic review pending{% endif %}
+    </p>
+    <p><strong>Mathematical review:</strong> {% if page.math_reviewed == true %}Recorded complete{% else %}Not yet verified{% endif %}
+      · <strong>Code:</strong> {% if page.code_verified == true %}Recorded verified{% else %}Not yet verified{% endif %}
+      · <strong>Accessibility:</strong> {% if page.accessibility_reviewed == true %}Recorded reviewed{% else %}Review pending{% endif %}</p>
+    {% if page.license %}<p><strong>License:</strong> {{ page.license | escape }}</p>{% endif %}
+  </div>
+</footer>
