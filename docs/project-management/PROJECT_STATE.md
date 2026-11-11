@@ -37,6 +37,17 @@
 - A new run is required to confirm the fix. No build/Chromium pass is claimed.
 
 ## Next exact action
+## 2026-11-11 — LAB-A homepage access fix
+
+- User reported that LAB-A could only be opened by manually typing its URL.
+- Updated `optimization/index.md`: added a prominent **Try LAB-A preview** link in the homepage hero and **Open Interactive LAB-A Preview** in the Interactive Learning Laboratories section.
+- Both links use `{{ '/optimization/labs/profit-preview/' | relative_url }}` and lead to the existing non-indexed simulator preview.
+- Homepage wording now distinguishes accessible development preview from unpublished full OPT-001.
+- Commit: `74ea98a2538c2b5ca4724eea1ab7675b810386e3`.
+- Source checks: both links, labels and development-preview disclaimer verified by GitHub readback.
+- **Production publication and click-through not independently verified**; awaiting GitHub Pages deployment.
+
+
 
 1. Check the [Optimization Lab validation Actions workflow](https://github.com/lotussavy/lotussavy.github.io/actions/workflows/optimization-lab-validation.yml) and its real execution logs. Run via GitHub's 'Run workflow' control if needed.
 2. Fix any genuinely reported CI failures and record rerun evidence.
