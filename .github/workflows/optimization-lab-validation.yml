@@ -89,15 +89,34 @@ jobs:
           curl --fail --silent --show-error http://127.0.0.1:8765/optimization/ >/dev/null
 
       - name: Browser-test LAB-A simulator
-        run: node scripts/optimization/profit-browser.test.cjs
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/optimization/profit-browser.test.cjs 2>&1 | tee /tmp/optimization-lab-a-browser.log
 
       - name: Browser-test OPT-001 lesson
         if: success() || failure()
-        run: node scripts/optimization/opt001-browser.test.cjs
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/optimization/opt001-browser.test.cjs 2>&1 | tee /tmp/optimization-opt001-browser.log
 
       - name: Stop local Jekyll test server
         if: always()
         run: kill "$SERVER_PID" 2>/dev/null || true
+
+      - name: Upload small browser diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: optimization-browser-diagnostics
+          path: |
+            /tmp/optimization-lab-a-browser.log
+            /tmp/optimization-opt001-browser.log
+            _site/optimization/labs/profit-preview/index.html
+            _site/optimization/learn/foundations/what-is-optimization/index.html
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Upload generated site for inspection
         if: always()
