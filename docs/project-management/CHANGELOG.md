@@ -1,5 +1,13 @@
 # Project Changelog
 
+## 2026-11-11 — BL-006A OPT-001 instructional design
+- **Added:** `docs/project-management/OPT_001_INSTRUCTIONAL_DESIGN.md` with target audience, five aligned objectives, timed storyboard, activity sequence, rigorous mathematics, misconceptions and four planned knowledge checks.
+- **Verified:** GitHub readback and nine structural/content checks.
+- **Scope limit:** No lesson page, new UI or publication created.
+- **Status:** BL-006A Done (instructional design only). BL-006B complete lesson drafting is a future daily milestone.
+- **Commit:** `be1e62086cd59defdc02d31b7e228b32d74b083e`.
+
+
 ## 2026-11-11 — LAB-A link added to Optimization homepage
 
 - **Fixed:** Visitors can navigate to the existing interactive LAB-A development preview from the Optimization homepage instead of typing the URL manually.
