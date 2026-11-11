@@ -8,7 +8,7 @@ Status vocabulary: **Proposed**, **Ready**, **In Progress**, **In Review**, **Bl
 | BL-001 | P0 | Audit repository/framework/build/deployment | BL-000 | In Review | Source inventory in ARCHITECTURE_AUDIT.md; Jekyll build/deploy verification pending |
 | BL-002 | P0 | Finalize /optimization/ routes | BL-001 source audit | In Review | Landing page and main/footer links committed; build/live-route/mobile QA pending |
 | BL-003 | P0 | Shared article layout and metadata | BL-001 source audit | In Review | Layout/includes/CSS and nonindexed example committed; 13 source assertions passed; Jekyll render/browser review pending |
-| BL-004 | P0 | LAB-A computational core and exhaustive tests | None | Ready | All n=0–12 test cases verified |
+| BL-004 | P0 | LAB-A computational core and exhaustive tests | None | Done | Independent fixtures for all 13 candidates; 7/7 Node tests passed; algebraic proof; matching GitHub source hashes |
 | BL-005 | P0 | LAB-A UI interaction and explanation | BL-003, BL-004 | Proposed | Keyboard/mobile, consistent result display |
 | BL-006 | P0 | OPT-001 content and mathematical review | BL-005 | Proposed | Approved content review |
 | BL-007 | P0 | OPT-002–004 lessons | BL-003 | Proposed | Four linked reviewed lessons |
