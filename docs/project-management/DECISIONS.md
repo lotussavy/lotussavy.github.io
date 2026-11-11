@@ -16,6 +16,10 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-008 | Add visible main/footer links to /optimization/ after committing page source | Supersedes earlier hold, 2026-11-11 | User requested discoverability; site currently contains the landing page source. Deployment remains to be verified. |
 | ADR-009 | Use landing page with preview-only lab and no links to unpublished lessons | Accepted 2026-11-11 | Avoid misleading users into thinking LAB-A or OPT-001 are already released |
 
+| ADR-010 | Use `optimization-lesson` nested Jekyll layout with shared header/footer includes | Accepted 2026-11-11 (source-level) | Single maintainable lesson structure, inherits site shell and page SEO without framework migration |
+| ADR-011 | Front matter is the lesson metadata contract; draft previews are noindex and off sitemap | Accepted 2026-11-11 | Stable IDs, prerequisites, review flags and editorial controls without server/database |
+| ADR-012 | Scoped `ol-` CSS compiled by Jekyll and conditional load on lesson pages | Accepted 2026-11-11 (pending build verification) | Avoid global stylesheet changes and keep lesson assets isolated |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
