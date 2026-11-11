@@ -13,7 +13,7 @@ Status vocabulary: **Proposed**, **Ready**, **In Progress**, **In Review**, **Bl
 | BL-006 | P0 | OPT-001 content and mathematical review | BL-005 | In Progress (design complete) | Staged as BL-006A/B/C; no article yet |
 | BL-006A | P0 | Design OPT-001 objectives, storyboard and assessment | Blueprint + LAB-A model | Done | Instructional design in OPT_001_INSTRUCTIONAL_DESIGN.md; nine readback checks |
 | BL-006B | P0 | Author full nonindexed OPT-001 draft | BL-006A, reusable layout + LAB-A | Done (draft) | 11-section lesson, original LAB-A include, noindex, executed Python example, 10 source checks; publication QA separate |
-| BL-006C | P0 | Evaluate and publish reviewed OPT-001 | BL-006B | In Review | Mathematical/instructional/reference audit and HTML fix completed; OPT-001 browser regression committed; latest CI, manual WCAG/screen-reader and publication acceptance pending |
+| BL-006C | P0 | Evaluate and publish reviewed OPT-001 | BL-006B | In Review | Mathematical/instructional/reference audit and HTML fix completed; OPT-001 browser regression committed; five failing CI run summaries observed; fixed deterministic six-vs-five disclosures browser-test selector; rerun logs, manual WCAG/screen-reader and publication acceptance pending |
 | BL-007 | P0 | OPT-002–004 lessons | BL-003 | Proposed | Four linked reviewed lessons |
 | BL-008 | P0 | LAB-B constraint explorer | BL-003 | Proposed | Constraint fixtures pass |
 | BL-009 | P0 | 20-term glossary and search | BL-003 | Proposed | Crosslinks and search work |
