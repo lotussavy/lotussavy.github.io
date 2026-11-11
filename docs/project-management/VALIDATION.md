@@ -73,6 +73,16 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 - **Outstanding:** Real browser and screen-reader behavior, 375px QA, Jekyll build/asset deployment, page status; external web check returned both `/optimization/` and preview route inaccessible.
 - **Disposition:** **BL-005 In Review** until remaining verification passes. A simulator component exists in source, but OPT-001 remains unpublished.
 
+## November 11 daily validation-infrastructure milestone (BL-005 remains In Review)
+
+- **Committed workflow:** `.github/workflows/optimization-lab-validation.yml`, commit `d3654ce3f163f86e284d6a9de291323d48c614cb`.
+- Workflow configured to run `node --test scripts/optimization/profit-model.test.cjs scripts/optimization/profit-ui.test.cjs`, a Jekyll production build, generated page/asset checks, and preview noindex and documentation-exclusion checks.
+- Workflow file confirmed readable from GitHub. Combined statuses for its initial commit were **empty**, not a passing result. Workflow logs/execution outcome **unverified**.
+- **Web verifier:** Couldn't access `https://lotussavy.github.io/optimization/` or `https://lotussavy.github.io/optimization/labs/profit-preview/`; the verifier did not establish a live-site success or failure.
+- **Local machine:** Ruby exists, Bundler/Jekyll binaries missing; GitHub remote resolution failed; no local build was executed.
+- **Outstanding:** Confirm actual Actions run and log output, live browser keyboard/mobile/screen-reader QA, production routing and asset delivery.
+- **Daily scope:** Created `DAILY_TARGETS.md` and deferred OPT-001 editorial drafting to a later daily milestone. BL-005 remains **In Review**.
+
 ## Required test categories for future features
 1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
 2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
