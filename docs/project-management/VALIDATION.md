@@ -1,3 +1,16 @@
+## BL-006C — OPT-001 release review (2026-11-11)
+
+**Detailed results:** [OPT_001_REVIEW.md](OPT_001_REVIEW.md). **Decision: NO PUBLICATION YET.**
+
+- **Mathematics:** Recomputed all 13 feasible integers; unique profit optimizer n=8/P=220; independent certificate P(n)=220−5(n−8)². Revenue at n=10 is 500 versus 480 at n=8 while profit is lower (200 versus 220). Synthetic assumptions accurately distinguished from actual fleet economics.
+- **Instructional:** Eleven sections, five learning objectives, 158-word introduction, four explanatory knowledge checks and optional proof. No premature OPT-002 navigation.
+- **Citation audit:** MIT OCW 15.053 2013 Lecture 1 PDF and Stanford Boyd/Vandenberghe official book page found/reviewed; appropriate scope. No evidence the synthetic coefficients were sourced from real data.
+- **Markup fix:** Stylesheet link formerly nested in LAB-A section moved to document head, conditional on `page.labs contains 'profit-playground'`; removed nested link.
+- **Added browser gate:** `scripts/optimization/opt001-browser.test.cjs` executed by `.github/workflows/optimization-lab-validation.yml` after build. Asserts 200/noindex/11 headings/LAB-A/quiz disclosures/MathJax/keyboard/375px/low-motion and absence of JS errors.
+- **Source confirmation:** GitHub readback checks verified new files, conditional CSS and script wiring; new test JS parsed without syntax errors. No claim that Chromium test executed.
+- **Unverified:** Latest GitHub Actions run and generated Jekyll/MathJax output; manual NVDA/VoiceOver, WCAG contrast measurements, cross-browser QA and explicit release approval. Web verifier could not retrieve public lesson URL, which is not proof of a broken route.
+- **Status:** BL-006C **In Review** and OPT-001 remains draft/noindex/unlisted. No publication.
+
 ## BL-006B — OPT-001 full non-indexed draft (2026-11-11)
 
 **Changes committed:**
