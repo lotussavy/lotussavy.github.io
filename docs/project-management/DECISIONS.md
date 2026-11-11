@@ -34,6 +34,10 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 | ADR-021 | Use prediction-first pedagogy and align five OPT-001 objectives to LAB-A interactions and knowledge checks | Accepted 2026-11-11 (design) | Demonstrate decision/objective/feasibility distinction before mathematical formalization; no lesson published |
 | ADR-022 | Split OPT-001 work into instructional design, draft implementation and separate release review | Accepted 2026-11-11 | Enforce one milestone per session and avoid conflating lesson plan with published page |
 
+| ADR-023 | Keep OPT-001 on a stable but nonindexed draft route until separate BL-006C release review | Accepted 2026-11-11 | Complete article can be tested while preserving user preference for daily milestones and preventing premature public release |
+| ADR-024 | Use an existing LAB-A include and versioned Python reproduction; never duplicate browser mathematical logic | Accepted 2026-11-11 | Retain a single audited JavaScript source of interactive results; Python aids independent comprehension |
+| ADR-025 | Emit robots metadata from Jekyll front matter and load MathJax only for lesson pages | Accepted 2026-11-11 (render validation pending) | Ensure development previews request no indexing and equations have a dedicated presentation path |
+
 ## Decision template
 - **ID / date / proposer:**
 - **Context and evidence:**
