@@ -106,6 +106,15 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 - Next: inspect the new GitHub Actions run; if setup passes, review build and browser results, address failures one at a time.
 
 ## Required test categories for future features
+## 2026-11-11 — Homepage navigation to interactive LAB-A
+
+- `optimization/index.md` source committed at `74ea98a2538c2b5ca4724eea1ab7675b810386e3`.
+- GitHub source readback verified **two** links resolving through `relative_url` to `/optimization/labs/profit-preview/`.
+- Verified distinct CTAs in the hero and the interactive-labs section, with explicit development-preview status and unpublished OPT-001 disclosure.
+- No real-browser click-through or deployed Jekyll build was observed for this latest commit. Keep that acceptance requirement open.
+- **Status:** Source discoverability defect fixed; production verification pending.
+
+
 1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
 2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
 3. **UI integration:** controls, plots, numbers and narrative agree.
