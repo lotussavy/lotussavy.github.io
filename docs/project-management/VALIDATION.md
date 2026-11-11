@@ -27,6 +27,15 @@ Record **what was tested**, its expected/actual output, and evidence. Never repo
 - **UI/browser QA:** Not run; keyboard, mobile, JavaScript behavior and production render remain pending.
 - **Status:** BL-002 **In Review**, not Done; finish build/deploy checks before navigation change.
 
+## BL-003 — Reusable lesson template source verification (2026-11-11)
+- **Source committed:** `_layouts/optimization-lesson.html`, `_includes/optimization/lesson-header.html`, `_includes/optimization/lesson-footer.html`, `assets/css/optimization-lesson.scss`, `optimization/learn/template-preview.md`, `docs/project-management/LESSON_AUTHORING.md`. Also updated `_layouts/default.html` for conditional CSS.
+- **GitHub readback:** Confirmed all seven source files.
+- **13 source assertions:** Passed: expected lesson layout/front matter, stable preview permalink, noindex, sitemap false, section headings, nested layout, common includes, parent layout stylesheet conditional, SCSS front matter, responsive breakpoints, reduced-motion CSS and review flags.
+- **Jekyll execution:** NOT RUN. Bundler/Jekyll binaries unavailable in current environment; repository cloning from GitHub blocked by network DNS.
+- **Live browser:** NOT VERIFIED. Public `/optimization/` and `/optimization/learn/template-preview/` URLs returned inaccessible in web verifier; no claim that deployment failed or succeeded.
+- **Outstanding acceptance:** Clean `bundle exec jekyll build`, preview HTML/CSS generated, browser/keyboard/mobile and review metadata tests. BL-003 remains **In Review**.
+- **Note:** This only creates a reusable editorial preview, not OPT-001 or LAB-A. Neither algorithm nor numerical outputs are claimed.
+
 ## Required test categories for future features
 1. **Mathematical unit and property tests:** objective, constraints, boundary cases.
 2. **Independent oracle:** exhaustive enumeration or trusted solver on tiny instances.
