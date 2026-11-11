@@ -1,0 +1,79 @@
+name: Optimization Lab validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'optimization/**'
+      - '_includes/optimization/**'
+      - '_layouts/optimization-lesson.html'
+      - '_layouts/default.html'
+      - 'assets/js/optimization/**'
+      - 'assets/css/optimization-*.scss'
+      - 'scripts/optimization/**'
+      - '_config.yml'
+      - '.github/workflows/optimization-lab-validation.yml'
+  pull_request:
+    paths:
+      - 'optimization/**'
+      - '_includes/optimization/**'
+      - '_layouts/optimization-lesson.html'
+      - '_layouts/default.html'
+      - 'assets/js/optimization/**'
+      - 'assets/css/optimization-*.scss'
+      - 'scripts/optimization/**'
+      - '_config.yml'
+      - '.github/workflows/optimization-lab-validation.yml'
+
+jobs:
+  verify-lab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Test verified mathematical engine and UI
+        run: |
+          node --test scripts/optimization/profit-model.test.cjs scripts/optimization/profit-ui.test.cjs
+
+      - name: Set up Ruby and Bundler
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build Jekyll site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
+
+      - name: Verify generated pages and assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f _site/optimization/index.html
+          test -f _site/optimization/labs/profit-preview/index.html
+          test -f _site/optimization/learn/template-preview/index.html
+          test -f _site/assets/css/optimization-profit.css
+          test -f _site/assets/css/optimization-lesson.css
+          test -f _site/assets/js/optimization/profit-model.js
+          test -f _site/assets/js/optimization/profit-ui.js
+          grep -q 'noindex,nofollow' _site/optimization/labs/profit-preview/index.html
+          grep -q 'Optimization Lab' _site/optimization/index.html
+          ! test -d _site/docs/project-management
+          echo "Optimization Lab build smoke checks passed"
+
+      - name: Upload generated site for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: optimization-lab-jekyll-site
+          path: _site/
+          if-no-files-found: ignore
+          retention-days: 7
