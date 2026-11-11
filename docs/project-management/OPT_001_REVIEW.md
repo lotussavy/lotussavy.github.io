@@ -1,3 +1,14 @@
+## 2026-11-11 — Direct GitHub run diagnosis and isolated Chromium checks
+
+- **Direct GitHub Actions evidence, obtained without user intervention:** workflow run [#21](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43093220722), ID `43093220722`, was completed with conclusion `failure`. Its job `verify-lab` passed Node model/UI tests, Python script, Ruby/Bundler, Jekyll build, output/asset checks and Chromium installation; only combined `Browser-test rendered profit simulator` step failed.
+- **Original job log retrieval:** GitHub's job-logs connector returned `ReadTimeout`; artifact 146 MB also timed out. Therefore no exact exception text from #21 was recovered.
+- **Action taken:** split combined Chromium test into separately reported `Browser-test LAB-A simulator` and `Browser-test OPT-001 lesson` steps, preserving nonzero exit codes. Commit `264d3226c51f8a51f292eccc5f1d0dc2457080d9`.
+- **Diagnostics:** capture each test's complete stdout/stderr with `tee` and upload a small `optimization-browser-diagnostics` artifact including logs and rendered OPT-001/LAB-A HTML. Commit `e9fe2b57a6ddb0cc097a2193eb7d4a90c6f7b187`.
+- **Reliability fix:** change LAB-A Playwright `page.goto` waiting condition from `networkidle` to `domcontentloaded`, avoiding dependency on all third-party HTTP requests falling idle; synchronous scripts are loaded before DOMContentLoaded. Commit `3b6ef1ed7380d6a97e8643d59ec704d1125c079d`.
+- **Fresh GitHub API observation:** runs #22 (`43095585577`), #23 (`43095774023`) and #24 (`43095830880`) were still **queued** when last checked; they were **not successful** and no new browser-test result was available.
+- **Publication remains blocked:** OPT-001 stays `draft`, `noindex,nofollow`, unlisted; BL-006C remains `In Review`. No OPT-002 work.
+- **Next action when a queued run completes:** inspect job step conclusions directly through GitHub API, fetch small browser diagnostics artifact to identify exact failure, apply targeted fix and verify on a subsequent CI run. If an automated step passes, manual screen-reader/color-contrast acceptance still remains.
+
 # BL-006C — OPT-001 Academic, Technical, Accessibility and Citation Review
 
 **Review date:** 2026-11-11  
