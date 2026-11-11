@@ -101,13 +101,13 @@ The result for 4 vehicles is a valid choice under our rules. It is *feasible* bu
 
 An optimization problem can be described with three parts:
 
-1. **Decision variable:** A quantity whose value we choose. Here it is the fleet size, denoted by \(n\).
-2. **Objective function:** A rule that evaluates a choice, such as profit \(P(n)\). We want to maximize it.
+1. **Decision variable:** A quantity whose value we choose. Here it is the fleet size, denoted by \\(n\\).
+2. **Objective function:** A rule that evaluates a choice, such as profit \\(P(n)\\). We want to maximize it.
 3. **Feasible set:** All choices permitted by the problem. Here the only allowed values are whole-number fleet sizes from 0 to 12.
 
 A **feasible solution** satisfies every rule defining the problem. An **optimal solution** is feasible *and* achieves an objective value at least as good as every other feasible solution.
 
-For example, both \(n=4\) and \(n=8\) are feasible, because each is an integer between 0 and 12. But \(n=4\) is not the best profit-producing choice under this specific formula.
+For example, both \\(n=4\\) and \\(n=8\\) are feasible, because each is an integer between 0 and 12. But \\(n=4\\) is not the best profit-producing choice under this specific formula.
 
 Our upper limit of 12 and our integer requirement are **constraints on the decision**. This model does *not* contain demand-satisfaction, route-assignment, charging, battery or service-time constraints.
 
@@ -115,40 +115,40 @@ Our upper limit of 12 and our integer requirement are **constraints on the decis
 
 ## Mathematical formulation
 
-Let \(n\) represent the number of vehicles. For this intentionally simplified example, suppose the following accounting rules hold during a single illustrative planning period:
+Let \\(n\\) represent the number of vehicles. For this intentionally simplified example, suppose the following accounting rules hold during a single illustrative planning period:
 
-\[
+\\[
 R(n)=100n-5n^2
-\]
+\\]
 
 This assumed **revenue function** increases initially but experiences diminishing returns.
 
-\[
+\\[
 C(n)=20n+100
-\]
+\\]
 
 This assumed **cost function** consists of a fixed $100 cost plus $20 per vehicle.
 
-The **profit** for a fleet of size \(n\) is revenue less cost:
+The **profit** for a fleet of size \\(n\\) is revenue less cost:
 
-\[
+\\[
 \begin{aligned}
 P(n)&=R(n)-C(n)\\
 &=(100n-5n^2)-(20n+100)\\
 &=80n-5n^2-100.
 \end{aligned}
-\]
+\\]
 
 Our full optimization problem is therefore
 
-\[
+\\[
 \boxed{
 \begin{aligned}
 \text{maximize}\quad &P(n)=80n-5n^2-100\\
 \text{subject to}\quad &n\in\{0,1,2,\ldots,12\}.
 \end{aligned}
 }
-\]
+\\]
 
 The objective is a **nonlinear quadratic expression**, not a linear program. The decision domain is **discrete** because we require whole vehicles. All money values are illustrative US dollars per model period; no real cost data were used to estimate the coefficients.
 
@@ -156,30 +156,30 @@ The objective is a **nonlinear quadratic expression**, not a linear program. The
 
 ## Solution approach
 
-How can we confidently conclude that \(n=8\) is globally optimal in this exercise?
+How can we confidently conclude that \\(n=8\\) is globally optimal in this exercise?
 
-We can use **exhaustive enumeration** because the feasible set contains only 13 possible fleet sizes: \(0,1,2,\ldots,12\). The verified LAB-A engine calculates the profit for each integer and selects the highest one. The full comparison identifies a **unique** maximizer:
+We can use **exhaustive enumeration** because the feasible set contains only 13 possible fleet sizes: \\(0,1,2,\ldots,12\\). The verified LAB-A engine calculates the profit for each integer and selects the highest one. The full comparison identifies a **unique** maximizer:
 
-\[
+\\[
 n^*=8,\qquad P(n^*)=\$220.
-\]
+\\]
 
 <details markdown="1">
 <summary><strong>Optional deeper look: an independent algebraic certificate</strong></summary>
 
 We can rewrite the objective by completing the square:
 
-\[
+\\[
 P(n)=220-5(n-8)^2.
-\]
+\\]
 
-For any real number \(n\), the squared term satisfies \((n-8)^2\geq 0\), so
+For any real number \\(n\\), the squared term satisfies \\((n-8)^2\geq 0\\), so
 
-\[
+\\[
 P(n)\leq 220.
-\]
+\\]
 
-Equality holds exactly when \(n=8\). Because 8 belongs to the feasible integer set, it attains that upper bound. This independently establishes global optimality for the stated problem.
+Equality holds exactly when \\(n=8\\). Because 8 belongs to the feasible integer set, it attains that upper bound. This independently establishes global optimality for the stated problem.
 
 This proof is unusually simple because our teaching example has a special quadratic structure. Large routing and scheduling models generally need more sophisticated methods and validation.
 
@@ -236,7 +236,7 @@ Even a correctly solved mathematical problem can lead to a misleading practical 
 - **Confusing revenue with profit:** At 10 vehicles, the toy revenue is largest, but cost is also higher, and profit is lower than at 8.
 - **Confusing feasible with optimal:** A fleet of 4 is permitted, but it does not maximize the stated objective.
 - **Checking only a few choices:** Exploring 4, 8, 10 and 12 builds intuition; it does not alone establish an optimum. The complete comparison or proof does.
-- **Ignoring decision restrictions:** A value such as \(n=7.5\) is excluded even if a continuous calculation could evaluate it, because the model describes whole vehicles.
+- **Ignoring decision restrictions:** A value such as \\(n=7.5\\) is excluded even if a continuous calculation could evaluate it, because the model describes whole vehicles.
 - **Assuming synthetic coefficients represent reality:** The revenue and cost formulas were chosen to teach a concept. They do not account for passengers, aircraft availability, energy, charging, schedules, maintenance, uncertainties, or external constraints.
 - **Generalizing the answer:** Change the objective or allowed choices and the best decision may change. The eight-vehicle result is not transferable without a new model and evidence.
 
@@ -247,7 +247,7 @@ Try these questions *before* opening each explanation. No answers are sent or st
 <details markdown="1">
 <summary><strong>1. Which quantity is the decision variable?</strong> Revenue, fleet size, or profit?</summary>
 
-**Answer: Fleet size \(n\).** We choose \(n\). Revenue and profit are numerical outcomes calculated from that choice. If you chose profit, notice that it measures the outcome we want to improve rather than something directly controlled.
+**Answer: Fleet size \\(n\\).** We choose \\(n\\). Revenue and profit are numerical outcomes calculated from that choice. If you chose profit, notice that it measures the outcome we want to improve rather than something directly controlled.
 
 </details>
 
@@ -268,7 +268,7 @@ Try these questions *before* opening each explanation. No answers are sent or st
 <details markdown="1">
 <summary><strong>4. What justifies calling eight vehicles globally optimal?</strong></summary>
 
-**Answer:** We evaluated **all 13 feasible integer choices** and found no higher profit. Independently, \(P(n)=220-5(n-8)^2\leq220\) proves the same upper bound. The visual appearance of a peak alone is not the mathematical guarantee.
+**Answer:** We evaluated **all 13 feasible integer choices** and found no higher profit. Independently, \\(P(n)=220-5(n-8)^2\leq220\\) proves the same upper bound. The visual appearance of a peak alone is not the mathematical guarantee.
 
 </details>
 
