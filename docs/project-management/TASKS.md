@@ -5,8 +5,8 @@ Status vocabulary: **Proposed**, **Ready**, **In Progress**, **In Review**, **Bl
 | ID | Priority | Task | Dependency | Status | Acceptance evidence |
 |---|---|---|---|---|---|
 | BL-000 | P0 | Create continuity documentation and resumption procedure | None | Done | Canonical files in GitHub, readable, build exclusion recorded |
-| BL-001 | P0 | Audit repository/framework/build/deployment | BL-000 | Ready | Architecture inventory, routes and build/deploy facts |
-| BL-002 | P0 | Finalize /optimization/ routes | BL-001 | Proposed | Route and deployment verification |
+| BL-001 | P0 | Audit repository/framework/build/deployment | BL-000 | In Review | Source inventory in ARCHITECTURE_AUDIT.md; Jekyll build/deploy verification pending |
+| BL-002 | P0 | Finalize /optimization/ routes | BL-001 source audit | Ready | Minimal page, Jekyll build, route and deployment verification |
 | BL-003 | P0 | Shared article layout and metadata | BL-001 | Proposed | Example page renders correctly |
 | BL-004 | P0 | LAB-A computational core and exhaustive tests | None | Proposed | All n=0–12 test cases verified |
 | BL-005 | P0 | LAB-A UI interaction and explanation | BL-003, BL-004 | Proposed | Keyboard/mobile, consistent result display |
