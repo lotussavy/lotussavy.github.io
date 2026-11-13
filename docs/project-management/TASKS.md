@@ -14,12 +14,15 @@
 | BL-006A | P0 | OPT-001 design | Done | Instructional design |
 | BL-006B | P0 | OPT-001 implementation | Done | Published lesson and Python |
 | BL-006C | P0 | OPT-001 release review | Done | OPT_001_REVIEW.md; boundary ADR-029 |
-| BL-007 | P0 | OPT-002–004 reviewed lessons | In Progress | OPT-002 released; OPT-003/004 not started |
+| BL-007 | P0 | OPT-002–004 reviewed lessons | In Progress | OPT-002 released; OPT-003 in review; OPT-004 not started |
 | BL-007A | P0 | OPT-002 instructional design | Done | Five objectives, aligned activity/certificate/assessment |
 | BL-007B | P0 | OPT-002 implementation | Done | Full lesson, reusable/standalone model builder and Python |
 | BL-007C | P0 | OPT-002 review and release | Done | [Release CI](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824236), [site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824295), [deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824146); direct live verification |
-| BL-007D | P0 | OPT-003 instructional design | Ready | Next owner-directed target; not started |
-| BL-008 | P0 | LAB-B feasibility explorer | Proposed | Two-dimensional explorer scope and independent fixtures still required |
+| BL-007D | P0 | OPT-003 instructional design | Done | OPT_003_INSTRUCTIONAL_DESIGN.md |
+| BL-007E | P0 | OPT-003 lesson, LAB-B and Python | In Review | Local model/Python/build and 21 browser accessibility audits passed |
+| BL-007F | P0 | OPT-003 release review | In Review | Candidate CI and production verification pending |
+| BL-007G | P0 | OPT-004 instructional design | Ready | Next target after OPT-003 release; not started |
+| BL-008 | P0 | LAB-B feasibility explorer | In Review | Implemented; 109,368 supported settings independently checked |
 | BL-009 | P0 | Glossary/search | Proposed | 20 terms, cross-links and search tests required |
 | BL-010 | P0 | Complete MVP review | Proposed | Remaining foundation lessons, LAB-B and glossary still required |
 | BL-011 | P1 | LP region explorer | Proposed | Solver cross-check after MVP |

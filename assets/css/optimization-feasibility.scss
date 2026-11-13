@@ -1,0 +1,32 @@
+---
+---
+.ol-feasibility{color:#173b52;background:#f0f7fa;border:1px solid #c9dfe7;border-radius:18px;padding:clamp(.8rem,2.5vw,1.5rem);margin:1.4rem 0;min-width:0}
+.ol-feasibility *{box-sizing:border-box}
+.ol-feasibility [hidden]{display:none!important}
+.ol-feasibility .fe-kicker{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#096b70}
+.ol-feasibility h3{margin-top:.3rem}
+.ol-feasibility fieldset{min-width:0;border:1px solid #b4ced8;border-radius:12px;padding:1rem;margin:1.1rem 0;background:#fff}
+.ol-feasibility legend{font-weight:750;padding:0 .3rem;max-width:100%}
+.fe-inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.fe-inputs label{display:block;font-weight:650;line-height:1.5;font-size:.94rem}
+.fe-inputs input[type=range]{display:block;width:100%;min-height:40px;accent-color:#096b70;margin:.3rem 0}
+.fe-inputs input[type=checkbox]{width:20px;height:20px;vertical-align:middle;accent-color:#096b70;margin-right:.35rem}
+.fe-rule{border-top:1px solid #c9dfe7;padding-top:.7rem}
+.fe-actions{display:flex;flex-wrap:wrap;gap:.5rem}
+.fe-actions button{font:inherit;font-size:.9rem;font-weight:650;min-height:44px;padding:.6rem .8rem;border:1px solid #096b70;border-radius:9px;background:#fff;color:#174b5b;cursor:pointer;white-space:normal}
+.fe-actions button:hover{background:#e4f3f1}
+.ol-feasibility :is(button,input,summary,table):focus-visible{outline:3px solid #126477;outline-offset:3px}
+.ol-feasibility :is(.fe-help,.fe-note,figcaption){font-size:.91rem;color:#395b6b}
+.fe-metrics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem}
+.fe-metrics>div{background:#fff;border:1px solid #c9dfe7;border-radius:10px;padding:.8rem}
+.fe-metrics span,.fe-metrics strong{display:block}
+.fe-metrics strong{font-size:1.1rem;margin-top:.25rem}
+.fe-figure{margin:1rem 0;background:white;border:1px solid #c9dfe7;border-radius:10px;padding:.6rem}
+.fe-figure svg{display:block;width:100%;height:auto;max-width:600px;margin:0 auto;font-family:system-ui,sans-serif;font-size:15px;fill:#173b52}
+.fe-figure figcaption{padding:.7rem}
+.fe-legend{padding-left:1.3rem;font-size:.9rem}
+.ol-feasibility table{width:100%;font-size:.9rem;background:#fff}
+.ol-feasibility td,.ol-feasibility th{padding:.6rem;white-space:normal;min-width:75px}
+.fe-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:600px){.fe-inputs,.fe-metrics{grid-template-columns:1fr}.ol-feasibility fieldset{padding:.7rem}.fe-figure{padding:.15rem}.fe-actions button{flex:1 1 115px}}
+@media(prefers-reduced-motion:reduce){.ol-feasibility *{animation:none!important;transition:none!important}}

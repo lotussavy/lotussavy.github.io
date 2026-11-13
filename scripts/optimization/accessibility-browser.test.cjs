@@ -11,7 +11,9 @@ const { chromium } = require('playwright');
   const routes = ['/optimization/', '/optimization/labs/profit/',
     '/optimization/learn/foundations/what-is-optimization/',
     '/optimization/learn/foundations/decisions-objectives-constraints/',
-    '/optimization/labs/model-builder/'];
+    '/optimization/labs/model-builder/',
+    '/optimization/learn/foundations/feasibility-and-trade-offs/',
+    '/optimization/labs/feasibility/'];
   const results = [];
   try {
     for (const width of [1280, 375, 320]) {
@@ -47,7 +49,7 @@ const { chromium } = require('playwright');
         } finally { await page.close(); }
       }
     }
-    console.log('PASS: 15 desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
+    console.log('PASS: 21 desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
   } finally {
     fs.writeFileSync('/tmp/optimization-accessibility.json', JSON.stringify(results, null, 2));
     await browser.close();

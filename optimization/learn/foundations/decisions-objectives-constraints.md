@@ -23,6 +23,9 @@ prerequisites:
 previous_lesson:
   title: "What Is Optimization?"
   url: /optimization/learn/foundations/what-is-optimization/
+next_lesson:
+  title: "Feasibility and Trade-offs"
+  url: /optimization/learn/foundations/feasibility-and-trade-offs/
 concepts: [decision-variable, parameter, objective-function, constraint, feasible-set, infeasibility]
 labs: [decision-model-builder]
 reviewed_on: 2026-11-13
@@ -321,7 +324,7 @@ A clear model answers three questions: **What is chosen? What is improved? What 
 
 Changing a goal reorders the feasible choices. Changing a constraint can change which choices are permitted. The algorithm solves the model you write, so inspect both the mathematics and the meaning of the result.
 
-[Revisit OPT-001]({{ '/optimization/learn/foundations/what-is-optimization/' | relative_url }}) or [experiment in the standalone builder]({{ '/optimization/labs/model-builder/' | relative_url }}). The planned next lesson, **OPT-003: Feasibility and Trade-offs**, will examine permitted decisions more closely when it is developed and reviewed.
+[Revisit OPT-001]({{ '/optimization/learn/foundations/what-is-optimization/' | relative_url }}) or [experiment in the standalone builder]({{ '/optimization/labs/model-builder/' | relative_url }}). Continue with [OPT-003: Feasibility and Trade-offs]({{ '/optimization/learn/foundations/feasibility-and-trade-offs/' | relative_url }}) to examine permitted decisions with two variables.
 
 ### References and verification
 

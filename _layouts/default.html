@@ -16,6 +16,9 @@
     {% if page.labs contains 'decision-model-builder' %}
     <link rel="stylesheet" media="screen" href="{{ '/assets/css/optimization-model-builder.css' | relative_url }}">
     {% endif %}
+    {% if page.labs contains 'feasibility-explorer' %}
+    <link rel="stylesheet" media="screen" href="{{ '/assets/css/optimization-feasibility.css' | relative_url }}">
+    {% endif %}
     <script>
       window.MathJax = {
         tex: { inlineMath: [['\\(', '\\)']], displayMath: [['\\[', '\\]']] },

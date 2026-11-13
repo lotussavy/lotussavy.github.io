@@ -66,3 +66,9 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 ### ADR-032 — complete OPT-002 with a reusable one-variable model builder
 
 **Accepted November 13, 2026.** The owner explicitly requested completing OPT-002 in this session. Author, implement, review and publish the whole lesson; this supersedes the earlier design-only session allocation. Reuse LAB-A financial computations; add separate exact model/constraint logic, a standalone builder route and an independent Python reproduction. Keep this introductory one-variable activity distinct from the later LAB-B two-dimensional feasibility explorer. Validate all 15,639 supported parameter/objective settings against independent certificates. Preserve ADR-029's accessibility evidence boundary. Do not start OPT-003.
+
+## ADR-033 — Complete OPT-003 with the planned LAB-B
+
+**Date:** 2026-11-13. **Status:** Accepted for this owner-authorized lesson release.
+
+Implement the Feasibility and Trade-offs lesson and reusable two-dimensional LAB-B together. Two resource inequalities and an optional minimum share a continuous bounded domain. Switches exclude rules, while domain bounds always apply. No objective or optimizer is invented. Preserve feasible lines and singletons rather than inferring emptiness from zero area. Half-hour controls sample a continuous set. Independently check the clipping engine against boundary intersections for all 109,368 supported settings; verify the exact Python implementation separately. Release only after candidate checks and record live evidence. OPT-004 and LP objective exploration remain later work. ADR-029/AT-001 remains unchanged.

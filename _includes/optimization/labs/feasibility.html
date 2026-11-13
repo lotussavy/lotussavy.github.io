@@ -1,0 +1,41 @@
+<section class="ol-feasibility" data-feasibility aria-labelledby="fe-title">
+  <p class="fe-kicker">LAB-B · Feasibility explorer</p>
+  <h3 id="fe-title">Which combinations are allowed?</h3>
+  <p>Plan hours of Activity A (x) and Activity B (y). A uses two staff-hours per activity-hour; B uses one. Both use one hour of the shared time allowance.</p>
+  <p class="fe-note"><strong>Synthetic continuous model:</strong> every real pair in 0 ≤ x ≤ 10, 0 ≤ y ≤ 10 is a candidate. The sliders sample half-hour increments; the region between them is included. No objective or “best” point is specified.</p>
+  <fieldset data-fe-controls disabled>
+    <legend>Choose a point and change the rules</legend>
+    <div class="fe-inputs">
+      <div><label for="fe-x">Activity A hours (x): <output data-fe-x-value aria-live="off">3</output></label><input id="fe-x" data-fe-x type="range" min="0" max="10" step="0.5" value="3"></div>
+      <div><label for="fe-y">Activity B hours (y): <output data-fe-y-value aria-live="off">4</output></label><input id="fe-y" data-fe-y type="range" min="0" max="10" step="0.5" value="4"></div>
+      <div class="fe-rule"><label><input type="checkbox" data-fe-time-on checked> Apply time limit: x + y ≤ T</label><label for="fe-time">Time allowance T: <output data-fe-time-value aria-live="off">8</output> hours</label><input id="fe-time" data-fe-time type="range" min="0" max="20" step="1" value="8"></div>
+      <div class="fe-rule"><label><input type="checkbox" data-fe-staff-on checked> Apply staffing limit: 2x + y ≤ S</label><label for="fe-staff">Staffing capacity S: <output data-fe-staff-value aria-live="off">10</output> staff-hours</label><input id="fe-staff" data-fe-staff type="range" min="0" max="30" step="1" value="10"></div>
+      <div class="fe-rule"><label><input type="checkbox" data-fe-minimum-on> Apply minimum activity: x + y ≥ M</label><label for="fe-minimum">Minimum M: <output data-fe-minimum-value aria-live="off">6</output> hours</label><input id="fe-minimum" data-fe-minimum type="range" min="0" max="20" step="1" value="6" disabled></div>
+    </div>
+    <p class="fe-help">Use arrow keys on a slider. An unchecked rule is excluded; its stored limit is inactive. The 0–10 domain always applies.</p>
+    <div class="fe-actions" aria-label="Example settings"><button type="button" data-fe-preset="violation">Violates staffing</button><button type="button" data-fe-preset="tradeoff">Trade-off</button><button type="button" data-fe-preset="empty">Empty set</button><button type="button" data-fe-preset="line">Line segment</button><button type="button" data-fe-preset="point">Single point</button><button type="button" data-fe-reset>Reset explorer</button></div>
+  </fieldset>
+  <div class="fe-metrics"><div><span>Selected point <span data-fe-point>(3, 4)</span></span><strong data-fe-selected>Feasible boundary</strong></div><div><span>All allowed combinations</span><strong data-fe-region>Nonempty area</strong></div></div>
+  <figure class="fe-figure">
+    <svg viewBox="0 0 560 520" role="img" aria-labelledby="fe-chart-title fe-chart-desc" data-fe-chart>
+      <title id="fe-chart-title">Feasible combinations of Activity A and B hours</title>
+      <desc id="fe-chart-desc">The default feasible polygon has vertices (0, 0), (5, 0), (2, 6) and (0, 8). Selected (3, 4) is feasible on the staffing boundary. The rule checks and vertices below provide the same information in text.</desc>
+      <rect x="68" y="24" width="432" height="432" fill="#fff" stroke="#657e88"/>
+      <g stroke="#d6e2e7" stroke-width="1"><path d="M154.4 24V456M240.8 24V456M327.2 24V456M413.6 24V456M68 110.4H500M68 196.8H500M68 283.2H500M68 369.6H500"/></g>
+      <g data-fe-shape><polygon points="68,456 284,456 154.4,196.8 68,110.4" fill="#dff3e9" stroke="#165e47" stroke-width="3"/></g>
+      <g data-fe-lines><path d="M68 110.4L413.6 456" stroke="#0c667a" stroke-width="2.5" fill="none"/><path d="M68 24L284 456" stroke="#66479a" stroke-width="2.5" stroke-dasharray="8 5" fill="none"/></g>
+      <g data-fe-marker><circle cx="197.6" cy="283.2" r="7" fill="#e89b3d" stroke="#392b17" stroke-width="2"/><text x="209.6" y="270.2">✓ (3, 4)</text></g>
+      <g fill="#173b52" font-family="system-ui,sans-serif" font-size="15" text-anchor="middle"><text x="68" y="480">0</text><text x="154.4" y="480">2</text><text x="240.8" y="480">4</text><text x="327.2" y="480">6</text><text x="413.6" y="480">8</text><text x="500" y="480">10</text><text x="284" y="510">Activity A hours (x)</text><text transform="translate(20 240) rotate(-90)">Activity B hours (y)</text></g>
+      <g fill="#173b52" font-family="system-ui,sans-serif" font-size="15" text-anchor="end"><text x="56" y="461">0</text><text x="56" y="374.6">2</text><text x="56" y="288.2">4</text><text x="56" y="201.8">6</text><text x="56" y="115.4">8</text><text x="56" y="29">10</text></g>
+    </svg>
+    <figcaption>Shading with a solid outline = feasible area; a thick segment or dot = a feasible set with zero area. Orange circle = your point; ✓ passes all rules, × fails. Boundaries are included.</figcaption>
+  </figure>
+  <ul class="fe-legend" data-fe-legend aria-label="Constraint line styles"><li>Solid blue: time boundary (on)</li><li>Dashed purple: staffing boundary (on)</li><li>Dotted brown: minimum boundary (off)</li></ul>
+  <p class="fe-help" data-fe-explanation>At (3, 4), staffing is exactly used. There is 1 hour of time slack. Feasibility alone does not rank this point against another feasible point.</p>
+  <table><caption>Check every rule for the selected point</caption><thead><tr><th scope="col">Rule</th><th scope="col">Substitution</th><th scope="col">Result / slack</th></tr></thead><tbody data-fe-checks><tr><th scope="row">Domain</th><td>0 ≤ x, y ≤ 10</td><td>Pass; inside domain</td></tr><tr><th scope="row">Time</th><td>7 ≤ 8 hours</td><td>Pass; slack 1 hour</td></tr><tr><th scope="row">Staffing</th><td>10 ≤ 10 staff-hours</td><td>Pass; tight (slack 0)</td></tr><tr><th scope="row">Minimum activity</th><td>Excluded</td><td>Off; no check applied</td></tr></tbody></table>
+  <details><summary>Read the feasible set as coordinates</summary><p data-fe-vertices-note>The polygon includes its edges and interior.</p><table><caption>Vertices or endpoints of the current feasible set (x, y), in hours</caption><thead><tr><th scope="col">Point</th><th scope="col">Activity A (x)</th><th scope="col">Activity B (y)</th></tr></thead><tbody data-fe-vertices><tr><th scope="row">1</th><td>0</td><td>0</td></tr><tr><th scope="row">2</th><td>5</td><td>0</td></tr><tr><th scope="row">3</th><td>2</td><td>6</td></tr><tr><th scope="row">4</th><td>0</td><td>8</td></tr></tbody></table></details>
+  <p class="fe-sr-only" role="status" aria-live="polite" aria-atomic="true" data-fe-status>Selected (3, 4): feasible boundary. The full feasible set is a nonempty area.</p>
+  <noscript><p>JavaScript is off, so the controls are disabled. The default graph and coordinate table remain available: x + y ≤ 8 and 2x + y ≤ 10 within the 0–10 domain. Point (3, 4) passes both rules; (4, 4) fails staffing. The optional minimum is off.</p></noscript>
+  <script src="{{ '/assets/js/optimization/feasibility-model.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/optimization/feasibility-ui.js' | relative_url }}"></script>
+</section>

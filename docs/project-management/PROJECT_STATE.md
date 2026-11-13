@@ -2,7 +2,7 @@
 
 **Updated:** November 13, 2026.
 
-**Current checkpoint:** OPT-002 completed, reviewed and published. M3 (the full foundation package) remains in progress. OPT-003 is not started.
+**Current checkpoint:** OPT-002 completed, reviewed and published. M3 (the full foundation package) remains in progress. OPT-003 and LAB-B are implemented and in candidate review; the last verified live release remains OPT-002.
 
 **Latest released source:** `718c887e2cfa3a0eb48557c36a1c7c57b335f3a9`
 
@@ -12,9 +12,10 @@
 | BL-007A / OPT-002 instructional design | Done | Five objectives, shared example, prediction-first activity and aligned checks |
 | BL-007B / OPT-002 implementation | Done | Full lesson, reusable builder, standalone route and Python reproduction |
 | BL-007C / OPT-002 release review | Done in the documented scope | Nineteen Node tests, three Python checks, browser regressions, 15 accessibility/reflow audits and live deployment |
-| BL-007 / OPT-002–004 | In Progress | OPT-002 released; OPT-003 and OPT-004 not started |
-| BL-007D / OPT-003 design | Ready; not started | Next owner-directed target |
-| BL-008 / LAB-B | Proposed | The introductory model builder does not complete the later two-dimensional feasibility explorer |
+| BL-007 / OPT-002–004 | In Progress | OPT-002 released; OPT-003 in review; OPT-004 not started |
+| BL-007D / OPT-003 design | Done | Five objectives, continuous model, independent fixtures and assessments |
+| BL-007E/F / OPT-003 implementation/release | In Review | Local verification passed; candidate CI and live publication pending |
+| BL-008 / LAB-B | In Review | Two-dimensional explorer implemented with rule toggles and degenerate sets |
 | BL-009–010 / glossary and full MVP release | Proposed | Remaining foundation package still required |
 | AT-001 / dedicated screen-reader compatibility | Ready; unexecuted | Existing explicitly documented follow-up under ADR-029 |
 
@@ -41,4 +42,4 @@ Actual browser, keyboard, visual layout, accessible-name/live-status and assisti
 
 ## Next exact action
 
-When the owner asks to continue, begin **BL-007D: OPT-003 — Feasibility and Trade-offs**. First define its objectives, motivating constraints and assessment, then scope the LAB-B contribution. This session did not implement OPT-003 or the rest of the MVP. No background work is implied.
+Complete candidate CI for OPT-003/LAB-B, promote only after successful checks, verify Pages and production, then record the release. OPT-004 remains unstarted.

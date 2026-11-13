@@ -47,14 +47,16 @@ jobs:
 
       - name: Test verified mathematical engine and UI
         run: |
-          node --test scripts/optimization/profit-model.test.cjs scripts/optimization/profit-ui.test.cjs scripts/optimization/model-builder-model.test.cjs
+          node --test scripts/optimization/profit-model.test.cjs scripts/optimization/profit-ui.test.cjs scripts/optimization/model-builder-model.test.cjs scripts/optimization/feasibility-model.test.cjs
 
-      - name: Verify OPT-001 Python teaching example
+      - name: Verify Python teaching examples
         run: |
           python3 scripts/optimization/opt001_example.py
           cmp scripts/optimization/opt001_example.py assets/code/optimization/opt001_example.py
           python3 assets/code/optimization/opt002_example.py
           python3 scripts/optimization/opt002_example.test.py
+          python3 assets/code/optimization/opt003_example.py
+          python3 scripts/optimization/opt003_example.test.py
 
       - name: Set up Ruby and Bundler
         uses: ruby/setup-ruby@v1
@@ -88,6 +90,10 @@ jobs:
           test -f _site/optimization/labs/model-builder/index.html
           test -f _site/assets/css/optimization-model-builder.css
           grep -q 'name="robots" content="index,follow"' _site/optimization/learn/foundations/decisions-objectives-constraints/index.html
+          test -f _site/optimization/learn/foundations/feasibility-and-trade-offs/index.html
+          test -f _site/optimization/labs/feasibility/index.html
+          test -f _site/assets/css/optimization-feasibility.css
+          test -f _site/assets/code/optimization/opt003_example.py
           ! test -d _site/docs/project-management
           echo "Optimization Lab build smoke checks passed"
 
@@ -124,6 +130,13 @@ jobs:
           set -o pipefail
           node scripts/optimization/opt002-browser.test.cjs 2>&1 | tee /tmp/optimization-opt002-browser.log
 
+      - name: Browser-test OPT-003 and LAB-B
+        if: success() || failure()
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/optimization/opt003-browser.test.cjs 2>&1 | tee /tmp/optimization-opt003-browser.log
+
       - name: Audit released pages for accessibility and reflow
         if: success() || failure()
         shell: bash
@@ -144,12 +157,16 @@ jobs:
             /tmp/optimization-lab-a-browser.log
             /tmp/optimization-opt001-browser.log
             /tmp/optimization-opt002-browser.log
+            /tmp/optimization-opt003-browser.log
+            /tmp/optimization-opt003-browser.json
             /tmp/optimization-accessibility.log
             /tmp/optimization-accessibility.json
             _site/optimization/labs/profit/index.html
             _site/optimization/learn/foundations/what-is-optimization/index.html
             _site/optimization/learn/foundations/decisions-objectives-constraints/index.html
             _site/optimization/labs/model-builder/index.html
+            _site/optimization/labs/feasibility/index.html
+            _site/optimization/learn/foundations/feasibility-and-trade-offs/index.html
           if-no-files-found: ignore
           retention-days: 7
 
