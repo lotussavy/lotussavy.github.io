@@ -1,13 +1,13 @@
 # LAB-A Interactive Simulator — BL-005 Implementation Record
 
 **Date:** November 11, 2026  
-**Status:** In Review — source and simulated-DOM checks passed; Jekyll and live-browser QA unverified.
+**Status:** Released November 13, 2026. Model/UI tests, production build, all-13-choice browser regression, accessibility/reflow checks and live deployment passed; dedicated screen-reader compatibility remains AT-001 (ADR-029).
 
 ## Deliverables
 - `_includes/optimization/labs/profit.html` — reusable semantic UI component with native fleet slider (0–12), Find optimum, Reset, revenue/cost/profit outputs, SVG graph, explanation status, model disclosure and error alert.
 - `assets/js/optimization/profit-ui.js` — DOM controller that exclusively calls `OptimizationProfitModel.evaluateFleet`, `enumerateFeasible`, and `solveExact`; does not reimplement mathematical formulas.
 - `assets/css/optimization-profit.scss` — scoped, responsive styling; native keyboard controls and reduced-motion support.
-- `optimization/labs/profit-preview.md` — non-indexed development preview using the reusable `optimization-lesson` layout.
+- `optimization/labs/profit.md` — canonical released lab using the reusable layout; `profit-preview.md` preserves the original URL through a redirect.
 - `scripts/optimization/profit-ui.test.cjs` — reproducible Node test using a fake DOM; run with `node --test scripts/optimization/profit-ui.test.cjs`.
 
 ## Verified behavior

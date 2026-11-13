@@ -1,7 +1,7 @@
 # Optimization Lab — Lesson Authoring Standard (BL-003)
 
 **Date:** 2026-11-11  
-**Status:** Reusable template source created; production render remains to be verified.  
+**Status:** Reusable template verified through the released OPT-001 lesson on November 13, 2026. See OPT_001_REVIEW.md for evidence and the explicit accessibility-testing boundary.
 **Scope:** Every OPT-001 through OPT-030 lesson.
 
 ## Use the common layout
@@ -106,7 +106,7 @@ test -f _site/assets/css/optimization-lesson.css
 ! test -d _site/docs/project-management
 ```
 
-Open the preview URL at desktop and narrow mobile widths, inspect the browser console, verify `robots=noindex,nofollow`, read objectives and footer in a screen reader, check all navigation and styles. This build has **not yet been run** in the current working environment.
+Open the preview URL at desktop and narrow mobile widths, inspect the browser console, verify `robots=noindex,nofollow`, read objectives and footer in a screen reader, check all navigation and styles. This build and rendered-template/lesson checks passed for the November 13 release. Re-run the applicable checks when authoring a subsequent lesson.
 
 ## Status and provenance
 

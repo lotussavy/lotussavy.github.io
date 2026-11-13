@@ -1,5 +1,13 @@
 # Project Changelog
 
+## 2026-11-13 — OPT-001 and LAB-A live release completed
+
+- Released `f732ad071dfcdc0f9f02c3e35ab72492b494c775` after candidate build/browser checks passed, then observed successful main-branch validation and Pages deployment.
+- Published the completed OPT-001 lesson, canonical profit playground, legacy redirect and homepage entry points. Added downloadable Python, the full 13-choice reference table, accessible code scrolling, improved contrast and repaired equation markup/layout.
+- Release evidence: [Optimization checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191871), [site-wide checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479192207), [deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191240) — all success. Production navigation, lesson status, equations and optimum result verified directly.
+- Updated blueprint, task register, release review, validation and session handoff. BL-001–006 are complete within the explicit review boundary; dedicated screen-reader compatibility remains AT-001. OPT-002 has not been started.
+
+
 ## 2026-11-13 — OPT-001 release candidate and verified repairs
 
 - Recovered the prior exact CI failure: two robots tags, rather than the previously suspected network timing, stopped the LAB-A browser test. Fixed at `2156fd213ed82386c1d201926e8a72d2ae5b439c`; deployment succeeded and the simulator browser test passed.

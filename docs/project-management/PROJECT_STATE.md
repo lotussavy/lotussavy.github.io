@@ -1,28 +1,45 @@
 # Project State — Optimization Learning Lab
 
-**Updated:** 2026-11-13
-**Current milestone:** BL-006C — final OPT-001 release verification.
-**Scope:** Complete the foundation work through OPT-001 and LAB-A, publish it on the existing website, and stop before OPT-002. The owner explicitly authorized this scope and live publication on November 13.
+**Updated:** November 13, 2026
 
-## Current checkpoint
+**Current checkpoint:** M2 / BL-006C completed and released. OPT-001 and LAB-A are live. OPT-002 has not been started.
 
-- Recovered the exact earlier CI exception: duplicate `meta[name="robots"]` elements caused Playwright strict-mode failure. Removed duplicate emission from the shared layout; retained the existing head include as the single source.
-- Repair commit `2156fd213ed82386c1d201926e8a72d2ae5b439c` deployed successfully. Its LAB-A browser test passed; its OPT-001 test identified horizontal overflow at 375 px.
-- Repaired equation overflow, a Markdown-parsed optimum superscript, inline link contrast/underlining, code-token contrast, keyboard focus indicators and focusable code scrollers.
-- Added a complete 13-choice table and a no-JavaScript explanation; retained a single coherent live result announcement.
-- Prepared the canonical `/optimization/labs/profit/` route, a redirect from the existing preview URL, the completed OPT-001 lesson, homepage entry points and a downloadable Python example.
-- Local production Jekyll build and same-site link checks pass. Browser review verified 23 rendered mathematical passages and 23 assistive MathML alternatives. Keyboard slider and answer disclosure behavior passed.
-- Nine browser-based axe checks (three routes at desktop and two phone widths), with disclosures open, found no WCAG-tagged violations or page overflow. The same checks are now part of CI.
-- Final release-commit CI and production observation are pending this checkpoint. Do not claim these until recorded.
+**Released source:** `f732ad071dfcdc0f9f02c3e35ab72492b494c775`
 
-## Accessibility review boundary
+| Deliverable | State | Evidence |
+|---|---|---|
+| BL-001 repository/build audit | Done | Clean local production build and successful site-wide CI |
+| BL-002 routes and navigation | Done | Live homepage entry points, lesson and canonical lab verified |
+| BL-003 reusable lesson layout | Done | Rendered header/footer, metadata, equations, responsive layout and keyboard review |
+| BL-004 LAB-A model | Done | Seven model tests, all 13 choices and independent algebraic proof |
+| BL-005 LAB-A interface | Done | Five UI tests plus browser verification of all 13 values, controls, keyboard, mobile and reduced motion |
+| BL-006A instructional design | Done | Five objectives, prediction-first activity and aligned knowledge checks |
+| BL-006B full OPT-001 | Done | Released lesson, reusable lab, executable/downloadable Python and four knowledge checks |
+| BL-006C release review | Done, with documented compatibility boundary | Passing CI, production deployment and direct live-browser verification; see accessibility scope below |
+| BL-007A OPT-002 instructional design | Ready; not started | Next owner-directed working session |
 
-The review includes actual browser accessibility-tree inspection, accessible names/status text, assistive MathML, keyboard operation, contrast and automated axe checks. **A dedicated NVDA, VoiceOver or Orca compatibility session was not completed.** Native screen-reader setup was attempted, but the available desktop control could not establish a usable test session. This is a documented compatibility follow-up, not a claim of full WCAG conformance or independent human sign-off. See ADR-029.
+## Live learning journey
 
-## Next action
+- [Optimization Lab homepage](https://lotussavy.github.io/optimization/)
+- [OPT-001: What Is Optimization?](https://lotussavy.github.io/optimization/learn/foundations/what-is-optimization/)
+- [LAB-A: Profit Playground](https://lotussavy.github.io/optimization/labs/profit/)
+- Existing `/optimization/labs/profit-preview/` links redirect to the canonical lab; this was observed in the live browser.
 
-Verify all release-commit CI results and production routes, then finalize the task/review/validation records. OPT-002 is not started.
+## Release evidence
 
-## Previous checkpoint history
+- [Optimization validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191871) — model/UI tests, Python reproduction, production build, both browser suites and nine accessibility/reflow audits.
+- [Site-wide validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479192207) — clean Jekyll build, link/media checks and existing desktop/mobile/Lighthouse workflow.
+- [GitHub Pages deployment: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191240).
+- Direct production browser observation: homepage links to OPT-001; lesson is published and indexable with one robots directive; all 23 mathematical passages have rendered MathJax and assistive MathML; the old lab link redirects correctly; Find optimum reports 8 vehicles and $220.
 
-The detailed November 11 investigations remain in CHANGELOG.md and VALIDATION.md. Their earlier pending statements describe historical checkpoints, not the current result.
+## Resolved defects
+
+Duplicate robots tags had caused the earlier strict-mode browser failure. Equation overflow, a Markdown-parsed optimum superscript, low-contrast inline links/code tokens, keyboard focus and code scrolling have been repaired. LAB-A now includes the complete 13-choice reference table and a no-JavaScript explanation. Original failing run records remain in history.
+
+## Accessibility scope and follow-up
+
+The completed review covers the actual browser accessibility tree, labels, live status, assistive MathML, keyboard operation, visual phone layouts and automated WCAG-tagged axe checks. A dedicated NVDA/VoiceOver/Orca session was **not completed** after the native test setup could not establish usable control. AT-001 records this compatibility follow-up. This release does not claim universal screen-reader compatibility, independent human screen-reader sign-off, or full WCAG conformance. ADR-029 defines this explicit review boundary.
+
+## Next exact action
+
+In the next owner-directed session, begin **BL-007A: instructional design for OPT-002 — Decisions, Objectives, and Constraints**. Define its objectives, motivating example, mathematical scope and assessment before implementation. No OPT-002 page, placeholder link or lab has been created. The full MVP (OPT-001–004, LAB-A/B and glossary) is still in development.

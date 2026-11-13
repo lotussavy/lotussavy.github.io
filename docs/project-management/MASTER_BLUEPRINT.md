@@ -1,13 +1,19 @@
 # Optimization Lab — Project Blueprint
 
-**Version:** 1.0  
+**Version:** 1.1
 **Baseline date:** November 11, 2026  
 **Project type:** Interactive educational publishing platform  
 **Primary home:** Existing academic website (`lotussavy.github.io`), under a dedicated `/optimization/` section (proposed path; confirm against repository routes)  
-**Status:** Proposed baseline — implementation has not yet begun under this blueprint  
+**Status:** M2 complete — OPT-001 and LAB-A released; M3 foundation expansion next
 **Working motto:** *Learn → Visualize → Experiment → Understand → Implement → Research.*
 
 > **Document purpose.** This is the single reference for product scope, curriculum, interfaces, technology, quality requirements, milestones, and decisions. Update the version and decision log whenever a material change is approved. An item is not “done” merely because code or prose exists: the defined acceptance criteria must pass.
+
+## Current implementation checkpoint — November 13, 2026
+
+M0/M1 foundation work and M2 (OPT-001 plus LAB-A) are completed in the review scope documented in [PROJECT_STATE.md](PROJECT_STATE.md) and [OPT_001_REVIEW.md](OPT_001_REVIEW.md). [OPT-001](https://lotussavy.github.io/optimization/learn/foundations/what-is-optimization/) and the [Profit Playground](https://lotussavy.github.io/optimization/labs/profit/) are live. Release build/browser checks and Pages deployment passed on `f732ad071dfcdc0f9f02c3e35ab72492b494c775`. Dedicated screen-reader compatibility remains the explicit AT-001 follow-up under ADR-029.
+
+The next item is **BL-007A: OPT-002 instructional design**; it has not been started. OPT-002–004, LAB-B, glossary/search and the complete MVP remain future work. The curriculum and scope below remain the approved plan; they are not claims that those future items have shipped.
 
 ## 1. Executive charter
 
@@ -515,9 +521,9 @@ Maintain a central tracker with: `ID | Workstream | Description | Priority | Own
 
 ## 18. Immediate next action and handoff contract
 
-**Start with BL-001: audit the current `lotussavy.github.io` repository.** Establish the current site framework, directory layout, build/deploy mechanism, styles, scripts, math support, existing research page, and compatibility constraints. Based on the audit, finalize actual routing/technology, then implement a single self-contained OPT-001/LAB-A lesson as the golden template.
+**Next: BL-007A — design OPT-002, Decisions, Objectives, and Constraints.** Resume from PROJECT_STATE.md and the latest GitHub state. Define objectives, a motivating decision problem, notation, assumptions and aligned assessments before implementing the second lesson. OPT-001/LAB-A now provide the verified golden template; no OPT-002 work has begun.
 
-### What to record before declaring the first task complete
+### Verification record required for each subsequent task
 
 1. Current branch, commit/reference, and build command.
 2. Where optimization pages and interactive modules should reside.
@@ -548,3 +554,4 @@ Optimization; decision variable; parameter; objective function; constraint; feas
 | Version | Date | Change | Approval state |
 |---|---|---|---|
 | 1.0 | 2026-11-11 | Initial baseline architecture, curriculum, scope, acceptance criteria, milestones, and backlog | Proposed for project use |
+| 1.1 | 2026-11-13 | Recorded verified OPT-001/LAB-A release, explicit accessibility review scope and next OPT-002 design target; curriculum scope unchanged | Owner-authorized live release |

@@ -1,3 +1,20 @@
+# Current Validation Checkpoint — November 13, 2026
+
+**Released source:** `f732ad071dfcdc0f9f02c3e35ab72492b494c775`. Earlier pending statements below describe historical checkpoints and are superseded for this release by the following evidence.
+
+- Exact earlier failure recovered from job `130775351326`: two robots tags caused the strict-mode browser exception. Removed the duplicate; subsequent testing exposed and repaired mobile equation overflow.
+- Twelve Node model/UI tests passed with zero failures. Python printed fleet 8 / profit $220; the public download matches the tested file. Independently compared all 13 generated table rows with the fixed fixture.
+- Local `JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter` passed under Ruby 3.3.8. The same-site checker passed on 104 HTML pages and 4,138 references. Local Node was v24.22.1 and Python was 3.12.14; CI uses its recorded versions.
+- Browser review and the release workflow verified the simulator, 11 lesson sections, disclosures, all 23 rendered math passages, keyboard, mobile reflow, published metadata and sitemap/template status.
+- Nine open-disclosure axe audits (three routes at 1280/375/320 px) passed. No WCAG-tagged violations, page overflow, raw TeX or MathJax errors were reported.
+- [Optimization validation run 43479191871: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191871); job `132069495761` belongs to the also-passing identical candidate run `43478771860`.
+- [Site-wide validation run 43479192207: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479192207).
+- [Pages deployment run 43479191240: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191240). Direct production browser observation confirmed homepage lesson navigation, single indexable robots metadata, 23 MathML alternatives, the legacy redirect and the optimum result.
+- **Not executed:** dedicated NVDA/VoiceOver/Orca compatibility. This remains AT-001 under ADR-029, not a passed test or a universal accessibility certificate.
+- **Handoff:** BL-001–006 complete in the recorded scope; OPT-002 not started.
+
+---
+
 ## 2026-11-11 — Direct GitHub run diagnosis and isolated Chromium checks
 
 - **Direct GitHub Actions evidence, obtained without user intervention:** workflow run [#21](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43093220722), ID `43093220722`, was completed with conclusion `failure`. Its job `verify-lab` passed Node model/UI tests, Python script, Ruby/Bundler, Jekyll build, output/asset checks and Chromium installation; only combined `Browser-test rendered profit simulator` step failed.

@@ -3,7 +3,7 @@
 **Date:** 2026-11-11  
 **Repository:** `lotussavy/lotussavy.github.io` (public)  
 **Branch inspected:** `main`  
-**Audit state:** Source inspection completed for core Jekyll files; deployment workflow and end-to-end build verification remain open.
+**Audit state:** Completed for the OPT-001/LAB-A release on November 13, 2026: local and CI production builds, site-wide checks, deployment and live-route verification passed. The original source inventory below is retained; current evidence is in PROJECT_STATE.md and OPT_001_REVIEW.md.
 
 ## 1. Verified site architecture
 

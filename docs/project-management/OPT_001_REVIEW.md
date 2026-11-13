@@ -1,160 +1,63 @@
-## 2026-11-11 — Direct GitHub run diagnosis and isolated Chromium checks
+# OPT-001 / LAB-A — Final Release Review
 
-- **Direct GitHub Actions evidence, obtained without user intervention:** workflow run [#21](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43093220722), ID `43093220722`, was completed with conclusion `failure`. Its job `verify-lab` passed Node model/UI tests, Python script, Ruby/Bundler, Jekyll build, output/asset checks and Chromium installation; only combined `Browser-test rendered profit simulator` step failed.
-- **Original job log retrieval:** GitHub's job-logs connector returned `ReadTimeout`; artifact 146 MB also timed out. Therefore no exact exception text from #21 was recovered.
-- **Action taken:** split combined Chromium test into separately reported `Browser-test LAB-A simulator` and `Browser-test OPT-001 lesson` steps, preserving nonzero exit codes. Commit `264d3226c51f8a51f292eccc5f1d0dc2457080d9`.
-- **Diagnostics:** capture each test's complete stdout/stderr with `tee` and upload a small `optimization-browser-diagnostics` artifact including logs and rendered OPT-001/LAB-A HTML. Commit `e9fe2b57a6ddb0cc097a2193eb7d4a90c6f7b187`.
-- **Reliability fix:** change LAB-A Playwright `page.goto` waiting condition from `networkidle` to `domcontentloaded`, avoiding dependency on all third-party HTTP requests falling idle; synchronous scripts are loaded before DOMContentLoaded. Commit `3b6ef1ed7380d6a97e8643d59ec704d1125c079d`.
-- **Fresh GitHub API observation:** runs #22 (`43095585577`), #23 (`43095774023`) and #24 (`43095830880`) were still **queued** when last checked; they were **not successful** and no new browser-test result was available.
-- **Publication remains blocked:** OPT-001 stays `draft`, `noindex,nofollow`, unlisted; BL-006C remains `In Review`. No OPT-002 work.
-- **Next action when a queued run completes:** inspect job step conclusions directly through GitHub API, fetch small browser diagnostics artifact to identify exact failure, apply targeted fix and verify on a subsequent CI run. If an automated step passes, manual screen-reader/color-contrast acceptance still remains.
+**Review/release date:** November 13, 2026
 
-# BL-006C — OPT-001 Academic, Technical, Accessibility and Citation Review
+**Disposition:** Released on the existing website following owner authorization, passing build/browser gates and direct production verification. The accessibility testing boundary below is part of this disposition.
 
-**Review date:** 2026-11-11  
-**Reviewed lesson:** `optimization/learn/foundations/what-is-optimization.md`  
-**Milestone:** BL-006C  
-**Disposition:** **In Review — NOT APPROVED FOR PUBLICATION**  
-**Scope boundary:** Existing OPT-001 draft and reused LAB-A only. OPT-002 is not created or edited.
+**Released source:** `f732ad071dfcdc0f9f02c3e35ab72492b494c775`
 
-## 1. Decision and evidence standard
+## 1. Mathematical and instructional review
 
-The full draft is substantially complete and passes source-level checks for scientific content, instructional structure, correct inputs, and intended publication status. This review fixed a verified HTML markup issue and added an automated rendered-page release gate. However, **the updated CI run, actual Jekyll-generated page, MathJax display, mobile browser execution, WCAG contrast, and manual screen-reader testing have not been independently verified**. Consequently, publication would overstate acceptance.
+The synthetic model is `n ∈ {0,…,12}`, `R(n)=100n−5n²`, `C(n)=20n+100`, and `P(n)=80n−5n²−100`. Independent enumeration checks all 13 feasible choices. The identity `P(n)=220−5(n−8)²` independently proves the unique optimum `n=8`, `P=$220`. Revenue instead peaks at `n=10`, with revenue $500 and profit $200. This distinction is correctly taught.
 
-The draft retains:
-- `lesson_status: draft`
-- `robots: noindex,nofollow`, `sitemap: false`
-- `math_reviewed: false`, `accessibility_reviewed: false`, `code_verified: false` (page-level flags are reserved for formal review completion)
-- No homepage link labelling OPT-001 as a released lesson.
+The lesson identifies the variable, objective and feasible domain; uses prediction before revealing the optimum; explains feasible versus optimal; provides an executable Python reproduction, four answer disclosures and an optional independent proof. It explicitly identifies the example as nonlinear, discrete and synthetic. No operational fleet-economics, demand, routing, battery or charging validity is claimed.
 
-A direct URL remains possible because the draft is committed to a public GitHub Pages source repository. **Noindex is a request to search engines, not an access-control or confidentiality mechanism.**
+MIT OCW introductory optimization slides and the Stanford author-hosted Boyd/Vandenberghe resource are appropriate foundational references. Both links returned HTTP 200 in the release review. Synthetic financial coefficients are attributed to this teaching example.
 
-## 2. Mathematical review
+## 2. Verified repairs and resulting behavior
 
-**Model definition:** integer fleet size `n ∈ {0,1,...,12}`, fixed single-period synthetic assumptions, revenue `R(n)=100n−5n²`, cost `C(n)=20n+100`, profit `P(n)=80n−5n²−100`.
+- Removed duplicate robots metadata. The prior exact job exception was a strict-mode locator resolving two robots tags; the existing shared head include now emits the single directive.
+- Confined wide MathJax displays to their own horizontal scroller, preserving narrow page width.
+- Replaced Markdown-sensitive optimum superscripts with explicit TeX notation. All 23 mathematical passages now render and expose assistive MathML.
+- Improved inline-link and syntax-token contrast; underlined inline links; used stronger focus indicators and keyboard-focusable code scrollers.
+- Added all 13 reference rows as a semantic table, a no-JavaScript explanation and one coherent live result announcement.
+- Published the full lesson, downloadable Python reproduction and canonical profit lab; retained the old preview URL through a redirect and updated homepage entry points.
+- Retained the authoring-template preview as nonindexed and excluded from the sitemap. OPT-002 is not linked or created prematurely.
 
-**Exact independent algebraic certificate:**
-```
-P(n) = 80n - 5n² - 100
-     = 220 - 5(n - 8)²
-     <= 220 for every real n
-```
-At integer `n=8`, equality holds, proving this is the unique global maximizer on the feasible integer set.
+## 3. Acceptance evidence
 
-**Independently recomputed anchors:**
-
-| n | Revenue | Cost | Profit |
-|---:|---:|---:|---:|
-| 0 | 0 | 100 | -100 |
-| 4 | 320 | 180 | 140 |
-| 8 | 480 | 260 | **220** |
-| 10 | **500** | 300 | 200 |
-| 12 | 480 | 340 | 140 |
-
-All thirteen values satisfy the completing-the-square identity; revenue peaks at n=10 (not 8), profit peaks uniquely at n=8. The problem is **nonlinear and discrete**, not a linear program. The distinction between feasible and optimal is described correctly. The slider is a visualization, not proof; full enumeration and the identity are proof.
-
-**Limits of claim:** No passenger, routing, battery, charging, time, safety, availability, demand or real economics represented. Authors must preserve these limitations at publication.
-
-**Math verdict:** Passed conceptual and algebraic source review. Does not certify browser typesetting.
-
-## 3. Instructional and editorial review
-
-- The draft contains all eleven required narrative sections, in order; the initial `In one minute` segment is 158 words including its learning-goal line (within the 100–160-word goal).
-- Five measurable objectives align with prediction, the existing interactive experiment, definitions, proof and four knowledge-check explanations.
-- Prediction-first learning flow is retained, followed by interpretation, formal language, model, exact solution, code and transfer.
-- Strong central counterexample: revenue improves from 480 to 500 between n=8 and n=10 while profit drops from 220 to 200.
-- Quiz answers are placed in four closed native `details` elements; an additional disclosure contains optional algebraic proof. Browser check will confirm disclosure rendering.
-- The content does not overclaim a calibrated transportation model, operating fleet size, real revenue, or transfer of n=8 to real aircraft.
-- The separate Python 3.10+ example and its source were previously executed and verified; the new workflow runs that script.
-- The lesson intentionally does not link to nonexistent OPT-002 or call itself published.
-
-**Editorial verdict:** Substantive content is ready for final rendered-page review; no content publication approval until rendering and accessibility verification.
-
-## 4. Technical findings and corrections
-
-### Fixed: stylesheet incorrectly nested in the lab section
-**Finding:** `_includes/optimization/labs/profit.html` included a `<link rel="stylesheet">` inside the lab `<section>`, which is not the intended location for a stylesheet resource.
-
-**Fix:** Move the LAB-A stylesheet link into `_layouts/default.html` inside the existing lesson-layout block, conditional on `page.labs contains 'profit-playground'`. Remove the nested link from the shared lab include. Both the OPT-001 draft and the existing LAB-A preview declare this lab in front matter.
-
-**Why:** Keeps resource loading in the document head, avoids duplicate loads when the include is reused, and preserves the common source component.
-
-### Added: rendered OPT-001 browser regression
-**File:** `scripts/optimization/opt001-browser.test.cjs`, invoked from `.github/workflows/optimization-lab-validation.yml`.
-
-**Checks planned for actual execution:**
-- Route HTTP 200, document title, explicit draft noindex.
-- One shared lesson layout; eleven section headings; one reused LAB-A instance.
-- Initial LAB-A values and Find Optimum updates.
-- Native slider accessible name, SVG chart title, LAB-A stylesheet in `<head>` and none in lab section.
-- Five disclosures, including four knowledge checks; test opening a disclosure and seeing explanatory feedback.
-- MathJax initialization and at least six rendered math containers; a third-party CDN problem must not silently count as success.
-- 375 px responsive layout, no unexpected page-level overflow, native arrow-key control, reduced-motion emulation and uncaught JS errors.
-
-**Status:** GitHub source committed, JavaScript syntax and source checks passed. **Actual Playwright execution is not yet verified.**
-
-### Environment limits
-- The connected GitHub tool can fetch/update source but its available workflow lookup is PR-run scoped; no verified successful run/job log from the new commit was obtainable.
-- The public lesson URL was inaccessible through the available external web verifier; this is not proof that GitHub Pages itself is unavailable.
-- The local environment has Ruby and Node but lacks installed Jekyll/Bundler project dependencies and cannot resolve github.com for a checkout. A clean full Jekyll build was not executed locally.
-- MathJax relies on `cdn.jsdelivr.net`; its actual availability and rendering must be observed in the CI/browser result.
-
-## 5. References audit
-
-**MIT OpenCourseWare:** The course `15.053 Optimization Methods in Management Science`, 2013 Lecture 1 PDF is accessible. Its slides distinguish decision variables, objective functions and constraints, and explicitly define feasible and optimal solutions. This is appropriate foundational support for OPT-001.
-
-URL: `https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/40d1bb14223439515ac3df1aa229ecdd_MIT15_053S13_lec1.pdf`
-
-**Boyd and Vandenberghe:** The Stanford author-hosted `Convex Optimization` resource page is accessible and identifies the authors and Cambridge University Press. It is relevant as optional advanced reading, not as the source of our synthetic fleet coefficients or a claim that this exercise uses a convex-program solver.
-
-URL: `https://stanford.edu/~boyd/cvxbook/`
-
-**Synthetic example:** Revenue/cost/profit figures and exact solution originate from the project's version-controlled LAB-A model and tests. No fabricated field data or misattributed citations detected.
-
-**References verdict:** The two links and their intended scope were independently checked at the official hosts; the final publication still needs a rendered-link check from the deployed page.
-
-## 6. Accessibility matrix
-
-| Requirement | Source/automated evidence | Status |
+| Check | Result | Evidence |
 |---|---|---|
-| Semantic section hierarchy and document title | HTML/Markdown source audit; 11 headings | Source pass; browser pending |
-| Accessible range label and help text | Native slider with `label for` and `aria-describedby`; new browser assertions | Source pass; browser pending |
-| Chart independent textual status | `role=status`, numeric outputs, SVG `title` and `desc` | Source pass; screen-reader pending |
-| Native quiz disclosure control | Five `details`/`summary` blocks and explanatory answers | Source pass; browser pending |
-| Keyboard fleet adjustment and visible focus | Native range input; tests configured | Browser CI pending |
-| Mobile 375px and reduced motion | Scoped CSS and Playwright checks configured | Browser CI pending |
-| WCAG AA color contrast | No measured/verified computed contrast report | **Open** |
-| NVDA/VoiceOver or equivalent manual review | No manual assistive-technology observation | **Open** |
-| TeX reading/accessibility | MathJax configured and browser check added | Render/readability pending |
+| Model and UI tests | 12 passed; 0 failed | Seven model and five UI cases in the release workflow |
+| All feasible numerical values | Pass | 13 independent fixed fixtures, browser values and generated reference-table comparison |
+| Independent optimality proof | Pass | Completing-the-square identity plus finite enumeration |
+| Python example | Pass | Expected fleet 8 / profit $220; downloadable and test copies identical |
+| Production Jekyll build | Pass | Local strict-front-matter build and both release workflows |
+| Local routes/assets | Pass | 104 HTML pages / 4,138 same-site references checked locally; CI link/media checks passed |
+| LAB-A browser regression | Pass | All 13 inputs, optimum/reset, keyboard, mobile and reduced motion |
+| OPT-001 browser regression | Pass | Released metadata, 11 sections, reused lab, disclosures, math, keyboard and mobile |
+| Accessibility and reflow | Pass within stated automated scope | Three pages × 1280/375/320 px; disclosures open; no WCAG-tagged axe violations, raw TeX or page overflow |
+| Manual browser review | Pass within stated scope | Accessibility tree, labels, live status, keyboard slider/disclosure, desktop and phone visuals; 23 MathJax/MathML passages |
+| Dedicated screen-reader compatibility | Not completed | AT-001; not a claimed pass |
+| Production deployment and navigation | Pass | Live homepage → lesson; old preview → canonical lab; published lesson and 8-vehicle / $220 output observed |
 
-**Accessibility verdict:** Promising source semantics, but incomplete acceptance. Automated testing does **not** substitute for manual screen-reader review.
+## 4. Reproducibility and release references
 
-## 2026-11-11 — GitHub Actions repeated failures and deterministic browser-test repair
+- [Main-branch Optimization Lab validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191871)
+- [Main-branch site-wide build/browser workflow: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479192207)
+- [GitHub Pages deployment: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43479191240)
+- Candidate checks also passed before promotion: runs `43478771860` and `43478771844` on the identical released SHA.
+- CI uses Node 22, Ruby 3.3, the committed GitHub Pages/Jekyll lockfile, Playwright 1.56.1 and axe-core 4.10.3. The Python example uses standard features compatible with Python 3.10+.
+- Reproduce the relevant checks through `.github/workflows/optimization-lab-validation.yml`; its generated report is uploaded with the small browser diagnostics.
 
-- User screenshot shows optimization-lab-validation workflow runs **#16–#20 failed**, including #20 after the accessibility/stylesheet assertions were added. Screenshot shows only run summaries, **not the failing job step or exception**; exact shared root cause remains unconfirmed.
-- Independent source audit revealed a guaranteed mismatch in `scripts/optimization/opt001-browser.test.cjs`: previous selector `.ol-lesson-body details` selected **six** disclosures (five in the OPT-001 article plus one inside the reused LAB-A simulator) but asserted there were **five**. The browser test would fail when reaching this check even with correct HTML.
-- Corrected the selector to restrict to lesson-originated disclosures containing a bold `summary`:
-  `page.locator('.ol-lesson-body details').filter({ has: page.locator('summary strong') })`.
-- Fix commit: `1cb1186bf593bb76614ea16d944dc737ed09a77e`.
-- Verification: GitHub readback, JavaScript parse check passed; counted five lesson-source `<details markdown="1">` and one lab-source `<details>` independently. This supports the specific repair; **does not establish that it caused all five CI failures**.
-- Outstanding: Let GitHub Actions complete new run, inspect exact failing step and error if red; confirm OPT-001 MathJax/browser outputs, keyboard, mobile and human accessibility before changing its draft/noindex status.
-- Status: BL-006C **In Review**, no release, no OPT-002.
+## 5. Accessibility boundary and authorization
 
-## 7. Release gate and next action
+This was a mathematical/editorial review with actual browser inspection, keyboard tests, assistive-MathML verification and automated contrast/accessibility checks. A native screen-reader setup was attempted but no usable dedicated compatibility session was completed. **NVDA, VoiceOver and Orca compatibility are unverified.** Do not describe this as independent human screen-reader sign-off or full WCAG certification. AT-001 preserves that follow-up; ADR-029 records the explicit supported-review scope.
 
-| Release criterion | Result |
-|---|---|
-| Verified mathematical formulas and exact optimum | Pass |
-| Full learner narrative and aligned assessments | Pass at source level |
-| Reused LAB-A component, no duplicated UI formulas | Pass |
-| Reference URLs and scope | Pass (official primary sources) |
-| Python reproduction | Previously passed; CI rerun pending |
-| Correct draft metadata | Pass in source |
-| Jekyll-generated page and noindex meta | **Pending actual run evidence** |
-| Rendered MathJax, disclosures, chart, browser JS | **Pending actual run evidence** |
-| Mobile, keyboard, WCAG and screen-reader acceptance | **Pending** |
-| Explicit human publication approval | **Pending** |
+The owner directly authorized completion and live publication on November 13. That authorization supplies the publication decision; a separate human editorial panel is not claimed.
 
-**Final decision:** Do **not** publish or index OPT-001 yet. Keep **BL-006C In Review** until the latest GitHub Actions workflow has a successful complete run and the remaining human accessibility/release checks are recorded. Do not start OPT-002.
+## 6. Published URLs and next step
 
-**Exact resumption task:** Open <https://github.com/lotussavy/lotussavy.github.io/actions/workflows/optimization-lab-validation.yml>, inspect the latest run for the new `OPT-001` browser test, capture the exact failing step or passed run ID, and handle discovered defects. After green CI, complete manual accessibility/visual review and explicitly approve or reject release.
+[OPT-001](https://lotussavy.github.io/optimization/learn/foundations/what-is-optimization/) · [Profit Playground](https://lotussavy.github.io/optimization/labs/profit/) · [Optimization homepage](https://lotussavy.github.io/optimization/).
+
+BL-001–006 are complete within the recorded review scope. The next work item is BL-007A, OPT-002 instructional design, in a subsequent owner-directed session. The rest of the MVP remains planned.

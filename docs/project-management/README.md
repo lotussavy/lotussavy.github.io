@@ -5,8 +5,12 @@
 **Baseline:** 2026-11-11  
 **Visibility:** The repository is public. These files are excluded from the Jekyll website build, **not private**.
 
+## Current checkpoint
+
+OPT-001 and LAB-A were released November 13, 2026. Start with PROJECT_STATE.md for current evidence, the accessibility-review boundary and the next OPT-002 design target. Earlier pending statements in historical records are not current status.
+
 ## Daily targets
-Read [DAILY_TARGETS.md](DAILY_TARGETS.md) for the one-milestone-per-day agreement and current day's acceptance gate.
+Read [DAILY_TARGETS.md](DAILY_TARGETS.md) for the current scope agreement and next owner-directed working target.
 
 ## Read in this order when resuming
 1. [PROJECT_STATE.md](PROJECT_STATE.md) — current verified status and next action.
