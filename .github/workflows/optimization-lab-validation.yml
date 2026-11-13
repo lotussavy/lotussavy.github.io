@@ -26,9 +26,17 @@ on:
       - '_config.yml'
       - '.github/workflows/optimization-lab-validation.yml'
 
+permissions:
+  contents: read
+
+concurrency:
+  group: optimization-lab-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   verify-lab:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Check out site
         uses: actions/checkout@v4

@@ -14,6 +14,7 @@ const { chromium } = require('playwright');
     const response = await page.goto(base + '/optimization/labs/profit-preview/', { waitUntil: 'domcontentloaded' });
     assert.equal(response.status(), 200, 'Preview URL should return HTTP 200');
     assert.match(await page.title(), /LAB-A/i);
+    assert.equal(await page.locator('meta[name="robots"]').count(), 1, 'Exactly one robots directive');
     assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'noindex,nofollow');
     assert.equal(await page.locator('[data-ol-range]').inputValue(), '4');
     assert.equal(await page.locator('[data-ol-profit]').innerText(), '$140');

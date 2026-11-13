@@ -16,6 +16,7 @@ const { chromium } = require('playwright');
     const response = await page.goto(site + '/optimization/learn/foundations/what-is-optimization/', { waitUntil: 'domcontentloaded' });
     assert.equal(response.status(), 200, 'OPT-001 route must respond 200');
     assert.match(await page.title(), /What Is Optimization/);
+    assert.equal(await page.locator('meta[name="robots"]').count(), 1, 'Exactly one robots directive');
     assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'noindex,nofollow', 'Draft must not be indexed');
     assert.equal(await page.locator('article.ol-lesson').count(), 1, 'Shared lesson layout rendered');
     assert.equal(await page.locator('.ol-lesson-body h2').count(), 11, 'All eleven lesson sections rendered');
