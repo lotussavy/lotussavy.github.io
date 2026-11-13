@@ -1,5 +1,13 @@
 # Project Changelog
 
+## 2026-11-13 — OPT-003 and LAB-B released and verified live
+
+- Released `ba76696b3caa7279957acadc974ea54005550a68` after [candidate Optimization checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43498940635) and [candidate site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43498940862) passed. [Main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499389410), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499389515) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499387957) all succeeded.
+- Added the complete Feasibility and Trade-offs lesson, reusable/standalone two-dimensional LAB-B, resource/minimum switches, candidate checks, slack, coordinate alternatives and explicit area/line/point/empty cases. Included five knowledge checks and an independent downloadable Python example.
+- All 109,368 supported settings match the independent JS geometric oracle; 26 Node tests pass. Three new Python tests include 2,688 exact dimension certificates; previous regressions pass. Strict build, 4,297 local references, all browser suites and 21 accessibility/reflow audits pass.
+- Observed the public lesson/lab and navigation, live constraint behavior and all 61 equations/MathML alternatives. Updated homepage, OPT-002 next link, blueprint, tasks and release records.
+- BL-007D/E/F and BL-008 complete in the stated scope. AT-001 remains the compatibility follow-up; OPT-004 is next and has not been started. M3/MVP remain in progress.
+
 ## 2026-11-13 — OPT-002 released and verified live
 
 - Released `718c887e2cfa3a0eb48557c36a1c7c57b335f3a9` after candidate checks passed; main-branch [Optimization validation](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824236), [site-wide checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824295) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824146) all succeeded.

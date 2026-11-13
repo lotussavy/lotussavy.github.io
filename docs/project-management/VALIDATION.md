@@ -1,3 +1,17 @@
+# Current Validation Checkpoint — OPT-003 / November 13, 2026
+
+**Released source:** `ba76696b3caa7279957acadc974ea54005550a68`. This checkpoint supersedes earlier pending OPT-003/LAB-B statements; older records below are historical.
+
+- 26 Node tests passed. All 109,368 LAB-B settings match an independent boundary-intersection oracle on vertices and dimension, with five candidate substitutions per setting. Previous OPT-002/LAB-A certificates still pass.
+- Three new Python tests passed, including exact dimension checks for 2,688 representative settings against an analytic certificate. Earlier Python regressions pass; downloadable and displayed excerpts agree. Exhaustive LAB-B Python coverage is not claimed.
+- Strict local production Jekyll build and same-site validation passed: 108 HTML pages and 4,297 references. All earlier browser suites and the new OPT-003/LAB-B suite passed, including no-JavaScript fallbacks.
+- 21 open-disclosure WCAG-tagged axe/reflow audits passed: seven routes × 1280/375/320 px. No violations, page overflow, raw TeX or MathJax errors. Direct production inspection found 61 MathJax passages and 61 assistive-MathML alternatives.
+- [Candidate Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43498940635), [candidate site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43498940862), [main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499389410), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499389515) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499387957): all success.
+- Direct live navigation and constraint/empty/line/reset interactions were verified. Dedicated screen-reader compatibility remains unexecuted AT-001 under ADR-029.
+- OPT-003 and LAB-B are complete; OPT-004, glossary/search and full MVP review remain outstanding.
+
+---
+
 # Current Validation Checkpoint — OPT-002 / November 13, 2026
 
 **Released source:** `718c887e2cfa3a0eb48557c36a1c7c57b335f3a9`. This checkpoint supersedes earlier pending OPT-002 statements.

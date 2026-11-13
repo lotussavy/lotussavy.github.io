@@ -7,7 +7,7 @@
 
 ## Current checkpoint
 
-OPT-001 and OPT-002, the Profit Playground and Decision Model Builder are released. Start with PROJECT_STATE.md for current evidence, the accessibility-review boundary and next OPT-003 design target. Earlier pending statements in historical records are not current status.
+OPT-001–003, the Profit Playground, Decision Model Builder and LAB-B Feasibility Explorer are released. Start with PROJECT_STATE.md for current evidence, the accessibility-review boundary and next OPT-004 design target. M3 and the full MVP remain in progress. Earlier pending statements in historical records are not current status.
 
 ## Daily targets
 Read [DAILY_TARGETS.md](DAILY_TARGETS.md) for the current scope agreement and next owner-directed working target.

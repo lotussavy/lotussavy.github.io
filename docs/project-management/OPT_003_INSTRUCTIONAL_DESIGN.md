@@ -39,3 +39,7 @@ Release gates: production Jekyll build/internal links; model/Python tests; previ
 ## Scope boundary
 
 This completes the planned LAB-B constraint/feasibility explorer. LP objective geometry, solvers, sensitivity prices, integer lattice algorithms and formal multiobjective/Pareto optimization remain later topics. OPT-004 is the next lesson and is not implemented here. M3/MVP still require OPT-004, glossary/search and the remaining acceptance review.
+
+## Completion checkpoint
+
+Implemented, reviewed and published on `ba76696b3caa7279957acadc974ea54005550a68`. All candidate/main checks and deployment succeeded; production was directly verified. See OPT_003_REVIEW.md for evidence and review limits. OPT-004 is the next unstarted lesson.
