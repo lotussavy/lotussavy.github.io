@@ -25,8 +25,9 @@ const { chromium } = require('playwright');
           }
           for (const summary of await page.locator('details > summary').all()) await summary.click();
           await page.evaluate(() => document.fonts.ready);
-          const body = await page.locator('main').innerText();
-          assert.equal(body.includes('\\[') || body.includes('\\('), false, 'No unrendered TeX');
+          const body = await page.locator('#main_content').innerText();
+          const backslash = String.fromCharCode(92);
+          assert.equal(body.includes(backslash + '[') || body.includes(backslash + '('), false, 'No unrendered TeX');
           assert.equal(await page.locator('mjx-merror').count(), 0, 'No math-renderer errors');
           const dimensions = await page.evaluate(() => ({
             document: document.documentElement.scrollWidth,
