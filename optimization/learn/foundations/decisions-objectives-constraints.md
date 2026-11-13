@@ -326,7 +326,7 @@ Changing a goal reorders the feasible choices. Changing a constraint can change 
 ### References and verification
 
 - MIT OpenCourseWare. (2013). *15.053 Optimization Methods in Management Science, Lecture 1*. [Original lecture slides](https://ocw.mit.edu/courses/15-053-optimization-methods-in-management-science-spring-2013/40d1bb14223439515ac3df1aa229ecdd_MIT15_053S13_lec1.pdf). Background on formulation, decision variables, objectives and constraints.
-- Google for Developers. *Introduction to mathematical optimization*. [Official overview](https://developers.google.com/optimization/introduction/overview). Background on expressing and solving optimization problems. This activity uses its own small enumeration example, rather than OR-Tools.
+- Google for Developers. *Get Started with OR-Tools for Python*. [Official introduction](https://developers.google.com/optimization/introduction/python). Background on expressing and solving optimization problems. This activity uses its own small enumeration example, rather than OR-Tools.
 - Optimization Learning Lab. *OPT-002 model builder*. [Source and verification records](https://github.com/lotussavy/lotussavy.github.io/blob/main/docs/project-management/OPT_002_REVIEW.md).
 
 **Source note:** All numerical examples are independently verified results of the declared synthetic model. The review records distinguish browser/keyboard/automated accessibility evidence from dedicated screen-reader compatibility testing.
