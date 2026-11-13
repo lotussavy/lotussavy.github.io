@@ -13,7 +13,7 @@ const { chromium } = require('playwright');
     page.on('pageerror', error => errors.push(error.message));
     const response = await page.goto(base + '/optimization/labs/profit/', { waitUntil: 'domcontentloaded' });
     assert.equal(response.status(), 200, 'Playground URL should return HTTP 200');
-    assert.match(await page.title(), /LAB-A/i);
+    assert.match(await page.title(), /Profit Playground/);
     assert.equal(await page.locator('meta[name="robots"]').count(), 1, 'Exactly one robots directive');
     assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'index,follow');
     assert.equal(await page.locator('[data-ol-range]').inputValue(), '4');
