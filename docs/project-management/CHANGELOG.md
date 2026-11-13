@@ -1,5 +1,13 @@
 # Project Changelog
 
+## 2026-11-13 — OPT-002 released and verified live
+
+- Released `718c887e2cfa3a0eb48557c36a1c7c57b335f3a9` after candidate checks passed; main-branch [Optimization validation](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824236), [site-wide checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824295) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824146) all succeeded.
+- Published the complete lesson, standalone Decision Model Builder and Python example. Updated homepage and OPT-001/002 previous/next navigation.
+- Verified both implementations against independent certificates for 15,639 models each; 19 Node and three Python tests passed. All browser suites and 15 accessibility/reflow audits passed.
+- Direct live-browser review confirmed learning links, all 38 rendered mathematical passages/MathML alternatives and budget $220 → n=6/profit $200. AT-001 remains the documented compatibility follow-up. OPT-003 is not started.
+
+
 ## 2026-11-13 — OPT-002 release candidate
 
 - Added the complete lesson, Decision Model Builder, parameter/goal controls, exact feasibility/optimization statuses, explicit constraint violations, downloadable Python, five knowledge checks and linked lesson navigation.

@@ -45,3 +45,7 @@ Independent oracle: if B < 100 the set is empty; otherwise its largest element i
 - Keyboard, 320/375 px reflow, contrast, disclosure behavior and mathematical typesetting must pass.
 - Publish after candidate CI passes; verify production, link OPT-001 → OPT-002 and update records.
 - Preserve ADR-029's documented screen-reader compatibility boundary; no unperformed assistive-technology test is claimed.
+
+## Completion checkpoint
+
+All stages completed and published November 13, 2026 on `718c887e2cfa3a0eb48557c36a1c7c57b335f3a9`. See OPT_002_REVIEW.md for successful candidate/main CI, deployment and live-browser evidence. OPT-003 is not started.

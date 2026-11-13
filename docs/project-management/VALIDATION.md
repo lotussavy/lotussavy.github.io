@@ -1,3 +1,17 @@
+# Current Validation Checkpoint — OPT-002 / November 13, 2026
+
+**Released source:** `718c887e2cfa3a0eb48557c36a1c7c57b335f3a9`. This checkpoint supersedes earlier pending OPT-002 statements.
+
+- Nineteen Node tests and three Python tests passed. Both implementations match independently derived capacity/vertex certificates over all 15,639 supported models. Downloadable and displayed Python code match exactly.
+- Local production Jekyll build passed. Same-site validation passed on 106 HTML pages and 4,219 links/assets. Existing OPT-001/LAB-A regressions passed.
+- OPT-002 browser checks passed on lesson and standalone routes: seven reference models, simultaneous constraint handling, invalid inputs, row values, keyboard, disclosures, math, 320 px layout and disabled-controls/no-JavaScript fallback.
+- Fifteen WCAG-tagged axe/reflow checks passed: five routes × 1280/375/320 px. No renderer errors, raw TeX or page overflow. Direct browser inspection verified all 38 MathJax passages and assistive MathML alternatives.
+- [Main Optimization validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824236); [site-wide workflow: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824295); [Pages deployment: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824146). Identical candidate runs 43484481890 / 43484481886 passed before promotion.
+- Production navigation and budget interaction were observed directly. Dedicated screen-reader/device testing remains unexecuted AT-001, as defined by ADR-029.
+- OPT-002 is complete; OPT-003 remains unstarted.
+
+---
+
 # Current Validation Checkpoint — November 13, 2026
 
 **Released source:** `f732ad071dfcdc0f9f02c3e35ab72492b494c775`. Earlier pending statements below describe historical checkpoints and are superseded for this release by the following evidence.

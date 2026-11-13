@@ -1,33 +1,65 @@
-# OPT-002 — Release Review
+# OPT-002 — Final Release Review
 
-**Date:** November 13, 2026. **Checkpoint:** release candidate; CI and production verification pending.
+**Date:** November 13, 2026. **Disposition:** Released following owner authorization, successful candidate/main checks and direct production verification.
 
-## Scope
+**Released source:** `718c887e2cfa3a0eb48557c36a1c7c57b335f3a9`
 
-Complete OPT-002, Decisions, Objectives, and Constraints, with the established eleven-section lesson layout, five objectives, five knowledge checks, an optional independent certificate, a downloadable Python example and a reusable Decision Model Builder. Link OPT-001 → OPT-002 and add homepage/standalone activity entry points. Do not implement OPT-003 or claim the later two-dimensional LAB-B explorer is complete.
+## 1. Learning and implementation scope
 
-## Mathematical review
+OPT-002, Decisions, Objectives, and Constraints, follows the established eleven-section lesson layout. It contains five learning objectives, a 148-word introduction, a prediction-first investigation, formal definitions, a complete formulation, an independent certificate, executable/downloadable Python, failure modes and five knowledge checks. Its reusable Decision Model Builder also has a standalone route.
 
-The builder reuses LAB-A's financial engine. It adds integer availability A ∈ [0,12], integer budget B ∈ [0,400], n ≤ A and C(n) ≤ B. The selected objective is max profit, max revenue or min cost. Every solution is obtained by enumerating all 13 domain choices and comparing only those satisfying both constraints.
+Learners choose a candidate fleet, edit a budget and availability, and compare profit maximization, revenue maximization and cost minimization. The lesson explicitly distinguishes editing parameters between scenarios from choosing optimization variables within one solve. It explains why all constraints and the domain must hold, why an infeasible candidate's arithmetic value is not a solution, why an optimal profit can be negative, and why missing service requirements produce a zero-service minimum-cost answer.
 
-An independent certificate first handles B < 100 as infeasible. Otherwise K = min(12,A,floor((B−100)/20)) defines the feasible integers 0…K. Profit is uniquely maximized at min(8,K); revenue at min(10,K); cost at 0. The JS and independent Python implementations were each checked against this certificate for all 15,639 supported scenarios. Separate fixed reference rows supply the expected values. The model distinguishes no optimizer/null value from an optimal but negative profit.
+This one-variable activity does not claim to complete the later LAB-B two-dimensional explorer. OPT-003 is not implemented.
 
-The lesson explains that editing parameters between solves does not make them optimization variables, that the domain and all constraints must hold together, and that zero-service cost minimization reflects the absence of a service requirement. The $100 fixed cost applies even at n = 0. Synthetic coefficients are not presented as operating data or fleet recommendations.
+## 2. Mathematical certificate and assumptions
 
-## Executed local evidence
+Reuse LAB-A financial functions: R(n)=100n−5n², C(n)=20n+100 and P(n)=80n−5n²−100. The decision n is integer 0…12. Given parameters are integer availability A ∈ [0,12] and integer budget B ∈ [0,400]. Check n ≤ A and C(n) ≤ B together. Enumerate all 13 choices, compare only feasible rows in the selected direction, and return null optimizer/value when none survive.
 
-- Nineteen Node tests passed, including seven new modeling tests and all existing model/UI regressions.
-- Three Python tests passed, including all 15,639 scenarios, invalid parameters and exact equality of the downloadable and displayed code.
-- The seven-reference-model Python script passed, including infeasibility and a loss.
-- Strict-front-matter production Jekyll build passed. Same-site validation passed on 106 HTML pages and 4,219 links/assets.
-- Browser interaction verified default optimum n=8/profit $220, budget $220 → n=6/profit $200, budget $80 → no feasible solution, keyboard candidate updates and invalid-input preservation/disabled solving.
-- All 38 mathematical passages render with assistive MathML. A Markdown-sensitive set delimiter was repaired using explicit TeX brace commands, including the same notation in OPT-001.
-- Fifteen local page/viewport accessibility and reflow checks passed with disclosures open and no WCAG-tagged axe violations or page overflow. Contrast/scroll-focus repairs and the narrow builder layout were visually reviewed. Candidate CI and production evidence remain pending at this checkpoint.
+If B < 100 the feasible set is empty. Otherwise K = min(12,A,floor((B−100)/20)) defines its members 0…K. The completed-square identities for profit and revenue give the unique best fleets min(8,K) and min(10,K), respectively. Cost is increasing, so its minimum is n=0 whenever the set is nonempty. These independent certificates were compared with both implementations across all 15,639 supported scenarios.
 
-## Review boundary
+| Goal | Budget | Availability | Feasible fleets | Best fleet | Goal value |
+|---|---:|---:|---|---:|---:|
+| Max profit | 260 | 12 | 0–8 | 8 | 220 |
+| Max profit | 220 | 12 | 0–6 | 6 | 200 |
+| Max profit | 260 | 4 | 0–4 | 4 | 140 |
+| Max revenue | 400 | 12 | 0–12 | 10 | 500 |
+| Min cost | 400 | 12 | 0–12 | 0 | 100 |
+| Max profit | 80 | 12 | Empty | None | None |
+| Max profit | 100 | 12 | 0 | 0 | -100 |
 
-Follow ADR-029: actual browser/keyboard/MathML inspection plus automated WCAG-tagged axe checks. Dedicated NVDA/VoiceOver/Orca compatibility remains the existing AT-001 follow-up, not a claimed pass or full WCAG certification.
+All money values are synthetic illustrative USD per period. The fixed $100 charge applies even at n=0; no minimum service, passenger, routing, time, charging or uncertainty model is present. Results are not operating-fleet recommendations.
 
-## Release gate
+## 3. Verified acceptance evidence
 
-The release branch must pass the expanded Optimization Lab validation and site-wide workflow before promotion. After deployment, verify live navigation, the lesson and an interaction result, then record run IDs and final disposition. OPT-003 remains unstarted.
+| Check | Result |
+|---|---|
+| Existing and new Node tests | 19 passed, zero failures; seven model-builder cases include exhaustive certificates, independent fixed values, simultaneous violations and invalid inputs |
+| Independent Python tests | Three passed; all 15,639 models, invalid parameters and exact displayed/downloadable code equality |
+| Seven reference Python models | Passed, including infeasibility and negative optimal profit |
+| Production build and same-site references | Local strict-front-matter Jekyll build passed; 106 HTML pages and 4,219 links/assets passed; CI also passed |
+| OPT-002 / standalone builder browser tests | Passed on both routes: seven reference models, exact rule checks, all table rows, invalid-input preservation, keyboard, disclosures, math, 320 px reflow and no-JavaScript fallback |
+| Accessibility / reflow | Fifteen audits: five routes at 1280/375/320 px, all disclosures open; no WCAG-tagged axe violations, renderer errors, raw TeX or page overflow |
+| Manual browser review | Default n=8/$220; budget 220 → n=6/$200; budget 80 → infeasible; arrow-key updates; invalid budget preserved last valid result and disabled solving; desktop/narrow layout inspected |
+| Mathematical rendering | All 38 passages typeset with assistive MathML; explicit brace commands repair Markdown-sensitive set notation, including the same notation in OPT-001 |
+| References | MIT OCW lecture verified; Google reference corrected to its current official Python introduction after the initial overview URL returned 404 |
+| Live deployment/navigation | Homepage entry, OPT-001 ↔ OPT-002, lesson status, math, budget interaction and standalone builder verified directly |
+| Dedicated screen-reader compatibility | Not run; existing AT-001 follow-up under ADR-029 |
+
+## 4. Release references
+
+- [Optimization Lab validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824236)
+- [Site-wide validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824295)
+- [GitHub Pages deployment: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43484824146)
+- Identical release-candidate checks passed before main promotion: runs 43484481890 and 43484481886.
+- CI uses Node 22, Ruby 3.3, the committed GitHub Pages/Jekyll lockfile, Playwright 1.56.1 and axe-core 4.10.3. Python uses standard features compatible with 3.10+.
+
+## 5. Accessibility evidence boundary
+
+ADR-029 remains in force. The completed review is supported by actual browser/keyboard/visual/MathML observation and automated accessibility checks. Dedicated NVDA, VoiceOver or Orca compatibility is unverified. Do not claim independent human screen-reader sign-off, universal compatibility or full WCAG certification. Invalid inputs are announced explicitly; there is one coherent live status; no-JavaScript controls remain disabled with a readable default table and explanation.
+
+## 6. Published result and handoff
+
+[OPT-002](https://lotussavy.github.io/optimization/learn/foundations/decisions-objectives-constraints/) · [Decision Model Builder](https://lotussavy.github.io/optimization/labs/model-builder/).
+
+The owner authorized completing this lesson in the current session (ADR-032), superseding the prior design-only allocation. BL-007A/B/C are complete. The next item is BL-007D: OPT-003 design. No OPT-003 work was started.

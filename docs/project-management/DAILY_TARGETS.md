@@ -2,21 +2,19 @@
 
 **Updated:** November 13, 2026.
 
-The owner's November 13 instruction authorized completing the work through OPT-001 and publishing it in this session. It supersedes the earlier illustrative daily dates and separate-session allocation (ADR-028).
+The owner explicitly requested completing OPT-002 in this session. ADR-032 supersedes the previous design-only allocation: authoring, implementation, review and publication were completed together with evidence.
 
-| Working target | State | Acceptance evidence |
+| Target | State | Evidence |
 |---|---|---|
-| Resolve BL-001–005 acceptance gaps | Done | Production build, browser/keyboard/mobile review, model/UI tests and live routes |
-| Complete and release BL-006 / OPT-001 | Done | Successful release CI and deployment; live homepage-to-lesson and legacy-lab verification |
-| Document the review boundary and handoff | Done | Review, validation, task register and decision log updated |
-| BL-007A: design OPT-002 | Ready; not started | Next owner-directed session |
+| BL-007A: OPT-002 design | Done | Five objectives and aligned activity/assessment |
+| BL-007B: complete lesson and model builder | Done | Lesson, standalone activity and Python reproduction |
+| BL-007C: review and publish | Done | Candidate/main CI, site-wide checks, deployment and live navigation verified |
+| BL-007D: OPT-003 design | Ready; not started | Next owner-directed session |
 
-Keep one clear primary target for subsequent sessions. Record actual checks and outcomes. A draft or committed test specification is not execution evidence. Review and mathematical verification precede release.
+## Next-session restart
 
-## Next-session restart instruction
+Read PROJECT_STATE.md, MASTER_BLUEPRINT.md and TASKS.md, then inspect current GitHub state. When asked to proceed, define OPT-003's feasibility/trade-off objectives, motivating examples, mathematical scope and assessment; scope LAB-B deliberately. Do not claim later lessons are implemented or imply background work between sessions.
 
-Read PROJECT_STATE.md, MASTER_BLUEPRINT.md and TASKS.md. Confirm the latest repository state. When the owner asks to proceed, start only the OPT-002 instructional-design target: objectives, example, mathematical scope and assessment. Do not silently implement later lessons or claim background work between sessions.
+## Evidence rule
 
-## Compatibility follow-up
-
-AT-001 remains ready but unexecuted: dedicated screen-reader/device compatibility. The supported review completed for this release and its limitations are recorded in ADR-029 and OPT_001_REVIEW.md.
+Preserve exact test results and release references. A committed test is not a passed execution. AT-001 remains unexecuted: dedicated screen-reader compatibility is the explicit follow-up under ADR-029.
