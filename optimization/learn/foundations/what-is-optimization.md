@@ -5,6 +5,9 @@ seo_title: "What Is Optimization? | Optimization Learning Lab"
 description: "Learn optimization through a small decision problem: choose a fleet size, explore revenue and cost, and verify the best feasible profit."
 permalink: /optimization/learn/foundations/what-is-optimization/
 lesson_id: OPT-001
+next_lesson:
+  title: "Decisions, Objectives, and Constraints"
+  url: /optimization/learn/foundations/decisions-objectives-constraints/
 lesson_status: published
 level: foundations
 level_label: Foundations
@@ -146,7 +149,7 @@ Our full optimization problem is therefore
 \boxed{
 \begin{aligned}
 \text{maximize}\quad &P(n)=80n-5n^2-100\\
-\text{subject to}\quad &n\in\{0,1,2,\ldots,12\}.
+\text{subject to}\quad &n\in\lbrace 0,1,2,\ldots,12\rbrace .
 \end{aligned}
 }
 \\]
@@ -283,7 +286,7 @@ You have learned three essential distinctions:
 2. A **feasible solution** satisfies the rules, but an **optimal solution** is the best feasible solution according to the objective.
 3. A claim of **global optimality** needs evidence. Here, exhaustive enumeration and an independent algebraic bound both establish the best decision for our 13-choice problem.
 
-You can [return to the Optimization Lab homepage]({{ '/optimization/' | relative_url }}) to explore the broader curriculum. The planned next lesson, **OPT-002: Decisions, Objectives, and Constraints**, will be linked after it has been developed and reviewed.
+You can [return to the Optimization Lab homepage]({{ '/optimization/' | relative_url }}) to explore the broader curriculum. Continue with [OPT-002: Decisions, Objectives, and Constraints]({{ '/optimization/learn/foundations/decisions-objectives-constraints/' | relative_url }}) to add a budget, availability limits and a choice of objective.
 
 ### References and reproducibility
 

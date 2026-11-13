@@ -9,7 +9,9 @@ const { chromium } = require('playwright');
   const browser = await chromium.launch({ headless: true });
   const base = process.env.OPTIMIZATION_SITE_URL || 'http://127.0.0.1:8765';
   const routes = ['/optimization/', '/optimization/labs/profit/',
-    '/optimization/learn/foundations/what-is-optimization/'];
+    '/optimization/learn/foundations/what-is-optimization/',
+    '/optimization/learn/foundations/decisions-objectives-constraints/',
+    '/optimization/labs/model-builder/'];
   const results = [];
   try {
     for (const width of [1280, 375, 320]) {
@@ -18,7 +20,7 @@ const { chromium } = require('playwright');
         try {
           const response = await page.goto(base + route, { waitUntil: 'domcontentloaded' });
           assert.equal(response.status(), 200, route);
-          if (route.includes('what-is-optimization')) {
+          if (route.includes('/learn/foundations/')) {
             await page.waitForFunction(() => Boolean(window.MathJax?.startup?.promise));
             await page.evaluate(() => window.MathJax.startup.promise);
             assert.ok(await page.locator('mjx-container').count() >= 20, 'Every mathematical passage is typeset');
@@ -45,7 +47,7 @@ const { chromium } = require('playwright');
         } finally { await page.close(); }
       }
     }
-    console.log('PASS: 9 desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
+    console.log('PASS: 15 desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
   } finally {
     fs.writeFileSync('/tmp/optimization-accessibility.json', JSON.stringify(results, null, 2));
     await browser.close();

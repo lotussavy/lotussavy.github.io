@@ -1,0 +1,40 @@
+<section class="ol-model-builder" data-model-builder aria-labelledby="mb-title">
+  <p class="mb-kicker">OPT-002 · Build a decision model</p>
+  <h3 id="mb-title">Same decision. Different goal or rules.</h3>
+  <p>Choose a fleet, set the goal and limits, and predict the best allowed decision before solving.</p>
+  <p class="mb-note"><strong>Synthetic teaching model:</strong> illustrative USD per period. The fixed $100 cost applies even at zero vehicles. No minimum service is required.</p>
+  <fieldset class="mb-controls" data-mb-controls disabled>
+    <legend>Your model inputs</legend>
+    <div class="mb-input-grid">
+      <div><label for="mb-objective">Objective</label><select id="mb-objective" data-mb-objective><option value="profit">Maximize profit</option><option value="revenue">Maximize revenue</option><option value="cost">Minimize cost</option></select></div>
+      <div><label for="mb-budget">Budget (illustrative USD)</label><input id="mb-budget" data-mb-budget type="number" min="0" max="400" step="1" value="260" aria-describedby="mb-budget-help"><p id="mb-budget-help" class="mb-help">A supplied limit: whole dollars from 0 to 400.</p></div>
+      <div><label for="mb-available">Available vehicles: <output data-mb-available-value aria-live="off">12</output></label><input id="mb-available" data-mb-available type="range" min="0" max="12" step="1" value="12"><p class="mb-help">A supplied limit, not the fleet you choose.</p></div>
+      <div><label for="mb-candidate">Your candidate fleet: <output data-mb-candidate-value aria-live="off">4</output></label><input id="mb-candidate" data-mb-candidate type="range" min="0" max="12" step="1" value="4" aria-describedby="mb-candidate-help"><p id="mb-candidate-help" class="mb-help">Your decision n. Try an infeasible choice too; use arrow keys to adjust.</p></div>
+    </div>
+    <div class="mb-actions"><button type="button" data-mb-solve>Solve this model</button><button type="button" data-mb-reset>Reset model</button></div>
+  </fieldset>
+  <p class="mb-error" data-mb-error role="alert" hidden></p>
+  <div class="mb-model-card" aria-labelledby="mb-model-heading">
+    <h4 id="mb-model-heading">Your model, in words and symbols</h4>
+    <dl><dt>Choose</dt><dd>n, a whole number from 0 through 12</dd><dt>Goal</dt><dd data-mb-goal>Maximize profit: P(n) = 80n − 5n² − 100</dd><dt>Availability rule</dt><dd data-mb-availability-rule>n ≤ 12 vehicles</dd><dt>Budget rule</dt><dd data-mb-budget-rule>20n + 100 ≤ $260 per model period</dd></dl>
+  </div>
+  <div class="mb-metrics"><div><span data-mb-selected>Selected n = 4</span><strong data-mb-feasibility>Feasible</strong></div><div><span data-mb-value-label>Selected profit</span><strong data-mb-value>$140</strong></div><div><span>Feasible choices</span><strong data-mb-count>9 of 13</strong></div></div>
+  <ul class="mb-checks" aria-label="Checks for your selected fleet"><li data-mb-availability-check>4 ≤ 12: passes</li><li data-mb-budget-check>$180 ≤ $260: passes</li></ul>
+  <h4>Which choices satisfy both rules?</h4>
+  <p class="mb-help">✓ feasible · × infeasible · outlined choice = your selected fleet. The goal ranks feasible choices; it does not change these rules.</p>
+  <ol class="mb-choices" data-mb-choices aria-label="All 13 fleet choices and feasibility">
+    {% for n in (0..12) %}<li data-feasible="{% if n <= 8 %}true{% else %}false{% endif %}" data-selected="{% if n == 4 %}true{% else %}false{% endif %}" aria-label="Fleet {{ n }}; {% if n <= 8 %}feasible{% else %}infeasible{% endif %}{% if n == 4 %}; selected{% endif %}">{{ n }} {% if n <= 8 %}✓{% else %}×{% endif %}</li>{% endfor %}
+  </ol>
+  <p class="mb-best" data-mb-best>Predict the best permitted choice, then select Solve this model.</p>
+  <p class="mb-sr-only" data-mb-status role="status" aria-live="polite" aria-atomic="true">Fleet 4 is feasible; profit is $140. There are 9 feasible choices.</p>
+  <details><summary>Compare all 13 choices</summary>
+    <table><caption>Current model: candidate values and feasibility</caption><thead><tr><th scope="col">Fleet n</th><th scope="col" data-mb-table-value>Profit ($)</th><th scope="col">Feasible?</th></tr></thead><tbody data-mb-rows>
+      <tr><th scope="row">0</th><td>−$100</td><td>Yes</td></tr><tr><th scope="row">1</th><td>−$25</td><td>Yes</td></tr><tr><th scope="row">2</th><td>$40</td><td>Yes</td></tr><tr><th scope="row">3</th><td>$95</td><td>Yes</td></tr><tr><th scope="row">4</th><td>$140</td><td>Yes</td></tr><tr><th scope="row">5</th><td>$175</td><td>Yes</td></tr><tr><th scope="row">6</th><td>$200</td><td>Yes</td></tr><tr><th scope="row">7</th><td>$215</td><td>Yes</td></tr><tr><th scope="row">8</th><td>$220</td><td>Yes</td></tr><tr><th scope="row">9</th><td>$215</td><td>No</td></tr><tr><th scope="row">10</th><td>$200</td><td>No</td></tr><tr><th scope="row">11</th><td>$175</td><td>No</td></tr><tr><th scope="row">12</th><td>$140</td><td>No</td></tr>
+    </tbody></table>
+    <p class="mb-help">An infeasible candidate still has an arithmetic value, but it cannot be selected as a solution. Exact enumeration checks all 13 domain choices and compares only feasible ones.</p>
+  </details>
+  <noscript><p>JavaScript is off, so the controls are disabled. The default model shown here has budget $260 and 12 available vehicles. Its feasible choices are 0–8 and its exact best profit is $220 at n = 8. The table remains available.</p></noscript>
+  <script src="{{ '/assets/js/optimization/profit-model.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/optimization/model-builder-model.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/optimization/model-builder-ui.js' | relative_url }}"></script>
+</section>

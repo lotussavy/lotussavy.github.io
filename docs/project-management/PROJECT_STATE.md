@@ -2,7 +2,9 @@
 
 **Updated:** November 13, 2026
 
-**Current checkpoint:** M2 / BL-006C completed and released. OPT-001 and LAB-A are live. OPT-002 has not been started.
+**Active work:** OPT-002 full implementation/review/publication, authorized by the owner on November 13. The prior design-only allocation is superseded. See OPT_002_INSTRUCTIONAL_DESIGN.md and OPT_002_REVIEW.md. Local math/code/build checks passed; final candidate CI and publication are pending.
+
+**Previous released checkpoint:** M2 / BL-006C completed and released. OPT-001 and LAB-A are live. OPT-002 has not been started.
 
 **Released source:** `f732ad071dfcdc0f9f02c3e35ab72492b494c775`
 

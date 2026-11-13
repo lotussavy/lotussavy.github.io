@@ -6,4 +6,5 @@ vendor/
 .jekyll-metadata
 .codex
 imports/
+__pycache__/
 scripts/

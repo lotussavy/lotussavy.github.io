@@ -62,3 +62,7 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 ### ADR-030 — canonical profit lab and stable existing links
 
 **Accepted.** Publish LAB-A at `/optimization/labs/profit/` and preserve `/optimization/labs/profit-preview/` through the GitHub Pages-supported redirect plugin already present in the dependency lock. Link the homepage to the released lesson and canonical lab. Keep the authoring template nonindexed.
+
+### ADR-032 — complete OPT-002 with a reusable one-variable model builder
+
+**Accepted November 13, 2026.** The owner explicitly requested completing OPT-002 in this session. Author, implement, review and publish the whole lesson; this supersedes the earlier design-only session allocation. Reuse LAB-A financial computations; add separate exact model/constraint logic, a standalone builder route and an independent Python reproduction. Keep this introductory one-variable activity distinct from the later LAB-B two-dimensional feasibility explorer. Validate all 15,639 supported parameter/objective settings against independent certificates. Preserve ADR-029's accessibility evidence boundary. Do not start OPT-003.

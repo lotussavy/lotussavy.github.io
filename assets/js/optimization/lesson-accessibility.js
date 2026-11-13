@@ -2,6 +2,9 @@
 (function () {
   'use strict';
   function prepareExamples() {
+    document.querySelectorAll('.ol-lesson-body table').forEach(function (table) {
+      table.tabIndex = 0;
+    });
     document.querySelectorAll('.ol-lesson-body pre').forEach(function (example) {
       example.tabIndex = 0;
       example.setAttribute('role', 'region');

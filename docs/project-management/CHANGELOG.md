@@ -1,5 +1,12 @@
 # Project Changelog
 
+## 2026-11-13 — OPT-002 release candidate
+
+- Added the complete lesson, Decision Model Builder, parameter/goal controls, exact feasibility/optimization statuses, explicit constraint violations, downloadable Python, five knowledge checks and linked lesson navigation.
+- Both implementations match independent certificates across all 15,639 supported models; 19 Node and 3 Python tests passed locally. Production build and 4,219 local references passed.
+- Repaired Markdown-sensitive set braces, new code-token contrast and keyboard table scrolling. Release CI and live verification are pending this checkpoint.
+- Dedicated screen-reader compatibility remains the existing documented follow-up. OPT-003 is not started.
+
 ## 2026-11-13 — OPT-001 and LAB-A live release completed
 
 - Released `f732ad071dfcdc0f9f02c3e35ab72492b494c775` after candidate build/browser checks passed, then observed successful main-branch validation and Pages deployment.

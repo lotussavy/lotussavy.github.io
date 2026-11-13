@@ -30,10 +30,12 @@
 .ol-lesson-body .highlight .nb{color:#005b70}
 .ol-lesson-body .highlight :is(.mi,.mf){color:#08666a}
 .ol-lesson-body .highlight :is(.c,.c1,.cm,.cp,.cs){color:#545b61}
+.ol-lesson-body .highlight .bp{color:#545b61}
 .ol-lesson-body mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:.4rem 0}
 .ol-lesson-body summary{cursor:pointer;min-height:44px;padding:.65rem .2rem}
 .ol-lesson-body summary:focus-visible{outline:3px solid #126477;outline-offset:3px}
 .ol-lesson-body table{display:block;max-width:100%;overflow-x:auto}
+.ol-lesson-body :is(pre,table):focus-visible{outline:3px solid #126477;outline-offset:2px}
 .ol-lesson-body blockquote{border-left:4px solid #209398;background:#eff8f8;padding:.75rem 1rem;margin:1.2rem 0}
 .ol-lesson-aside-card{border:1px solid var(--ol-border);border-radius:14px;padding:1.1rem;background:white}
 .ol-lesson-aside h2{font-size:1.03rem;margin:0 0 .85rem}
