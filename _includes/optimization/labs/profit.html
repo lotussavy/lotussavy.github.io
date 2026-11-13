@@ -6,7 +6,7 @@
     <p class="ol-profit-disclaimer"><strong>Teaching model:</strong> Synthetic illustrative USD, not real-world fleet economics. Feasible decisions are whole numbers from 0 to 12.</p>
   </div>
   <div class="ol-profit-controls">
-    <div class="ol-profit-range-head"><label for="ol-profit-fleet">Number of vehicles</label><output id="ol-profit-fleet-value" for="ol-profit-fleet">4</output></div>
+    <div class="ol-profit-range-head"><label for="ol-profit-fleet">Number of vehicles</label><output id="ol-profit-fleet-value" for="ol-profit-fleet" aria-live="off">4</output></div>
     <input id="ol-profit-fleet" data-ol-range type="range" min="0" max="12" step="1" value="4" aria-describedby="ol-profit-range-help">
     <p id="ol-profit-range-help" class="ol-profit-help">Use the arrow keys to adjust the fleet size one vehicle at a time.</p>
     <div class="ol-profit-actions">
@@ -15,9 +15,9 @@
     </div>
   </div>
   <div class="ol-profit-results" aria-label="Selected fleet financial results">
-    <div><span>Revenue</span><output data-ol-revenue>$320</output></div>
-    <div><span>Cost</span><output data-ol-cost>$180</output></div>
-    <div><span>Profit</span><output data-ol-profit>$140</output></div>
+    <div><span>Revenue</span><output data-ol-revenue aria-live="off">$320</output></div>
+    <div><span>Cost</span><output data-ol-cost aria-live="off">$180</output></div>
+    <div><span>Profit</span><output data-ol-profit aria-live="off">$140</output></div>
   </div>
   <div class="ol-profit-plot-wrap">
     <h4>Profit by feasible fleet size</h4>
@@ -34,8 +34,24 @@
       <p><strong>Objective:</strong> maximize P(n) = R(n) − C(n), where R(n) = 100n − 5n² and C(n) = 20n + 100.</p>
       <p><strong>Domain:</strong> n is an integer and 0 ≤ n ≤ 12. Method: exact exhaustive enumeration of 13 decisions. The unique optimum is n = 8, P = $220. Since P(n) = 220 − 5(n − 8)², no feasible decision can exceed $220.</p>
       <p>Computed values come from the verified LAB-A model, not from a separate chart formula. See <a href="https://github.com/lotussavy/lotussavy.github.io/blob/main/docs/project-management/LAB_A_MODEL.md">model documentation and tests</a>.</p>
+      <table class="ol-profit-table"><caption>All feasible choices — illustrative USD per model period</caption><thead><tr><th scope="col">Vehicles</th><th scope="col">Revenue ($)</th><th scope="col">Cost ($)</th><th scope="col">Profit ($)</th></tr></thead><tbody>
+        <tr><th scope="row">0</th><td>0</td><td>100</td><td>-100</td></tr>
+        <tr><th scope="row">1</th><td>95</td><td>120</td><td>-25</td></tr>
+        <tr><th scope="row">2</th><td>180</td><td>140</td><td>40</td></tr>
+        <tr><th scope="row">3</th><td>255</td><td>160</td><td>95</td></tr>
+        <tr><th scope="row">4</th><td>320</td><td>180</td><td>140</td></tr>
+        <tr><th scope="row">5</th><td>375</td><td>200</td><td>175</td></tr>
+        <tr><th scope="row">6</th><td>420</td><td>220</td><td>200</td></tr>
+        <tr><th scope="row">7</th><td>455</td><td>240</td><td>215</td></tr>
+        <tr><th scope="row">8</th><td>480</td><td>260</td><td>220</td></tr>
+        <tr><th scope="row">9</th><td>495</td><td>280</td><td>215</td></tr>
+        <tr><th scope="row">10</th><td>500</td><td>300</td><td>200</td></tr>
+        <tr><th scope="row">11</th><td>495</td><td>320</td><td>175</td></tr>
+        <tr><th scope="row">12</th><td>480</td><td>340</td><td>140</td></tr>
+      </tbody></table>
     </details>
   </div>
+  <noscript><p>JavaScript is off. Open the mathematical model above to compare all 13 choices in the table and verify the optimum.</p></noscript>
   <p class="ol-profit-error" data-ol-error role="alert" hidden>Interactive calculation unavailable. The illustrative model is described above; please try again later.</p>
   <script src="{{ '/assets/js/optimization/profit-model.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/optimization/profit-ui.js' | relative_url }}"></script>

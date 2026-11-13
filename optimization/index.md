@@ -4,7 +4,7 @@ title: "Optimization Lab — Learn by Experimenting"
 seo_title: "Optimization Lab | Interactive Optimization Learning | Kamal Acharya"
 description: "Learn optimization from fundamentals to mathematical models, algorithms, routing, and research through clear explanations and interactive experiments."
 permalink: /optimization/
-last_modified_at: 2026-11-11
+last_modified_at: 2026-11-13
 robots: index,follow
 sitemap: true
 ---
@@ -13,11 +13,12 @@ sitemap: true
   <style>
     .ol-home{--ol-ink:#153a53;--ol-deep:#102d45;--ol-teal:#087f83;--ol-line:#d7e6ed;--ol-fog:#f0f7fa;color:var(--ol-ink);max-width:1160px;margin:0 auto 3rem}
     .ol-home *{box-sizing:border-box}
+    .ol-home a:not(.ol-btn){color:#126477;text-decoration:underline}
     .ol-home [hidden]{display:none!important}
     .ol-home h1,.ol-home h2,.ol-home h3{color:var(--ol-ink);line-height:1.2}
     .ol-home p{line-height:1.65}
     .ol-home button,.ol-home a{touch-action:manipulation}
-    .ol-home :is(button,a):focus-visible{outline:3px solid #e2a834;outline-offset:3px}
+    .ol-home :is(button,a):focus-visible{outline:3px solid #126477;outline-offset:3px;box-shadow:0 0 0 6px white}
     .ol-hero{position:relative;overflow:hidden;border-radius:22px;padding:clamp(1.45rem,4vw,3rem);background:radial-gradient(circle at 90% 20%,rgba(54,191,178,.23),transparent 40%),linear-gradient(125deg,#0d2942,#17546a);display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:clamp(1.2rem,3vw,2.6rem);align-items:center;color:#eaf8fb}
     .ol-hero :is(h1,p){color:inherit}
     .ol-kicker{font-size:.78rem;font-weight:800;letter-spacing:.13em;text-transform:uppercase;color:#a2eee1!important;margin:0 0 .8rem}
@@ -76,8 +77,8 @@ sitemap: true
       <h1 id="ol-title">Optimization, explained interactively.</h1>
       <p>Build intuition first. Understand the mathematics next. Then experiment with algorithms, code, and real-world routing problems.</p>
       <div class="ol-actions">
-        <a class="ol-btn ol-btn-primary" href="#learning-paths">Explore learning paths ↓</a>
-        <a class="ol-btn ol-btn-secondary" href="{{ '/optimization/labs/profit-preview/' | relative_url }}">Try LAB-A preview →</a>
+        <a class="ol-btn ol-btn-primary" href="{{ '/optimization/learn/foundations/what-is-optimization/' | relative_url }}">Start OPT-001 →</a>
+        <a class="ol-btn ol-btn-secondary" href="{{ '/optimization/labs/profit/' | relative_url }}">Try the Profit Playground →</a>
       </div>
     </div>
     <div class="ol-hero-visual" aria-hidden="true">
@@ -116,7 +117,7 @@ sitemap: true
         <button class="ol-option" type="button" data-ol-path="researcher" aria-pressed="false">I work with algorithms</button>
       </div>
       <div class="ol-result" id="ol-recommendation" role="status" aria-live="polite">
-        <strong>Start with Level 1: Optimization Foundations.</strong>
+        <strong>Start with OPT-001: What Is Optimization?</strong>
         <p>Learn objectives, decision variables, constraints, and the meaning of a feasible solution before moving to mathematical modeling.</p>
       </div>
     </div>
@@ -127,7 +128,7 @@ sitemap: true
     <h2 id="ol-levels-heading">Six levels, one connected journey</h2>
     <p class="ol-section-intro">Follow the full beginner-to-researcher path, or return to an individual concept when you need a quick, reliable explanation. Lessons and labs will appear here as each one is validated and released.</p>
     <div class="ol-grid">
-      <article class="ol-card"><div class="ol-card-top"><span class="ol-number">LEVEL 01</span><span class="ol-status">Coming soon</span></div><h3>Optimization Foundations</h3><p>Decisions, objectives, constraints, feasibility, and optimality.</p><p class="ol-meta">Learn to recognize optimization in everyday problems.</p></article>
+      <article class="ol-card"><div class="ol-card-top"><span class="ol-number">LEVEL 01</span><span class="ol-status">First lesson available</span></div><h3><a href="{{ '/optimization/learn/foundations/what-is-optimization/' | relative_url }}">Optimization Foundations</a></h3><p>Decisions, objectives, constraints, feasibility, and optimality.</p><p class="ol-meta">Learn to recognize optimization in everyday problems.</p></article>
       <article class="ol-card"><div class="ol-card-top"><span class="ol-number">LEVEL 02</span><span class="ol-status">Coming soon</span></div><h3>Mathematical Modeling</h3><p>Linear programming, integer choices, model assumptions, and MILP.</p><p class="ol-meta">Turn real decisions into mathematical formulations.</p></article>
       <article class="ol-card"><div class="ol-card-top"><span class="ol-number">LEVEL 03</span><span class="ol-status">Coming soon</span></div><h3>Optimization Algorithms</h3><p>Enumeration, bounds, branch-and-bound, branch-and-cut, and heuristics.</p><p class="ol-meta">See how a solver searches for better solutions.</p></article>
       <article class="ol-card"><div class="ol-card-top"><span class="ol-number">LEVEL 04</span><span class="ol-status">Coming soon</span></div><h3>Routing &amp; Scheduling</h3><p>Shortest paths, TSP, multiple TSP, VRP, time windows, and prize collection.</p><p class="ol-meta">Explore networks, routes, and limited resources.</p></article>
@@ -146,8 +147,8 @@ sitemap: true
         <ol class="ol-pipeline" aria-label="Learning process">
           <li>Choose</li><li>Observe</li><li>Predict</li><li>Verify</li>
         </ol>
-        <p><a class="ol-btn ol-btn-primary ol-lab-preview-link" href="{{ '/optimization/labs/profit-preview/' | relative_url }}">Open Interactive LAB-A Preview →</a></p>
-        <p class="ol-small"><strong>Development preview:</strong> The simulator is available for exploration; the full OPT-001 lesson and final editorial/accessibility review are still in progress.</p>
+        <p><a class="ol-btn ol-btn-primary ol-lab-preview-link" href="{{ '/optimization/labs/profit/' | relative_url }}">Open the Profit Playground →</a></p>
+        <p class="ol-small"><strong>Available now:</strong> Read <a href="{{ '/optimization/learn/foundations/what-is-optimization/' | relative_url }}">OPT-001: What Is Optimization?</a>, then test your understanding in the reviewed profit playground.</p>
       </div>
       <div class="ol-feature-visual" aria-label="Illustration of profit increasing and decreasing with fleet size">
         <svg viewBox="0 0 400 220" role="img" aria-labelledby="ol-plot-title ol-plot-desc">
@@ -177,9 +178,9 @@ sitemap: true
       if(!root)return;
       const result=root.querySelector('#ol-recommendation');
       const paths={
-        beginner:['Start with Level 1: Optimization Foundations.','Learn objectives, decision variables, constraints, and the meaning of a feasible solution before moving to mathematical modeling.'],
-        modeler:['Start with Level 2: Mathematical Modeling.','Build on your equation skills with integer decisions, MILP formulations, and model-validation examples. Review Level 1 whenever a term feels unfamiliar.'],
-        researcher:['Start with Level 3: Optimization Algorithms.','Explore bounds, exact methods, and heuristic trade-offs, then use Levels 4–6 for routing, implementation, and research connections.']
+        beginner:['Start with OPT-001: What Is Optimization?','Learn objectives, decision variables, constraints, and the meaning of a feasible solution before moving to mathematical modeling.'],
+        modeler:['Explore OPT-001, then follow the planned modeling track.','Use the first lesson to review decisions, objectives and feasibility. The modeling lessons will follow as they are developed and reviewed.'],
+        researcher:['Begin with the verified OPT-001 example; advanced tracks are planned.','Examine the enumeration proof and reproducible code in the first lesson. Algorithm and routing lessons will be released after the foundations.']
       };
       root.querySelectorAll('[data-ol-path]').forEach(button=>{
         button.addEventListener('click',()=>{

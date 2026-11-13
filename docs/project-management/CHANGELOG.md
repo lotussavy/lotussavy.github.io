@@ -1,5 +1,15 @@
 # Project Changelog
 
+## 2026-11-13 — OPT-001 release candidate and verified repairs
+
+- Recovered the prior exact CI failure: two robots tags, rather than the previously suspected network timing, stopped the LAB-A browser test. Fixed at `2156fd213ed82386c1d201926e8a72d2ae5b439c`; deployment succeeded and the simulator browser test passed.
+- That run exposed a separate 375 px OPT-001 equation overflow. Added contained equation scrolling, keyboard-accessible code scrollers, higher-contrast links/code/focus, and repaired a superscript that Markdown had parsed as emphasis.
+- Prepared the completed lesson, canonical public lab, legacy redirect, homepage learning entry points, 13-row accessible reference table and downloadable Python reproduction.
+- Local Jekyll production build, 12 Node tests, Python reproduction, same-site link validation and nine browser-based accessibility/reflow checks passed. All 23 mathematical passages have assistive MathML.
+- Added repeatable CI accessibility audits. Final release CI and production verification remain pending at this checkpoint.
+- Recorded the dedicated screen-reader compatibility test limitation and release review method in ADR-029. OPT-002 remains untouched.
+
+
 ## 2026-11-11 — Direct GitHub run diagnosis and isolated Chromium checks
 
 - **Direct GitHub Actions evidence, obtained without user intervention:** workflow run [#21](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43093220722), ID `43093220722`, was completed with conclusion `failure`. Its job `verify-lab` passed Node model/UI tests, Python script, Ruby/Bundler, Jekyll build, output/asset checks and Chromium installation; only combined `Browser-test rendered profit simulator` step failed.

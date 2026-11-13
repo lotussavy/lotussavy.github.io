@@ -17,7 +17,8 @@ const { chromium } = require('playwright');
     assert.equal(response.status(), 200, 'OPT-001 route must respond 200');
     assert.match(await page.title(), /What Is Optimization/);
     assert.equal(await page.locator('meta[name="robots"]').count(), 1, 'Exactly one robots directive');
-    assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'noindex,nofollow', 'Draft must not be indexed');
+    assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'index,follow', 'Released lesson must be indexable');
+    assert.equal(await page.locator('.ol-lesson-draft').count(), 0, 'Released lesson has no draft badge');
     assert.equal(await page.locator('article.ol-lesson').count(), 1, 'Shared lesson layout rendered');
     assert.equal(await page.locator('.ol-lesson-body h2').count(), 11, 'All eleven lesson sections rendered');
     assert.equal(await page.locator('[data-ol-profit-lab]').count(), 1, 'Reuse one LAB-A');
@@ -49,7 +50,10 @@ const { chromium } = require('playwright');
     );
     await page.evaluate(() => window.MathJax.startup.promise);
     const equations = await page.locator('.ol-lesson-body mjx-container').count();
-    assert.ok(equations >= 6, 'Rendered MathJax equations are required, found ' + equations);
+    assert.ok(equations >= 20, 'All mathematical passages must be typeset, found ' + equations);
+    assert.equal(await page.locator('mjx-merror').count(), 0, 'No mathematical rendering errors');
+    const visibleText = await page.locator('.ol-lesson-body').innerText();
+    assert.equal(visibleText.includes('\\[') || visibleText.includes('\\('), false, 'No raw TeX remains visible');
 
     await page.setViewportSize({ width: 375, height: 812 });
     assert.equal(await page.locator('[data-ol-range]').isVisible(), true);
@@ -67,7 +71,7 @@ const { chromium } = require('playwright');
     assert.equal(await page.locator('article.ol-lesson').isVisible(), true);
 
     assert.deepEqual(errors, [], 'No uncaught JS page errors');
-    console.log('PASS: OPT-001 draft route, noindex, 11 sections, LAB-A, disclosures, math, mobile, keyboard');
+    console.log('PASS: OPT-001 released route, indexable, 11 sections, LAB-A, disclosures, math, mobile, keyboard');
   } finally {
     await browser.close();
   }

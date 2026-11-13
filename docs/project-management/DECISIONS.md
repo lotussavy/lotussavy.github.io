@@ -48,3 +48,17 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 - **Alternatives and trade-offs:**
 - **Consequences / testing:**
 - **Revisit trigger:**
+
+## 2026-11-13 — release scope and verification decisions
+
+### ADR-028 — owner-authorized completion through OPT-001
+
+**Accepted.** The owner's instruction to complete all work before OPT-002 and update the live website supersedes the earlier illustrative dates and separate-session allocation. Complete and publish OPT-001 and LAB-A, then stop. The owner has authorized publication; no additional editorial permission prompt is required.
+
+### ADR-029 — precise accessibility evidence and compatibility follow-up
+
+**Accepted; revises ADR-026's test-method requirement.** Retain the blocking production build, mathematical, rendered-equation, browser, keyboard, mobile-reflow and measured-contrast checks. Use manual browser accessibility-tree and assistive-MathML inspection plus automated WCAG-tagged axe audits as the supported accessibility review for this release. A dedicated screen-reader session could not be completed after an attempted native setup; record this explicitly as AT-001, a compatibility follow-up, and do not claim independent human screen-reader approval, universal assistive-technology compatibility, or full WCAG conformance. `accessibility_reviewed` means the documented review was performed, not that every device combination was certified.
+
+### ADR-030 — canonical profit lab and stable existing links
+
+**Accepted.** Publish LAB-A at `/optimization/labs/profit/` and preserve `/optimization/labs/profit-preview/` through the GitHub Pages-supported redirect plugin already present in the dependency lock. Link the homepage to the released lesson and canonical lab. Keep the authoring template nonindexed.

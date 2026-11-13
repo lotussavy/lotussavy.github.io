@@ -5,7 +5,7 @@ seo_title: "What Is Optimization? | Optimization Learning Lab"
 description: "Learn optimization through a small decision problem: choose a fleet size, explore revenue and cost, and verify the best feasible profit."
 permalink: /optimization/learn/foundations/what-is-optimization/
 lesson_id: OPT-001
-lesson_status: draft
+lesson_status: published
 level: foundations
 level_label: Foundations
 difficulty: Beginner
@@ -26,16 +26,17 @@ concepts:
   - global-optimum
 labs:
   - profit-playground
-reviewed_on:
-math_reviewed: false
-accessibility_reviewed: false
-code_verified: false
-license: "Draft educational material; license decision pending review"
-robots: noindex,nofollow
-sitemap: false
+reviewed_on: 2026-11-13
+last_modified_at: 2026-11-13
+math_reviewed: true
+accessibility_reviewed: true
+code_verified: true
+license: "© 2026 Kamal Acharya. All rights reserved."
+robots: index,follow
+sitemap: true
 ---
 
-> **Draft lesson — editorial and accessibility review pending.** This material is available for development review, not yet released as the completed OPT-001 lesson. The fleet example is a synthetic teaching model, not a validated transportation or business forecast.
+> **Teaching model:** The fleet example uses deliberately constructed revenue and cost functions. Its results illustrate optimization concepts; they are not a transportation or business forecast.
 
 ## In one minute
 
@@ -161,7 +162,7 @@ How can we confidently conclude that \\(n=8\\) is globally optimal in this exerc
 We can use **exhaustive enumeration** because the feasible set contains only 13 possible fleet sizes: \\(0,1,2,\ldots,12\\). The verified LAB-A engine calculates the profit for each integer and selects the highest one. The full comparison identifies a **unique** maximizer:
 
 \\[
-n^*=8,\qquad P(n^*)=\$220.
+n^{\ast}=8,\qquad P(n^{\ast})=\$220.
 \\]
 
 <details markdown="1">
@@ -225,9 +226,9 @@ Optimal fleet: 8 vehicles
 Maximum profit: $220
 ```
 
-The Python example and interactive LAB-A are conceptually equivalent, but the **website simulator uses the already-tested JavaScript engine**. We do not maintain a separate objective formula in a second user-interface script.
+The Python example and interactive LAB-A are conceptually equivalent, but the **website simulator uses the already-tested JavaScript engine**. Both reproduce the same stated mathematical model.
 
-The complete interactive model and its fixed reference results are available in the [LAB-A source repository](https://github.com/lotussavy/lotussavy.github.io/blob/main/assets/js/optimization/profit-model.js). A [standalone Python version](https://github.com/lotussavy/lotussavy.github.io/blob/main/scripts/optimization/opt001_example.py) is version-controlled for reproducibility; its exact GitHub blob was executed locally and passed the assertions. This does not replace the lesson's final editorial and browser review.
+The complete interactive model and its fixed reference results are available in the [LAB-A source repository](https://github.com/lotussavy/lotussavy.github.io/blob/main/assets/js/optimization/profit-model.js). A [standalone Python version]({{ '/assets/code/optimization/opt001_example.py' | relative_url }}) is available to download and run. It checks the same reference values and exact optimum.
 
 ## Failure modes and assumptions
 
@@ -290,4 +291,4 @@ You can [return to the Optimization Lab homepage]({{ '/optimization/' | relative
 - Boyd, S., & Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press. [Official author-hosted book resources](https://stanford.edu/~boyd/cvxbook/). Further reading for learners who want mathematical optimization theory.
 - Optimization Learning Lab. *LAB-A synthetic profit model and tests* (version 1.0.0). [Verified model source](https://github.com/lotussavy/lotussavy.github.io/blob/main/assets/js/optimization/profit-model.js) · [Mathematical test cases](https://github.com/lotussavy/lotussavy.github.io/blob/main/scripts/optimization/profit-model.test.cjs).
 
-**Source note:** Every LAB-A financial value comes from a deliberately constructed model. There is no empirical fleet dataset or external funding assumption associated with this example. The author has not yet completed the final lesson's mathematical, accessibility or publication review.
+**Source note:** Every LAB-A financial value comes from a deliberately constructed model. There is no empirical fleet dataset or external funding assumption associated with this example. The mathematical checks, reproducible code, browser behavior, and accessibility review are recorded in the [lesson review log](https://github.com/lotussavy/lotussavy.github.io/blob/main/docs/project-management/OPT_001_REVIEW.md).

@@ -3,7 +3,8 @@
 /* Optimization lesson design system (BL-003). All selectors scoped to .ol-lesson. */
 .ol-lesson{--ol-ink:#173b52;--ol-muted:#4c6676;--ol-border:#d7e6ec;--ol-bg:#eff6f9;--ol-teal:#087f83;max-width:1160px;margin:0 auto 3rem;color:var(--ol-ink)}
 .ol-lesson *{box-sizing:border-box}
-.ol-lesson :is(a,button,input,select):focus-visible{outline:3px solid #e1ac43;outline-offset:3px}
+.ol-lesson a:not(.ol-lesson-link){color:#126477;text-decoration:underline}
+.ol-lesson :is(a,button,input,select):focus-visible{outline:3px solid #126477;outline-offset:3px}
 .ol-lesson h1,.ol-lesson h2,.ol-lesson h3{color:var(--ol-ink);line-height:1.3}
 .ol-lesson p,.ol-lesson li{line-height:1.72}
 .ol-lesson-header{border-radius:18px;background:linear-gradient(130deg,#f1f8fa,#e9f5f5);padding:clamp(1.2rem,3vw,2.2rem);border:1px solid var(--ol-border)}
@@ -11,7 +12,7 @@
 .ol-breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;color:var(--ol-muted);font-size:.89rem}
 .ol-breadcrumbs a{color:#096f79}
 .ol-lesson-meta{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-top:1.15rem;font-size:.81rem;color:#476274}
-.ol-lesson-id{font-weight:850;letter-spacing:.08em;color:#087f83}
+.ol-lesson-id{font-weight:850;letter-spacing:.08em;color:#096b70}
 .ol-lesson-pill{display:inline-block;border-radius:99px;padding:.2rem .65rem;border:1px solid #bddadc;background:white;color:#326a75;font-weight:750}
 .ol-lesson-draft{background:#fff5df;color:#78571d;border-color:#e8d2a1}
 .ol-lesson-subtitle{font-size:1.07rem;color:#405f70;max-width:72ch;margin:.6rem 0 1.3rem}
@@ -24,6 +25,14 @@
 .ol-lesson-body h3{margin:1.35rem 0 .45rem}
 .ol-lesson-body code{overflow-wrap:anywhere}
 .ol-lesson-body pre{overflow:auto;max-width:100%;padding:1rem;border-radius:10px}
+.ol-lesson-body pre{font-size:.9rem}
+.ol-lesson-body pre code{font-size:inherit;line-height:1.6}
+.ol-lesson-body .highlight .nb{color:#005b70}
+.ol-lesson-body .highlight :is(.mi,.mf){color:#08666a}
+.ol-lesson-body .highlight :is(.c,.c1,.cm,.cp,.cs){color:#545b61}
+.ol-lesson-body mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:.4rem 0}
+.ol-lesson-body summary{cursor:pointer;min-height:44px;padding:.65rem .2rem}
+.ol-lesson-body summary:focus-visible{outline:3px solid #126477;outline-offset:3px}
 .ol-lesson-body table{display:block;max-width:100%;overflow-x:auto}
 .ol-lesson-body blockquote{border-left:4px solid #209398;background:#eff8f8;padding:.75rem 1rem;margin:1.2rem 0}
 .ol-lesson-aside-card{border:1px solid var(--ol-border);border-radius:14px;padding:1.1rem;background:white}

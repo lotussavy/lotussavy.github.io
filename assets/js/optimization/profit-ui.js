@@ -41,7 +41,7 @@
       newNodes.push(svgEl(doc, 'circle', {
         cx: x(row.fleet), cy: y(row.profit), r: row.fleet === selected.fleet ? 8 : 4,
         fill: row.fleet === selected.fleet ? '#d58e20' : '#087f83',
-        stroke: row.fleet === selected.fleet ? '#fff' : 'none',
+        stroke: row.fleet === selected.fleet ? '#5f3900' : 'none',
         'stroke-width': 2,
         'data-fleet': row.fleet
       }));

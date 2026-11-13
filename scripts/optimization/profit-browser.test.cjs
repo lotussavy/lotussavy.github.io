@@ -1,5 +1,5 @@
 'use strict';
-// Browser regression against the actual Jekyll-generated LAB-A preview.
+// Browser regression against the actual Jekyll-generated LAB-A playground.
 // Run after site build and while a local static server serves _site.
 const assert = require('node:assert/strict');
 const { chromium } = require('playwright');
@@ -11,11 +11,11 @@ const { chromium } = require('playwright');
   try {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
     page.on('pageerror', error => errors.push(error.message));
-    const response = await page.goto(base + '/optimization/labs/profit-preview/', { waitUntil: 'domcontentloaded' });
-    assert.equal(response.status(), 200, 'Preview URL should return HTTP 200');
+    const response = await page.goto(base + '/optimization/labs/profit/', { waitUntil: 'domcontentloaded' });
+    assert.equal(response.status(), 200, 'Playground URL should return HTTP 200');
     assert.match(await page.title(), /LAB-A/i);
     assert.equal(await page.locator('meta[name="robots"]').count(), 1, 'Exactly one robots directive');
-    assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'noindex,nofollow');
+    assert.equal(await page.locator('meta[name="robots"]').getAttribute('content'), 'index,follow');
     assert.equal(await page.locator('[data-ol-range]').inputValue(), '4');
     assert.equal(await page.locator('[data-ol-profit]').innerText(), '$140');
     assert.equal(await page.locator('[data-ol-revenue]').innerText(), '$320');
@@ -62,7 +62,7 @@ const { chromium } = require('playwright');
     await page.emulateMedia({ reducedMotion: 'reduce' });
     assert.equal(await page.locator('[data-ol-profit]').innerText(), '$175');
     assert.deepEqual(errors, [], 'No uncaught page errors');
-    console.log('PASS: rendered LAB-A preview, 13 values, controls, keyboard, 375px, reduced motion');
+    console.log('PASS: rendered LAB-A playground, 13 values, controls, keyboard, 375px, reduced motion');
   } finally {
     await browser.close();
   }
