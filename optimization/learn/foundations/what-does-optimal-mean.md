@@ -49,6 +49,8 @@ In this lesson you will compare a few candidates, inspect both peaks, and reques
 
 ## Driving question
 
+Imagine a team tuning a continuously adjustable machine setting. The permitted range ends at U, and a synthetic performance score represents how well each setting works. The team must choose a setting and explain why its evidence supports that choice.
+
 Suppose the recorded scores at \\(x=0,2,4\\) are \\(2,6,2\\). Is \\(x=2\\) optimal?
 
 It is best among those three points. It is also the top of one peak in our example. Neither fact rules out a better point elsewhere. In fact, \\(x=8\\) has score \\(10\\).
