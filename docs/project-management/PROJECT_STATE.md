@@ -1,8 +1,8 @@
 # Project State — Optimization Learning Lab
 
-**Updated:** November 13, 2026.
+**Updated:** November 17, 2026.
 
-**Current checkpoint:** OPT-003, Feasibility and Trade-offs, and LAB-B are completed, reviewed and published. Three foundation lessons are live. M3 and the full MVP remain in progress; OPT-004 has not been started.
+**Current checkpoint:** OPT-003, Feasibility and Trade-offs, and LAB-B are completed, reviewed and published. Three foundation lessons are live. M3 and the full MVP remain in progress; OPT-004 is implemented and in candidate review; the last verified live source remains OPT-003.
 
 **Latest released source:** `ba76696b3caa7279957acadc974ea54005550a68`. The subsequent documentation-only commit records this verified release; it does not alter website code.
 
@@ -15,7 +15,8 @@
 | BL-007F / OPT-003 release review | Done in the documented scope | Candidate/main validation, site checks, deployment and production verified |
 | BL-008 / LAB-B | Done | Two-dimensional feasible region, rule toggles, checks, slack, trade-offs and degenerate sets |
 | BL-007 / OPT-002–004 | In Progress | OPT-002/003 released; OPT-004 not started |
-| BL-007G / OPT-004 design | Ready; not started | Next owner-directed task |
+| BL-007G / OPT-004 design | Done | Five aligned objectives and independent certificate |
+| BL-007H/I / OPT-004 implementation/release | In Review | Local checks passed; candidate CI and production pending |
 | BL-009–010 / glossary/search and full MVP review | Proposed | Still required for the full foundation package |
 | AT-001 / dedicated screen-reader compatibility | Ready; unexecuted | Existing follow-up under ADR-029 |
 
@@ -45,4 +46,4 @@ Browser/keyboard, visual reflow, accessible names, one live-status channel, nume
 
 ## Next exact action
 
-When the owner asks to proceed, begin **BL-007G: OPT-004 — What Does “Optimal” Mean?** Define examples and assessments that distinguish feasible, global/local optimal and best-known answers, building on the three released lessons. Do not start LP solvers or advanced routing implicitly. After OPT-004, glossary/search and the remaining MVP acceptance criteria still require implementation and review. No background work is implied.
+Finish OPT-004 candidate review and CI, publish only after checks pass, verify production, then record final evidence. Glossary/search is the next foundation-package task after the four lesson releases.

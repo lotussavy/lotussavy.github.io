@@ -74,3 +74,9 @@ A decision is **Proposed**, **Accepted**, **Superseded**, or **Rejected**. Inclu
 Implement the Feasibility and Trade-offs lesson and reusable two-dimensional LAB-B together. Two resource inequalities and an optional minimum share a continuous bounded domain. Switches exclude rules, while domain bounds always apply. No objective or optimizer is invented. Preserve feasible lines and singletons rather than inferring emptiness from zero area. Half-hour controls sample a continuous set. Independently check the clipping engine against boundary intersections for all 109,368 supported settings; verify the exact Python implementation separately. Release only after candidate checks and record live evidence. OPT-004 and LP objective exploration remain later work. ADR-029/AT-001 remains unchanged.
 
 **ADR-033 completion:** OPT-003/LAB-B released on `ba76696b3caa7279957acadc974ea54005550a68` after successful candidate/main checks, deployment and direct production review. See OPT_003_REVIEW.md.
+
+## ADR-034 — Complete OPT-004 with explicit evidence for optimality
+
+**Date:** 2026-11-17. **Status:** Accepted for the owner-authorized next-step release.
+
+Use an original two-peak continuous score with a variable feasible upper limit. Separate a deliberately chosen comparison record from a global certificate; exclude infeasible candidates from ranking, preserve tied optima, and invalidate the certificate when the model changes. Prove the global answer with bounds on each quadratic; independently verify with piecewise arithmetic, derivative signs and exact Python. The comparator is an OPT-004 activity, not LAB-C or a general nonlinear solver. Complete candidate checks before promotion and record live evidence. BL-009 glossary/search follows the four lessons; the full MVP remains subject to BL-010. ADR-029/AT-001 remains unchanged.

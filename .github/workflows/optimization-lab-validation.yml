@@ -47,7 +47,7 @@ jobs:
 
       - name: Test verified mathematical engine and UI
         run: |
-          node --test scripts/optimization/profit-model.test.cjs scripts/optimization/profit-ui.test.cjs scripts/optimization/model-builder-model.test.cjs scripts/optimization/feasibility-model.test.cjs
+          node --test scripts/optimization/profit-model.test.cjs scripts/optimization/profit-ui.test.cjs scripts/optimization/model-builder-model.test.cjs scripts/optimization/feasibility-model.test.cjs scripts/optimization/optimality-model.test.cjs
 
       - name: Verify Python teaching examples
         run: |
@@ -57,6 +57,8 @@ jobs:
           python3 scripts/optimization/opt002_example.test.py
           python3 assets/code/optimization/opt003_example.py
           python3 scripts/optimization/opt003_example.test.py
+          python3 assets/code/optimization/opt004_example.py
+          python3 scripts/optimization/opt004_example.test.py
 
       - name: Set up Ruby and Bundler
         uses: ruby/setup-ruby@v1
@@ -94,6 +96,10 @@ jobs:
           test -f _site/optimization/labs/feasibility/index.html
           test -f _site/assets/css/optimization-feasibility.css
           test -f _site/assets/code/optimization/opt003_example.py
+          test -f _site/optimization/learn/foundations/what-does-optimal-mean/index.html
+          test -f _site/optimization/labs/optimality/index.html
+          test -f _site/assets/css/optimization-optimality.css
+          test -f _site/assets/code/optimization/opt004_example.py
           ! test -d _site/docs/project-management
           echo "Optimization Lab build smoke checks passed"
 
@@ -137,6 +143,13 @@ jobs:
           set -o pipefail
           node scripts/optimization/opt003-browser.test.cjs 2>&1 | tee /tmp/optimization-opt003-browser.log
 
+      - name: Browser-test OPT-004 and optimality comparator
+        if: success() || failure()
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/optimization/opt004-browser.test.cjs 2>&1 | tee /tmp/optimization-opt004-browser.log
+
       - name: Audit released pages for accessibility and reflow
         if: success() || failure()
         shell: bash
@@ -159,6 +172,8 @@ jobs:
             /tmp/optimization-opt002-browser.log
             /tmp/optimization-opt003-browser.log
             /tmp/optimization-opt003-browser.json
+            /tmp/optimization-opt004-browser.log
+            /tmp/optimization-opt004-browser.json
             /tmp/optimization-accessibility.log
             /tmp/optimization-accessibility.json
             _site/optimization/labs/profit/index.html
@@ -166,6 +181,8 @@ jobs:
             _site/optimization/learn/foundations/decisions-objectives-constraints/index.html
             _site/optimization/labs/model-builder/index.html
             _site/optimization/labs/feasibility/index.html
+            _site/optimization/labs/optimality/index.html
+            _site/optimization/learn/foundations/what-does-optimal-mean/index.html
             _site/optimization/learn/foundations/feasibility-and-trade-offs/index.html
           if-no-files-found: ignore
           retention-days: 7

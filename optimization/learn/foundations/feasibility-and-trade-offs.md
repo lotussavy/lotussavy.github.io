@@ -23,10 +23,13 @@ prerequisites:
 previous_lesson:
   title: "Decisions, Objectives, and Constraints"
   url: /optimization/learn/foundations/decisions-objectives-constraints/
+next_lesson:
+  title: "What Does ‘Optimal’ Mean?"
+  url: /optimization/learn/foundations/what-does-optimal-mean/
 concepts: [feasible-set, constraint, slack, tight-constraint, trade-off, continuous-variable, infeasibility]
 labs: [feasibility-explorer]
 reviewed_on: 2026-11-13
-last_modified_at: 2026-11-13
+last_modified_at: 2026-11-17
 math_reviewed: true
 accessibility_reviewed: true
 code_verified: true
@@ -222,7 +225,7 @@ No. Both use ten staff-hours and are feasible under the default rules. The forme
 
 Feasibility means satisfying the domain and **every** active constraint. The feasible region is their intersection, including the permitted boundaries. Slack measures unused allowance; a tight rule has zero slack at the selected point. Resource trade-offs explain what changes together, while an objective explains what counts as better. An empty set, a line, and a singleton are different outcomes.
 
-Return to [OPT-002]({{ '/optimization/learn/foundations/decisions-objectives-constraints/' | relative_url }}) to revisit decisions, objectives and rules, or explore [LAB-B]({{ '/optimization/labs/feasibility/' | relative_url }}) on its own. **Next planned: OPT-004, What Does “Optimal” Mean?** It will distinguish feasible choices, global and local optima, and best-known answers.
+Return to [OPT-002]({{ '/optimization/learn/foundations/decisions-objectives-constraints/' | relative_url }}) to revisit decisions, objectives and rules, or explore [LAB-B]({{ '/optimization/labs/feasibility/' | relative_url }}) on its own. Continue with [OPT-004: What Does ‘Optimal’ Mean?]({{ '/optimization/learn/foundations/what-does-optimal-mean/' | relative_url }}) to distinguish feasible choices, global and local optima, and best-known answers.
 
 ### References and provenance
 

@@ -1,0 +1,22 @@
+---
+---
+.ol-optimality{color:#173b52;background:#f0f7fa;border:1px solid #c9dfe7;border-radius:18px;padding:clamp(.8rem,2.5vw,1.5rem);margin:1.4rem 0;min-width:0}
+.ol-optimality *{box-sizing:border-box}.ol-optimality [hidden]{display:none!important}
+.oc-kicker{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#096b70}
+.ol-optimality fieldset{min-width:0;border:1px solid #b4ced8;border-radius:12px;padding:1rem;background:#fff;margin:1rem 0}
+.ol-optimality legend{font-weight:750;padding:0 .3rem;max-width:100%}
+.oc-inputs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.oc-inputs label{display:block;font-weight:650;line-height:1.5}.oc-inputs input{display:block;width:100%;min-height:44px;accent-color:#096b70}
+.oc-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+.oc-actions button{font:inherit;font-size:.9rem;font-weight:650;min-height:44px;padding:.6rem .8rem;border:1px solid #096b70;border-radius:9px;background:#fff;color:#174b5b;cursor:pointer;white-space:normal}
+.oc-actions button:hover{background:#e4f3f1}.oc-actions .oc-primary{background:#096b70;color:#fff}.oc-actions .oc-primary:hover{background:#074f54;color:#fff}
+.ol-optimality :is(button,input,summary,table):focus-visible{outline:3px solid #126477;outline-offset:3px}
+.oc-help,.oc-note,.ol-optimality figcaption{font-size:.91rem;color:#395b6b}
+.oc-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.6rem}.oc-metrics>div{background:#fff;border:1px solid #c9dfe7;border-radius:10px;padding:.8rem}
+.oc-metrics span,.oc-metrics strong{display:block}.oc-metrics strong{font-size:1.05rem;margin-top:.25rem}
+.oc-figure{margin:1rem 0;background:#fff;border:1px solid #c9dfe7;border-radius:10px;padding:.6rem}.oc-figure svg{display:block;width:100%;height:auto;font-family:system-ui,sans-serif;font-size:15px;fill:#173b52}.oc-figure figcaption{padding:.6rem}
+.oc-certificate{background:#fff;border:1px solid #b4ced8;border-left:5px solid #66479a;border-radius:8px;padding:1rem;margin:1rem 0;overflow-wrap:anywhere}
+.oc-certificate h4{margin-top:0}.ol-optimality table{width:100%;font-size:.9rem;background:#fff}.ol-optimality td,.ol-optimality th{padding:.6rem;white-space:normal;min-width:70px}
+.oc-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+@media(max-width:600px){.oc-inputs,.oc-metrics{grid-template-columns:1fr}.ol-optimality fieldset{padding:.7rem}.oc-actions button{flex:1 1 125px}.oc-figure{padding:.15rem}}
+@media(prefers-reduced-motion:reduce){.ol-optimality *{animation:none!important;transition:none!important}}
