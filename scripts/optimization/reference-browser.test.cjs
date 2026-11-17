@@ -42,6 +42,7 @@ const { chromium } = require('playwright');
     assert.match(await page.locator('[data-search-results]').innerText(), /Decisions, Objectives, and Constraints/);
     const sharedUrl = page.url(); assert.match(sharedUrl, /#q=budget&type=lesson$/);
     await page.getByRole('link', { name: 'Skip to main content', exact: true }).press('Enter');
+    await page.waitForURL(/#q=budget&type=lesson$/);
     assert.equal(await query.inputValue(), 'budget'); assert.equal(await kind.inputValue(), 'lesson');
     assert.match(page.url(), /#q=budget&type=lesson$/);
     await page.reload({ waitUntil: 'domcontentloaded' });
