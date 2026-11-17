@@ -40,3 +40,7 @@ The independent JS score oracle uses expanded piecewise polynomials separated at
 ## Handoff boundary
 
 OPT-004 completes the four authored foundation lessons. M3/MVP still require BL-009 glossary/search and BL-010 overall acceptance review, including remaining foundation-package requirements. OPT-005 and LP/routing algorithms are not started here.
+
+## Completion checkpoint
+
+Implemented, reviewed and published on `1a6a36102a71f65fbba7549b8fd6ba119e682fab` after successful final candidate/main checks, deployment and direct public verification. See OPT_004_REVIEW.md for evidence and review limits. BL-009 glossary/search is the next unstarted task.

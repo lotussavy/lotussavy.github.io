@@ -1,19 +1,19 @@
 # Optimization Lab — Project Blueprint
 
-**Version:** 1.3
+**Version:** 1.4
 **Baseline date:** November 11, 2026  
 **Project type:** Interactive educational publishing platform  
 **Primary home:** Existing academic website (`lotussavy.github.io`), under a dedicated `/optimization/` section (confirmed repository route)
-**Status:** M3 in progress — OPT-001–003 and LAB-B released; OPT-004 next
+**Status:** M3 in progress — OPT-001–004 and LAB-A/B released; glossary/search next
 **Working motto:** *Learn → Visualize → Experiment → Understand → Implement → Research.*
 
 > **Document purpose.** This is the single reference for product scope, curriculum, interfaces, technology, quality requirements, milestones, and decisions. Update the version and decision log whenever a material change is approved. An item is not “done” merely because code or prose exists: the defined acceptance criteria must pass.
 
-## Current implementation checkpoint — November 13, 2026
+## Current implementation checkpoint — November 17, 2026
 
-OPT-001, OPT-002 and [OPT-003](https://lotussavy.github.io/optimization/learn/foundations/feasibility-and-trade-offs/) are released, with the Profit Playground, Decision Model Builder and [LAB-B Feasibility Explorer](https://lotussavy.github.io/optimization/labs/feasibility/). M0/M1 and M2 remain complete; M3 is in progress. Candidate/main checks and production deployment passed on `ba76696b3caa7279957acadc974ea54005550a68`. Current evidence and the explicit accessibility boundary are in PROJECT_STATE.md and OPT_003_REVIEW.md; dedicated screen-reader compatibility remains AT-001 under ADR-029.
+All four foundation lessons, OPT-001–004, are released with the Profit Playground, Decision Model Builder, LAB-B Feasibility Explorer and [Optimality Comparator](https://lotussavy.github.io/optimization/labs/optimality/). BL-007 and BL-008 are complete; M3 is still in progress. Final candidate/main checks and deployment passed on `1a6a36102a71f65fbba7549b8fd6ba119e682fab`. See PROJECT_STATE.md and OPT_004_REVIEW.md for evidence and the ADR-029/AT-001 accessibility boundary.
 
-The owner authorized continuing with OPT-003, including implementation and live release (ADR-033). BL-007D/E/F and BL-008 are done. The next item is **BL-007G: OPT-004 instructional design**, not started. OPT-004, glossary/search and the complete MVP review remain future work. LAB-B is now the two-dimensional feasibility explorer; objective-based LP geometry remains LAB-C.
+The owner authorized completing the next step, OPT-004 (ADR-034). BL-007G/H/I are done. The next task is **BL-009: glossary/search**, not started. The full P0 package still requires glossary/search, remaining start-guide/concept-relationship/editorial-corrections work and BL-010 acceptance review. The OPT-004 activity is not LAB-C; objective-based LP geometry and OPT-005 remain later work.
 
 ## 1. Executive charter
 
@@ -251,6 +251,7 @@ Cite original research where relevant; prefer authoritative textbooks and primar
 |---|---|---|---|---|
 | LAB-A | Profit playground | Integer vehicles n ∈ [0,12] | Revenue, cost, profit, best n | Exhaustively check all 13 choices |
 | OPT-002 activity | Decision Model Builder | Objective, integer availability A and budget B | Candidate rule checks, feasible set and exact optimum/infeasible status | All 15,639 supported models checked against independent certificates and Python |
+| OPT-004 activity | Optimality Comparator | Continuous x, integer limit U, comparison record and explicit certificate action | Feasibility, best recorded value, all global optimizers and local/global classification | Analytic branch bounds; independent piecewise/derivative oracles and exact Python for every U |
 | LAB-B (released) | Feasibility explorer | Two resource inequalities, optional minimum, switches and continuous candidate | Feasibility, slack/violations, polygon/line/point/empty set | 109,368 settings against independent boundary intersections; exact Python fixtures and browser checks |
 | LAB-C | LP region explorer | 2D constraints and objective coefficients | Polygon, optimum | Independent LP solver cross-check |
 | LAB-D | Branch-and-bound tree | Small integer model | Nodes, bounds, incumbent, pruning reason | Compare optimal value to enumeration/solver |
@@ -522,7 +523,7 @@ Maintain a central tracker with: `ID | Workstream | Description | Priority | Own
 
 ## 18. Immediate next action and handoff contract
 
-**Next: BL-007G — design OPT-004, What Does “Optimal” Mean?** Resume from PROJECT_STATE.md and current GitHub state. Define clear feasible/optimal/best-known examples and aligned assessment using the three released lessons and labs. OPT-004 is not started. Glossary/search and the remaining MVP acceptance review are still required.
+**Next: BL-009 — build glossary and search.** Resume from PROJECT_STATE.md and current GitHub state. Define at least 20 precise terms, working browser-local search and cross-links to the four released lessons and relevant activities. Then address remaining P0 start/concept/editorial requirements and BL-010 review. OPT-005 and advanced labs are not started. Do not declare the full MVP complete from lesson publication alone.
 
 ### Verification record required for each subsequent task
 
@@ -558,3 +559,4 @@ Optimization; decision variable; parameter; objective function; constraint; feas
 | 1.1 | 2026-11-13 | Recorded verified OPT-001/LAB-A release, explicit accessibility review scope and next OPT-002 design target; curriculum scope unchanged | Owner-authorized live release |
 | 1.2 | 2026-11-13 | Recorded complete OPT-002/model-builder release, exhaustive model verification and next OPT-003 design target | Owner-authorized live release |
 | 1.3 | 2026-11-13 | Recorded complete OPT-003/LAB-B release, independent geometry verification and next OPT-004 target | Owner-authorized live release |
+| 1.4 | 2026-11-17 | Recorded complete OPT-004/comparator release, independent certificates, pinned CI runner repair and next glossary/search target | Owner-authorized next-step release |

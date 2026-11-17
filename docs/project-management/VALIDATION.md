@@ -1,3 +1,17 @@
+# Current Validation Checkpoint — OPT-004 / November 17, 2026
+
+**Released source:** `1a6a36102a71f65fbba7549b8fd6ba119e682fab`. Supersedes pending OPT-004 statements; older checkpoints below are historical.
+
+- 33 Node tests pass. OPT-004 covers all 11 supported limits, 11,011 hundredth-step candidate/limit probes, independent one-sided derivative classification and all 22,528 integer-point subset/limit records. Continuous global claims rest on the analytic certificate, not grid sampling.
+- Three new Python tests pass: exact independent piecewise arithmetic/certificates for every U, record edge cases and displayed/downloaded excerpt consistency. Earlier model/Python regressions pass.
+- Strict production Jekyll build and same-site checks pass: 110 HTML pages and 4,375 references. All five browser suites pass, including no-JavaScript fallbacks and certificate/record/constraint-state regression checks.
+- 27 WCAG-tagged axe/reflow audits pass: nine routes × 1280/375/320 px, with no violations, overflow, raw TeX or MathJax errors. All 54 OPT-004 passages render with assistive MathML. The observed primary-button hover contrast issue was fixed and receives a browser regression assertion.
+- [Final candidate Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772940), [candidate site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772751), [main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283470), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283444) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283070): all success. Direct public navigation and comparator states were verified.
+- Initial CI Chromium setup failed after ubuntu-latest moved to unsupported Ubuntu 26.04. Both workflows now pin supported Ubuntu 24.04; final replacement checks pass with all gates retained.
+- AT-001 dedicated screen-reader compatibility remains unexecuted. OPT-004/BL-007 are done; glossary/search and remaining MVP requirements are next.
+
+---
+
 # Current Validation Checkpoint — OPT-003 / November 13, 2026
 
 **Released source:** `ba76696b3caa7279957acadc974ea54005550a68`. This checkpoint supersedes earlier pending OPT-003/LAB-B statements; older records below are historical.

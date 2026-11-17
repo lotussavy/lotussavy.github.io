@@ -1,5 +1,14 @@
 # Project Changelog
 
+## 2026-11-17 — OPT-004 released and verified live
+
+- Released `1a6a36102a71f65fbba7549b8fd6ba119e682fab` after final [candidate Optimization checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772940) and [candidate site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772751) passed. [Main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283470), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283444) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283070) succeeded.
+- Added What Does ‘Optimal’ Mean?, reusable/standalone Optimality Comparator, an explicit comparison record and analytic certificate, local/global/tied/infeasible cases, five knowledge checks and independent downloadable Python.
+- All 33 Node tests and Python checks pass. New checks cover every supported limit, independent piecewise/derivative arithmetic and all 22,528 integer-point subset/limit records. Strict build, 4,375 local references, all browser suites and 27 accessibility/reflow audits pass.
+- Fixed observed primary-button hover contrast and pinned both validation workflows to Ubuntu 24.04 after ubuntu-latest/Playwright incompatibility. All tests and thresholds remain enabled.
+- Public lesson/activity, navigation, certificate/tie/infeasible/state changes and all 54 rendered passages/MathML alternatives were verified. Homepage now shows four lessons. Updated blueprint and task/release records.
+- BL-007G/H/I and BL-007 complete in the stated scope. AT-001 remains a follow-up. BL-009 glossary/search is next; the full MVP and OPT-005 are not declared complete.
+
 ## 2026-11-13 — OPT-003 and LAB-B released and verified live
 
 - Released `ba76696b3caa7279957acadc974ea54005550a68` after [candidate Optimization checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43498940635) and [candidate site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43498940862) passed. [Main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499389410), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499389515) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/43499387957) all succeeded.
