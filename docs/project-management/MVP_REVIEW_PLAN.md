@@ -15,7 +15,7 @@ The full MVP review checks the package as one learner journey after its individu
 | OPT-001–004 | Released, with mathematical examples, knowledge checks and Python |
 | LAB-A and LAB-B | Released; additional OPT-002/004 activities also available |
 | Landing page | Released |
-| Glossary and local search | BL-009 delivers 30 terms and an index of the eight released lessons/activities plus those terms; final release evidence belongs in BL_009_REVIEW.md |
+| Glossary and local search | Released on `e557de698779f0c8afa219ec1a1bc1d5f2ae5b8d`: 30 terms and 38 indexed entries; see BL_009_REVIEW.md for passing release evidence |
 | Beginner start guide | Homepage orientation exists; the dedicated start-page requirement still needs completion or an explicitly documented equivalent |
 | Basic concept relationships | Glossary related-term links, concept chips and lesson prerequisites provide initial relationships; assess clarity and coverage across the beginner path |
 | Editorial method and corrections | Dedicated public editorial/corrections route still needs completion |
@@ -47,4 +47,4 @@ The output is a concrete acceptance report listing passed checks, repaired issue
 
 ## Current scope of this session
 
-The owner requested completing glossary/search and explaining this review. BL-010 has not been performed by creating this plan. Its first execution is the next owner-directed task after the verified BL-009 release.
+The owner requested completing glossary/search and explaining this review. BL-009 is now verified and published. BL-010 has not been performed by creating this plan; its first execution is the next owner-directed task.

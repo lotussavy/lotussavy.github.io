@@ -7,7 +7,7 @@
 
 ## Current checkpoint
 
-All four foundation lessons (OPT-001–004), the Profit Playground, Decision Model Builder, LAB-B Feasibility Explorer and Optimality Comparator are released. Start with PROJECT_STATE.md for current evidence, the accessibility-review boundary and next BL-009 glossary/search target. M3 and the full MVP remain in progress.
+Four foundation lessons, LAB-A/B, the introductory activities, 30 glossary terms and local search are released. Start with PROJECT_STATE.md for verified evidence and next BL-010 full MVP review. M3 is complete in the recorded scope; M4/full MVP acceptance remains in progress. MVP_REVIEW_PLAN.md explains the review and remaining package requirements.
 
 ## Daily targets
 Read [DAILY_TARGETS.md](DAILY_TARGETS.md) for the current scope agreement and next owner-directed working target.

@@ -2,49 +2,45 @@
 
 **Updated:** November 17, 2026.
 
-**Current checkpoint:** OPT-004, What Does ‘Optimal’ Mean?, and its Optimality Comparator are completed, reviewed and published. All four planned foundation lessons are live. BL-009 glossary/search is implemented and in candidate review; its publication is pending. BL-007 is complete; M3 and the full MVP remain in progress because glossary/search and remaining foundation-package requirements are outstanding.
+**Current checkpoint:** BL-009 glossary/search is completed, reviewed and published. Four foundation lessons, LAB-A/B, the introductory activities, 30 glossary terms and local search are live. M3 is complete in the recorded review scope. M4/full MVP acceptance remains in progress; BL-010 has not been executed.
 
-**Latest released source:** `1a6a36102a71f65fbba7549b8fd6ba119e682fab`. The subsequent documentation-only commit records this verified release without changing the tested website code.
+**Latest released source:** `e557de698779f0c8afa219ec1a1bc1d5f2ae5b8d`. The subsequent documentation-only commit records verified results without changing tested website code.
 
 | Work item | State | Verified result |
 |---|---|---|
-| BL-001–006 / OPT-001 and LAB-A | Done | Earlier mathematical/UI/browser regressions pass |
-| BL-007A–F / OPT-002/003 | Done | Earlier lessons, model builder and LAB-B retained and checked |
-| BL-007G / OPT-004 design | Done | Five aligned objectives/checks and original two-peak model |
-| BL-007H / OPT-004 implementation | Done | Eleven-section lesson, reusable/standalone comparator and exact Python |
-| BL-007I / OPT-004 release review | Done in the documented scope | Candidate/main validation, deployment and public interaction verified |
-| BL-007 / OPT-002–004 lessons | Done | All three released, with OPT-001 retained |
-| BL-008 / LAB-B | Done | Area/line/point/empty cases still pass independent and browser checks |
-| BL-009 / glossary/search | In Review | 30 terms, 38-entry local catalog and shared navigation implemented; release verification pending |
-| BL-010 / full MVP review | Proposed | Glossary plus remaining start/concept/editorial requirements still required |
-| AT-001 / dedicated screen-reader compatibility | Ready; unexecuted | Existing follow-up under ADR-029 |
+| BL-001–007 / OPT-001–004 | Done | Earlier mathematical/Python/browser regressions pass |
+| BL-008 / LAB-B | Done | Independent geometry and browser checks retained |
+| BL-009 / glossary | Done | 30 definitions/examples, aliases, 90 related-term links and published-lesson links |
+| BL-009 / search | Done | 38 entries: 30 terms, four lessons and four activities; local matching/filtering and shareable fragments |
+| M3 / foundation package | Complete in stated scope | Four lessons, required labs and glossary/cross-links released |
+| BL-010 / full MVP review | Ready; not executed | Next task; inspect and finish remaining package requirements using MVP_REVIEW_PLAN.md |
+| M4 / full MVP launch | In Progress | Start-guide/editorial requirements and overall acceptance remain |
+| AT-001 / dedicated screen-reader compatibility | Ready; unexecuted | Existing explicitly documented follow-up under ADR-029 |
 
-## Live learning journey
+## Live reference and learning journey
 
-1. [OPT-001: What Is Optimization?](https://lotussavy.github.io/optimization/learn/foundations/what-is-optimization/)
-2. [OPT-002: Decisions, Objectives, and Constraints](https://lotussavy.github.io/optimization/learn/foundations/decisions-objectives-constraints/)
-3. [OPT-003: Feasibility and Trade-offs](https://lotussavy.github.io/optimization/learn/foundations/feasibility-and-trade-offs/)
-4. [OPT-004: What Does ‘Optimal’ Mean?](https://lotussavy.github.io/optimization/learn/foundations/what-does-optimal-mean/)
+- [Glossary](https://lotussavy.github.io/optimization/concepts/): alphabetical browsing/filtering, stable term anchors, examples, aliases and related lessons/terms.
+- [Search](https://lotussavy.github.io/optimization/search/): published names, aliases, definitions, examples, summaries, IDs and key concepts; all-word matching and type filters.
+- [Optimization homepage](https://lotussavy.github.io/optimization/) links to the reference pages. All released lesson/activity headers expose the same links; every current concept chip has a glossary destination.
+- The four lessons remain OPT-001 What Is Optimization?, OPT-002 Decisions, Objectives, and Constraints, OPT-003 Feasibility and Trade-offs, and OPT-004 What Does ‘Optimal’ Mean?. Existing canonical lesson/lab paths and the legacy profit redirect remain valid.
 
-[Profit Playground](https://lotussavy.github.io/optimization/labs/profit/) · [Decision Model Builder](https://lotussavy.github.io/optimization/labs/model-builder/) · [LAB-B: Feasibility Explorer](https://lotussavy.github.io/optimization/labs/feasibility/) · [Optimality Comparator](https://lotussavy.github.io/optimization/labs/optimality/) · [Optimization homepage](https://lotussavy.github.io/optimization/).
-
-Homepage shows four lessons. OPT-003 links forward to OPT-004, which links back. The standalone comparator links to its full lesson and Python example. OPT-005 is planned text without a dead route. The legacy profit-preview redirect remains covered by regression tests.
+Search matching runs in the browser using a generated catalog. Query state is stored in the URL fragment; no search API receives it. Definitions and browse links remain usable with JavaScript off. Draft/preview and unreleased advanced content are excluded from the index. Related-term links reveal their targets even if a filter hid them.
 
 ## Release evidence
 
-- [Final candidate Optimization validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772940) and [candidate site-wide checks: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772751) passed before promotion.
-- [Main Optimization validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283470), [main site-wide checks: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283444), [Pages deployment: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283070).
-- 33 Node tests passed. OPT-004 covers all 11 supported limits, 11,011 hundredth-step candidate/limit probes with independent piecewise arithmetic and local derivative checks, and all 22,528 integer-point subset/limit records. Analytic bounds, rather than sampling, establish continuous global optimality.
-- Three new Python tests passed: exact piecewise score/certificate checks for every supported U, comparison/tie/infeasible-record cases and excerpt consistency. Earlier Python and model certificates pass, including 109,368 LAB-B settings and 15,639 OPT-002 models.
-- Local strict production Jekyll build and same-site validation passed: 110 HTML pages and 4,375 link/asset references. All five lesson/lab browser suites passed, including disabled-controls/no-JavaScript fallbacks.
-- 27 open-disclosure WCAG-tagged axe/reflow audits passed: nine routes × 1280/375/320 px, with no violations, overflow, raw TeX or MathJax errors. OPT-004 has 54 rendered passages and 54 assistive-MathML alternatives.
-- Direct public review confirmed homepage → OPT-004, OPT-003 ↔ OPT-004 links, standalone comparator, exact global result, ties, infeasible-point exclusion and certificate invalidation/reset.
-- Initial candidate browser setup failed because `ubuntu-latest` selected Ubuntu 26.04, unsupported by pinned Playwright 1.56.1. Both workflows now pin Ubuntu 24.04. Final runs above passed without removing checks or weakening thresholds.
+- [Candidate Optimization validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44187684114); [candidate site-wide checks: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44187684170), before promotion.
+- [Main Optimization validation: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093671); [main site-wide checks: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093583); [Pages deployment: success](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188091799).
+- 43 Node tests pass: 40 model/data/search regressions plus three generated-index tests. Earlier Python checks also pass. Glossary identities, alphabetical order, aliases, related targets, current concept chips and published-lesson links are checked.
+- Generated catalog has exactly 30 terms, four lessons and four activities. Each entry points to a built page/anchor; definitions and aliases match their shared source; exact titles/IDs and representative aliases retrieve the expected result.
+- Strict local production Jekyll build and same-site validation pass: 112 HTML pages and 4,689 link/asset references.
+- All six browser suites pass, including the new reference suite: filters, alias/ID matching, shared-fragment reload, skip-link state retention, target reveal, no-result/error/retry states, keyboard, mobile and no-JavaScript navigation.
+- 33 open-disclosure WCAG-tagged axe/reflow audits pass: eleven routes × 1280/375/320 px, with no violations, document overflow, raw TeX or math-renderer errors.
+- Direct public review confirmed glossary/search navigation, alias lookup, filtered results, share/reload behavior, direct term/lesson links and reference availability from lesson navigation.
 
 ## Review boundary
 
-Native controls, keyboard, visual reflow, accessible names, numerical chart alternatives, one polite status channel, MathJax assistive MathML and automated axe audits were reviewed. Dedicated NVDA/VoiceOver/Orca compatibility remains unverified AT-001. `accessibility_reviewed` and passing axe do not claim full WCAG conformance or universal assistive-technology compatibility. See ADR-029 and OPT_004_REVIEW.md.
+Automated audits, keyboard, accessible names/status, visual reflow, text alternatives and fallback behavior were reviewed. Dedicated NVDA/VoiceOver/Orca compatibility remains unverified AT-001. Passing axe and reviewed flags do not claim full WCAG conformance or universal assistive-technology compatibility. Earlier mathematical/proof scopes are retained.
 
 ## Next exact action
 
-Finish BL-009 browser/CI review, publish after gates pass and verify production. Explain the planned full MVP review using MVP_REVIEW_PLAN.md; BL-010 itself has not been executed.
+When requested, begin **BL-010: full MVP review** using MVP_REVIEW_PLAN.md and MASTER_BLUEPRINT.md §5/§10. Inspect and finish the dedicated beginner start-guide and editorial/corrections requirements, assess the basic concept relationships and complete an end-to-end learner/release review. The output is an acceptance report with passed gates, repaired issues, remaining limits and a release verdict. The plan itself is not a completed review. OPT-005 and advanced LP/routing work have not started. No background work is implied.

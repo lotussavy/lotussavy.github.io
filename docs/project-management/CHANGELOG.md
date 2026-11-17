@@ -1,5 +1,12 @@
 # Project Changelog
 
+## 2026-11-17 — Glossary and local search released
+
+- Released `e557de698779f0c8afa219ec1a1bc1d5f2ae5b8d` after [candidate Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44187684114) and [candidate site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44187684170) passed. [Main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093671), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093583) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188091799) succeeded.
+- Added 30 definition/example records, aliases, 90 related-term links, published-lesson links and stable anchors. Added generated local search over 38 entries, type filters, ranked all-word matching, shareable fragments, error/retry and static fallbacks.
+- Added shared reference navigation and linked existing concept chips. All 43 Node tests, earlier Python checks, browser suites, strict build, 4,689 references and 33 accessibility/reflow audits pass. Public behavior verified.
+- Recorded M3 completion and the concrete full MVP review plan. BL-010 has not been executed; start-guide/editorial and final package acceptance remain. AT-001 remains unexecuted; OPT-005 is not started.
+
 ## 2026-11-17 — OPT-004 released and verified live
 
 - Released `1a6a36102a71f65fbba7549b8fd6ba119e682fab` after final [candidate Optimization checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772940) and [candidate site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44179772751) passed. [Main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283470), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283444) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283070) succeeded.

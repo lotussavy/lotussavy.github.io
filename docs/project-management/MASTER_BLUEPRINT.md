@@ -1,19 +1,19 @@
 # Optimization Lab — Project Blueprint
 
-**Version:** 1.4
+**Version:** 1.5
 **Baseline date:** November 11, 2026  
 **Project type:** Interactive educational publishing platform  
 **Primary home:** Existing academic website (`lotussavy.github.io`), under a dedicated `/optimization/` section (confirmed repository route)
-**Status:** M3 in progress — OPT-001–004 and LAB-A/B released; glossary/search next
+**Status:** M3 complete in stated scope — glossary/search released; M4 full MVP review next
 **Working motto:** *Learn → Visualize → Experiment → Understand → Implement → Research.*
 
 > **Document purpose.** This is the single reference for product scope, curriculum, interfaces, technology, quality requirements, milestones, and decisions. Update the version and decision log whenever a material change is approved. An item is not “done” merely because code or prose exists: the defined acceptance criteria must pass.
 
 ## Current implementation checkpoint — November 17, 2026
 
-All four foundation lessons, OPT-001–004, are released with the Profit Playground, Decision Model Builder, LAB-B Feasibility Explorer and [Optimality Comparator](https://lotussavy.github.io/optimization/labs/optimality/). BL-007 and BL-008 are complete; M3 is still in progress. Final candidate/main checks and deployment passed on `1a6a36102a71f65fbba7549b8fd6ba119e682fab`. See PROJECT_STATE.md and OPT_004_REVIEW.md for evidence and the ADR-029/AT-001 accessibility boundary.
+All four foundation lessons, LAB-A/B and the introductory activities remain released. BL-009 adds [30 glossary terms](https://lotussavy.github.io/optimization/concepts/) and [local search](https://lotussavy.github.io/optimization/search/) over 38 published entries. Candidate/main checks, deployment and public interaction passed on `e557de698779f0c8afa219ec1a1bc1d5f2ae5b8d`. See PROJECT_STATE.md and BL_009_REVIEW.md for evidence and the ADR-029/AT-001 accessibility boundary.
 
-The owner authorized completing the next step, OPT-004 (ADR-034). BL-007G/H/I are done. The next task is **BL-009: glossary/search**, not started. The full P0 package still requires glossary/search, remaining start-guide/concept-relationship/editorial-corrections work and BL-010 acceptance review. The OPT-004 activity is not LAB-C; objective-based LP geometry and OPT-005 remain later work.
+M3 is complete in the recorded scope. M4/full MVP acceptance is still in progress. The next task is **BL-010: full MVP review**, specified but not executed in MVP_REVIEW_PLAN.md. The dedicated start-guide and editorial/corrections requirements plus overall package acceptance remain; basic related-term/prerequisite links are present and require end-to-end assessment. OPT-005 and advanced labs remain later work.
 
 ## 1. Executive charter
 
@@ -85,7 +85,7 @@ Teach optimization with **correct mathematics, accessible language, reproducible
 /optimization/labs/                    Interactive demos directory
 /optimization/labs/{slug}/             Standalone lab with assumptions
 /optimization/concepts/                Searchable concept glossary
-/optimization/concepts/{slug}/         Definition + linked examples
+/optimization/concepts/#slug           Implemented stable term anchors; longer pages may follow
 /optimization/map/                     Prerequisite/concept graph
 /optimization/code/                    Notebooks, data, code index
 /optimization/about/                   Editorial method, corrections
@@ -102,7 +102,7 @@ Teach optimization with **correct mathematics, accessible language, reproducible
 
 ### 3.3 Universal navigation elements
 
-Persistent search; level selector; next/previous lesson; prerequisite chips; estimated time; difficulty; last-reviewed date; glossary popovers; accessible reset; copy citation/permalink; report correction link. Avoid distracting autoplay and excessively elaborate hero animations.
+Shared glossary/search navigation (released); level selector; next/previous lesson; prerequisite chips; estimated time; difficulty; last-reviewed date; glossary popovers; accessible reset; copy citation/permalink; report correction link. Avoid distracting autoplay and excessively elaborate hero animations.
 
 ## 4. Curriculum map — canonical sequence
 
@@ -523,7 +523,7 @@ Maintain a central tracker with: `ID | Workstream | Description | Priority | Own
 
 ## 18. Immediate next action and handoff contract
 
-**Next: BL-009 — build glossary and search.** Resume from PROJECT_STATE.md and current GitHub state. Define at least 20 precise terms, working browser-local search and cross-links to the four released lessons and relevant activities. Then address remaining P0 start/concept/editorial requirements and BL-010 review. OPT-005 and advanced labs are not started. Do not declare the full MVP complete from lesson publication alone.
+**Next: BL-010 — full MVP review.** Resume from PROJECT_STATE.md and current GitHub state. Follow MVP_REVIEW_PLAN.md to inspect and finish start-guide/editorial requirements, assess concept relationships and run the end-to-end package/release review. Record evidence, fixes, explicit limits and the acceptance verdict. OPT-005 and advanced labs remain unstarted.
 
 ### Verification record required for each subsequent task
 
@@ -560,3 +560,4 @@ Optimization; decision variable; parameter; objective function; constraint; feas
 | 1.2 | 2026-11-13 | Recorded complete OPT-002/model-builder release, exhaustive model verification and next OPT-003 design target | Owner-authorized live release |
 | 1.3 | 2026-11-13 | Recorded complete OPT-003/LAB-B release, independent geometry verification and next OPT-004 target | Owner-authorized live release |
 | 1.4 | 2026-11-17 | Recorded complete OPT-004/comparator release, independent certificates, pinned CI runner repair and next glossary/search target | Owner-authorized next-step release |
+| 1.5 | 2026-11-17 | Released 30-term glossary and 38-entry local search; recorded M3 completion and concrete BL-010 review plan | Owner-authorized BL-009 release and review explanation |

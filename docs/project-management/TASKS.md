@@ -25,8 +25,8 @@
 | BL-007H | P0 | OPT-004 lesson and comparator | Done | Full lesson, reusable/standalone comparator, Python and browser verification |
 | BL-007I | P0 | OPT-004 review and release | Done | [Validation](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283470), [site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283444), [deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283070); public interaction verified |
 | BL-008 | P0 | LAB-B feasibility explorer | Done | 109,368 settings independently checked; area/line/point/empty cases and browser controls verified |
-| BL-009 | P0 | Glossary/search | In Review | 30 terms and 38-item local search implemented; data/build checks pass; browser/CI/publication pending |
-| BL-010 | P0 | Complete MVP review | Proposed | Four lessons and LAB-A/B are live; glossary/search and remaining start/concept/editorial requirements still needed |
+| BL-009 | P0 | Glossary/search | Done | 30 terms, 38-entry local index; [validation](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093671), [site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093583), [deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188091799) and direct public verification |
+| BL-010 | P0 | Complete MVP review | Ready | Next: MVP_REVIEW_PLAN.md; start-guide/editorial requirements and end-to-end acceptance still needed; review not executed |
 | BL-011 | P1 | LP region explorer | Proposed | Solver cross-check after MVP |
 | BL-012 | P1 | Branch-and-bound explorer | Proposed | Verified tree trace after OPT-010 |
 | BL-013 | P2 | TSP lab | Proposed | Tiny-instance oracle and tour validator |
@@ -34,4 +34,4 @@
 | BL-015 | P3 | eVTOL dispatch lab | Proposed | Resource and assumption audit |
 | AT-001 | P1 | Dedicated screen-reader compatibility | Ready | Not run; preserved under ADR-029 |
 
-**Latest released source:** `1a6a36102a71f65fbba7549b8fd6ba119e682fab`. See OPT_004_REVIEW.md for evidence and the explicit accessibility boundary. AT-001 remains unexecuted. M3/MVP remain in progress; BL-009 is next.
+**Latest released source:** `e557de698779f0c8afa219ec1a1bc1d5f2ae5b8d`. See BL_009_REVIEW.md for evidence. M3 is complete in the stated scope; M4/full MVP acceptance is in progress. BL-010 is next. AT-001 remains unexecuted.

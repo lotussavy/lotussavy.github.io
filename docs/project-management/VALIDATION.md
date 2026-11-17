@@ -1,3 +1,16 @@
+# Current Validation Checkpoint — BL-009 / November 17, 2026
+
+**Released source:** `e557de698779f0c8afa219ec1a1bc1d5f2ae5b8d`. Supersedes pending glossary/search statements; older checkpoints below are historical.
+
+- 43 Node tests pass: 40 data/search/model regressions and three generated-index checks. Earlier Python checks pass. Thirty glossary records have valid related/lesson targets; every current concept chip resolves.
+- Generated catalog contains 38 published entries: 30 terms, four lessons and four activities. Definitions and aliases match the same JSON source; draft/preview/legacy routes are excluded.
+- Strict production Jekyll build and same-site link validation pass: 112 HTML pages and 4,689 references.
+- All six browser suites pass, including shared-fragment/skip-link handling, query/alias/type matching, hidden-target reveal, empty/error/retry and no-JavaScript navigation. Thirty-three WCAG-tagged axe/reflow audits pass across eleven routes and three viewports with no violations, overflow, raw TeX or math errors.
+- [Candidate Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44187684114), [candidate site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44187684170), [main Optimization](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093671), [main site-wide](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188093583) and [Pages deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44188091799): success. Public glossary/search and reference navigation were observed working.
+- BL-009/M3 are complete in the documented scope. BL-010/M4 acceptance remains pending. AT-001 dedicated screen-reader compatibility remains unexecuted.
+
+---
+
 # Current Validation Checkpoint — OPT-004 / November 17, 2026
 
 **Released source:** `1a6a36102a71f65fbba7549b8fd6ba119e682fab`. Supersedes pending OPT-004 statements; older checkpoints below are historical.
