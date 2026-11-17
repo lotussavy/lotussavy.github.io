@@ -1,0 +1,46 @@
+---
+layout: optimization-reference
+title: "Start learning optimization"
+seo_title: "Start Here: Beginner Guide | Optimization Lab"
+description: "Follow four beginner optimization lessons, try verified teaching activities, connect the core concepts and check what you have learned."
+subtitle: "Four lessons. Small experiments. A clear way to check your understanding."
+permalink: /optimization/start/
+reviewed_on: 2026-11-17
+last_modified_at: 2026-11-17
+robots: index,follow
+sitemap: true
+---
+<p>You can begin with basic arithmetic and curiosity about how decisions are made. The foundation path introduces the notation as you go. Reading estimates total about 75 minutes; allow extra time for experiments and optional Python. You can split the path across several visits.</p>
+<p><strong>Available now:</strong> OPT-001–004, four interactive activities, a 30-term glossary and local search. Later modeling, algorithm and routing levels are planned.</p>
+
+<h2 id="beginner-path">Follow the foundation path</h2>
+<p>For each lesson, read the opening question, predict an outcome, change one control, then compare the result with your prediction. Open the knowledge-check answers after trying the questions yourself.</p>
+<ol class="or-path">
+  <li><h3><a href="{{ '/optimization/learn/foundations/what-is-optimization/' | relative_url }}">OPT-001 · What Is Optimization?</a></h3><p>15 min read · Identify a decision, a measure of success and the rules it must obey.</p><p><strong>Try:</strong> <a href="{{ '/optimization/labs/profit/' | relative_url }}">Profit Playground (LAB-A)</a>. Compare fleets of 4, 8 and 12 vehicles. Can you explain why more vehicles can reduce profit?</p></li>
+  <li><h3><a href="{{ '/optimization/learn/foundations/decisions-objectives-constraints/' | relative_url }}">OPT-002 · Decisions, Objectives, and Constraints</a></h3><p>18 min read · Separate the chosen variable from fixed parameters, the objective and constraints.</p><p><strong>Try:</strong> <a href="{{ '/optimization/labs/model-builder/' | relative_url }}">Decision Model Builder</a>. Change the budget and the objective. Can you explain why the best feasible fleet changes, and why a budget below $100 leaves no feasible fleet in this model?</p></li>
+  <li><h3><a href="{{ '/optimization/learn/foundations/feasibility-and-trade-offs/' | relative_url }}">OPT-003 · Feasibility and Trade-offs</a></h3><p>20 min read · Test all active rules and interpret feasible areas, lines, points and empty sets.</p><p><strong>Try:</strong> <a href="{{ '/optimization/labs/feasibility/' | relative_url }}">Feasibility Explorer (LAB-B)</a>. With the default time limit of 8 hours, enable a minimum total of 9 hours. Why is the set empty? Reset before the next experiment.</p></li>
+  <li><h3><a href="{{ '/optimization/learn/foundations/what-does-optimal-mean/' | relative_url }}">OPT-004 · What Does ‘Optimal’ Mean?</a></h3><p>20 min read · Distinguish a local optimum, the best recorded candidate and a certified global optimum.</p><p><strong>Try:</strong> <a href="{{ '/optimization/labs/optimality/' | relative_url }}">Optimality Comparator</a>. At the default upper limit of 10, compare the candidate at 2 with the certified answer at 8. Can you explain what the certificate establishes that a short comparison record cannot?</p></li>
+</ol>
+
+<h2 id="concept-relationships">How the concepts connect</h2>
+<p>Read these relationships in order, or follow any term to its definition, example, related terms and lesson.</p>
+<ol class="or-connections">
+  <li>A <a href="{{ '/optimization/concepts/' | relative_url }}#decision-variable">decision variable</a> represents a choice. Its <a href="{{ '/optimization/concepts/' | relative_url }}#decision-domain">domain</a> specifies the values it can take.</li>
+  <li><a href="{{ '/optimization/concepts/' | relative_url }}#constraint">Constraints</a> restrict those choices. The choices satisfying every active rule form the <a href="{{ '/optimization/concepts/' | relative_url }}#feasible-set">feasible set</a>.</li>
+  <li>An <a href="{{ '/optimization/concepts/' | relative_url }}#objective-function">objective function</a> measures how good a feasible choice is. Changing the objective can change the preferred choice even when feasibility stays the same.</li>
+  <li>A <a href="{{ '/optimization/concepts/' | relative_url }}#global-optimum">global optimum</a> is best across the entire feasible set. A <a href="{{ '/optimization/concepts/' | relative_url }}#local-optimum">local optimum</a> is best within a feasible neighborhood; it may also be global.</li>
+  <li>The <a href="{{ '/optimization/concepts/' | relative_url }}#best-known-solution">best-known solution</a> is best among the feasible candidates found so far. An appropriate <a href="{{ '/optimization/concepts/' | relative_url }}#optimality-certificate">optimality certificate</a> can establish that no feasible choice is better for the stated model.</li>
+</ol>
+
+<h2 id="using-the-lab">Use the activities and reference</h2>
+<ul>
+  <li>Controls show their supported ranges and units. Use Tab to reach them, arrow keys for sliders and native selects, and Enter or Space for buttons and answer disclosures. Each activity has Reset.</li>
+  <li>Charts are accompanied by numerical summaries, descriptions or tables. Read the model assumptions before interpreting a result. All activity data are synthetic teaching examples.</li>
+  <li>Use the <a href="{{ '/optimization/concepts/' | relative_url }}">glossary</a> for a definition or <a href="{{ '/optimization/search/' | relative_url }}">search</a> for a title, lesson ID or alias such as “incumbent.” Search uses all query words; fewer words can broaden the matches.</li>
+  <li>Python is optional. Download a lesson’s example and run it with Python 3.10 or newer; the examples use the standard library. The worked text and default examples remain readable without JavaScript; live controls need it. Equations use MathJax when available.</li>
+</ul>
+
+<h2 id="finish-the-path">Check your understanding</h2>
+<p>You have completed this foundation path when you can describe a decision, objective and constraints in a new everyday example; check whether a candidate is feasible; explain how changing a rule changes the feasible set; and separate a best recorded candidate from a proven optimum. Revisit the relevant lesson if one of these is unclear.</p>
+<p><a class="or-action" href="{{ '/optimization/learn/foundations/what-is-optimization/' | relative_url }}">Begin with OPT-001</a></p>
+<p>Found a confusing explanation or unexpected result? <a href="{{ '/optimization/about/' | relative_url }}#corrections">Report a correction</a>. For the release scope, review method and reuse terms, read <a href="{{ '/optimization/about/' | relative_url }}">About this learning lab</a>.</p>

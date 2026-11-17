@@ -3,7 +3,9 @@ const fs=require('node:fs'),path=require('node:path');
 const folder=process.env.SITE_AUDIT_OUT||'browser-audit';
 const runs=[
  ['Homepage mobile','lighthouse-home-mobile.json'],
- ['Blog desktop','lighthouse-blog-desktop.json']
+ ['Blog desktop','lighthouse-blog-desktop.json'],
+ ['Optimization start mobile','lighthouse-optimization-start-mobile.json'],
+ ['Optimization OPT-004 mobile','lighthouse-optimization-lesson-mobile.json']
 ];
 const table=['\n### Lighthouse lab baseline\n','| Page | Performance | Accessibility | SEO | LCP | CLS | TBT |','|---|---:|---:|---:|---:|---:|---:|'];
 for(const [name,file] of runs){

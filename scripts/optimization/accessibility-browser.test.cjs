@@ -16,7 +16,8 @@ const { chromium } = require('playwright');
     '/optimization/labs/feasibility/',
     '/optimization/learn/foundations/what-does-optimal-mean/',
     '/optimization/labs/optimality/',
-    '/optimization/concepts/', '/optimization/search/'];
+    '/optimization/concepts/', '/optimization/search/',
+    '/optimization/start/', '/optimization/about/'];
   const results = [];
   try {
     for (const width of [1280, 375, 320]) {
@@ -53,7 +54,7 @@ const { chromium } = require('playwright');
         } finally { await page.close(); }
       }
     }
-    console.log('PASS: 33 desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
+    console.log('PASS: ' + results.length + ' desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
   } finally {
     fs.writeFileSync('/tmp/optimization-accessibility.json', JSON.stringify(results, null, 2));
     await browser.close();

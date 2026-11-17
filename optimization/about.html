@@ -1,0 +1,40 @@
+---
+layout: optimization-reference
+title: "About this learning lab"
+seo_title: "Editorial Method and Corrections | Optimization Lab"
+description: "How Optimization Lab teaching examples are checked, what the foundation release covers, how to cite and reuse material, and how to report a correction."
+subtitle: "Teaching assumptions, review evidence and a direct way to report a problem."
+permalink: /optimization/about/
+reviewed_on: 2026-11-17
+last_modified_at: 2026-11-17
+robots: index,follow
+sitemap: true
+---
+<h2 id="scope">The foundation release</h2>
+<p>The Optimization Learning Lab is created and maintained by <a href="{{ '/about/' | relative_url }}">Kamal Acharya</a>. This first public package covers OPT-001–004, the Profit Playground, Decision Model Builder, Feasibility Explorer, Optimality Comparator, glossary and local search. Begin with the <a href="{{ '/optimization/start/' | relative_url }}">beginner guide</a>.</p>
+<p>Models, coefficients and financial values are original synthetic teaching examples. Results describe the stated mathematical model and supported input ranges. They are not empirical fleet data, operational recommendations or published research findings. Later curriculum levels are marked as planned on the homepage.</p>
+
+<h2 id="editorial-method">How content is checked</h2>
+<ol>
+  <li><strong>Explanation:</strong> check the learning objective, prerequisites, terminology, units, worked example and knowledge-check answers. Primary references are listed in each lesson; original examples are labeled.</li>
+  <li><strong>Mathematics:</strong> compare outputs with independent calculations. The fleet model uses exhaustive enumeration; the feasibility model uses independent boundary intersections and exact arithmetic; the optimality activity uses analytic bounds and a separate piecewise calculation. A sampled graph alone does not prove a continuous optimum.</li>
+  <li><strong>Implementation:</strong> run model, Python, generated-index, link, browser and accessibility checks before publication. Exercise boundaries, empty feasible sets, tied optima, reset and error states where applicable.</li>
+  <li><strong>Release:</strong> verify the deployed pages, record the source revision and review results, and keep an explicit list of remaining limits. A reviewed date records the scope of a completed check.</li>
+</ol>
+<p>Content and code are developed with AI assistance. The recorded review combines assisted editorial inspection, independent mathematical implementations, automated checks and direct browser observation. It does not constitute an independent external peer review or a study of learning outcomes with students.</p>
+<p><a href="https://github.com/lotussavy/lotussavy.github.io/blob/main/docs/project-management/MVP_REVIEW_REPORT.md">Read the foundation release review and its evidence</a>. The <a href="https://github.com/lotussavy/lotussavy.github.io/tree/main/docs/project-management">project records</a> retain earlier lesson reviews, decisions and changes.</p>
+
+<h2 id="accessibility">Accessibility and fallbacks</h2>
+<p>The release review checks keyboard access, labels and result summaries, visible focus, contrast, text alternatives, rendered equations with assistive MathML, reduced motion and narrow layouts. Automated WCAG-tagged axe checks complement the browser review. Dedicated NVDA, VoiceOver or Orca compatibility testing remains an open follow-up; these checks do not establish full WCAG conformance or compatibility with every assistive technology.</p>
+<p>The lesson text, glossary, worked examples and browse links are available without JavaScript. Interactive controls and local search require JavaScript. Equations load MathJax from a public CDN; if it is unavailable, the mathematical source and neighboring explanations remain in the page. Please report an access barrier using the correction route below.</p>
+
+<h2 id="corrections">Report a correction or access problem</h2>
+<p><a class="or-action" href="mailto:{{ site.author.email | escape }}?subject=Optimization%20Lab%20correction&amp;body=Page%20URL%20or%20lesson%20ID%3A%20%0AWhat%20I%20tried%3A%20%0AExpected%20result%3A%20%0AObserved%20result%20or%20suggested%20correction%3A%20%0ABrowser%20and%20assistive%20technology%20if%20relevant%3A%20">Email a correction</a></p>
+<p>This opens your email app with a reporting template. You can also write directly to <a href="mailto:{{ site.author.email | escape }}">{{ site.author.email | escape }}</a>. Include the page URL or lesson ID, steps or input values, the expected and observed result, and an explanation or source for a proposed mathematical correction. For access problems, include your browser and assistive technology if relevant. Send only information needed to explain the issue.</p>
+<p>Reports go to the maintainer for review. Confirmed corrections are recorded with their affected example or page and verification evidence. There is no automatic submission, response-time guarantee or claim that an issue is fixed before it is checked.</p>
+
+<h2 id="citation-reuse">Citing, versions and reuse</h2>
+<p>Cite the specific lesson title and stable URL, its last-reviewed date, and your access date. For a reproducible result, also record the activity inputs and the repository commit used. Source history and the release review identify the checked revision.</p>
+<blockquote><p>Acharya, K. (2026). <em>What is optimization?</em> Optimization Learning Lab. https://lotussavy.github.io/optimization/learn/foundations/what-is-optimization/</p></blockquote>
+<p>© 2026 Kamal Acharya. All rights reserved. Teaching examples are provided for you to download and run for learning. Contact the maintainer about redistribution or adaptation. Referenced books, documentation and other third-party resources retain their own terms.</p>
+<p><a href="{{ '/optimization/start/' | relative_url }}">Return to the beginner guide</a> or <a href="{{ '/optimization/' | relative_url }}">browse the learning path</a>.</p>

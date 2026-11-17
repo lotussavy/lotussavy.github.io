@@ -110,6 +110,8 @@ jobs:
           test -f _site/optimization/concepts/index.html
           test -f _site/optimization/search/index.html
           test -f _site/optimization/search-index.json
+          test -f _site/optimization/start/index.html
+          test -f _site/optimization/about/index.html
           test -f _site/assets/css/optimization-reference.css
           ! test -d _site/docs/project-management
           echo "Optimization Lab build smoke checks passed"
@@ -168,6 +170,13 @@ jobs:
           set -o pipefail
           node scripts/optimization/reference-browser.test.cjs 2>&1 | tee /tmp/optimization-reference-browser.log
 
+      - name: Browser-test complete MVP learning journey
+        if: success() || failure()
+        shell: bash
+        run: |
+          set -o pipefail
+          node scripts/optimization/mvp-browser.test.cjs 2>&1 | tee /tmp/optimization-mvp-browser.log
+
       - name: Audit released pages for accessibility and reflow
         if: success() || failure()
         shell: bash
@@ -194,6 +203,7 @@ jobs:
             /tmp/optimization-opt004-browser.json
             /tmp/optimization-reference-browser.log
             /tmp/optimization-reference-browser.json
+            /tmp/optimization-mvp-browser.log
             /tmp/optimization-accessibility.log
             /tmp/optimization-accessibility.json
             _site/optimization/labs/profit/index.html
@@ -204,6 +214,8 @@ jobs:
             _site/optimization/labs/optimality/index.html
             _site/optimization/concepts/index.html
             _site/optimization/search/index.html
+            _site/optimization/start/index.html
+            _site/optimization/about/index.html
             _site/optimization/search-index.json
             _site/optimization/learn/foundations/what-does-optimal-mean/index.html
             _site/optimization/learn/foundations/feasibility-and-trade-offs/index.html

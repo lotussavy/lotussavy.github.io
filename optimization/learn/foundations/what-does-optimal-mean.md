@@ -236,7 +236,7 @@ No. It violates \\(x\le5\\). Its arithmetic score is still 10, but infeasible po
 
 A feasible point passes the rules. A best recorded point wins among the stated checked candidates. A local optimum wins in some feasible neighborhood. A global optimum wins over the entire feasible set. The optimizer is a decision; the optimal value is its score. A valid bound attained by a feasible point can turn a best-known answer into a certified global answer.
 
-Revisit [OPT-003]({{ '/optimization/learn/foundations/feasibility-and-trade-offs/' | relative_url }}) or compare cases in the [standalone activity]({{ '/optimization/labs/optimality/' | relative_url }}). This completes the four planned foundation lessons. The foundation package still needs glossary/search and its overall release review. **Next planned lesson: OPT-005, Variables and Domains**, after the remaining foundation-package work.
+Revisit [OPT-003]({{ '/optimization/learn/foundations/feasibility-and-trade-offs/' | relative_url }}) or compare cases in the [standalone activity]({{ '/optimization/labs/optimality/' | relative_url }}). This completes the four foundation lessons. Use the [beginner guide’s completion check]({{ '/optimization/start/' | relative_url }}#finish-the-path) to review your understanding, look up a term in the [glossary]({{ '/optimization/concepts/' | relative_url }}), or read the [release method and correction route]({{ '/optimization/about/' | relative_url }}). **OPT-005, Variables and Domains, is a planned expansion.**
 
 ### References and provenance
 

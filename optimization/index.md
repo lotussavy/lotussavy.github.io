@@ -96,6 +96,7 @@ sitemap: true
   </div>
 
   {% include optimization/utility-nav.html %}
+  <p class="ol-small"><strong>Foundation release:</strong> Four lessons, four activities, glossary and search are available. <a href="{{ '/optimization/start/' | relative_url }}">Use the beginner guide</a> for the lesson order, experiments and concept connections.</p>
 
   <section class="ol-section" aria-labelledby="ol-how-heading">
     <p class="ol-eyebrow">Our learning philosophy</p>

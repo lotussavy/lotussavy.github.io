@@ -40,3 +40,24 @@ test('published index provides expected aliases, lesson IDs and scoped results',
   assert.ok(m.search(index, 'budget', 'lab').some(hit => hit.entry.id === 'page:OPT-002-ACTIVITY'));
   assert.equal(m.search(index, 'unreleasedquizzicalterm', 'all').length, 0);
 });
+
+test('every MVP route is indexable at one canonical URL; previews stay off the sitemap', () => {
+  const routes = ['/optimization/', '/optimization/start/', '/optimization/about/',
+    '/optimization/concepts/', '/optimization/search/',
+    ...data.entries.filter(e => e.kind !== 'term').map(e => e.url)];
+  const sitemap = fs.readFileSync(path.join(site, 'sitemap.xml'), 'utf8');
+  assert.equal(routes.length, 13);
+  for (const route of routes) {
+    const html = fs.readFileSync(path.join(site, route, 'index.html'), 'utf8');
+    assert.equal((html.match(/<meta name="robots"/g) || []).length, 1, route);
+    assert.match(html, /<meta name="robots" content="index,follow"/);
+    assert.equal((html.match(/rel="canonical"/g) || []).length, 1, route);
+    assert.ok(html.includes('href="https://lotussavy.github.io' + route + '"'), route);
+    assert.ok(sitemap.includes('<loc>https://lotussavy.github.io' + route + '</loc>'), route);
+    assert.equal((html.match(/<h1\b/g) || []).length, 1, route);
+  }
+  for (const route of ['/optimization/learn/template-preview/', '/optimization/labs/profit-preview/']) {
+    assert.ok(!sitemap.includes('<loc>https://lotussavy.github.io' + route + '</loc>'));
+  }
+  assert.match(fs.readFileSync(path.join(site, 'optimization/learn/template-preview/index.html'), 'utf8'), /content="noindex,nofollow"/);
+});

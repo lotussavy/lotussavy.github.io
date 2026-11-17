@@ -19,5 +19,6 @@
       · <strong>Code:</strong> {% if page.code_verified == true %}Recorded verified{% else %}Not yet verified{% endif %}
       · <strong>Accessibility:</strong> {% if page.accessibility_reviewed == true %}Recorded reviewed{% else %}Review pending{% endif %}</p>
     {% if page.license %}<p><strong>License:</strong> {{ page.license | escape }}</p>{% endif %}
+    <p><a href="{{ '/optimization/about/' | relative_url }}#editorial-method">Review method and limits</a> · <a href="{{ '/optimization/about/' | relative_url }}#corrections">Report a correction</a></p>
   </div>
 </footer>

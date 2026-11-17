@@ -94,3 +94,9 @@ Render 30 concise terms from one JSON data source, with stable `/optimization/co
 This completes BL-009 after release gates pass. A separate full MVP review (BL-010) assesses package completeness, start/relationship/editorial requirements, end-to-end learning tasks and release evidence. Creating its checklist does not mark the review passed. ADR-029/AT-001 remains unchanged.
 
 **ADR-035 completion:** BL-009 released on `e557de698779f0c8afa219ec1a1bc1d5f2ae5b8d` after candidate/main checks, deployment and public verification. M3 is complete in the recorded scope. BL-010 is next; its checklist is prepared and has not been executed.
+
+### ADR-036 — complete the foundation MVP and record the review boundary
+
+**Accepted November 17, 2026.** The owner requested “Complete the review and lets wrap this up.” Complete BL-010, repair package gaps and publish after passing candidate gates. Add a dedicated beginner start guide and editorial/corrections page. An explicit linked relationship explanation, 90 related-term links and lesson prerequisites satisfy basic P0 concept relationships; a separate graph route is not required. Preserve the published mathematical models, existing hosting and planned expansion labels.
+
+Record assisted editorial inspection, independent mathematical implementations, browser/keyboard/reflow audits and exact CI/deployment evidence separately. This release uses assisted editorial review under the owner's publication authorization; it does not claim that a separate human editorial/peer review or novice learner study was performed (clarifies the original §10.1 human-review aspiration). Retain ADR-029/AT-001 openly. Close BL-010/M4 only after the complete checked package is live; do not begin OPT-005 or advanced labs in this wrap-up.

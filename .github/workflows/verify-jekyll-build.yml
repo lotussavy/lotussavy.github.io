@@ -64,6 +64,8 @@ jobs:
           export CHROME_PATH="$(node -p "require('playwright').chromium.executablePath()")"
           npx lighthouse http://127.0.0.1:8765/ --output=json --output-path=browser-audit/lighthouse-home-mobile.json --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,seo
           npx lighthouse http://127.0.0.1:8765/blog/ --preset=desktop --output=json --output-path=browser-audit/lighthouse-blog-desktop.json --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,seo
+          npx lighthouse http://127.0.0.1:8765/optimization/start/ --output=json --output-path=browser-audit/lighthouse-optimization-start-mobile.json --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,seo
+          npx lighthouse http://127.0.0.1:8765/optimization/learn/foundations/what-does-optimal-mean/ --output=json --output-path=browser-audit/lighthouse-optimization-lesson-mobile.json --quiet --chrome-flags="--headless --no-sandbox" --only-categories=performance,accessibility,seo
           node scripts/summarize_lighthouse.cjs
 
       - name: Upload screenshots and browser report
