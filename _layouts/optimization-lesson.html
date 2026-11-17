@@ -23,7 +23,7 @@ layout: default
         {% else %}<p>No prerequisites.</p>{% endif %}
         {% if page.concepts and page.concepts.size > 0 %}
         <h3>Key concepts</h3>
-        <ul>{% for term in page.concepts %}<li>{{ term | replace: '-', ' ' | escape }}</li>{% endfor %}</ul>
+        <ul>{% for term in page.concepts %}{% assign entry = site.data.optimization_glossary | where: 'id', term | first %}<li>{% if entry %}<a href="{{ '/optimization/concepts/' | relative_url }}#{{ term }}">{{ term | replace: '-', ' ' | escape }}</a>{% else %}{{ term | replace: '-', ' ' | escape }}{% endif %}</li>{% endfor %}</ul>
         {% endif %}
       </div>
     </aside>

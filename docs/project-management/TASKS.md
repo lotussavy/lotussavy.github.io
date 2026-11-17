@@ -25,7 +25,7 @@
 | BL-007H | P0 | OPT-004 lesson and comparator | Done | Full lesson, reusable/standalone comparator, Python and browser verification |
 | BL-007I | P0 | OPT-004 review and release | Done | [Validation](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283470), [site checks](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283444), [deployment](https://github.com/lotussavy/lotussavy.github.io/actions/runs/44180283070); public interaction verified |
 | BL-008 | P0 | LAB-B feasibility explorer | Done | 109,368 settings independently checked; area/line/point/empty cases and browser controls verified |
-| BL-009 | P0 | Glossary/search | Ready | Next: minimum 20 terms, cross-links and working browser-local search; not started |
+| BL-009 | P0 | Glossary/search | In Review | 30 terms and 38-item local search implemented; data/build checks pass; browser/CI/publication pending |
 | BL-010 | P0 | Complete MVP review | Proposed | Four lessons and LAB-A/B are live; glossary/search and remaining start/concept/editorial requirements still needed |
 | BL-011 | P1 | LP region explorer | Proposed | Solver cross-check after MVP |
 | BL-012 | P1 | Branch-and-bound explorer | Proposed | Verified tree trace after OPT-010 |

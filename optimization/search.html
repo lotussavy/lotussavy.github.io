@@ -1,0 +1,22 @@
+---
+layout: optimization-reference
+title: "Search the Optimization Lab"
+seo_title: "Search Lessons, Activities and Terms | Optimization Lab"
+description: "Search the Optimization Lab’s released lessons, activities and glossary by names, aliases, summaries and key concepts. Matching runs locally in your browser."
+subtitle: "Find a term, revisit a lesson or open an interactive activity."
+permalink: /optimization/search/
+reviewed_on: 2026-11-17
+last_modified_at: 2026-11-17
+robots: index,follow
+sitemap: true
+---
+<p>Search published content by title, lesson ID, concept name, alias or summary. All query words must match; punctuation and capitalization do not matter. This searches the Optimization Lab, not the rest of the academic website.</p>
+<section data-opt-search data-search-index="{{ '/optimization/search-index.json' | relative_url }}" data-search-root="{{ '/optimization/' | relative_url }}" aria-label="Published Optimization Lab search">
+  <form role="search" aria-label="Search Optimization Lab"><fieldset class="or-controls" data-search-controls disabled><legend>Find published content</legend><div class="or-inputs"><div><label for="optimization-search-query">Search optimization content</label><input id="optimization-search-query" data-search-query type="search" autocomplete="off" maxlength="200" placeholder="Try: OPT-003, best known, budget"></div><div><label for="optimization-search-kind">Content type</label><select id="optimization-search-kind" data-search-kind><option value="all">All content</option><option value="term">Glossary terms</option><option value="lesson">Lessons</option><option value="lab">Activities</option></select></div></div><button type="button" data-search-clear>Clear search</button></fieldset></form>
+  <p class="or-help">Matching runs in your browser after loading the published content list. There is no search service or query submission. Query and filter state use the URL fragment so you can bookmark or copy the current search.</p>
+  <p class="or-status" data-search-status role="status" aria-live="polite" aria-atomic="true">Browse published content below. Interactive search requires JavaScript.</p>
+  <p class="or-error" data-search-error role="alert" hidden>Search could not be loaded. Browse the links below, or try again.</p><button type="button" data-search-retry hidden>Retry search</button>
+  <section data-search-output hidden aria-labelledby="search-results-title"><h2 id="search-results-title">Matches</h2><p class="or-empty" data-search-empty hidden>No matching content. Try fewer words, another term or a different content type. Clear search to show everything.</p><ol class="or-results" data-search-results></ol></section>
+  <section data-search-fallback aria-labelledby="search-browse-title"><h2 id="search-browse-title">Browse published lessons and activities</h2><p><a href="{{ '/optimization/concepts/' | relative_url }}">Browse all {{ site.data.optimization_glossary.size }} glossary terms</a>.</p><ul>{% assign released = site.pages | where: 'layout', 'optimization-lesson' | where: 'lesson_status', 'published' | sort: 'lesson_id' %}{% for item in released %}<li><a href="{{ item.url | relative_url }}">{{ item.lesson_id }} — {{ item.title | escape }}</a></li>{% endfor %}</ul></section>
+  <noscript><p>JavaScript is off, so interactive search is disabled. The glossary and every published lesson and activity remain available through the links above. You can use your browser’s Find command in the glossary.</p></noscript>
+</section>

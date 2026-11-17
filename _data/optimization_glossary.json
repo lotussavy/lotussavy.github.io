@@ -1,0 +1,502 @@
+[
+  {
+    "id": "optimality-gap",
+    "title": "Absolute optimality gap",
+    "aliases": [
+      "optimality gap",
+      "absolute gap",
+      "bound gap"
+    ],
+    "definition": "The difference B − L between valid upper and lower bounds on the optimal objective value. A positive gap leaves uncertainty; it does not alone prove a current feasible answer is suboptimal.",
+    "example": "Bounds L = 6 and B = 10 leave an absolute gap of 4. Relative-gap conventions depend on the solver.",
+    "lesson": "OPT-004",
+    "related": [
+      "upper-bound",
+      "lower-bound",
+      "optimality-certificate"
+    ]
+  },
+  {
+    "id": "best-known-solution",
+    "title": "Best-known feasible solution",
+    "aliases": [
+      "best known",
+      "best recorded",
+      "incumbent"
+    ],
+    "definition": "The best feasible candidate found in a stated search or comparison record. It may be globally optimal already, but the record alone need not prove that.",
+    "example": "Recording only 0, 2 and 4 makes x = 2 best recorded in OPT-004, while the global answer is 8.",
+    "lesson": "OPT-004",
+    "related": [
+      "global-optimum",
+      "lower-bound",
+      "heuristic"
+    ]
+  },
+  {
+    "id": "binary-variable",
+    "title": "Binary variable",
+    "aliases": [
+      "binary decision",
+      "zero-one variable",
+      "0-1 variable"
+    ],
+    "definition": "An integer variable whose only permitted values are 0 and 1, often representing an off/on or no/yes choice.",
+    "example": "A yes/no operating choice can use 1 for operate and 0 for stay idle.",
+    "lesson": "OPT-002",
+    "related": [
+      "integer-variable",
+      "decision-variable",
+      "decision-domain"
+    ]
+  },
+  {
+    "id": "constraint",
+    "title": "Constraint",
+    "aliases": [
+      "restriction",
+      "rule",
+      "resource limit"
+    ],
+    "definition": "A condition that every feasible solution must satisfy. A candidate must pass all model constraints as well as its decision domain.",
+    "example": "Point (4, 4) fits x + y ≤ 8 but violates 2x + y ≤ 10.",
+    "lesson": "OPT-003",
+    "related": [
+      "feasible-solution",
+      "slack",
+      "tight-constraint"
+    ]
+  },
+  {
+    "id": "continuous-variable",
+    "title": "Continuous variable",
+    "aliases": [
+      "continuous decision",
+      "real-valued variable"
+    ],
+    "definition": "A variable allowed to take any real value in its domain, subject to the constraints. A slider with discrete steps can only sample that continuous domain.",
+    "example": "LAB-B allows fractional activity-hours, even though its sliders move in half-hour steps.",
+    "lesson": "OPT-003",
+    "related": [
+      "decision-domain",
+      "integer-variable",
+      "feasible-set"
+    ]
+  },
+  {
+    "id": "decision-domain",
+    "title": "Decision domain",
+    "aliases": [
+      "domain",
+      "allowed values",
+      "variable domain"
+    ],
+    "definition": "The permitted type and range of a decision variable before any additional restrictions are imposed. The domain is part of the model.",
+    "example": "A fleet may require integer n from 0 to 12; activity-hours x may be continuous from 0 to 10.",
+    "lesson": "OPT-002",
+    "related": [
+      "continuous-variable",
+      "integer-variable",
+      "feasible-set"
+    ]
+  },
+  {
+    "id": "decision-variable",
+    "title": "Decision variable",
+    "aliases": [
+      "variable",
+      "choice"
+    ],
+    "definition": "A quantity the model allows you to choose. Its permitted values are set by its domain and the model constraints.",
+    "example": "Fleet size n is chosen; the available fleet A is supplied as an input.",
+    "lesson": "OPT-002",
+    "related": [
+      "parameter",
+      "decision-domain",
+      "objective-function"
+    ]
+  },
+  {
+    "id": "exhaustive-enumeration",
+    "title": "Exhaustive enumeration",
+    "aliases": [
+      "enumeration",
+      "complete enumeration",
+      "brute force",
+      "brute-force search"
+    ],
+    "definition": "Checking every candidate in a finite decision domain, then comparing the feasible objective values. Complete, correct evaluation can prove the global optimum within that finite model.",
+    "example": "OPT-001 checks all 13 fleet sizes from 0 through 12 and identifies n = 8 with profit $220.",
+    "lesson": "OPT-001",
+    "related": [
+      "integer-variable",
+      "optimality-certificate",
+      "heuristic"
+    ]
+  },
+  {
+    "id": "feasible-set",
+    "title": "Feasible set",
+    "aliases": [
+      "feasible region",
+      "feasible space",
+      "allowed region"
+    ],
+    "definition": "The collection of all candidates satisfying the domain and every constraint. It is the intersection of their allowed sets and includes permitted boundaries.",
+    "example": "LAB-B can produce a polygon, an included line segment, a single point or an empty set.",
+    "lesson": "OPT-003",
+    "related": [
+      "feasible-solution",
+      "infeasibility",
+      "constraint"
+    ]
+  },
+  {
+    "id": "feasible-solution",
+    "title": "Feasible solution",
+    "aliases": [
+      "feasible point",
+      "feasible candidate",
+      "allowed choice"
+    ],
+    "definition": "A candidate satisfying the variable domain and every model constraint. Feasibility alone says nothing about whether its objective value is best.",
+    "example": "Under LAB-B defaults, (3, 4) satisfies time, staffing and the 0–10 domain.",
+    "lesson": "OPT-003",
+    "related": [
+      "feasible-set",
+      "infeasible-candidate",
+      "global-optimum"
+    ]
+  },
+  {
+    "id": "global-optimum",
+    "title": "Global optimum",
+    "aliases": [
+      "global maximum",
+      "global minimum",
+      "globally optimal"
+    ],
+    "definition": "A feasible decision at least as good as every feasible alternative for the stated objective. It is also locally optimal, but a local optimum need not be global.",
+    "example": "At U = 10, x = 8 is globally optimal because no feasible score exceeds 10 and f(8) = 10.",
+    "lesson": "OPT-004",
+    "related": [
+      "local-optimum",
+      "optimizer",
+      "optimal-value"
+    ]
+  },
+  {
+    "id": "heuristic",
+    "title": "Heuristic",
+    "aliases": [
+      "heuristic search",
+      "approximate search"
+    ],
+    "definition": "A method intended to find useful solutions without a general guarantee of proving the global optimum. Its candidates still need independent feasibility checks.",
+    "example": "Stopping at the first local peak can find x = 2 in OPT-004 while missing the taller peak at 8.",
+    "lesson": "OPT-004",
+    "related": [
+      "best-known-solution",
+      "local-optimum",
+      "exhaustive-enumeration"
+    ]
+  },
+  {
+    "id": "infeasible-candidate",
+    "title": "Infeasible candidate",
+    "aliases": [
+      "infeasible point",
+      "violated rule"
+    ],
+    "definition": "A candidate that violates at least one constraint or its domain. One failed candidate does not establish that the whole model is infeasible.",
+    "example": "At U = 5, x = 8 has score 10 but is excluded from OPT-004’s feasible choices.",
+    "lesson": "OPT-004",
+    "related": [
+      "feasible-solution",
+      "infeasibility",
+      "objective-value"
+    ]
+  },
+  {
+    "id": "infeasibility",
+    "title": "Infeasible model",
+    "aliases": [
+      "infeasibility",
+      "empty feasible set",
+      "no feasible solution"
+    ],
+    "definition": "A model with no candidate satisfying all its rules. This means its feasible set is empty, not merely that a search record contains no feasible candidate.",
+    "example": "Requiring x + y ≥ 9 and x + y ≤ 8 simultaneously makes LAB-B infeasible.",
+    "lesson": "OPT-003",
+    "related": [
+      "infeasible-candidate",
+      "feasible-set",
+      "best-known-solution"
+    ]
+  },
+  {
+    "id": "integer-variable",
+    "title": "Integer variable",
+    "aliases": [
+      "integer decision",
+      "whole number",
+      "integrality"
+    ],
+    "definition": "A variable restricted to whole-number values in its domain. A fractional value is not feasible merely because it satisfies resource inequalities.",
+    "example": "OPT-001 permits 0, 1, …, 12 vehicles; 4.5 vehicles is outside that domain.",
+    "lesson": "OPT-002",
+    "related": [
+      "decision-domain",
+      "binary-variable",
+      "continuous-variable"
+    ]
+  },
+  {
+    "id": "local-optimum",
+    "title": "Local optimum",
+    "aliases": [
+      "local maximum",
+      "local minimum",
+      "locally optimal"
+    ],
+    "definition": "A feasible decision at least as good as every sufficiently nearby feasible alternative. For maximization it is a local maximum; it need not be globally best.",
+    "example": "With U = 10, x = 2 is a genuine local peak of score 6, but x = 8 has score 10.",
+    "lesson": "OPT-004",
+    "related": [
+      "global-optimum",
+      "best-known-solution",
+      "optimality-certificate"
+    ]
+  },
+  {
+    "id": "lower-bound",
+    "title": "Lower bound",
+    "aliases": [
+      "objective lower bound",
+      "lower objective bound"
+    ],
+    "definition": "A justified value no larger than the true optimal objective value. For maximization a feasible score gives a lower bound; for minimization a lower bound limits how small the optimum can be.",
+    "example": "The feasible score f(2) = 6 supplies a lower bound of 6 on OPT-004’s default maximum.",
+    "lesson": "OPT-004",
+    "related": [
+      "upper-bound",
+      "best-known-solution",
+      "optimality-gap"
+    ]
+  },
+  {
+    "id": "maximization",
+    "title": "Maximization",
+    "aliases": [
+      "maximize",
+      "maximise",
+      "maximum"
+    ],
+    "definition": "An objective direction that prefers larger values among feasible choices. Global maximization compares against every feasible alternative.",
+    "example": "OPT-002 can maximize profit or revenue; those different goals can select different fleets.",
+    "lesson": "OPT-002",
+    "related": [
+      "minimization",
+      "objective-function",
+      "global-optimum"
+    ]
+  },
+  {
+    "id": "minimization",
+    "title": "Minimization",
+    "aliases": [
+      "minimize",
+      "minimise",
+      "minimum"
+    ],
+    "definition": "An objective direction that prefers smaller values among feasible choices. Constraints still determine which choices may compete.",
+    "example": "With no minimum-service rule, cost minimization in OPT-002 can select zero vehicles.",
+    "lesson": "OPT-002",
+    "related": [
+      "maximization",
+      "objective-function",
+      "constraint"
+    ]
+  },
+  {
+    "id": "objective-function",
+    "title": "Objective function",
+    "aliases": [
+      "objective",
+      "goal",
+      "score function"
+    ],
+    "definition": "The rule that computes the quantity to maximize or minimize from a candidate decision. It ranks feasible choices; it does not replace their constraints.",
+    "example": "P(n) = 80n − 5n² − 100 computes the synthetic fleet profit.",
+    "lesson": "OPT-002",
+    "related": [
+      "objective-value",
+      "maximization",
+      "minimization"
+    ]
+  },
+  {
+    "id": "objective-value",
+    "title": "Objective value",
+    "aliases": [
+      "candidate score",
+      "score"
+    ],
+    "definition": "The numerical result of evaluating the objective at a particular candidate. An infeasible candidate can have an arithmetic value without being an allowed solution.",
+    "example": "In OPT-004, f(2) = 6 is a candidate value; the default global optimal value is 10.",
+    "lesson": "OPT-004",
+    "related": [
+      "objective-function",
+      "optimal-value",
+      "infeasible-candidate"
+    ]
+  },
+  {
+    "id": "optimal-value",
+    "title": "Optimal value",
+    "aliases": [
+      "optimal objective value",
+      "optimum value"
+    ],
+    "definition": "The supremum of feasible objective values for maximization, or infimum for minimization. An optimizer attains it; some models can approach their optimal value without attaining it.",
+    "example": "OPT-004 at U = 6 has optimal value 6 and two optimizers. Maximizing x on 0 < x < 1 approaches 1 without attaining it.",
+    "lesson": "OPT-004",
+    "related": [
+      "optimizer",
+      "objective-value",
+      "global-optimum"
+    ]
+  },
+  {
+    "id": "optimality-certificate",
+    "title": "Optimality certificate",
+    "aliases": [
+      "proof of optimality",
+      "global certificate",
+      "certificate"
+    ],
+    "definition": "Evidence establishing that a feasible decision attains the global optimum. Matching valid bounds or exact enumeration of a finite domain can provide such evidence.",
+    "example": "The bound f(x) ≤ 10 together with feasible f(8) = 10 certifies the default global answer in OPT-004.",
+    "lesson": "OPT-004",
+    "related": [
+      "upper-bound",
+      "lower-bound",
+      "exhaustive-enumeration"
+    ]
+  },
+  {
+    "id": "optimization",
+    "title": "Optimization",
+    "aliases": [
+      "optimisation"
+    ],
+    "definition": "Choosing the best feasible decision for a stated objective and model. The claim of best needs evidence covering the permitted choices.",
+    "example": "In OPT-001, evaluating all 13 fleet sizes proves that 8 vehicles maximize the synthetic profit.",
+    "lesson": "OPT-001",
+    "related": [
+      "decision-variable",
+      "objective-function",
+      "global-optimum"
+    ]
+  },
+  {
+    "id": "optimizer",
+    "title": "Optimizer",
+    "aliases": [
+      "optimal solution",
+      "optimal decision",
+      "argmax",
+      "argmin"
+    ],
+    "definition": "A feasible decision attaining the model’s optimal objective value. Several different decisions can be optimizers; the decision is distinct from its numerical score.",
+    "example": "At U = 6, both x = 2 and x = 6 optimize OPT-004. The shared value is 6.",
+    "lesson": "OPT-004",
+    "related": [
+      "optimal-value",
+      "global-optimum",
+      "objective-value"
+    ]
+  },
+  {
+    "id": "parameter",
+    "title": "Parameter",
+    "aliases": [
+      "input",
+      "supplied value"
+    ],
+    "definition": "An input treated as fixed while a particular model is solved. Changing it creates a different model instance or scenario.",
+    "example": "Budget B = 260 is a parameter; selected fleet size n is a decision.",
+    "lesson": "OPT-002",
+    "related": [
+      "decision-variable",
+      "constraint",
+      "decision-domain"
+    ]
+  },
+  {
+    "id": "slack",
+    "title": "Slack",
+    "aliases": [
+      "unused allowance",
+      "surplus"
+    ],
+    "definition": "For an upper-limit inequality, the right side minus the left side at a feasible point. Zero slack means equality. For a lower limit, the analogous excess above its minimum is called surplus.",
+    "example": "At (3, 4), the time rule x + y ≤ 8 has slack 8 − 7 = 1 hour.",
+    "lesson": "OPT-003",
+    "related": [
+      "constraint",
+      "tight-constraint",
+      "feasible-solution"
+    ]
+  },
+  {
+    "id": "tight-constraint",
+    "title": "Tight constraint",
+    "aliases": [
+      "binding constraint",
+      "active constraint",
+      "zero slack"
+    ],
+    "definition": "A constraint holding with equality at the point considered. Tightness alone does not prove that relaxing it improves an objective. It differs from simply switching a rule on.",
+    "example": "At (3, 4), staffing 2x + y ≤ 10 is tight, while time x + y ≤ 8 is not.",
+    "lesson": "OPT-003",
+    "related": [
+      "slack",
+      "constraint",
+      "trade-off"
+    ]
+  },
+  {
+    "id": "trade-off",
+    "title": "Trade-off",
+    "aliases": [
+      "tradeoff",
+      "trade off",
+      "resource substitution"
+    ],
+    "definition": "Gaining one quantity while giving up another under shared limitations. A resource substitution does not by itself determine which feasible plan is preferable.",
+    "example": "Moving from (3, 4) to (4, 2) gains one A-hour and gives up two B-hours while using the same staffing.",
+    "lesson": "OPT-003",
+    "related": [
+      "tight-constraint",
+      "objective-function",
+      "feasible-set"
+    ]
+  },
+  {
+    "id": "upper-bound",
+    "title": "Upper bound",
+    "aliases": [
+      "objective upper bound",
+      "upper objective bound"
+    ],
+    "definition": "A justified value no smaller than the true optimal objective value. For maximization it limits possible improvement; for minimization a feasible objective value supplies an upper bound.",
+    "example": "In default OPT-004, f(x) ≤ 10 for every feasible x supplies an upper bound of 10 on the maximum.",
+    "lesson": "OPT-004",
+    "related": [
+      "lower-bound",
+      "optimality-gap",
+      "optimality-certificate"
+    ]
+  }
+]

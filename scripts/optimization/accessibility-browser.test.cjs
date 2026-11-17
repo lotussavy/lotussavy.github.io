@@ -15,7 +15,8 @@ const { chromium } = require('playwright');
     '/optimization/learn/foundations/feasibility-and-trade-offs/',
     '/optimization/labs/feasibility/',
     '/optimization/learn/foundations/what-does-optimal-mean/',
-    '/optimization/labs/optimality/'];
+    '/optimization/labs/optimality/',
+    '/optimization/concepts/', '/optimization/search/'];
   const results = [];
   try {
     for (const width of [1280, 375, 320]) {
@@ -29,6 +30,7 @@ const { chromium } = require('playwright');
             await page.evaluate(() => window.MathJax.startup.promise);
             assert.ok(await page.locator('mjx-container').count() >= 20, 'Every mathematical passage is typeset');
           }
+          if (route.endsWith('/optimization/search/')) await page.waitForFunction(() => !document.querySelector('[data-search-controls]').disabled);
           for (const summary of await page.locator('details > summary').all()) await summary.click();
           await page.evaluate(() => document.fonts.ready);
           const body = await page.locator('#main_content').innerText();
@@ -51,7 +53,7 @@ const { chromium } = require('playwright');
         } finally { await page.close(); }
       }
     }
-    console.log('PASS: 27 desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
+    console.log('PASS: 33 desktop/mobile release-page audits; no WCAG-tagged axe violations, overflow, or raw TeX');
   } finally {
     fs.writeFileSync('/tmp/optimization-accessibility.json', JSON.stringify(results, null, 2));
     await browser.close();

@@ -3,6 +3,7 @@
     <a href="{{ '/optimization/' | relative_url }}">Optimization Lab</a><span aria-hidden="true">/</span>
     <span>{{ page.level_label | default: page.level | default: 'Learning path' | escape }}</span>
   </nav>
+  {% include optimization/utility-nav.html %}
   <div class="ol-lesson-meta">
     <span class="ol-lesson-id">{{ page.lesson_id | default: 'LESSON' | escape }}</span>
     <span>{{ page.estimated_minutes | default: 10 }} min read</span>

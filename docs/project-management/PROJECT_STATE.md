@@ -2,7 +2,7 @@
 
 **Updated:** November 17, 2026.
 
-**Current checkpoint:** OPT-004, What Does ‘Optimal’ Mean?, and its Optimality Comparator are completed, reviewed and published. All four planned foundation lessons are live. BL-007 is complete; M3 and the full MVP remain in progress because glossary/search and remaining foundation-package requirements are outstanding.
+**Current checkpoint:** OPT-004, What Does ‘Optimal’ Mean?, and its Optimality Comparator are completed, reviewed and published. All four planned foundation lessons are live. BL-009 glossary/search is implemented and in candidate review; its publication is pending. BL-007 is complete; M3 and the full MVP remain in progress because glossary/search and remaining foundation-package requirements are outstanding.
 
 **Latest released source:** `1a6a36102a71f65fbba7549b8fd6ba119e682fab`. The subsequent documentation-only commit records this verified release without changing the tested website code.
 
@@ -15,7 +15,7 @@
 | BL-007I / OPT-004 release review | Done in the documented scope | Candidate/main validation, deployment and public interaction verified |
 | BL-007 / OPT-002–004 lessons | Done | All three released, with OPT-001 retained |
 | BL-008 / LAB-B | Done | Area/line/point/empty cases still pass independent and browser checks |
-| BL-009 / glossary/search | Ready; not started | Next owner-directed task; minimum 20 terms and working search/cross-links |
+| BL-009 / glossary/search | In Review | 30 terms, 38-entry local catalog and shared navigation implemented; release verification pending |
 | BL-010 / full MVP review | Proposed | Glossary plus remaining start/concept/editorial requirements still required |
 | AT-001 / dedicated screen-reader compatibility | Ready; unexecuted | Existing follow-up under ADR-029 |
 
@@ -47,4 +47,4 @@ Native controls, keyboard, visual reflow, accessible names, numerical chart alte
 
 ## Next exact action
 
-When the owner asks to proceed, begin **BL-009: glossary and search**. Build at least 20 precise terms, working browser-local search and links to the four released lessons and relevant activities. Then complete the remaining P0 start-guide/concept-relationship/editorial-corrections requirements and BL-010 acceptance review. Inspect MASTER_BLUEPRINT.md §5 before declaring the MVP complete. OPT-005 and LP/routing algorithms have not been started. No background work is implied.
+Finish BL-009 browser/CI review, publish after gates pass and verify production. Explain the planned full MVP review using MVP_REVIEW_PLAN.md; BL-010 itself has not been executed.

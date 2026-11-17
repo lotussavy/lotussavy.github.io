@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="ol-reference" aria-labelledby="or-title">
+  <header class="or-header">
+    <p class="or-breadcrumb"><a href="{{ '/optimization/' | relative_url }}">Optimization Lab</a> / Foundation reference</p>
+    <h1 id="or-title">{{ page.title | escape }}</h1>
+    <p class="or-subtitle">{{ page.subtitle | escape }}</p>
+    {% include optimization/utility-nav.html %}
+  </header>
+  <div class="or-body">{{ content }}</div>
+  <footer class="or-footer"><p>Last reviewed {{ page.reviewed_on | date: '%B %d, %Y' }} · Foundation reference · Synthetic examples</p><p><a href="{{ '/optimization/' | relative_url }}">Return to the learning path</a></p></footer>
+</article>

@@ -84,3 +84,11 @@ Use an original two-peak continuous score with a variable feasible upper limit. 
 **ADR-034 validation environment:** Pin both validation workflows to Ubuntu 24.04 while Playwright 1.56.1 remains pinned. An observed move of `ubuntu-latest` to 26.04 broke Chromium setup; record and validate deliberate runner upgrades rather than relying on that moving label.
 
 **ADR-034 completion:** OPT-004/comparator released on `1a6a36102a71f65fbba7549b8fd6ba119e682fab` after passing final candidate/main checks, deployment and public verification. Both workflows use pinned Ubuntu 24.04; all tests and thresholds remain enabled. BL-009 is next.
+
+## ADR-035 — One foundation glossary and a published-content local index
+
+**Date:** 2026-11-17. **Status:** Accepted for the owner-authorized BL-009 release.
+
+Render 30 concise terms from one JSON data source, with stable `/optimization/concepts/#slug` anchors, examples, aliases, related terms and published-lesson links. Use these anchors for the proposed per-concept destinations; expand individual concept pages only when longer material warrants them. Generate the search catalog from that glossary and published lesson-layout pages, excluding drafts and previews. Match names, aliases, definitions, examples, summaries and key concepts locally, with deterministic all-word ranking and type filters. Put shareable query state in the URL fragment; native skip/top links preserve it. Keep definitions and browse links usable without JavaScript, and provide explicit load failure/retry. Shared reference navigation and concept chips expose the features throughout the released learning path.
+
+This completes BL-009 after release gates pass. A separate full MVP review (BL-010) assesses package completeness, start/relationship/editorial requirements, end-to-end learning tasks and release evidence. Creating its checklist does not mark the review passed. ADR-029/AT-001 remains unchanged.

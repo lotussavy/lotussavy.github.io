@@ -1,0 +1,12 @@
+---
+layout: null
+permalink: /optimization/search-index.json
+sitemap: false
+---
+{"version":1,"entries":[
+{% for term in site.data.optimization_glossary %}{% capture term_url %}{{ '/optimization/concepts/' | relative_url }}#{{ term.id }}{% endcapture %}{% capture keywords %}{{ term.example }} {{ term.lesson }}{% endcapture %}
+{"id":{{ term.id | prepend: 'term:' | jsonify }},"title":{{ term.title | jsonify }},"kind":"term","url":{{ term_url | strip | jsonify }},"summary":{{ term.definition | jsonify }},"aliases":{{ term.aliases | jsonify }},"keywords":{{ keywords | strip | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% endfor %}
+{% assign released = site.pages | where: 'layout', 'optimization-lesson' | where: 'lesson_status', 'published' | sort: 'lesson_id' %}{% for item in released %}{% assign kind = 'lesson' %}{% if item.url contains '/labs/' %}{% assign kind = 'lab' %}{% endif %}{% capture keywords %}{{ item.lesson_id }} {{ item.concepts | join: ' ' }} {{ item.learning_objectives | join: ' ' }}{% endcapture %},
+{"id":{{ item.lesson_id | prepend: 'page:' | jsonify }},"title":{{ item.title | jsonify }},"kind":{{ kind | jsonify }},"url":{{ item.url | relative_url | jsonify }},"summary":{{ item.description | jsonify }},"aliases":[{{ item.lesson_id | jsonify }},{{ item.lesson_id | replace: '-', '' | jsonify }}],"keywords":{{ keywords | strip | jsonify }}}
+{% endfor %}]}

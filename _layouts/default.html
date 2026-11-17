@@ -8,6 +8,13 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="theme-color" content="#173a62">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%Y%m%d%H%M%S' }}">
+    {% if page.url contains '/optimization/' %}
+    <link rel="stylesheet" media="screen" href="{{ '/assets/css/optimization-reference.css' | relative_url }}">
+    {% endif %}
+    {% if page.layout == 'optimization-reference' %}
+    <script defer src="{{ '/assets/js/optimization/search-model.js' | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/optimization/search-ui.js' | relative_url }}"></script>
+    {% endif %}
     {% if page.layout == 'optimization-lesson' %}
     <link rel="stylesheet" media="screen" href="{{ '/assets/css/optimization-lesson.css' | relative_url }}">
     {% if page.labs contains 'profit-playground' %}

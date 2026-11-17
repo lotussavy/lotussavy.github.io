@@ -95,6 +95,8 @@ sitemap: true
     </div>
   </div>
 
+  {% include optimization/utility-nav.html %}
+
   <section class="ol-section" aria-labelledby="ol-how-heading">
     <p class="ol-eyebrow">Our learning philosophy</p>
     <h2 id="ol-how-heading">Learn it. See it. Test it.</h2>

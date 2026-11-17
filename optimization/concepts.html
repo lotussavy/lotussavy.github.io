@@ -1,0 +1,42 @@
+---
+layout: optimization-reference
+title: "Optimization Glossary"
+seo_title: "Optimization Glossary | Foundation Terms | Optimization Lab"
+description: "Clear optimization definitions with synthetic examples, related concepts and links to four verified foundation lessons. Filter terms or browse alphabetically."
+subtitle: "Clear definitions, worked examples and links to the foundation lessons."
+permalink: /optimization/concepts/
+reviewed_on: 2026-11-17
+last_modified_at: 2026-11-17
+robots: index,follow
+sitemap: true
+---
+<p>Explore {{ site.data.optimization_glossary.size }} terms alongside OPT-001–004. Definitions distinguish an allowed decision, an objective value and a justified claim of optimality. Examples use the lessons’ synthetic models.</p>
+<section data-glossary data-search-root="{{ '/optimization/' | relative_url }}" aria-label="Foundation glossary">
+  <fieldset class="or-controls" data-glossary-controls disabled><legend>Find a definition</legend><label for="glossary-filter">Filter glossary terms</label><input id="glossary-filter" data-glossary-query type="search" autocomplete="off" maxlength="200" placeholder="Try: slack, incumbent, continuous"><p class="or-help">Match names, aliases, definitions and examples. To find lessons and activities too, <a href="{{ '/optimization/search/' | relative_url }}">search the Optimization Lab</a>.</p><button type="button" data-glossary-clear>Clear filter</button></fieldset>
+  <p class="or-status" data-glossary-status role="status" aria-live="polite" aria-atomic="true">{{ site.data.optimization_glossary.size }} terms. Browse alphabetically or follow a direct term link.</p>
+  <nav class="or-alpha" data-glossary-alpha aria-label="Browse glossary by letter">
+  {% assign last_letter = '' %}{% for term in site.data.optimization_glossary %}{% assign letter = term.title | slice: 0 | upcase %}{% if letter != last_letter %}<a href="#letter-{{ letter | downcase }}">{{ letter }}</a>{% assign last_letter = letter %}{% endif %}{% endfor %}
+  </nav>
+  <p class="or-empty" data-glossary-empty hidden>No matching terms. Try another word or clear the filter.</p>
+  {% assign last_letter = '' %}{% for term in site.data.optimization_glossary %}{% assign letter = term.title | slice: 0 | upcase %}
+  {% if letter != last_letter %}{% unless forloop.first %}</div></section>{% endunless %}<section class="or-group" data-glossary-group aria-labelledby="letter-{{ letter | downcase }}"><h2 id="letter-{{ letter | downcase }}">{{ letter }}</h2><div class="or-term-grid">{% assign last_letter = letter %}{% endif %}
+    <article class="or-term" id="{{ term.id }}" data-glossary-term data-aliases="{{ term.aliases | join: ' | ' | escape }}" data-lesson="{{ term.lesson }}" tabindex="-1">
+      <h3><a href="{{ '/optimization/concepts/' | relative_url }}#{{ term.id }}">{{ term.title | escape }}</a></h3>
+      <p class="or-definition">{{ term.definition | escape }}</p>
+      <p class="or-example"><strong>Example:</strong> {{ term.example | escape }}</p>
+      <p class="or-aliases"><strong>Also search:</strong> {{ term.aliases | join: ', ' | escape }}</p>
+      {% assign lesson = site.pages | where: 'lesson_id', term.lesson | first %}<p class="or-lesson-link"><a href="{{ lesson.url | relative_url }}">Related foundation: {{ lesson.lesson_id }} — {{ lesson.title | escape }}</a></p>
+      <p class="or-related"><strong>Related terms:</strong> {% for id in term.related %}{% assign related = site.data.optimization_glossary | where: 'id', id | first %}<a href="{{ '/optimization/concepts/' | relative_url }}#{{ id }}">{{ related.title | escape }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+    </article>
+  {% if forloop.last %}</div></section>{% endif %}{% endfor %}
+  <noscript><p>JavaScript is off. All {{ site.data.optimization_glossary.size }} definitions, examples and links remain available. Use the letter links or your browser’s Find command.</p></noscript>
+</section>
+<h2>Sources and scope</h2>
+<p>These are original concise teaching definitions and examples, reviewed with the foundation lessons and the primary references below. Variable types and heuristics provide vocabulary for later study; they do not imply that later lessons or solvers have been released. Bound directions are explicit, and a positive bound gap is not presented as proof of suboptimality.</p>
+<ul>
+  <li>Boyd, S., &amp; Vandenberghe, L. (2004). <a href="https://stanford.edu/~boyd/cvxbook/"><em>Convex Optimization</em></a>, Chapters 2 and 4: sets, feasible and optimal points, local optimality and attainment.</li>
+  <li>Google. <a href="https://developers.google.com/optimization/introduction/python">OR-Tools: optimization problem components</a>: objectives, constraints and feasibility.</li>
+  <li>Gurobi Optimization. <a href="https://docs.gurobi.com/projects/optimizer/en/current/concepts/modeling/variables.html">Variables</a> and <a href="https://docs.gurobi.com/projects/optimizer/en/current/concepts/modeling/constraints.html">constraints</a>: domains, integrality and numerical feasibility.</li>
+  <li>Gurobi Optimization. <a href="https://docs.gurobi.com/projects/optimizer/en/current/reference/attributes/model.html">Model attributes</a>: incumbent values, objective bounds and solver-specific gap conventions.</li>
+</ul>
+<p class="or-help">Primary documentation checked November 17, 2026. The examples here run without a solver. Automated accessibility checks and keyboard/reflow review are supplemented by numerical text alternatives; dedicated screen-reader compatibility remains a tracked follow-up.</p>
