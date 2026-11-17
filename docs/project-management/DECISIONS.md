@@ -80,3 +80,5 @@ Implement the Feasibility and Trade-offs lesson and reusable two-dimensional LAB
 **Date:** 2026-11-17. **Status:** Accepted for the owner-authorized next-step release.
 
 Use an original two-peak continuous score with a variable feasible upper limit. Separate a deliberately chosen comparison record from a global certificate; exclude infeasible candidates from ranking, preserve tied optima, and invalidate the certificate when the model changes. Prove the global answer with bounds on each quadratic; independently verify with piecewise arithmetic, derivative signs and exact Python. The comparator is an OPT-004 activity, not LAB-C or a general nonlinear solver. Complete candidate checks before promotion and record live evidence. BL-009 glossary/search follows the four lessons; the full MVP remains subject to BL-010. ADR-029/AT-001 remains unchanged.
+
+**ADR-034 validation environment:** Pin both validation workflows to Ubuntu 24.04 while Playwright 1.56.1 remains pinned. An observed move of `ubuntu-latest` to 26.04 broke Chromium setup; record and validate deliberate runner upgrades rather than relying on that moving label.

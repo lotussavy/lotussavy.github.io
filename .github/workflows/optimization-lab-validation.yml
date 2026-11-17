@@ -34,7 +34,7 @@ concurrency:
 
 jobs:
   verify-lab:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Playwright 1.56.1 supports this image; keep OS changes explicit.
     timeout-minutes: 20
     steps:
       - name: Check out site
